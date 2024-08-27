@@ -3,6 +3,7 @@ import { getSlidersApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
 import FormPage from "./FormPage";
 import BelowSliderSection from "./BelowSliderSection";
+import WhyChooseAiec from "./WhyChooseAiec";
 
 const headerStyle = {
   backgroundColor: "white",
@@ -237,6 +238,7 @@ const Homepage = () => {
 
         {/* Form Page */}
         <FormPage />
+        <WhyChooseAiec />
       </div>
 
       {/* Footer */}
