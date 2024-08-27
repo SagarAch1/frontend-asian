@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getSlidersApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
 import { dropdownStyle, searchButtonStyle } from "../../components/EventSearch"; 
+import FormPage from "./FormPage";
 
 const sectionStyle = {
   padding: "20px",
@@ -359,8 +360,12 @@ const Homepage = () => {
 
         {/* Render the active section */}
         {renderSection()}
-      </div>
 
+        {/* Adjust the position of FormPage */}
+        <div style={{ marginTop: "40px", marginBottom: "40px" }}> {/* Adjust this margin as needed */}
+          <FormPage />
+        </div>
+      </div>
       <Footer />
     </>
   );
