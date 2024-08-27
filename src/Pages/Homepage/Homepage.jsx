@@ -1,47 +1,82 @@
 import React, { useState, useEffect } from "react";
 import { getSlidersApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
-import { dropdownStyle, searchButtonStyle } from "../../components/EventSearch"; 
 import FormPage from "./FormPage";
+import BelowSliderSection from "./BelowSliderSection";
 
-const sectionStyle = {
-  padding: "20px",
-  backgroundColor: "#fff",
-  borderRadius: "8px",
-  boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-  width: "fit-content", // Adjust width based on content
-  margin: "0 auto", // Center the box horizontally
+const headerStyle = {
+  backgroundColor: "white",
+  padding: "20px 0",
+  borderBottom: "1px solid #ccc",
+  marginTop: "70px",
 };
 
-const flexContainerStyle = {
+const logoStyle = {
+  height: "80px",
+  marginLeft: "-300px",
+};
+
+const navMenuStyle = {
   display: "flex",
-  gap: "10px",
-  flexWrap: "wrap", // Allow wrapping if needed
-  alignItems: "center", // Align items in the center vertically
+  gap: "20px",
+  marginLeft: "20px",
+  fontWeight: "bold",
+  color: "black",
 };
 
-const dropdownItemStyle = {
-  position: "relative",
-  padding: "10px",
+const contactButtonStyle = {
+  backgroundColor: "#ff6600",
+  color: "#fff",
+  padding: "10px 20px",
+  border: "none",
+  borderRadius: "30px",
   cursor: "pointer",
 };
 
-const dropdownContentStyle = {
-  display: "none",
-  position: "absolute",
-  backgroundColor: "#f9f9f9",
-  boxShadow: "0px 8px 16px rgba(0,0,0,0.1)",
-  zIndex: 1,
+const containerStyle = {
+  background: "#f8f8f8",
+  minHeight: "100vh",
+  color: "#333",
+  padding: "0",
 };
 
-const dropdownHoverStyle = {
-  display: "block",
+const carouselStyle = {
+  width: "100%",
+  position: "relative",
 };
+
+const navStyle = {
+  marginTop: "40px",
+  marginBottom: "40px",
+  textAlign: "center",
+};
+
+const navListStyle = {
+  listStyleType: "none",
+  display: "flex",
+  justifyContent: "center",
+  padding: "0",
+  margin: "0",
+};
+
+const navItemStyle = {
+  marginRight: "20px",
+};
+
+const navLinkStyle = (activeSection, section) => ({
+  textDecoration: "none",
+  fontWeight: "bold",
+  paddingBottom: "10px",
+  display: "inline-block",
+  color: activeSection === section ? "blue" : "#000",
+  borderBottom: activeSection === section ? "3px solid blue" : "none",
+  cursor: "pointer",
+});
 
 const Homepage = () => {
   const [sliders, setSliders] = useState([]);
   const [activeSection, setActiveSection] = useState("courses"); // Set default section
-  const [hoveredItem, setHoveredItem] = useState(null); // State to track hovered item
+  const [hoveredItem, setHoveredItem] = useState(null);
 
   useEffect(() => {
     getSlidersApi()
@@ -62,151 +97,40 @@ const Homepage = () => {
     setHoveredItem(null);
   };
 
-  const renderSection = () => {
-    switch (activeSection) {
-      case "courses":
-        return (
-          <div style={sectionStyle}>
-            <div style={flexContainerStyle}>
-              <select style={dropdownStyle}>
-                <option value="">Course Subject</option>
-                {/* Add course subjects here */}
-              </select>
-
-              <select style={dropdownStyle}>
-                <option value="">Study Level</option>
-                {/* Add study levels here */}
-              </select>
-
-              <select style={dropdownStyle}>
-                <option value="">Study Destinations</option>
-                {/* Add study destination options here */}
-              </select>
-
-              <button style={searchButtonStyle}>Search</button>
-            </div>
-          </div>
-        );
-
-      case "scholarships":
-        return (
-          <div style={sectionStyle}>
-            <div style={flexContainerStyle}>
-              <select style={dropdownStyle}>
-                <option value="">Country</option>
-                {/* Add countries here */}
-              </select>
-
-              <select style={dropdownStyle}>
-                <option value="">Scholarship Type</option>
-                {/* Add scholarship types here */}
-              </select>
-
-              <button style={searchButtonStyle}>Search</button>
-            </div>
-          </div>
-        );
-
-      case "universities":
-        return (
-          <div style={sectionStyle}>
-            <div style={flexContainerStyle}>
-              <select style={dropdownStyle}>
-                <option value="">Country</option>
-                {/* Add countries here */}
-              </select>
-
-              <select style={dropdownStyle}>
-                <option value="">University Type</option>
-                {/* Add university types here */}
-              </select>
-
-              <button style={searchButtonStyle}>Search</button>
-            </div>
-          </div>
-        );
-
-      case "guideMe":
-        return (
-          <div style={sectionStyle}>
-            <div style={flexContainerStyle}>
-              <h3>Let us help you with your search</h3>
-              <p>
-                Simply answer these 5 questions to see courses perfectly matched
-                to you.
-              </p>
-              <button style={searchButtonStyle}>Search</button>
-            </div>
-          </div>
-        );
-
-      case "events":
-        return (
-          <div style={sectionStyle}>
-            <div style={flexContainerStyle}>
-              <select style={dropdownStyle}>
-                <option value="">City</option>
-                {/* Add city options here */}
-              </select>
-
-              <select style={dropdownStyle}>
-                <option value="">Month</option>
-                {/* Add month options here */}
-              </select>
-
-              <select style={dropdownStyle}>
-                <option value="">Study Destinations</option>
-                {/* Add study destination options here */}
-              </select>
-
-              <button style={searchButtonStyle}>Search</button>
-            </div>
-          </div>
-        );
-
-      default:
-        return null;
-    }
-  };
-
   return (
     <>
-      <header
-        className="header-section"
-        style={{
-          backgroundColor: "white",
-          padding: "20px 0",
-          borderBottom: "1px solid #ccc",
-          marginTop: "70px",
-        }}
-      >
+      <header className="header-section" style={headerStyle}>
         <div className="container d-flex justify-content-between align-items-center">
           {/* Logo */}
           <a className="navbar-brand" href="#">
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/logo.jpeg`}
               alt="Logo"
-              style={{ height: "80px", marginLeft: "-300px" }}
+              style={logoStyle}
             />
           </a>
 
           {/* Study Abroad Links with Dropdowns */}
           <div
             className="study-abroad-menu"
-            style={{ display: "flex", gap: "20px", marginLeft: "20px" , fontWeight: "bold", color: "black"}}
+            style={navMenuStyle}
           >
             {["Study Abroad Steps", "Study Destinations", "Find a Course", "IELTS", "Arrival Services"].map((item) => (
               <div
                 key={item}
-                style={dropdownItemStyle}
                 onMouseEnter={() => handleMouseEnter(item)}
                 onMouseLeave={handleMouseLeave}
+                style={{ position: "relative" }}
               >
                 {item}
                 <div
                   style={{
-                    ...dropdownContentStyle,
-                    ...(hoveredItem === item ? dropdownHoverStyle : {}),
+                    display: hoveredItem === item ? "block" : "none",
+                    position: "absolute",
+                    backgroundColor: "#f9f9f9",
+                    boxShadow: "0px 8px 16px rgba(0,0,0,0.1)",
+                    zIndex: 1,
+                    padding: "10px",
                   }}
                 >
                   {/* Add dropdown content here */}
@@ -218,38 +142,18 @@ const Homepage = () => {
 
           {/* Contact Button */}
           <div style={{ marginLeft: "5px" }}>
-            <button
-              style={{
-                backgroundColor: "#ff6600",
-                color: "#fff",
-                padding: "10px 20px",
-                border: "none",
-                borderRadius: "30px",
-                cursor: "pointer",
-              }}
-            >
+            <button style={contactButtonStyle}>
               Contact AIEC
             </button>
           </div>
         </div>
       </header>
 
-      <div
-        className="container-fluid p-0"
-        style={{
-          background: "#f8f8f8",
-          minHeight: "100vh",
-          color: "#333",
-          padding: "0",
-        }}
-      >
+      <div className="container-fluid p-0" style={containerStyle}>
         <div
           id="carouselExampleCaptions"
           className="carousel slide"
-          style={{
-            width: "100%",
-            position: "relative",
-          }}
+          style={carouselStyle}
           data-bs-ride="carousel"
           data-bs-interval="2000"
         >
@@ -312,44 +216,14 @@ const Homepage = () => {
         </div>
 
         {/* Navigation Menu */}
-        <nav
-          style={{
-            marginTop: "40px",
-            marginBottom: "40px",
-            textAlign: "center",
-          }}
-        >
-          <ul
-            style={{
-              listStyleType: "none",
-              display: "flex",
-              justifyContent: "center",
-              padding: "0",
-              margin: "0",
-            }}
-          >
-            {[
-              "courses",
-              "scholarships",
-              "universities",
-              "events",
-              "guideMe",
-            ].map((section) => (
-              <li key={section} style={{ marginRight: "20px" }}>
+        <nav style={navStyle}>
+          <ul style={navListStyle}>
+            {["courses", "scholarships", "universities", "events", "guideMe"].map((section) => (
+              <li key={section} style={navItemStyle}>
                 <a
                   href="#"
                   onClick={() => setActiveSection(section)}
-                  style={{
-                    textDecoration: "none",
-                    fontWeight: "bold",
-                    paddingBottom: "10px",
-                    display: "inline-block",
-                    color:
-                      activeSection === section ? "blue" : "#000",
-                    borderBottom:
-                      activeSection === section ? "3px solid blue" : "none",
-                    cursor: "pointer",
-                  }}
+                  style={navLinkStyle(activeSection, section)}
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </a>
@@ -359,13 +233,13 @@ const Homepage = () => {
         </nav>
 
         {/* Render the active section */}
-        {renderSection()}
+        <BelowSliderSection activeSection={activeSection} />
 
-        {/* Adjust the position of FormPage */}
-        <div style={{ marginTop: "40px", marginBottom: "40px" }}> {/* Adjust this margin as needed */}
-          <FormPage />
-        </div>
+        {/* Form Page */}
+        <FormPage />
       </div>
+
+      {/* Footer */}
       <Footer />
     </>
   );

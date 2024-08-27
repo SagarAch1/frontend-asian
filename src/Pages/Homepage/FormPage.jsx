@@ -75,6 +75,34 @@ const buttonStyle = {
 };
 
 const FormPage = () => {
+  const studyDates = [
+    "September 2024",
+    "October 2024",
+    "November 2024",
+    "December 2024",
+    "January 2025",
+    "February 2025",
+    "March 2025",
+    "April 2025",
+    "May 2025",
+    "June 2025",
+    "July 2025",
+    "August 2025",
+    "September 2025",
+    "October 2025",
+    "November 2025",
+    "December 2025",
+    "January 2026",
+    "February 2026",
+    "March 2026",
+    "April 2026",
+    "May 2026",
+    "June 2026",
+    "July 2026",
+    "August 2026",
+    "September 2026",
+  ];
+
   return (
     <div style={containerStyle}>
       <div style={formWrapperStyle}>
@@ -116,16 +144,28 @@ const FormPage = () => {
 
             <select required style={selectStyle}>
               <option value="">Your preferred study destination*</option>
-              <option value="abc">ABC</option>
-              <option value="cde">CDE</option>
-              <option value="fgh">FGH</option>
+              <option value="abc">USA</option>
+              <option value="cde">UK</option>
+              <option value="fgh">Australia</option>
+              <option value="fgh">Canada</option>
+              <option value="fgh">New Zealand</option>
+              <option value="fgh">South Korea</option>
+              <option value="fgh">Dubai</option>
+              <option value="fgh">Denmark</option>
+              <option value="fgh">France</option>
+              <option value="fgh">Germany</option>
+              <option value="fgh">Norway</option>
+              <option value="fgh">Finland</option>
+              <option value="fgh">Malta</option>
             </select>
 
             <select required style={selectStyle}>
               <option value="">When do you plan to study?*</option>
-              <option value="abc">ABC</option>
-              <option value="cde">CDE</option>
-              <option value="fgh">FGH</option>
+              {studyDates.map((date) => (
+                <option key={date} value={date}>
+                  {date}
+                </option>
+              ))}
             </select>
 
             <select required style={selectStyle}>
@@ -137,23 +177,33 @@ const FormPage = () => {
 
             <select required style={selectStyle}>
               <option value="">Preferred mode of counselling*</option>
-              <option value="abc">ABC</option>
-              <option value="cde">CDE</option>
-              <option value="fgh">FGH</option>
+              <option value="abc">Phone Call</option>
+              <option value="cde">Face-to-Face</option>
+              <option value="fgh">WhatsApp</option>
+              <option value="fgh">Zoom Call</option>
             </select>
 
             <select required style={selectStyle}>
               <option value="">How would you fund your education?*</option>
-              <option value="abc">ABC</option>
-              <option value="cde">CDE</option>
-              <option value="fgh">FGH</option>
+              <option value="abc">Educational Loan</option>
+              <option value="cde">Saving</option>
+              <option value="cde">Others</option>
             </select>
 
             <select required style={selectStyle}>
               <option value="">Preferred study level*</option>
-              <option value="abc">ABC</option>
-              <option value="cde">CDE</option>
-              <option value="fgh">FGH</option>
+              <option value="abc">Diploma</option>
+              <option value="cde">Advanced Diploma</option>
+              <option value="fgh">Bachelor</option>
+              <option value="fgh">Graduate Certificate</option>
+              <option value="fgh">Graduate Diploma</option>
+              <option value="fgh">Master</option>
+              <option value="fgh">Post Graduate Certificate</option>
+              <option value="fgh">Post Graduate Diploma</option>
+              <option value="fgh">Doctoral Degree</option>
+              <option value="fgh">
+                DBA (Doctor of Business Administration)
+              </option>
             </select>
 
             <div style={{ marginTop: "30px" }}>
