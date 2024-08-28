@@ -140,7 +140,7 @@ const Contact = () => {
             </div>
             <div style={styles.formGroup}>
               <input
-                style={styles.input}
+                style={styles.input} 
                 type="text"
                 name="lastName"
                 placeholder="Last Name"

@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
+import { createFormApi } from "../../apis/Api";
 
 const containerStyle = {
   display: "flex",
@@ -12,20 +14,20 @@ const containerStyle = {
 const formWrapperStyle = {
   display: "flex",
   flexDirection: "row",
-  alignItems: "flex-start", // Align items to the start to handle increased form length
+  alignItems: "flex-start",
   maxWidth: "1200px",
   width: "100%",
 };
 
 const formStyle = {
-  backgroundColor: "#e0f7fa", // Set background color for the form
-  padding: "60px", // Padding for form content
+  backgroundColor: "#e0f7fa",
+  padding: "60px",
   borderRadius: "8px",
   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
-  maxWidth: "800px", // Increased width for the form
-  width: "100%", // Ensure the form takes up the full width of its container
-  height: "auto", // Height is automatically adjusted based on content
-  minHeight: "800px", // Minimum height to ensure enough length above the footer
+  maxWidth: "800px",
+  width: "100%",
+  height: "auto",
+  minHeight: "800px",
   fontSize: "15px",
 };
 
@@ -36,15 +38,14 @@ const formContentStyle = {
 
 const imageStyle = {
   width: "500px",
-  height: "1141px",
+  height: "1140px",
   objectFit: "cover",
-  marginLeft: "20px", // Add a gap between the form and image
 };
 
 const inputStyle = {
   width: "100%",
-  padding: "12px", // Slightly increased padding
-  margin: "12px 0", // Slightly increased margin
+  padding: "12px",
+  margin: "12px 0",
   borderRadius: "5px",
   border: "1px solid #ccc",
   fontSize: "15px",
@@ -52,21 +53,21 @@ const inputStyle = {
 
 const selectStyle = {
   width: "100%",
-  padding: "12px", // Slightly increased padding
-  margin: "12px 0", // Slightly increased margin
+  padding: "12px",
+  margin: "12px 0",
   borderRadius: "5px",
   border: "1px solid #ccc",
   fontSize: "15px",
 };
 
 const checkboxStyle = {
-  marginRight: "12px", // Slightly increased margin
+  marginRight: "12px",
 };
 
 const buttonStyle = {
   backgroundColor: "#ff6600",
   color: "#fff",
-  padding: "14px", // Slightly increased padding
+  padding: "14px",
   border: "none",
   borderRadius: "5px",
   cursor: "pointer",
@@ -75,6 +76,22 @@ const buttonStyle = {
 };
 
 const FormPage = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobileNumber: "",
+    preferredDestination: "",
+    studyDate: "",
+    office: "",
+    counsellingMode: "",
+    fundingSource: "",
+    studyLevel: "",
+    agreeToTerms: false,
+    contactBy: false,
+    receiveUpdates: false,
+  });
+
   const studyDates = [
     "September 2024",
     "October 2024",
@@ -103,10 +120,84 @@ const FormPage = () => {
     "September 2026",
   ];
 
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validation check
+    const {
+      firstName,
+      lastName,
+      email,
+      mobileNumber,
+      preferredDestination,
+      studyDate,
+      office,
+      counsellingMode,
+      fundingSource,
+      studyLevel,
+      agreeToTerms,
+    } = formData;
+
+    if (
+      !firstName ||
+      !lastName ||
+      !email ||
+      !mobileNumber ||
+      !preferredDestination ||
+      !studyDate ||
+      !office ||
+      !counsellingMode ||
+      !fundingSource ||
+      !studyLevel ||
+      !agreeToTerms
+    ) {
+      toast.error("Please enter all fields and agree to the terms and privacy policy.");
+      return;
+    }
+
+    try {
+      const response = await createFormApi(formData);
+      console.log("Form submission response:", response);
+      toast.success("Form submitted successfully");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        mobileNumber: "",
+        preferredDestination: "",
+        studyDate: "",
+        office: "",
+        counsellingMode: "",
+        fundingSource: "",
+        studyLevel: "",
+        agreeToTerms: false,
+        contactBy: false,
+        receiveUpdates: false,
+      });
+    } catch (error) {
+      console.error("Form submission error:", error);
+      if (error.response) {
+        toast.error(`Failed to submit form: ${error.response.data.message || error.message}`);
+      } else if (error.request) {
+        toast.error("No response received from server");
+      } else {
+        toast.error(`Request setup error: ${error.message}`);
+      }
+    }
+  };
+
   return (
     <div style={containerStyle}>
       <div style={formWrapperStyle}>
-        <form style={formStyle}>
+        <form style={formStyle} onSubmit={handleSubmit}>
           <div style={formContentStyle}>
             <div style={{ textAlign: "center", marginBottom: "40px" }}>
               <h3>AIEC can help you</h3>
@@ -119,47 +210,71 @@ const FormPage = () => {
 
             <input
               type="text"
+              name="firstName"
               placeholder="First name*"
               required
+              value={formData.firstName}
+              onChange={handleInputChange}
               style={inputStyle}
             />
             <input
               type="text"
+              name="lastName"
               placeholder="Last name*"
               required
+              value={formData.lastName}
+              onChange={handleInputChange}
               style={inputStyle}
             />
             <input
               type="email"
+              name="email"
               placeholder="Email address*"
               required
+              value={formData.email}
+              onChange={handleInputChange}
               style={inputStyle}
             />
             <input
               type="text"
+              name="mobileNumber"
               placeholder="Mobile number*"
               required
+              value={formData.mobileNumber}
+              onChange={handleInputChange}
               style={inputStyle}
             />
 
-            <select required style={selectStyle}>
+            <select
+              name="preferredDestination"
+              required
+              value={formData.preferredDestination}
+              onChange={handleInputChange}
+              style={selectStyle}
+            >
               <option value="">Your preferred study destination*</option>
-              <option value="abc">USA</option>
-              <option value="cde">UK</option>
-              <option value="fgh">Australia</option>
-              <option value="fgh">Canada</option>
-              <option value="fgh">New Zealand</option>
-              <option value="fgh">South Korea</option>
-              <option value="fgh">Dubai</option>
-              <option value="fgh">Denmark</option>
-              <option value="fgh">France</option>
-              <option value="fgh">Germany</option>
-              <option value="fgh">Norway</option>
-              <option value="fgh">Finland</option>
-              <option value="fgh">Malta</option>
+              <option value="USA">USA</option>
+              <option value="UK">UK</option>
+              <option value="Australia">Australia</option>
+              <option value="Canada">Canada</option>
+              <option value="New Zealand">New Zealand</option>
+              <option value="South Korea">South Korea</option>
+              <option value="Dubai">Dubai</option>
+              <option value="Denmark">Denmark</option>
+              <option value="France">France</option>
+              <option value="Germany">Germany</option>
+              <option value="Norway">Norway</option>
+              <option value="Finland">Finland</option>
+              <option value="Malta">Malta</option>
             </select>
 
-            <select required style={selectStyle}>
+            <select
+              name="studyDate"
+              required
+              value={formData.studyDate}
+              onChange={handleInputChange}
+              style={selectStyle}
+            >
               <option value="">When do you plan to study?*</option>
               {studyDates.map((date) => (
                 <option key={date} value={date}>
@@ -168,78 +283,117 @@ const FormPage = () => {
               ))}
             </select>
 
-            <select required style={selectStyle}>
+            <select
+              name="office"
+              required
+              value={formData.office}
+              onChange={handleInputChange}
+              style={selectStyle}
+            >
               <option value="">Nearest AIEC Office*</option>
-              <option value="abc">ABC</option>
-              <option value="cde">CDE</option>
-              <option value="fgh">FGH</option>
+              <option value="ABC">ABC</option>
+              <option value="CDE">CDE</option>
+              <option value="FGH">FGH</option>
             </select>
 
-            <select required style={selectStyle}>
+            <select
+              name="counsellingMode"
+              required
+              value={formData.counsellingMode}
+              onChange={handleInputChange}
+              style={selectStyle}
+            >
               <option value="">Preferred mode of counselling*</option>
-              <option value="abc">Phone Call</option>
-              <option value="cde">Face-to-Face</option>
-              <option value="fgh">WhatsApp</option>
-              <option value="fgh">Zoom Call</option>
+              <option value="Phone Call">Phone Call</option>
+              <option value="Face-to-Face">Face-to-Face</option>
+              <option value="WhatsApp">WhatsApp</option>
+              <option value="Zoom Call">Zoom Call</option>
             </select>
 
-            <select required style={selectStyle}>
-              <option value="">How would you fund your education?*</option>
-              <option value="abc">Educational Loan</option>
-              <option value="cde">Saving</option>
-              <option value="cde">Others</option>
+            <select
+              name="fundingSource"
+              required
+              value={formData.fundingSource}
+              onChange={handleInputChange}
+              style={selectStyle}
+            >
+              <option value="">How will you fund your studies?*</option>
+              <option value="Self-funded">Self-funded</option>
+              <option value="Partially funded by family">Partially funded by family</option>
+              <option value="Seeking Scholarships">Seeking Scholarships</option>
+              <option value="Bank Loan">Bank Loan</option>
             </select>
 
-            <select required style={selectStyle}>
-              <option value="">Preferred study level*</option>
-              <option value="abc">Diploma</option>
-              <option value="cde">Advanced Diploma</option>
-              <option value="fgh">Bachelor</option>
-              <option value="fgh">Graduate Certificate</option>
-              <option value="fgh">Graduate Diploma</option>
-              <option value="fgh">Master</option>
-              <option value="fgh">Post Graduate Certificate</option>
-              <option value="fgh">Post Graduate Diploma</option>
-              <option value="fgh">Doctoral Degree</option>
-              <option value="fgh">
-                DBA (Doctor of Business Administration)
-              </option>
+            <select
+              name="studyLevel"
+              required
+              value={formData.studyLevel}
+              onChange={handleInputChange}
+              style={selectStyle}
+            >
+              <option value="">Your preferred level of study*</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Postgraduate">Postgraduate</option>
+              <option value="Vocational Education and Training">Vocational Education and Training</option>
+              <option value="Doctorate">Doctorate</option>
+              <option value="School">School</option>
+              <option value="English Language Course">English Language Course</option>
             </select>
 
-            <div style={{ marginTop: "30px" }}>
-              <input type="checkbox" required style={checkboxStyle} />
+            <div style={{ marginTop: "20px" }}>
               <label>
-                I agree to AIEC <a href="#">Terms and privacy policy</a>
+                <input
+                  type="checkbox"
+                  name="agreeToTerms"
+                  checked={formData.agreeToTerms}
+                  onChange={handleInputChange}
+                  style={checkboxStyle}
+                />
+                I agree to the Terms & Conditions and Privacy Policy*
               </label>
             </div>
 
-            <div style={{ marginTop: "15px" }}>
-              <input type="checkbox" style={checkboxStyle} />
+            <div style={{ marginTop: "20px" }}>
               <label>
-                Please contact me by phone, email, or SMS to assist with my
-                enquiry
+                <input
+                  type="checkbox"
+                  name="contactBy"
+                  checked={formData.contactBy}
+                  onChange={handleInputChange}
+                  style={checkboxStyle}
+                />
+                I would like to receive further communication from AIEC via Phone, Email, and SMS
               </label>
             </div>
 
-            <div style={{ marginTop: "15px" }}>
-              <input type="checkbox" style={checkboxStyle} />
+            <div style={{ marginTop: "20px" }}>
               <label>
-                I would like to receive updates and offers from AIEC
+                <input
+                  type="checkbox"
+                  name="receiveUpdates"
+                  checked={formData.receiveUpdates}
+                  onChange={handleInputChange}
+                  style={checkboxStyle}
+                />
+                I would like to receive relevant information and updates from AIEC via Email
               </label>
             </div>
 
             <button type="submit" style={buttonStyle}>
-              Enquire now
+              Submit
             </button>
           </div>
         </form>
 
+        <div style={{ flex: 1 }}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/girl.avif`}
-          alt="Logo"
-          style={imageStyle}
-        />
+              src={`${process.env.PUBLIC_URL}/assets/images/girl.avif`}
+              alt="Logo"
+              style={imageStyle}
+            />
+        </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };

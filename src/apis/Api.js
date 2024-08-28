@@ -89,6 +89,13 @@ export const createContactApi = (data) =>
 // Get All Contacts API
 export const getContactsApi = () => Api.get("/api/contact/get_all_contacts");
 
+// Create Book API
+export const createBookApi = (data) =>
+  Api.post("/api/book/create", data, getConfig());
+
+// Get All Book API
+export const getBookApi = () => Api.get("/api/book/get_all_book");
+
 // Cart APIs
 export const addToCartApi = (data) =>
   Api.post("/api/cart/add", data, getConfig());
@@ -134,6 +141,15 @@ export const applyCouponCodeApi = (data) =>
 export const createSlidersApi = (data) =>
   Api.post("/api/slider/create", data, getConfig());
 
+// Create Form API
+export const createFormApi = (data) =>
+  Api.post("/api/form/create", data, getConfig());
+
+// Get All Form API
+export const getFormApi = () => Api.get("/api/form/get_all_form");  
+
+
+
 // Get All Sliders API
 export const getSlidersApi = () => Api.get("/api/slider/get_all_sliders");
 
@@ -142,6 +158,8 @@ export const getDashboardStats = () =>
 
 export const clearCartApi = () => {
   return axios.delete("/api/cart/clear");
+
+
 
 
 

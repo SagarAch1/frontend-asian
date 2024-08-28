@@ -81,7 +81,7 @@ const Search = () => {
   return (
     <div className="container" style={styles.container}>
       <div className="d-flex justify-content-between">
-        <h1>Searching Products!</h1>
+        <h1>Book Suitable Class For You</h1>
         <div className="d-flex flex-row">
           <input
             type="text"
@@ -106,6 +106,7 @@ const Search = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">{product.productName}</h5>
+                  <p className="card-text">{product.productDescription}</p>
                   <p className="card-text">NPR {product.productPrice}</p>
                   <button
                     className="btn btn-primary"

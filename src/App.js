@@ -18,10 +18,11 @@ import Login from "./Pages/Login/Login";
 import Profile from "./Pages/Login/Profile";
 import Message from "./Pages/Message/Message";
 import New from "./Pages/New/New";
-import Offer from "./Pages/Off/Off";
+import Bookclass from "./Pages/BookClass/Bookclass";
 import Payment from "./Pages/Payment/Payment";
 import Thankyou from "./Pages/Payment/Thankyou";
 import BarChart from "./Pages/admin/BarChart";
+import FormPage from "./Pages/Homepage/FormPage";
 import {
   default as AddProduct,
   default as Product,
@@ -35,6 +36,7 @@ import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
+
 
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
@@ -52,7 +54,8 @@ function App() {
         <Route path="/discounts" element={<Discount />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/newproduct" element={<New />} />
-        <Route path="/offer" element={<Offer />} />
+        <Route path="/bookclass" element={<Bookclass />} />
+       
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
@@ -68,6 +71,8 @@ function App() {
         <Route path="/userprofile" element={<Profile />} />
         <Route path="/review/:productId" element={<Review />} />
         <Route path="/slider" element={<Slider />} />
+
+        <Route path="/formpage" element={<FormPage />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>

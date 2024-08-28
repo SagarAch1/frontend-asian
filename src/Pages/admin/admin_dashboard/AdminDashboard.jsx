@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { getCouponsApi, getOrdersApi, getProductsApi, getSlidersApi } from "../../../apis/Api"; 
-import Coupon from "../../Coupon/Coupon";
+
 import Myorder from "../../Homepage/Myorder"; // Ensure Myorder is imported
 import Message from "../../Message/Message";
 import New from "../../New/New";
@@ -15,7 +15,7 @@ const AdminDashboard = () => {
 
   useEffect(() => {
     fetchProducts();
-    fetchCoupons();
+    
     fetchOrders();
     fetchSliders();
   }, []);
@@ -30,15 +30,7 @@ const AdminDashboard = () => {
       });
   };
 
-  const fetchCoupons = () => {
-    getCouponsApi()
-      .then((res) => {
-        setCoupons(res.data.coupons);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+ 
   const fetchSliders = () => {
     getSlidersApi()
       .then((res) => {
@@ -74,13 +66,7 @@ const AdminDashboard = () => {
             <New />
           </div>
         );
-      case "coupon":
-        return (
-          <div>
-            <h2>Coupon</h2>
-            <Coupon />
-          </div>
-        );
+     
       case "message":
         return (
           <div>
