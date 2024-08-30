@@ -6,8 +6,8 @@ const Bookclass = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    service: "",
-    budget: "",
+    languageclass: "",
+    time: "",
     message: "",
   });
   const [showPopup, setShowPopup] = useState(false); // State to manage pop-up visibility
@@ -120,8 +120,8 @@ const Bookclass = () => {
       setFormData({
         name: "",
         email: "",
-        service: "",
-        budget: "",
+        languageclass: "",
+        time: "",
         message: "",
       });
     } catch (error) {
@@ -158,29 +158,29 @@ const Bookclass = () => {
           />
           <select
             style={styles.select}
-            name="service"
-            value={formData.service}
+            name="languageclass"
+            value={formData.languageclass}
             onChange={handleInputChange}
             required
           >
             <option value="" disabled>
-              Select Class
+              Select Language Class
             </option>
-            <option value="service1">IELTS(Rs 3000)</option>
-            <option value="service2">PTE(Rs 4000)</option>
+            <option value="IELTS (Rs 3000)">IELTS (Rs 3000)</option>
+            <option value="PTE (Rs 4000)">PTE (Rs 4000)</option>
           </select>
           <select
             style={styles.select}
-            name="budget"
-            value={formData.budget}
+            name="time"
+            value={formData.time}
             onChange={handleInputChange}
             required
           >
             <option value="" disabled>
               Select Class Time
             </option>
-            <option value="budget1">8:00 Am - 9:00 Am</option>
-            <option value="budget2">9:00 Am - 10:00 Am</option>
+            <option value="8:00 AM - 9:00 AM">8:00 AM - 9:00 AM</option>
+            <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
           </select>
           <textarea
             style={styles.textarea}

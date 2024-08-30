@@ -9,7 +9,7 @@ import About from "./Pages/About/About";
 import Cart from "./Pages/Cart/Cart";
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
-import Discount from "./Pages/Discount/Discount";
+import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import Homepage from "./Pages/Homepage/Homepage";
 import Myorder from "./Pages/Homepage/Myorder";
 import UserOrder from "./Pages/Homepage/Userorder";
@@ -51,7 +51,7 @@ function App() {
         <Route path="/Homepage" element={<Homepage />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
-        <Route path="/discounts" element={<Discount />} />
+       
         <Route path="/shop" element={<Shop />} />
         <Route path="/newproduct" element={<New />} />
         <Route path="/bookclass" element={<Bookclass />} />
@@ -71,6 +71,8 @@ function App() {
         <Route path="/userprofile" element={<Profile />} />
         <Route path="/review/:productId" element={<Review />} />
         <Route path="/slider" element={<Slider />} />
+
+        <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
 
         <Route path="/formpage" element={<FormPage />} />
 

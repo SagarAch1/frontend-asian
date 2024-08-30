@@ -90,7 +90,7 @@ const Navbar = () => {
                 aria-expanded="false"
                 style={{ fontWeight: "bold", fontSize: "18px" }}
               >
-                <i className="fas fa-user me-2"></i> Welcome, {user.firstName}!
+                <i className="fas fa-user me-2"></i> Welcome, {user.fullName}
               </button>
               <ul
                 className="dropdown-menu"
