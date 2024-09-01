@@ -216,9 +216,18 @@ const BelowSliderSection = ({ activeSection }) => {
       studyLevelInput === "Undergraduate" &&
       destinationInput === "Canada"
     ) {
-      navigate("/bachelorofdesign"); // Navigate to the desired URL
+      navigate("/landscapeundergraduatecanada"); // Navigate to the desired URL
+    }
+  
+    if (
+      courseSubjectInput === "Landscape design and architecture" &&
+      studyLevelInput === "Undergraduate" &&
+      destinationInput === "United States"
+    ) {
+      navigate("/landscapeundergraduateusa"); // Navigate to the desired URL
     }
   };
+  
 
   return (
     <div style={belowSliderSectionStyle}>

@@ -3,7 +3,7 @@ import { getCouponsApi, getOrdersApi, getProductsApi, getSlidersApi } from "../.
 
 import Myorder from "../../Homepage/Myorder"; // Ensure Myorder is imported
 import Message from "../../Message/Message";
-import New from "../../New/New";
+
 import Slider from "../../Coupon/Sliderfetch";
 
 const AdminDashboard = () => {
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
         return (
           <div>
             <h2>Add Product</h2>
-            <New />
+         
           </div>
         );
      
