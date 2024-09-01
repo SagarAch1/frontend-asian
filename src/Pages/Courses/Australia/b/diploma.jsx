@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import Footer from "../Homepage/Footer";
+import Footer from "../../Homepage/Footer";
 
 const programs = [
   {
@@ -97,7 +97,7 @@ const programs = [
   {
     title: "Master of Design in Accessibility",
     university: "CARLETON UNIVERSITY",
-    location: "Ottawa, usa",
+    location: "Ottawa, Canada",
     worldRanking: "50",
     degree: "Masters Degree",
     intakeDate: "04.09.2024",
@@ -108,7 +108,7 @@ const programs = [
   // Add other programs here
 ];
 
-const Landscapeundergraduateusa = () => {
+const Landscapeundergraduateaustralia = () => {
   const navigate = useNavigate();
 
   const handleViewDetails = (link) => {
@@ -119,7 +119,7 @@ const Landscapeundergraduateusa = () => {
     <>
       <Container>
         <DataCount size="1.5em" bold>
-          Found {programs.length} programs according to your criteria in usa.
+          Found {programs.length} programs according to your criteria in Canada.
         </DataCount>
         <GridContainer>
           {programs.map((program, index) => (
@@ -225,4 +225,4 @@ const ViewDetailsButton = styled.button`
   }
 `;
 
-export default Landscapeundergraduateusa;
+export default Landscapeundergraduateaustralia;

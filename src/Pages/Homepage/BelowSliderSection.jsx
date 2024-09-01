@@ -73,24 +73,28 @@ const orTextStyle = {
 const BelowSliderSection = ({ activeSection }) => {
   const [courseSubjectInput, setCourseSubjectInput] = useState("");
   const [filteredCourseSubjects, setFilteredCourseSubjects] = useState([
-    "Landscape design and architecture",
-    "Design and Applied Arts",
-    "Biological Sciences",
-    "Anatomy",
-    "Human resource Management",
-    "International Business",
-    "Quality Management",
+   "Business and Management",
+        "Science and Technology",
+        "Engineering",
+        "Life Science",
+        "Medical and Healthcare",
+        "Arts",
+        "Law",
   ]);
   const [isCourseDropdownOpen, setIsCourseDropdownOpen] = useState(false);
 
   const [studyLevelInput, setStudyLevelInput] = useState("");
   const [filteredStudyLevels, setFilteredStudyLevels] = useState([
-    "Undergraduate",
-    "Postgraduate",
+    
     "Diploma",
-    "Certificate",
+    "Advanced Diploma",
+    "Bachelor",
+    "Graduate Certificate",
+    "Graduate Diploma",
+    "Master",
     "Doctorate",
-    "Foundation",
+    "Doctor of Business Administration",
+    "Research Degree",
   ]);
   const [isLevelDropdownOpen, setIsLevelDropdownOpen] = useState(false);
 
@@ -155,13 +159,13 @@ const BelowSliderSection = ({ activeSection }) => {
     setCourseSubjectInput(value);
     setFilteredCourseSubjects(
       [
-        "Landscape design and architecture",
-        "Design and Applied Arts",
-        "Biological Sciences",
-        "Anatomy",
-        "Human resource Management",
-        "International Business",
-        "Quality Management",
+        "Business and Management",
+        "Science and Technology",
+        "Engineering",
+        "Life Science",
+        "Medical and Healthcare",
+        "Arts",
+        "Law",
       ].filter((subject) =>
         subject.toLowerCase().includes(value.toLowerCase())
       )
@@ -174,12 +178,15 @@ const BelowSliderSection = ({ activeSection }) => {
     setStudyLevelInput(value);
     setFilteredStudyLevels(
       [
-        "Undergraduate",
-        "Postgraduate",
-        "Diploma",
-        "Certificate",
-        "Doctorate",
-        "Foundation",
+      "Diploma",
+    "Advanced Diploma",
+    "Bachelor",
+    "Graduate Certificate",
+    "Graduate Diploma",
+    "Master",
+    "Doctorate",
+    "Doctor of Business Administration",
+    "Research Degree",
       ].filter((level) =>
         level.toLowerCase().includes(value.toLowerCase())
       )
@@ -211,22 +218,30 @@ const BelowSliderSection = ({ activeSection }) => {
   };
 
   const handleSearchClick = () => {
-    if (
-      courseSubjectInput === "Landscape design and architecture" &&
-      studyLevelInput === "Undergraduate" &&
-      destinationInput === "Canada"
-    ) {
-      navigate("/landscapeundergraduatecanada"); // Navigate to the desired URL
-    }
+    if (courseSubjectInput && studyLevelInput && destinationInput) {
+      let destinationRoute = null;
   
-    if (
-      courseSubjectInput === "Landscape design and architecture" &&
-      studyLevelInput === "Undergraduate" &&
-      destinationInput === "United States"
-    ) {
-      navigate("/landscapeundergraduateusa"); // Navigate to the desired URL
+      // Determine the route based on the destination input
+      if (destinationInput.toLowerCase() === "australia") {
+        destinationRoute = "/courseaustralia";
+      } else if (destinationInput.toLowerCase() === "usa") {
+        destinationRoute = "/courseusa";
+      }
+  
+      // Only navigate if a valid route is found
+      if (destinationRoute) {
+        navigate(destinationRoute, {
+          state: { course: courseSubjectInput, level: studyLevelInput, destination: destinationInput },
+        });
+      } else {
+        // Handle the case where no matching destination is found
+        console.log("No matching destination found");
+        // Optionally, show a message to the user here
+      }
     }
   };
+  
+  
   
 
   return (

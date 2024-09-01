@@ -7,11 +7,11 @@ import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import About from "./Pages/About/About";
 
+import Bachelorofdesign from "./Blog/Bachelorofdesign";
+import CourseAustralia from "./Pages/Courses/Australia/b/master"
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
-import Bachelorofdesign from "./Blog/Bachelorofdesign";
-import Landscapeundergraduatecanada from "./Pages/Courses/Landscapeundergraduateuk";
-import Landscapeundergraduateusa from "./Pages/Courses/Landscapeundergraduateusa";
+
 import Homepage from "./Pages/Homepage/Homepage";
 import Myorder from "./Pages/Homepage/Myorder";
 import UserOrder from "./Pages/Homepage/Userorder";
@@ -26,7 +26,6 @@ import Thankyou from "./Pages/Payment/Thankyou";
 
 import FormPage from "./Pages/Homepage/FormPage";
 
-
 import Register from "./Pages/Register/Register";
 import Search from "./Pages/Search/Search";
 
@@ -34,7 +33,6 @@ import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
-
 
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
@@ -49,41 +47,34 @@ function App() {
         <Route path="/Homepage" element={<Homepage />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/Register" element={<Register />} />
-       
-
 
         <Route path="/bookclass" element={<Bookclass />} />
-       
+
+
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
         <Route path="/support" element={<Support />} />
         <Route path="/messages" element={<Message />} />
-      
 
         <Route path="/search" element={<Search />} />
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/myorder" element={<Myorder />} />
-        
+
         <Route path="/userorder" element={<UserOrder />} />
         <Route path="/userprofile" element={<Profile />} />
-       
+
         <Route path="/slider" element={<Slider />} />
 
         <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
 
-        <Route path="/landscapeundergraduatecanada" element={<Landscapeundergraduatecanada />} />
-
-        <Route path="/landscapeundergraduateusa" element={<Landscapeundergraduateusa />} />
-
+        <Route path="/courseaustralia" element={<CourseAustralia />} />
 
         <Route path="/formpage" element={<FormPage />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
-       
-  
         </Route>
 
         {/* User Routes */}

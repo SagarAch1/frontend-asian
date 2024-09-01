@@ -1,9 +1,17 @@
-import { faCalendarAlt, faDollarSign, faEarth, faFileAlt, faMapMarkerAlt, faStar, faUniversity } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
-import Footer from "../Homepage/Footer";
+import {
+  faCalendarAlt,
+  faDollarSign,
+  faEarth,
+  faFileAlt,
+  faMapMarkerAlt,
+  faStar,
+  faUniversity,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import Footer from "../../Homepage/Footer";
 
 const programs = [
   {
@@ -108,7 +116,7 @@ const programs = [
   // Add other programs here
 ];
 
-const Landscapeundergraduateuk = () => {
+const Landscapeundergraduatenewzeland = () => {
   const navigate = useNavigate();
 
   const handleViewDetails = (link) => {
@@ -126,22 +134,42 @@ const Landscapeundergraduateuk = () => {
             <ProgramCard key={index}>
               <ProgramTitle>{program.title}</ProgramTitle>
               <ProgramDetails>
-                <p><FontAwesomeIcon icon={faUniversity} /> <strong>{program.university}</strong></p>
-                <p><FontAwesomeIcon icon={faFileAlt} /> {program.degree}</p>
-                <p><FontAwesomeIcon icon={faMapMarkerAlt} /> {program.location}</p>
-                <p><FontAwesomeIcon icon={faEarth} /> World Ranking: {program.worldRanking}</p>
-                <p><FontAwesomeIcon icon={faCalendarAlt} /> Next Intake: {program.intakeDate}</p>
-                <p><FontAwesomeIcon icon={faStar} /> Entry Score: {program.entryScore}</p>
-                <p><FontAwesomeIcon icon={faDollarSign} /> Fees: {program.fees}</p>
+                <p>
+                  <FontAwesomeIcon icon={faUniversity} />{" "}
+                  <strong>{program.university}</strong>
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faFileAlt} /> {program.degree}
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} /> {program.location}
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faEarth} /> World Ranking:{" "}
+                  {program.worldRanking}
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faCalendarAlt} /> Next Intake:{" "}
+                  {program.intakeDate}
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faStar} /> Entry Score:{" "}
+                  {program.entryScore}
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faDollarSign} /> Fees: {program.fees}
+                </p>
               </ProgramDetails>
-              <ViewDetailsButton onClick={() => handleViewDetails(program.link)}>
+              <ViewDetailsButton
+                onClick={() => handleViewDetails(program.link)}
+              >
                 View details
               </ViewDetailsButton>
             </ProgramCard>
           ))}
         </GridContainer>
       </Container>
-      
+
       {/* Footer */}
       <Footer />
     </>
@@ -158,8 +186,8 @@ const Container = styled.div`
 `;
 
 const DataCount = styled.p`
-  font-size: ${(props) => props.size || '1.1em'};
-  font-weight: ${(props) => (props.bold ? 'bold' : 'normal')};
+  font-size: ${(props) => props.size || "1.1em"};
+  font-weight: ${(props) => (props.bold ? "bold" : "normal")};
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -180,7 +208,7 @@ const ProgramCard = styled.div`
   text-align: center;
   width: 100%;
   max-width: 350px;
-  font-family: 'Aptos', sans-serif; /* Apply Aptos font */
+  font-family: "Aptos", sans-serif; /* Apply Aptos font */
 `;
 
 const ProgramTitle = styled.h3`
@@ -200,7 +228,7 @@ const ProgramDetails = styled.div`
 
     svg {
       margin-right: 8px;
-      color: #007BFF;
+      color: #007bff;
     }
   }
 `;
@@ -225,4 +253,4 @@ const ViewDetailsButton = styled.button`
   }
 `;
 
-export default Landscapeundergraduateuk;
+export default Landscapeundergraduatenewzeland;
