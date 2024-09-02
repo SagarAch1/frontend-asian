@@ -23,18 +23,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
-    link: "/bachelorofdesign",
-  },
-  {
-    title: "Business and Management",
-    university: "Australian Catholic University",
-    location: "Sydney, Australia",
-    worldRanking: " 637",
-    degree: "Degree",
-    intakeDate: "04.09.2024",
-    entryScore: "IELTS 6.5",
-    fees: "$29,664",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -45,7 +34,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -56,7 +45,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -67,7 +56,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -78,7 +67,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -89,7 +78,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -100,7 +89,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -111,7 +100,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -122,7 +111,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -133,7 +122,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -144,7 +133,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -155,7 +144,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -166,7 +155,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -177,7 +166,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -188,7 +177,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
  
@@ -200,7 +189,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -211,7 +200,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -222,7 +211,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -233,7 +222,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -244,7 +233,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -255,7 +244,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -266,7 +255,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -277,7 +266,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -288,7 +277,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -299,7 +288,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -310,7 +299,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -321,7 +310,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -332,7 +321,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -343,7 +332,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -354,7 +343,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -365,7 +354,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -376,7 +365,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   //scienceandtechnology////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -388,7 +377,7 @@ const programs = [
     degree: "Master",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/masterofdesign",
   },
   {
@@ -399,7 +388,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -421,7 +410,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -432,7 +421,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -443,7 +432,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -454,7 +443,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -465,7 +454,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -476,7 +465,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -487,7 +476,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -498,7 +487,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -509,7 +498,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -520,7 +509,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -531,7 +520,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -542,7 +531,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -553,7 +542,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -564,7 +553,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
 
@@ -576,7 +565,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -587,7 +576,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -598,7 +587,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -609,7 +598,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -620,7 +609,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -631,7 +620,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -642,7 +631,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -653,7 +642,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -664,7 +653,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -675,7 +664,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -686,7 +675,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -697,7 +686,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -708,7 +697,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -719,7 +708,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -730,7 +719,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -741,7 +730,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -752,7 +741,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
 
@@ -765,7 +754,7 @@ const programs = [
     degree: "Master",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/masterofdesign",
   },
   {
@@ -776,7 +765,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -787,7 +776,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -798,7 +787,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -809,7 +798,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -820,7 +809,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -831,7 +820,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -842,7 +831,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -853,7 +842,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -864,7 +853,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -875,7 +864,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -886,7 +875,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -897,7 +886,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -908,7 +897,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -919,7 +908,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -930,7 +919,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -941,7 +930,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
 
@@ -953,7 +942,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -964,7 +953,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -975,7 +964,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -986,7 +975,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -997,7 +986,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1008,7 +997,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1019,7 +1008,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1030,7 +1019,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1041,7 +1030,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1052,7 +1041,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1063,7 +1052,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1074,7 +1063,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1085,7 +1074,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1096,7 +1085,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1107,7 +1096,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1118,7 +1107,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1129,7 +1118,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   ////////////////////Life Science////////////////////////////////////////////////////////////////////////////////
@@ -1141,7 +1130,7 @@ const programs = [
     degree: "Master",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/masterofdesign",
   },
   {
@@ -1152,7 +1141,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1163,7 +1152,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1174,7 +1163,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1185,7 +1174,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1196,7 +1185,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1207,7 +1196,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1218,7 +1207,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1229,7 +1218,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1240,7 +1229,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1251,7 +1240,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1262,7 +1251,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1273,7 +1262,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1284,7 +1273,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1295,7 +1284,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1306,7 +1295,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1317,7 +1306,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   ////
@@ -1329,7 +1318,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1340,7 +1329,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1351,7 +1340,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1362,7 +1351,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1373,7 +1362,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1384,7 +1373,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1395,7 +1384,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1406,7 +1395,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1417,7 +1406,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1428,7 +1417,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1439,7 +1428,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1450,7 +1439,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1461,7 +1450,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1472,7 +1461,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1483,7 +1472,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1494,7 +1483,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1505,7 +1494,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
 
@@ -1518,7 +1507,7 @@ const programs = [
     degree: "Master",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/masterofdesign",
   },
   {
@@ -1529,7 +1518,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1540,7 +1529,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1551,7 +1540,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1562,7 +1551,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1573,7 +1562,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1584,7 +1573,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1595,7 +1584,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1606,7 +1595,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1617,7 +1606,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1628,7 +1617,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1639,7 +1628,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1650,7 +1639,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1661,7 +1650,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1672,7 +1661,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1683,7 +1672,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1694,7 +1683,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1705,7 +1694,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1716,7 +1705,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1727,7 +1716,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1738,7 +1727,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1749,7 +1738,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1760,7 +1749,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1771,7 +1760,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1782,7 +1771,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1793,7 +1782,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1804,7 +1793,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1815,7 +1804,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1826,7 +1815,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1837,7 +1826,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1848,7 +1837,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1859,7 +1848,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1870,7 +1859,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1881,7 +1870,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   //////////////////////Arts///////////////////////////////////////////////
@@ -1893,7 +1882,7 @@ const programs = [
     degree: "Master",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/masterofdesign",
   },
   {
@@ -1904,7 +1893,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1915,7 +1904,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1926,7 +1915,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1937,7 +1926,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1948,7 +1937,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1959,7 +1948,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1970,7 +1959,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1981,7 +1970,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -1992,7 +1981,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2003,7 +1992,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2014,7 +2003,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2025,7 +2014,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2036,7 +2025,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2047,7 +2036,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2058,7 +2047,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2069,7 +2058,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2080,7 +2069,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2091,7 +2080,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2102,7 +2091,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2113,7 +2102,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2124,7 +2113,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2135,7 +2124,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2146,7 +2135,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2157,7 +2146,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2168,7 +2157,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2179,7 +2168,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2190,7 +2179,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2201,7 +2190,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2212,7 +2201,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2223,7 +2212,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2234,7 +2223,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2245,7 +2234,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2256,7 +2245,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   /////////////////////////Law///////////////////////////////////////////
@@ -2268,7 +2257,7 @@ const programs = [
     degree: "Master",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/masterofdesign",
   },
   {
@@ -2279,7 +2268,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2290,7 +2279,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2301,7 +2290,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2312,7 +2301,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2323,7 +2312,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2334,7 +2323,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2345,7 +2334,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2356,7 +2345,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2367,7 +2356,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2378,7 +2367,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2389,7 +2378,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2400,7 +2389,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2411,7 +2400,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2422,7 +2411,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2433,7 +2422,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2444,7 +2433,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2455,7 +2444,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2466,7 +2455,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2477,7 +2466,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2488,7 +2477,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2499,7 +2488,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2510,7 +2499,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2521,7 +2510,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2532,7 +2521,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2543,7 +2532,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2554,7 +2543,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2565,7 +2554,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2576,7 +2565,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2587,7 +2576,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2598,7 +2587,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2609,7 +2598,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2620,7 +2609,7 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
   {
@@ -2631,13 +2620,13 @@ const programs = [
     degree: "Degree",
     intakeDate: "04.09.2024",
     entryScore: "IELTS 6.5",
-    fees: "CAD20777 (2024)",
+    fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
 
   // Other programs
 ];
-//
+
 const CourseAustralia = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -2647,8 +2636,8 @@ const CourseAustralia = () => {
     const searchCriteria = location.state || {};
     const filtered = programs.filter(
       (program) =>
-        // (!searchCriteria.level || program.degree.toLowerCase() === searchCriteria.level?.toLowerCase()) &&
-        (!searchCriteria.course || program.title.toLowerCase().includes(searchCriteria.course?.toLowerCase()))
+        (!searchCriteria.course ||
+          program.title.toLowerCase().includes(searchCriteria.course?.toLowerCase()))
     );
 
     setFilteredPrograms(filtered.length > 0 ? filtered : null);
@@ -2658,13 +2647,17 @@ const CourseAustralia = () => {
     navigate(link);
   };
 
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <>
       <Container>
         {filteredPrograms ? (
           <>
             <DataCount size="1.5em" bold>
-              Found {filteredPrograms.length} programs according to your criteria in the Australia.
+              Found {filteredPrograms.length} programs according to your criteria in Australia.
             </DataCount>
             <GridContainer>
               {filteredPrograms.map((program, index) => (
@@ -2694,7 +2687,10 @@ const CourseAustralia = () => {
                       {program.entryScore}
                     </p>
                     <p>
-                      <FontAwesomeIcon icon={faDollarSign} /> Fees: {program.fees}
+                      <FontAwesomeIcon icon={faDollarSign} /> Fees: 
+                      <ContactLink onClick={handleContactClick}>
+                        {program.fees}
+                      </ContactLink>
                     </p>
                   </ProgramDetails>
                   <ViewDetailsButton
@@ -2775,6 +2771,16 @@ const ProgramDetails = styled.div`
   }
 `;
 
+const ContactLink = styled.span`
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    color: #0056b3;
+  }
+`;
+
 const ViewDetailsButton = styled.button`
   margin-top: 15px;
   padding: 10px 25px;
@@ -2792,6 +2798,7 @@ const ViewDetailsButton = styled.button`
 
   &:hover {
     background-color: #0056b3;
+    color: #fff;
   }
 `;
 
