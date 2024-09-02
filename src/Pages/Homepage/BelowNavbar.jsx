@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const BelowNavbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
+  const navigate = useNavigate();
 
   const handleMouseEnter = (item) => {
     setHoveredItem(item);
@@ -9,6 +11,10 @@ const BelowNavbar = () => {
 
   const handleMouseLeave = () => {
     setHoveredItem(null);
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
   };
 
   const headerStyle = {
@@ -128,7 +134,9 @@ const BelowNavbar = () => {
 
         {/* Contact Button */}
         <div style={{ marginLeft: "5px" }}>
-          <button style={contactButtonStyle}>Contact AIEC</button>
+          <button style={contactButtonStyle} onClick={handleContactClick}>
+            Contact AIEC
+          </button>
         </div>
       </div>
     </header>

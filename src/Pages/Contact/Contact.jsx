@@ -15,6 +15,7 @@ const Contact = () => {
     container: {
       backgroundColor: "#f7f8fc",
       padding: "50px",
+      paddingTop: "100px", // Add padding to push content down from the top
     },
     header: {
       textAlign: "center",
@@ -30,24 +31,17 @@ const Contact = () => {
     },
     content: {
       display: "flex",
-      justifyContent: "space-around",
-      alignItems: "flex-start",
+      justifyContent: "center", // Center the content horizontally
+      alignItems: "center", // Center the content vertically
     },
-    infoList: {
-      listStyleType: "none",
-      padding: 0,
-    },
-    infoItem: {
-      marginBottom: "20px",
-      display: "flex",
-      alignItems: "center",
-    },
-    icon: {
-      fontSize: "24px",
-      marginRight: "10px",
-    },
-    form: {
-      width: "50%",
+    box: {
+      width: "80%", // Set the width of the box
+      maxWidth: "600px", // Set a max width for the box
+      backgroundColor: "#fff",
+      padding: "30px",
+      borderRadius: "10px",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+      border: "1px solid #ddd", // Add a light border to the box
     },
     formGroup: {
       marginBottom: "15px",
@@ -105,27 +99,12 @@ const Contact = () => {
         <p style={styles.description}>
           Thank you for your interest in our services. Please fill out the form
           below or e-mail us at{" "}
-          <a href="mailto:sagar@gmail.com">sagar@gmail.com</a> and we
+          <a href="mailto:info@asian.edu.np">info@asian.edu.np</a> and we
           will get back to you promptly regarding your request.
         </p>
       </div>
       <div style={styles.content}>
-        <div>
-          <ul style={styles.infoList}>
-            <li style={styles.infoItem}>
-              <span style={styles.icon}>📞</span> +9779850000
-            </li>
-            <li style={styles.infoItem}>
-              <span style={styles.icon}>📧</span>{" "}
-              <a href="mailto:sagar@gmail.com">sagar@gmail.com</a>
-            </li>
-            <li style={styles.infoItem}>
-              <span style={styles.icon}>📍</span> 931 Kathmandu , Lolang
-              Tarkeshwor
-            </li>
-          </ul>
-        </div>
-        <div style={styles.form}>
+        <div style={styles.box}>
           <form onSubmit={handleSubmit}>
             <div style={styles.formGroup}>
               <input
@@ -140,7 +119,7 @@ const Contact = () => {
             </div>
             <div style={styles.formGroup}>
               <input
-                style={styles.input} 
+                style={styles.input}
                 type="text"
                 name="lastName"
                 placeholder="Last Name"
