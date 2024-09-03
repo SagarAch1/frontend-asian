@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { createBookApi } from "../../apis/Api"; // Adjust the path as needed
+import { createBookApi } from "../../apis/Api"; 
+import WhyChooseAiec from "../Homepage/WhyChooseAiec";
+import Footer from "../Homepage/Footer";
+import Youshouldknow from "../Homepage/YouShouldknow";
 
 const Bookclass = () => {
   const [formData, setFormData] = useState({
@@ -17,29 +20,39 @@ const Bookclass = () => {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: "grey",
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/aus.jpeg)`,
+      backgroundSize: "cover", 
+      backgroundPosition: "center", 
+      backgroundRepeat: "no-repeat", 
       padding: "50px",
       borderRadius: "15px",
+      minHeight: "10vh", 
+      marginTop: "80px", 
     },
     container: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: "#f5f5f5",
+      backgroundColor: "rgba(0, 0, 0, 0.7)", // Dark semi-transparent background
       padding: "30px",
-      borderRadius: "10px",
+      borderRadius: "20px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
     },
     heading: {
       fontSize: "2rem",
       marginBottom: "20px",
       fontWeight: "bold",
+      color: "#fff", 
     },
     form: {
       display: "flex",
       flexDirection: "column",
-      width: "300px",
+      width: "100%", 
+      maxWidth: "400px", 
+      backgroundColor: "rgba(255, 255, 255, 0.9)", 
+      padding: "20px",
+      borderRadius: "10px",
     },
     input: {
       padding: "10px",
@@ -109,7 +122,7 @@ const Bookclass = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(prevState => ({ ...prevState, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -130,84 +143,92 @@ const Bookclass = () => {
   };
 
   const handleClosePopup = () => {
-    setShowPopup(false); // Hide pop-up when OK is clicked
+    setShowPopup(false); 
   };
 
   return (
-    <div style={styles.outerBox}>
-      <div style={styles.container}>
-        <h2 style={styles.heading}>Welcome To AIEC</h2>
-        <form onSubmit={handleSubmit} style={styles.form}>
-          <input
-            style={styles.input}
-            type="text"
-            name="name"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleInputChange}
-            required
-          />
-          <input
-            style={styles.input}
-            type="email"
-            name="email"
-            placeholder="Enter your email address"
-            value={formData.email}
-            onChange={handleInputChange}
-            required
-          />
-          <select
-            style={styles.select}
-            name="languageclass"
-            value={formData.languageclass}
-            onChange={handleInputChange}
-            required
-          >
-            <option value="" disabled>
-              Select Language Class
-            </option>
-            <option value="IELTS (Rs 3000)">IELTS (Rs 3000)</option>
-            <option value="PTE (Rs 4000)">PTE (Rs 4000)</option>
-          </select>
-          <select
-            style={styles.select}
-            name="time"
-            value={formData.time}
-            onChange={handleInputChange}
-            required
-          >
-            <option value="" disabled>
-              Select Class Time
-            </option>
-            <option value="8:00 AM - 9:00 AM">8:00 AM - 9:00 AM</option>
-            <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
-          </select>
-          <textarea
-            style={styles.textarea}
-            name="message"
-            placeholder="Your message here..."
-            value={formData.message}
-            onChange={handleInputChange}
-          />
-          <button style={{ ...styles.button, marginTop: "20px" }} type="submit">
-            Submit →
-          </button>
-        </form>
-      </div>
-
-      {/* Pop-up */}
-      {showPopup && (
-        <div style={styles.popupOverlay}>
-          <div style={styles.popup}>
-            <h3>Booking Successful</h3>
-            <p>Your class has been booked successfully!</p>
-            <button style={styles.popupButton} onClick={handleClosePopup}>
-              OK
+    <>
+      <div style={styles.outerBox}>
+        <div style={styles.container}>
+          <h2 style={styles.heading}>Welcome To AIEC</h2>
+          <form onSubmit={handleSubmit} style={styles.form}>
+            <input
+              style={styles.input}
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              value={formData.name}
+              onChange={handleInputChange}
+              required
+            />
+            <input
+              style={styles.input}
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              value={formData.email}
+              onChange={handleInputChange}
+              required
+            />
+            <select
+              style={styles.select}
+              name="languageclass"
+              value={formData.languageclass}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="" disabled>
+                Select Language Class
+              </option>
+              <option value="IELTS (Rs 3000)">IELTS (Rs 3000)</option>
+              <option value="PTE (Rs 4000)">PTE (Rs 4000)</option>
+            </select>
+            <select
+              style={styles.select}
+              name="time"
+              value={formData.time}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="" disabled>
+                Select Class Time
+              </option>
+              <option value="8:00 AM - 9:00 AM">8:00 AM - 9:00 AM</option>
+              <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+            </select>
+            <textarea
+              style={styles.textarea}
+              name="message"
+              placeholder="Your message here..."
+              value={formData.message}
+              onChange={handleInputChange}
+            />
+            <button
+              style={{ ...styles.button, marginTop: "20px" }}
+              type="submit"
+            >
+              Submit →
             </button>
-          </div>
+          </form>
         </div>
-      )}
-    </div>
+
+        {/* Pop-up */}
+        {showPopup && (
+          <div style={styles.popupOverlay}>
+            <div style={styles.popup}>
+              <h3>Booking Successful</h3>
+              <p>Your class has been booked successfully!</p>
+              <button style={styles.popupButton} onClick={handleClosePopup}>
+                OK
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+      <WhyChooseAiec />
+      <Youshouldknow />
+      <Footer />
+    </>
   );
 };
 

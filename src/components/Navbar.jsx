@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { Dropdown } from 'react-bootstrap';  // Import Dropdown from react-bootstrap if using react-bootstrap
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -53,10 +54,10 @@ const Navbar = () => {
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
-              to="/find-us"
+              to="aiecglobal"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >
-              Find us
+              About us
             </Link>
           </li>
           <li className="nav-item mx-3">
@@ -81,53 +82,30 @@ const Navbar = () => {
           </div>
 
           {user ? (
-            <div className="dropdown mx-3">
-              <button
-                className="btn btn-secondary dropdown-toggle d-flex align-items-center"
-                type="button"
-                id="dropdownMenuButton"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+            <Dropdown className="mx-3">
+              <Dropdown.Toggle
+                variant="secondary"
+                id="dropdown-basic"
                 style={{ fontWeight: "bold", fontSize: "18px" }}
               >
                 <i className="fas fa-user me-2"></i> Welcome, {user.fullName}
-              </button>
-              <ul
-                className="dropdown-menu"
-                aria-labelledby="dropdownMenuButton"
-              >
-                <li>
-                  <Link className="dropdown-item" to="/profile">
-                    Profile
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/contact">
-                    Report
-                  </Link>
-                </li>
-                <li>
-                  <Link className="dropdown-item" to="/userorder">
-                    My Order
-                  </Link>
-                </li>
-                <li>
-                  <button className="dropdown-item" onClick={handleLogout}>
-                    Logout
-                  </button>
-                </li>
-              </ul>
-            </div>
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item as={Link} to="/profile">Profile</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/contact">Report</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/userorder">My Order</Dropdown.Item>
+                <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           ) : (
-            <>
-              <Link
-                to="/login"
-                className="btn btn-primary mx-3"
-                style={{ fontWeight: "bold", fontSize: "18px" }}
-              >
-                Sign in
-              </Link>
-            </>
+            <Link
+              to="/login"
+              className="btn btn-primary mx-3"
+              style={{ fontWeight: "bold", fontSize: "18px" }}
+            >
+              Sign in
+            </Link>
           )}
         </div>
       </div>

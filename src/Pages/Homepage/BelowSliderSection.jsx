@@ -105,7 +105,7 @@ const BelowSliderSection = ({ activeSection }) => {
     "Canada",
     "Australia",
     "Germany",
-    "France",
+    "New Zeland",
   ]);
   const [isDestinationDropdownOpen, setIsDestinationDropdownOpen] = useState(false);
 
@@ -204,7 +204,7 @@ const BelowSliderSection = ({ activeSection }) => {
         "Canada",
         "Australia",
         "Germany",
-        "France",
+        "New Zeland",
       ].filter((destination) =>
         destination.toLowerCase().includes(value.toLowerCase())
       )
@@ -225,9 +225,10 @@ const BelowSliderSection = ({ activeSection }) => {
       if (destinationInput.toLowerCase() === "australia") {
         destinationRoute = "/courseaustralia";
       } else if (destinationInput.toLowerCase() === "usa") {
-        destinationRoute = "/courseusa";
+        destinationRoute = "/usa";
+      } else if (destinationInput.toLowerCase() === "new zeland" || destinationInput.toLowerCase() === "new zealand") {
+        destinationRoute = "/coursenewzeland";
       }
-  
       // Only navigate if a valid route is found
       if (destinationRoute) {
         navigate(destinationRoute, {

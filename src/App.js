@@ -9,6 +9,8 @@ import About from "./Pages/About/About";
 
 import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import CourseAustralia from "./Pages/Courses/Australia/b/master"
+import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland"
+import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
 
@@ -69,6 +71,10 @@ function App() {
         <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
 
         <Route path="/courseaustralia" element={<CourseAustralia />} />
+
+        <Route path="/coursenewzeland" element={<CourseNewzeland />} />
+
+        <Route path="/aiecglobal" element={<AIECGlobal />} />
 
         <Route path="/formpage" element={<FormPage />} />
 
