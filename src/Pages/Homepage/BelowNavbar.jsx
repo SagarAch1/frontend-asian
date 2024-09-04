@@ -86,8 +86,8 @@ const BelowNavbar = () => {
               content: ["Undergraduate", "Postgraduate", "Vocational"],
             },
             {
-              title: "IELTS",
-              content: ["IELTS Preparation", "IELTS Test Centers", "IELTS Tips"],
+              title: "Test Preparation",
+              content: ["IELTS ", "IELTS Test Centers", "IELTS Tips"],
             },
             {
               title: "Arrival Services",

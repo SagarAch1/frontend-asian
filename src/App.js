@@ -10,6 +10,7 @@ import About from "./Pages/About/About";
 import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import CourseAustralia from "./Pages/Courses/Australia/b/master"
 import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland"
+import IELTSPreparationPage from "./Pages/TestPreparation/Ielts";
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
@@ -72,6 +73,7 @@ function App() {
 
         <Route path="/courseaustralia" element={<CourseAustralia />} />
 
+        <Route path="/ielts" element={<IELTSPreparationPage />} />
         <Route path="/coursenewzeland" element={<CourseNewzeland />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
