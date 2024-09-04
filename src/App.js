@@ -11,6 +11,11 @@ import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import CourseAustralia from "./Pages/Courses/Australia/b/master"
 import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland"
 import IELTSPreparationPage from "./Pages/TestPreparation/Ielts";
+import PtePreparationPage from "./Pages/TestPreparation/Pte";
+import ToeflPreparationPage from "./Pages/TestPreparation/Toefl";
+import SatPreparationPage from "./Pages/TestPreparation/Sat";
+import DuolingoPreparationPage from "./Pages/TestPreparation/Duolingo";
+
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
@@ -74,6 +79,12 @@ function App() {
         <Route path="/courseaustralia" element={<CourseAustralia />} />
 
         <Route path="/ielts" element={<IELTSPreparationPage />} />
+        <Route path="/pte" element={<PtePreparationPage />} />
+        <Route path="/toefl" element={<ToeflPreparationPage />} />
+        <Route path="/sat" element={<SatPreparationPage />} />
+        <Route path="/duolingo" element={<DuolingoPreparationPage />} />
+        
+
         <Route path="/coursenewzeland" element={<CourseNewzeland />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />

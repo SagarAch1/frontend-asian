@@ -17,6 +17,10 @@ const BelowNavbar = () => {
     navigate("/contact");
   };
 
+  const handleNavigation = (path) => {
+    navigate(path);
+  };
+
   const headerStyle = {
     backgroundColor: "white",
     padding: "20px 0",
@@ -87,7 +91,7 @@ const BelowNavbar = () => {
             },
             {
               title: "Test Preparation",
-              content: ["IELTS ", "IELTS Test Centers", "IELTS Tips"],
+              content: ["IELTS ", "PTE", "TOEFL", "SAT","DUOLINGO"],
             },
             {
               title: "Arrival Services",
@@ -122,7 +126,24 @@ const BelowNavbar = () => {
                       fontWeight: index === 1 ? "lighter" : "normal",
                       textDecoration: index === 2 ? "underline" : "none",
                     }}
-                    onClick={() => alert(`${contentItem} clicked`)}
+                    onClick={() =>
+                      contentItem === "IELTS "
+                        ? handleNavigation("/ielts")
+                        : contentItem === "PTE"
+                        ? handleNavigation("/pte")
+                        : contentItem === "TOEFL"
+                        ? handleNavigation("/toefl")
+                        : contentItem === "SAT"
+                        ? handleNavigation("/sat")
+                        : contentItem === "DUOLINGO"
+                        ? handleNavigation("/duolingo")
+
+                        : alert(`${contentItem} clicked`)
+                    }
+
+                   
+
+                    
                   >
                     {contentItem}
                   </button>
