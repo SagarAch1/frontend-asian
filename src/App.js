@@ -16,6 +16,7 @@ import ToeflPreparationPage from "./Pages/TestPreparation/Toefl";
 import SatPreparationPage from "./Pages/TestPreparation/Sat";
 import DuolingoPreparationPage from "./Pages/TestPreparation/Duolingo";
 import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
+import WhyStudyAbroad from "./Pages/Newsandarticles/Whystudyabroad";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -89,6 +90,8 @@ function App() {
         
 
         <Route path="/coursenewzeland" element={<CourseNewzeland />} />
+
+        <Route path="/whystudyabroad" element={<WhyStudyAbroad />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 
