@@ -34,12 +34,12 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item mx-3">
-            <Link
+          <Link
               className="nav-link text-white"
-              to="/"
+              to="/newsandarticles"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >
-              News and articles
+              News and Articles
             </Link>
           </li>
           <li className="nav-item mx-3">

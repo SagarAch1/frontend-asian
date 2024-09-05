@@ -15,6 +15,7 @@ import PtePreparationPage from "./Pages/TestPreparation/Pte";
 import ToeflPreparationPage from "./Pages/TestPreparation/Toefl";
 import SatPreparationPage from "./Pages/TestPreparation/Sat";
 import DuolingoPreparationPage from "./Pages/TestPreparation/Duolingo";
+import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -83,6 +84,8 @@ function App() {
         <Route path="/toefl" element={<ToeflPreparationPage />} />
         <Route path="/sat" element={<SatPreparationPage />} />
         <Route path="/duolingo" element={<DuolingoPreparationPage />} />
+
+        <Route path="/newsandarticles" element={<Newsandarticles />} />
         
 
         <Route path="/coursenewzeland" element={<CourseNewzeland />} />
