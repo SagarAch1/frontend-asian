@@ -259,6 +259,62 @@ const Preparetodepart = () => {
           </a>
         </div>
       </div>
+      {/* Second Additional Section */}
+      <div style={styles.additionalSection}>
+        <h2 style={styles.additionalTitle}>Frequently asked questions</h2>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
+          <p>
+            Studying abroad is the experience of living overseas in order to
+            acquire a foreign education. It can take many forms – from a few
+            weeks in a short course, to a four years’ program of full-time
+            study. 
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            How is it different from studying locally?
+          </h3>
+          <p>
+            While studying locally is the easier option, in the longer run
+            studying abroad offers unique opportunities and experiences that
+            cannot be found at home. For more information, read this article
+            about whether to study abroad or locally. 
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            What are the main benefits of studying overseas?
+          </h3>
+          <p>
+            Studying abroad offers a wide range of benefits, from inspiring a
+            global mindset to helping you learn new skills and enhancing your
+            career prospects. To read all about it, check our article about the
+            benefits of studying abroad.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>What's the experience like?</h3>
+          <p>
+            Studying abroad is a transformative experience of personal growth
+            that helps you broaden your perspective, develop independence,
+            self-confidence and a greater understanding and appreciation of
+            different cultures. To see what it’s like, meet some students who
+            have made the move to study abroad with AIEC. 
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
+          <p>
+            Studying abroad is not as expensive as you may think! Use our cost
+            of living calculator to estimate how much you will need to cover all
+            your expenses as an international student. We connect you to over
+            5,100 scholarships across our partner university network. Reach out
+            to us to explore your options.
+          </p>
+         
+        </div>
+      </div>
       <FormPage />
       <Footer />
     </div>
