@@ -98,6 +98,50 @@ const StudyInAustralia = () => {
           <li>Social Sciences</li>
           <li>Medicine</li>
         </ul>
+        <h2 style={styles.sectionTitle}>Top Universities to Study in Australia</h2>
+        <table style={styles.table}>
+          <thead>
+            <tr>
+              <th style={styles.tableHeader}>S.No.</th>
+              <th style={styles.tableHeader}>Institution</th>
+              <th style={styles.tableHeader}>QS Ranking 2024 (Globally)</th>
+              <th style={styles.tableHeader}>QS Ranking 2023 (Globally)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style={styles.tableCell}>1</td>
+              <td style={styles.tableCell}>The Australian National University (ANU)</td>
+              <td style={styles.tableCell}>34</td>
+              <td style={styles.tableCell}>30</td>
+            </tr>
+            <tr>
+              <td style={styles.tableCell}>2</td>
+              <td style={styles.tableCell}>AUD 300/week (varies as per course length)</td>
+              <td style={styles.tableCell}>34</td>
+              <td style={styles.tableCell}>30</td>
+            </tr>
+            <tr>
+              <td style={styles.tableCell}>3</td>
+              <td style={styles.tableCell}>AUD 4,000 to 22,000 annually</td>
+              <td style={styles.tableCell}>34</td>
+              <td style={styles.tableCell}>30</td>
+            </tr>
+            <tr>
+              <td style={styles.tableCell}>4</td>
+              <td style={styles.tableCell}>AUD 20,000 to 45,000 annually</td>
+              <td style={styles.tableCell}>34</td>
+              <td style={styles.tableCell}>30</td>
+            </tr>
+            <tr>
+              <td style={styles.tableCell}>5</td>
+              <td style={styles.tableCell}>AUD 22,000 to 50,000 annually</td>
+              <td style={styles.tableCell}>34</td>
+              <td style={styles.tableCell}>30</td>
+            </tr>
+            
+          </tbody>
+        </table>
       </div>
     </div>
   );
