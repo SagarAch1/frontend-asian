@@ -162,7 +162,7 @@ const WhereAndWhatToStudy = () => {
         <span onClick={() => navigate("/preparetodepart")}>
           Prepare to depart
         </span>
-        <span onClick={() => navigate("/arrive-and-thrive")}>
+        <span onClick={() => navigate("/arriveandthrive")}>
           Arrive and thrive
         </span>
       </nav>

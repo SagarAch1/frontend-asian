@@ -21,6 +21,7 @@ import WhereAndWhatToStudy from "./Pages/Newsandarticles/Whereandwhattostudy";
 import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
 import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
 import Preparetodepart from "./Pages/Newsandarticles/Preparetodepart";
+import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -104,6 +105,8 @@ function App() {
         <Route path="/afterreceivingoffer" element={<Afterreceivingoffer />} />
 
         <Route path="/preparetodepart" element={<Preparetodepart />} />
+
+        <Route path="/arriveandthrive" element={<Arriveandthrive />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 

@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Preparetodepart = () => {
+const Arriveandthrive = () => {
   const videoRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
 
@@ -140,9 +140,9 @@ const Preparetodepart = () => {
     <div style={styles.page}>
       {/* Header Section */}
       <div style={styles.headerSection}>
-        <h1 style={styles.headerTitle}>Preparing to depart</h1>
+        <h1 style={styles.headerTitle}>Arrive and Thrive</h1>
         <p style={styles.subheader}>
-          We're here to help set you up for your study abroad adventure.
+          Learn how to make the most of your study abroad experience.
         </p>
       </div>
 
@@ -169,16 +169,20 @@ const Preparetodepart = () => {
       {/* Main Content Section */}
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
-          <h2 style={styles.h2}>Let's set you up for the big move</h2>
+          <h2 style={styles.h2}>Supporting you all the way through</h2>
           <p>
-            The countdown has begun and you’re all ready to fly off! As
-            thrilling as it is, we know it’s equally nerve-wracking to be
-            leaving the comfort of your home for a foreign land. We’re here to
-            make the transition smooth and easy for you. From packing tips,
-            arrival support to helping you set up, we’re here to help. We’ll
-            also assist you with opening bank accounts, finalising your
-            accommodation and other essential services so you can focus on your
-            studies and enjoy this incredible new chapter of your life.
+            Welcome to an exciting new journey of studying abroad. Get ready for
+            a fascinating adventure where you’ll meet new people, forge new
+            friendships, learn new skills and create unforgettable memories.
+            Adjusting in a foreign land can take time at first, but once you
+            settle in, it’s sure to be a rewarding experience. We are here to
+            guide and counsel you every step of the way, from accommodation
+            changes to financial planning and migration advice. Your wellbeing
+            is our priority and we’ve also partnered with mental health
+            professionals to provide you with any support you might need along
+            the away. This is your time to shine and create a remarkable success
+            story, filled with achievements and experiences to cherish for a
+            lifetime.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -205,35 +209,28 @@ const Preparetodepart = () => {
 
       {/* Additional Section */}
       <div style={styles.additionalSection}>
-        <h2 style={styles.additionalTitle}>
-          Before you depart
-        </h2>
+        <h2 style={styles.additionalTitle}>Your study abroad experience</h2>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>1. Get pre-departure support</h3>
+          <h3 style={styles.listItemTitle}>1. Settle into your new life</h3>
           <p>
-          Our counsellors will conduct comprehensive pre-departure briefing, ensuring you feel confident for your journey abroad.
+          Continue making the most of your study abroad experience and thrive in your journey. 
           </p>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            2. Get to know destination
-          </h3>
+          <h3 style={styles.listItemTitle}>2. Get work experience</h3>
           <p>
-          Get a sense of what to expect at your destination before you arrive.
+          Learn how you can further your career through internships, planning, working part-time or finding a mentor while you study.
           </p>
           <a href="#" style={styles.listItemLink}>
-            Explore amenities | Find local food |Find groceries 
-            
+          Working part-time  
           </a>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>3. Know what to pack</h3>
-          <p>
-          Before you pull out your suitcase, review
-          
-          </p>
+          <p>Before you pull out your suitcase, review</p>
           <a href="#" style={styles.listItemLink}>
-          this travel checklist to ensure you have everything you need whilst overseas.
+            this travel checklist to ensure you have everything you need whilst
+            overseas.
           </a>
         </div>
         <div style={styles.listItem}>
@@ -241,21 +238,18 @@ const Preparetodepart = () => {
             4. Access our Student Essential Services
           </h3>
           <p>
-          Whether it's on-arrival support, accommodation assistance or cultural integration
+            Whether it's on-arrival support, accommodation assistance or
+            cultural integration
           </p>
           <a href="#" style={styles.listItemLink}>
-          we're here to help
+            we're here to help
           </a>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            4. Make a study plan
-          </h3>
-          <p>
-          Make sure you have a plan to achieve your
-          </p>
+          <h3 style={styles.listItemTitle}>4. Make a study plan</h3>
+          <p>Make sure you have a plan to achieve your</p>
           <a href="#" style={styles.listItemLink}>
-          study goals
+            study goals
           </a>
         </div>
       </div>
@@ -265,4 +259,4 @@ const Preparetodepart = () => {
   );
 };
 
-export default Preparetodepart;
+export default Arriveandthrive;
