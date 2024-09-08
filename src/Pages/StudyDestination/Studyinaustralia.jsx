@@ -4,8 +4,8 @@ const StudyInAustralia = () => {
   return (
     <div style={styles.container}>
       <header style={styles.headerSection}>
-        {/* Adjust the marginTop value to bring the image further down */}
-        <div style={{ ...styles.headerImage, backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`, marginTop: '50px' }}></div>
+        {/* Adjust the marginTop value to bring the image further up */}
+        <div style={{ ...styles.headerImage, backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`, marginTop: '80px' }}></div>
         <div style={styles.headerContent}>
           <h1 style={styles.headerTitle}>Study in Australia from Nepal – Top Universities, Courses, Cost & Scholarships</h1>
           <button style={styles.contactBtn}>Contact Us</button>
