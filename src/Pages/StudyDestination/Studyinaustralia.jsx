@@ -117,27 +117,28 @@ const StudyInAustralia = () => {
             </tr>
             <tr>
               <td style={styles.tableCell}>2</td>
-              <td style={styles.tableCell}>AUD 300/week (varies as per course length)</td>
-              <td style={styles.tableCell}>34</td>
-              <td style={styles.tableCell}>30</td>
+              <td style={styles.tableCell}>The University of Sydney</td>
+              <td style={styles.tableCell}>19</td>
+              <td style={styles.tableCell}>33</td>
             </tr>
             <tr>
               <td style={styles.tableCell}>3</td>
-              <td style={styles.tableCell}>AUD 4,000 to 22,000 annually</td>
-              <td style={styles.tableCell}>34</td>
-              <td style={styles.tableCell}>30</td>
+              <td style={styles.tableCell}>The University of Melbourne</td>
+              <td style={styles.tableCell}>14</td>
+              <td style={styles.tableCell}>41</td>
             </tr>
             <tr>
               <td style={styles.tableCell}>4</td>
-              <td style={styles.tableCell}>AUD 20,000 to 45,000 annually</td>
-              <td style={styles.tableCell}>34</td>
-              <td style={styles.tableCell}>30</td>
+              <td style={styles.tableCell}>	
+              The University of South Wales (UNSW Sydney)</td>
+              <td style={styles.tableCell}>19</td>
+              <td style={styles.tableCell}>45</td>
             </tr>
             <tr>
               <td style={styles.tableCell}>5</td>
-              <td style={styles.tableCell}>AUD 22,000 to 50,000 annually</td>
-              <td style={styles.tableCell}>34</td>
-              <td style={styles.tableCell}>30</td>
+              <td style={styles.tableCell}>The University of Queensland</td>
+              <td style={styles.tableCell}>43</td>
+              <td style={styles.tableCell}>50</td>
             </tr>
             
           </tbody>
