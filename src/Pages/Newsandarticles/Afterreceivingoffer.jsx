@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const WhereAndWhatToStudy = () => {
+const Afterreceivingoffer = () => {
   const videoRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
 
@@ -140,10 +140,10 @@ const WhereAndWhatToStudy = () => {
     <div style={styles.page}>
       {/* Header Section */}
       <div style={styles.headerSection}>
-        <h1 style={styles.headerTitle}>Where and What to Study</h1>
+        <h1 style={styles.headerTitle}>After receiving an offer</h1>
         <p style={styles.subheader}>
-          We're here to help you navigate through your study abroad options with
-          ease. From choosing a destination through to course advice
+          Here are the steps to take from accepting an offer through to planning
+          for your trip to make your study abroad dream a reality.
         </p>
       </div>
 
@@ -170,21 +170,17 @@ const WhereAndWhatToStudy = () => {
       {/* Main Content Section */}
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
-          <h2 style={styles.h2}>Pick your dream destination and course</h2>
+          <h2 style={styles.h2}>It's decision time</h2>
           <p>
-            You've taken a significant step by deciding to study overseas. Now
-            it’s time to choose where and what to study. Navigating through
-            hundreds of course and university options can be overwhelming, plus
-            you’ll have tons of other questions on your mind. With IDP, you’re
-            in good hands. Simply create an account, complete your profile, and
-            we’ll provide you with personalised course recommendations that
-            align perfectly with your aspirations. If your shortlisted course
-            has an IDP FastLane tag, you can check if you’re likely to be
-            accepted even before applying – so give it a go! We also offer a
-            wide array of tools and resources – from city, university, and
-            subject guides to cost calculators, scholarship finders and tons of
-            insightful articles – to make your decision on where and what to
-            study abroad smooth and stress-free.
+            Congratulations! An approved university application means you’re one
+            step closer to achieving your dream to study abroad. It’s an
+            exciting time but it’s natural to feel nervous. IDP is here to
+            support you at every step of your journey. You can speak to one of
+            our experienced counsellors to guide you through the process after
+            you receive an offer. We’ll also help you with student visas, money
+            transfer, health cover and accommodation before your move. So take a
+            deep breath, and make a confident decision with the reassurance that
+            we have your back every step of the way.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -212,63 +208,38 @@ const WhereAndWhatToStudy = () => {
       {/* Additional Section */}
       <div style={styles.additionalSection}>
         <h2 style={styles.additionalTitle}>
-          Discover how studying abroad can help you
+        Next steps after receiving an offer
         </h2>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>1. Choose a destination</h3>
+          <h3 style={styles.listItemTitle}>1. Track your application</h3>
           <p>
-            You can choose from six amazing countries to study abroad in. Click
-            the links below to learn more about each destination including what
-            it’s like to live there and post education career and residency
-            options.
+          Stay informed every step of the way through our ‘Application Tracker’ while you wait for the outcome.
           </p>
-          <a href="#" style={styles.listItemLink}>
-            UK | Australia | USA | Canada | New Zeland | Ireland | Korea |
-            Germany
-          </a>
+          
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>2. Explore Cost</h3>
+          <h3 style={styles.listItemTitle}>2. Choosing between multiple offers</h3>
           <p>
-            Find out how much things cost in your chosen destination, and what
-            options you have after your study by using our Cost Calculator.
+          Got more than one offer? It’s an exciting yet challenging scenario that requires thoughtful deliberation.
           </p>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>3. Pick a Study Level</h3>
+          <h3 style={styles.listItemTitle}>3. Pay admission and tution fees</h3>
           <p>
-            Undergraduate, graduate, PhD or pathway courses, learn which is
-            appropriate for you and what is required before you start studying
-            across each level.
+          You nailed it! Need help transferring funds? We’ve got you covered every step of the way.
           </p>
-          <a href="#" style={styles.listItemLink}>
-            Study bachelor's | Study master's |Study PhD | Check your
-            eligibility
-          </a>
+          
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>4. Find a Course</h3>
+          <h3 style={styles.listItemTitle}>4. Access our Student Essential Services</h3>
           <p>
-            You can explore course advice or jump straight into browsing
-            available courses online. If you can't decide on which course to
-            pursue, let us guide you through the process with a short 4 question
-            quiz.
+          Plan your upcoming move. Find accommodation, apply for Health Insurance and more.
           </p>
           <a href="#" style={styles.listItemLink}>
-            Course advice | Subject guides |Find a Course
-           
+            Student visa | Money transfer |Student banking |Accommodation  |Health insurance 
           </a>
         </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>5. Choose a University</h3>
-          <p>
-          Browse institutions across 6 different country destinations to see which align with your academic goals and aspirations.
-          </p>
-          <a href="#" style={styles.listItemLink}>
-            Check uni ranking | Find a uni
-           
-          </a>
-        </div>
+        
       </div>
       <FormPage />
       <Footer />
@@ -276,4 +247,4 @@ const WhereAndWhatToStudy = () => {
   );
 };
 
-export default WhereAndWhatToStudy;
+export default Afterreceivingoffer;

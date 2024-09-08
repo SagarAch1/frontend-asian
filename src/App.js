@@ -19,6 +19,7 @@ import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
 import WhyStudyAbroad from "./Pages/Newsandarticles/Whystudyabroad";
 import WhereAndWhatToStudy from "./Pages/Newsandarticles/Whereandwhattostudy";
 import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
+import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -98,6 +99,8 @@ function App() {
         <Route path="/whereandwhattostudy" element={<WhereAndWhatToStudy />} />
 
         <Route path="/howdoiapply" element={<Howdoiapply />} />
+
+        <Route path="/afterreceivingoffer" element={<Afterreceivingoffer />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 

@@ -146,8 +146,8 @@ const WhyStudyAbroad = () => {
       <nav style={styles.navbar}>
         <span onClick={() => navigate('/whystudyabroad')}>Why study abroad?</span>
         <span onClick={() => navigate('/whereandwhattostudy')}>Where and what to study?</span>
-        <span onClick={() => navigate('/how-do-i-apply')}>How do I apply?</span>
-        <span onClick={() => navigate('/after-receiving-offer')}>After receiving an offer</span>
+        <span onClick={() => navigate('/howdoiapply')}>How do I apply?</span>
+        <span onClick={() => navigate('/afterreceivingoffer')}>After receiving an offer</span>
         <span onClick={() => navigate('/prepare-to-depart')}>Prepare to depart</span>
         <span onClick={() => navigate('/arrive-and-thrive')}>Arrive and thrive</span>
       </nav>

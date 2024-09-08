@@ -155,7 +155,7 @@ const Howdoiapply = () => {
           Where and what to study?
         </span>
         <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
-        <span onClick={() => navigate("/after-receiving-offer")}>
+        <span onClick={() => navigate("/afterreceivingoffer")}>
           After receiving an offer
         </span>
         <span onClick={() => navigate("/prepare-to-depart")}>
