@@ -46,7 +46,7 @@ const Newsandarticles = () => {
       title: "Don’t Overdo It: How To Ace For Your IELTS Speaking Test",
       date: "2024-06-27",
       readTime: "5 min read",
-      imageUrl: `${process.env.PUBLIC_URL}/assets/images/a6.webp`,
+      imageUrl: `${process.env.PUBLIC_URL}/assets/images/whhh.jpeg`,
       category: "IELTS",
     },
   ]);

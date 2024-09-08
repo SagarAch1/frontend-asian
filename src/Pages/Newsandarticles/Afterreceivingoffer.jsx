@@ -21,7 +21,7 @@ const Afterreceivingoffer = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/is.png)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/app.jpeg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundAttachment: "fixed", // Keep background fixed during scroll

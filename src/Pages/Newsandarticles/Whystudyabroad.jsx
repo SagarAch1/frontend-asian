@@ -21,7 +21,7 @@ const WhyStudyAbroad = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/a2.webp)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/offer.jpeg)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       padding: '100px 25px',
