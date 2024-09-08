@@ -1,170 +1,162 @@
 import React from 'react';
 
 const StudyInAustralia = () => {
-  const headerStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`,
-    // backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    height: '300px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    // color: '#fff',
-    textAlign: 'center',
-    fontWeight: 'bold',
-  };
-
-  const headerContentStyle = {
-    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    padding: '20px',
-    borderRadius: '10px',
-  };
-
-  const sectionStyle = {
-    margin: '50px auto',
-    width: '80%',
-  };
-
-  const tableStyle = {
-    width: '100%',
-    borderCollapse: 'collapse',
-    marginTop: '20px',
-  };
-
-  const tableHeaderStyle = {
-    backgroundColor: '#f2f2f2',
-    fontWeight: 'bold',
-  };
-
-  const tableCellStyle = {
-    border: '1px solid #ddd',
-    padding: '8px',
-    textAlign: 'left',
-  };
-
-  const buttonStyle = {
-    backgroundColor: '#ff5722',
-    color: '#fff',
-    padding: '10px 20px',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-    marginTop: '10px',
-  };
-
   return (
-    <div>
-      <header style={headerStyle}>
-        <div style={headerContentStyle}>
-          <h1>Study in Australia from Nepal – Top Universities, Courses, Cost & Scholarships</h1>
-          <button style={buttonStyle}>Contact Us</button>
+    <div style={styles.container}>
+      <header style={styles.headerSection}>
+        {/* Adjust the marginTop value to bring the image further down */}
+        <div style={{ ...styles.headerImage, backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`, marginTop: '50px' }}></div>
+        <div style={styles.headerContent}>
+          <h1 style={styles.headerTitle}>Study in Australia from Nepal – Top Universities, Courses, Cost & Scholarships</h1>
+          <button style={styles.contactBtn}>Contact Us</button>
         </div>
       </header>
-
-      <section style={sectionStyle}>
-        <h2>There are abundant reasons why students choose Australia, which one is yours?</h2>
-        <p>
-          If you are looking for better job opportunities, quality education, degrees that pack more power, or a better lifestyle, Australia has it all. 
-          Whether you are looking for undergraduate, postgraduate, or English language courses, Australia offers a diverse range of opportunities for Nepalese students.
+      <div style={styles.contentSection}>
+        <h2 style={styles.sectionTitle}>There are abundant reasons why students choose Australia, which one is yours?</h2>
+        <p style={styles.paragraph}>
+          If you’re looking for better opportunities, Australia is a world-class place to reach your career. Australia offers a range of opportunities. Whatever you choose, studying in Australia will equip you with skills and English language proficiency, which will benefit you for a lifetime in terms of career and future earnings.
         </p>
 
-        <h3>Student visa requirements for Nepalese students to study in Australia</h3>
-        <p>
-          You must obtain a student visa to study in Australia. You will need to apply for your student visa after you receive an offer of a place at a university.
-          Requirements include a Confirmation of Enrollment (CoE), Genuine Temporary Entrant (GTE) statement, proof of sufficient funds, and English language proficiency.
+        <h2 style={styles.sectionTitle}>Student visa requirements for Nepalese students to study in Australia</h2>
+        <p style={styles.paragraph}>
+          The visa you will need depends on your age, the type of study you want to undertake, and how long you want to stay in Australia. As an international student, you must apply for a student visa (subclass 500). Once your visa is granted, it will be valid for the duration of your study program, as well as a bit longer to give you time to finish your study. As of July 2016, the only student visa available for study in Australia is the Subclass 500 student visa, which is valid for up to five years and costs AUD 620. Before applying, ensure you have enough funds to cover your tuition and living expenses in Australia, and get your Overseas Student Health Cover (OSHC).
         </p>
 
-        <h3>Cost of studying for Nepalese students in Australia</h3>
-        <table style={tableStyle}>
-          <thead style={tableHeaderStyle}>
+        <h2 style={styles.sectionTitle}>Cost of studying for Nepalese students in Australia</h2>
+        <table style={styles.table}>
+          <thead>
             <tr>
-              <th style={tableCellStyle}>Study Program</th>
-              <th style={tableCellStyle}>Average fees in AUD*</th>
+              <th style={styles.tableHeader}>Study Program</th>
+              <th style={styles.tableHeader}>Average fees in AUD*</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style={tableCellStyle}>School</td>
-              <td style={tableCellStyle}>AUD 7,800 to AUD 30,000 annually</td>
+              <td style={styles.tableCell}>School</td>
+              <td style={styles.tableCell}>AUD 7,800 to 30,000 annually</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>English Language Studies</td>
-              <td style={tableCellStyle}>AUD 300 to AUD 400 weekly (varies as per course length)</td>
+              <td style={styles.tableCell}>English language studies</td>
+              <td style={styles.tableCell}>AUD 300/week (varies as per course length)</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>Vocational Education and Training (Certificates I to IV, Diplomas and Advanced Diplomas)</td>
-              <td style={tableCellStyle}>AUD 4,000 to AUD 22,000 annually</td>
+              <td style={styles.tableCell}>Vocational Education and Training (Certificates I to IV, Diplomas and Advanced Diplomas)</td>
+              <td style={styles.tableCell}>AUD 4,000 to 22,000 annually</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>Undergraduate Bachelor Degree</td>
-              <td style={tableCellStyle}>AUD 15,000 to AUD 33,000 annually</td>
+              <td style={styles.tableCell}>Undergraduate Bachelor Degree</td>
+              <td style={styles.tableCell}>AUD 20,000 to 45,000 annually</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>Postgraduate Masters Degree</td>
-              <td style={tableCellStyle}>AUD 20,000 to AUD 37,000 annually</td>
+              <td style={styles.tableCell}>Postgraduate Masters Degree</td>
+              <td style={styles.tableCell}>AUD 22,000 to 50,000 annually</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>Doctoral Degree</td>
-              <td style={tableCellStyle}>AUD 14,000 to AUD 37,000 annually</td>
+              <td style={styles.tableCell}>Doctoral Degree</td>
+              <td style={styles.tableCell}>AUD 18,000 to 42,000 annually</td>
             </tr>
           </tbody>
         </table>
 
-        <h3>Scholarships to study for Nepalese students in Australia</h3>
-        <table style={tableStyle}>
-          <thead style={tableHeaderStyle}>
+        <h2 style={styles.sectionTitle}>Scholarships to study for Nepalese students in Australia</h2>
+        <table style={styles.table}>
+          <thead>
             <tr>
-              <th style={tableCellStyle}>Scholarship</th>
-              <th style={tableCellStyle}>Description</th>
+              <th style={styles.tableHeader}>Scholarship</th>
+              <th style={styles.tableHeader}>Description</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style={tableCellStyle}>Australia Awards</td>
-              <td style={tableCellStyle}>
-                Australian Government scholarships providing opportunities for people from developing countries, particularly in the Indo-Pacific region, to undertake full-time undergraduate or postgraduate study.
-              </td>
+              <td style={styles.tableCell}>Australia Awards</td>
+              <td style={styles.tableCell}>International scholarships funded by the Department of Education for Australian citizens.</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>Destination Australia</td>
-              <td style={tableCellStyle}>
-                Australian Government program offering scholarships to support international students to study in regional Australia.
-              </td>
+              <td style={styles.tableCell}>Australian APEC Women in Research Fellowship</td>
+              <td style={styles.tableCell}>Supports women researchers to pursue postgraduate studies in Australia.</td>
             </tr>
             <tr>
-              <td style={tableCellStyle}>Australian Government Research Training Program (RTP)</td>
-              <td style={tableCellStyle}>
-                Provides block grants to support both domestic and international students undertaking Research Doctorate and Research Masters degrees.
-              </td>
+              <td style={styles.tableCell}>Australian Government Research Training Program</td>
+              <td style={styles.tableCell}>Provides funding for higher degree by research (HDR) students and supporting research endeavors.</td>
             </tr>
           </tbody>
         </table>
 
-        <h3>Intakes in Australia for Nepalese students</h3>
-        <p>
-          Australian universities typically have two major intakes: February and July. Some universities also have a third minor intake in November. 
-          For specific details, it's best to check the official website of the university.
-        </p>
+        <h2 style={styles.sectionTitle}>Intakes in Australia for Nepalese students</h2>
+        <p style={styles.paragraph}>Australian universities have two major intakes: Semester 1 starts in February/March and Semester 2 starts in July/August. The admission deadlines vary depending on the program.</p>
 
-        <h3>IELTS to study in Australia</h3>
-        <p>
-          IELTS is the most popular English language proficiency test accepted by Australian universities. 
-          The required score may vary depending on the course and institution.
-        </p>
+        <h2 style={styles.sectionTitle}>IELTS to study in Australia</h2>
+        <p style={styles.paragraph}>The International English Language Testing System (IELTS) is widely accepted by Australian universities. For standard courses, a minimum overall score of 6.5, with no individual score below 6.0, is required.</p>
 
-        <h3>Top courses to study in Australia</h3>
-        <p>
-          Some of the popular fields of study in Australia include:
-          <ul>
-            <li>Engineering</li>
-            <li>Accounting</li>
-            <li>Information Technology</li>
-            <li>Business (including MBA)</li>
-          </ul>
-        </p>
-      </section>
+        <h2 style={styles.sectionTitle}>Top courses to study in Australia</h2>
+        <p style={styles.paragraph}>Popular courses for Nepalese students include Engineering, IT, Business Administration, and Hospitality Management.</p>
+      </div>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    width: '80%',
+    margin: '0 auto',
+  },
+  headerSection: {
+    position: 'relative',
+    textAlign: 'left',
+  },
+  headerImage: {
+    width: '100%',
+    height: '300px',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  },
+  headerContent: {
+    position: 'absolute',
+    top: '60%',
+    left: '10%',
+    transform: 'translateY(-50%)',
+    color: 'white',
+  },
+  headerTitle: {
+    fontSize: '2.5rem',
+    marginBottom: '1rem',
+  },
+  contactBtn: {
+    backgroundColor: '#e76f51',
+    color: 'white',
+    border: 'none',
+    padding: '0.75rem 1.5rem',
+    fontSize: '1rem',
+    cursor: 'pointer',
+  },
+  contentSection: {
+    padding: '2rem 0',
+  },
+  sectionTitle: {
+    fontSize: '1.5rem',
+    marginBottom: '1rem',
+  },
+  paragraph: {
+    fontSize: '1rem',
+    lineHeight: '1.5',
+    marginBottom: '1rem',
+  },
+  table: {
+    width: '100%',
+    borderCollapse: 'collapse',
+    marginBottom: '2rem',
+  },
+  tableHeader: {
+    border: '1px solid #ddd',
+    padding: '0.75rem',
+    backgroundColor: '#f4f4f4',
+    textAlign: 'left',
+  },
+  tableCell: {
+    border: '1px solid #ddd',
+    padding: '0.75rem',
+    textAlign: 'left',
+  },
 };
 
 export default StudyInAustralia;
