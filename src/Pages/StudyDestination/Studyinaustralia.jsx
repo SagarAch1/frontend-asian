@@ -89,7 +89,15 @@ const StudyInAustralia = () => {
         <p style={styles.paragraph}>The International English Language Testing System (IELTS) is widely accepted by Australian universities. For standard courses, a minimum overall score of 6.5, with no individual score below 6.0, is required.</p>
 
         <h2 style={styles.sectionTitle}>Top courses to study in Australia</h2>
-        <p style={styles.paragraph}>Popular courses for Nepalese students include Engineering, IT, Business Administration, and Hospitality Management.</p>
+        <ul style={styles.courseList}>
+          <li>Engineering</li>
+          <li>Business Analytics</li>
+          <li>MBA (Masters of Business Administration)</li>
+          <li>Life Sciences</li>
+          <li>Artificial Intelligence (AI)</li>
+          <li>Social Sciences</li>
+          <li>Medicine</li>
+        </ul>
       </div>
     </div>
   );
@@ -156,6 +164,13 @@ const styles = {
     border: '1px solid #ddd',
     padding: '0.75rem',
     textAlign: 'left',
+  },
+  courseList: {
+    fontSize: '1rem',
+    lineHeight: '1.5',
+    marginBottom: '1rem',
+    listStyleType: 'disc',
+    marginLeft: '1.5rem',
   },
 };
 
