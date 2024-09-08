@@ -147,10 +147,10 @@ const Newsandarticles = () => {
     <div style={styles.page}>
       {/* Navbar */}
       <nav style={styles.navbar}>
-        <span onClick={() => navigate("/why-study-abroad")}>
+        <span onClick={() => navigate("/whystudyabroad")}>
           Why study abroad?
         </span>
-        <span onClick={() => navigate("/where-and-what-to-study")}>
+        <span onClick={() => navigate("/whereandwhattostudy")}>
           Where and what to study?
         </span>
         <span onClick={() => navigate("/how-do-i-apply")}>How do I apply?</span>

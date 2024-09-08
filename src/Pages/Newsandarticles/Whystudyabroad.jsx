@@ -1,26 +1,36 @@
 import React, { useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Footer from "../Homepage/Footer";
+import FormPage from "../Homepage/FormPage";
 
 const WhyStudyAbroad = () => {
   const videoRef = useRef(null);
-
-  const handlePlayPause = () => {
-    if (videoRef.current.paused) {
-      videoRef.current.play();
-    } else {
-      videoRef.current.pause();
-    }
-  };
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const styles = {
     page: { fontFamily: 'Arial, sans-serif', padding: '20px' },
+    navbar: {
+      display: 'flex',
+      justifyContent: 'space-around',
+      backgroundColor: '#0056b3',
+      padding: '10px',
+      color: 'white',
+      cursor: 'pointer',
+      position: 'relative', // Change position to relative or static
+      width: '100%',
+      zIndex: 1000,
+    },
     headerSection: {
       backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/a2.webp)`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
-      padding: '100px 20px',
+      padding: '100px 25px',
       textAlign: 'center',
       color: 'white',
+      width: '100%',
+     // Set your desired height here
     },
+    
     headerTitle: { fontSize: '36px', fontWeight: 'bold' },
     subheader: { fontSize: '18px', marginTop: '10px' },
     contentSection: {
@@ -31,9 +41,13 @@ const WhyStudyAbroad = () => {
       gridTemplateColumns: '2fr 1fr 1fr',
       gap: '20px',
       alignItems: 'center',
+      marginTop: '70px', // Adjust this value to create space below the navbar
     },
     leftColumn: {
       gridColumn: '1 / 2',
+    },
+    h2: {
+      color: 'blue', // Apply blue color to the h2 element
     },
     rightColumn: {
       gridColumn: '2 / 4',
@@ -47,30 +61,19 @@ const WhyStudyAbroad = () => {
     },
     videoContainer: {
       width: '100%', // Maintain box width
-      height: '100%', // Set box height
+      maxWidth: '600px', // Set maximum width for the box
+      height: '300px', // Set fixed height for the box
       backgroundColor: '#f7f7f7',
       borderRadius: '8px',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      position: 'relative', // For positioning play/pause button
+      overflow: 'hidden', // Ensures the video does not overflow the container
     },
     video: {
       width: '100%',
       height: '100%',
-      borderRadius: '8px',
-    },
-    playPauseButton: {
-      position: 'absolute',
-      bottom: '10px',
-      right: '10px',
-      backgroundColor: '#0056b3',
-      color: 'white',
-      padding: '10px 20px',
-      border: 'none',
-      borderRadius: '5px',
-      cursor: 'pointer',
-      fontSize: '16px',
+      objectFit: 'cover', // Maintain aspect ratio and cover the entire box
     },
     signupSection: {
       display: 'flex',
@@ -127,20 +130,32 @@ const WhyStudyAbroad = () => {
     },
   };
 
+  const handleSignUpClick = () => {
+    navigate('/register'); // Navigate to /register
+  };
+
   return (
     <div style={styles.page}>
       {/* Header Section */}
       <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>Why study abroad?</h1>
-        <p style={styles.subheader}>
-          Learn how studying abroad opens a world of opportunities
-        </p>
+        <p style={styles.subheader}>Learn how studying abroad opens a world of opportunities</p>
       </div>
+
+      {/* Navbar */}
+      <nav style={styles.navbar}>
+        <span onClick={() => navigate('/whystudyabroad')}>Why study abroad?</span>
+        <span onClick={() => navigate('/whereandwhattostudy')}>Where and what to study?</span>
+        <span onClick={() => navigate('/how-do-i-apply')}>How do I apply?</span>
+        <span onClick={() => navigate('/after-receiving-offer')}>After receiving an offer</span>
+        <span onClick={() => navigate('/prepare-to-depart')}>Prepare to depart</span>
+        <span onClick={() => navigate('/arrive-and-thrive')}>Arrive and thrive</span>
+      </nav>
 
       {/* Main Content Section */}
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
-          <h2>Expand your horizons, skills, and opportunities</h2>
+          <h2 style={styles.h2}>Expand your horizons, skills, and opportunities</h2>
           <p>
             Want to make an investment in yourself to secure a successful future? Studying abroad is a journey of a lifetime that opens up new possibilities and pathways. It is an opportunity to gain a world-class foreign education, develop a global mindset, learn new skills, and acquire vital expertise to boost your employability. So prepare yourself to take the leap and get ready to explore the world from an international student’s perspective!
           </p>
@@ -148,21 +163,20 @@ const WhyStudyAbroad = () => {
         <div style={styles.videoContainer}>
           <video ref={videoRef} controls style={styles.video}>
             <source
-              src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
+              // src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
               type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
-          {/* <button style={styles.playPauseButton} onClick={handlePlayPause}>
-            Play/Pause
-          </button> */}
         </div>
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
             Create your profile and unlock a wide array of features, including personalized recommendations, fast-tracked applications, and much more.
           </p>
-          <button style={styles.signupButton}>Sign up</button>
+          <button style={styles.signupButton} onClick={handleSignUpClick}>
+            Sign up
+          </button>
         </div>
       </div>
 
@@ -195,6 +209,8 @@ const WhyStudyAbroad = () => {
           <a href="#" style={styles.listItemLink}>Hear from our students</a>
         </div>
       </div>
+      <FormPage />
+      <Footer />
     </div>
   );
 };
