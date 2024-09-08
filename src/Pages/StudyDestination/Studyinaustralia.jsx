@@ -3,18 +3,19 @@ import React from 'react';
 const StudyInAustralia = () => {
   const headerStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`,
-    backgroundSize: 'cover',
+    // backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: '300px',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    color: '#fff',
+    // color: '#fff',
     textAlign: 'center',
+    fontWeight: 'bold',
   };
 
   const headerContentStyle = {
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    // backgroundColor: 'rgba(0, 0, 0, 0.5)',
     padding: '20px',
     borderRadius: '10px',
   };
