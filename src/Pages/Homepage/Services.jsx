@@ -27,8 +27,8 @@ const services = [
   },
   { 
     icon: '📱', 
-    title: 'IDP Live app', 
-    description: 'Download the IDP Live app to browse and shortlist courses, track your applications, and much more.', 
+    title: 'AIEC Live app', 
+    description: 'Download the AIEC Live app to browse and shortlist courses, track your applications, and much more.', 
     link: '#',
   },
   { 
