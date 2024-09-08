@@ -153,7 +153,7 @@ const Newsandarticles = () => {
         <span onClick={() => navigate("/whereandwhattostudy")}>
           Where and what to study?
         </span>
-        <span onClick={() => navigate("/how-do-i-apply")}>How do I apply?</span>
+        <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
         <span onClick={() => navigate("/after-receiving-offer")}>
           After receiving an offer
         </span>

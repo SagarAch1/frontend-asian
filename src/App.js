@@ -18,6 +18,7 @@ import DuolingoPreparationPage from "./Pages/TestPreparation/Duolingo";
 import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
 import WhyStudyAbroad from "./Pages/Newsandarticles/Whystudyabroad";
 import WhereAndWhatToStudy from "./Pages/Newsandarticles/Whereandwhattostudy";
+import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -95,6 +96,8 @@ function App() {
         <Route path="/whystudyabroad" element={<WhyStudyAbroad />} />
 
         <Route path="/whereandwhattostudy" element={<WhereAndWhatToStudy />} />
+
+        <Route path="/howdoiapply" element={<Howdoiapply />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 

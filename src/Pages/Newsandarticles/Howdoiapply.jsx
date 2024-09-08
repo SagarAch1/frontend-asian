@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const WhereAndWhatToStudy = () => {
+const Howdoiapply = () => {
   const videoRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
 
@@ -154,7 +154,7 @@ const WhereAndWhatToStudy = () => {
         <span onClick={() => navigate("/whereandwhattostudy")}>
           Where and what to study?
         </span>
-        <span onClick={() => navigate("/how-do-i-apply")}>How do I apply?</span>
+        <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
         <span onClick={() => navigate("/after-receiving-offer")}>
           After receiving an offer
         </span>
@@ -265,4 +265,4 @@ const WhereAndWhatToStudy = () => {
   );
 };
 
-export default WhereAndWhatToStudy;
+export default Howdoiapply;
