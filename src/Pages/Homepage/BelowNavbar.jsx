@@ -79,7 +79,7 @@ const BelowNavbar = () => {
           {[
             {
               title: "Study Abroad Steps",
-              content: ["Step 1: Research", "Step 2: Apply", "Step 3: Prepare"],
+              content: ["Why Study Abroad?", "Where and what to study?", "How do I apply?","After receiving an offer","Prepare to depart","Arrive and Thrive"],
             },
             {
               title: "Study Destinations",
@@ -137,6 +137,18 @@ const BelowNavbar = () => {
                         ? handleNavigation("/sat")
                         : contentItem === "DUOLINGO"
                         ? handleNavigation("/duolingo")
+                        : contentItem === "Why Study Abroad?"
+                        ? handleNavigation("/whystudyabroad")
+                        : contentItem === "Where and what to study?"
+                        ? handleNavigation("/whereandwhattostudy")
+                        : contentItem === "How do I apply?"
+                        ? handleNavigation("/howdoiapply")
+                        : contentItem === "After receiving an offer"
+                        ? handleNavigation("/afterreceivingoffer")
+                        : contentItem === "Prepare to depart"
+                        ? handleNavigation("/preparetodepart")
+                        : contentItem === "Arrive and Thrive"
+                        ? handleNavigation("/arriveandthrive")
 
                         : alert(`${contentItem} clicked`)
                     }
