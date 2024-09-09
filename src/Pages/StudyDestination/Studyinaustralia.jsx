@@ -278,12 +278,46 @@ const StudyInAustralia = () => {
           the UK.
         </p>
         <p style={styles.section}>
-          Ques 1: How much show money do I need to study in Australia? :
+          Ques 1: How much show money do I need to study in Australia? 
         </p>
         <p style={styles.paragraph}>
           Ans: Beginning October 1, 2023, students applying for a visa must
           prove that they have at least AUD 24,505 in savings to cover their
-          living expenses for one year.:
+          living expenses for one year.
+        </p>
+        <p style={styles.section}>
+          Ques 2: Who can sponsor me to study in Australia? 
+        </p>
+        <p style={styles.paragraph}>
+          Ans: Unless you are entirely self-sponsoring, your visa application
+          can be sponsored by your parents, legal guardians, or spouse. In this
+          context, sponsorship relates to the individuals responsible for
+          funding your travel, educational expenditures, and associated
+          financial requirements while you pursue your studies in Australia.
+        </p>
+        <p style={styles.section}>
+          Ques 3: What is the maximum age limit for a student visa in Australia?
+          
+        </p>
+        <p style={styles.paragraph}>
+          Ans: To apply for an Australian student visa, you must be at least 18
+          years old. There is no upper age limit for student visas in Australia.
+          The conditions of the Subclass 500 student visa in Australia do not
+          apply to those under 18 years old.
+        </p>
+        <p style={styles.section}>
+          Ques 4: How much will it cost to study in Australia? 
+        </p>
+        <p style={styles.paragraph}>
+          Ans: On average, tuition fees at Australian tertiary institutions
+          typically fall within the range of AUD 20,000 to AUD 30,000 per year.
+        </p>
+        <p style={styles.section}>
+          Ques 5: What are the new rules for student visas in Australia 2023? 
+        </p>
+        <p style={styles.paragraph}>
+          Ans: Starting on July 1, 2023, there will be a maximum limit of 48
+          hours per fortnight for work restrictions on student visa holders.
         </p>
       </div>
     </div>
