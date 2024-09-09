@@ -23,6 +23,7 @@ import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
 import Preparetodepart from "./Pages/Newsandarticles/Preparetodepart";
 import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
 import Studyinaustralia from "./Pages/StudyDestination/Studyinaustralia";
+import StudyInUsa from "./Pages/StudyDestination/Studyinusa";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -110,6 +111,8 @@ function App() {
         <Route path="/arriveandthrive" element={<Arriveandthrive />} />
 
         <Route path="/studyinaustralia" element={<Studyinaustralia />} />
+
+        <Route path="/studyinusa" element={<StudyInUsa />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 

@@ -1,5 +1,7 @@
 import React from "react";
-
+import Exploreinaustralia from "../Homepage/Exploreinaus";
+import FormPage from "../Homepage/FormPage";
+import Footer from "../Homepage/Footer";
 const StudyInAustralia = () => {
   return (
     <div style={styles.container}>
@@ -8,6 +10,7 @@ const StudyInAustralia = () => {
           style={{
             ...styles.headerImage,
             backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`,
+            marginTop:"83px",
           }}
         ></div>
         <div style={styles.headerContent}>
@@ -319,7 +322,11 @@ const StudyInAustralia = () => {
           Ans: Starting on July 1, 2023, there will be a maximum limit of 48
           hours per fortnight for work restrictions on student visa holders.
         </p>
+        <Exploreinaustralia />
+        <FormPage />
       </div>
+      <Footer />
+     
     </div>
   );
 };
