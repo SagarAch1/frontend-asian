@@ -453,6 +453,7 @@ const StudyInUsa = () => {
       </div>
       <Footer />
     </div>
+    
   );
 };
 
