@@ -151,6 +151,8 @@ const BelowNavbar = () => {
                         ? handleNavigation("/arriveandthrive")
                         : contentItem === "Australia"
                         ? handleNavigation("/studyinaustralia")
+                        : contentItem === "USA"
+                        ? handleNavigation("/studyinusa")
 
                         : alert(`${contentItem} clicked`)
                     }
