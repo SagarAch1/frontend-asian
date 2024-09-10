@@ -1,5 +1,5 @@
 import React from "react";
-import Exploreinaustralia from "../Homepage/Exploreinaus";
+import Exploreinusa from "../Homepage/Exploreinusa";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 const StudyInUsa = () => {
@@ -448,7 +448,7 @@ const StudyInUsa = () => {
           of 65% and GPA of 3.0 would be better for your admission to the US
           institutions.
         </p>
-        <Exploreinaustralia />
+        <Exploreinusa />
         <FormPage />
       </div>
       <Footer />
