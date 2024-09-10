@@ -1,5 +1,5 @@
 import React from "react";
-import Exploreinusa from "../Homepage/Exploreinusa";
+import Exploreincanada from "../Homepage/Exploreincanada";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 const StudyInUsa = () => {
@@ -400,7 +400,7 @@ const StudyInUsa = () => {
           score of 70% in their 12th standard examinations
         </p>
        
-        <Exploreinusa />
+        <Exploreincanada />
         <FormPage />
       </div>
       <Footer />

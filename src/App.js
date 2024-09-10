@@ -25,6 +25,7 @@ import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
 import Studyinaustralia from "./Pages/StudyDestination/Studyinaustralia";
 import StudyInUsa from "./Pages/StudyDestination/Studyinusa";
 import Studyinuk from "./Pages/StudyDestination/Studyinuk";
+import Studyincanada from "./Pages/StudyDestination/Studyincanada";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -88,6 +89,8 @@ function App() {
 
         <Route path="/courseaustralia" element={<CourseAustralia />} />
 
+
+
         <Route path="/ielts" element={<IELTSPreparationPage />} />
         <Route path="/pte" element={<PtePreparationPage />} />
         <Route path="/toefl" element={<ToeflPreparationPage />} />
@@ -116,6 +119,8 @@ function App() {
         <Route path="/studyinusa" element={<StudyInUsa />} />
 
         <Route path="/studyinuk" element={<Studyinuk />} />
+
+        <Route path="/studyincanada" element={<Studyincanada />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 

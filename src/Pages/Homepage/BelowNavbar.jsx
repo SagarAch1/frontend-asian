@@ -79,11 +79,18 @@ const BelowNavbar = () => {
           {[
             {
               title: "Study Abroad Steps",
-              content: ["Why Study Abroad?", "Where and what to study?", "How do I apply?","After receiving an offer","Prepare to depart","Arrive and Thrive"],
+              content: [
+                "Why Study Abroad?",
+                "Where and what to study?",
+                "How do I apply?",
+                "After receiving an offer",
+                "Prepare to depart",
+                "Arrive and Thrive",
+              ],
             },
             {
               title: "Study Destinations",
-              content: ["USA", "UK", "Australia"],
+              content: ["USA", "UK", "Australia", "Canada"],
             },
             {
               title: "Find a Course",
@@ -91,7 +98,7 @@ const BelowNavbar = () => {
             },
             {
               title: "Test Preparation",
-              content: ["IELTS ", "PTE", "TOEFL", "SAT","DUOLINGO"],
+              content: ["IELTS ", "PTE", "TOEFL", "SAT", "DUOLINGO"],
             },
             {
               title: "Arrival Services",
@@ -155,13 +162,10 @@ const BelowNavbar = () => {
                         ? handleNavigation("/studyinusa")
                         : contentItem === "UK"
                         ? handleNavigation("/studyinuk")
-
+                        : contentItem === "Canada"
+                        ? handleNavigation("/studyincanada")
                         : alert(`${contentItem} clicked`)
                     }
-
-                   
-
-                    
                   >
                     {contentItem}
                   </button>
