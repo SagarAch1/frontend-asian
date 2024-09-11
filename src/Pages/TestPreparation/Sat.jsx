@@ -263,12 +263,14 @@ const styles = {
   },
   headerImage: {
     width: "100%",
-    height: "500px",
-    display: "block",
+    height: "390px",
+    objectFit: "cover", // Ensures the image covers the container without being distorted
+    backgroundPosition: "center",
   },
   contentContainer: {
     flex: 1, // Makes sure the content takes up the remaining space
-    display: "flex",
+    display: 'flex',
+    flexWrap: 'wrap', // Ensures responsiveness
     marginTop: navbarHeight, // Adjust this based on your navbar height
   },
 

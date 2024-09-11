@@ -470,6 +470,7 @@ const styles = {
     backgroundPosition: "center",
     marginLeft: "-225px",
   },
+   
   headerContent: {
     position: "absolute",
     top: "20%",

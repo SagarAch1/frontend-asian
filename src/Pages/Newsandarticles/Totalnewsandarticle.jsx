@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Homepage/Footer";
+import Contact from "../Contact/Contact";
 
 const Newsandarticles = () => {
   const navigate = useNavigate();
@@ -211,6 +213,10 @@ const Newsandarticles = () => {
           </div>
         ))}
       </div>
+      <Contact />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };

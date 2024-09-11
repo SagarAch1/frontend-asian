@@ -27,6 +27,15 @@ const Navbar = () => {
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
+              to="/Homepage"
+              style={{ fontWeight: "bold", fontSize: "18px" }}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item mx-3">
+            <Link
+              className="nav-link text-white"
               to="/bookclass"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >

@@ -92,6 +92,7 @@ const Exploreinireland = () => {
     cursor: 'pointer',
     marginTop: '10px',
   };
+ 
 
   return (
     <div style={containerStyle}>
