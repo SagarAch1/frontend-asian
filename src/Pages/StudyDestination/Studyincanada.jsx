@@ -419,7 +419,7 @@ const styles = {
     position: "relative",
   },
   headerImage: {
-    width: "2500px",
+    width: "3290px",
     height: "310px",
     backgroundSize: "cover",
     backgroundPosition: "center",
