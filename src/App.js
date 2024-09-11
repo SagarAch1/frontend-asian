@@ -10,6 +10,7 @@ import About from "./Pages/About/About";
 import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import CourseAustralia from "./Pages/Courses/Australia/b/master"
 import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland"
+import CourseUsa from "./Pages/Courses/USA/usa";
 import IELTSPreparationPage from "./Pages/TestPreparation/Ielts";
 import PtePreparationPage from "./Pages/TestPreparation/Pte";
 import ToeflPreparationPage from "./Pages/TestPreparation/Toefl";
@@ -88,6 +89,8 @@ function App() {
         <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
 
         <Route path="/courseaustralia" element={<CourseAustralia />} />
+
+        <Route path="/courseusa" element={<CourseUsa />} />
 
 
 

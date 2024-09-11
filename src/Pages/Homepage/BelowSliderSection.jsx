@@ -224,11 +224,12 @@ const BelowSliderSection = ({ activeSection }) => {
       // Determine the route based on the destination input
       if (destinationInput.toLowerCase() === "australia") {
         destinationRoute = "/courseaustralia";
-      } else if (destinationInput.toLowerCase() === "usa") {
-        destinationRoute = "/usa";
+      } else if (destinationInput.toLowerCase() === "united states") {
+        destinationRoute = "/courseusa";
       } else if (destinationInput.toLowerCase() === "new zeland" || destinationInput.toLowerCase() === "new zealand") {
         destinationRoute = "/coursenewzeland";
-      }
+      } 
+      
       // Only navigate if a valid route is found
       if (destinationRoute) {
         navigate(destinationRoute, {
