@@ -27,6 +27,8 @@ import Studyinaustralia from "./Pages/StudyDestination/Studyinaustralia";
 import StudyInUsa from "./Pages/StudyDestination/Studyinusa";
 import Studyinuk from "./Pages/StudyDestination/Studyinuk";
 import Studyincanada from "./Pages/StudyDestination/Studyincanada";
+import Studyinnewzeland from "./Pages/StudyDestination/Studyinnewzeland";
+import Studyinireland from "./Pages/StudyDestination/Studyinireland";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -124,6 +126,10 @@ function App() {
         <Route path="/studyinuk" element={<Studyinuk />} />
 
         <Route path="/studyincanada" element={<Studyincanada />} />
+
+        <Route path="/studyinnewzeland" element={<Studyinnewzeland />} />
+
+        <Route path="/studyinireland" element={<Studyinireland />} />
 
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 

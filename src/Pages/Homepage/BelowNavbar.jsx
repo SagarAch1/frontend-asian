@@ -90,7 +90,7 @@ const BelowNavbar = () => {
             },
             {
               title: "Study Destinations",
-              content: ["USA", "UK", "Australia", "Canada"],
+              content: ["USA", "UK", "Australia", "Canada", "New Zealand","Ireland"],
             },
             {
               title: "Find a Course",
@@ -164,6 +164,10 @@ const BelowNavbar = () => {
                         ? handleNavigation("/studyinuk")
                         : contentItem === "Canada"
                         ? handleNavigation("/studyincanada")
+                        : contentItem === "New Zealand"
+                        ? handleNavigation("/studyinnewzeland")
+                        : contentItem === "Ireland"
+                        ? handleNavigation("/studyinireland")
                         : alert(`${contentItem} clicked`)
                     }
                   >
