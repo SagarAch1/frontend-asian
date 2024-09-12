@@ -94,7 +94,7 @@ const BelowNavbar = () => {
             },
             {
               title: "Find a Course",
-              content: ["Undergraduate", "Postgraduate", "Vocational"],
+              content: ["Course Advice", "Fastlane Courses", "Scholarships","University Ranking-THE","University Ranking-CUG"],
             },
             {
               title: "Test Preparation",
@@ -168,6 +168,22 @@ const BelowNavbar = () => {
                         ? handleNavigation("/studyinnewzeland")
                         : contentItem === "Ireland"
                         ? handleNavigation("/studyinireland")
+                        : contentItem === "Course Advice"
+                        ? handleNavigation("/courseadvice")
+                        : contentItem === "Fastlane Courses"
+                        ? handleNavigation("/fastlane")
+                        : contentItem === "Scholarships"
+                        ? handleNavigation("/scholarships")
+                        : contentItem === "University Ranking-THE"
+                        ? handleNavigation("/universityrankingthe")
+                        : contentItem === "University Ranking-CUG"
+                        ? handleNavigation("/universityrankingcug")
+                        : contentItem === "Airport Pickup"
+                        ? handleNavigation("/airportpickup")
+                        : contentItem === "Accommodation"
+                        ? handleNavigation("/accommodation")
+                        : contentItem === "Orientation"
+                        ? handleNavigation("/orientation")
                         : alert(`${contentItem} clicked`)
                     }
                   >

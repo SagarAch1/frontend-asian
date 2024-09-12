@@ -30,6 +30,8 @@ import Studyincanada from "./Pages/StudyDestination/Studyincanada";
 import Studyinnewzeland from "./Pages/StudyDestination/Studyinnewzeland";
 import Studyinireland from "./Pages/StudyDestination/Studyinireland";
 
+import Courseadvice from "./Pages/Findacourse/Courseadvice";
+
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
@@ -50,6 +52,7 @@ import FormPage from "./Pages/Homepage/FormPage";
 
 import Register from "./Pages/Register/Register";
 import Search from "./Pages/Search/Search";
+import UniversityRankings from "./Pages/Findacourse/Universityranking";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -93,6 +96,7 @@ function App() {
         <Route path="/courseaustralia" element={<CourseAustralia />} />
 
         <Route path="/courseusa" element={<CourseUsa />} />
+        <Route path= "/courseadvice" element={<Courseadvice />} />
 
 
 
@@ -134,6 +138,8 @@ function App() {
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 
         <Route path="/formpage" element={<FormPage />} />
+
+        <Route path="/universityrankingthe" element={<UniversityRankings />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
