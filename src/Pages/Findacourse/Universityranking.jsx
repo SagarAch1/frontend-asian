@@ -333,6 +333,62 @@ const universitiesData = [
         country: "New Zealand",
         logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
       },
+      ////////////////////////////////////////////////////////////////////////Ireland////////////////////////////////////////////////////////////////////
+      {
+        id: 134,
+        name: "Trinity College Dublin, the University of Dublin",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 201,
+        name: "University College Dublin",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 251,
+        name: "Royal College of Surgeons in Ireland",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 301,
+        name: "University College Cork",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 301,
+        name: "University of Galway",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "Dublin City University",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "University of Limerick",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "Maynooth University",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 1001,
+        name: "TU Dublin",
+        country: "Ireland",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      
 ];
 
 const UniversityRankings = () => {
@@ -435,6 +491,7 @@ const UniversityRankings = () => {
               <option value="USA">USA</option>
               <option value="UK">UK</option>
               <option value="New Zealand">New Zealand</option>
+              <option value="Ireland">Ireland</option>
             </select>
 
             <button
