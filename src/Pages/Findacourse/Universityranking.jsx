@@ -284,6 +284,55 @@ const universitiesData = [
         country: "Australia",
         logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
       },
+      ////////////////////////////////////////////////////////////////////////////Newzeland//////////////////////////////////////////////////////////////////////
+      {
+        id: 150,
+        name: "The University of Auckland",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 301,
+        name: "The University of Otago",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "Victoria University of Wellington",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "Auckland University of Technology",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "The University of Waikato",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 401,
+        name: "Lincoln University",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 501,
+        name: "University of Canterbury",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
+      {
+        id: 501,
+        name: "Massey University",
+        country: "New Zealand",
+        logo: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+      },
 ];
 
 const UniversityRankings = () => {
@@ -385,6 +434,7 @@ const UniversityRankings = () => {
               <option value="Canada">Canada</option>
               <option value="USA">USA</option>
               <option value="UK">UK</option>
+              <option value="New Zealand">New Zealand</option>
             </select>
 
             <button
