@@ -212,9 +212,9 @@ const Moneytransfer = () => {
         {selectedCountry !== "ireland" && (
           <BoxContainer>
             <CardTitle>Convera</CardTitle>
-            <CardSubTitle>Use Convera to transfer money with IDP</CardSubTitle>
+            <CardSubTitle>Use Convera to transfer money with AIEC</CardSubTitle>
             <p>
-              IDP proudly partners with Convera to offer a simple, secure, and smart way to pay your fees online. Convera’s
+              AIEC proudly partners with Convera to offer a simple, secure, and smart way to pay your fees online. Convera’s
               platform is trusted by 800+ education institutions worldwide to enable payments in 140+ currencies.
             </p>
             <Point><FaCheck /> Avoid costly transaction charges</Point>

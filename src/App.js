@@ -31,6 +31,7 @@ import Studyinnewzeland from "./Pages/StudyDestination/Studyinnewzeland";
 import Studyinireland from "./Pages/StudyDestination/Studyinireland";
 
 import Moneytransfer from "./Pages/Studentessentials/Moneytransfer";
+import Flywire from "./Pages/Studentessentials/Flywire";
 
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
 
@@ -142,6 +143,7 @@ function App() {
         <Route path="/formpage" element={<FormPage />} />
 
         <Route path="/moneytransfer" element={<Moneytransfer />} />
+        <Route path="/flywire" element={<Flywire />} />
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
 
