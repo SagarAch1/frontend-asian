@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom'; 
+import Footer from '../Homepage/Footer';
+import WhyChooseAiec from '../Homepage/WhyChooseAiec';
 
 const Flywire = () => {
-  const [faqIndex, setFaqIndex] = useState(null);
-
-  const toggleFaq = (index) => {
-    setFaqIndex(faqIndex === index ? null : index);
-  };
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const faqs = [
     {
@@ -64,7 +63,7 @@ const Flywire = () => {
       <div style={{ backgroundColor: '#e7f3ff', padding: '40px 20px', textAlign: 'left', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         <div style={{ maxWidth: '1200px', width: '100%', display: 'flex', justifyContent: 'space-between' }}>
           <h1 style={{ margin: 0, fontSize: '3rem', color: '#333' }}>Flywire</h1>
-          <img src="https://your-logo-url.com/logo.png" alt="Flywire Logo" style={{ width: '120px', height: '120px' }} />
+          <img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/flywire_logo_icon_168201.png" alt="Flywire Logo" style={{ width: '120px', height: '120px' }} />
         </div>
       </div>
 
@@ -109,7 +108,9 @@ const Flywire = () => {
               <li>Real-time payment tracking and support</li>
               <li>Around-the-clock multilingual support</li>
             </ul>
-            <button style={{ backgroundColor: '#0073e6', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
+            <button
+              onClick={() => navigate('/formpage')} // Navigation using useNavigate
+              style={{ backgroundColor: '#0073e6', color: 'white', padding: '10px 20px', border: 'none', borderRadius: '5px', cursor: 'pointer' }}>
               Enquire Now
             </button>
           </div>
@@ -121,19 +122,21 @@ const Flywire = () => {
               {faqs.map((faq, index) => (
                 <div key={index} style={{ marginBottom: '10px' }}>
                   <h4 
-                    onClick={() => toggleFaq(index)} 
                     style={{ cursor: 'pointer', backgroundColor: '#f1f1f1', padding: '10px', borderRadius: '5px', marginBottom: '10px', transition: 'background-color 0.3s' }}
                   >
                     {faq.question}
                   </h4>
-                  {faqIndex === index && <p style={{ padding: '10px', backgroundColor: '#f1f1f1', marginTop: '0' }}>{faq.answer}</p>}
+                  <p style={{ padding: '10px', backgroundColor: '#f1f1f1', marginTop: '0' }}>{faq.answer}</p>
                 </div>
               ))}
             </div>
+           
           </div>
 
         </div>
       </div>
+      <WhyChooseAiec />
+      <Footer />
     </div>
   );
 };
