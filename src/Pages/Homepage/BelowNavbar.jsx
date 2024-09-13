@@ -184,7 +184,10 @@ const BelowNavbar = () => {
                         ? handleNavigation("/accommodation")
                         : contentItem === "Orientation"
                         ? handleNavigation("/orientation")
+                        : contentItem === "Money Transfer"
+                        ? handleNavigation("/moneytransfer")
                         : alert(`${contentItem} clicked`)
+
                     }
                   >
                     {contentItem}
