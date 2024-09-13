@@ -1,7 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; 
-import Footer from '../Homepage/Footer';
-import WhyChooseAiec from '../Homepage/WhyChooseAiec';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 const Flywire = () => {
   const navigate = useNavigate(); // Initialize useNavigate
@@ -70,31 +68,31 @@ const Flywire = () => {
       {/* Main content section */}
       <div style={{ display: 'flex', justifyContent: 'center', padding: '40px' }}>
         <div style={{ maxWidth: '1200px', width: '100%' }}>
-          <h2>Use Flywire Money Transfer with IDP</h2>
-          <p>
+          <h2 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Use Flywire Money Transfer with AIEC</h2> {/* Bold line size decreased */}
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Trusted by millions of students and thousands of institutions globally, Flywire offers secure, convenient ways to make your educational payments to more than 5,000 institutions.
           </p>
-          <p>
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Flywire is a different type of payment service. We have been using unique payment processes to enhance the educational institutions’ service since 2009. Today, we continue to use innovative payment technologies to give students and their families the flexibility to make payments with the highest standards of security.
           </p>
-          <h3>Secure, flexible payment options</h3>
-          <p>
+          <h3 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Secure, flexible payment options</h3> {/* Bold line size decreased */}
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Flywire streamlines, secures, and optimizes education payments. Our powerful digital platform is trusted by thousands of institutions and millions of students across the globe.
           </p>
-          <h3>Competitive exchange rates</h3>
-          <p>
+          <h3 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Competitive exchange rates</h3> {/* Bold line size decreased */}
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Convenient and competitive exchange rates lower the cost of payments for students and families. You can make your payment in your own currency.
           </p>
-          <h3>Convenient, local payment methods</h3>
-          <p>
+          <h3 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Convenient, local payment methods</h3> {/* Bold line size decreased */}
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Flywire provides local payment methods like bank transfer, debit/credit cards, and e-wallets, allowing you to make payments in the way that is most convenient to you.
           </p>
-          <h3>Real-time payment tracking</h3>
-          <p>
+          <h3 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Real-time payment tracking</h3> {/* Bold line size decreased */}
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Track your payment with the Flywire tracking system, ensuring that both you and your institution are up to date with the progress of your transaction.
           </p>
-          <h3>Around-the-clock multilingual support</h3>
-          <p>
+          <h3 style={{ fontWeight: 'bold', fontSize: '1.3rem' }}>Around-the-clock multilingual support</h3> {/* Bold line size decreased */}
+          <p style={{ fontSize: '1.2rem' }}> {/* Increase size of other text */}
             Access multilingual support around the clock via chat, phone, and email to help navigate the payment process.
           </p>
 
@@ -130,13 +128,10 @@ const Flywire = () => {
                 </div>
               ))}
             </div>
-           
           </div>
 
         </div>
       </div>
-      <WhyChooseAiec />
-      <Footer />
     </div>
   );
 };
