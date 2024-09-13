@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { FaCheck } from "react-icons/fa";
-
-
+import Contact from "../Contact/Contact";
+import Footer from "../Homepage/Footer";
 
 const Container = styled.div`
   font-family: Arial, sans-serif;
@@ -12,8 +12,9 @@ const Container = styled.div`
 
 const Header = styled.div`
   background-color: #f0f4ff;
-  padding: 50px 0;
+  padding: 40px 0;
   text-align: center;
+  margin-top: 60px;
 `;
 
 const Title = styled.h1`
@@ -24,6 +25,20 @@ const Title = styled.h1`
 const SubTitle = styled.p`
   font-size: 1.2rem;
   color: #555;
+`;
+
+const Description = styled.p`
+  font-size: 1.8rem;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+`;
+const Head = styled.p`
+  font-size: 2rem;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
 `;
 
 const CountrySelection = styled.div`
@@ -42,7 +57,9 @@ const CountryFlag = styled.div`
     margin-bottom: 5px;
   }
 
-  ${(props) => props.selected && `
+  ${(props) =>
+    props.selected &&
+    `
     border-bottom: 3px solid #007acc;
   `}
 
@@ -52,7 +69,7 @@ const CountryFlag = styled.div`
 `;
 
 const SectionContainer = styled.div`
-  padding: 60px 0 30px 0; /* Added extra padding on top to move content below navbar */
+  padding: 1px 0 20px 0;
 `;
 
 const BoxContainer = styled.div`
@@ -60,12 +77,11 @@ const BoxContainer = styled.div`
   background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  padding: 20px 20px 60px 20px; /* Increased bottom padding */
-  margin: 20px auto; /* Center boxes and add vertical margin */
+  padding: 20px 20px 60px 20px;
+  margin: 20px auto;
   position: relative;
-  min-height: 200px; /* Adjust this value as needed */
+  min-height: 200px;
 `;
-
 
 const CardTitle = styled.h3`
   font-size: 1.5rem;
@@ -100,7 +116,7 @@ const Button = styled.button`
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 30px; /* Added margin-top to push buttons downward */
+  margin-top: 30px;
 
   &:hover {
     background-color: #005fa3;
@@ -110,15 +126,14 @@ const Button = styled.button`
 const ButtonLeft = styled(Button)`
   position: absolute;
   left: 20px;
-  bottom: 2px; /* Increase this value to move the button down */
+  bottom: 2px;
 `;
 
 const ButtonRight = styled(Button)`
   position: absolute;
   right: 20px;
-  bottom: 10px; /* Increase this value to move the button down */
+  bottom: 10px;
 `;
-
 
 const Moneytransfer = () => {
   const [selectedCountry, setSelectedCountry] = useState("australia");
@@ -135,6 +150,16 @@ const Moneytransfer = () => {
         <Title>Easy Money Transfer for International Students</Title>
         <SubTitle>Seamless money transfer solutions</SubTitle>
       </Header>
+
+      <Head>
+      Seamless money transfer solutions
+      </Head>
+      {/* New Description Text */}
+      <Description>
+        Whether it's paying admission fees to your institution, purchasing health insurance, or covering your accommodation costs, 
+        we’ve got all your remittance needs covered. We've partnered with leading money transfer companies to provide you with seamless options 
+        at competitive rates so you can focus on your studies with peace of mind.
+      </Description>
 
       {/* Country Selection */}
       <CountrySelection>
@@ -180,7 +205,7 @@ const Moneytransfer = () => {
           <Point><FaCheck /> Real-time payment tracking</Point>
           <Point><FaCheck /> 24/7 multilingual payer support</Point>
           <ButtonLeft onClick={() => navigate("/flywire")}>About Flywire</ButtonLeft>
-          <ButtonRight onClick={() => navigate("/form")}>Enquire Now</ButtonRight>
+          <ButtonRight onClick={() => navigate("/formpage")}>Enquire Now</ButtonRight>
         </BoxContainer>
 
         {/* Convera Box */}
@@ -197,10 +222,12 @@ const Moneytransfer = () => {
             <Point><FaCheck /> Compare payment options instantly</Point>
             <Point><FaCheck /> Track your payment status by SMS and email</Point>
             <ButtonLeft onClick={() => navigate("/convera")}>About Convera</ButtonLeft>
-            <ButtonRight onClick={() => navigate("/form")}>Enquire Now</ButtonRight>
+            <ButtonRight onClick={() => navigate("/formpage")}>Enquire Now</ButtonRight>
           </BoxContainer>
         )}
       </SectionContainer>
+      <Contact />
+      <Footer />
     </Container>
   );
 };
