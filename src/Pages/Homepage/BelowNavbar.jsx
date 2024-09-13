@@ -101,8 +101,8 @@ const BelowNavbar = () => {
               content: ["IELTS ", "PTE", "TOEFL", "SAT", "DUOLINGO"],
             },
             {
-              title: "Arrival Services",
-              content: ["Airport Pickup", "Accommodation", "Orientation"],
+              title: "Student Essentials",
+              content: ["Money Transfer", "Accommodation", "Orientation"],
             },
           ].map((item) => (
             <div

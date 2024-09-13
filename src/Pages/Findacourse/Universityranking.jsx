@@ -2091,7 +2091,7 @@ const UniversityRankings = () => {
                     style={{
                       fontSize: "1.2rem",
                       marginRight: "15px",
-                      backgroundColor: "#ffcc00",
+                      backgroundColor: "black",
                       padding: "5px 10px",
                       borderRadius: "50%",
                       color: "#fff",

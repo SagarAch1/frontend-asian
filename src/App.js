@@ -30,6 +30,8 @@ import Studyincanada from "./Pages/StudyDestination/Studyincanada";
 import Studyinnewzeland from "./Pages/StudyDestination/Studyinnewzeland";
 import Studyinireland from "./Pages/StudyDestination/Studyinireland";
 
+import Moneytransfer from "./Pages/Studentessentials/Moneytransfer";
+
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
@@ -138,6 +140,8 @@ function App() {
         <Route path="/aiecglobal" element={<AIECGlobal />} />
 
         <Route path="/formpage" element={<FormPage />} />
+
+        <Route path="/moneytransfer" element={<Moneytransfer />} />
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
 
