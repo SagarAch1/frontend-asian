@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import WhyChooseAiec from "../Homepage/WhyChooseAiec";
 
-const Convera= () => {
+const Convera = () => {
   const navigate = useNavigate(); // Initialize useNavigate
   const [openIndex, setOpenIndex] = useState(null); // State to track which FAQ is open
 
@@ -18,60 +18,39 @@ const Convera= () => {
         "Depending on where you are located Convera offers many different payment options including:Ali Pay,China Pay,WeChat Pay,Visa,Sofort,Trustly,Poli,Mastercard,JCB,Union Pay,iDeal,Online Bank Transfer",
     },
     {
-      question: "2. How to pay?",
+      question: "2. Can I pay with my credit card?",
       answer:
-        "You can follow the instructions provided by Flywire and use your preferred payment method.",
+        "Major credit cards are accepted when submitting a payment to select education institutions in Australia, New Zealand, Canada, the United Kingdom, the United States, Singapore, Hong Kong, and Japan. If you are sending a payment to one of these participating institutions, you can use a credit card when completing your transaction online through GlobalPay for Students. This payment method will be displayed as one of the options after selecting your institution in the payment flow.Payments by UnionPay debit and credit cards are available for students from China, Hong Kong, Japan, and South Korea.",
     },
     {
-      question:
-        "3. Can a family member, friend or third party pay on my behalf?",
+      question: "3.  How long will it take for Convera to receive my payment?",
       answer:
-        "Yes, you can assign someone to pay on your behalf by sharing the payment details with them.",
+        "This varies depending on the payment method used. If you pay by bank transfer, your payment will typically arrive with Convera within 2-3 days, other payment options may take a little longer..",
     },
     {
-      question: "4. My country is not listed. Can I still pay with Flywire?",
+      question: "4. Is there a fee for using Convera?",
       answer:
-        "If your country is not listed, please contact Flywire support to check for alternative payment options.",
+        "No, there is no additional fee as Convera provides services to your education institution and does not act as a payment service provider to you.Convera’s extensive payment network helps to reduce the risk of unexpected intermediary bank fees. ",
     },
     {
-      question: "5. Whose information should I supply for 'Payer Information'?",
+      question: "5.  How does it work?",
       answer:
-        "You should provide the details of the person or entity making the payment.",
+        "The payment process varies based on the option you choose. If the education institution you're paying isn't pre-populated, you'll need to select it. Next, you'll choose the country you're paying from and the type of fees you're covering. Once these details are provided, the available payment options and the amount owed will be displayed. After entering your student information, you'll be directed to complete your payment through the selected provider..",
     },
     {
-      question: "6. I don’t know my Student ID. What should I do?",
+      question: "6.  How does Convera help protect my information?",
       answer:
-        "Contact your educational institution to retrieve your Student ID or ask for assistance from Flywire.",
+        "We employ secure socket layer (SSL) encryption technology and display a valid security certificate on every page..",
     },
     {
-      question: "7. What exchange rate will be applied to my payment?",
+      question: "7. How do you use my information?",
       answer:
-        "The exchange rate will be locked in when you initiate the payment and is competitive in the market.",
+        "Convera uses the information we collect for the purpose of processing your educational payment. We abide by privacy laws globally and have controls in place to safeguard your personal information. We are continuously enhancing our program to help ensure it complies with all relevant laws. ",
     },
     {
-      question: "8. What is included in the amount I have to pay?",
+      question: "8. Are credit/debit card payments secure?",
       answer:
-        "The amount you have to pay includes the fees outlined by your educational institution.",
-    },
-    {
-      question: "9. When will my institution receive my payment?",
-      answer:
-        "Your payment will be processed in a timely manner and will reach your institution typically within 2-3 business days.",
-    },
-    {
-      question: "10. Do you accept credit cards and debit cards?",
-      answer: "Yes, Flywire accepts both credit and debit card payments.",
-    },
-    {
-      question: "11. Why is the amount different between payment methods?",
-      answer:
-        "Different payment methods may have varying fees and exchange rates, which can affect the total amount.",
-    },
-    {
-      question:
-        "12. Who should I contact if I have additional questions about making a payment with Flywire?",
-      answer:
-        "You can contact Flywire support via their official website or customer service.",
+        "Convera’s platform meets the industry standard of 128-bit encryption, and credit card processing is subject to the standard validations and authorisation process operated industry-wide. Security code validation and 3D Secure, an additional security layer for online credit and debit card transactions, are integral to the card authorisation process managed by the Payment Service Provider (PSP).",
     },
   ];
 
@@ -103,11 +82,11 @@ const Convera= () => {
           }}
         >
           <h1 style={{ margin: 0, fontSize: "3rem", color: "#333" }}>
-            Flywire
+            Convera
           </h1>
           <img
             src="https://cdn.icon-icons.com/icons2/2699/PNG/512/flywire_logo_icon_168201.png"
-            alt="Flywire Logo"
+            alt="Convera Logo"
             style={{ width: "120px", height: "120px" }}
           />
         </div>
@@ -119,79 +98,41 @@ const Convera= () => {
       >
         <div style={{ maxWidth: "1200px", width: "100%" }}>
           <h2 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Use Flywire Money Transfer with AIEC
+            Use Convera Money Transfer with AIEC
           </h2>{" "}
           {/* Bold line size decreased */}
           <p style={{ fontSize: "1.2rem" }}>
             {" "}
             {/* Increase size of other text */}
-            Trusted by millions of students and thousands of institutions
-            globally, Flywire offers secure, convenient ways to make your
-            educational payments to more than 5,000 institutions.
+            Convera partners with education institutions, accommodation, and
+            insurance providers to offer students a simple and efficient way to
+            pay their tuition fees and accommodation costs in the currency of
+            your choice.
           </p>
           <p style={{ fontSize: "1.2rem" }}>
             {" "}
             {/* Increase size of other text */}
-            Flywire is a different type of payment service. We have been using
-            unique payment processes to enhance the educational institutions’
-            service since 2009. Today, we continue to use innovative payment
-            technologies to give students and their families the flexibility to
-            make payments with the highest standards of security.
+            Many of the top universities in Australia, Canada, the United
+            States, the UK, and New Zealand trust us to manage international
+            payments on their behalf.
           </p>
-          <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Secure, flexible payment options
-          </h3>{" "}
-          {/* Bold line size decreased */}
           <p style={{ fontSize: "1.2rem" }}>
             {" "}
             {/* Increase size of other text */}
-            Flywire streamlines, secures, and optimizes education payments. Our
-            powerful digital platform is trusted by thousands of institutions
-            and millions of students across the globe.
+            We use our network of local bank accounts and relationships with
+            payment partners to manage the exchange into your education
+            institution’s local currency, so you don’t have to worry about
+            currency volatility.
           </p>
-          <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Competitive exchange rates
-          </h3>{" "}
-          {/* Bold line size decreased */}
           <p style={{ fontSize: "1.2rem" }}>
             {" "}
             {/* Increase size of other text */}
-            Convenient and competitive exchange rates lower the cost of payments
-            for students and families. You can make your payment in your own
-            currency.
+            Your payment will arrive in full at your education institution which
+            may help expedite visa applications and enrolment.
           </p>
-          <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Convenient, local payment methods
-          </h3>{" "}
-          {/* Bold line size decreased */}
-          <p style={{ fontSize: "1.2rem" }}>
-            {" "}
-            {/* Increase size of other text */}
-            Flywire provides local payment methods like bank transfer,
-            debit/credit cards, and e-wallets, allowing you to make payments in
-            the way that is most convenient to you.
-          </p>
-          <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Real-time payment tracking
-          </h3>{" "}
-          {/* Bold line size decreased */}
-          <p style={{ fontSize: "1.2rem" }}>
-            {" "}
-            {/* Increase size of other text */}
-            Track your payment with the Flywire tracking system, ensuring that
-            both you and your institution are up to date with the progress of
-            your transaction.
-          </p>
-          <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Around-the-clock multilingual support
-          </h3>{" "}
-          {/* Bold line size decreased */}
-          <p style={{ fontSize: "1.2rem" }}>
-            {" "}
-            {/* Increase size of other text */}
-            Access multilingual support around the clock via chat, phone, and
-            email to help navigate the payment process.
-          </p>
+         
+          
+          
           <div
             style={{
               backgroundColor: "#e7f3ff",
@@ -200,14 +141,33 @@ const Convera= () => {
               marginBottom: "40px",
             }}
           >
-            <h4 style={{ margin: 0, color: "#0073e6" }}>Flywire</h4>
+            <h4 style={{ margin: 0, color: "#0073e6" }}>Convera</h4>
+            <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
+              Use Convera to transfer money with AIEC
+            </h3>{" "}
+            <p style={{ fontSize: "1.2rem" }}>
+              {" "}
+              {/* Increase size of other text */}
+              AIEC proudly partners with Convera to offer a simple, secure, and
+              smart way to pay your fees online. Convera’s platform is trusted
+              by 800+ education institutions worldwide to enable payments in
+              140+ currencies across 200+ countries and territories.
+            </p>
+            <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
+            Why choose Convera:
+            </h3>{" "}
             <ul style={{ listStyle: "none", padding: 0 }}>
-              <li>Education payments made easy</li>
-              <li>Trusted by thousands of institutions globally</li>
-              <li>Convenient, flexible payment options</li>
-              <li>Competitive exchange rates</li>
-              <li>Real-time payment tracking and support</li>
-              <li>Around-the-clock multilingual support</li>
+              <li>Students, parents, and sponsors can use this platform to pay deposits, tuition fees and more</li>
+              <li>Avoid costly transaction charges from your bank</li>
+              <li>Pay online via popular options including bank transfer, credit, or debit card or eWallet.</li>
+              <li>Compare payment options instantly and Convera holds the exchange rate for 72 hours.</li>
+              <li>If you find a cheaper quote from your bank, Convera will match it in accordance with their Price Promise Guarantee. Ask your IDP counsellor for more details.</li>
+              <li>Track your payment status by SMS and email</li>
+              <li>Multilingual platform available in 10 languages.</li>
+              <li>Access 24/7 live chat on the platform, or contact our friendly team at studentsupport@convera.com.</li>
+              <li>A platform built with security in mind.</li>
+              <li>Ability to initiate refunds easily should circumstances change.</li>
+              <li>Pay your fees via a global partner which has helped students achieve their education dreams for over a decade.</li>
             </ul>
             <button
               onClick={() => navigate("/formpage")} // Navigation using useNavigate
