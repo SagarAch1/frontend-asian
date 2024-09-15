@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Studentbanking = () => {
+  const navigate = useNavigate();
+  const handleEnquireNowClick = () => {
+    navigate("/formpage");
+  };
   // State to manage selected country
   const [selectedCountry, setSelectedCountry] = useState("Australia");
 
@@ -229,7 +234,9 @@ const Studentbanking = () => {
                 regulation.
               </li>
             </ul>
-            <button style={exploreButtonStyle}>Explore more</button>
+            <button style={exploreButtonStyle} onClick={handleEnquireNowClick}>
+              Enquire Now
+            </button>
           </div>
         )}
 
@@ -289,7 +296,12 @@ const Studentbanking = () => {
                   $0 annual fees and a minimum limit of $1000 are available.
                 </li>
               </ul>
-              <button style={exploreButtonStyle}>Explore more</button>
+              <button
+                style={exploreButtonStyle}
+                onClick={handleEnquireNowClick}
+              >
+                Enquire Now
+              </button>
             </div>
 
             <div style={bankOptionStyle}>
@@ -301,37 +313,57 @@ const Studentbanking = () => {
               </p>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span>Submit your application online in just 5 minutes
+                  <span style={checkmarkStyle}>✔</span>Submit your application
+                  online in just 5 minutes
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Receive a proof of funding letter for your study permit application within one business day of us receiving funds.
+                  <span style={checkmarkStyle}>✔</span> Receive a proof of
+                  funding letter for your study permit application within one
+                  business day of us receiving funds.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Take advantage of our no fee offer when you select to send funds in your local currency.
+                  <span style={checkmarkStyle}>✔</span> Take advantage of our no
+                  fee offer when you select to send funds in your local
+                  currency.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Easily apply for a Simplii Credit Card with a credit limit of up to $2,000 without any prior Canadian credit history while you complete your ISBO application.
+                  <span style={checkmarkStyle}>✔</span> Easily apply for a
+                  Simplii Credit Card with a credit limit of up to $2,000
+                  without any prior Canadian credit history while you complete
+                  your ISBO application.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span>Completely digital process to activate your account upon arrival - no need to visit a physical location.
+                  <span style={checkmarkStyle}>✔</span>Completely digital
+                  process to activate your account upon arrival - no need to
+                  visit a physical location.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Our team of experts is available to assist you 24 hours a day and 7 days a week.
+                  <span style={checkmarkStyle}>✔</span> Our team of experts is
+                  available to assist you 24 hours a day and 7 days a week.
                 </li>
               </ul>
               <h5>Additional Benefits:</h5>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Enjoy no-fee daily banking with no minimum balance required.
+                  <span style={checkmarkStyle}>✔</span> Enjoy no-fee daily
+                  banking with no minimum balance required.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Get access to free Interac e-Transfer® transactions and outbound payment services, like Global Money Transfer.
+                  <span style={checkmarkStyle}>✔</span> Get access to free
+                  Interac e-Transfer® transactions and outbound payment
+                  services, like Global Money Transfer.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Multi-language support is available to answer any questions you may have.
+                  <span style={checkmarkStyle}>✔</span> Multi-language support
+                  is available to answer any questions you may have.
                 </li>
               </ul>
-              <button style={exploreButtonStyle}>Explore more</button>
+              <button
+                style={exploreButtonStyle}
+                onClick={handleEnquireNowClick}
+              >
+                Enquire Now
+              </button>
             </div>
           </>
         )}
