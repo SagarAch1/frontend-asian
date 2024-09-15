@@ -33,6 +33,7 @@ import Studyinireland from "./Pages/StudyDestination/Studyinireland";
 import Moneytransfer from "./Pages/Studentessentials/Moneytransfer";
 import Flywire from "./Pages/Studentessentials/Flywire";
 import Convera from "./Pages/Studentessentials/Convera";
+import Studentbanking from "./Pages/Studentessentials/Studentbanking";
 
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
 
@@ -147,6 +148,7 @@ function App() {
         <Route path="/flywire" element={<Flywire />} />
 
         <Route path="/convera" element={<Convera />} />
+        <Route path="/studentbanking" element={<Studentbanking />} />
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
 

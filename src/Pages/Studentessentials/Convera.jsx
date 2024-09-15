@@ -85,7 +85,7 @@ const Convera = () => {
             Convera
           </h1>
           <img
-            src="https://cdn.icon-icons.com/icons2/2699/PNG/512/flywire_logo_icon_168201.png"
+            src="https://demo.students.convera.com/geo-buyer/_assets/img/loader-logo.png"
             alt="Convera Logo"
             style={{ width: "120px", height: "120px" }}
           />
