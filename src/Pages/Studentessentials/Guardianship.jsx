@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserShield, faHandsHelping, faShieldAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { faHandsHelping, faShieldAlt, faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Ensure FontAwesome icons are imported
 
 const Guardianship = () => {
@@ -21,12 +21,9 @@ const Guardianship = () => {
       fontSize: '36px',
     },
     contentSection: {
-      display: 'flex',
-      justifyContent: 'space-between',
       marginTop: '20px',
     },
     mainContent: {
-      width: '60%',
       lineHeight: '1.6',
     },
     mainTitle: {
@@ -38,10 +35,9 @@ const Guardianship = () => {
       marginTop: '20px',
     },
     featureSection: {
-      width: '30%',
       display: 'flex',
-      flexDirection: 'column',
-      gap: '20px',
+      justifyContent: 'space-between',
+      marginTop: '40px',
     },
     feature: {
       backgroundColor: '#fff',
@@ -49,6 +45,8 @@ const Guardianship = () => {
       borderRadius: '8px',
       boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
       textAlign: 'center',
+      flex: 1,
+      margin: '0 10px', // Adds spacing between the feature blocks
     },
     icon: {
       fontSize: '36px',
@@ -83,25 +81,26 @@ const Guardianship = () => {
           <h3 style={styles.subTitle}>Reliable care and support</h3>
           <p>Your guardian’s goal is to support you in your study abroad journey. You’ll also find them helpful in other ways, like settling you in and giving study advice. They’ll even help you meet new people and discover social and extracurricular activities.</p>
         </div>
+      </div>
 
-        <div style={styles.featureSection}>
-          <div style={styles.feature}>
-            <FontAwesomeIcon icon={faHandsHelping} style={styles.icon} />
-            <h4 style={styles.featureTitle}>ISA Student Advocates</h4>
-            <p style={styles.featureText}>IDP Education have chosen ISA Student Advocates to assist in providing approved welfare services to our students.</p>
-          </div>
+      {/* Features section moved to the bottom */}
+      <div style={styles.featureSection}>
+        <div style={styles.feature}>
+          <FontAwesomeIcon icon={faHandsHelping} style={styles.icon} />
+          <h4 style={styles.featureTitle}>ISA Student Advocates</h4>
+          <p style={styles.featureText}>IDP Education have chosen ISA Student Advocates to assist in providing approved welfare services to our students.</p>
+        </div>
 
-          <div style={styles.feature}>
-            <FontAwesomeIcon icon={faShieldAlt} style={styles.icon} />
-            <h4 style={styles.featureTitle}>Your safety is our priority</h4>
-            <p style={styles.featureText}>All our guardians undergo rigorous police checks in accordance with Australian law.</p>
-          </div>
+        <div style={styles.feature}>
+          <FontAwesomeIcon icon={faShieldAlt} style={styles.icon} />
+          <h4 style={styles.featureTitle}>Your safety is our priority</h4>
+          <p style={styles.featureText}>All our guardians undergo rigorous police checks in accordance with Australian law.</p>
+        </div>
 
-          <div style={styles.feature}>
-            <FontAwesomeIcon icon={faCheckCircle} style={styles.icon} />
-            <h4 style={styles.featureTitle}>Continued support</h4>
-            <p style={styles.featureText}>Guardians stay in regular contact with your parents and educational provider to update on your progress.</p>
-          </div>
+        <div style={styles.feature}>
+          <FontAwesomeIcon icon={faCheckCircle} style={styles.icon} />
+          <h4 style={styles.featureTitle}>Continued support</h4>
+          <p style={styles.featureText}>Guardians stay in regular contact with your parents and educational provider to update on your progress.</p>
         </div>
       </div>
     </div>
