@@ -102,7 +102,7 @@ const BelowNavbar = () => {
             },
             {
               title: "Student Essentials",
-              content: ["Money Transfer", "Accommodation", "Student Banking"],
+              content: ["Money Transfer", "Guradianship", "Student Banking"],
             },
           ].map((item) => (
             <div
@@ -180,8 +180,8 @@ const BelowNavbar = () => {
                         ? handleNavigation("/universityrankingcug")
                         : contentItem === "Airport Pickup"
                         ? handleNavigation("/airportpickup")
-                        : contentItem === "Accommodation"
-                        ? handleNavigation("/accommodation")
+                        : contentItem === "Guradianship"
+                        ? handleNavigation("/guradianship")
                         : contentItem === "Student Banking"
                         ? handleNavigation("/studentbanking")
                         : contentItem === "Money Transfer"

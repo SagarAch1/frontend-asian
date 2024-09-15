@@ -34,6 +34,7 @@ import Moneytransfer from "./Pages/Studentessentials/Moneytransfer";
 import Flywire from "./Pages/Studentessentials/Flywire";
 import Convera from "./Pages/Studentessentials/Convera";
 import Studentbanking from "./Pages/Studentessentials/Studentbanking";
+import Guardianship from "./Pages/Studentessentials/Guardianship"
 
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
 
@@ -149,6 +150,8 @@ function App() {
 
         <Route path="/convera" element={<Convera />} />
         <Route path="/studentbanking" element={<Studentbanking />} />
+
+        <Route path="/guradianship" element={<Guardianship/>} />
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
 
