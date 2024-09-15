@@ -249,58 +249,86 @@ const Studentbanking = () => {
               <p>Key Program Highlights:</p>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Submit your application
-                  online in just 15 minutes.
+                  <span style={checkmarkStyle}>✔</span> Use our secure online
+                  platform to submit your application within 5 minutes.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Tracking status of your
-                  fund transfers and pre-arrival applications.
+                  <span style={checkmarkStyle}>✔</span>Conveniently make
+                  payments in your preferred currency with no additional fee
+                  prior to arrival in Canada.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Trade advantage of
-                  currency conversions for better rates.
+                  <span style={checkmarkStyle}>✔</span>Once funds have been
+                  deposited into your GIC Program account, you’ll receive a
+                  confirmation of funds letter for study permit application.
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Apply for a Simplii
-                  Financial Card.
+                  <span style={checkmarkStyle}>✔</span> View the status of your
+                  application in real-time on our online platform.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Our team of experts is
+                  available to assist you 24 hours a day and 7 days a week in
+                  multiple languages.
                 </li>
               </ul>
               <h5>Additional Benefits:</h5>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Enjoy global online
-                  banking with no minimum balance required.
+                  <span style={checkmarkStyle}>✔</span>Enjoy the perks of
+                  unlimited transactions and no monthly account fees up until
+                  six months after your graduation date (up to four years).
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Access to international
-                  transfers and outbound payments.
+                  <span style={checkmarkStyle}>✔</span> Access to free Interac
+                  e-Transfers for transferring money from one Canadian account
+                  to another.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Credit card options with
+                  $0 annual fees and a minimum limit of $1000 are available.
                 </li>
               </ul>
               <button style={exploreButtonStyle}>Explore more</button>
             </div>
 
             <div style={bankOptionStyle}>
-              <h4>CIBC</h4>
+              <h4>Simplii Financial</h4>
               <p>
-                CIBC International Student Banking Offer (SBO) gives
-                international students the convenience to manage finances from
-                anywhere, including key highlights of the CIBC SBO Program:
+                With Simplii Financial, international students can access a
+                suite of financial services through the ISBO Program to make
+                their banking journey in Canada as successful as possible!
               </p>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Submit your application
-                  online in 15 minutes.
+                  <span style={checkmarkStyle}>✔</span>Submit your application online in just 5 minutes
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Connect with support and
-                  assistance for pre-arrival banking services.
+                  <span style={checkmarkStyle}>✔</span> Receive a proof of funding letter for your study permit application within one business day of us receiving funds.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Take advantage of our no fee offer when you select to send funds in your local currency.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Easily apply for a Simplii Credit Card with a credit limit of up to $2,000 without any prior Canadian credit history while you complete your ISBO application.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span>Completely digital process to activate your account upon arrival - no need to visit a physical location.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Our team of experts is available to assist you 24 hours a day and 7 days a week.
                 </li>
               </ul>
               <h5>Additional Benefits:</h5>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Flexible options with
-                  no-fee transactions for students.
+                  <span style={checkmarkStyle}>✔</span> Enjoy no-fee daily banking with no minimum balance required.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Get access to free Interac e-Transfer® transactions and outbound payment services, like Global Money Transfer.
+                </li>
+                <li style={liStyle}>
+                  <span style={checkmarkStyle}>✔</span> Multi-language support is available to answer any questions you may have.
                 </li>
               </ul>
               <button style={exploreButtonStyle}>Explore more</button>
