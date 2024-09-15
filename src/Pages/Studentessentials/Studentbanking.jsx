@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Homepage/Footer";
+import Contact from "../Contact/Contact";
 
 const Studentbanking = () => {
   const navigate = useNavigate();
   const handleEnquireNowClick = () => {
     navigate("/formpage");
   };
+
   // State to manage selected country
   const [selectedCountry, setSelectedCountry] = useState("Australia");
 
@@ -18,6 +21,18 @@ const Studentbanking = () => {
     marginTop: "100px", // This pushes the content down below the navbar
   };
 
+  // Style to ensure the footer section covers the full width
+  const footerSectionStyle = {
+    backgroundColor: "#f9f9f9",
+    padding: "20px",
+    marginTop: "40px",
+    textAlign: "center",
+    width: "100vw", // Cover the entire width of the viewport
+    position: "relative",
+    left: "50%",
+    transform: "translateX(-50%)", // Center it relative to the page
+  };
+
   // Updated background gradient style for full width and increased height
   const bannerStyle = {
     background: "linear-gradient(to right, #e6f4ff, #ffffff)",
@@ -28,7 +43,8 @@ const Studentbanking = () => {
     width: "100vw", // Makes sure it spans 100% of the viewport width
     position: "relative", // Ensure it's relative to the viewport
     left: "50%", // Center the banner
-    transform: "translateX(-50%)", // Fix positioning due to full width
+    transform: "translateX(-50%)",
+    marginTop: "-37px", // Fix positioning due to full width
   };
 
   const titleStyle = {
@@ -117,20 +133,15 @@ const Studentbanking = () => {
     borderRadius: "5px",
   };
 
-  const footerSectionStyle = {
-    backgroundColor: "#f9f9f9",
-    padding: "20px",
-    marginTop: "40px",
-    textAlign: "center",
-  };
-
   const footerLinksStyle = {
     display: "flex",
     justifyContent: "space-around",
+    flexWrap: "wrap",
   };
 
   const footerLinkItemStyle = {
     textAlign: "center",
+    flexBasis: "300px", // Ensures even spacing between items
   };
 
   const footerIconStyle = {
@@ -147,14 +158,17 @@ const Studentbanking = () => {
   return (
     <div style={containerStyle}>
       <div style={bannerStyle}>
-        <h2 style={titleStyle}>Student Banking</h2> {/* Apply the margin */}
+        <h2 style={titleStyle}>Student Banking</h2> 
+        {/* Apply the margin */}
         <div>
+            
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/bankicon.jpg`}
             alt="Bank Icon"
             style={iconStyle}
           />
         </div>
+        
       </div>
 
       <div style={contentSectionStyle}>
@@ -364,31 +378,44 @@ const Studentbanking = () => {
               >
                 Enquire Now
               </button>
+              
             </div>
           </>
         )}
       </div>
-
       <div style={footerSectionStyle}>
         <h4>Open a bank account overseas</h4>
         <div style={footerLinksStyle}>
           <div style={footerLinkItemStyle}>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/footer-bank-icon.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/form.png`}
               alt="Footer Bank Icon"
               style={footerIconStyle}
             />
-            <p>Simplii Financial</p>
+            <p>Want to open a bank account in your chosen study destination from your home country? We can help</p>
           </div>
           <div style={footerLinkItemStyle}>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/footer-bank-icon.png`}
+              src={`${process.env.PUBLIC_URL}/assets/images/star.png`}
               alt="Footer Bank Icon"
               style={footerIconStyle}
             />
-            <p>CIBC</p>
+            <p>A wide range of financial products are available that can be tailored to the needs of international students</p>
+          </div>
+          <div style={footerLinkItemStyle}>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/mb.jpeg`}
+              alt="Footer Bank Icon"
+              style={footerIconStyle}
+            />
+            <p>Easy access to your account to complete transactions or even access your card to pay at shops using your mobile.</p>
           </div>
         </div>
+      </div>
+
+      <div style={footerSectionStyle}>
+        <Contact />
+        <Footer />
       </div>
     </div>
   );
