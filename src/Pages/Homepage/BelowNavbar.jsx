@@ -102,7 +102,7 @@ const BelowNavbar = () => {
             },
             {
               title: "Student Essentials",
-              content: ["Money Transfer", "Accommodation", "Orientation"],
+              content: ["Money Transfer", "Accommodation", "Student Banking"],
             },
           ].map((item) => (
             <div
@@ -182,8 +182,8 @@ const BelowNavbar = () => {
                         ? handleNavigation("/airportpickup")
                         : contentItem === "Accommodation"
                         ? handleNavigation("/accommodation")
-                        : contentItem === "Orientation"
-                        ? handleNavigation("/orientation")
+                        : contentItem === "Student Banking"
+                        ? handleNavigation("/studentbanking")
                         : contentItem === "Money Transfer"
                         ? handleNavigation("/moneytransfer")
                         : alert(`${contentItem} clicked`)
