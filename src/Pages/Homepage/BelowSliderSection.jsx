@@ -96,6 +96,7 @@ const BelowSliderSection = ({ activeSection }) => {
     "Doctor of Business Administration",
     "Research Degree",
   ]);
+  
   const [isLevelDropdownOpen, setIsLevelDropdownOpen] = useState(false);
 
   const [destinationInput, setDestinationInput] = useState("");
@@ -218,32 +219,62 @@ const BelowSliderSection = ({ activeSection }) => {
   };
 
   const handleSearchClick = () => {
-    if (courseSubjectInput && studyLevelInput && destinationInput) {
-      let destinationRoute = null;
+    if (activeSection === "courses") {
+      if (courseSubjectInput && studyLevelInput && destinationInput) {
+        let destinationRoute = null;
   
-      // Determine the route based on the destination input
-      if (destinationInput.toLowerCase() === "australia") {
-        destinationRoute = "/courseaustralia";
-      } else if (destinationInput.toLowerCase() === "united states") {
-        destinationRoute = "/courseusa";
-      } else if (destinationInput.toLowerCase() === "new zeland" || destinationInput.toLowerCase() === "new zealand") {
-        destinationRoute = "/coursenewzeland";
-      } else if (destinationInput.toLowerCase() === "canada" || destinationInput.toLowerCase() === "canada") {
-        destinationRoute = "/coursecanada";
-      } 
-      
-      // Only navigate if a valid route is found
-      if (destinationRoute) {
-        navigate(destinationRoute, {
-          state: { course: courseSubjectInput, level: studyLevelInput, destination: destinationInput },
-        });
+        // Determine the route based on the destination input
+        if (destinationInput.toLowerCase() === "australia") {
+          destinationRoute = "/courseaustralia";
+        } else if (destinationInput.toLowerCase() === "united states") {
+          destinationRoute = "/courseusa";
+        } else if (destinationInput.toLowerCase() === "new zealand" || destinationInput.toLowerCase() === "new zeland") {
+          destinationRoute = "/coursenewzeland";
+        } else if (destinationInput.toLowerCase() === "canada") {
+          destinationRoute = "/coursecanada";
+        }
+        
+        // Navigate to the route if a valid one is found
+        if (destinationRoute) {
+          console.log("Navigating to", destinationRoute);
+          navigate(destinationRoute, {
+            state: { course: courseSubjectInput, level: studyLevelInput, destination: destinationInput },
+          });
+        } else {
+          console.log("No matching course destination found");
+        }
+      }
+    } else if (activeSection === "scholarships") {
+      if (destinationInput) {
+        let scholarshipRoute = null;
+  
+        // Determine the route for scholarships based on the destination input
+        if (destinationInput.toLowerCase() === "australia") {
+          scholarshipRoute = "/scholarshipsinaustralia";
+        } else if (destinationInput.toLowerCase() === "united states") {
+          scholarshipRoute = "/scholarshipsinusa";
+        } else if (destinationInput.toLowerCase() === "new zealand" || destinationInput.toLowerCase() === "new zeland") {
+          scholarshipRoute = "/scholarshipsinnewzeland";
+        } else if (destinationInput.toLowerCase() === "canada") {
+          scholarshipRoute = "/scholarshipsincanada";
+        }
+  
+        // Navigate to the scholarship route if a valid one is found
+        if (scholarshipRoute) {
+          console.log("Navigating to", scholarshipRoute);
+          navigate(scholarshipRoute, {
+            state: { destination: destinationInput },
+          });
+        } else {
+          console.log("No matching scholarship destination found");
+        }
       } else {
-        // Handle the case where no matching destination is found
-        console.log("No matching destination found");
-        // Optionally, show a message to the user here
+        console.log("No destination selected for scholarships");
       }
     }
   };
+  
+  
   
   
   
@@ -344,40 +375,43 @@ const BelowSliderSection = ({ activeSection }) => {
           </>
         )}
 
-        {activeSection === "scholarships" && (
-          <>
-            <div style={dropdownContainerStyle} ref={levelDropdownRef}>
-              <input
-                type="text"
-                value={studyLevelInput}
-                onChange={handleStudyLevelChange}
-                onFocus={() => setIsLevelDropdownOpen(true)}
-                placeholder="Study Level"
-                style={inputStyle}
-              />
-              {isLevelDropdownOpen && (
-                <div style={dropdownListStyle}>
-                  {filteredStudyLevels.map((level, index) => (
-                    <div
-                      key={index}
-                      style={optionStyle}
-                      onClick={() =>
-                        handleOptionClick(
-                          setStudyLevelInput,
-                          level,
-                          setIsLevelDropdownOpen
-                        )
-                      }
-                    >
-                      {level}
-                    </div>
-                  ))}
-                </div>
-              )}
+{activeSection === "scholarships" && (
+  <>
+    <div style={dropdownContainerStyle} ref={destinationDropdownRef}>
+      <input
+        type="text"
+        value={destinationInput}  // Use destinationInput
+        onChange={handleDestinationChange}  // Use destination change handler
+        onFocus={() => setIsDestinationDropdownOpen(true)}
+        placeholder="Choose Country"  // Label for choosing the country
+        style={inputStyle}
+      />
+      {isDestinationDropdownOpen && (
+        <div style={dropdownListStyle}>
+          {filteredDestinations.map((destination, index) => (
+            <div
+              key={index}
+              style={optionStyle}
+              onClick={() =>
+                handleOptionClick(
+                  setDestinationInput,
+                  destination,
+                  setIsDestinationDropdownOpen
+                )
+              }
+            >
+              {destination}
             </div>
-            <button style={searchButtonStyle} onClick={handleSearchClick}>Search</button>
-          </>
-        )}
+          ))}
+        </div>
+      )}
+    </div>
+    <button style={searchButtonStyle} onClick={handleSearchClick}>
+      Search
+    </button>
+  </>
+)}
+
 
         {activeSection === "universities" && (
           <>
