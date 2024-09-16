@@ -277,7 +277,7 @@ const BelowSliderSection = ({ activeSection }) => {
   
         // Determine the route for scholarships based on the destination input
         if (destinationInput.toLowerCase() === "australia") {
-          scholarshipRoute = "/universitiesinaustralia";
+          scholarshipRoute = "/australiauniversities";
         } else if (destinationInput.toLowerCase() === "united states") {
           scholarshipRoute = "/universitiesinusa";
         } else if (destinationInput.toLowerCase() === "new zealand" || destinationInput.toLowerCase() === "new zeland") {

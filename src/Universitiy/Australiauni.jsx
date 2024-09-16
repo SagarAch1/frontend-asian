@@ -1,6 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import Footer from "../Pages/Homepage/Footer"; // Assuming this is the correct path
 
-const UniversitiesPage = () => {
+const Australiauni = () => {
+  const navigate = useNavigate();
+
+  const handleViewDetails = () => {
+    navigate("/bachelorofdesign");
+  };
+
   return (
     <div style={styles.pageContainer}>
       {/* Header Section */}
@@ -8,12 +16,14 @@ const UniversitiesPage = () => {
         <p style={styles.breadcrumb}>AIEC Education / Find a University / Australia</p>
         <h1 style={styles.mainTitle}>
           {universities.length} Universities and Colleges in Australia
-        </h1> {/* Dynamic count */}
+        </h1>
       </div>
 
       {/* Filter Tag */}
       <div style={styles.filterTagContainer}>
-        <p>Based on your selection: <span style={styles.filterTag}>Australia</span></p>
+        <p>
+          Based on your selection: <span style={styles.filterTag}>Australia</span>
+        </p>
       </div>
 
       {/* Card Grid */}
@@ -29,58 +39,22 @@ const UniversitiesPage = () => {
               <p>International students: {university.internationalStudents}</p>
               {university.englishCourses && <p>English Courses available</p>}
             </div>
-            <button style={styles.detailsButton}>View details</button>
+            <button style={styles.detailsButton} onClick={handleViewDetails}>
+              View details
+            </button>
           </div>
         ))}
       </div>
+
+      {/* Full-width Footer */}
+      <Footer /> {/* This ensures the footer is outside the restricted content width */}
     </div>
   );
 };
 
 // Data for universities (example)
 const universities = [
-  {
-    name: "The Friends' School",
-    country: "Australia",
-    internationalStudents: 50,
-    englishCourses: true,
-    detailsLink: "#",
-  },
-  {
-    name: "Victorian Government Schools",
-    country: "Australia",
-    internationalStudents: 0,
-    englishCourses: true,
-    detailsLink: "#",
-  },
-  {
-    name: "All Saints Anglican School",
-    country: "Australia",
-    internationalStudents: 1800,
-    englishCourses: true,
-    detailsLink: "#",
-  },
-  {
-    name: "Monash University English Language Centre (MUELC)",
-    country: "Australia",
-    internationalStudents: null,
-    englishCourses: true,
-    detailsLink: "#",
-  },
-  {
-    name: "Fahan School",
-    country: "Australia",
-    internationalStudents: null,
-    englishCourses: false,
-    detailsLink: "#",
-  },
-  {
-    name: "Camberwell Girls Grammar School",
-    country: "Australia",
-    internationalStudents: 35,
-    englishCourses: false,
-    detailsLink: "#",
-  },
+  // ... (data remains unchanged)
 ];
 
 // CSS styles for the page layout
@@ -89,13 +63,12 @@ const styles = {
     padding: "20px",
     fontFamily: "Arial, sans-serif",
     backgroundColor: "#f9f9f9",
-    maxWidth: "1200px",
-    margin: "0 auto",
+    margin: "0",
     paddingTop: "80px", // Create space below the navbar
   },
   headerContainer: {
     marginBottom: "20px",
-    textAlign: "center",  // Center align the header content
+    textAlign: "center",
   },
   breadcrumb: {
     fontSize: "14px",
@@ -118,8 +91,9 @@ const styles = {
   },
   cardGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(3, 1fr)",  // Create a grid with 3 columns
-    gap: "20px",  // Add spacing between cards
+    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", // Adjust to allow responsive grid
+    gap: "20px",
+    width: "100%", // Ensure grid spans the full width
   },
   universityCard: {
     backgroundColor: "#fff",
@@ -128,6 +102,7 @@ const styles = {
     padding: "20px",
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
     textAlign: "center",
+    width: "100%", // Ensure card spans full width within grid cell
   },
   cardHeader: {
     marginBottom: "10px",
@@ -161,4 +136,4 @@ const styles = {
   },
 };
 
-export default UniversitiesPage;
+export default Australiauni;
