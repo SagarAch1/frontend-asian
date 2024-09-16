@@ -1,139 +1,362 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
-import Footer from "../Pages/Homepage/Footer"; // Assuming this is the correct path
+import {
+  faBook,
+  faCalendarAlt,
+  faDollarSign,
+  faEarth,
+  //   faFileAlt,
+  faMapMarkerAlt,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import styled from "styled-components";
+import Footer from "../Pages/Homepage/Footer";
+import FormPage from "../Pages/Homepage/FormPage";
+
+const programs = [
+  //for Certified//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+  {
+    title: "Life Sciences",
+    university: " Towson University",
+    location: " Towson, Maryland ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Medical and Healthcare ",
+    university: " Towson University",
+    location: " Towson, Maryland ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Arts",
+    university: " Towson University",
+    location: " Towson, Maryland ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Law",
+    university: " Towson University",
+    location: " Towson, Maryland ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Science and Technology",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Business and Management",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Engineering",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Life Sciences",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Medical and Healthcare",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Arts",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: "Law",
+    university: " Troy University - Troy",
+    location: " Troy, Alabama ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+ 
+
+  {
+    title: " Arts ",
+    university: " Youngstown State University ",
+    location: " Youngstown, Ohio ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  {
+    title: " Law",
+    university: " Youngstown State University",
+    location: " Youngstown, Ohio ",
+    worldRanking: "50",
+    degree: "Certification",
+    intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+    entryScore: "IELTS 6.0",
+    fees: "Contact AIEC",
+    link: "/bachelorofdesign",
+  },
+
+  // Other programs
+];
 
 const Australiauni = () => {
+  const location = useLocation();
   const navigate = useNavigate();
+  const [filteredPrograms, setFilteredPrograms] = useState([]);
 
-  const handleViewDetails = () => {
-    navigate("/bachelorofdesign");
+  useEffect(() => {
+    const searchCriteria = location.state || {};
+    const filtered = programs.filter(
+      (program) =>
+        !searchCriteria.course ||
+        program.title
+          .toLowerCase()
+          .includes(searchCriteria.course?.toLowerCase())
+    );
+
+    setFilteredPrograms(filtered.length > 0 ? filtered : null);
+  }, [location.state]);
+
+  const handleViewDetails = (link) => {
+    navigate(link);
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
   };
 
   return (
-    <div style={styles.pageContainer}>
-      {/* Header Section */}
-      <div style={styles.headerContainer}>
-        <p style={styles.breadcrumb}>AIEC Education / Find a University / Australia</p>
-        <h1 style={styles.mainTitle}>
-          {universities.length} Universities and Colleges in Australia
-        </h1>
-      </div>
+    <>
+      <Container>
+        {filteredPrograms ? (
+          <>
+            <DataCount size="1.5em" bold>
+              Found {filteredPrograms.length} Universities and Colleges 
+               in Australia.
+            </DataCount>
+            <GridContainer>
+              {filteredPrograms.map((program, index) => (
+                <ProgramCard key={index}>
+                  <ProgramTitle>{program.university}</ProgramTitle>
+                  <ProgramDetails>
+                    <p>
+                      <FontAwesomeIcon icon={faBook} />{" "}
+                      <strong>{program.title}</strong>
+                    </p>
+                    {/* <p>
+                      <FontAwesomeIcon icon={faFileAlt} /> {program.Certified}
+                    </p> */}
+                    <p>
+                      <FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
+                      {program.location}
+                    </p>
+                    <p>
+                      <FontAwesomeIcon icon={faEarth} /> World Ranking:{" "}
+                      {program.worldRanking}
+                    </p>
+                    <p>
+                      <FontAwesomeIcon icon={faCalendarAlt} /> Intake:{" "}
+                      {program.intakeDate}
+                    </p>
+                    <p>
+                      <FontAwesomeIcon icon={faStar} /> Entry Score:{" "}
+                      {program.entryScore}
+                    </p>
+                    <p>
+                      <FontAwesomeIcon icon={faDollarSign} /> Fees:
+                      <ContactLink onClick={handleContactClick}>
+                        {program.fees}
+                      </ContactLink>
+                    </p>
+                  </ProgramDetails>
+                  <ViewDetailsButton
+                    onClick={() => handleViewDetails(program.link)}
+                  >
+                    View details
+                  </ViewDetailsButton>
+                </ProgramCard>
+              ))}
+            </GridContainer>
+          </>
+        ) : (
+          <DataCount size="1.5em" bold>
+            No available programs for the selected criteria.
+          </DataCount>
+        )}
+      </Container>
 
-      {/* Filter Tag */}
-      <div style={styles.filterTagContainer}>
-        <p>
-          Based on your selection: <span style={styles.filterTag}>Australia</span>
-        </p>
-      </div>
+      <FormPage />
 
-      {/* Card Grid */}
-      <div style={styles.cardGrid}>
-        {universities.map((university, index) => (
-          <div key={index} style={styles.universityCard}>
-            <div style={styles.cardHeader}>
-              <h3 style={styles.universityName}>{university.name}</h3>
-              <p style={styles.universityCountry}>{university.country}</p>
-            </div>
-            <a href={university.detailsLink} style={styles.courseLink}>View all courses</a>
-            <div style={styles.universityInfo}>
-              <p>International students: {university.internationalStudents}</p>
-              {university.englishCourses && <p>English Courses available</p>}
-            </div>
-            <button style={styles.detailsButton} onClick={handleViewDetails}>
-              View details
-            </button>
-          </div>
-        ))}
-      </div>
-
-      {/* Full-width Footer */}
-      <Footer /> {/* This ensures the footer is outside the restricted content width */}
-    </div>
+      {/* Footer */}
+      <Footer />
+    </>
   );
 };
 
-// Data for universities (example)
-const universities = [
-  // ... (data remains unchanged)
-];
+// Styled-components for styling
+const Container = styled.div`
+  margin-top: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
-// CSS styles for the page layout
-const styles = {
-  pageContainer: {
-    padding: "20px",
-    fontFamily: "Arial, sans-serif",
-    backgroundColor: "#f9f9f9",
-    margin: "0",
-    paddingTop: "80px", // Create space below the navbar
-  },
-  headerContainer: {
-    marginBottom: "20px",
-    textAlign: "center",
-  },
-  breadcrumb: {
-    fontSize: "14px",
-    color: "#666",
-  },
-  mainTitle: {
-    fontSize: "28px",
-    fontWeight: "bold",
-    color: "#333",
-  },
-  filterTagContainer: {
-    marginBottom: "20px",
-  },
-  filterTag: {
-    backgroundColor: "#007bff",
-    color: "#fff",
-    padding: "5px 10px",
-    borderRadius: "20px",
-    display: "inline-block",
-  },
-  cardGrid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))", // Adjust to allow responsive grid
-    gap: "20px",
-    width: "100%", // Ensure grid spans the full width
-  },
-  universityCard: {
-    backgroundColor: "#fff",
-    border: "1px solid #ddd",
-    borderRadius: "8px",
-    padding: "20px",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-    textAlign: "center",
-    width: "100%", // Ensure card spans full width within grid cell
-  },
-  cardHeader: {
-    marginBottom: "10px",
-  },
-  universityName: {
-    fontSize: "18px",
-    fontWeight: "bold",
-  },
-  universityCountry: {
-    color: "#888",
-    fontSize: "14px",
-  },
-  courseLink: {
-    color: "#007bff",
-    textDecoration: "none",
-    fontWeight: "bold",
-    display: "block",
-    margin: "10px 0",
-  },
-  universityInfo: {
-    fontSize: "14px",
-    marginBottom: "10px",
-  },
-  detailsButton: {
-    backgroundColor: "#007bff",
-    color: "#fff",
-    padding: "10px 20px",
-    borderRadius: "5px",
-    border: "none",
-    cursor: "pointer",
-  },
-};
+const DataCount = styled.p`
+  font-size: ${(props) => props.size || "1.1em"};
+  font-weight: ${(props) => (props.bold ? "bold" : "normal")};
+  margin-bottom: 20px;
+  text-align: center;
+`;
+
+const GridContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+`;
+
+const ProgramCard = styled.div`
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 350px;
+`;
+
+const ProgramTitle = styled.h3`
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 10px;
+`;
+
+const ProgramDetails = styled.div`
+  text-align: left;
+  margin-top: 10px;
+
+  p {
+    margin: 4px 0;
+    font-size: 0.8em;
+    color: #555;
+
+    svg {
+      margin-right: 8px;
+      color: #007bff;
+    }
+  }
+`;
+
+const ContactLink = styled.span`
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+
+  &:hover {
+    color: #0056b3;
+  }
+`;
+
+const ViewDetailsButton = styled.button`
+  margin-top: 15px;
+  padding: 10px 25px;
+  font-size: 0.9em;
+  color: black;
+  background-color: #ffffff;
+  border: black 1px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+`;
 
 export default Australiauni;
