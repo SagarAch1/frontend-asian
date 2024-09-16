@@ -1,24 +1,14 @@
 import React from "react";
 
-const Australiauni = () => {
+const UniversitiesPage = () => {
   return (
     <div style={styles.pageContainer}>
       {/* Header Section */}
       <div style={styles.headerContainer}>
-        <p style={styles.breadcrumb}>IDP Education / Find a University / Australia</p>
-        <h1 style={styles.mainTitle}>310 Universities and Colleges in Australia</h1>
-      </div>
-
-      {/* Filter and Sort Buttons */}
-      <div style={styles.filterSortContainer}>
-        <button style={styles.filterButton}>Filter university</button>
-        <button style={styles.sortButton}>Sort by: Popularity</button>
-
-        {/* Toggle for FastLane */}
-        <div style={styles.toggleContainer}>
-          <span>Get Instant Offer</span>
-          <span style={styles.toggleLabel}>FastLane</span>
-        </div>
+        <p style={styles.breadcrumb}>AIEC Education / Find a University / Australia</p>
+        <h1 style={styles.mainTitle}>
+          {universities.length} Universities and Colleges in Australia
+        </h1> {/* Dynamic count */}
       </div>
 
       {/* Filter Tag */}
@@ -99,9 +89,13 @@ const styles = {
     padding: "20px",
     fontFamily: "Arial, sans-serif",
     backgroundColor: "#f9f9f9",
+    maxWidth: "1200px",
+    margin: "0 auto",
+    paddingTop: "80px", // Create space below the navbar
   },
   headerContainer: {
     marginBottom: "20px",
+    textAlign: "center",  // Center align the header content
   },
   breadcrumb: {
     fontSize: "14px",
@@ -111,42 +105,6 @@ const styles = {
     fontSize: "28px",
     fontWeight: "bold",
     color: "#333",
-  },
-  filterSortContainer: {
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: "20px",
-  },
-  filterButton: {
-    backgroundColor: "#007bff",
-    color: "#fff",
-    border: "none",
-    padding: "10px 20px",
-    borderRadius: "5px",
-    cursor: "pointer",
-  },
-  sortButton: {
-    backgroundColor: "#fff",
-    color: "#007bff",
-    border: "1px solid #007bff",
-    padding: "10px 20px",
-    borderRadius: "5px",
-    cursor: "pointer",
-  },
-  toggleContainer: {
-    display: "flex",
-    alignItems: "center",
-    marginLeft: "auto",
-    cursor: "pointer",
-  },
-  toggleLabel: {
-    backgroundColor: "#d4edda",
-    color: "#155724",
-    fontSize: "12px",
-    marginLeft: "10px",
-    padding: "2px 6px",
-    borderRadius: "10px",
   },
   filterTagContainer: {
     marginBottom: "20px",
@@ -160,8 +118,8 @@ const styles = {
   },
   cardGrid: {
     display: "grid",
-    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-    gap: "20px",
+    gridTemplateColumns: "repeat(3, 1fr)",  // Create a grid with 3 columns
+    gap: "20px",  // Add spacing between cards
   },
   universityCard: {
     backgroundColor: "#fff",
@@ -203,4 +161,4 @@ const styles = {
   },
 };
 
-export default Australiauni;
+export default UniversitiesPage;

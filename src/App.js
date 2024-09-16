@@ -38,6 +38,7 @@ import Studentbanking from "./Pages/Studentessentials/Studentbanking";
 import Guardianship from "./Pages/Studentessentials/Guardianship"
 
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
+import Australiauni from "./Universitiy/Australiauni";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -158,6 +159,7 @@ function App() {
         <Route path="/guradianship" element={<Guardianship/>} />
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
+        <Route path="/australiauniversities" element={<Australiauni />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
