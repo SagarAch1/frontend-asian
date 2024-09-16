@@ -9949,7 +9949,7 @@ const  CourseCanada
         {filteredPrograms ? (
           <>
             <DataCount size="1.5em" bold>
-              Found {filteredPrograms.length} programs according to your criteria in USA.
+              Found {filteredPrograms.length} programs according to your criteria in Canada.
             </DataCount>
             <GridContainer>
               {filteredPrograms.map((program, index) => (
