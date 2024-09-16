@@ -271,6 +271,33 @@ const BelowSliderSection = ({ activeSection }) => {
       } else {
         console.log("No destination selected for scholarships");
       }
+    } else if (activeSection === "universities") {
+      if (destinationInput) {
+        let scholarshipRoute = null;
+  
+        // Determine the route for scholarships based on the destination input
+        if (destinationInput.toLowerCase() === "australia") {
+          scholarshipRoute = "/universitiesinaustralia";
+        } else if (destinationInput.toLowerCase() === "united states") {
+          scholarshipRoute = "/universitiesinusa";
+        } else if (destinationInput.toLowerCase() === "new zealand" || destinationInput.toLowerCase() === "new zeland") {
+          scholarshipRoute = "/universitiesinnewzeland";
+        } else if (destinationInput.toLowerCase() === "canada") {
+          scholarshipRoute = "/universitiesincanada";
+        }
+  
+        // Navigate to the scholarship route if a valid one is found
+        if (scholarshipRoute) {
+          console.log("Navigating to", scholarshipRoute);
+          navigate(scholarshipRoute, {
+            state: { destination: destinationInput },
+          });
+        } else {
+          console.log("No matching scholarship destination found");
+        }
+      } else {
+        console.log("No destination selected for scholarships");
+      }
     }
   };
   
