@@ -46,6 +46,7 @@ import Newzelanduni from "./Universitiy/Newzelanduni";
 import Australiascholarships from "./Pages/Scholarships/Australiascholarship";
 import Usascholarships from "./Pages/Scholarships/Usascholarships";
 import Ukscholarships from "./Pages/Scholarships/Ukscholarships";
+import Canadascholarships from "./Pages/Scholarships/Canadascholarships";
 // import Irelanuni from "./Universitiy/Irelanuni";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
@@ -178,6 +179,8 @@ function App() {
         <Route path="/scholarshipsinusa" element={<Usascholarships />} />
 
         <Route path="/scholarshipsinuk" element={<Ukscholarships />} />
+
+        <Route path="/scholarshipsincanada" element={<Canadascholarships />} />
 
 
         {/* Admin routes */}
