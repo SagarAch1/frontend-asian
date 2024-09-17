@@ -44,6 +44,8 @@ import Ukuni from "./Universitiy/Ukuni";
 import Canadauni from "./Universitiy/Canadauni";
 import Newzelanduni from "./Universitiy/Newzelanduni";
 import Australiascholarships from "./Pages/Scholarships/Australiascholarship";
+import Usascholarships from "./Pages/Scholarships/Usascholarships";
+import Ukscholarships from "./Pages/Scholarships/Ukscholarships";
 // import Irelanuni from "./Universitiy/Irelanuni";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
@@ -172,6 +174,10 @@ function App() {
         <Route path="/newzelanduniversities" element={<Newzelanduni />} />
 
        <Route path="/scholarshipsinaustralia" element={<Australiascholarships />} />
+
+        <Route path="/scholarshipsinusa" element={<Usascholarships />} />
+
+        <Route path="/scholarshipsinuk" element={<Ukscholarships />} />
 
 
         {/* Admin routes */}

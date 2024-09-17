@@ -257,6 +257,8 @@ const BelowSliderSection = ({ activeSection }) => {
           scholarshipRoute = "/scholarshipsinnewzeland";
         } else if (destinationInput.toLowerCase() === "canada") {
           scholarshipRoute = "/scholarshipsincanada";
+        }else if (destinationInput.toLowerCase() === "united kingdom") {
+          scholarshipRoute = "/scholarshipsinuk";
         }
   
         // Navigate to the scholarship route if a valid one is found
