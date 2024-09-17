@@ -279,12 +279,14 @@ const BelowSliderSection = ({ activeSection }) => {
         if (destinationInput.toLowerCase() === "australia") {
           scholarshipRoute = "/australiauniversities";
         } else if (destinationInput.toLowerCase() === "united states") {
-          scholarshipRoute = "/universitiesinusa";
+          scholarshipRoute = "/usauniversities";
         } else if (destinationInput.toLowerCase() === "new zealand" || destinationInput.toLowerCase() === "new zeland") {
-          scholarshipRoute = "/universitiesinnewzeland";
+          scholarshipRoute = "/newzelanduniversities";
         } else if (destinationInput.toLowerCase() === "canada") {
-          scholarshipRoute = "/universitiesincanada";
-        }
+          scholarshipRoute = "/canadauniversities";
+        } else if (destinationInput.toLowerCase() === "united kingdom") {
+          scholarshipRoute = "/ukuniversities";
+        } 
   
         // Navigate to the scholarship route if a valid one is found
         if (scholarshipRoute) {

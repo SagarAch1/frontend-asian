@@ -39,6 +39,11 @@ import Guardianship from "./Pages/Studentessentials/Guardianship"
 
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
 import Australiauni from "./Universitiy/Australiauni";
+import Usauni from "./Universitiy/Usauni";
+import Ukuni from "./Universitiy/Ukuni";
+import Canadauni from "./Universitiy/Canadauni";
+import Newzelanduni from "./Universitiy/Newzelanduni";
+// import Irelanuni from "./Universitiy/Irelanuni";
 
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
@@ -160,6 +165,11 @@ function App() {
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
         <Route path="/australiauniversities" element={<Australiauni />} />
+        <Route path="/usauniversities" element={<Usauni />} />
+        <Route path="/ukuniversities" element={<Ukuni />} />
+        <Route path="/canadauniversities" element={<Canadauni />} />
+        <Route path="/newzelanduniversities" element={<Newzelanduni />} />
+
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
