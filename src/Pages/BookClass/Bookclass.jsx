@@ -1,19 +1,22 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { createBookApi } from "../../apis/Api"; 
-import WhyChooseAiec from "../Homepage/WhyChooseAiec";
+import { createBookApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
+import WhyChooseAiec from "../Homepage/WhyChooseAiec";
 import Youshouldknow from "../Homepage/YouShouldknow";
 
 const Bookclass = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    phone: "",
     languageclass: "",
     time: "",
+    payment: "",
     message: "",
   });
-  const [showPopup, setShowPopup] = useState(false); // State to manage pop-up visibility
+  const [showPopup, setShowPopup] = useState(false);
+  const [showPaymentPopup, setShowPaymentPopup] = useState(false);
 
   const styles = {
     outerBox: {
@@ -21,20 +24,20 @@ const Bookclass = () => {
       alignItems: "center",
       justifyContent: "center",
       backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/aus.jpeg)`,
-      backgroundSize: "cover", 
-      backgroundPosition: "center", 
-      backgroundRepeat: "no-repeat", 
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
       padding: "50px",
       borderRadius: "15px",
-      minHeight: "10vh", 
-      marginTop: "80px", 
+      minHeight: "10vh",
+      marginTop: "80px",
     },
     container: {
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      backgroundColor: "rgba(0, 0, 0, 0.7)", // Dark semi-transparent background
+      backgroundColor: "rgba(0, 0, 0, 0.7)",
       padding: "30px",
       borderRadius: "20px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
@@ -43,14 +46,14 @@ const Bookclass = () => {
       fontSize: "2rem",
       marginBottom: "20px",
       fontWeight: "bold",
-      color: "#fff", 
+      color: "#fff",
     },
     form: {
       display: "flex",
       flexDirection: "column",
-      width: "100%", 
-      maxWidth: "400px", 
-      backgroundColor: "rgba(255, 255, 255, 0.9)", 
+      width: "100%",
+      maxWidth: "400px",
+      backgroundColor: "rgba(255, 255, 255, 0.9)",
       padding: "20px",
       borderRadius: "10px",
     },
@@ -106,6 +109,22 @@ const Bookclass = () => {
       borderRadius: "10px",
       textAlign: "center",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+      position: "relative",
+    },
+    closeButton: {
+      position: "absolute",
+      top: "10px",
+      right: "10px",
+      background: "none",
+      border: "none",
+      color: "red",
+      fontSize: "1.5rem",
+      cursor: "pointer",
+    },
+    paymentImage: {
+      width: "100%",
+      maxWidth: "300px",
+      marginBottom: "20px",
     },
     popupButton: {
       marginTop: "20px",
@@ -122,19 +141,25 @@ const Bookclass = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prevState => ({ ...prevState, [name]: value }));
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+    // Check if the user selects "Online Payment" and trigger the pop-up
+    if (name === "payment" && value === "Online Payment") {
+      setShowPaymentPopup(true);
+    }
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       await createBookApi(formData);
-      setShowPopup(true); // Show pop-up on successful booking
+      setShowPopup(true);
       setFormData({
         name: "",
         email: "",
+        phone: "",
         languageclass: "",
         time: "",
+        payment: "",
         message: "",
       });
     } catch (error) {
@@ -143,7 +168,8 @@ const Bookclass = () => {
   };
 
   const handleClosePopup = () => {
-    setShowPopup(false); 
+    setShowPopup(false);
+    setShowPaymentPopup(false);
   };
 
   return (
@@ -170,6 +196,15 @@ const Bookclass = () => {
               onChange={handleInputChange}
               required
             />
+            <input
+              style={styles.input}
+              type="text"
+              name="phone"
+              placeholder="Enter your number"
+              value={formData.phone}
+              onChange={handleInputChange}
+              required
+            />
             <select
               style={styles.select}
               name="languageclass"
@@ -182,6 +217,19 @@ const Bookclass = () => {
               </option>
               <option value="IELTS (Rs 3000)">IELTS (Rs 3000)</option>
               <option value="PTE (Rs 4000)">PTE (Rs 4000)</option>
+            </select>
+            <select
+              style={styles.select}
+              name="payment"
+              value={formData.payment}
+              onChange={handleInputChange}
+              required
+            >
+              <option value="" disabled>
+                Select Payment
+              </option>
+              <option value="Will Pay In Office">Will Pay In Office</option>
+              <option value="Online Payment">Online Payment</option>
             </select>
             <select
               style={styles.select}
@@ -212,7 +260,27 @@ const Bookclass = () => {
           </form>
         </div>
 
-        {/* Pop-up */}
+        {/* Payment Pop-up */}
+        {showPaymentPopup && (
+          <div style={styles.popupOverlay}>
+            <div style={styles.popup}>
+              <button style={styles.closeButton} onClick={handleClosePopup}>
+                ×
+              </button>
+              <img
+                style={styles.paymentImage}
+                src={`${process.env.PUBLIC_URL}/assets/images/pay.jpg`}
+                alt="Payment Option"
+              />
+              <h3>Complete Your Payment</h3>
+              <button style={styles.popupButton} onClick={handleClosePopup}>
+                Done
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Success Pop-up */}
         {showPopup && (
           <div style={styles.popupOverlay}>
             <div style={styles.popup}>

@@ -178,7 +178,7 @@ import {
     // Other programs
   ];
   
-  const Canadascholarships = () => {
+  const Newzelandscholarships = () => {
     const location = useLocation();
     const navigate = useNavigate();
     const [filteredPrograms, setFilteredPrograms] = useState([]);
@@ -210,7 +210,7 @@ import {
           {filteredPrograms ? (
             <>
               <DataCount size="1.5em" bold>
-                Found {filteredPrograms.length}  Scholarships in Canada.
+                Found {filteredPrograms.length}  Scholarships in Newzeland.
               </DataCount>
               <GridContainer>
                 {filteredPrograms.map((program, index) => (
@@ -358,5 +358,5 @@ import {
     }
   `;
   
-  export default Canadascholarships;
+  export default Newzelandscholarships;
   

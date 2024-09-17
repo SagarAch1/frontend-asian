@@ -291,9 +291,10 @@ const FormPage = () => {
               style={selectStyle}
             >
               <option value="">Nearest AIEC Office*</option>
-              <option value="ABC">ABC</option>
-              <option value="CDE">CDE</option>
-              <option value="FGH">FGH</option>
+              <option value="Kathmandu">Kathmandu</option>
+              <option value="Chitwan">Chitwan</option>
+              <option value="Pokhara">Pokhara</option>
+              <option value="Sydney">Sydney</option>
             </select>
 
             <select

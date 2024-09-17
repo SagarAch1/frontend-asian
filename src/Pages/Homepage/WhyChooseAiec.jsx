@@ -74,7 +74,7 @@ const WhyChooseAiec = () => {
       <div style={gridContainerStyle}>
         <div style={cardStyle}>
           <div style={iconStyle}>🎓</div>
-          <h3 style={titleStyle}>55+ years experience</h3>
+          <h3 style={titleStyle}> </h3>
           <p style={descriptionStyle}>
             AIEC combines experience and technology to help students get into
             their dream international course.
