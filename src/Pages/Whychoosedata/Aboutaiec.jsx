@@ -46,22 +46,24 @@ const Aboutaiec = () => {
   };
 
   const buttonGroupStyle = {
-    display: "flex",
-    gap: "20px",
-    marginTop: "30px",
+    display: 'grid',
+    gridTemplateColumns: 'repeat(3, 1fr)', // 3 buttons per row
+    gap: '10px', // space between buttons
+    maxWidth: '900px', // limit the width for the button group
+    margin: '20px auto', // center the button group horizontally
   };
 
   const buttonStyle = {
-    padding: "10px 20px",
-    fontSize: "16px",
-    border: "2px solid #007bff",
-    color: "#007bff",
-    backgroundColor: "transparent",
-    borderRadius: "5px",
-    cursor: "pointer",
-    transition: "all 0.3s ease",
+    padding: '10px 20px',
+    border: '2px solid #007bff',
+    backgroundColor: 'white',
+    color: '#007bff',
+    borderRadius: '5px',
+    fontSize: '16px',
+    cursor: 'pointer',
+    textAlign: 'center',
+    flexGrow: 1, // make buttons have equal width
   };
-
   const buttonHoverStyle = {
     backgroundColor: "#007bff",
     color: "#fff",
