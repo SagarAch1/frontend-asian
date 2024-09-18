@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Howtofindcourse = () => {
+const Aboutaiec = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
   const navigate = useNavigate(); // Create navigate instance
 
@@ -94,7 +94,7 @@ const Howtofindcourse = () => {
     { text: "Pre-departure support", path: "/pre-departure-support" },
     { text: "What we do?", path: "/whatwedo" },
     { text: "Events", path: "/events" },
-    { text: "How to find a course", path: "/howtofindcourse" },
+    { text: "How to find a course", path: "/how-to-find-course" },
     {
       text: "Visa application assistance",
       path: "/visa-application-assistance",
@@ -132,23 +132,49 @@ const Howtofindcourse = () => {
           Reach out to your nearest IDP office anytime for a compassionate and
           free counseling session. Your aspirations matter to us!
         </p>
-        <h2 style={titleStyle}>We Will Help You To Find Course</h2>
-
-        {/* Find Course Button */}
+        <h2 style={titleStyle}>You can find course from here</h2>
         <button
           style={{
             ...buttonStyle,
             marginTop: "20px", // Add margin to separate the button from text
+            display: "block", // Ensure button stays full-width
+            margin: "20px auto",
+            marginLeft: "20px", // Center the button horizontally
           }}
           onClick={() => handleButtonClick("/courseusa")} // Navigate to the course page
         >
           Find Course
         </button>
+
+        <h3 style={titleStyle}>Learn More</h3>
+
+        {/* Button Section */}
+        <div style={buttonGroupStyle}>
+          {buttons.map((button, index) => (
+            <button
+              key={index}
+              style={
+                hoveredButton === index
+                  ? { ...buttonStyle, ...buttonHoverStyle }
+                  : buttonStyle
+              }
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => handleButtonClick(button.path)} // Navigate to the corresponding path
+            >
+              {button.text}
+            </button>
+          ))}
+        </div>
+
+    
+       
       </div>
+
       <FormPage />
       <Footer />
     </div>
   );
 };
 
-export default Howtofindcourse;
+export default Aboutaiec;
