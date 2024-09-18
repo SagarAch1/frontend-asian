@@ -77,6 +77,7 @@ import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Studyabroadcounseling from "./Pages/Whychoosedata/Studyabroadcounselling";
 import Howtofindcourse from "./Pages/Whychoosedata/Howtofindacourse";
+import Studentvisaapplication from "./Pages/Whychoosedata/Studentvisaapplication";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -196,6 +197,7 @@ function App() {
         <Route path="/whatwedo" element={<Whatwedo />} />
         <Route path="/studyabroadcounseling" element={<Studyabroadcounseling />} />
         <Route path="/howtofindcourse" element={<Howtofindcourse />} />
+        <Route path="/studentvisapplication" element={<Studentvisaapplication />} />
 
 
         {/* Admin routes */}

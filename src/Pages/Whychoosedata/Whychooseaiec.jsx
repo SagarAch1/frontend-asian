@@ -95,7 +95,7 @@ const Whychooseaiec = () => {
     { label: "What we do?", path: "/whatwedo" },
     { label: "Events", path: "/events" },
     { label: "How to find a course", path: "/howtofindcourse" },
-    { label: "Visa application assistance", path: "/visa-application-assistance" },
+    { label: "Visa application assistance", path: "/studentvisapplication" },
     { label: "Living abroad support", path: "/living-abroad-support" },
   ];
 
@@ -133,8 +133,8 @@ const Whychooseaiec = () => {
           Ready to start your global career? We're here to help
         </h3>
         <p style={paragraphStyle}>
-          AIEC works with you to turn your plan to study abroad into a launch pad
-          for your professional success and personal growth.
+          AIEC works with you to turn your plan to study abroad into a launch
+          pad for your professional success and personal growth.
         </p>
         <p style={paragraphStyle}>
           We combine our vast experience in the education industry and the
@@ -161,9 +161,7 @@ const Whychooseaiec = () => {
           also your family. This is why your AIEC counsellor will go the extra
           mile and support both you and your family, as you begin your journey.
         </p>
-        <h3 style={titleStyle}>
-          Approachable international education experts
-        </h3>
+        <h3 style={titleStyle}>Approachable international education experts</h3>
         <p style={paragraphStyle}>
           Many of the AIEC counsellors were international students themselves.
         </p>
@@ -174,7 +172,7 @@ const Whychooseaiec = () => {
         <p style={paragraphStyle}>
           They know what it is like to have the right information before heading
           to a foreign country and they are willing to share what they have
-          learned in their study abroad journey. 
+          learned in their study abroad journey.
         </p>
         <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
         <p style={paragraphStyle}>
