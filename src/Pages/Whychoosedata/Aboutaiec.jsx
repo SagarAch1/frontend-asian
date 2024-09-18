@@ -1,4 +1,6 @@
 import React from "react";
+import FormPage from "../Homepage/FormPage";
+import Footer from "../Homepage/Footer";
 
 const Aboutaiec = () => {
   const containerStyle = {
@@ -165,8 +167,46 @@ const Aboutaiec = () => {
           >
             What we do?
           </button>
+          <button
+            style={buttonStyle}
+            onMouseOver={(e) =>
+              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
+            }
+            onMouseOut={(e) => (e.target.style = buttonStyle)}
+          >
+            Events
+          </button>
+          <button
+            style={buttonStyle}
+            onMouseOver={(e) =>
+              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
+            }
+            onMouseOut={(e) => (e.target.style = buttonStyle)}
+          >
+            How to find a course
+          </button>
+          <button
+            style={buttonStyle}
+            onMouseOver={(e) =>
+              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
+            }
+            onMouseOut={(e) => (e.target.style = buttonStyle)}
+          >
+            Visa application assistance
+          </button>
+          <button
+            style={buttonStyle}
+            onMouseOver={(e) =>
+              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
+            }
+            onMouseOut={(e) => (e.target.style = buttonStyle)}
+          >
+            Living abroad support
+          </button>
         </div>
       </div>
+      <FormPage />
+      <Footer />
     </div>
   );
 };
