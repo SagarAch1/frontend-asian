@@ -174,7 +174,7 @@ const Whychooseaiec = () => {
         <p style={paragraphStyle}>
           They know what it is like to have the right information before heading
           to a foreign country and they are willing to share what they have
-          learned in their study abroad journey.
+          learned in their study abroad journey. 
         </p>
         <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
         <p style={paragraphStyle}>
