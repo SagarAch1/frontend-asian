@@ -94,7 +94,7 @@ const Studyabroadcounseling = () => {
     { label: "Pre-departure support", path: "/pre-departure-support" },
     { label: "What we do?", path: "/whatwedo" },
     { label: "Events", path: "/events" },
-    { label: "How to find a course", path: "/how-to-find-a-course" },
+    { label: "How to find a course", path: "/howtofindcourse" },
     {
       label: "Visa application assistance",
       path: "/visa-application-assistance",

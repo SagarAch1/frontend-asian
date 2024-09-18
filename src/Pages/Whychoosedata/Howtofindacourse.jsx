@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Aboutaiec = () => {
+const Howtofindcourse = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
   const navigate = useNavigate(); // Create navigate instance
 
@@ -94,7 +94,7 @@ const Aboutaiec = () => {
     { text: "Pre-departure support", path: "/pre-departure-support" },
     { text: "What we do?", path: "/whatwedo" },
     { text: "Events", path: "/events" },
-    { text: "How to find a course", path: "/how-to-find-course" },
+    { text: "How to find a course", path: "/howtofindcourse" },
     {
       text: "Visa application assistance",
       path: "/visa-application-assistance",
@@ -133,6 +133,17 @@ const Aboutaiec = () => {
           free counseling session. Your aspirations matter to us!
         </p>
         <h2 style={titleStyle}>We Will Help You To Find Course</h2>
+
+        {/* Find Course Button */}
+        <button
+          style={{
+            ...buttonStyle,
+            marginTop: "20px", // Add margin to separate the button from text
+          }}
+          onClick={() => handleButtonClick("/courseusa")} // Navigate to the course page
+        >
+          Find Course
+        </button>
       </div>
       <FormPage />
       <Footer />
@@ -140,4 +151,4 @@ const Aboutaiec = () => {
   );
 };
 
-export default Aboutaiec;
+export default Howtofindcourse;

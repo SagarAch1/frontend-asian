@@ -94,7 +94,7 @@ const Aboutaiec = () => {
     { text: "Pre-departure support", path: "/pre-departure-support" },
     { text: "What we do?", path: "/whatwedo" },
     { text: "Events", path: "/events" },
-    { text: "How to find a course", path: "/how-to-find-course" },
+    { text: "How to find a course", path: "/howtofindcourse" },
     { text: "Visa application assistance", path: "/visa-application-assistance" },
     { text: "Living abroad support", path: "/living-abroad-support" },
   ];
