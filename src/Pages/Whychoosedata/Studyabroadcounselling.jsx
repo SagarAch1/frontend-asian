@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Whychooseaiec = () => {
+const Studyabroadcounseling = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
   const navigate = useNavigate(); // Initialize navigation
 
@@ -95,7 +95,10 @@ const Whychooseaiec = () => {
     { label: "What we do?", path: "/whatwedo" },
     { label: "Events", path: "/events" },
     { label: "How to find a course", path: "/how-to-find-a-course" },
-    { label: "Visa application assistance", path: "/visa-application-assistance" },
+    {
+      label: "Visa application assistance",
+      path: "/visa-application-assistance",
+    },
     { label: "Living abroad support", path: "/living-abroad-support" },
   ];
 
@@ -112,76 +115,108 @@ const Whychooseaiec = () => {
 
       {/* Content Section */}
       <div style={contentContainerStyle}>
-        <h2 style={titleStyle}>Why choose AIEC</h2>
+        <h2 style={titleStyle}>Free study abroad counselling</h2>
         <p style={subtitleStyle}>
-          AIEC is a global leader in international education services. We help
-          international students such as yourself to study in English speaking
-          countries.
+          Our expert counselors are here to guide you every step of the way and
+          to assist you in finding the best school and program that aligns with
+          your needs and budget.
         </p>
         <p style={paragraphStyle}>
-          Our extensive network of approachable experts helps you identify and
-          secure the university or college where you can thrive.
-        </p>
-        <p style={paragraphStyle}>
-          We can connect you to the courses you desire to pursue in the most
-          suitable university or institution located in the right country. We
-          have been helping students for over half a century and have created a
-          huge network of opportunity with offices in 32 countries.
+          With numerous options to consider, making decisions about where and
+          what to study, and discovering the optimal application approach for
+          increased acceptance odds, can be challenging. Here's how we can
+          assist you in discovering the perfect course and destination.
         </p>
 
-        <h3 style={titleStyle}>
-          Ready to start your global career? We're here to help
-        </h3>
+        <h3 style={titleStyle}>Course selection and application </h3>
         <p style={paragraphStyle}>
-          AIEC works with you to turn your plan to study abroad into a launch pad
-          for your professional success and personal growth.
+          AIEC’s counselors are adept at comprehending your educational
+          aspirations and locating the ideal course that aligns with your
+          ambitions. Our team can make the optimal choice for you, thanks to our
+          advanced knowledge matching system that houses the latest information
+          about our 600 partner universities and institutions
+        </p>
+
+        <h3 style={titleStyle}>Relatable and approachable </h3>
+        <p style={paragraphStyle}>
+          Our experienced counselors comprehend your study objectives. In fact,
+          a number of our counselors were international students themselves,
+          enabling them to address all your queries.
+        </p>
+
+        <h3 style={titleStyle}>Speak your preferred language </h3>
+        <p style={paragraphStyle}>
+          If you prefer conversing in your native language during your visit,
+          rest assured that we have team members who can make you feel at ease
+          and understand you.
+        </p>
+        <h3 style={titleStyle}>What should you expect?  </h3>
+        <p style={paragraphStyle}>
+          During your initial meeting with us, your counselor will discuss the
+          following topics:
         </p>
         <p style={paragraphStyle}>
-          We combine our vast experience in the education industry and the
-          latest technology available to help you make the most informed
-          decision possible.
+          1. Your education, experiences, interests, timeline, budget, and
+          career or migration objectives.
         </p>
         <p style={paragraphStyle}>
-          We partner with more than 650 leading universities, schools and
-          colleges across Australia, Canada, New Zealand, the United Kingdom and
-          the United States. With access to a database of over 180,000 courses
-          and programmes, we are sure we can help you find what fits you best.
+          2. Courses that align with your requirements.
         </p>
-        <h3 style={titleStyle}>We put you first</h3>
+        <p style={paragraphStyle}>3. The application process.</p>
         <p style={paragraphStyle}>
-          Need help finding the best course, submitting your university
-          application or navigating the visa requirements?
+          4. Visa considerations and their alignment with your intentions.
         </p>
         <p style={paragraphStyle}>
-          Your dedicated AIEC counsellor will work with you closely to prepare
-          you for your study abroad journey and help you every step of the way.
+          5. Upcoming information on events that might be of interest.
+        </p>
+
+        <h3 style={titleStyle}>Submitting your study applications </h3>
+        <p style={paragraphStyle}>
+          We provide the necessary institution course application documents and
+          institution program guides, and also compile your applications while
+          ensuring the certification of supporting documents.
         </p>
         <p style={paragraphStyle}>
-          We know the transition can be an exciting time for not just you, but
-          also your family. This is why your AIEC counsellor will go the extra
-          mile and support both you and your family, as you begin your journey.
-        </p>
-        <h3 style={titleStyle}>
-          Approachable international education experts
-        </h3>
-        <p style={paragraphStyle}>
-          Many of the AIEC counsellors were international students themselves.
+          Subsequently, we handle the task of submitting your application to the
+          university or institution you've selected.
         </p>
         <p style={paragraphStyle}>
-          They are international education experts, who have been there in the
-          same place that you are right now.
+          You might receive an invitation to meet with education institution
+          representatives who will evaluate your application and determine your
+          eligibility for the course.
         </p>
         <p style={paragraphStyle}>
-          They know what it is like to have the right information before heading
-          to a foreign country and they are willing to share what they have
-          learned in their study abroad journey.
+          Additionally, you could seize the chance to engage in discussions
+          about course structures and graduate outcomes during our education
+          seminars.
         </p>
-        <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
+
+        <h3 style={titleStyle}>Response from the study provider </h3>
         <p style={paragraphStyle}>
-          As a proud co-owner of IELTS, we can help you book and prepare for
-          your IELTS test. Recognised by more than 12,000 organisations around
-          the world, IELTS is the world’s leading English language test for
-          study, work and migration purposes.
+          Within two to six weeks of submitting your application, you can expect
+          a response from the school or university. When you are granted a place
+          in a course, an offer letter will be issued to you.
+        </p>
+        <p style={paragraphStyle}>
+          In certain instances, a school or university representative can
+          evaluate your eligibility for the course and provide an offer letter
+          during your interview. These interviews might occur at our office or
+          at one of AIEC's numerous international student events held throughout
+          the year.
+        </p>
+
+        <h3 style={titleStyle}>Acceptance and payment </h3>
+        <p style={paragraphStyle}>
+          If your offer letter has no conditions, you can accept it right away.
+          Some examples of conditions that might be listed in the offer letter
+          include providing a fresh IELTS test result, an academic transcript
+          from your most recent study, or certified documents.
+        </p>
+        <p style={paragraphStyle}>
+          You can accept these offers at an AIEC office, and the deposit will be
+          directly paid to the school or university extending the offer. Your
+          counselor will accompany you throughout the process, ensuring guidance
+          and ease.
         </p>
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>
@@ -223,4 +258,4 @@ const Whychooseaiec = () => {
   );
 };
 
-export default Whychooseaiec;
+export default Studyabroadcounseling;

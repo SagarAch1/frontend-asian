@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Aboutaiec = () => {
+const Whatwedo = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
-  const navigate = useNavigate(); // Create navigate instance
+  const navigate = useNavigate(); // Initialize navigation
 
   const containerStyle = {
     width: "100%",
@@ -85,18 +85,21 @@ const Aboutaiec = () => {
   };
 
   const handleButtonClick = (path) => {
-    navigate(path); // Navigate to the provided path
+    navigate(path); // Navigate to the specified path
   };
 
   const buttons = [
-    { text: "Why choose AIEC?", path: "/whychooseus" },
-    { text: "Study abroad counseling", path: "/studyabroadcounseling" },
-    { text: "Pre-departure support", path: "/pre-departure-support" },
-    { text: "What we do?", path: "/whatwedo" },
-    { text: "Events", path: "/events" },
-    { text: "How to find a course", path: "/how-to-find-course" },
-    { text: "Visa application assistance", path: "/visa-application-assistance" },
-    { text: "Living abroad support", path: "/living-abroad-support" },
+    { label: "Why choose AIEC?", path: "/whychooseus" },
+    { label: "Study abroad counseling", path: "/studyabroadcounseling" },
+    { label: "Pre-departure support", path: "/pre-departure-support" },
+    { label: "What we do?", path: "/whatwedo" },
+    { label: "Events", path: "/events" },
+    { label: "How to find a course", path: "/how-to-find-a-course" },
+    {
+      label: "Visa application assistance",
+      path: "/visa-application-assistance",
+    },
+    { label: "Living abroad support", path: "/living-abroad-support" },
   ];
 
   return (
@@ -112,47 +115,26 @@ const Aboutaiec = () => {
 
       {/* Content Section */}
       <div style={contentContainerStyle}>
-        <h2 style={titleStyle}>About AIEC</h2>
+        <h2 style={titleStyle}>What we do</h2>
         <p style={subtitleStyle}>
-          AIEC is a leader in global education services. As an Australian listed
-          company, we have operations in 57 countries and our websites attract
-          100 million visits a year. We specialise in combining human expertise
-          with our leading digital platform to help people get accepted into
-          their ideal course, take an English language test or learn English in
-          our schools.
+          Study abroad with someone who knows the way.
         </p>
         <p style={paragraphStyle}>
-          Our teams are side by side with our customers every day, at every step
-          from course search through to starting their dream course or career.
-          Our data insights are relied upon by organisations around the world to
-          help ensure decisions are informed by the diverse needs, challenges
-          and motivations of students.
+          AIEC is a global leader in international educational services. We’ve
+          been in the industry for close to 50 years and know the best practices
+          to help you realise your dream of studying abroad.
         </p>
         <p style={paragraphStyle}>
-          Most of all, we are proud of our people. It is our trusted people and
-          processes which help our customers turn their study or English goals
-          into a launchpad for their career.
-        </p>
-        <h3 style={titleStyle}>About AIEC Student Placement</h3>
-        <p style={paragraphStyle}>
-          Our premise is simple: International education thrives when students
-          are matched with the right country, with the right course, with the
-          right support system. AIEC is the only organisation by students’ sides, from their first course search, until they have found their feet in their new country.
+          Our popular services have helped thousands of students to execute
+          their plans to study abroad smoothly.
         </p>
         <p style={paragraphStyle}>
-          Our team of trusted education experts across the world, combined with
-          our global digital platform, ensures that students can connect to
-          life-changing study opportunities. We are proudly student-first. When
-          the pandemic took hold, our counsellors stepped up to provide guidance
-          to students and their families and help them navigate uncertainty.
+          We provide a wide range of services to support your international
+          education journey. We are dedicated to you and your international
+          future from course information to career advice. Know how we support
+          and aid students to study and thrive abroad.
         </p>
-        <p style={paragraphStyle}>
-          Our trusted human connections on a global scale, facilitated by our
-          investment in technology and customer research, ensures the best
-          matches for students and institutions. And now, our teams can use the
-          insights from our leading digital platform to help students gain
-          acceptance into the right course, faster.
-        </p>
+
         <h3 style={titleStyle}>Learn More</h3>
 
         {/* Button Section */}
@@ -167,9 +149,9 @@ const Aboutaiec = () => {
               }
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
-              onClick={() => handleButtonClick(button.path)} // Navigate to the corresponding path
+              onClick={() => handleButtonClick(button.path)} // Navigate to the button path on click
             >
-              {button.text}
+              {button.label}
             </button>
           ))}
         </div>
@@ -180,4 +162,4 @@ const Aboutaiec = () => {
   );
 };
 
-export default Aboutaiec;
+export default Whatwedo;
