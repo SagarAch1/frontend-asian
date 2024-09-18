@@ -106,7 +106,7 @@ const WhyChooseAiec = () => {
         </div>
 
         <div style={cardStyle}>
-          <div style={iconStyle}>⭐</div>
+          <div style={iconStyle}>👨‍🏫</div>
           <h3 style={titleStyle}>Driven by innovation</h3>
           <p style={descriptionStyle}>
             Combining human expertise with smart tech for a highy personalised
@@ -118,7 +118,9 @@ const WhyChooseAiec = () => {
         </div>
 
         <div style={cardStyle}>
-          <div style={iconStyle}>🎓</div>
+          <div style={iconStyle}>
+            <i className="fas fa-search"></i> {/* Search icon */}
+          </div>
           <h3 style={titleStyle}>Centred around you</h3>
           <p style={descriptionStyle}>
             Matching to the right country, right course with the right support
