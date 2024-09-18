@@ -74,10 +74,9 @@ const WhyChooseAiec = () => {
       <div style={gridContainerStyle}>
         <div style={cardStyle}>
           <div style={iconStyle}>🎓</div>
-          <h3 style={titleStyle}> </h3>
+          <h3 style={titleStyle}> A rich history</h3>
           <p style={descriptionStyle}>
-            AIEC combines experience and technology to help students get into
-            their dream international course.
+            15+ years of helping students achive their study abroad dreams.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
@@ -86,10 +85,9 @@ const WhyChooseAiec = () => {
 
         <div style={cardStyle}>
           <div style={iconStyle}>👥</div>
-          <h3 style={titleStyle}>800,000+ students</h3>
+          <h3 style={titleStyle}>Global network</h3>
           <p style={descriptionStyle}>
-            Helped by AIEC in securing admissions to leading universities across
-            the USA, UK, Australia, and more.
+            Partnering with 800 Leading universities across the world.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
@@ -98,10 +96,9 @@ const WhyChooseAiec = () => {
 
         <div style={cardStyle}>
           <div style={iconStyle}>🌍</div>
-          <h3 style={titleStyle}>200 offices across 35 countries</h3>
+          <h3 style={titleStyle}>Closer to you</h3>
           <p style={descriptionStyle}>
-            Supported by over 2300+ counsellors ensuring you're never too far to
-            access our services.
+            Serving you globally with 190 offices across 35 countries.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
@@ -110,10 +107,10 @@ const WhyChooseAiec = () => {
 
         <div style={cardStyle}>
           <div style={iconStyle}>⭐</div>
-          <h3 style={titleStyle}>9/10</h3>
+          <h3 style={titleStyle}>Driven by innovation</h3>
           <p style={descriptionStyle}>
-            9/10 of our customers said they would recommend our student
-            placement services to their family and friends.
+            Combining human expertise with smart tech for a highy personalised
+            experience.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
@@ -122,22 +119,10 @@ const WhyChooseAiec = () => {
 
         <div style={cardStyle}>
           <div style={iconStyle}>🎓</div>
-          <h3 style={titleStyle}>International education expert</h3>
+          <h3 style={titleStyle}>Centred around you</h3>
           <p style={descriptionStyle}>
-            Most universities these days offer a variety of different
-            scholarship options to international students.
-          </p>
-          <a href="#" style={linkStyle}>
-            Learn more &gt;
-          </a>
-        </div>
-
-        <div style={cardStyle}>
-          <div style={iconStyle}>🎯</div>
-          <h3 style={titleStyle}>Proud Co-owners of IELTS</h3>
-          <p style={descriptionStyle}>
-            Accepted by 12,000+ global organizations, IELTS is the foremost
-            English language test for study, work & migration.
+            Matching to the right country, right course with the right support
+            system.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
