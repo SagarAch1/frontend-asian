@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
 const Whychooseaiec = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
+  const navigate = useNavigate(); // Initialize navigation
 
   const containerStyle = {
     width: "100%",
@@ -82,15 +84,19 @@ const Whychooseaiec = () => {
     setHoveredButton(null);
   };
 
+  const handleButtonClick = (path) => {
+    navigate(path); // Navigate to the specified path
+  };
+
   const buttons = [
-    "Why choose AIEC?",
-    "Study abroad counseling",
-    "Pre-departure support",
-    "What we do?",
-    "Events",
-    "How to find a course",
-    "Visa application assistance",
-    "Living abroad support",
+    { label: "Why choose AIEC?", path: "/why-choose-aiec" },
+    { label: "Study abroad counseling", path: "/study-abroad-counseling" },
+    { label: "Pre-departure support", path: "/pre-departure-support" },
+    { label: "What we do?", path: "/what-we-do" },
+    { label: "Events", path: "/events" },
+    { label: "How to find a course", path: "/how-to-find-a-course" },
+    { label: "Visa application assistance", path: "/visa-application-assistance" },
+    { label: "Living abroad support", path: "/living-abroad-support" },
   ];
 
   return (
@@ -170,28 +176,6 @@ const Whychooseaiec = () => {
           to a foreign country and they are willing to share what they have
           learned in their study abroad journey.
         </p>
-        <h3 style={titleStyle}>
-        Supporting you in every step
-        </h3>
-        <p style={paragraphStyle}>
-        Our support does not end when you receive your university acceptance letter.
-        </p>
-        <p style={paragraphStyle}>
-        At AIEC, we are dedicated to ensuring that you feel supported at every stage of your study abroad journey. 
-        </p>
-        <p style={paragraphStyle}>
-        Our services continually evolve to support you through to graduation and beyond. 
-        </p>
-        <h3 style={titleStyle}>
-        Go from ponderer to planner in a couple of easy steps 
-        </h3>
-        <p style={paragraphStyle}>
-        Book an appointment with one of the AIEC counsellors, so that we can start to plan your journey from where you are today, to where you want to be.
-        </p>
-        <p style={paragraphStyle}>
-          They are international education experts, who have been there in the
-          same place that you are right now.
-        </p>
         <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
         <p style={paragraphStyle}>
           As a proud co-owner of IELTS, we can help you book and prepare for
@@ -211,11 +195,12 @@ const Whychooseaiec = () => {
             allowFullScreen
           ></iframe>
         </div>
+
         <h3 style={titleStyle}>Learn More</h3>
 
         {/* Button Section */}
         <div style={buttonGroupStyle}>
-          {buttons.map((text, index) => (
+          {buttons.map((button, index) => (
             <button
               key={index}
               style={
@@ -225,8 +210,9 @@ const Whychooseaiec = () => {
               }
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
+              onClick={() => handleButtonClick(button.path)} // Navigate to the button path on click
             >
-              {text}
+              {button.label}
             </button>
           ))}
         </div>
