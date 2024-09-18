@@ -78,7 +78,7 @@ const WhyChooseAiec = () => {
           <p style={descriptionStyle}>
             15+ years of helping students achive their study abroad dreams.
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="/about-aiec" style={linkStyle}>
             Learn more &gt;
           </a>
         </div>

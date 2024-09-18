@@ -72,6 +72,8 @@ import Register from "./Pages/Register/Register";
 import Search from "./Pages/Search/Search";
 import UniversityRankings from "./Pages/Findacourse/Universityranking";
 
+import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
+
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
@@ -184,6 +186,8 @@ function App() {
         <Route path="/scholarshipsincanada" element={<Canadascholarships />} />
 
         <Route path="/scholarshipsinnewzeland" element={<Newzelandscholarships />} />
+
+        <Route path="/about-aiec" element={<Aboutaiec />} />
 
 
         {/* Admin routes */}
