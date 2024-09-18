@@ -91,7 +91,7 @@ const Aboutaiec = () => {
   const buttons = [
     { text: "Why choose AIEC?", path: "/whychooseus" },
     { text: "Study abroad counseling", path: "/studyabroadcounseling" },
-    { text: "Pre-departure support", path: "/pre-departure-support" },
+    { text: "Pre-departure support", path: "/predeparturesupport" },
     { text: "What we do?", path: "/whatwedo" },
     { text: "Events", path: "/events" },
     { text: "How to find a course", path: "/howtofindcourse" },
@@ -137,7 +137,9 @@ const Aboutaiec = () => {
         <p style={paragraphStyle}>
           Our premise is simple: International education thrives when students
           are matched with the right country, with the right course, with the
-          right support system. AIEC is the only organisation by students’ sides, from their first course search, until they have found their feet in their new country.
+          right support system. AIEC is the only organisation by students’
+          sides, from their first course search, until they have found their
+          feet in their new country.
         </p>
         <p style={paragraphStyle}>
           Our team of trusted education experts across the world, combined with

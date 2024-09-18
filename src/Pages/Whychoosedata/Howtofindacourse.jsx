@@ -91,7 +91,7 @@ const Aboutaiec = () => {
   const buttons = [
     { text: "Why choose AIEC?", path: "/whychooseus" },
     { text: "Study abroad counseling", path: "/studyabroadcounseling" },
-    { text: "Pre-departure support", path: "/pre-departure-support" },
+    { text: "Pre-departure support", path: "/predeparturesupport" },
     { text: "What we do?", path: "/whatwedo" },
     { text: "Events", path: "/events" },
     { text: "How to find a course", path: "/how-to-find-course" },
@@ -166,9 +166,6 @@ const Aboutaiec = () => {
             </button>
           ))}
         </div>
-
-    
-       
       </div>
 
       <FormPage />

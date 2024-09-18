@@ -8,51 +8,51 @@ import "./App.css";
 import About from "./Pages/About/About";
 
 import Bachelorofdesign from "./Blog/Bachelorofdesign";
-import CourseAustralia from "./Pages/Courses/Australia/b/master"
-import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland"
-import CourseUsa from "./Pages/Courses/USA/usa";
+import CourseAustralia from "./Pages/Courses/Australia/b/master";
 import CourseCanada from "./Pages/Courses/Canada/canada";
+import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland";
+import CourseUsa from "./Pages/Courses/USA/usa";
+import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
+import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
+import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
+import Preparetodepart from "./Pages/Newsandarticles/Preparetodepart";
+import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
+import WhereAndWhatToStudy from "./Pages/Newsandarticles/Whereandwhattostudy";
+import WhyStudyAbroad from "./Pages/Newsandarticles/Whystudyabroad";
+import Studyinaustralia from "./Pages/StudyDestination/Studyinaustralia";
+import Studyincanada from "./Pages/StudyDestination/Studyincanada";
+import Studyinireland from "./Pages/StudyDestination/Studyinireland";
+import Studyinnewzeland from "./Pages/StudyDestination/Studyinnewzeland";
+import Studyinuk from "./Pages/StudyDestination/Studyinuk";
+import StudyInUsa from "./Pages/StudyDestination/Studyinusa";
+import DuolingoPreparationPage from "./Pages/TestPreparation/Duolingo";
 import IELTSPreparationPage from "./Pages/TestPreparation/Ielts";
 import PtePreparationPage from "./Pages/TestPreparation/Pte";
-import ToeflPreparationPage from "./Pages/TestPreparation/Toefl";
 import SatPreparationPage from "./Pages/TestPreparation/Sat";
-import DuolingoPreparationPage from "./Pages/TestPreparation/Duolingo";
-import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
-import WhyStudyAbroad from "./Pages/Newsandarticles/Whystudyabroad";
-import WhereAndWhatToStudy from "./Pages/Newsandarticles/Whereandwhattostudy";
-import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
-import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
-import Preparetodepart from "./Pages/Newsandarticles/Preparetodepart";
-import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
-import Studyinaustralia from "./Pages/StudyDestination/Studyinaustralia";
-import StudyInUsa from "./Pages/StudyDestination/Studyinusa";
-import Studyinuk from "./Pages/StudyDestination/Studyinuk";
-import Studyincanada from "./Pages/StudyDestination/Studyincanada";
-import Studyinnewzeland from "./Pages/StudyDestination/Studyinnewzeland";
-import Studyinireland from "./Pages/StudyDestination/Studyinireland";
+import ToeflPreparationPage from "./Pages/TestPreparation/Toefl";
 
-import Moneytransfer from "./Pages/Studentessentials/Moneytransfer";
-import Flywire from "./Pages/Studentessentials/Flywire";
 import Convera from "./Pages/Studentessentials/Convera";
+import Flywire from "./Pages/Studentessentials/Flywire";
+import Guardianship from "./Pages/Studentessentials/Guardianship";
+import Moneytransfer from "./Pages/Studentessentials/Moneytransfer";
 import Studentbanking from "./Pages/Studentessentials/Studentbanking";
-import Guardianship from "./Pages/Studentessentials/Guardianship"
 
 import Courseadvice from "./Pages/Findacourse/Courseadvice";
-import Australiauni from "./Universitiy/Australiauni";
-import Usauni from "./Universitiy/Usauni";
-import Ukuni from "./Universitiy/Ukuni";
-import Canadauni from "./Universitiy/Canadauni";
-import Newzelanduni from "./Universitiy/Newzelanduni";
 import Australiascholarships from "./Pages/Scholarships/Australiascholarship";
-import Usascholarships from "./Pages/Scholarships/Usascholarships";
-import Ukscholarships from "./Pages/Scholarships/Ukscholarships";
 import Canadascholarships from "./Pages/Scholarships/Canadascholarships";
 import Newzelandscholarships from "./Pages/Scholarships/Newzelandscholarships";
+import Ukscholarships from "./Pages/Scholarships/Ukscholarships";
+import Usascholarships from "./Pages/Scholarships/Usascholarships";
+import Australiauni from "./Universitiy/Australiauni";
+import Canadauni from "./Universitiy/Canadauni";
+import Newzelanduni from "./Universitiy/Newzelanduni";
+import Ukuni from "./Universitiy/Ukuni";
+import Usauni from "./Universitiy/Usauni";
 // import Irelanuni from "./Universitiy/Irelanuni";
 
-import AIECGlobal from "./Pages/Homepage/Aboutus";
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
+import AIECGlobal from "./Pages/Homepage/Aboutus";
 
 import Homepage from "./Pages/Homepage/Homepage";
 import Myorder from "./Pages/Homepage/Myorder";
@@ -68,16 +68,17 @@ import Thankyou from "./Pages/Payment/Thankyou";
 
 import FormPage from "./Pages/Homepage/FormPage";
 
+import UniversityRankings from "./Pages/Findacourse/Universityranking";
 import Register from "./Pages/Register/Register";
 import Search from "./Pages/Search/Search";
-import UniversityRankings from "./Pages/Findacourse/Universityranking";
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
-import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
-import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
-import Studyabroadcounseling from "./Pages/Whychoosedata/Studyabroadcounselling";
 import Howtofindcourse from "./Pages/Whychoosedata/Howtofindacourse";
+import Predeparturesupport from "./Pages/Whychoosedata/Predeparturesupport";
 import Studentvisaapplication from "./Pages/Whychoosedata/Studentvisaapplication";
+import Studyabroadcounseling from "./Pages/Whychoosedata/Studyabroadcounselling";
+import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
+import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -99,7 +100,6 @@ function App() {
         <Route path="/Register" element={<Register />} />
 
         <Route path="/bookclass" element={<Bookclass />} />
-
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
@@ -123,10 +123,7 @@ function App() {
         <Route path="/courseusa" element={<CourseUsa />} />
         <Route path="/coursecanada" element={<CourseCanada />} />
 
-
-        <Route path= "/courseadvice" element={<Courseadvice />} />
-
-
+        <Route path="/courseadvice" element={<Courseadvice />} />
 
         <Route path="/ielts" element={<IELTSPreparationPage />} />
         <Route path="/pte" element={<PtePreparationPage />} />
@@ -135,7 +132,6 @@ function App() {
         <Route path="/duolingo" element={<DuolingoPreparationPage />} />
 
         <Route path="/newsandarticles" element={<Newsandarticles />} />
-        
 
         <Route path="/coursenewzeland" element={<CourseNewzeland />} />
 
@@ -173,7 +169,7 @@ function App() {
         <Route path="/convera" element={<Convera />} />
         <Route path="/studentbanking" element={<Studentbanking />} />
 
-        <Route path="/guradianship" element={<Guardianship/>} />
+        <Route path="/guradianship" element={<Guardianship />} />
 
         <Route path="/universityrankingthe" element={<UniversityRankings />} />
         <Route path="/australiauniversities" element={<Australiauni />} />
@@ -182,7 +178,10 @@ function App() {
         <Route path="/canadauniversities" element={<Canadauni />} />
         <Route path="/newzelanduniversities" element={<Newzelanduni />} />
 
-       <Route path="/scholarshipsinaustralia" element={<Australiascholarships />} />
+        <Route
+          path="/scholarshipsinaustralia"
+          element={<Australiascholarships />}
+        />
 
         <Route path="/scholarshipsinusa" element={<Usascholarships />} />
 
@@ -190,15 +189,24 @@ function App() {
 
         <Route path="/scholarshipsincanada" element={<Canadascholarships />} />
 
-        <Route path="/scholarshipsinnewzeland" element={<Newzelandscholarships />} />
+        <Route
+          path="/scholarshipsinnewzeland"
+          element={<Newzelandscholarships />}
+        />
 
         <Route path="/about-aiec" element={<Aboutaiec />} />
-        <Route path="/whychooseus" element ={<Whychooseaiec />} />
+        <Route path="/whychooseus" element={<Whychooseaiec />} />
         <Route path="/whatwedo" element={<Whatwedo />} />
-        <Route path="/studyabroadcounseling" element={<Studyabroadcounseling />} />
+        <Route
+          path="/studyabroadcounseling"
+          element={<Studyabroadcounseling />}
+        />
         <Route path="/howtofindcourse" element={<Howtofindcourse />} />
-        <Route path="/studentvisapplication" element={<Studentvisaapplication />} />
-
+        <Route
+          path="/studentvisapplication"
+          element={<Studentvisaapplication />}
+        />
+        <Route path="/predeparturesupport" element={<Predeparturesupport />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>

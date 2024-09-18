@@ -91,7 +91,7 @@ const Whatwedo = () => {
   const buttons = [
     { label: "Why choose AIEC?", path: "/whychooseus" },
     { label: "Study abroad counseling", path: "/studyabroadcounseling" },
-    { label: "Pre-departure support", path: "/pre-departure-support" },
+    { label: "Pre-departure support", path: "/predeparturesupport" },
     { label: "What we do?", path: "/whatwedo" },
     { label: "Events", path: "/events" },
     { label: "How to find a course", path: "/howtofindcourse" },

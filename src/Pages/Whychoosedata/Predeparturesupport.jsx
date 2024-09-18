@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Studentvisaapplication = () => {
+const Predeparturesupport = () => {
   // State to track hovered buttons for visa requirements section
   const [hoveredVisaButton, setHoveredVisaButton] = useState(null);
 
@@ -102,17 +102,15 @@ const Studentvisaapplication = () => {
   };
 
   const visaButtons = [
-    { text: "Student visa requirements for the USA", path: "/usa-visa" },
+    { text: "Student health cover", path: "/usa-visa" },
     {
-      text: "Student visa requirements for the UK",
+      text: "Accommodation services",
       path: "/uk-visa",
     },
     {
-      text: "Student visa requirements for Australia",
+      text: "Guardianship referral",
       path: "/australia-visa",
     },
-    { text: "Student visa requirements for Canada", path: "/canada-visa" },
-    { text: "Student visa requirements for New Zealand", path: "/nz-visa" },
   ];
 
   const learnMoreButtons = [
@@ -142,76 +140,66 @@ const Studentvisaapplication = () => {
 
       {/* Content Section */}
       <div style={contentContainerStyle}>
-        <h2 style={titleStyle}>Student visa application assistance by AIEC</h2>
+        <h2 style={titleStyle}>Pre-departure support by AIEC</h2>
         <p style={subtitleStyle}>
-          Applying for visas can sometimes feel challenging, but our team is
-          dedicated to providing you with accurate information and guidance
-          throughout the process.
+          We're dedicated to providing unwavering support throughout your entire
+          study abroad journey. Effective preparation for your overseas studies
+          is essential for your success. We aim to equip you with the necessary
+          tools to ensure an enriching study experience.
         </p>
-        <h3 style={titleStyle}>
-          When should you apply for your student visa?{" "}
-        </h3>
-        <p style={paragraphStyle}>
-          You can generally begin your student visa application once you receive
-          confirmation of your enrolment in your chosen school or university.
+        <p style={subtitleStyle}>
+          Our counselors are readily available to address your queries and calm
+          your nerves. We conduct pre-departure briefings year-round to aid you
+          in gearing up for life in your chosen destination.
         </p>
+        <h3 style={titleStyle}>Transitioning from visiting to belonging:</h3>
         <p style={paragraphStyle}>
-          It is best to apply as early as possible, regardless of when your
-          program is due to start, as visa processing times can vary.
+          These pre-departure orientation sessions are designed to help you
+          navigate personal and cultural growth opportunities during your time
+          abroad.
         </p>
-        <h3 style={titleStyle}>How do you apply for a student visa?</h3>
+        <p style={paragraphStyle}>You'll gain insights into:</p>
         <p style={paragraphStyle}>
-          There are several steps to apply for a student visa. The order of
-          these steps and how you complete them may vary according to where you
-          are planning to study.
-        </p>
-        <p style={paragraphStyle}>Most students will require:</p>
-        <p style={paragraphStyle}>
-          1. Proof of enrolment in a recognised educational institution.
+          1. Local culture: Acquiring knowledge about local customs and culture
+          before arriving in your study country eases your transition and
+          fosters effective interactions with classmates from various
+          backgrounds.
         </p>
         <p style={paragraphStyle}>
-          2. Proof of your capacity to cover the cost of air fares, course
-          tuition fees and living costs for you and your family members for the
-          duration of your stay.
+          2. Student life in your new country: Adapting to diverse learning
+          styles, classroom environments, and cultural norms is crucial for a
+          successful study experience.
         </p>
         <p style={paragraphStyle}>
-          3. A passport valid for at least six months beyond your period of
-          stay.
+          3. Culture shock: Adjusting to a new culture may bring about culture
+          shock. We'll help you recognize it and provide techniques to cope and
+          thrive.
         </p>
         <p style={paragraphStyle}>
-          4. You may also be required to show evidence of your English language
-          proficiency and undertake health examinations and/or police checks.
-        </p>
-        <h3 style={titleStyle}>
-          How can AIEC help with your visa applications?
-        </h3>
-        <p style={paragraphStyle}>
-          Your AIEC counsellor can provide you with information about what
-          documents you will need to provide.
+          4. Support and well-being: Access to academic assistance, English
+          language support, visa guidance, and more is vital for international
+          students. Practical insights on:
         </p>
         <p style={paragraphStyle}>
-          All documents need to be scanned and certified, and certified
-          translations may be required. Your counsellor can help with the
-          translation services.
+          5. Banking and foreign exchange: Setting up a local bank account upon
+          arrival ensures easy access to funds for tuition, accommodation, and
+          living expenses.
         </p>
         <p style={paragraphStyle}>
-          As visa requirements can change quickly, we will ensure you have
-          access to official websites and can make sure you have the latest
-          application forms.
+          6.Working while studying and internship advice: Supplement your study
+          experience with work opportunities. We'll guide you on adhering to
+          student visa regulations and offer job-search tips.
         </p>
         <p style={paragraphStyle}>
-          To reduce the hassle, we can also help with translating and couriering
-          your documents.
+          7. A network of advice: Connect with IDP alumni and fellow students to
+          gather valuable insights and advice.
         </p>
         <p style={paragraphStyle}>
-          The processes and requirements that international students must meet
-          to be eligible for a student visa vary from one country to another.
+          We're committed to ensuring your seamless transition into a fulfilling
+          study abroad experience.
         </p>
-        <p style={paragraphStyle}>
-          We can help you stay up to date with the latest information on visa
-          requirements.
-        </p>
-        <h3 style={titleStyle}>Find out more about visa requirements</h3>
+
+        <h3 style={titleStyle}>Learn more about pre-departure support</h3>
 
         {/* Visa Requirements Button Section */}
         <div style={buttonGroupStyle}>
@@ -260,4 +248,4 @@ const Studentvisaapplication = () => {
   );
 };
 
-export default Studentvisaapplication;
+export default Predeparturesupport;
