@@ -1,8 +1,10 @@
-import React from "react";
-import FormPage from "../Homepage/FormPage";
+import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
+import FormPage from "../Homepage/FormPage";
 
 const Aboutaiec = () => {
+  const [hoveredButton, setHoveredButton] = useState(null);
+
   const containerStyle = {
     width: "100%",
     padding: "20px",
@@ -48,28 +50,48 @@ const Aboutaiec = () => {
   };
 
   const buttonGroupStyle = {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 1fr)', // 3 buttons per row
-    gap: '10px', // space between buttons
-    maxWidth: '900px', // limit the width for the button group
-    margin: '20px auto', // center the button group horizontally
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 1fr)", // 3 buttons per row
+    gap: "10px", // space between buttons
+    maxWidth: "900px", // limit the width for the button group
+    margin: "20px auto", // center the button group horizontally
   };
 
   const buttonStyle = {
-    padding: '10px 20px',
-    border: '2px solid #007bff',
-    backgroundColor: 'white',
-    color: '#007bff',
-    borderRadius: '5px',
-    fontSize: '16px',
-    cursor: 'pointer',
-    textAlign: 'center',
+    padding: "10px 20px",
+    border: "2px solid #007bff",
+    backgroundColor: "white",
+    color: "#007bff",
+    borderRadius: "5px",
+    fontSize: "16px",
+    cursor: "pointer",
+    textAlign: "center",
     flexGrow: 1, // make buttons have equal width
   };
+
   const buttonHoverStyle = {
     backgroundColor: "#007bff",
     color: "#fff",
   };
+
+  const handleMouseEnter = (index) => {
+    setHoveredButton(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredButton(null);
+  };
+
+  const buttons = [
+    "Why choose AIEC?",
+    "Study abroad counseling",
+    "Pre-departure support",
+    "What we do?",
+    "Events",
+    "How to find a course",
+    "Visa application assistance",
+    "Living abroad support",
+  ];
 
   return (
     <div style={containerStyle}>
@@ -109,9 +131,9 @@ const Aboutaiec = () => {
         <p style={paragraphStyle}>
           Our premise is simple: International education thrives when students
           are matched with the right country, with the right course, with the
-          right support system. AIEC is the only organisation by students’ sides,
-          from their first course search, until they have found their feet in
-          their new country.
+          right support system. AIEC is the only organisation by students’
+          sides, from their first course search, until they have found their
+          feet in their new country.
         </p>
         <p style={paragraphStyle}>
           Our team of trusted education experts across the world, combined with
@@ -131,78 +153,20 @@ const Aboutaiec = () => {
 
         {/* Button Section */}
         <div style={buttonGroupStyle}>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            Why choose AIEC?
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            Study abroad counseling
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            Pre-departure support
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            What we do?
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            Events
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            How to find a course
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            Visa application assistance
-          </button>
-          <button
-            style={buttonStyle}
-            onMouseOver={(e) =>
-              (e.target.style = { ...buttonStyle, ...buttonHoverStyle })
-            }
-            onMouseOut={(e) => (e.target.style = buttonStyle)}
-          >
-            Living abroad support
-          </button>
+          {buttons.map((text, index) => (
+            <button
+              key={index}
+              style={
+                hoveredButton === index
+                  ? { ...buttonStyle, ...buttonHoverStyle }
+                  : buttonStyle
+              }
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              {text}
+            </button>
+          ))}
         </div>
       </div>
       <FormPage />
