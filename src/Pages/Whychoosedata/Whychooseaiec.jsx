@@ -108,7 +108,7 @@ const Whychooseaiec = () => {
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Why choose AIEC</h2>
         <p style={subtitleStyle}>
-          IDP is a global leader in international education services. We help
+          AIEC is a global leader in international education services. We help
           international students such as yourself to study in English speaking
           countries.
         </p>
@@ -122,32 +122,12 @@ const Whychooseaiec = () => {
           have been helping students for over half a century and have created a
           huge network of opportunity with offices in 32 countries.
         </p>
-        
-        {/* IELTS Section */}
-        <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
-        <p style={paragraphStyle}>
-          As a proud co-owner of IELTS, we can help you book and prepare for your IELTS test.
-          Recognised by more than 12,000 organisations around the world, IELTS is the world's
-          leading English language test for study, work and migration purposes.
-        </p>
-        {/* YouTube Video Embed */}
-        <div style={{ marginBottom: "30px" }}>
-          <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/your-video-id" 
-            title="YouTube video player" 
-            frameBorder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowFullScreen 
-          ></iframe>
-        </div>
 
         <h3 style={titleStyle}>
           Ready to start your global career? We're here to help
         </h3>
         <p style={paragraphStyle}>
-          IDP works with you to turn your plan to study abroad into a launch pad
+          AIEC works with you to turn your plan to study abroad into a launch pad
           for your professional success and personal growth.
         </p>
         <p style={paragraphStyle}>
@@ -167,19 +147,19 @@ const Whychooseaiec = () => {
           application or navigating the visa requirements?
         </p>
         <p style={paragraphStyle}>
-          Your dedicated IDP counsellor will work with you closely to prepare
+          Your dedicated AIEC counsellor will work with you closely to prepare
           you for your study abroad journey and help you every step of the way.
         </p>
         <p style={paragraphStyle}>
           We know the transition can be an exciting time for not just you, but
-          also your family. This is why your IDP counsellor will go the extra
+          also your family. This is why your AIEC counsellor will go the extra
           mile and support both you and your family, as you begin your journey.
         </p>
         <h3 style={titleStyle}>
-          Approachable international education experts{" "}
+          Approachable international education experts
         </h3>
         <p style={paragraphStyle}>
-          Many of the IDP counsellors were international students themselves.
+          Many of the AIEC counsellors were international students themselves.
         </p>
         <p style={paragraphStyle}>
           They are international education experts, who have been there in the
@@ -190,6 +170,47 @@ const Whychooseaiec = () => {
           to a foreign country and they are willing to share what they have
           learned in their study abroad journey.
         </p>
+        <h3 style={titleStyle}>
+        Supporting you in every step
+        </h3>
+        <p style={paragraphStyle}>
+        Our support does not end when you receive your university acceptance letter.
+        </p>
+        <p style={paragraphStyle}>
+        At AIEC, we are dedicated to ensuring that you feel supported at every stage of your study abroad journey. 
+        </p>
+        <p style={paragraphStyle}>
+        Our services continually evolve to support you through to graduation and beyond. 
+        </p>
+        <h3 style={titleStyle}>
+        Go from ponderer to planner in a couple of easy steps 
+        </h3>
+        <p style={paragraphStyle}>
+        Book an appointment with one of the AIEC counsellors, so that we can start to plan your journey from where you are today, to where you want to be.
+        </p>
+        <p style={paragraphStyle}>
+          They are international education experts, who have been there in the
+          same place that you are right now.
+        </p>
+        <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
+        <p style={paragraphStyle}>
+          As a proud co-owner of IELTS, we can help you book and prepare for
+          your IELTS test. Recognised by more than 12,000 organisations around
+          the world, IELTS is the world’s leading English language test for
+          study, work and migration purposes.
+        </p>
+        {/* YouTube Video Embed */}
+        <div style={{ marginBottom: "30px" }}>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/CjUdsR2JJ4w"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
         <h3 style={titleStyle}>Learn More</h3>
 
         {/* Button Section */}
