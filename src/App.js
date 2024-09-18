@@ -73,6 +73,7 @@ import Search from "./Pages/Search/Search";
 import UniversityRankings from "./Pages/Findacourse/Universityranking";
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
+import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -188,6 +189,7 @@ function App() {
         <Route path="/scholarshipsinnewzeland" element={<Newzelandscholarships />} />
 
         <Route path="/about-aiec" element={<Aboutaiec />} />
+        <Route path="/whychooseus" element ={<Whychooseaiec />} />
 
 
         {/* Admin routes */}

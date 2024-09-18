@@ -122,6 +122,27 @@ const Whychooseaiec = () => {
           have been helping students for over half a century and have created a
           huge network of opportunity with offices in 32 countries.
         </p>
+        
+        {/* IELTS Section */}
+        <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
+        <p style={paragraphStyle}>
+          As a proud co-owner of IELTS, we can help you book and prepare for your IELTS test.
+          Recognised by more than 12,000 organisations around the world, IELTS is the world's
+          leading English language test for study, work and migration purposes.
+        </p>
+        {/* YouTube Video Embed */}
+        <div style={{ marginBottom: "30px" }}>
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/your-video-id" 
+            title="YouTube video player" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowFullScreen 
+          ></iframe>
+        </div>
+
         <h3 style={titleStyle}>
           Ready to start your global career? We're here to help
         </h3>
