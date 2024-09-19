@@ -12,6 +12,7 @@ import CourseAustralia from "./Pages/Courses/Australia/b/master";
 import CourseCanada from "./Pages/Courses/Canada/canada";
 import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland";
 import CourseUsa from "./Pages/Courses/USA/usa";
+import CourseUk from "./Pages/Courses/UK/Uk";
 import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
 import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
 import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
@@ -123,6 +124,7 @@ function App() {
         <Route path="/courseaustralia" element={<CourseAustralia />} />
 
         <Route path="/courseusa" element={<CourseUsa />} />
+        <Route path="/courseuk" element={<CourseUk />} />
         <Route path="/coursecanada" element={<CourseCanada />} />
 
         <Route path="/courseadvice" element={<Courseadvice />} />
