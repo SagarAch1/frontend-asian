@@ -82,6 +82,15 @@ const Australiavisarequirement = () => {
     signupButtonHover: {
       backgroundColor: "#0056b3",
     },
+    videoContainer: {
+      marginTop: "20px",
+      textAlign: "center",
+    },
+    iframe: {
+      width: "100%",
+      height: "400px",
+      border: "none",
+    },
   };
 
   const handleSignUpClick = () => {
@@ -134,7 +143,20 @@ const Australiavisarequirement = () => {
               We can explain the visa process for you to make it a little
               easier.
             </p>
+
+            {/* YouTube Video Section */}
+            <div style={styles.videoContainer}>
+              <iframe
+                style={styles.iframe}
+                src="https://www.youtube.com/embed/VIDEO_ID" // Replace with the correct YouTube video ID
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           </Element>
+
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>
               Documents for your visa application
