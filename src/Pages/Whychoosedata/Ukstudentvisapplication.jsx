@@ -1,6 +1,6 @@
 import React from "react";
-import { Element, Link } from "react-scroll";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { Element, Link } from "react-scroll";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
@@ -106,9 +106,7 @@ const Ukvisarequirement = () => {
           alt="Header"
           style={styles.headerImage}
         />
-        <div style={styles.headerTitle}>
-          Student Visa Requirements in the USA
-        </div>
+        <div style={styles.headerTitle}>UK Student Visa Requirements</div>
       </header>
 
       <div style={styles.content}>
@@ -173,127 +171,125 @@ const Ukvisarequirement = () => {
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
             <p>
-              The visa you need will depend on the type of study you want to do
-              in the United States.
-            </p>
-            <p>The US Government offers three different student visa types:</p>
-            <ul>
-              <li>
-                F Student Visa: used to study at an accredited US college or
-                university, or to study English at an English language
-                institute.
-              </li>
-              <li>
-                J Exchange Visa: for participation in an exchange program,
-                including high school and university study.
-              </li>
-              <li>
-                M Student Visa: for non-academic or vocational study or training
-                in the USA.
-              </li>
-            </ul>
-            <p>
-              You can find out more about each type of visa on the US
-              Government's Department of State website.
+              The visa you need will depend on your age and the type of study
+              you want to do. An overview of study visa types and application
+              requirements is included below.
             </p>
           </Element>
           <Element name="how-to-apply">
-            <h2 style={styles.sectionTitle}>How to apply for a visa</h2>
-            <p>
-              To apply for a student visa, you must first apply and be accepted
-              by an institution in the USA that is certified by the Student and
-              Exchange Visitor Program (SEVP).
-            </p>
-            <p>
-              Once accepted, you will receive a Form I-20 from the institution's
-              international student office, which is a paper record of your
-              information in the database called the Student and Exchange
-              Visitor Information System (SEVIS).
-            </p>
+            <h2 style={styles.sectionTitle}>
+              To be eligible for a Tier 4 student visa, you must:
+            </h2>
+            <ul>
+              <li>
+                Have an unconditional offer of a place on a course with a
+                licensed Tier 4 sponsor.
+              </li>
+              <li>Be able to speak, read, write and understand English.</li>
+              <li>
+                Have enough money to support yourself and pay for your course.
+              </li>
+            </ul>
           </Element>
 
           <Element name="Documents-required">
-            <h2 style={styles.sectionTitle}>Documents required</h2>
+            <h2 style={styles.sectionTitle}>Applying for your visa online</h2>
             <ul>
-              <li>
-                A current passport that is valid for at least six months beyond
-                your period of stay in the USA (unless exempt by
-                country-specific agreements)
-              </li>
-              <li>Acceptance at a SEVP approved school and your Form I-20</li>
-              <li>
-                Application fee payment for the Student and Exchange Visitor
-                Information SystemApplication fee payment for SEVIS
-              </li>
-              <li>
-                Non-immigrant visa application and the Form DS-160 confirmation
-                pageForm I-20
-              </li>
-              <li>One or two photographs in the requested format.</li>
+              <p>
+                You must apply for your student visa application online using
+                the British Government's official Gov.UK website (unless you are
+                applying from North Korea, in which case you can use a hardcopy
+                form).
+              </p>
+              <p>
+                You can apply up to three months before your intended date of
+                travel to the UK. Your application date is the date when your
+                application fee is paid.
+              </p>
+              <p>
+                You can apply up to three months before your intended date of
+                travel to the UK. Your application date is the date when your
+                application fee is paid.
+              </p>
             </ul>
           </Element>
 
           <Element name="post-visa">
             <h2 style={styles.sectionTitle}>
-              What to do once you get your visa?
+              When applying for your Tier 4 visa, you will generally need:
             </h2>
             <ul>
+              <li>A current passport or other valid travel documentation.</li>
               <li>
-                Do not enter the USA more than 30 days before your study program
-                begins
+                Evidence of funds to provide your living expenses for the
+                duration of your course.
               </li>
               <li>
-                Contact your designated school official when you first enter the
-                USA.
+                Confirmation of Acceptance for Studies (CAS) reference number
+                and documents used to obtain CAS.
               </li>
-              <li>
-                Contact your designated school official again and no later than
-                the program start date listed on your Form I-20.
-              </li>
-              <li>Make sure your visa remains valid.</li>
+              <li>Passport-sized colour photograph.</li>
             </ul>
-            <p>To ensure your visa remains valid, you will need to:</p>
+
             <ul>
+              <li>Tuberculosis screening (if required).</li>
+              <li>Assessment documentation.</li>
               <li>
-                Fulfill the purpose for why the Department of State issued the
-                visa.
+                Academic Technology Approval Scheme (ATAS) clearance certificate
+                (if required).
               </li>
-              <li>Follow any regulations associated with that purpose.</li>
             </ul>
           </Element>
 
           <Element name="rules">
             <h2 style={styles.sectionTitle}>
-              Rules to follow while studying in the USA
+              Additional documents may also be needed if you are:
             </h2>
             <ul>
-              <li>
-                You must attend and pass all of your classes. If you are finding
-                your studies too difficult, you should speak with your
-                Designated School Official (DSO) immediately.
-              </li>
-              <li>
-                If you think you will be unable to complete your program by the
-                end date listed on your Form I-20, you must talk to your DSO
-                about requesting a possible program extension.
-              </li>
-              <li>
-                You must take a full course of study each term. If you cannot
-                study full time, contact your DSO immediately.
-              </li>
-              <li>
-                You cannot drop below a full course of study without consulting
-                with your DSO.
-              </li>
+              <li>Not a citizen of the country you are applying from.</li>
+              <li>Under 18 years of age.</li>
+
+              <li>Have family (dependents).</li>
             </ul>
+            <p>
+              If any of your supporting documents is not in English, you will
+              need to have it translated.
+            </p>
+            <p>
+              Each translated document must be dated and include the
+              translator's name and signature, and you will need confirmation
+              that it is an accurate translation of the original document.
+            </p>
           </Element>
 
           <Element name="help">
-            <h2 style={styles.sectionTitle}>How can AIEC help you?</h2>
+            <h2 style={styles.sectionTitle}>English language requirements</h2>
             <p>
-              AIEC offers an array of services designed to take the stress and
-              confusion out of the process of applying for a student visa. Speak
-              to an AIEC counsellor today.
+              You must provide evidence of your knowledge of the English
+              language when you apply for your visa. This usually means passing
+              a secure English language test such as IELTS.
+            </p>
+            <p>
+              UK Visas and Immigration (UKVI) have minimum English language
+              requirements for reading, writing, listening and speaking
+              according to your level of study. Your education institution
+              (sponsor) may have different English language requirements.
+            </p>
+            <p>
+              UK Visas and Immigration (UKVI) have minimum English language
+              requirements for reading, writing, listening and speaking
+              according to your level of study. Your education institution
+              (sponsor) may have different English language requirements.
+            </p>
+          </Element>
+          <Element name="help">
+            <h2 style={styles.sectionTitle}>Biometric residence permit</h2>
+            <p>
+            As part of your application, you must also obtain a biometric residence permit (BRP) from UKVI.
+            </p>
+          
+            <p>
+            You will need to make an appointment with UKVI to have your fingers and thumbs scanned and a digital photo taken of your face.
             </p>
           </Element>
 
