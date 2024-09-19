@@ -112,7 +112,7 @@ const Studentvisaapplication = () => {
       path: "/australiavisarequirement",
     },
     { text: "Student visa requirements for Canada", path: "/canada-visa" },
-    { text: "Student visa requirements for New Zealand", path: "/nz-visa" },
+    { text: "Student visa requirements for New Zealand", path: "/newzelandvisarequirement" },
   ];
 
   const learnMoreButtons = [

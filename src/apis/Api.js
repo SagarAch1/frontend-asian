@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Creating Backend Config
 const Api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "http://10.0.10.75:5000", // Use environment variable for base URL
+  baseURL: process.env.REACT_APP_API_URL || "http://10.0.10.114:5000", // Use environment variable for base URL
   withCredentials: true, // This ensures that cookies are sent with requests
   headers: {
     "Content-Type": "multipart/form-data", // Default content type for form-data requests

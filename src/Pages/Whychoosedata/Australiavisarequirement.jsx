@@ -115,7 +115,7 @@ const Australiavisarequirement = () => {
           alt="Header"
           style={styles.headerImage}
         />
-        <div style={styles.headerTitle}>UK Student Visa Requirements</div>
+        <div style={styles.headerTitle}>Australia Student Visa Requirements</div>
       </header>
 
       <div style={styles.content}>
