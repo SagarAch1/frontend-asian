@@ -102,7 +102,7 @@ const Studentvisaapplication = () => {
   };
 
   const visaButtons = [
-    { text: "Student visa requirements for the USA", path: "/usa-visa" },
+    { text: "Student visa requirements for the USA", path: "/usavisarequirement" },
     {
       text: "Student visa requirements for the UK",
       path: "/uk-visa",
