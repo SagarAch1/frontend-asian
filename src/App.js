@@ -85,6 +85,7 @@ import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement"
 import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
 import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
 import Newzelandvisarequirement from "./Pages/Whychoosedata/Newzelandvisarequirement";
+import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -220,6 +221,7 @@ function App() {
         <Route path="/ukvisarequirement" element={<Ukvisarequirement />} />
         <Route path="/australiavisarequirement" element={<Australiavisarequirement />} />
         <Route path="/newzelandvisarequirement" element={<Newzelandvisarequirement />} />
+        <Route path="/canadavisarequirement" element={<Canadavisarequirementt />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>

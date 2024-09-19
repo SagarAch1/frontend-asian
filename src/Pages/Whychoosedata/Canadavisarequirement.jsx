@@ -192,6 +192,7 @@ const Canadavisarequirementt = () => {
               IDP counsellor can direct you to it. Your counsellor can also help
               you find authorised immigration representatives, if required.
             </p>
+          </Element>
            
 
           <Element name="Documents-required">
