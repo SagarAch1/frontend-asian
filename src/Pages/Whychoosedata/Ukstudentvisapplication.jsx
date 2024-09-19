@@ -121,7 +121,7 @@ const Ukvisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-                How to apply for a visa
+                To be eligible for a Tier 4 student visa, you must:
               </Link>
             </li>
             <li>
@@ -131,7 +131,7 @@ const Ukvisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-                Documents required
+                Applying for your visa online
               </Link>
             </li>
             <li>
@@ -141,7 +141,7 @@ const Ukvisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-                What to do once you get your visa?
+                When applying for your Tier 4 visa, you will generally need:
               </Link>
             </li>
             <li>
@@ -151,7 +151,7 @@ const Ukvisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-                Rules to follow
+               Additional documents may also be needed if you are:
               </Link>
             </li>
             <li>
@@ -161,7 +161,7 @@ const Ukvisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-                How can AIEC help you?
+                English language requirements
               </Link>
             </li>
           </ul>
