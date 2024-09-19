@@ -82,6 +82,15 @@ const Ukvisarequirement = () => {
     signupButtonHover: {
       backgroundColor: "#0056b3",
     },
+    videoContainer: {
+      marginTop: "20px",
+      textAlign: "center",
+    },
+    iframe: {
+      width: "100%",
+      height: "400px",
+      border: "none",
+    },
   };
 
   const handleSignUpClick = () => {
@@ -176,6 +185,16 @@ const Ukvisarequirement = () => {
               requirements is included below.
             </p>
           </Element>
+          <div style={styles.videoContainer}>
+              <iframe
+                style={styles.iframe}
+                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>
               To be eligible for a Tier 4 student visa, you must:

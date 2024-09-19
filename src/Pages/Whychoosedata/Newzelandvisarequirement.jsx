@@ -70,6 +70,15 @@ const Newzelandvisarequirement = () => {
       padding: "20px",
       backgroundColor: "#f4f4f4",
     },
+    videoContainer: {
+      marginTop: "20px",
+      textAlign: "center",
+    },
+    iframe: {
+      width: "100%",
+      height: "400px",
+      border: "none",
+    },
     signupButton: {
       backgroundColor: "#007bff",
       color: "white",
@@ -156,6 +165,16 @@ const Newzelandvisarequirement = () => {
               reason why you came to New Zealand.
             </p>
           </Element>
+          <div style={styles.videoContainer}>
+              <iframe
+                style={styles.iframe}
+                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>Documentation</h2>
             <p>

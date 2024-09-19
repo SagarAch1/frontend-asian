@@ -16,6 +16,15 @@ const Usavisarequirement = () => {
       position: "relative",
       width: "100%",
     },
+    videoContainer: {
+      marginTop: "20px",
+      textAlign: "center",
+    },
+    iframe: {
+      width: "100%",
+      height: "400px",
+      border: "none",
+    },
     headerImage: {
       width: "100%",
       height: "300px",
@@ -81,6 +90,15 @@ const Usavisarequirement = () => {
     },
     signupButtonHover: {
       backgroundColor: "#0056b3",
+    },
+    videoContainer: {
+      marginTop: "20px",
+      textAlign: "center",
+    },
+    iframe: {
+      width: "100%",
+      height: "400px",
+      border: "none",
     },
   };
 
@@ -172,6 +190,16 @@ const Usavisarequirement = () => {
         {/* Main Content */}
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
+          <div style={styles.videoContainer}>
+              <iframe
+                style={styles.iframe}
+                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            </div>
             <p>
               The visa you need will depend on the type of study you want to do
               in the United States.
