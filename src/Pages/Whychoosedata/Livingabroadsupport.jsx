@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom"; // Import useNavigate for naviga
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Whychooseaiec = () => {
+const Livingabroadsupport = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
   const navigate = useNavigate(); // Initialize navigation
 
@@ -95,7 +95,10 @@ const Whychooseaiec = () => {
     { label: "What we do?", path: "/whatwedo" },
     { label: "Events", path: "/events" },
     { label: "How to find a course", path: "/howtofindcourse" },
-    { label: "Visa application assistance", path: "/studentvisapplication" },
+    {
+      label: "Visa application assistance",
+      path: "/studentvisapplication",
+    },
     { label: "Living abroad support", path: "/livingabroadsupport" },
   ];
 
@@ -112,75 +115,37 @@ const Whychooseaiec = () => {
 
       {/* Content Section */}
       <div style={contentContainerStyle}>
-        <h2 style={titleStyle}>Why choose AIEC</h2>
+        <h2 style={titleStyle}>Living abroad support</h2>
         <p style={subtitleStyle}>
-          AIEC is a global leader in international education services. We help
-          international students such as yourself to study in English speaking
-          countries.
-        </p>
-        <p style={paragraphStyle}>
-          Our extensive network of approachable experts helps you identify and
-          secure the university or college where you can thrive.
-        </p>
-        <p style={paragraphStyle}>
-          We can connect you to the courses you desire to pursue in the most
-          suitable university or institution located in the right country. We
-          have been helping students for over half a century and have created a
-          huge network of opportunity with offices in 32 countries.
+          Having chosen your course, the time has come to prepare for your
+          transformative international education journey. Relocating to a new
+          country involves various considerations, including visa procedures,
+          insurance, financial arrangements, accommodation arrangements, and
+          potential work opportunities. While this might seem overwhelming, rest
+          assured that IDP’s counselors are committed to guiding you every step
+          of the way.
         </p>
 
-        <h3 style={titleStyle}>
-          Ready to start your global career? We're here to help
-        </h3>
+        <h3 style={titleStyle}>Support Services for International Students:</h3>
         <p style={paragraphStyle}>
-          AIEC works with you to turn your plan to study abroad into a launch
-          pad for your professional success and personal growth.
+          1. On-arrival support: We aid you in acclimating to your new
+          environment, offering continuous advice and assistance during your
+          time abroad. Our dedicated counselors are here to support you
+          throughout your settling-in process.
         </p>
         <p style={paragraphStyle}>
-          We combine our vast experience in the education industry and the
-          latest technology available to help you make the most informed
-          decision possible.
+          2. Accommodation support: Whether it's university residences, shared
+          apartments, or homestays, IDP's team helps you explore various housing
+          options, ensuring a secure and comfortable home throughout your study
+          abroad experience.
         </p>
         <p style={paragraphStyle}>
-          We partner with more than 650 leading universities, schools and
-          colleges across Australia, Canada, New Zealand, the United Kingdom and
-          the United States. With access to a database of over 180,000 courses
-          and programmes, we are sure we can help you find what fits you best.
+          3. Cultural support: We facilitate your understanding of the local
+          culture, equipping you with guidance on adapting to your new
+          surroundings.
         </p>
-        <h3 style={titleStyle}>We put you first</h3>
-        <p style={paragraphStyle}>
-          Need help finding the best course, submitting your university
-          application or navigating the visa requirements?
-        </p>
-        <p style={paragraphStyle}>
-          Your dedicated AIEC counsellor will work with you closely to prepare
-          you for your study abroad journey and help you every step of the way.
-        </p>
-        <p style={paragraphStyle}>
-          We know the transition can be an exciting time for not just you, but
-          also your family. This is why your AIEC counsellor will go the extra
-          mile and support both you and your family, as you begin your journey.
-        </p>
-        <h3 style={titleStyle}>Approachable international education experts</h3>
-        <p style={paragraphStyle}>
-          Many of the AIEC counsellors were international students themselves.
-        </p>
-        <p style={paragraphStyle}>
-          They are international education experts, who have been there in the
-          same place that you are right now.
-        </p>
-        <p style={paragraphStyle}>
-          They know what it is like to have the right information before heading
-          to a foreign country and they are willing to share what they have
-          learned in their study abroad journey.
-        </p>
-        <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
-        <p style={paragraphStyle}>
-          As a proud co-owner of IELTS, we can help you book and prepare for
-          your IELTS test. Recognised by more than 12,000 organisations around
-          the world, IELTS is the world’s leading English language test for
-          study, work and migration purposes.
-        </p>
+
+       
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>
           <iframe
@@ -221,4 +186,4 @@ const Whychooseaiec = () => {
   );
 };
 
-export default Whychooseaiec;
+export default Livingabroadsupport;

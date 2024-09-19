@@ -99,7 +99,7 @@ const Whatwedo = () => {
       label: "Visa application assistance",
       path: "/studentvisapplication",
     },
-    { label: "Living abroad support", path: "/living-abroad-support" },
+    { label: "Living abroad support", path: "/livingabroadsupport" },
   ];
 
   return (

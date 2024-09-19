@@ -124,7 +124,7 @@ const Predeparturesupport = () => {
       text: "Visa application assistance",
       path: "/studentvisapplication",
     },
-    { text: "Living abroad support", path: "/living-abroad-support" },
+    { text: "Living abroad support", path: "/livingabroadsupport" },
   ];
 
   return (

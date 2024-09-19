@@ -79,6 +79,7 @@ import Studentvisaapplication from "./Pages/Whychoosedata/Studentvisaapplication
 import Studyabroadcounseling from "./Pages/Whychoosedata/Studyabroadcounselling";
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
+import Livingabroadsupport from "./Pages/Whychoosedata/Livingabroadsupport";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -207,6 +208,8 @@ function App() {
           element={<Studentvisaapplication />}
         />
         <Route path="/predeparturesupport" element={<Predeparturesupport />} />
+
+        <Route path="/livingabroadsupport" element={<Livingabroadsupport />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
