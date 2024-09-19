@@ -232,6 +232,8 @@ const BelowSliderSection = ({ activeSection }) => {
           destinationRoute = "/coursenewzeland";
         } else if (destinationInput.toLowerCase() === "canada") {
           destinationRoute = "/coursecanada";
+        }else if (destinationInput.toLowerCase() === "united kingdom") {
+          destinationRoute = "/courseuk";
         }
         
         // Navigate to the route if a valid one is found

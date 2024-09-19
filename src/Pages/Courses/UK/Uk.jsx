@@ -3576,7 +3576,7 @@ const CourseUk = () => {
           <>
             <DataCount size="1.5em" bold>
               Found {filteredPrograms.length} programs according to your
-              criteria in USA.
+              criteria in UK.
             </DataCount>
             <GridContainer>
               {filteredPrograms.map((program, index) => (
