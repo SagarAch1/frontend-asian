@@ -168,7 +168,7 @@ const Newzelandvisarequirement = () => {
           <div style={styles.videoContainer}>
               <iframe
                 style={styles.iframe}
-                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
+                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" 
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
