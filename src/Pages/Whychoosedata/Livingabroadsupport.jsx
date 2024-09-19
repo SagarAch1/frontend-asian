@@ -122,7 +122,7 @@ const Livingabroadsupport = () => {
           country involves various considerations, including visa procedures,
           insurance, financial arrangements, accommodation arrangements, and
           potential work opportunities. While this might seem overwhelming, rest
-          assured that IDP’s counselors are committed to guiding you every step
+          assured that AIEC’s counselors are committed to guiding you every step
           of the way.
         </p>
 
@@ -135,9 +135,9 @@ const Livingabroadsupport = () => {
         </p>
         <p style={paragraphStyle}>
           2. Accommodation support: Whether it's university residences, shared
-          apartments, or homestays, IDP's team helps you explore various housing
-          options, ensuring a secure and comfortable home throughout your study
-          abroad experience.
+          apartments, or homestays, AIEC's team helps you explore various
+          housing options, ensuring a secure and comfortable home throughout
+          your study abroad experience.
         </p>
         <p style={paragraphStyle}>
           3. Cultural support: We facilitate your understanding of the local
@@ -145,7 +145,6 @@ const Livingabroadsupport = () => {
           surroundings.
         </p>
 
-       
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>
           <iframe

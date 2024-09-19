@@ -130,9 +130,6 @@ const Convera = () => {
             Your payment will arrive in full at your education institution which
             may help expedite visa applications and enrolment.
           </p>
-         
-          
-          
           <div
             style={{
               backgroundColor: "#e7f3ff",
@@ -154,20 +151,41 @@ const Convera = () => {
               140+ currencies across 200+ countries and territories.
             </p>
             <h3 style={{ fontWeight: "bold", fontSize: "1.3rem" }}>
-            Why choose Convera:
+              Why choose Convera:
             </h3>{" "}
             <ul style={{ listStyle: "none", padding: 0 }}>
-              <li>Students, parents, and sponsors can use this platform to pay deposits, tuition fees and more</li>
+              <li>
+                Students, parents, and sponsors can use this platform to pay
+                deposits, tuition fees and more
+              </li>
               <li>Avoid costly transaction charges from your bank</li>
-              <li>Pay online via popular options including bank transfer, credit, or debit card or eWallet.</li>
-              <li>Compare payment options instantly and Convera holds the exchange rate for 72 hours.</li>
-              <li>If you find a cheaper quote from your bank, Convera will match it in accordance with their Price Promise Guarantee. Ask your IDP counsellor for more details.</li>
+              <li>
+                Pay online via popular options including bank transfer, credit,
+                or debit card or eWallet.
+              </li>
+              <li>
+                Compare payment options instantly and Convera holds the exchange
+                rate for 72 hours.
+              </li>
+              <li>
+                If you find a cheaper quote from your bank, Convera will match
+                it in accordance with their Price Promise Guarantee. Ask your
+                AIEC counsellor for more details.
+              </li>
               <li>Track your payment status by SMS and email</li>
               <li>Multilingual platform available in 10 languages.</li>
-              <li>Access 24/7 live chat on the platform, or contact our friendly team at studentsupport@convera.com.</li>
+              <li>
+                Access 24/7 live chat on the platform, or contact our friendly
+                team at studentsupport@convera.com.
+              </li>
               <li>A platform built with security in mind.</li>
-              <li>Ability to initiate refunds easily should circumstances change.</li>
-              <li>Pay your fees via a global partner which has helped students achieve their education dreams for over a decade.</li>
+              <li>
+                Ability to initiate refunds easily should circumstances change.
+              </li>
+              <li>
+                Pay your fees via a global partner which has helped students
+                achieve their education dreams for over a decade.
+              </li>
             </ul>
             <button
               onClick={() => navigate("/formpage")} // Navigation using useNavigate

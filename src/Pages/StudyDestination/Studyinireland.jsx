@@ -441,8 +441,8 @@ const Studyinireland = () => {
         </ul>
         <p style={styles.paragraph}>
           If you want to know more about studying in Ireland, get in touch with
-          our international education expert at IDP. They will help you with the
-          end-to-end admission process.
+          our international education expert at AIEC. They will help you with
+          the end-to-end admission process.
         </p>
 
         <Exploreinireland />
@@ -470,7 +470,7 @@ const styles = {
     backgroundPosition: "center",
     marginLeft: "-225px",
   },
-   
+
   headerContent: {
     position: "absolute",
     top: "20%",

@@ -119,7 +119,7 @@ const Aboutaiec = () => {
         <p style={subtitleStyle}>
           Navigating through numerous courses and universities while deciding
           where and what to study abroad can indeed be a formidable task. But
-          rest assured, IDP is here as your steadfast companion throughout this
+          rest assured, AIEC is here as your steadfast companion throughout this
           journey.
         </p>
         <p style={paragraphStyle}>
@@ -129,7 +129,7 @@ const Aboutaiec = () => {
           courses that resonate with your aspirations.
         </p>
         <p style={paragraphStyle}>
-          Reach out to your nearest IDP office anytime for a compassionate and
+          Reach out to your nearest AIEC office anytime for a compassionate and
           free counseling session. Your aspirations matter to us!
         </p>
         <h2 style={titleStyle}>You can find course from here</h2>

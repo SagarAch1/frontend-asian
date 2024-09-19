@@ -1,7 +1,12 @@
 import React from "react";
 import { Element, Link } from "react-scroll";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
+import Footer from "../Homepage/Footer";
+import FormPage from "../Homepage/FormPage";
 
 const Usavisarequirement = () => {
+  const navigate = useNavigate(); // Create navigate function
+
   const styles = {
     container: {
       display: "flex",
@@ -15,6 +20,7 @@ const Usavisarequirement = () => {
       width: "100%",
       height: "300px",
       objectFit: "cover",
+      marginTop: "81px",
     },
     headerTitle: {
       position: "absolute",
@@ -49,8 +55,9 @@ const Usavisarequirement = () => {
     },
     mainContent: {
       width: "75%",
-      padding: "20px",
+      padding: "30px",
       backgroundColor: "white",
+      fontSize: "18px",
     },
     sectionTitle: {
       fontSize: "24px",
@@ -75,6 +82,10 @@ const Usavisarequirement = () => {
     signupButtonHover: {
       backgroundColor: "#0056b3",
     },
+  };
+
+  const handleSignUpClick = () => {
+    navigate("/register"); // Navigate to /register on button click
   };
 
   return (
@@ -197,7 +208,7 @@ const Usavisarequirement = () => {
               Once accepted, you will receive a Form I-20 from the institution's
               international student office, which is a paper record of your
               information in the database called the Student and Exchange
-              Visitor Information System (SEVIS)..
+              Visitor Information System (SEVIS).
             </p>
           </Element>
 
@@ -292,12 +303,18 @@ const Usavisarequirement = () => {
             <p>
               Sign up to get personalized information, study plans, and more.
             </p>
-            <button className="signup-button" style={styles.signupButton}>
+            <button
+              className="signup-button"
+              style={styles.signupButton}
+              onClick={handleSignUpClick} // Navigate to /register on button click
+            >
               Sign Up
             </button>
           </div>
         </div>
       </div>
+      <FormPage />
+      <Footer />
     </div>
   );
 };

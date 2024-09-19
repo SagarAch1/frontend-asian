@@ -191,8 +191,8 @@ const Predeparturesupport = () => {
           student visa regulations and offer job-search tips.
         </p>
         <p style={paragraphStyle}>
-          7. A network of advice: Connect with IDP alumni and fellow students to
-          gather valuable insights and advice.
+          7. A network of advice: Connect with AIEC alumni and fellow students
+          to gather valuable insights and advice.
         </p>
         <p style={paragraphStyle}>
           We're committed to ensuring your seamless transition into a fulfilling

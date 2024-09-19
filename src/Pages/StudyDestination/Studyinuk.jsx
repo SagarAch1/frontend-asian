@@ -161,22 +161,17 @@ const Studyinuk = () => {
               <td style={styles.tableCell}>
                 GBP 10,000 to GBP 20,000 per year
               </td>
-              
             </tr>
             <tr>
-            <td style={styles.tableCell}>2</td>
+              <td style={styles.tableCell}>2</td>
               <td style={styles.tableCell}>Postgraduate master's degree</td>
               <td style={styles.tableCell}>
                 GBP 10,000 to GBP 20,000 per year
               </td>
-              </tr>
-              <td style={styles.tableCell}>3</td>
-              <td style={styles.tableCell}>Doctoral degree</td>
-              <td style={styles.tableCell}>
-                GBP 15,000 to GBP 24,000 per year
-              </td>
-             
-              
+            </tr>
+            <td style={styles.tableCell}>3</td>
+            <td style={styles.tableCell}>Doctoral degree</td>
+            <td style={styles.tableCell}>GBP 15,000 to GBP 24,000 per year</td>
           </tbody>
         </table>
         <p style={styles.paragraph}>
@@ -250,7 +245,7 @@ const Studyinuk = () => {
           </tbody>
         </table>
         <p style={styles.paragraph}>
-          *This is an indicative list, speak with your IDP counsellor for
+          *This is an indicative list, speak with your AIEC counsellor for
           details and the best available options suited to your profile.
         </p>
 

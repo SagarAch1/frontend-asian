@@ -174,7 +174,7 @@ const Afterreceivingoffer = () => {
           <p>
             Congratulations! An approved university application means you’re one
             step closer to achieving your dream to study abroad. It’s an
-            exciting time but it’s natural to feel nervous. IDP is here to
+            exciting time but it’s natural to feel nervous. AIEC is here to
             support you at every step of your journey. You can speak to one of
             our experienced counsellors to guide you through the process after
             you receive an offer. We’ll also help you with student visas, money
@@ -208,38 +208,44 @@ const Afterreceivingoffer = () => {
       {/* Additional Section */}
       <div style={styles.additionalSection}>
         <h2 style={styles.additionalTitle}>
-        Next steps after receiving an offer
+          Next steps after receiving an offer
         </h2>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>1. Track your application</h3>
           <p>
-          Stay informed every step of the way through our ‘Application Tracker’ while you wait for the outcome.
+            Stay informed every step of the way through our ‘Application
+            Tracker’ while you wait for the outcome.
           </p>
-          
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>2. Choosing between multiple offers</h3>
+          <h3 style={styles.listItemTitle}>
+            2. Choosing between multiple offers
+          </h3>
           <p>
-          Got more than one offer? It’s an exciting yet challenging scenario that requires thoughtful deliberation.
+            Got more than one offer? It’s an exciting yet challenging scenario
+            that requires thoughtful deliberation.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>3. Pay admission and tution fees</h3>
           <p>
-          You nailed it! Need help transferring funds? We’ve got you covered every step of the way.
+            You nailed it! Need help transferring funds? We’ve got you covered
+            every step of the way.
           </p>
-          
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>4. Access our Student Essential Services</h3>
+          <h3 style={styles.listItemTitle}>
+            4. Access our Student Essential Services
+          </h3>
           <p>
-          Plan your upcoming move. Find accommodation, apply for Health Insurance and more.
+            Plan your upcoming move. Find accommodation, apply for Health
+            Insurance and more.
           </p>
           <a href="#" style={styles.listItemLink}>
-            Student visa | Money transfer |Student banking |Accommodation  |Health insurance 
+            Student visa | Money transfer |Student banking |Accommodation
+            |Health insurance
           </a>
         </div>
-        
       </div>
       {/* Second Additional Section */}
       <div style={styles.additionalSection}>
@@ -294,7 +300,6 @@ const Afterreceivingoffer = () => {
             5,100 scholarships across our partner university network. Reach out
             to us to explore your options.
           </p>
-         
         </div>
       </div>
       <FormPage />

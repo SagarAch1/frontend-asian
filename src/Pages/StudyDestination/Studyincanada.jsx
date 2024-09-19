@@ -386,7 +386,7 @@ const StudyInUsa = () => {
         </p>
         <p style={styles.paragraph}>
           Ans: GPA requirements may vary with the institution you are applying
-          to. It’s best to check with the institution you have chosen or an IDP
+          to. It’s best to check with the institution you have chosen or an AIEC
           expert for the same.
         </p>
 
@@ -399,7 +399,7 @@ const StudyInUsa = () => {
           program. Nevertheless, students should strive to achieve a minimum
           score of 70% in their 12th standard examinations
         </p>
-       
+
         <Exploreincanada />
         <FormPage />
       </div>

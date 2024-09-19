@@ -25,7 +25,7 @@ const Courseadvice = () => {
           Every course is a distinct blend of various elements, ranging from the
           subjects covered and campus location to the eventual career path.
           Whether you're exploring potential courses, deliberating between
-          fields of study, or unsure about your desired career, your IDP
+          fields of study, or unsure about your desired career, your AIEC
           counselor is here to assist. They'll guide you in discovering the
           ideal course and managing your university application process.
         </p>
@@ -45,7 +45,7 @@ const Courseadvice = () => {
         <p style={styles.paragraph}>
           While it might appear evident, your education, experiences, and areas
           of interest constitute the initial phase in discovering your ideal
-          course. Your IDP counselor will collaborate with you to outline a
+          course. Your AIEC counselor will collaborate with you to outline a
           shortlist and delve deeply into course handbooks and subject options.
         </p>
         <ul style={styles.courseList}>
@@ -53,7 +53,7 @@ const Courseadvice = () => {
         </ul>
         <p style={styles.paragraph}>
           Your selected course should set you on a trajectory toward a
-          profession you'll cherish. Your IDP counselor can offer guidance on
+          profession you'll cherish. Your AIEC counselor can offer guidance on
           the courses that align with your desired career path.
         </p>
         <ul style={styles.courseList}>
@@ -61,7 +61,7 @@ const Courseadvice = () => {
         </ul>
         <p style={styles.paragraph}>
           Understanding the cost of a course and your budget for education are
-          pivotal considerations in selecting a study destination. Your IDP
+          pivotal considerations in selecting a study destination. Your AIEC
           counselor will also guide you through application deadlines and course
           commencement dates across various locations.
         </p>
@@ -78,7 +78,6 @@ const Courseadvice = () => {
         </p>
         <h2 style={styles.sectionTitle}>Contact Us For More Info</h2>
 
-      
         <FormPage />
       </div>
       <Footer />

@@ -257,7 +257,7 @@ const Studyinnewzeland = () => {
         <h2 style={styles.sectionTitle}>Cost of studying in New Zealand</h2>
         <p style={styles.paragraph}>
           If you want to know the total cost of studying in New Zealand for
-          Nepalese students , you can get in touch with an IDP expert . Most
+          Nepalese students , you can get in touch with an AIEC expert . Most
           commonly humanities, arts and education courses are cheaper, while
           subjects such as medicine and engineering are likely to be more
           expensive. If you wish to study at the postgraduate level, the tuition
@@ -380,7 +380,7 @@ const Studyinnewzeland = () => {
                 per year Visa application costs do not exceed up to 1,000
                 Airfare upon returning to New Zealand up to a maximum amount of
                 6,000 Research allowance up to 1,500 Feel free to reach out to
-                your IDP international education expert for the application
+                your AIEC international education expert for the application
                 process (
                 Source:https://www.studyinnewzealand.govt.nz/how-to-apply/scholarship/)
               </td>

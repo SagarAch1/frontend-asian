@@ -174,7 +174,7 @@ const Howdoiapply = () => {
             Great job on successfully shortlisting your ideal university and
             course! The next step is to submit your application. You can submit
             as many applications as you want, but we recommend shortlisting the
-            best three courses you’re most likely to pursue. The IDP Live app
+            best three courses you’re most likely to pursue. The AIEC Live app
             will guide you through the application form and required documents.
             Just fill out the application form once to apply to your shortlisted
             courses, and access expert counsellor support along the way. Be sure
@@ -251,11 +251,9 @@ const Howdoiapply = () => {
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>5. Submit your application</h3>
-          <p>
-          Submit your application in person with an IDP counsellor..
-          </p>
+          <p>Submit your application in person with an AIEC counsellor..</p>
           <a href="#" style={styles.listItemLink}>
-            Find your nearest AIEC office  
+            Find your nearest AIEC office
           </a>
         </div>
       </div>
@@ -312,7 +310,6 @@ const Howdoiapply = () => {
             5,100 scholarships across our partner university network. Reach out
             to us to explore your options.
           </p>
-         
         </div>
       </div>
       <FormPage />

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Footer from "../Homepage/Footer";
 import Contact from "../Contact/Contact";
+import Footer from "../Homepage/Footer";
 
 const Newsandarticles = () => {
   const navigate = useNavigate();
@@ -23,7 +23,7 @@ const Newsandarticles = () => {
       category: "Life Sciences",
     },
     {
-      title: "Does It Matter Where I Take IELTS - IDP Or British Council?",
+      title: "Does It Matter Where I Take IELTS - AIEC Or British Council?",
       date: "2024-06-27",
       readTime: "5 min read",
       imageUrl: `${process.env.PUBLIC_URL}/assets/images/a3.webp`,

@@ -175,11 +175,11 @@ const WhereAndWhatToStudy = () => {
             You've taken a significant step by deciding to study overseas. Now
             it’s time to choose where and what to study. Navigating through
             hundreds of course and university options can be overwhelming, plus
-            you’ll have tons of other questions on your mind. With IDP, you’re
+            you’ll have tons of other questions on your mind. With AIEC, you’re
             in good hands. Simply create an account, complete your profile, and
             we’ll provide you with personalised course recommendations that
             align perfectly with your aspirations. If your shortlisted course
-            has an IDP FastLane tag, you can check if you’re likely to be
+            has an AIEC FastLane tag, you can check if you’re likely to be
             accepted even before applying – so give it a go! We also offer a
             wide array of tools and resources – from city, university, and
             subject guides to cost calculators, scholarship finders and tons of
@@ -256,17 +256,16 @@ const WhereAndWhatToStudy = () => {
           </p>
           <a href="#" style={styles.listItemLink}>
             Course advice | Subject guides |Find a Course
-           
           </a>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>5. Choose a University</h3>
           <p>
-          Browse institutions across 6 different country destinations to see which align with your academic goals and aspirations.
+            Browse institutions across 6 different country destinations to see
+            which align with your academic goals and aspirations.
           </p>
           <a href="#" style={styles.listItemLink}>
             Check uni ranking | Find a uni
-           
           </a>
         </div>
       </div>
@@ -323,7 +322,6 @@ const WhereAndWhatToStudy = () => {
             5,100 scholarships across our partner university network. Reach out
             to us to explore your options.
           </p>
-         
         </div>
       </div>
       <FormPage />

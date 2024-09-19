@@ -167,7 +167,7 @@ const StudyInUsa = () => {
         <h2 style={styles.sectionTitle}>Scholarships to study in the USA</h2>
         <p style={styles.paragraph}>
           If you are wondering how to get a scholarship to study in the US, you
-          can contact an IDP expert. They will help apply for eligible
+          can contact an AIEC expert. They will help apply for eligible
           scholarships. However, the amount of funding available and the type of
           award varies between institutions. Certain research programs may
           provide up to 100% waiver on the tuition fee besides covering a part
@@ -246,7 +246,7 @@ const StudyInUsa = () => {
           </tbody>
         </table>
         <p style={styles.paragraph}>
-          *This is an indicative list, speak with your IDP expert for details
+          *This is an indicative list, speak with your AIEC expert for details
           and the best available options suited to your profile Please note: An
           MBA degree can cost significantly more, as can professional programs
           such as law, medicine, dentistry, some design programs, etc. Most
@@ -408,7 +408,7 @@ const StudyInUsa = () => {
         <p style={styles.paragraph}>
           Ans: Depending on your profile and the university requirements, you
           will need to take English language proficiency test, and standardized
-          test (like SAT/ACT/GRE/GMAT, etc.) Consult with an IDP exert to learn
+          test (like SAT/ACT/GRE/GMAT, etc.) Consult with an AIEC exert to learn
           about your requirements.
         </p>
         <p style={styles.section}>
@@ -453,7 +453,6 @@ const StudyInUsa = () => {
       </div>
       <Footer />
     </div>
-    
   );
 };
 
