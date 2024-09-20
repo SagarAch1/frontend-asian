@@ -109,7 +109,7 @@ const Predeparturesupport = () => {
     },
     {
       text: "Guardianship referral",
-      path: "/australia-visa",
+      path: "/guradianship",
     },
   ];
 
