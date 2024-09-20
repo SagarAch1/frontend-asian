@@ -213,7 +213,7 @@ const Predeparturesupport = () => {
               }
               onMouseEnter={() => handleMouseEnterVisa(index)}
               onMouseLeave={handleMouseLeaveVisa}
-              onClick={() => handleButtonClick(button.path)} // Navigate to the corresponding path
+              onClick={() => handleButtonClick(button.path)} 
             >
               {button.text}
             </button>

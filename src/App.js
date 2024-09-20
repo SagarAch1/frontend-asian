@@ -86,6 +86,7 @@ import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
 import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
 import Newzelandvisarequirement from "./Pages/Whychoosedata/Newzelandvisarequirement";
 import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement";
+import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -185,6 +186,7 @@ function App() {
         <Route path="/ukuniversities" element={<Ukuni />} />
         <Route path="/canadauniversities" element={<Canadauni />} />
         <Route path="/newzelanduniversities" element={<Newzelanduni />} />
+        <Route path="/officelocator" element={<OfficeLocator />} />
 
         <Route
           path="/scholarshipsinaustralia"
