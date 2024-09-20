@@ -1,78 +1,139 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Footer from "../Homepage/Footer";
 
 const OfficeLocator = () => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [filteredOptions, setFilteredOptions] = useState([]);
-  const [locationStatus, setLocationStatus] = useState('');
+  const [locationStatus, setLocationStatus] = useState("");
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [selectedOffice, setSelectedOffice] = useState(null);
 
-  const offices = ['Kathmandu', 'Pokhara', 'Chitwan', 'Sydney'];
+  const offices = ["Kathmandu", "Pokhara", "Chitwan", "Sydney"];
 
-  // Function to handle search input
   const handleInputChange = (e) => {
     const input = e.target.value;
     setSearchTerm(input);
 
     if (input) {
-      // Filter the dropdown options based on the input
       const filtered = offices.filter((office) =>
         office.toLowerCase().startsWith(input.toLowerCase())
       );
       setFilteredOptions(filtered);
     } else {
-      // Show all places when input is empty
       setFilteredOptions(offices);
     }
   };
 
-  // Function to handle search button
   const handleSearch = () => {
     if (offices.includes(searchTerm)) {
-      alert(`Navigating to /${searchTerm}`);
+      setSelectedOffice(searchTerm);
     } else {
-      alert('We are not available here');
+      alert("We are not available here");
     }
   };
 
-  // Function to handle "Find office near me" and request location access
-  const handleFindNearMe = () => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const userLat = position.coords.latitude;
-          const userLon = position.coords.longitude;
-          setLocationStatus('Location access granted!');
-          // Check if user is near an office
-          const nearbyOffice = offices.find((office) => office === 'Kathmandu'); // Example logic
-          if (nearbyOffice) {
-            alert(`Navigating to /${nearbyOffice}`);
-          } else {
-            alert('No nearby offices found.');
-          }
-        },
-        () => {
-          setLocationStatus('Location access denied.');
-        }
-      );
-    } else {
-      setLocationStatus('Geolocation is not supported by this browser.');
-    }
-  };
-
-  // Function to handle click on input field (show all locations)
+ 
   const handleInputClick = () => {
     setFilteredOptions(offices);
-    setDropdownVisible(true); // Show dropdown when input is clicked
+    setDropdownVisible(true);
   };
 
-  // Function to handle click outside of the dropdown
   const handleClickOutside = () => {
     setDropdownVisible(false);
   };
 
+  const renderOfficeDetails = (office) => {
+    let officeData = null;
+
+    if (office === "Kathmandu") {
+      officeData = {
+        address:
+          "Putalisadak, opposite to Triveni, putalisadak-Kamaladi Road, Kathmandu, Nepal - 44600",
+        phone: "014217400",
+        openingHours: "09:00 AM - 05:30 PM",
+        mapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3709997553105!2d85.32043637556089!3d27.705829276183444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195c580e7a5d%3A0xf35b7e6ce96c9d55!2sAsian%20International%20Education%20and%20Migration%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1726823511164!5m2!1sen!2snp",
+      };
+    } else if (office === "Pokhara") {
+      officeData = {
+        address: "Central Pokhara, Pokhara, Nepal",
+        phone: "061-123456",
+        openingHours: "09:00 AM - 05:30 PM",
+        mapUrl: "https://www.google.com/maps/embed?...", // Update with actual URL
+      };
+    } else if (office === "Chitwan") {
+      officeData = {
+        address: "Chitwan National Park Road, Chitwan, Nepal",
+        phone: "056-789012",
+        openingHours: "09:00 AM - 05:30 PM",
+        mapUrl: "https://www.google.com/maps/embed?...", // Update with actual URL
+      };
+    } else if (office === "Sydney") {
+      officeData = {
+        address: "123 Sydney St, Sydney, Australia",
+        phone: "+61 2 1234 5678",
+        openingHours: "09:00 AM - 05:30 PM",
+        mapUrl: "https://www.google.com/maps/embed?...", // Update with actual URL
+      };
+    }
+
+    if (!officeData) return null;
+
+    return (
+      <div style={{ display: "flex", alignItems: "center", padding: "20px" }}>
+        <div style={{ flex: 1 }}>
+          <h2>{office} Office</h2>
+          <p>
+            <strong>Office location</strong>
+          </p>
+          <p>{officeData.address}</p>
+          <p>
+            <strong>Phone</strong>
+          </p>
+          <p>
+            <a href={`tel:${officeData.phone}`}>{officeData.phone}</a>
+          </p>
+          <p>
+            <strong>Opening hours</strong>
+          </p>
+          <p>{officeData.openingHours}</p>
+          <button
+            style={{
+              backgroundColor: "#007bff",
+              color: "#fff",
+              padding: "10px 20px",
+              border: "none",
+              borderRadius: "5px",
+            }}
+          >
+            More details
+          </button>
+        </div>
+
+        <div
+          style={{
+            flex: 1,
+            position: "relative",
+            height: "300px",
+            width: "500px",
+          }}
+        >
+          <iframe
+            src={officeData.mapUrl}
+            width="400"
+            height="300"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div style={styles.container} onClick={handleClickOutside}>
-      {/* Top image section */}
       <div style={styles.topImageContainer}>
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/is.png`}
@@ -81,9 +142,11 @@ const OfficeLocator = () => {
         />
       </div>
 
-      {/* Top section with search and dropdown */}
       <div style={styles.topSection}>
-        <div style={styles.searchContainer} onClick={(e) => e.stopPropagation()}>
+        <div
+          style={styles.searchContainer}
+          onClick={(e) => e.stopPropagation()}
+        >
           <input
             type="text"
             placeholder="Enter a town or city"
@@ -96,7 +159,6 @@ const OfficeLocator = () => {
             Search
           </button>
 
-          {/* Dropdown for office locations */}
           {dropdownVisible && filteredOptions.length > 0 && (
             <div style={styles.dropdown}>
               {filteredOptions.map((option, index) => (
@@ -104,8 +166,8 @@ const OfficeLocator = () => {
                   key={index}
                   onClick={() => {
                     setSearchTerm(option);
-                    setFilteredOptions([]); // Hide dropdown after selecting an option
-                    setDropdownVisible(false); // Hide dropdown after selection
+                    setFilteredOptions([]);
+                    setDropdownVisible(false);
                   }}
                   style={styles.dropdownItem}
                 >
@@ -116,152 +178,174 @@ const OfficeLocator = () => {
           )}
         </div>
 
-        <button onClick={handleFindNearMe} style={styles.findButton}>
-          Find offices near me
-        </button>
+       
 
         {locationStatus && <p>{locationStatus}</p>}
       </div>
 
-      {/* Why AIEC Counsellors Section */}
+      {selectedOffice && renderOfficeDetails(selectedOffice)}
+
       <div style={styles.whyAIEC}>
         <h2 style={styles.title}>Why AIEC Counsellors?</h2>
         <div style={styles.row}>
           <div style={styles.col}>
             <h4>Connect globally</h4>
-            <p>Get one to one access to more than 2,200 expert education counsellors across 190 AIEC offices in 35 countries.</p>
+            <p>
+              Get one to one access to more than 2,200 expert education
+              counsellors across 190 AIEC offices in 35 countries.
+            </p>
           </div>
           <div style={styles.col}>
             <h4>Experts in their field</h4>
-            <p>Our counsellors are highly trained to support you to find and apply to courses matching your interest and aptitude.</p>
+            <p>
+              Our counsellors are highly trained to support you to find and
+              apply to courses matching your interest and aptitude.
+            </p>
           </div>
           <div style={styles.col}>
             <h4>An unbeatable track record</h4>
-            <p>To date, we have helped more than half a million students achieve their dream of studying abroad.</p>
+            <p>
+              To date, we have helped more than half a million students achieve
+              their dream of studying abroad.
+            </p>
           </div>
         </div>
         <div style={styles.row}>
           <div style={styles.col}>
             <h4>Friendly and approachable</h4>
-            <p>Many AIEC counsellors were once international students too. You'll always find them ready to go the extra mile.</p>
+            <p>
+              Many AIEC counsellors were once international students too. You'll
+              always find them ready to go the extra mile.
+            </p>
           </div>
           <div style={styles.col}>
             <h4>Zero commission</h4>
-            <p>AIEC doesn’t charge you for its services. Many universities also waive their application fees when you apply through AIEC.</p>
+            <p>
+              AIEC doesn’t charge you for its services. Many universities also
+              waive their application fees when you apply through AIEC.
+            </p>
           </div>
           <div style={styles.col}>
             <h4>Putting you first</h4>
-            <p>All our services are designed to enhance your experience and ensure that you achieve your study abroad goals.</p>
+            <p>
+              All our services are designed to enhance your experience and
+              ensure that you achieve your study abroad goals.
+            </p>
           </div>
+        </div>
+      </div>
+      <div style={styles.container} onClick={handleClickOutside}>
+        <div style={styles.footerStyle}>
+          <Footer style={styles.footerStyle} />
         </div>
       </div>
     </div>
   );
 };
 
-// CSS Styles in JS
 const styles = {
   container: {
-    fontFamily: 'Arial, sans-serif',
-    padding: '20px',
-    maxWidth: '1200px',
-    margin: '0 auto',
+    fontFamily: "Arial, sans-serif",
+    padding: "20px",
+    maxWidth: "1200px",
+    margin: "0 auto",
+  },
+  footerStyle: {
+    width: "2500px",
+    height: "400px",
+    overflow: "hidden",
+    marginLeft: "-700px",
+    marginBottom: "20px",
   },
   topImageContainer: {
-    width: '2500px',
-    height: '200px',
-    overflow: 'hidden',
-    marginLeft: '-700px',
-    marginBottom: '20px',
+    width: "2500px",
+    height: "400px",
+    overflow: "hidden",
+    marginLeft: "-700px",
+    marginBottom: "20px",
   },
   topImage: {
-    width: '100%',
-    height: 'auto',
-    objectFit: 'cover',
+    width: "100%",
+    height: "500px",
+    objectFit: "cover",
+    marginTop: "62px",
   },
+
   topSection: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: '30px',
-    gap: '15px',
-    flexWrap: 'wrap',
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: "30px",
+    gap: "15px",
+    flexWrap: "wrap",
   },
+
   searchContainer: {
-    position: 'relative',
-    display: 'flex',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    border: '2px solid #ddd',
-    borderRadius: '50px',
-    padding: '5px 10px',
-    width: '300px',
+    display: "flex",
+    alignItems: "center",
+    marginBottom: "20px",
   },
   input: {
-    border: 'none',
-    padding: '10px',
-    borderRadius: '50px',
-    fontSize: '16px',
-    outline: 'none',
-    width: '100%',
+    flex: 1,
+    padding: "10px",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    marginRight: "10px",
   },
   searchButton: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    backgroundColor: '#007bff',
-    color: 'white',
-    border: 'none',
-    cursor: 'pointer',
-    borderRadius: '50px',
-    marginLeft: '10px',
+    padding: "10px 20px",
+    backgroundColor: "#007bff",
+    color: "#fff",
+    border: "none",
+    borderRadius: "4px",
+    cursor: "pointer",
   },
   findButton: {
-    padding: '10px 20px',
-    fontSize: '16px',
-    backgroundColor: '#007bff',
-    color: 'white',
-    border: 'none',
-    cursor: 'pointer',
-    borderRadius: '50px',
+    padding: "10px 20px",
+    backgroundColor: "#28a745",
+    color: "#fff",
+    border: "none",
+    borderRadius: "4px",
+    cursor: "pointer",
+    marginTop: "10px",
   },
   dropdown: {
-    position: 'absolute',
-    top: '58px', // Adjusted for dropdown to appear below search bar
-    left: '0', // Align with input field
-    width: '100%', // Ensure it matches the input width
-    backgroundColor: 'white',
-    border: '1px solid #ddd',
-    borderRadius: '8px',
-    boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
-    zIndex: '1',
-    maxHeight: '200px',
-    overflowY: 'auto', // For scrollable dropdown
+    border: "1px solid #ccc",
+    borderRadius: "4px",
+    position: "absolute",
+    zIndex: 1000,
+    backgroundColor: "#fff",
+    maxHeight: "200px",
+    overflowY: "auto",
   },
   dropdownItem: {
-    padding: '15px', // Increase padding for larger item size
-    cursor: 'pointer',
-    borderBottom: '1px solid #ddd',
+    padding: "10px",
+    cursor: "pointer",
+    ":hover": {
+      backgroundColor: "#f0f0f0",
+    },
   },
   whyAIEC: {
-    textAlign: 'center',
-    maxWidth: '900px',
-    margin: '0 auto',
+    marginTop: "40px",
+    padding: "20px",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
   },
   title: {
-    fontSize: '28px',
-    marginBottom: '30px',
+    fontSize: "24px",
+    fontWeight: "bold",
   },
   row: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginBottom: '20px',
+    display: "flex",
+    justifyContent: "space-between",
+    marginTop: "20px",
   },
   col: {
-    width: '30%',
-    padding: '20px',
-    backgroundColor: '#f9f9f9',
-    borderRadius: '10px',
-    boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+    flex: 1,
+    margin: "0 10px",
+    padding: "10px",
+    border: "1px solid #ccc",
+    borderRadius: "4px",
   },
 };
 
