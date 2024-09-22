@@ -63,10 +63,10 @@ const OfficeLocator = () => {
       };
     } else if (office === "Chitwan") {
       officeData = {
-        address: "Chitwan National Park Road, Chitwan, Nepal",
-        phone: "056-789012",
+        address: "Tejman Plaza AL5, Pulchok-03, Narayangurh,Chitwan Nepal",
+        phone: "+97756527974",
         openingHours: "09:00 AM - 05:30 PM",
-        mapUrl: "https://www.google.com/maps/embed?...", // Update with actual URL
+        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6353702698307!2d84.41815947530027!3d27.697662476188142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb224c79fd03%3A0x737835fc6d7dca86!2sPulchowk!5e0!3m2!1sen!2snp!4v1726980530330!5m2!1sen!2snp", // Update with actual URL
       };
     } else if (office === "Sydney") {
       officeData = {
