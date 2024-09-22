@@ -50,6 +50,9 @@ import Newzelanduni from "./Universitiy/Newzelanduni";
 import Ukuni from "./Universitiy/Ukuni";
 import Usauni from "./Universitiy/Usauni";
 import KathmanduOffice from "./Pages/Whychoosedata/Kahmanduoffice";
+import PokharaOffice from "./Pages/Whychoosedata/Pokharaoffice";
+import ChitwanOffice from "./Pages/Whychoosedata/Chitwanoffice";
+import SydneyOffice from "./Pages/Whychoosedata/Sydneyoffice";
 // import Irelanuni from "./Universitiy/Irelanuni";
 
 import Contact from "./Pages/Contact/Contact";
@@ -189,6 +192,9 @@ function App() {
         <Route path="/newzelanduniversities" element={<Newzelanduni />} />
         <Route path="/officelocator" element={<OfficeLocator />} />
         <Route path="/kathmanduoffice" element={<KathmanduOffice />} />
+        <Route path="/chitwanoffice" element={<ChitwanOffice />} />
+        <Route path="/pokharaoffice" element={<PokharaOffice />} />
+        <Route path="/sydneyoffice" element={<SydneyOffice />} />
 
         <Route
           path="/scholarshipsinaustralia"
