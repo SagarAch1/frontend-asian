@@ -23,15 +23,7 @@ const KathmanduOffice = () => {
           style={styles.headerImage}
         />
         <div style={styles.headerContent}>
-          <h1 style={styles.headerText}>IDP Kathmandu Office, Nepal</h1>
-          <div style={styles.buttonsContainer}>
-            <button style={styles.enquireButton} onClick={navigateToFormPage}>
-              Enquire now
-            </button>
-            <button style={styles.shareButton}>
-              <i className="fas fa-share-alt"></i>
-            </button>
-          </div>
+          <h1 style={styles.headerText}>AIEC Kathmandu Office, Nepal</h1>
         </div>
       </div>
 
@@ -48,6 +40,9 @@ const KathmanduOffice = () => {
           <p>
             <strong>Opening hours:</strong> {officeData.openingHours}
           </p>
+        </div>
+
+        <div style={styles.mainContainer}>
           <iframe
             src={officeData.mapUrl}
             width="100%"
@@ -56,46 +51,46 @@ const KathmanduOffice = () => {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
-        </div>
 
-        <div style={styles.sidebar}>
-          <div style={styles.card}>
-            <h3>Not sure about your study abroad journey?</h3>
-            <p>
-              Answer a few questions to get personalized content optimized for
-              you or get in touch with one of our counsellors for a free
-              consultation.
-            </p>
-            <button style={styles.cardButton} onClick={navigateToFormPage}>
-              Get started
-            </button>
-          </div>
-          <div style={styles.card}>
-            <h3>Feeling stuck? Let our expert counsellor help you.</h3>
-            <p>
-              Can't decide on the university and courses? Our experienced
-              counsellors are here to guide and support you through each step of
-              your study abroad journey.
-            </p>
-            <button style={styles.cardButton} onClick={navigateToFormPage}>
-              Meet a counsellor
-            </button>
+          <div style={styles.buttonsContainer}>
+            <div style={styles.card}>
+              <h3>Not sure about your study abroad journey?</h3>
+              <p>
+                Answer a few questions to get personalized content optimized for
+                you or get in touch with one of our counsellors for a free
+                consultation.
+              </p>
+              <button style={styles.cardButton} onClick={navigateToFormPage}>
+                Get started
+              </button>
+            </div>
+            <div style={styles.card}>
+              <h3>Feeling stuck? Let our expert counsellor help you.</h3>
+              <p>
+                Can't decide on the university and courses? Our experienced
+                counsellors are here to guide and support you through each step
+                of your study abroad journey.
+              </p>
+              <button style={styles.cardButton} onClick={navigateToFormPage}>
+                Meet a counsellor
+              </button>
+            </div>
           </div>
         </div>
 
         <div style={styles.footer}>
-          <h2>Study abroad with IDP Nepal - Kathmandu</h2>
+          <h2>Study abroad with AIEC Nepal - Kathmandu</h2>
           <p>
-            We at IDP Nepal: Kathmandu assist you in fulfilling your dream of
+            We at AIEC Nepal: Kathmandu assist you in fulfilling your dream of
             studying abroad in the most sought-after countries – Australia,
             Canada, the USA, the UK, New Zealand, and Ireland.
           </p>
           <p>
-            IDP provides a wide range of services to support your international
+            AIEC provides a wide range of services to support your international
             education journey. We are dedicated to you and your international
             future – from course information to career advice to efficient
             processing of your admission application, student visa processing,
-            and helping you find a better scholarship. IDP will be here to help
+            and helping you find a better scholarship. AIEC will be here to help
             you.
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
@@ -115,6 +110,7 @@ const styles = {
   header: {
     width: "100%",
     position: "relative",
+    marginTop: "82px",
   },
   headerImage: {
     width: "100%",
@@ -133,27 +129,6 @@ const styles = {
     fontSize: "32px",
     fontWeight: "bold",
   },
-  buttonsContainer: {
-    marginTop: "20px",
-    display: "flex",
-    gap: "10px",
-    justifyContent: "flex-end",
-  },
-  enquireButton: {
-    padding: "10px 20px",
-    backgroundColor: "#FF5A00",
-    color: "white",
-    border: "none",
-    borderRadius: "5px",
-    cursor: "pointer",
-  },
-  shareButton: {
-    padding: "10px",
-    backgroundColor: "#E5E5E5",
-    border: "none",
-    borderRadius: "50%",
-    cursor: "pointer",
-  },
   content: {
     maxWidth: "1200px",
     margin: "0 auto",
@@ -169,20 +144,26 @@ const styles = {
     marginBottom: "10px",
     display: "inline-block",
   },
-  map: {
-    border: "none",
-    marginTop: "10px",
-  },
-  sidebar: {
+  mainContainer: {
     display: "flex",
     justifyContent: "space-between",
-    padding: "20px 0",
+  },
+  map: {
+    border: "none",
+    flex: "1",
+    marginRight: "20px",
+  },
+  buttonsContainer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    width: "35%",
   },
   card: {
-    width: "45%",
     padding: "20px",
     backgroundColor: "#F9F9F9",
     borderRadius: "10px",
+    marginBottom: "10px",
   },
   cardButton: {
     marginTop: "10px",
