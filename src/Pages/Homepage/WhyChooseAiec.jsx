@@ -100,7 +100,7 @@ const WhyChooseAiec = () => {
           <p style={descriptionStyle}>
             Serving you globally with 190 offices across 35 countries.
           </p>
-          <a href="#" style={linkStyle}>
+          <a href="/officelocator" style={linkStyle}>
             Learn more &gt;
           </a>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
+import { useNavigate } from "react-router-dom";
 
 const OfficeLocator = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -7,6 +8,8 @@ const OfficeLocator = () => {
   const [locationStatus, setLocationStatus] = useState("");
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [selectedOffice, setSelectedOffice] = useState(null);
+
+  const navigate = useNavigate(); // Use navigate for navigation
 
   const offices = ["Kathmandu", "Pokhara", "Chitwan", "Sydney"];
 
@@ -40,6 +43,19 @@ const OfficeLocator = () => {
   const handleClickOutside = () => {
     setDropdownVisible(false);
   };
+  const handleMoreDetailsClick = (office) => {
+    // Navigate to respective office page based on selected office
+    if (office === "Kathmandu") {
+      navigate("/kathmanduoffice");
+    } else if (office === "Pokhara") {
+      navigate("/pokharaoffice");
+    } else if (office === "Chitwan") {
+      navigate("/chitwanoffice");
+    } else if (office === "Sydney") {
+      navigate("/sydneyoffice");
+    }
+  };
+
 
   const renderOfficeDetails = (office) => {
     let officeData = null;
@@ -109,6 +125,7 @@ const OfficeLocator = () => {
               border: "none",
               borderRadius: "5px",
             }}
+            onClick={() => handleMoreDetailsClick(office)} 
           >
             More details
           </button>
