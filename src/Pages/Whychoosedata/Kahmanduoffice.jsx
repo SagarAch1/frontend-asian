@@ -1,4 +1,6 @@
 import React from "react";
+import Footer from "../Homepage/Footer";
+import Youshouldknow from "../Homepage/YouShouldknow";
 
 const KathmanduOffice = () => {
   const officeData = {
@@ -117,6 +119,8 @@ const KathmanduOffice = () => {
           </button>
         </div>
       </div>
+      <Youshouldknow />
+      <Footer />
     </div>
   );
 };
