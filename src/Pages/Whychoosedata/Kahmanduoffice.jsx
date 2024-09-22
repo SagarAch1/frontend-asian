@@ -93,6 +93,25 @@ const KathmanduOffice = () => {
             and helping you find a better scholarship. AIEC will be here to help
             you.
           </p>
+          <p>
+            We have been creating a huge network of opportunities to support
+            students planning to study abroad. With offices in 32 countries, AIEC
+            Kathmandu has an extensive network of experts to help you identify
+            and secure the university or college where you can thrive.
+          </p>
+          <p>
+            Our counsellors at AIEC are experienced and trained to provide you
+            with end-to-end knowledge about studying and living in your dream
+            destination. Located in Hattisar, Kathmandu we’ve helped many
+            students hailing from Lalitpur, Syuchatar, New Baneshwor, Gothatar,
+            Mahankal, Baglung, Butwal, Pokhra and nearby areas. You may choose
+            to visit our experts to discuss your international education
+            prospects in person. AIEC provides free study abroad counselling
+            services to all students.
+          </p>
+          <p>
+          Meet your personal AIEC counsellor at Kathmandu, Nepal & be better placed. Visit us or book your FREE appointment.
+          </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
             Help me Study abroad
           </button>
