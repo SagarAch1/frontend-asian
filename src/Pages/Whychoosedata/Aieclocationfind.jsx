@@ -32,7 +32,6 @@ const OfficeLocator = () => {
     }
   };
 
- 
   const handleInputClick = () => {
     setFilteredOptions(offices);
     setDropdownVisible(true);
@@ -59,21 +58,25 @@ const OfficeLocator = () => {
         address: "Nivagalli, Chiplodhunga-09, Pokhara, Nepal",
         phone: "+9779801048957",
         openingHours: "09:00 AM - 05:30 PM",
-        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.455097395174!2d83.98375838117846!3d28.22386341372524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595667cb215ff%3A0xfe8b4d02bb7d6674!2sNiva%20Galli!5e0!3m2!1sen!2snp!4v1726979628386!5m2!1sen!2snp", // Update with actual URL
+        mapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.455097395174!2d83.98375838117846!3d28.22386341372524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595667cb215ff%3A0xfe8b4d02bb7d6674!2sNiva%20Galli!5e0!3m2!1sen!2snp!4v1726979628386!5m2!1sen!2snp", // Update with actual URL
       };
     } else if (office === "Chitwan") {
       officeData = {
         address: "Tejman Plaza AL5, Pulchok-03, Narayangurh,Chitwan Nepal",
         phone: "+97756527974",
         openingHours: "09:00 AM - 05:30 PM",
-        mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6353702698307!2d84.41815947530027!3d27.697662476188142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb224c79fd03%3A0x737835fc6d7dca86!2sPulchowk!5e0!3m2!1sen!2snp!4v1726980530330!5m2!1sen!2snp", // Update with actual URL
+        mapUrl:
+          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6353702698307!2d84.41815947530027!3d27.697662476188142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb224c79fd03%3A0x737835fc6d7dca86!2sPulchowk!5e0!3m2!1sen!2snp!4v1726980530330!5m2!1sen!2snp", // Update with actual URL
       };
     } else if (office === "Sydney") {
       officeData = {
-        address: "123 Sydney St, Sydney, Australia",
-        phone: "+61 2 1234 5678",
-        openingHours: "09:00 AM - 05:30 PM",
-        mapUrl: "https://www.google.com/maps/embed?...", // Update with actual URL
+        address:
+          "Sydney Office 70 Raymond Avenue, Campbelltown, Sydney-Australia",
+        phone: "0425883105 /+61 425883105",
+
+        mapUrl:
+          "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3305.1133377415745!2d150.82584917556113!3d-34.066608773151515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-34.0665821!2d150.82847769999998!5e0!3m2!1sen!2snp!4v1726980802528!5m2!1sen!2s", // Update with actual URL
       };
     }
 
@@ -93,6 +96,7 @@ const OfficeLocator = () => {
           <p>
             <a href={`tel:${officeData.phone}`}>{officeData.phone}</a>
           </p>
+
           <p>
             <strong>Opening hours</strong>
           </p>
@@ -177,8 +181,6 @@ const OfficeLocator = () => {
             </div>
           )}
         </div>
-
-       
 
         {locationStatus && <p>{locationStatus}</p>}
       </div>
