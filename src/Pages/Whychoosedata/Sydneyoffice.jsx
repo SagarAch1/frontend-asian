@@ -5,11 +5,11 @@ import Youshouldknow from "../Homepage/YouShouldknow";
 const SydneyOffice = () => {
   const officeData = {
     address:
-      "Putalisadak, Kathmandu, ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal",
-    phone: "977-01-5908881/5908882",
+      "Sydney Office 70 Raymond Avenue, Campbelltown, Sydney-Australia",
+    phone: "0425883105 /+61 425883105",
     openingHours: "09:00 AM - 05:30 PM",
     mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3709997553105!2d85.32043637556089!3d27.705829276183444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195c580e7a5d%3A0xf35b7e6ce96c9d55!2sAsian%20International%20Education%20and%20Migration%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1726823511164!5m2!1sen!2snp",
+    "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3305.1133377415745!2d150.82584917556113!3d-34.066608773151515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-34.0665821!2d150.82847769999998!5e0!3m2!1sen!2snp!4v1726980802528!5m2!1sen!2s", 
   };
 
   const navigateToFormPage = () => {
