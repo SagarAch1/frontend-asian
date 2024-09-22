@@ -48,7 +48,7 @@ const OfficeLocator = () => {
     if (office === "Kathmandu") {
       officeData = {
         address:
-          "Putalisadak, opposite to Triveni, putalisadak-Kamaladi Road, Kathmandu, Nepal - 44600",
+          "Putalisadak, Kathmandu, ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal",
         phone: "014217400",
         openingHours: "09:00 AM - 05:30 PM",
         mapUrl:
