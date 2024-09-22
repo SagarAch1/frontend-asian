@@ -49,6 +49,7 @@ import Canadauni from "./Universitiy/Canadauni";
 import Newzelanduni from "./Universitiy/Newzelanduni";
 import Ukuni from "./Universitiy/Ukuni";
 import Usauni from "./Universitiy/Usauni";
+import KathmanduOffice from "./Pages/Whychoosedata/Kahmanduoffice";
 // import Irelanuni from "./Universitiy/Irelanuni";
 
 import Contact from "./Pages/Contact/Contact";
@@ -187,6 +188,7 @@ function App() {
         <Route path="/canadauniversities" element={<Canadauni />} />
         <Route path="/newzelanduniversities" element={<Newzelanduni />} />
         <Route path="/officelocator" element={<OfficeLocator />} />
+        <Route path="/kathmanduoffice" element={<KathmanduOffice />} />
 
         <Route
           path="/scholarshipsinaustralia"
