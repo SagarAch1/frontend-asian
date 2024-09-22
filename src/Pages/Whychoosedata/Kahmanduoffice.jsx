@@ -17,14 +17,21 @@ const KathmanduOffice = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h1 style={styles.headerText}>IDP Kathmandu Office, Nepal</h1>
-        <div style={styles.buttonsContainer}>
-          <button style={styles.enquireButton} onClick={navigateToFormPage}>
-            Enquire now
-          </button>
-          <button style={styles.shareButton}>
-            <i className="fas fa-share-alt"></i>
-          </button>
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/is.png`}
+          alt="Office Header"
+          style={styles.headerImage}
+        />
+        <div style={styles.headerContent}>
+          <h1 style={styles.headerText}>IDP Kathmandu Office, Nepal</h1>
+          <div style={styles.buttonsContainer}>
+            <button style={styles.enquireButton} onClick={navigateToFormPage}>
+              Enquire now
+            </button>
+            <button style={styles.shareButton}>
+              <i className="fas fa-share-alt"></i>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -106,26 +113,31 @@ const styles = {
     fontFamily: "Arial, sans-serif",
   },
   header: {
-    backgroundImage: 'url("https://your-image-url.com/header-image.jpg")',
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+    width: "100%",
+    position: "relative",
+  },
+  headerImage: {
     width: "100%",
     height: "300px",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
+    objectFit: "cover",
+  },
+  headerContent: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
     color: "white",
+    textAlign: "center",
   },
   headerText: {
     fontSize: "32px",
     fontWeight: "bold",
-    textAlign: "center",
   },
   buttonsContainer: {
     marginTop: "20px",
     display: "flex",
     gap: "10px",
+    justifyContent: "flex-end",
   },
   enquireButton: {
     padding: "10px 20px",
