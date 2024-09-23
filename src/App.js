@@ -94,6 +94,7 @@ import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
 import Allsubjects from "./Pages/Subjects/Allsubjects";
 import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
+import ScholarshipList from "./Pages/Scholarships/Predegreevocationalscholarship";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -198,6 +199,8 @@ function App() {
         <Route path="/chitwanoffice" element={<ChitwanOffice />} />
         <Route path="/pokharaoffice" element={<PokharaOffice />} />
         <Route path="/sydneyoffice" element={<SydneyOffice />} />
+
+        <Route path="/predegreevocational" element={<ScholarshipList />} />
 
         <Route
           path="/scholarshipsinaustralia"
