@@ -109,7 +109,7 @@ const Youshouldknow = () => {
           {/* Visa Application Assistance Section */}
           <div
             style={infoBoxStyle}
-            onClick={() => navigate("/visaapplication")} // Navigate to /visaapplication
+            onClick={() => navigate("/visaapplicationassistance")} 
           >
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/you3.webp`}

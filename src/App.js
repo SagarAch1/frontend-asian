@@ -91,6 +91,7 @@ import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequire
 import Newzelandvisarequirement from "./Pages/Whychoosedata/Newzelandvisarequirement";
 import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
+import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -232,6 +233,7 @@ function App() {
         <Route path="/australiavisarequirement" element={<Australiavisarequirement />} />
         <Route path="/newzelandvisarequirement" element={<Newzelandvisarequirement />} />
         <Route path="/canadavisarequirement" element={<Canadavisarequirementt />} />
+        <Route path="/visaapplicationassistance" element={<Visaapplicationassistance />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
