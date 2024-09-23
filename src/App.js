@@ -92,6 +92,7 @@ import Newzelandvisarequirement from "./Pages/Whychoosedata/Newzelandvisarequire
 import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
+import Allsubjects from "./Pages/Subjects/Allsubjects";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -234,6 +235,8 @@ function App() {
         <Route path="/newzelandvisarequirement" element={<Newzelandvisarequirement />} />
         <Route path="/canadavisarequirement" element={<Canadavisarequirementt />} />
         <Route path="/visaapplicationassistance" element={<Visaapplicationassistance />} />
+
+        <Route path="/browsesubject" element={<Allsubjects />} />
 
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
