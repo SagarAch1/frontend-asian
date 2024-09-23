@@ -72,7 +72,7 @@ const Allsubjects = () => {
             <div key={i}>
               <h2 style={styles.letterHeader}>{letter}</h2>
               {filteredSubjects[letter].map((subject, index) => (
-                <div key={index}>
+                <div key={index} style={styles.subjectBox}>
                   <div
                     style={styles.subjectHeader}
                     onClick={() => handleToggle(`${letter}-${index}`)}
@@ -168,19 +168,29 @@ const styles = {
     fontWeight: 'bold',
     marginTop: '20px',
   },
+  subjectBox: {
+    border: '1px solid #ddd',
+    borderRadius: '8px',
+    marginBottom: '20px',
+    padding: '15px',
+    backgroundColor: '#fafafa',
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+  },
   subjectHeader: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: '10px 0',
     cursor: 'pointer',
     borderBottom: '1px solid #ddd',
+    paddingBottom: '10px',
   },
   subjectTitle: {
     fontSize: '18px',
+    fontWeight: '500',
   },
   toggleIcon: {
     fontSize: '24px',
+    cursor: 'pointer',
   },
   subjectDetails: {
     paddingLeft: '20px',
@@ -190,6 +200,7 @@ const styles = {
     cursor: 'pointer',
     color: 'blue',
     marginBottom: '10px',
+    fontSize: '16px',
   },
   subjectItemHover: {
     textDecoration: 'underline',
