@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const destinations = [
-    { name: 'Australia', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg` , description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'Canada', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Canada is renowned for its high-quality education and welcoming multicultural society. With a reputation for safety, innovation, and stunning scenery, it’s a top choice for those seeking a well-rounded study abroad experience.' },
-    { name: 'Ireland', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'New Zealand', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'United Kingdom', imgSrc: `${process.env.PUBLIC_URL}/assets/images/uk.webp`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'United States', imgSrc: `${process.env.PUBLIC_URL}/assets/images/usa.jpeg`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-  ];
-  
+  { name: 'Australia', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinaustralia' },
+  { name: 'Canada', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Canada is renowned for its high-quality education...', route: '/studyincanada' },
+  { name: 'Ireland', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinireland' },
+  { name: 'New Zealand', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinnewzealand' },
+  { name: 'United Kingdom', imgSrc: `${process.env.PUBLIC_URL}/assets/images/uk.webp`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyintheuk' },
+  { name: 'United States', imgSrc: `${process.env.PUBLIC_URL}/assets/images/usa.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyintheusa' },
+];
 
 const InfoSection = () => {
   const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate(); // Using useNavigate for navigation
 
   const containerStyle = {
     padding: '20px',
@@ -95,6 +96,10 @@ const InfoSection = () => {
     marginTop: '10px',
   };
 
+  const handleDiscoverClick = (route) => {
+    navigate(route); // Navigate to the route specified for the destination
+  };
+
   return (
     <div style={containerStyle}>
       <h2 style={sectionTitleStyle}>Six dream destinations</h2>
@@ -119,7 +124,14 @@ const InfoSection = () => {
               <div style={{ ...overlayStyle, ...overlayVisibleStyle }}>
                 <h3>{destination.name}</h3>
                 {destination.description && <p>{destination.description}</p>}
-                {destination.description && <button style={buttonStyle}>Discover</button>}
+                {destination.description && (
+                  <button
+                    style={buttonStyle}
+                    onClick={() => handleDiscoverClick(destination.route)} // Navigate to specific route
+                  >
+                    Discover
+                  </button>
+                )}
               </div>
             )}
           </div>
