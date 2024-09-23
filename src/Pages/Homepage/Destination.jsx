@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const destinations = [
-  { name: 'Australia', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinaustralia' },
-  { name: 'Canada', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Canada is renowned for its high-quality education...', route: '/studyincanada' },
-  { name: 'Ireland', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinireland' },
-  { name: 'New Zealand', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinnewzeland' },
-  { name: 'United Kingdom', imgSrc: `${process.env.PUBLIC_URL}/assets/images/uk.webp`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinuk' },
-  { name: 'United States', imgSrc: `${process.env.PUBLIC_URL}/assets/images/usa.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinusa' },
+  { name: 'Australia', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`, description: 'Uncover a world of opportunities in the land down under! With over 1,100 institutions, and 22,000 courses to choose from, Australia offers a world-class education and an outstanding quality of life.', route: '/studyinaustralia' },
+  { name: 'Canada', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Canada is renowned for its high-quality education and welcoming multicultural society. With a reputation for safety, innovation, and stunning scenery, it’s a top choice for those seeking a well-rounded study abroad experience.', route: '/studyincanada' },
+  { name: 'Ireland', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`, description: 'Canada is renowned for its high-quality education and welcoming multicultural society. With a reputation for safety, innovation, and stunning scenery, it’s a top choice for those seeking a well-rounded study abroad experience.', route: '/studyinireland' },
+  { name: 'New Zealand', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Renowned as one of the world’s safest nations, New Zealand is a popular choice among international students. It offers a world-class education system, abundant research opportunities, breathtaking natural beauty and unparalleled outdoor experiences.', route: '/studyinnewzeland' },
+  { name: 'United Kingdom', imgSrc: `${process.env.PUBLIC_URL}/assets/images/uk.webp`, description: 'The United Kingdom is home to some of the world’s finest and oldest universities and colleges. Experience a tradition of academic excellence and research innovation, with access to top-quality education that shapes future leaders across diverse fields.', route: '/studyinuk' },
+  { name: 'United States', imgSrc: `${process.env.PUBLIC_URL}/assets/images/usa.jpeg`, description: 'Boasting 33 of the world’s top 100 universities, as well as being home to the financial, technology, aerospace, healthcare and entertainment hubs of the world, the United States is a land of educational and career opportunities for international students.', route: '/studyinusa' },
 ];
 
 const InfoSection = () => {
