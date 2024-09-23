@@ -98,7 +98,7 @@ const ScholarshipPage = () => {
         e.target.style.borderColor = '#ccc'; // Reset outline color when not hovering
     };
 
-    // Navigation on button click
+    // Navigation on button click (country-specific routes)
     const handleButtonClick = (path) => {
         navigate(`/${path}`);
     };
@@ -139,17 +139,48 @@ const ScholarshipPage = () => {
                     <div style={{ marginTop: '40px' }}>
                         <h2 style={styles.sectionHeading}>By study destinations</h2>
                         <div style={styles.buttonGrid}>
-                            {['Australia', 'United Kingdom', 'United States', 'New Zealand', 'Canada', 'Ireland'].map((destination) => (
-                                <button
-                                    key={destination}
-                                    style={styles.button}
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave}
-                                    onClick={() => handleButtonClick(destination.replace(/\s+/g, '').toLowerCase())}
-                                >
-                                    {destination}
-                                </button>
-                            ))}
+                            {/* Updated country-specific paths */}
+                            <button
+                                style={styles.button}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                onClick={() => handleButtonClick('scholarshipsinaustralia')}
+                            >
+                                Australia
+                            </button>
+                            <button
+                                style={styles.button}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                onClick={() => handleButtonClick('scholarshipsinuk')}
+                            >
+                                United Kingdom
+                            </button>
+                            <button
+                                style={styles.button}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                onClick={() => handleButtonClick('scholarshipsinusa')}
+                            >
+                                United State
+                            </button>
+                            <button
+                                style={styles.button}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                onClick={() => handleButtonClick('scholarshipsincanada')}
+                            >
+                                Canada
+                            </button>
+                            <button
+                                style={styles.button}
+                                onMouseEnter={handleMouseEnter}
+                                onMouseLeave={handleMouseLeave}
+                                onClick={() => handleButtonClick('scholarshipsinnewzeland')}
+                            >
+                                New Zeland
+                            </button>
+                           
                         </div>
                     </div>
 
