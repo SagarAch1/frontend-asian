@@ -5,9 +5,9 @@ const destinations = [
   { name: 'Australia', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinaustralia' },
   { name: 'Canada', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Canada is renowned for its high-quality education...', route: '/studyincanada' },
   { name: 'Ireland', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinireland' },
-  { name: 'New Zealand', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinnewzealand' },
-  { name: 'United Kingdom', imgSrc: `${process.env.PUBLIC_URL}/assets/images/uk.webp`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyintheuk' },
-  { name: 'United States', imgSrc: `${process.env.PUBLIC_URL}/assets/images/usa.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyintheusa' },
+  { name: 'New Zealand', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinnewzeland' },
+  { name: 'United Kingdom', imgSrc: `${process.env.PUBLIC_URL}/assets/images/uk.webp`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinuk' },
+  { name: 'United States', imgSrc: `${process.env.PUBLIC_URL}/assets/images/usa.jpeg`, description: 'Contrary to popular belief, Lorem Ipsum is not simply random text...', route: '/studyinusa' },
 ];
 
 const InfoSection = () => {
