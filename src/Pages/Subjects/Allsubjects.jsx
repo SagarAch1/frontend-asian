@@ -1,21 +1,85 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import FormPage from '../Homepage/FormPage';
+import Footer from '../Homepage/Footer';
 
 const subjectsData = {
-  'A': [
-    { name: 'Agriculture Sciences', subjects: ['Agriculture, Environmental & Rel Studies', 'Fisheries studies'] },
-    { name: 'All Accounting', subjects: [] },
-    { name: 'All Pharmacy', subjects: [] },
-    { name: 'Architecture and Planning', subjects: [] },
-    { name: 'Art and Design', subjects: [] },
-    { name: 'Arts, Humanities And Social Science', subjects: [] },
+ 'A': [
+    { name: 'Agriculture Sciences', subjects: ['Pest And Weed Control', 'Plant Sciences', 'Horticulture and Viticulture', ' Crop Sciences', ' Wool Science'] },
+    { name: 'All Accounting', subjects: ['Taxation'] },
+    { name: 'All Pharmacy', subjects: ['Pharmaceutical Science'] },
+    { name: 'Architecture and Planning', subjects: ['Architecture'] },
+    { name: 'Art and Design', subjects: ['Fashion Merchandise', 'Visual arts', 'Product Design', 'Industrial Design', 'Graphic and Design Studies', 'Fashion Design', 'Art History', 'Video Game development', 'Digital production'] },
+    { name: 'Arts, Humanities And Social Science', subjects: ['Human Welfare Studies And Services'] },
+    { name: 'Agriculture, Environmental & Rel Studies', subjects: ['Fisheries studies'] },
   ],
-  'B': [
-    { name: 'Biological and Biomedical Sciences', subjects: [] },
-    { name: 'Biological and life Sciences', subjects: [] },
-    { name: 'Building and Architecture', subjects: [] },
-    { name: 'Business', subjects: [] },
+  'B': [ 
+    { name: 'Biological and Biomedical Sciences', subjects: ['Pharmacology', 'Botany'] },
+    { name: 'Biological and life Sciences', subjects: ['Forensics', 'Biotechnology', 'Biochemistry'] },
+    { name: 'Building and Architecture', subjects: ['Technology', 'Planning', 'Landscape design and architecture', 'Town planning'] },
+    { name: 'Business', subjects: ['Psychology', 'Business Administration', 'Farm and Agribusiness'] },
+    { name: 'Business, Commerce And Management', subjects: ['Tourism'] },
   ],
+'C': [
+    { name: 'Communication and Journalism', subjects: ['Web Development'] },
+    { name: 'Computer and Information Sciences', subjects: ['Systems Engineering', 'Statistics'] },
+    { name: 'Computing and IT', subjects: ['Information technology'] },
+  ],
+  'E': [
+    { name: 'Economics', subjects: ['Qualitative Economics'] },
+    { name: 'Education', subjects: ['Agriculture Education Services'] },
+    { name: 'Engineering', subjects: ['Food Science'] },
+    { name: 'English Language and Literature', subjects: ['Creative Writing'] },
+    { name: 'English Language Studies', subjects: ['Business English'] },
+    { name: 'Environmental Science', subjects: ['Conservation'] },
+
+  ],
+
+'F': [
+    { name: 'Family and Consumer Sciences', subjects: ['Dietetics'] },
+    { name: 'Food, Hospitality And Personal Services', subjects: ['Food And Hospitality'] },
+  ],
+  'G': [
+    { name: 'General Primary And Secondary Education', subjects: ['Social Skills Programmes'] },
+  ],
+  'H':[
+        { name: 'Health and Medicine', subjects: ['Rehabilitation Therapy', 'Human Movement', 'Geriatric Studies', 'Sports Science', 'Surgery', 'Animal and Veterinary Studies', 'Disability Studies', 'First Aid', 'Speech Pathology', 'Allied Health Science', 'Occupational Health & Safety', 'Podiatry', 'Psychiatry and Neurosurgery', 'Disability Studies', 'Occupational Therapy', 'Speech Therapy'] },
+    { name: 'Health Professions & Clinical Sciences', subjects: ['Acupuncture'] },
+    { name: 'Health, Medicine And Veterinary Studies', subjects: ['Public Health', 'Radiography'] },
+    { name: 'History', subjects: ['General History'] },
+    { name: 'Hospitality and Tourism', subjects: ['Hotel and hospitality', 'Bakery', 'Beauty'] },
+  ],
+
+
+  'L': [
+    { name: 'Language and Culture', subjects: ['Philosophy and Religious Studies'] },
+    { name: 'Law and Legal Studies', subjects: ['Police Studies'] },
+  ],
+
+'M': [
+    { name: 'Marketing, Media and Communication', subjects: ['Written Communication', 'Mass Communication'] },
+  ],
+  'N': [
+    { name: 'Natural And Physical Sciences', subjects: ['Earth Sciences'] },
+    { name: 'Natural Resources and Conservation', subjects: ['Environmental Engineering'] },
+  ],
+
+'P': [
+    { name: 'Personal and Culinary Services', subjects: ['Cosmetology'] },
+    { name: 'Philosophy & Religion', subjects: ['Religious Studies'] },
+    { name: 'Physical Sciences', subjects: ['Astrophysics', 'Physical Sciences'] },
+    { name: 'Physics', subjects: ['Theoretical Physics'] },
+    { name: 'Political and Social Sciences', subjects: ['Social Justice', 'Social Science', 'Political Science and Policy Studies', 'Political Science'] },
+  ],
+  'S': [
+    { name: 'Social Sciences', subjects: ['Sociology'] },
+  ],
+
+'T': [
+    { name: 'Teaching and Education', subjects: ['Higher Education', 'Counselling', 'Curriculum and Education Studies', 'Early Childhood Education', 'Primary Education', 'Secondary Education'] },
+
+    ],
+  
 };
 
 const Allsubjects = () => {
@@ -110,6 +174,10 @@ const Allsubjects = () => {
           </button>
         </div>
       </div>
+      <FormPage />
+      <div style={styles.footer}>
+          <Footer style={styles.footer} />
+        </div>
     </div>
   );
 };
@@ -123,6 +191,14 @@ const styles = {
     fontFamily: "'Aptos', sans-serif",
   },
   topImage: {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/uk.webp)`,
+    width: '100%',
+    height: '300px',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    marginTop: '80px',
+  },
+  footer: {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/uk.webp)`,
     width: '100%',
     height: '300px',
