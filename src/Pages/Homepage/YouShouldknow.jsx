@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Youshouldknow = () => {
+  const navigate = useNavigate(); // Correct usage of useNavigate hook
+
   const mainImageStyle = {
     width: "100%",
     maxWidth: "400px",
@@ -35,6 +38,7 @@ const Youshouldknow = () => {
     flex: 2,
     display: "flex",
     alignItems: "center",
+    cursor: "pointer", // Add cursor pointer for clickable elements
   };
 
   const infoRightStyle = {
@@ -47,10 +51,7 @@ const Youshouldknow = () => {
   const infoBoxStyle = {
     display: "flex",
     marginBottom: "20px",
-  };
-
-  const infoTextStyle = {
-    margin: 0,
+    cursor: "pointer", // Add cursor pointer for clickable elements
   };
 
   const infoTextHeaderStyle = {
@@ -68,7 +69,11 @@ const Youshouldknow = () => {
     <div style={infoSectionStyle}>
       <h2 style={sectionTitleStyle}>You should also know</h2>
       <div style={infoContainerStyle}>
-        <div style={infoLeftStyle}>
+        {/* Global Events Section */}
+        <div
+          style={infoLeftStyle}
+          onClick={() => navigate("/events")} // Navigate to /events
+        >
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/you1.png`}
             alt="Global events"
@@ -83,7 +88,11 @@ const Youshouldknow = () => {
           </div>
         </div>
         <div style={infoRightStyle}>
-          <div style={infoBoxStyle}>
+          {/* FastLane Section */}
+          <div
+            style={infoBoxStyle}
+            onClick={() => navigate("/liveevent")} // Navigate to /liveevent
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/you2.jpeg`}
               alt="Live life in the FastLane"
@@ -97,7 +106,11 @@ const Youshouldknow = () => {
               </p>
             </div>
           </div>
-          <div style={infoBoxStyle}>
+          {/* Visa Application Assistance Section */}
+          <div
+            style={infoBoxStyle}
+            onClick={() => navigate("/visaapplication")} // Navigate to /visaapplication
+          >
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/you3.webp`}
               alt="Visa application assistance"
@@ -107,7 +120,7 @@ const Youshouldknow = () => {
               <h4 style={infoTextHeaderStyle}>Visa application assistance</h4>
               <p style={infoTextParagraphStyle}>
                 Applying for visas can be challenging, but our team ensures you
-                access to accurate information for a smoother...
+                access to accurate information for a smoother process.
               </p>
             </div>
           </div>
