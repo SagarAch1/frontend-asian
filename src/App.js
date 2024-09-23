@@ -93,6 +93,7 @@ import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement"
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
 import Allsubjects from "./Pages/Subjects/Allsubjects";
+import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -202,6 +203,8 @@ function App() {
           path="/scholarshipsinaustralia"
           element={<Australiascholarships />}
         />
+
+        <Route path="/scholarshippage" element={<ScholarshipPage />} />
 
         <Route path="/scholarshipsinusa" element={<Usascholarships />} />
 

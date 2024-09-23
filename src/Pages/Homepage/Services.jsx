@@ -5,7 +5,7 @@ const services = [
     icon: '🔍', 
     title: 'Course Subjects', 
     description: 'Explore different course subjects that align to your study objectives.', 
-    link: '#',
+    link: '/browsesubject',
   },
   { 
     icon: '🎓', 
@@ -23,7 +23,7 @@ const services = [
     icon: '💼', 
     title: 'Support with applications', 
     description: 'Expert counselors can help you apply to multiple courses.', 
-    link: '#',
+    link: '/howdoiapply',
   },
   { 
     icon: '📱', 
