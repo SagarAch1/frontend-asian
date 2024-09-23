@@ -11,7 +11,7 @@ const services = [
     icon: '🎓', 
     title: 'Scholarships', 
     description: 'Search more than 5,000 scholarships offered by over 370 institutions across the world.', 
-    link: '#',
+    link: '/scholarshippage',
   },
   { 
     icon: '⚡', 

@@ -75,9 +75,6 @@ const ScholarshipPage = () => {
             transition: 'all 0.3s ease',
             boxShadow: '0 3px 6px rgba(0, 0, 0, 0.1)',
         },
-        buttonHover: {
-            borderColor: '#007bff',  // Change to blue on hover
-        },
         viewAll: {
             marginTop: '30px',
         },
@@ -121,15 +118,23 @@ const ScholarshipPage = () => {
                     <div>
                         <h2 style={styles.sectionHeading}>By study levels</h2>
                         <div style={styles.buttonGrid}>
-                            {['School', 'Foundation', 'Postgraduate', 'VET', 'Pre-degree & Vocational', 'Undergraduate', 'Doctorate'].map((level) => (
+                            {[
+                                { label: 'School', path: 'schoolscholar' },
+                                { label: 'Foundation', path: 'foundationscholar' },
+                                { label: 'Postgraduate', path: 'postgraduatescholar' },
+                                { label: 'VET', path: 'vetscholar' },
+                                { label: 'Pre-degree & Vocational', path: 'predegreevocational' },
+                                { label: 'Undergraduate', path: 'undergraduatescholar' },
+                                { label: 'Doctorate', path: 'doctoratescholar' },
+                            ].map(({ label, path }) => (
                                 <button
-                                    key={level}
+                                    key={label}
                                     style={styles.button}
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}
-                                    onClick={() => handleButtonClick(level.replace(/\s+/g, '').toLowerCase())}
+                                    onClick={() => handleButtonClick(path)}
                                 >
-                                    {level}
+                                    {label}
                                 </button>
                             ))}
                         </div>
@@ -139,7 +144,6 @@ const ScholarshipPage = () => {
                     <div style={{ marginTop: '40px' }}>
                         <h2 style={styles.sectionHeading}>By study destinations</h2>
                         <div style={styles.buttonGrid}>
-                            {/* Updated country-specific paths */}
                             <button
                                 style={styles.button}
                                 onMouseEnter={handleMouseEnter}
@@ -162,7 +166,7 @@ const ScholarshipPage = () => {
                                 onMouseLeave={handleMouseLeave}
                                 onClick={() => handleButtonClick('scholarshipsinusa')}
                             >
-                                United State
+                                United States
                             </button>
                             <button
                                 style={styles.button}
@@ -178,9 +182,8 @@ const ScholarshipPage = () => {
                                 onMouseLeave={handleMouseLeave}
                                 onClick={() => handleButtonClick('scholarshipsinnewzeland')}
                             >
-                                New Zeland
+                                New Zealand
                             </button>
-                           
                         </div>
                     </div>
 

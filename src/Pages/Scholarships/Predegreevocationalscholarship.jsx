@@ -73,7 +73,7 @@ const ScholarshipList = () => {
   return (
     <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
       {/* Title and count */}
-      <h2 style={{ textAlign: 'center', margin: '10px 0' }}>
+      <h2 style={{ textAlign: 'center', margin: '60px 0' }}>
         Found {scholarships.length} Pre-Degree & Vocational Scholarships
       </h2>
 
@@ -125,6 +125,7 @@ const ScholarshipList = () => {
       <WhyChooseAiec />
       
     </div>
+    
   );
 };
 

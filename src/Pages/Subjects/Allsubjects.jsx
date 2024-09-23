@@ -199,7 +199,7 @@ const styles = {
     marginTop: '80px',
   },
   footer: {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/uk.webp)`,
+    
     width: '100%',
     height: '300px',
     backgroundSize: 'cover',
