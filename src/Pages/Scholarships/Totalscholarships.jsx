@@ -125,7 +125,7 @@ const ScholarshipPage = () => {
                                 { label: 'VET', path: 'vetscholar' },
                                 { label: 'Pre-degree & Vocational', path: 'predegreevocational' },
                                 { label: 'Undergraduate', path: 'undergraduatescholar' },
-                                { label: 'Doctorate', path: 'doctoratescholar' },
+                                { label: 'Doctorate', path: 'doctoratescholrship' },
                             ].map(({ label, path }) => (
                                 <button
                                     key={label}

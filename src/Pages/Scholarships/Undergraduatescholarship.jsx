@@ -10,144 +10,144 @@ const scholarshipData = [
     title: "International Student Scholarship",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 2,
     title: "The Chancellor’s Scholarship",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 3,
     title: "Eisenhower Scholarship",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 4,
     title: "President’s Scholarship",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 5,
     title: "National Science Foundation (NSF) Scholarships in STEM Program",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 6,
     title: "Barry Goldwater Scholarship and Excellence in Education Program",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 7,
     title: "Foreign Fulbright Student Scholarship Program",
     institute: "Contact AIEC",
     location: "United States of America",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 8,
     title: "International Excellence Scholarship",
     institute: "Contact AIEC",
     location: "United Kingdom",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 9,
     title: "Music Scholarships",
     institute: "Contact AIEC",
     location: "United Kingdom",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 10,
     title: "International Sports Scholarships",
     institute: "Contact AIEC",
     location: "United Kingdom",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 11,
     title: "Chevening Scholarships",
     institute: "Contact AIEC",
     location: "United Kingdom",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 12,
     title: "International Postgraduate Research Excellence Scholarship",
     institute: "Contact AIEC",
     location: "United Kingdom",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 13,
     title: "Global Talent Scholarships",
     institute: "Contact AIEC",
     location: "United Kingdom",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 14,
     title: "Destination Australia International Scholarships ",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 15,
     title: "Australia Awards Scholarship",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 16,
     title: "Vice Chancellor’s International Diversification Scholarship ",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 17,
     title: "Research Training Program Stipend Scholarship",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 18,
     title: "National Science Foundation (NSF) Scholarships in STEM Program",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 19,
     title: "Barry Goldwater Scholarship and Excellence in Education Program",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
   {
     id: 20,
     title: "Foreign Fulbright Student Scholarship Program",
     institute: "Contact AIEC",
     location: "Australia",
-    type: "Doctorate",
+    type: "Undergraduate",
   },
 ];
 
-const Doctoratescholarship = () => {
+const Undergraduatescholar = () => {
   const [scholarships, setScholarships] = useState([]);
   const navigate = useNavigate(); // React Router's hook for navigation
 
@@ -171,7 +171,7 @@ const Doctoratescholarship = () => {
     <div style={{ padding: "20px", maxWidth: "1200px", margin: "0 auto" }}>
       {/* Title and count */}
       <h2 style={{ textAlign: "center", margin: "60px 0" }}>
-        Found {scholarships.length} Doctorate Scholarships
+        Found {scholarships.length} Undergraduate Scholarships
       </h2>
 
       {/* Scholarship grid with improved styling */}
@@ -245,4 +245,4 @@ const Doctoratescholarship = () => {
   );
 };
 
-export default Doctoratescholarship;
+export default Undergraduatescholar;
