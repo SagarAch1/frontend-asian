@@ -147,7 +147,7 @@ const scholarshipData = [
   },
 ];
 
-const ScholarshipList = () => {
+const Doctoratescholarship = () => {
   const [scholarships, setScholarships] = useState([]);
   const navigate = useNavigate(); // React Router's hook for navigation
 
@@ -245,4 +245,4 @@ const ScholarshipList = () => {
   );
 };
 
-export default ScholarshipList;
+export default Doctoratescholarship;
