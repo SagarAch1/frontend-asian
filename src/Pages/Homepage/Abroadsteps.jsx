@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const StudyAbroadSteps = () => {
+  const navigate = useNavigate();
+
   const containerStyle = {
     display: "flex",
     flexDirection: "column",
@@ -45,12 +48,12 @@ const StudyAbroadSteps = () => {
   };
 
   const steps = [
-    "Why study abroad?",
-    "Where and what to study?",
-    "How do I apply?",
-    "After receiving an offer",
-    "Prepare to depart",
-    "Arrive and thrive",
+    { label: "Why study abroad?", path: "/abc" },
+    { label: "Where and what to study?", path: "/def" },
+    { label: "How do I apply?", path: "/ghi" },
+    { label: "After receiving an offer", path: "/jkl" },
+    { label: "Prepare to depart", path: "/mno" },
+    { label: "Arrive and thrive", path: "/pqr" },
   ];
 
   return (
@@ -75,8 +78,9 @@ const StudyAbroadSteps = () => {
               onMouseLeave={(e) =>
                 (e.currentTarget.style.backgroundColor = "#f9f9f9")
               }
+              onClick={() => navigate(step.path)} // Navigation on click
             >
-              <span>{step}</span>
+              <span>{step.label}</span>
               <span>&#x279C;</span> {/* This represents the arrow */}
             </div>
           ))}
