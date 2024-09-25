@@ -99,6 +99,7 @@ import Doctoratescholarship from "./Pages/Scholarships/Doctorate";
 import Undergraduatescholar from "./Pages/Scholarships/Undergraduatescholarship";
 import Postgraduatescholar from "./Pages/Scholarships/Postgraduatescholarship";
 import Vetscholar from "./Pages/Scholarships/Vetscholarship";
+import FoundationScholar from "./Pages/Scholarships/Foundationscholaraship";
 
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
@@ -207,6 +208,7 @@ function App() {
         <Route path='/undergraduatescholar' element={<Undergraduatescholar />} />
         <Route path='/postgraduatescholar' element={<Postgraduatescholar />} />
         <Route path='/vetscholar'element={<Vetscholar/>} />
+        <Route path="/foundationscholar" element={<FoundationScholar />} />
 
         <Route path="/predegreevocational" element={<ScholarshipList />} />
 
