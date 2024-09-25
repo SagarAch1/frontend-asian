@@ -48,12 +48,12 @@ const StudyAbroadSteps = () => {
   };
 
   const steps = [
-    { label: "Why study abroad?", path: "/abc" },
-    { label: "Where and what to study?", path: "/def" },
-    { label: "How do I apply?", path: "/ghi" },
-    { label: "After receiving an offer", path: "/jkl" },
-    { label: "Prepare to depart", path: "/mno" },
-    { label: "Arrive and thrive", path: "/pqr" },
+    { label: "Why study abroad?", path: "/whystudyabroad" },
+    { label: "Where and what to study?", path: "/whereandwhattostudy" },
+    { label: "How do I apply?", path: "/howdoiapply" },
+    { label: "After receiving an offer", path: "/afterreceivingoffer" },
+    { label: "Prepare to depart", path: "/preparetodepart" },
+    { label: "Arrive and thrive", path: "/arriveandthrive" },
   ];
 
   return (
