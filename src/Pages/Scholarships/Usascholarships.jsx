@@ -1,5 +1,5 @@
 import {
-    faBook,
+   
     faCalendarAlt,
     faDollarSign,
     faEarth,
@@ -18,143 +18,9 @@ import {
   
   
     {
-      title: "Life Sciences",
-      university: " Towson University",
-      location: " Towson, Maryland ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Medical and Healthcare ",
-      university: " Towson University",
-      location: " Towson, Maryland ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Arts",
-      university: " Towson University",
-      location: " Towson, Maryland ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Law",
-      university: " Towson University",
-      location: " Towson, Maryland ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Science and Technology",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Business and Management",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Engineering",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Life Sciences",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Medical and Healthcare",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Arts",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
-    {
-      title: "Law",
-      university: " Troy University - Troy",
-      location: " Troy, Alabama ",
-      worldRanking: "50",
-      degree: "Certification",
-      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
-      entryScore: "IELTS 6.0",
-      fees: "Contact AIEC",
-      link: "/bachelorofdesign",
-    },
-  
    
-  
-    {
-      title: " Arts ",
-      university: " Youngstown State University ",
-      location: " Youngstown, Ohio ",
+      university: " International Student Scholarship",
+      location: " United States",
       worldRanking: "50",
       degree: "Certification",
       intakeDate: "Jan (Spring), May (Summer), August (Fall)",
@@ -164,9 +30,9 @@ import {
     },
   
     {
-      title: " Law",
-      university: " Youngstown State University",
-      location: " Youngstown, Ohio ",
+     
+      university: " The Chancellor’s Scholarship",
+      location: " United States",
       worldRanking: "50",
       degree: "Certification",
       intakeDate: "Jan (Spring), May (Summer), August (Fall)",
@@ -174,6 +40,68 @@ import {
       fees: "Contact AIEC",
       link: "/bachelorofdesign",
     },
+  
+    {
+      
+      university: " Eisenhower Scholarship",
+      location: " United States",
+      worldRanking: "50",
+      degree: "Certification",
+      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+      entryScore: "IELTS 6.0",
+      fees: "Contact AIEC",
+      link: "/bachelorofdesign",
+    },
+  
+    {
+      
+      university: " President’s Scholarship",
+      location: " United States",
+      worldRanking: "50",
+      degree: "Certification",
+      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+      entryScore: "IELTS 6.0",
+      fees: "Contact AIEC",
+      link: "/bachelorofdesign",
+    },
+  
+    {
+      
+      university: " National Science Foundation (NSF) Scholarships in STEM Program",
+      location: " Troy, Alabama ",
+      worldRanking: "50",
+      degree: "Certification",
+      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+      entryScore: "IELTS 6.0",
+      fees: "Contact AIEC",
+      link: "/bachelorofdesign",
+    },
+  
+    {
+     
+      university: " Barry Goldwater Scholarship and Excellence in Education Program",
+      location: " Troy, Alabama ",
+      worldRanking: "50",
+      degree: "Certification",
+      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+      entryScore: "IELTS 6.0",
+      fees: "Contact AIEC",
+      link: "/bachelorofdesign",
+    },
+  
+    {
+      
+      university: " Foreign Fulbright Student Scholarship Program",
+      location: " Troy, Alabama ",
+      worldRanking: "50",
+      degree: "Certification",
+      intakeDate: "Jan (Spring), May (Summer), August (Fall)",
+      entryScore: "IELTS 6.0",
+      fees: "Contact AIEC",
+      link: "/bachelorofdesign",
+    },
+  
+    
   
     // Other programs
   ];
@@ -217,10 +145,7 @@ import {
                   <ProgramCard key={index}>
                     <ProgramTitle>{program.university}</ProgramTitle>
                     <ProgramDetails>
-                      <p>
-                        <FontAwesomeIcon icon={faBook} />{" "}
-                        <strong>{program.title}</strong>
-                      </p>
+                     
                       {/* <p>
                         <FontAwesomeIcon icon={faFileAlt} /> {program.Certified}
                       </p> */}
