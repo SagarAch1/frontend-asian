@@ -365,6 +365,7 @@ const FormPage = () => {
                 />
                 I would like to receive further communication from AIEC via Phone, Email, and SMS
               </label>
+              
             </div>
 
             <div style={{ marginTop: "20px" }}>
@@ -384,7 +385,9 @@ const FormPage = () => {
               Submit
             </button>
           </div>
+          
         </form>
+        
 
         <div style={{ flex: 1 }}>
         <img
@@ -395,7 +398,9 @@ const FormPage = () => {
         </div>
       </div>
       <ToastContainer />
+     
     </div>
+    
   );
 };
 

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 import { createContactApi } from "../../apis/Api";
+import WhyChooseAiec from "../Homepage/WhyChooseAiec";
+import Footer from "../Homepage/Footer";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -170,6 +172,8 @@ const Contact = () => {
           </p>
         </div>
       </div>
+      <WhyChooseAiec />
+      <Footer />
     </div>
   );
 };
