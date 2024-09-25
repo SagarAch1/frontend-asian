@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import FormPage from '../Homepage/FormPage';
+import Footer from '../Homepage/Footer'
 
 const ScholarshipPage = () => {
     const navigate = useNavigate();
@@ -193,6 +195,8 @@ const ScholarshipPage = () => {
                     </div>
                 </div>
             </section>
+            <FormPage />
+            <Footer />
         </div>
     );
 };
