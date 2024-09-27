@@ -57,6 +57,7 @@ import SydneyOffice from "./Pages/Whychoosedata/Sydneyoffice";
 
 import Contact from "./Pages/Contact/Contact";
 import Slider from "./Pages/Coupon/Slider";
+import Event from "./Pages/Events/CreateEvent";
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 
 import Homepage from "./Pages/Homepage/Homepage";
@@ -109,6 +110,7 @@ import Navbar from "./components/Navbar";
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
 
+
 function App() {
   return (
     <Router>
@@ -136,6 +138,7 @@ function App() {
         <Route path="/userprofile" element={<Profile />} />
 
         <Route path="/slider" element={<Slider />} />
+        <Route path="/event" element={<Event />} />
 
         <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
 
@@ -211,6 +214,7 @@ function App() {
         <Route path="/foundationscholar" element={<FoundationScholar />} />
 
         <Route path="/predegreevocational" element={<ScholarshipList />} />
+      
 
         <Route
           path="/scholarshipsinaustralia"

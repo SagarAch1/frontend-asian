@@ -1,23 +1,27 @@
 import React, { useEffect, useState } from "react";
-import { getOrdersApi, getProductsApi, getSlidersApi } from "../../../apis/Api"; 
+import { getOrdersApi, getProductsApi, getSlidersApi, getEventApi, } from "../../../apis/Api"; 
 
 import Myorder from "../../Homepage/Myorder"; // Ensure Myorder is imported
 import Message from "../../Message/Message";
 
 import Slider from "../../Coupon/Sliderfetch";
+import Event from "../../Events/EventList";
 
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
   const [products, setProducts] = useState([]);
+  
  
   const [orders, setOrders] = useState([]);
   const [slider, setSlider] = useState([]);
+  const [event, setEvent] = useState([]);
 
   useEffect(() => {
     fetchProducts();
     
     fetchOrders();
     fetchSliders();
+    fetchEvent();
   }, []);
 
   const fetchProducts = () => {
@@ -29,12 +33,22 @@ const AdminDashboard = () => {
         console.log(error);
       });
   };
+ 
 
  
   const fetchSliders = () => {
     getSlidersApi()
       .then((res) => {
         setSlider(res.data.coupons);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const fetchEvent = () => {
+    getEventApi()
+      .then((res) => {
+        setEvent(res.data.coupons);
       })
       .catch((error) => {
         console.log(error);
@@ -66,6 +80,7 @@ const AdminDashboard = () => {
          
           </div>
         );
+        
      
       case "message":
         return (
@@ -81,6 +96,13 @@ const AdminDashboard = () => {
             <Slider /> {/* Render the Message component */}
           </div>
         );
+        case "event":
+          return (
+            <div>
+              <h2>Event</h2>
+              <Event /> {/* Render the Message component */}
+            </div>
+          );
       case "order":
         return (
           <div>
@@ -169,17 +191,9 @@ const AdminDashboard = () => {
                   Product
                 </button>
               </li>
-              <li style={styles.sidebarItem}>
-                <button
-                  className={`btn btn-${
-                    page === "events" ? "primary" : "outline-primary"
-                  } btn-block`}
-                  onClick={() => setPage("events")}
-                  style={styles.button}
-                >
-                  Events
-                </button>
-              </li>
+             
+          
+              
               <li style={styles.sidebarItem}>
                 <button
                   className={`btn btn-${
@@ -189,6 +203,17 @@ const AdminDashboard = () => {
                   style={styles.button}
                 >
                   Slider
+                </button>
+              </li>
+              <li style={styles.sidebarItem}>
+                <button
+                  className={`btn btn-${
+                    page === "event" ? "primary" : "outline-primary"
+                  } btn-block`}
+                  onClick={() => setPage("event")}
+                  style={styles.button}
+                >
+                  Event
                 </button>
               </li>
               <li style={styles.sidebarItem}>

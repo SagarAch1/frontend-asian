@@ -19,145 +19,119 @@ const getConfig = () => ({
 // Test API
 export const testAPI = () => Api.get("/test");
 
-// Register API
+// User APIs
 export const registerUserApi = (data) => Api.post("/api/user/create", data);
-
-// Login API
 export const loginUserApi = (data) => Api.post("/api/user/login", data);
 
-// Create Product API
+// Product APIs
 export const createProductApi = (data) =>
   Api.post("/api/product/create", data, getConfig());
 
-// Get All Products API
 export const getProductsApi = () => Api.get("/api/product/get_all_products");
 
-// Get Single Product API
 export const getSingleProductApi = (id) =>
   Api.get(`/api/product/get_single_product/${id}`);
 
-// Delete Product API
 export const deleteProduct = (id) =>
   Api.delete(`/api/product/delete-product/${id}`, getConfig());
 
-// Update Product API
 export const updateProduct = (id, data) =>
   Api.put(`/api/product/update_product/${id}`, data, getConfig());
 
-// Get All Categories API
+// Category APIs
 export const getAllCategory = () => Api.get("/api/category/get_all_categories");
 
 // Paginated Products API
 export const getPaginatedProductsApi = (page, limit) =>
   Api.get(`/api/product/pagination?page=${page}&limit=${limit}`);
 
-// Total Products API
 export const getTotalProductsApi = () => Api.get("/api/product/count");
 export const getTotalSlidersApi = () => Api.get("/api/slider/count");
 
-// Create Coupon API
-export const createCouponApi = (data) =>
-  Api.post("/api/coupon/create", data, getConfig());
-
-// Get All Coupons API
-export const getCouponsApi = () => Api.get("/api/coupon/get_all_discounts");
-
-// Get Single Coupon API
-export const getSingleCouponApi = (id) =>
-  Api.get(`/api/coupon/get_single_discount/${id}`);
-
-// Discount APIs
-export const createDiscountApi = (data) =>
-  Api.post("/api/discount/create", data, getConfig());
-export const getAllDiscounts = () => Api.get("/api/discount/get_all_discounts");
-export const getSingleDiscountApi = (id) =>
-  Api.get(`/api/discount/get_single_discount/${id}`);
-export const getDiscountByNameApi = (couponName) =>
-  Api.get(`/api/discount/single-discount/${couponName}`); // Added API function
-
-// Forgot Password API
+// Password APIs
 export const forgotPasswordApi = (data) =>
   Api.post("/api/user/forgot_password", data);
 
-// Verify OTP API
 export const verifyOtp = (data) => Api.post("/api/user/verify_otp", data);
 
-// Create Contact API
+// Contact APIs
 export const createContactApi = (data) =>
   Api.post("/api/contact/create", data, getConfig());
 
-// Get All Contacts API
 export const getContactsApi = () => Api.get("/api/contact/get_all_contacts");
 
-// Create Book API
+// Book APIs
 export const createBookApi = (data) =>
   Api.post("/api/book/create", data, getConfig());
 
-// Get All Book API
 export const getBookApi = () => Api.get("/api/book/get_all_book");
 
 // Cart APIs
 export const addToCartApi = (data) =>
   Api.post("/api/cart/add", data, getConfig());
-export const getCartItems = () =>
-  Api.get("/api/cart/get_cart_items", getConfig());
+
 export const getCartItemsApi = (userId) =>
   Api.get(`/api/cart/get_cart_items?userId=${userId}`, getConfig());
+
 export const updateCartItemQuantity = (id, quantity) =>
   Api.put(`/api/cart/update_quantity/${id}`, { quantity }, getConfig());
+
 export const removeCartItem = (id) =>
   Api.delete(`/api/cart/remove_item/${id}`, getConfig());
+
+export const clearCartApi = () => Api.delete("/api/cart/clear");
 
 // Order APIs
 export const createOrderApi = (data) =>
   Api.post("/api/order/create", data, getConfig());
+
 export const getOrdersApi = () =>
   Api.get("/api/order/get_all_orders", getConfig());
-export const CreateSingleOrderApi = (id) =>
-  Api.post("/api/order/create_single_order", { id }, getConfig());
+
 export const getSingleOrderApi = (id) =>
   Api.get(`/api/order/get_single_order/${id}`, getConfig());
+
 export const updateOrderStatus = (updateData) =>
   Api.put("/api/order/update_status", updateData, getConfig());
+
+// Event APIs
+export const createEventApi = (data) =>
+  Api.post("/api/event/create", data, getConfig());
+export const getEventApi = () => Api.get("/api/event/get_all_event");
 
 // Wishlist APIs
 export const getWishlistApi = () =>
   Api.get("/api/wishlist/get_wishlist", getConfig());
+
 export const addToWishlistApi = (data) =>
   Api.post("/api/wishlist/add", data, getConfig());
+
 export const removeFromWishlistApi = (id) =>
   Api.delete(`/api/wishlist/remove/${id}`, getConfig());
 
 // Review APIs
 export const getReviewsApi = (productId) =>
   Api.get(`/api/reviews/${productId}`);
+
 export const submitReviewApi = (data) =>
   Api.post("/api/reviews", data, getConfig());
 
-// Apply Coupon Code API
-export const applyCouponCodeApi = (data) =>
-  Api.post("/api/coupon/apply", data, getConfig());
-
-// Create Slider API
+// Slider APIs
 export const createSlidersApi = (data) =>
   Api.post("/api/slider/create", data, getConfig());
 
-// Create Form API
+export const getSlidersApi = () => Api.get("/api/slider/get_all_sliders");
+
+// Form APIs
 export const createFormApi = (data) =>
   Api.post("/api/form/create", data, getConfig());
 
-// Get All Form API
 export const getFormApi = () => Api.get("/api/form/get_all_form");
 
-// Get All Sliders API
-export const getSlidersApi = () => Api.get("/api/slider/get_all_sliders");
-
+// Dashboard APIs
 export const getDashboardStats = () =>
   Api.get("/api/dashboard/get_dashboard_stats", getConfig());
 
-export const clearCartApi = () => {
-  return axios.delete("/api/cart/clear");
-};
-
+// Khalti Payment Verification API
 export const khaltiApiSend = (data, khaltiConfig) =>
   Api.post("https://khalti.com/api/v2/payment/verify/", data, khaltiConfig);
