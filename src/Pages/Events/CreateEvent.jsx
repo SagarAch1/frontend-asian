@@ -8,34 +8,34 @@ const Event = () => {
 
   // Define state for form fields
   const [eventName, setEventName] = useState("");
-  const [eventType, setEventType] = useState("");
+  const [eventType, setEventType] = useState(""); // Keep this for the select dropdown
   const [eventDate, setEventDate] = useState("");
-  const [eventTime, setEventTime] = useState(""); // For event time
-  const [eventLocation, setEventLocation] = useState(""); // For event location
-  const [eventImage, setEventImage] = useState(null); // For file upload
+  const [eventTime, setEventTime] = useState(""); 
+  const [eventLocation, setEventLocation] = useState(""); 
+  const [eventImage, setEventImage] = useState(null); 
   const [previewImage, setPreviewImage] = useState(null);
 
   // Handle file input
   const handleImage = (event) => {
     const file = event.target.files[0];
     setEventImage(file);
-    setPreviewImage(URL.createObjectURL(file)); // Preview the selected image
+    setPreviewImage(URL.createObjectURL(file)); 
   };
 
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(); // Use FormData for file uploads
+    const formData = new FormData(); 
     formData.append("eventName", eventName);
-    formData.append("eventType", eventType);
+    formData.append("eventType", eventType); 
     formData.append("eventDate", eventDate);
-    formData.append("eventTime", eventTime); // Add event time
-    formData.append("eventLocation", eventLocation); // Add event location
+    formData.append("eventTime", eventTime); 
+    formData.append("eventLocation", eventLocation); 
     formData.append("eventImage", eventImage);
 
     try {
-      const response = await createEventApi(formData); // Sending FormData to API
+      const response = await createEventApi(formData); 
       if (response.status === 201) {
         toast.success("Event created successfully!");
         navigate("/admin/dashboard");
@@ -128,15 +128,17 @@ const Event = () => {
             <label htmlFor="eventType" style={labelStyle}>
               Event Type
             </label>
-            <input
-              type="text"
+            <select
               id="eventType"
-              placeholder="Enter event type"
               value={eventType}
               onChange={(e) => setEventType(e.target.value)}
               style={inputStyle}
               required
-            />
+            >
+              <option value="">Select event type</option>
+              <option value="Physical">Physical</option>
+              <option value="Virtual">Virtual</option>
+            </select>
           </div>
 
           <div>
@@ -190,7 +192,7 @@ const Event = () => {
               type="file"
               id="eventImage"
               accept="image/*"
-              onChange={handleImage} // Capture the file and preview it
+              onChange={handleImage}
               style={fileInputStyle}
               required
             />
@@ -199,7 +201,11 @@ const Event = () => {
           {previewImage && (
             <div>
               <h5 style={{ marginBottom: "10px" }}>Image Preview:</h5>
-              <img src={previewImage} alt="Event Preview" style={{ width: "100%", borderRadius: "8px" }} />
+              <img
+                src={previewImage}
+                alt="Event Preview"
+                style={{ width: "100%", borderRadius: "8px" }}
+              />
             </div>
           )}
 
