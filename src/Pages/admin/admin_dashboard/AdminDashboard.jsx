@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getCouponsApi, getOrdersApi, getProductsApi, getSlidersApi } from "../../../apis/Api"; 
+import { getOrdersApi, getProductsApi, getSlidersApi } from "../../../apis/Api"; 
 
 import Myorder from "../../Homepage/Myorder"; // Ensure Myorder is imported
 import Message from "../../Message/Message";
@@ -9,7 +9,7 @@ import Slider from "../../Coupon/Sliderfetch";
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
   const [products, setProducts] = useState([]);
-  const [coupons, setCoupons] = useState([]);
+ 
   const [orders, setOrders] = useState([]);
   const [slider, setSlider] = useState([]);
 
@@ -172,12 +172,12 @@ const AdminDashboard = () => {
               <li style={styles.sidebarItem}>
                 <button
                   className={`btn btn-${
-                    page === "coupon" ? "primary" : "outline-primary"
+                    page === "events" ? "primary" : "outline-primary"
                   } btn-block`}
-                  onClick={() => setPage("coupon")}
+                  onClick={() => setPage("events")}
                   style={styles.button}
                 >
-                  Coupon
+                  Events
                 </button>
               </li>
               <li style={styles.sidebarItem}>
