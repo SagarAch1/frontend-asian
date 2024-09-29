@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { getOrdersApi, getProductsApi, getSlidersApi, getEventApi, } from "../../../apis/Api"; 
+import {
+  getOrdersApi,
+  getProductsApi,
+  getSlidersApi,
+  getEventApi,
+} from "../../../apis/Api";
 
 import Myorder from "../../Homepage/Myorder"; // Ensure Myorder is imported
 import Message from "../../Message/Message";
@@ -10,15 +15,12 @@ import Event from "../../Events/EventList";
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
   const [products, setProducts] = useState([]);
-  
- 
   const [orders, setOrders] = useState([]);
   const [slider, setSlider] = useState([]);
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
     fetchProducts();
-    
     fetchOrders();
     fetchSliders();
     fetchEvent();
@@ -33,9 +35,7 @@ const AdminDashboard = () => {
         console.log(error);
       });
   };
- 
 
- 
   const fetchSliders = () => {
     getSlidersApi()
       .then((res) => {
@@ -45,6 +45,7 @@ const AdminDashboard = () => {
         console.log(error);
       });
   };
+
   const fetchEvent = () => {
     getEventApi()
       .then((res) => {
@@ -77,11 +78,9 @@ const AdminDashboard = () => {
         return (
           <div>
             <h2>Add Product</h2>
-         
           </div>
         );
-        
-     
+
       case "message":
         return (
           <div>
@@ -89,26 +88,25 @@ const AdminDashboard = () => {
             <Message /> {/* Render the Message component */}
           </div>
         );
-        case "slider":
+      case "slider":
         return (
           <div>
             <h2>Slider</h2>
-            <Slider /> {/* Render the Message component */}
+            <Slider />
           </div>
         );
-        case "event":
-          return (
-            <div>
-              <h2>Event</h2>
-              <Event /> {/* Render the Message component */}
-            </div>
-          );
+      case "event":
+        return (
+          <div>
+            <h2>Event</h2>
+            <Event />
+          </div>
+        );
       case "order":
         return (
           <div>
             <h2>Orders</h2>
-            <Myorder orders={orders} />{" "}
-            {/* Render the Myorder component with orders */}
+            <Myorder orders={orders} />
           </div>
         );
       case "offer":
@@ -123,46 +121,62 @@ const AdminDashboard = () => {
 
   const styles = {
     container: {
-      padding: "50px",
-      backgroundImage: "linear-gradient(to right, #4facfe, #00f2fe)",
-      color: "#fff",
+      padding: "40px",
+      backgroundColor: "#f7f8fc", // Soft background color for contrast
     },
     sidebar: {
-      backgroundColor: "#333",
-      padding: "20px",
-      borderRadius: "10px",
+      backgroundColor: "#1f2937", // Dark gray for sidebar
+      padding: "25px",
+      borderRadius: "12px",
+      boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)", // Soft shadow for a floating effect
+      height: "100%",
     },
     sidebarHeader: {
       color: "#fff",
-      marginBottom: "20px",
+      marginBottom: "25px",
+      fontSize: "1.5rem",
+      fontWeight: "bold",
     },
     sidebarList: {
       listStyle: "none",
       padding: "0",
     },
     sidebarItem: {
-      marginBottom: "10px",
+      marginBottom: "15px",
     },
     button: {
       width: "100%",
-      marginBottom: "10px",
-      borderRadius: "5px",
+      padding: "12px 0",
+      borderRadius: "6px",
+      backgroundColor: "#1f2937",
+      color: "#fff",
+      border: "none",
+      transition: "background 0.3s ease",
+      cursor: "pointer",
+    },
+    buttonActive: {
+      backgroundColor: "#00aaff", // Active button color
     },
     mainContent: {
       backgroundColor: "#fff",
       color: "#333",
-      padding: "20px",
-      borderRadius: "10px",
-      boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
+      padding: "30px",
+      borderRadius: "12px",
+      boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Smooth shadow for depth
+      marginLeft: "15px", // For better separation from the sidebar
     },
     buttonGroup: {
       display: "flex",
       justifyContent: "space-between",
     },
+    activeButton: {
+      backgroundColor: "#00aaff", // Bright color for the active page
+      color: "#fff",
+    },
   };
 
   return (
-    <div className="container mt-5" style={styles.container}>
+    <div className="container-fluid" style={styles.container}>
       <div className="row">
         {/* Sidebar */}
         <div className="col-md-3">
@@ -171,69 +185,91 @@ const AdminDashboard = () => {
             <ul style={styles.sidebarList}>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn btn-${
-                    page === "dashboard" ? "primary" : "outline-primary"
-                  } btn-block`}
+                  className={`btn ${
+                    page === "dashboard" ? styles.buttonActive : ""
+                  }`}
                   onClick={() => setPage("dashboard")}
-                  style={styles.button}
+                  style={
+                    page === "dashboard"
+                      ? { ...styles.button, ...styles.activeButton }
+                      : styles.button
+                  }
                 >
                   Dashboard
                 </button>
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn btn-${
-                    page === "product" ? "primary" : "outline-primary"
-                  } btn-block`}
+                  className={`btn ${
+                    page === "product" ? styles.buttonActive : ""
+                  }`}
                   onClick={() => setPage("product")}
-                  style={styles.button}
+                  style={
+                    page === "product"
+                      ? { ...styles.button, ...styles.activeButton }
+                      : styles.button
+                  }
                 >
                   Product
                 </button>
               </li>
-             
-          
-              
+
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn btn-${
-                    page === "slider" ? "primary" : "outline-primary"
-                  } btn-block`}
+                  className={`btn ${
+                    page === "slider" ? styles.buttonActive : ""
+                  }`}
                   onClick={() => setPage("slider")}
-                  style={styles.button}
+                  style={
+                    page === "slider"
+                      ? { ...styles.button, ...styles.activeButton }
+                      : styles.button
+                  }
                 >
                   Slider
                 </button>
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn btn-${
-                    page === "event" ? "primary" : "outline-primary"
-                  } btn-block`}
+                  className={`btn ${
+                    page === "event" ? styles.buttonActive : ""
+                  }`}
                   onClick={() => setPage("event")}
-                  style={styles.button}
+                  style={
+                    page === "event"
+                      ? { ...styles.button, ...styles.activeButton }
+                      : styles.button
+                  }
                 >
                   Event
                 </button>
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn btn-${
-                    page === "message" ? "primary" : "outline-primary"
-                  } btn-block`}
+                  className={`btn ${
+                    page === "message" ? styles.buttonActive : ""
+                  }`}
                   onClick={() => setPage("message")}
-                  style={styles.button}
+                  style={
+                    page === "message"
+                      ? { ...styles.button, ...styles.activeButton }
+                      : styles.button
+                  }
                 >
                   Message
                 </button>
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn btn-${
-                    page === "order" ? "primary" : "outline-primary"
-                  } btn-block`}
+                  className={`btn ${
+                    page === "order" ? styles.buttonActive : ""
+                  }`}
                   onClick={() => setPage("order")}
-                  style={styles.button}
+                  style={
+                    page === "order"
+                      ? { ...styles.button, ...styles.activeButton }
+                      : styles.button
+                  }
                 >
                   Order
                 </button>
