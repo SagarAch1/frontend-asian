@@ -6,9 +6,8 @@ import {
   getEventApi,
 } from "../../../apis/Api";
 
-import Myorder from "../../Homepage/Myorder"; // Ensure Myorder is imported
+import Myorder from "../../Homepage/Myorder";
 import Message from "../../Message/Message";
-
 import Slider from "../../Coupon/Sliderfetch";
 import Event from "../../Events/EventList";
 
@@ -80,12 +79,11 @@ const AdminDashboard = () => {
             <h2>Add Product</h2>
           </div>
         );
-
       case "message":
         return (
           <div>
             <h2>Message</h2>
-            <Message /> {/* Render the Message component */}
+            <Message />
           </div>
         );
       case "slider":
@@ -109,7 +107,6 @@ const AdminDashboard = () => {
             <Myorder orders={orders} />
           </div>
         );
-      case "offer":
       default:
         return (
           <div>
@@ -121,21 +118,22 @@ const AdminDashboard = () => {
 
   const styles = {
     container: {
-      padding: "40px",
-      backgroundColor: "#f7f8fc", // Soft background color for contrast
+      paddingTop: "100px", // Bring content down below the navbar
+      backgroundImage: "linear-gradient(to right, #243B55, #141E30)",
+      minHeight: "100vh",
+      color: "#fff",
     },
     sidebar: {
-      backgroundColor: "#1f2937", // Dark gray for sidebar
-      padding: "25px",
+      backgroundColor: "green",
+      padding: "30px",
       borderRadius: "12px",
-      boxShadow: "0px 4px 12px rgba(0, 0, 0, 0.1)", // Soft shadow for a floating effect
-      height: "100%",
+      boxShadow: "0 8px 16px rgba(0, 0, 0, 0.3)",
     },
     sidebarHeader: {
       color: "#fff",
       marginBottom: "25px",
-      fontSize: "1.5rem",
       fontWeight: "bold",
+      fontSize: "24px",
     },
     sidebarList: {
       listStyle: "none",
@@ -146,37 +144,30 @@ const AdminDashboard = () => {
     },
     button: {
       width: "100%",
-      padding: "12px 0",
-      borderRadius: "6px",
-      backgroundColor: "#1f2937",
+      padding: "10px",
+      borderRadius: "8px",
+      background: "#00B4DB", // Add a more modern button color
       color: "#fff",
-      border: "none",
-      transition: "background 0.3s ease",
-      cursor: "pointer",
+      fontSize: "16px",
+      fontWeight: "bold",
+      boxShadow: "0 4px 12px rgba(0, 180, 219, 0.4)",
+      transition: "background 0.3s ease, box-shadow 0.3s ease",
     },
     buttonActive: {
-      backgroundColor: "#00aaff", // Active button color
+      background: "#0083B0",
+      boxShadow: "0 8px 16px rgba(0, 131, 176, 0.5)",
     },
     mainContent: {
-      backgroundColor: "#fff",
+      backgroundColor: "#F9FAFB",
       color: "#333",
       padding: "30px",
       borderRadius: "12px",
-      boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.1)", // Smooth shadow for depth
-      marginLeft: "15px", // For better separation from the sidebar
-    },
-    buttonGroup: {
-      display: "flex",
-      justifyContent: "space-between",
-    },
-    activeButton: {
-      backgroundColor: "#00aaff", // Bright color for the active page
-      color: "#fff",
+      boxShadow: "0 8px 16px rgba(0, 0, 0, 0.1)",
     },
   };
 
   return (
-    <div className="container-fluid" style={styles.container}>
+    <div className="container mt-5" style={styles.container}>
       <div className="row">
         {/* Sidebar */}
         <div className="col-md-3">
@@ -186,12 +177,12 @@ const AdminDashboard = () => {
               <li style={styles.sidebarItem}>
                 <button
                   className={`btn ${
-                    page === "dashboard" ? styles.buttonActive : ""
+                    page === "dashboard" ? "active" : ""
                   }`}
                   onClick={() => setPage("dashboard")}
                   style={
                     page === "dashboard"
-                      ? { ...styles.button, ...styles.activeButton }
+                      ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
@@ -200,29 +191,24 @@ const AdminDashboard = () => {
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${
-                    page === "product" ? styles.buttonActive : ""
-                  }`}
+                  className={`btn ${page === "product" ? "active" : ""}`}
                   onClick={() => setPage("product")}
                   style={
                     page === "product"
-                      ? { ...styles.button, ...styles.activeButton }
+                      ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
                   Product
                 </button>
               </li>
-
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${
-                    page === "slider" ? styles.buttonActive : ""
-                  }`}
+                  className={`btn ${page === "slider" ? "active" : ""}`}
                   onClick={() => setPage("slider")}
                   style={
                     page === "slider"
-                      ? { ...styles.button, ...styles.activeButton }
+                      ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
@@ -231,13 +217,11 @@ const AdminDashboard = () => {
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${
-                    page === "event" ? styles.buttonActive : ""
-                  }`}
+                  className={`btn ${page === "event" ? "active" : ""}`}
                   onClick={() => setPage("event")}
                   style={
                     page === "event"
-                      ? { ...styles.button, ...styles.activeButton }
+                      ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
@@ -246,13 +230,11 @@ const AdminDashboard = () => {
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${
-                    page === "message" ? styles.buttonActive : ""
-                  }`}
+                  className={`btn ${page === "message" ? "active" : ""}`}
                   onClick={() => setPage("message")}
                   style={
                     page === "message"
-                      ? { ...styles.button, ...styles.activeButton }
+                      ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
@@ -261,13 +243,11 @@ const AdminDashboard = () => {
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${
-                    page === "order" ? styles.buttonActive : ""
-                  }`}
+                  className={`btn ${page === "order" ? "active" : ""}`}
                   onClick={() => setPage("order")}
                   style={
                     page === "order"
-                      ? { ...styles.button, ...styles.activeButton }
+                      ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
