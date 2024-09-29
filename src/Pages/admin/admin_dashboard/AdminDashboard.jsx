@@ -119,7 +119,7 @@ const AdminDashboard = () => {
   const styles = {
     container: {
       paddingTop: "100px", // Bring content down below the navbar
-      backgroundImage: "linear-gradient(to right, #243B55, #141E30)",
+      backgroundColor: "#007BFF", // Solid blue background
       minHeight: "100vh",
       color: "#fff",
     },

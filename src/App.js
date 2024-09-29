@@ -102,6 +102,8 @@ import Postgraduatescholar from "./Pages/Scholarships/Postgraduatescholarship";
 import Vetscholar from "./Pages/Scholarships/Vetscholarship";
 import FoundationScholar from "./Pages/Scholarships/Foundationscholaraship";
 
+import UpcomingEvents from "./Pages/Events/Event";
+
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
@@ -109,6 +111,7 @@ import Navbar from "./components/Navbar";
 
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
+
 
 
 function App() {
@@ -214,6 +217,9 @@ function App() {
         <Route path="/foundationscholar" element={<FoundationScholar />} />
 
         <Route path="/predegreevocational" element={<ScholarshipList />} />
+        <Route path="/upcommingevents" element={<UpcomingEvents />} />
+
+
       
 
         <Route
