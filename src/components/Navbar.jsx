@@ -54,7 +54,7 @@ const Navbar = () => {
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
-              to="/events"
+              to="/upcommingevents"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >
               Events

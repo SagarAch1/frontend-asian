@@ -16,7 +16,7 @@ const UpcomingEvents = () => {
   }, []);
 
   return (
-    <div className="container mt-4 p-3 bg-light text-center">
+    <div className="container mt-5 pt-5 p-3 bg-light text-center">
       <h2>Upcoming Events</h2>
       <div className="row row-cols-1 row-cols-md-4 g-4">
         {events.length > 0 ? ( // Check if events are available
@@ -25,7 +25,7 @@ const UpcomingEvents = () => {
               <div className="card">
                 <div className="card-body">
                   <img
-                     src={`http://localhost:5000/event/${event.eventImage}`} // Adjust as per your backend setup
+                     src={`http://localhost:5000/event/${event.eventImage}`} 
                     className="card-img-top fixed-size-image"
                     alt="Event"
                   />
