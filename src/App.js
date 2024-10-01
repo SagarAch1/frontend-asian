@@ -109,6 +109,7 @@ import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
+import OurTeam from "./Pages/Ourteam/OurTeam";
 
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
@@ -127,6 +128,7 @@ function App() {
         <Route path="/Register" element={<Register />} />
 
         <Route path="/bookclass" element={<Bookclass />} />
+        <Route path="/ourteam" element={<OurTeam />} />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />

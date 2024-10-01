@@ -1,25 +1,18 @@
 import React, { useEffect, useState } from "react";
-import {
- 
-  getSlidersApi,
-  getEventApi,
-} from "../../../apis/Api";
-
+import { getEventApi, getSlidersApi } from "../../../apis/Api";
 
 import Book from "../../BookClass/Book";
-import Message from "../../Message/Message";
 import Slider from "../../Coupon/Sliderfetch";
 import Event from "../../Events/EventList";
+import Message from "../../Message/Message";
 
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
 
- 
   const [slider, setSlider] = useState([]);
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    
     fetchSliders();
     fetchEvent();
   }, []);
@@ -43,8 +36,6 @@ const AdminDashboard = () => {
         console.log(error);
       });
   };
-
-  
 
   const renderPageContent = () => {
     switch (page) {
@@ -82,7 +73,7 @@ const AdminDashboard = () => {
             <Event />
           </div>
         );
-     
+
       default:
         return (
           <div>
@@ -92,18 +83,17 @@ const AdminDashboard = () => {
     }
   };
 
-  
-    const styles = {
-      container: {
-        paddingTop: "100px", // Adjust this value to match or slightly exceed the height of your navbar
-        backgroundColor: "#007BFF", // Solid blue background
-        minHeight: "100vh",
-        color: "#fff",
-        marginTop: 80, // Remove any margin around the container
-        padding: 0, // Remove any padding inside the container
-        width: "100%", // Ensure the container takes the full width of the page
-        boxSizing: "border-box", // Make sure padding is included in the width calculation
-      },
+  const styles = {
+    container: {
+      paddingTop: "100px", // Adjust this value to match or slightly exceed the height of your navbar
+      backgroundColor: "#007BFF", // Solid blue background
+      minHeight: "100vh",
+      color: "#fff",
+      marginTop: 80, // Remove any margin around the container
+      padding: 0, // Remove any padding inside the container
+      width: "100%", // Ensure the container takes the full width of the page
+      boxSizing: "border-box", // Make sure padding is included in the width calculation
+    },
     sidebar: {
       backgroundColor: "green",
       padding: "30px",
@@ -148,7 +138,9 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="container-fluid" style={styles.container}> {/* Changed from 'container' to 'container-fluid' */}
+    <div className="container-fluid" style={styles.container}>
+      {" "}
+      {/* Changed from 'container' to 'container-fluid' */}
       <div className="row">
         {/* Sidebar */}
         <div className="col-md-3">
@@ -233,7 +225,6 @@ const AdminDashboard = () => {
                   Message
                 </button>
               </li>
-             
             </ul>
           </div>
         </div>
