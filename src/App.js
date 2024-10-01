@@ -67,6 +67,7 @@ import UserOrder from "./Pages/Homepage/Userorder";
 import Login from "./Pages/Login/Login";
 import Profile from "./Pages/Login/Profile";
 import Message from "./Pages/Message/Message";
+import Book from "./Pages/BookClass/Book";
 
 import Bookclass from "./Pages/BookClass/Bookclass";
 
@@ -132,6 +133,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/support" element={<Support />} />
         <Route path="/messages" element={<Message />} />
+        <Route path="/book" element={<Book />} />
 
         <Route path="/search" element={<Search />} />
         <Route path="/thankyou" element={<Thankyou />} />

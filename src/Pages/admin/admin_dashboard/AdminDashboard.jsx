@@ -2,38 +2,33 @@ import React, { useEffect, useState } from "react";
 import {
   getOrdersApi,
  
+ 
   getSlidersApi,
   getEventApi,
 } from "../../../apis/Api";
 
 import Myorder from "../../Homepage/Myorder";
+import Book from "../../BookClass/Book";
+
 import Message from "../../Message/Message";
 import Slider from "../../Coupon/Sliderfetch";
 import Event from "../../Events/EventList";
 
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
-  // const [Books, setBooks] = useState([]);
+
   const [orders, setOrders] = useState([]);
   const [slider, setSlider] = useState([]);
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    // fetchBooks();
+    
     fetchOrders();
     fetchSliders();
     fetchEvent();
   }, []);
 
-  // const fetchBooks = () => {
-  //   getBooksApi()
-  //     .then((res) => {
-  //       setBooks(res.data.Books);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // };
+ 
 
   const fetchSliders = () => {
     getSlidersApi()
@@ -73,12 +68,14 @@ const AdminDashboard = () => {
             <h2>Welcome Home Admin</h2>
           </div>
         );
-      case "Book":
-        return (
-          <div>
-            <h2> Booking Of Class</h2>
-          </div>
-        );
+        case "book":
+          return (
+            <div>
+              <h2>Book</h2>
+              <Book />
+            </div>
+          );
+    
       case "message":
         return (
           <div>
@@ -191,10 +188,10 @@ const AdminDashboard = () => {
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${page === "Book" ? "active" : ""}`}
-                  onClick={() => setPage("Book")}
+                  className={`btn ${page === "book" ? "active" : ""}`}
+                  onClick={() => setPage("book")}
                   style={
-                    page === "Book"
+                    page === "book"
                       ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
