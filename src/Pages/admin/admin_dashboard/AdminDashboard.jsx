@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import {
-  getOrdersApi,
+ 
   getSlidersApi,
   getEventApi,
 } from "../../../apis/Api";
 
-import Myorder from "../../Homepage/Myorder";
+
 import Book from "../../BookClass/Book";
 import Message from "../../Message/Message";
 import Slider from "../../Coupon/Sliderfetch";
@@ -14,12 +14,12 @@ import Event from "../../Events/EventList";
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
 
-  const [orders, setOrders] = useState([]);
+ 
   const [slider, setSlider] = useState([]);
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    fetchOrders();
+    
     fetchSliders();
     fetchEvent();
   }, []);
@@ -44,15 +44,7 @@ const AdminDashboard = () => {
       });
   };
 
-  const fetchOrders = () => {
-    getOrdersApi()
-      .then((res) => {
-        setOrders(res.data.orders);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  
 
   const renderPageContent = () => {
     switch (page) {
@@ -90,13 +82,7 @@ const AdminDashboard = () => {
             <Event />
           </div>
         );
-      case "order":
-        return (
-          <div>
-            <h2>Orders</h2>
-            <Myorder orders={orders} />
-          </div>
-        );
+     
       default:
         return (
           <div>
@@ -247,19 +233,7 @@ const AdminDashboard = () => {
                   Message
                 </button>
               </li>
-              <li style={styles.sidebarItem}>
-                <button
-                  className={`btn ${page === "order" ? "active" : ""}`}
-                  onClick={() => setPage("order")}
-                  style={
-                    page === "order"
-                      ? { ...styles.button, ...styles.buttonActive }
-                      : styles.button
-                  }
-                >
-                  Order
-                </button>
-              </li>
+             
             </ul>
           </div>
         </div>
