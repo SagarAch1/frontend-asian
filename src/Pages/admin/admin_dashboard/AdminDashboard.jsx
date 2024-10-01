@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import {
   getOrdersApi,
-  getProductsApi,
+ 
   getSlidersApi,
   getEventApi,
 } from "../../../apis/Api";
@@ -13,27 +13,27 @@ import Event from "../../Events/EventList";
 
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
-  const [products, setProducts] = useState([]);
+  // const [Books, setBooks] = useState([]);
   const [orders, setOrders] = useState([]);
   const [slider, setSlider] = useState([]);
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    fetchProducts();
+    // fetchBooks();
     fetchOrders();
     fetchSliders();
     fetchEvent();
   }, []);
 
-  const fetchProducts = () => {
-    getProductsApi()
-      .then((res) => {
-        setProducts(res.data.products);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  // const fetchBooks = () => {
+  //   getBooksApi()
+  //     .then((res) => {
+  //       setBooks(res.data.Books);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
   const fetchSliders = () => {
     getSlidersApi()
@@ -73,10 +73,10 @@ const AdminDashboard = () => {
             <h2>Welcome Home Admin</h2>
           </div>
         );
-      case "product":
+      case "Book":
         return (
           <div>
-            <h2>Add Product</h2>
+            <h2> Booking Of Class</h2>
           </div>
         );
       case "message":
@@ -191,15 +191,15 @@ const AdminDashboard = () => {
               </li>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${page === "product" ? "active" : ""}`}
-                  onClick={() => setPage("product")}
+                  className={`btn ${page === "Book" ? "active" : ""}`}
+                  onClick={() => setPage("Book")}
                   style={
-                    page === "product"
+                    page === "Book"
                       ? { ...styles.button, ...styles.buttonActive }
                       : styles.button
                   }
                 >
-                  Product
+                  Book
                 </button>
               </li>
               <li style={styles.sidebarItem}>

@@ -11,7 +11,7 @@ const Api = axios.create({
 
 // Create configuration with authorization headers
 const getConfig = () => ({
-  headers: {
+  headers: { 
     authorization: `Bearer ${localStorage.getItem("token")}`,
   },
 });
