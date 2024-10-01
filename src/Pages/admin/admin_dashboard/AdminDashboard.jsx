@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from "react";
 import {
   getOrdersApi,
- 
- 
   getSlidersApi,
   getEventApi,
 } from "../../../apis/Api";
 
 import Myorder from "../../Homepage/Myorder";
 import Book from "../../BookClass/Book";
-
 import Message from "../../Message/Message";
 import Slider from "../../Coupon/Sliderfetch";
 import Event from "../../Events/EventList";
@@ -22,13 +19,10 @@ const AdminDashboard = () => {
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    
     fetchOrders();
     fetchSliders();
     fetchEvent();
   }, []);
-
- 
 
   const fetchSliders = () => {
     getSlidersApi()
@@ -68,14 +62,13 @@ const AdminDashboard = () => {
             <h2>Welcome Home Admin</h2>
           </div>
         );
-        case "book":
-          return (
-            <div>
-              <h2>Book</h2>
-              <Book />
-            </div>
-          );
-    
+      case "book":
+        return (
+          <div>
+            <h2>Book</h2>
+            <Book />
+          </div>
+        );
       case "message":
         return (
           <div>
@@ -113,13 +106,18 @@ const AdminDashboard = () => {
     }
   };
 
-  const styles = {
-    container: {
-      paddingTop: "100px", // Bring content down below the navbar
-      backgroundColor: "#007BFF", // Solid blue background
-      minHeight: "100vh",
-      color: "#fff",
-    },
+  
+    const styles = {
+      container: {
+        paddingTop: "100px", // Adjust this value to match or slightly exceed the height of your navbar
+        backgroundColor: "#007BFF", // Solid blue background
+        minHeight: "100vh",
+        color: "#fff",
+        marginTop: 80, // Remove any margin around the container
+        padding: 0, // Remove any padding inside the container
+        width: "100%", // Ensure the container takes the full width of the page
+        boxSizing: "border-box", // Make sure padding is included in the width calculation
+      },
     sidebar: {
       backgroundColor: "green",
       padding: "30px",
@@ -164,7 +162,7 @@ const AdminDashboard = () => {
   };
 
   return (
-    <div className="container mt-5" style={styles.container}>
+    <div className="container-fluid" style={styles.container}> {/* Changed from 'container' to 'container-fluid' */}
       <div className="row">
         {/* Sidebar */}
         <div className="col-md-3">
@@ -173,9 +171,7 @@ const AdminDashboard = () => {
             <ul style={styles.sidebarList}>
               <li style={styles.sidebarItem}>
                 <button
-                  className={`btn ${
-                    page === "dashboard" ? "active" : ""
-                  }`}
+                  className={`btn ${page === "dashboard" ? "active" : ""}`}
                   onClick={() => setPage("dashboard")}
                   style={
                     page === "dashboard"
@@ -184,6 +180,19 @@ const AdminDashboard = () => {
                   }
                 >
                   Dashboard
+                </button>
+              </li>
+              <li style={styles.sidebarItem}>
+                <button
+                  className={`btn ${page === "form" ? "active" : ""}`}
+                  onClick={() => setPage("form")}
+                  style={
+                    page === "form"
+                      ? { ...styles.button, ...styles.buttonActive }
+                      : styles.button
+                  }
+                >
+                  Form
                 </button>
               </li>
               <li style={styles.sidebarItem}>
