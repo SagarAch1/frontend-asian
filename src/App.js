@@ -11,8 +11,8 @@ import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import CourseAustralia from "./Pages/Courses/Australia/b/master";
 import CourseCanada from "./Pages/Courses/Canada/canada";
 import CourseNewzeland from "./Pages/Courses/Newzeland/newzeland";
-import CourseUsa from "./Pages/Courses/USA/usa";
 import CourseUk from "./Pages/Courses/UK/Uk";
+import CourseUsa from "./Pages/Courses/USA/usa";
 import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
 import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
 import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
@@ -44,15 +44,15 @@ import Canadascholarships from "./Pages/Scholarships/Canadascholarships";
 import Newzelandscholarships from "./Pages/Scholarships/Newzelandscholarships";
 import Ukscholarships from "./Pages/Scholarships/Ukscholarships";
 import Usascholarships from "./Pages/Scholarships/Usascholarships";
+import ChitwanOffice from "./Pages/Whychoosedata/Chitwanoffice";
+import KathmanduOffice from "./Pages/Whychoosedata/Kahmanduoffice";
+import PokharaOffice from "./Pages/Whychoosedata/Pokharaoffice";
+import SydneyOffice from "./Pages/Whychoosedata/Sydneyoffice";
 import Australiauni from "./Universitiy/Australiauni";
 import Canadauni from "./Universitiy/Canadauni";
 import Newzelanduni from "./Universitiy/Newzelanduni";
 import Ukuni from "./Universitiy/Ukuni";
 import Usauni from "./Universitiy/Usauni";
-import KathmanduOffice from "./Pages/Whychoosedata/Kahmanduoffice";
-import PokharaOffice from "./Pages/Whychoosedata/Pokharaoffice";
-import ChitwanOffice from "./Pages/Whychoosedata/Chitwanoffice";
-import SydneyOffice from "./Pages/Whychoosedata/Sydneyoffice";
 // import Irelanuni from "./Universitiy/Irelanuni";
 
 import Contact from "./Pages/Contact/Contact";
@@ -64,10 +64,10 @@ import Homepage from "./Pages/Homepage/Homepage";
 import Myorder from "./Pages/Homepage/Myorder";
 import UserOrder from "./Pages/Homepage/Userorder";
 
+import Book from "./Pages/BookClass/Book";
 import Login from "./Pages/Login/Login";
 import Profile from "./Pages/Login/Profile";
 import Message from "./Pages/Message/Message";
-import Book from "./Pages/BookClass/Book";
 
 import Bookclass from "./Pages/BookClass/Bookclass";
 
@@ -79,42 +79,40 @@ import UniversityRankings from "./Pages/Findacourse/Universityranking";
 import Register from "./Pages/Register/Register";
 import Search from "./Pages/Search/Search";
 
+import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
+import Doctoratescholarship from "./Pages/Scholarships/Doctorate";
+import FoundationScholar from "./Pages/Scholarships/Foundationscholaraship";
+import Postgraduatescholar from "./Pages/Scholarships/Postgraduatescholarship";
+import ScholarshipList from "./Pages/Scholarships/Predegreevocationalscholarship";
+import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
+import Undergraduatescholar from "./Pages/Scholarships/Undergraduatescholarship";
+import Vetscholar from "./Pages/Scholarships/Vetscholarship";
+import Allsubjects from "./Pages/Subjects/Allsubjects";
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
+import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
+import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
+import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement";
 import Howtofindcourse from "./Pages/Whychoosedata/Howtofindacourse";
+import Livingabroadsupport from "./Pages/Whychoosedata/Livingabroadsupport";
+import Newzelandvisarequirement from "./Pages/Whychoosedata/Newzelandvisarequirement";
 import Predeparturesupport from "./Pages/Whychoosedata/Predeparturesupport";
 import Studentvisaapplication from "./Pages/Whychoosedata/Studentvisaapplication";
 import Studyabroadcounseling from "./Pages/Whychoosedata/Studyabroadcounselling";
+import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
+import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement";
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
-import Livingabroadsupport from "./Pages/Whychoosedata/Livingabroadsupport";
-import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement";
-import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
-import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
-import Newzelandvisarequirement from "./Pages/Whychoosedata/Newzelandvisarequirement";
-import Canadavisarequirementt from "./Pages/Whychoosedata/Canadavisarequirement";
-import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
-import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
-import Allsubjects from "./Pages/Subjects/Allsubjects";
-import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
-import ScholarshipList from "./Pages/Scholarships/Predegreevocationalscholarship";
-import Doctoratescholarship from "./Pages/Scholarships/Doctorate";
-import Undergraduatescholar from "./Pages/Scholarships/Undergraduatescholarship";
-import Postgraduatescholar from "./Pages/Scholarships/Postgraduatescholarship";
-import Vetscholar from "./Pages/Scholarships/Vetscholarship";
-import FoundationScholar from "./Pages/Scholarships/Foundationscholaraship";
 
 import UpcomingEvents from "./Pages/Events/Event";
 
+import OurTeam from "./Pages/Ourteam/OurTeam";
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
-import OurTeam from "./Pages/Ourteam/OurTeam";
 
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
-
-
 
 function App() {
   return (
@@ -148,12 +146,6 @@ function App() {
         <Route path="/event" element={<Event />} />
 
         <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
-
-        <Route path="/courseaustralia" element={<CourseAustralia />} />
-
-        <Route path="/courseusa" element={<CourseUsa />} />
-        <Route path="/courseuk" element={<CourseUk />} />
-        <Route path="/coursecanada" element={<CourseCanada />} />
 
         <Route path="/courseadvice" element={<Courseadvice />} />
 
@@ -215,16 +207,16 @@ function App() {
         <Route path="/pokharaoffice" element={<PokharaOffice />} />
         <Route path="/sydneyoffice" element={<SydneyOffice />} />
         <Route path="/doctoratescholrship" element={<Doctoratescholarship />} />
-        <Route path='/undergraduatescholar' element={<Undergraduatescholar />} />
-        <Route path='/postgraduatescholar' element={<Postgraduatescholar />} />
-        <Route path='/vetscholar'element={<Vetscholar/>} />
+        <Route
+          path="/undergraduatescholar"
+          element={<Undergraduatescholar />}
+        />
+        <Route path="/postgraduatescholar" element={<Postgraduatescholar />} />
+        <Route path="/vetscholar" element={<Vetscholar />} />
         <Route path="/foundationscholar" element={<FoundationScholar />} />
 
         <Route path="/predegreevocational" element={<ScholarshipList />} />
         <Route path="/upcommingevents" element={<UpcomingEvents />} />
-
-
-      
 
         <Route
           path="/scholarshipsinaustralia"
@@ -261,10 +253,22 @@ function App() {
         <Route path="/livingabroadsupport" element={<Livingabroadsupport />} />
         <Route path="/usavisarequirement" element={<Usavisarequirement />} />
         <Route path="/ukvisarequirement" element={<Ukvisarequirement />} />
-        <Route path="/australiavisarequirement" element={<Australiavisarequirement />} />
-        <Route path="/newzelandvisarequirement" element={<Newzelandvisarequirement />} />
-        <Route path="/canadavisarequirement" element={<Canadavisarequirementt />} />
-        <Route path="/visaapplicationassistance" element={<Visaapplicationassistance />} />
+        <Route
+          path="/australiavisarequirement"
+          element={<Australiavisarequirement />}
+        />
+        <Route
+          path="/newzelandvisarequirement"
+          element={<Newzelandvisarequirement />}
+        />
+        <Route
+          path="/canadavisarequirement"
+          element={<Canadavisarequirementt />}
+        />
+        <Route
+          path="/visaapplicationassistance"
+          element={<Visaapplicationassistance />}
+        />
 
         <Route path="/browsesubject" element={<Allsubjects />} />
 
@@ -274,7 +278,13 @@ function App() {
         </Route>
 
         {/* User Routes */}
-        <Route element={<UserRoutes />}></Route>
+        <Route element={<UserRoutes />}>
+          <Route path="/courseaustralia" element={<CourseAustralia />} />
+
+          <Route path="/courseusa" element={<CourseUsa />} />
+          <Route path="/courseuk" element={<CourseUk />} />
+          <Route path="/coursecanada" element={<CourseCanada />} />
+        </Route>
       </Routes>
     </Router>
   );
