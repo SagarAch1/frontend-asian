@@ -57,7 +57,7 @@ const Form = () => {
   return (
     <div style={styles.container}>
       <div style={styles.header}>
-        <h2 style={styles.title}>form Messages</h2>
+        <h2 style={styles.title}>Form Data</h2>
       </div>
       <table style={styles.table}>
         <thead>
