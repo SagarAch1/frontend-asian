@@ -21,6 +21,7 @@ export const testAPI = () => Api.get("/test");
 
 // User APIs
 export const registerUserApi = (data) => Api.post("/api/user/create", data);
+export const getUserApi = () => Api.get("/api/user/get_all_user");
 export const loginUserApi = (data) => Api.post("/api/user/login", data);
 
 // Product APIs

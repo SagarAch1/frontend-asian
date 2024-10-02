@@ -6,6 +6,7 @@ import Slider from "../../Coupon/Sliderfetch";
 import Event from "../../Events/EventList";
 import Message from "../../Message/Message";
 import Form from "../../Homepage/Form";
+import User from "../../Login/User";
 
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
@@ -79,6 +80,13 @@ const AdminDashboard = () => {
           <div>
             <h2>Form</h2>
             <Form />
+          </div>
+        );
+        case "user":
+        return (
+          <div>
+            <h2>User</h2>
+            <User />
           </div>
         );
 
@@ -231,6 +239,19 @@ const AdminDashboard = () => {
                   }
                 >
                   Message
+                </button>
+              </li>
+              <li style={styles.sidebarItem}>
+                <button
+                  className={`btn ${page === "user" ? "active" : ""}`}
+                  onClick={() => setPage("user")}
+                  style={
+                    page === "user"
+                      ? { ...styles.button, ...styles.buttonActive }
+                      : styles.button
+                  }
+                >
+                  User
                 </button>
               </li>
             </ul>
