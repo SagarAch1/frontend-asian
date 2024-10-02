@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { registerUserApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
+import Popup from "./Popup";
 
 const Register = () => {
   const [fullName, setFullName] = useState("");
@@ -18,6 +19,9 @@ const Register = () => {
   const [emailError, setEmailError] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
+
+  const [popupOpen, setPopupOpen] = useState(false); 
+  const [popupMessage, setPopupMessage] = useState(""); 
 
   const navigate = useNavigate();
 
@@ -66,30 +70,43 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (!validate()) {
       return;
     }
-
+  
     const data = {
       fullName: fullName,
       phone: phone,
       email: email,
       password: password,
     };
-
+  
     try {
       const res = await registerUserApi(data);
+  
+      // Assuming the API responds with { success: false, message: "Email already taken" }
       if (res.data.success === false) {
-        toast.error(res.data.message);
+        if (res.data.message === "Email already taken") {
+          setEmailError("Email is already taken");
+        } else {
+          toast.error(res.data.message);
+        }
       } else {
-        toast.success(res.data.message);
-        navigate("/login"); // Navigate to login page after successful registration
+        setPopupMessage("User Created Successfully"); // Set popup message
+        setPopupOpen(true); // Show popup
+        // Optionally navigate to the login page after some delay
+        setTimeout(() => {
+          setPopupOpen(false); // Hide popup after delay
+          navigate("/login");
+        }, 3000); // Redirect after 3 seconds
       }
+
     } catch (error) {
       toast.error("Registration failed. Please try again.");
     }
   };
+  
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -211,6 +228,14 @@ const Register = () => {
         </div>
       </div>
       <Footer />
+      
+      Popup for success message
+      {popupOpen && (
+        <Popup
+          message={popupMessage}
+          onClose={() => setPopupOpen(false)} // Close popup on button click
+        />
+      )}
     </div>
   );
 };
