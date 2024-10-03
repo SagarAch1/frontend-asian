@@ -87,7 +87,7 @@ const Navbar = () => {
             className="mx-3 text-white"
             style={{ fontWeight: "bold", fontSize: "18px" }}
           >
-            <i className="fas fa-globe"></i> English
+            <i className="fas fa-photo"></i> Gallery
           </div>
 
           {user ? (

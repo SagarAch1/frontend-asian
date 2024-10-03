@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { getEventApi, getSlidersApi } from "../../../apis/Api";
+import { getEventApi, getSlidersApi, getNewsApi } from "../../../apis/Api";
 
 import Book from "../../BookClass/Book";
 import Slider from "../../Coupon/Sliderfetch";
 import Event from "../../Events/EventList";
+import News from "../../Newsarticles/NewsList";
 import Message from "../../Message/Message";
 import Form from "../../Homepage/Form";
 import User from "../../Login/User";
@@ -31,6 +32,15 @@ const AdminDashboard = () => {
 
   const fetchEvent = () => {
     getEventApi()
+      .then((res) => {
+        setEvent(res.data.coupons);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const fetchNews = () => {
+    getNewsApi()
       .then((res) => {
         setEvent(res.data.coupons);
       })
@@ -75,6 +85,13 @@ const AdminDashboard = () => {
             <Event />
           </div>
         );
+        case "news":
+          return (
+            <div>
+              <h2>News</h2>
+              <News />
+            </div>
+          );
         case "form":
         return (
           <div>
@@ -226,6 +243,19 @@ const AdminDashboard = () => {
                   }
                 >
                   Event
+                </button>
+              </li>
+              <li style={styles.sidebarItem}>
+                <button
+                  className={`btn ${page === "news" ? "active" : ""}`}
+                  onClick={() => setPage("news")}
+                  style={
+                    page === "news"
+                      ? { ...styles.button, ...styles.buttonActive }
+                      : styles.button
+                  }
+                >
+                  News
                 </button>
               </li>
               <li style={styles.sidebarItem}>

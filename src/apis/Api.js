@@ -100,6 +100,11 @@ export const createEventApi = (data) =>
   Api.post("/api/event/create", data, getConfig());
 export const getEventApi = () => Api.get("/api/event/get_all_event");
 
+//NewsApi
+export const createNewsApi = (data) =>
+  Api.post("/api/news/create", data, getConfig());
+export const getNewsApi = () => Api.get("/api/news/get_all_news");
+
 // Wishlist APIs
 export const getWishlistApi = () =>
   Api.get("/api/wishlist/get_wishlist", getConfig());

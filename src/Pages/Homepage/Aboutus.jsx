@@ -24,7 +24,7 @@ const Counter = ({ endValue, duration, suffix = '', prefix = '' }) => {
     }, [endValue, duration]);
 
     // Format the count with K suffix if it's in thousands
-    const formattedCount = count >= 1000 ? `${(count / 1000).toFixed(0)}K` : count;
+    const formattedCount = count >= 900 ? `${(count / 900).toFixed(0)}K` : count;
 
     return <h2>{prefix}{formattedCount}{suffix}</h2>;
 };

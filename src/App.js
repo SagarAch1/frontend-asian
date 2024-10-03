@@ -17,9 +17,11 @@ import Afterreceivingoffer from "./Pages/Newsandarticles/Afterreceivingoffer";
 import Arriveandthrive from "./Pages/Newsandarticles/Arriveandthrive";
 import Howdoiapply from "./Pages/Newsandarticles/Howdoiapply";
 import Preparetodepart from "./Pages/Newsandarticles/Preparetodepart";
-import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
+// import Newsandarticles from "./Pages/Newsandarticles/Totalnewsandarticle";
 import WhereAndWhatToStudy from "./Pages/Newsandarticles/Whereandwhattostudy";
 import WhyStudyAbroad from "./Pages/Newsandarticles/Whystudyabroad";
+import Createnews from "./Pages/Newsarticles/CreateNews";
+import Newslist from "./Pages/Newsarticles/NewsList";
 import Studyinaustralia from "./Pages/StudyDestination/Studyinaustralia";
 import Studyincanada from "./Pages/StudyDestination/Studyincanada";
 import Studyinireland from "./Pages/StudyDestination/Studyinireland";
@@ -78,6 +80,7 @@ import FormPage from "./Pages/Homepage/FormPage";
 import UniversityRankings from "./Pages/Findacourse/Universityranking";
 import Register from "./Pages/Register/Register";
 import Search from "./Pages/Search/Search";
+import UpcomingEvents from "./Pages/Events/Event";
 
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
 import Doctoratescholarship from "./Pages/Scholarships/Doctorate";
@@ -103,7 +106,7 @@ import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement"
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
 
-import UpcomingEvents from "./Pages/Events/Event";
+
 
 import OurTeam from "./Pages/Ourteam/OurTeam";
 import Support from "./Pages/Support/Support";
@@ -113,6 +116,7 @@ import Navbar from "./components/Navbar";
 
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
+import UpcomingNews from "./Pages/Newsarticles/News";
 
 function App() {
   return (
@@ -127,6 +131,9 @@ function App() {
 
         <Route path="/bookclass" element={<Bookclass />} />
         <Route path="/ourteam" element={<OurTeam />} />
+        <Route path="/newlist" element={<Newslist />} />
+        <Route path="/news" element={<Createnews />} />
+   
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
@@ -154,8 +161,8 @@ function App() {
         <Route path="/toefl" element={<ToeflPreparationPage />} />
         <Route path="/sat" element={<SatPreparationPage />} />
         <Route path="/duolingo" element={<DuolingoPreparationPage />} />
-
-        <Route path="/newsandarticles" element={<Newsandarticles />} />
+        {/* 
+        <Route path="/newsandarticles" element={<Newsandarticles />} /> */}
 
         <Route path="/coursenewzeland" element={<CourseNewzeland />} />
 
@@ -217,6 +224,7 @@ function App() {
 
         <Route path="/predegreevocational" element={<ScholarshipList />} />
         <Route path="/upcommingevents" element={<UpcomingEvents />} />
+        <Route path="/upcommingnews" element={<UpcomingNews />} />
 
         <Route
           path="/scholarshipsinaustralia"
