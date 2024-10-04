@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 import About from "./Pages/About/About";
+import Gallerycreate from "./Pages/Gallery/Imageupload";
 
 import Bachelorofdesign from "./Blog/Bachelorofdesign";
 import CourseAustralia from "./Pages/Courses/Australia/b/master";
@@ -133,6 +134,8 @@ function App() {
         <Route path="/ourteam" element={<OurTeam />} />
         <Route path="/newlist" element={<Newslist />} />
         <Route path="/news" element={<Createnews />} />
+        <Route path="/gallerycreate" element={<Gallerycreate />} />
+       
    
 
         <Route path="/forgot-password" element={<ForgotPassword />} />

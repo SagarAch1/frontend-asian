@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getEventApi, getSlidersApi, getNewsApi } from "../../../apis/Api";
+import { getEventApi, getSlidersApi, getNewsApi, getGalleryApi } from "../../../apis/Api";
 
 import Book from "../../BookClass/Book";
 import Slider from "../../Coupon/Sliderfetch";
@@ -8,16 +8,19 @@ import News from "../../Newsarticles/NewsList";
 import Message from "../../Message/Message";
 import Form from "../../Homepage/Form";
 import User from "../../Login/User";
+import Gallerylist from "../../Gallery/Gallerylist";
 
 const AdminDashboard = () => {
   const [page, setPage] = useState("dashboard");
 
   const [slider, setSlider] = useState([]);
   const [event, setEvent] = useState([]);
+  const [gallerylist, setGallerylist] = useState([]);
 
   useEffect(() => {
     fetchSliders();
     fetchEvent();
+    fetchGallerylist();
   }, []);
 
   const fetchSliders = () => {
@@ -38,7 +41,17 @@ const AdminDashboard = () => {
       .catch((error) => {
         console.log(error);
       });
+     
   };
+   const fetchGallerylist = () => {
+        getGalleryApi()
+          .then((res) => {
+            setGallerylist(res.data.coupons);
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      };
   const fetchNews = () => {
     getNewsApi()
       .then((res) => {
@@ -106,6 +119,13 @@ const AdminDashboard = () => {
             <User />
           </div>
         );
+        case "gallerylist":
+          return (
+            <div>
+              <h2>Gallerylist</h2>
+              <Gallerylist />
+            </div>
+          );
 
       default:
         return (
@@ -282,6 +302,19 @@ const AdminDashboard = () => {
                   }
                 >
                   User
+                </button>
+              </li>
+              <li style={styles.sidebarItem}>
+                <button
+                  className={`btn ${page === "gallerylist" ? "active" : ""}`}
+                  onClick={() => setPage("gallerylist")}
+                  style={
+                    page === "gallerylist"
+                      ? { ...styles.button, ...styles.buttonActive }
+                      : styles.button
+                  }
+                >
+                 Gallerylist
                 </button>
               </li>
             </ul>
