@@ -1,7 +1,7 @@
 import React from "react";
+import { Dropdown } from "react-bootstrap"; // Import Dropdown from react-bootstrap if using react-bootstrap
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Dropdown } from 'react-bootstrap';  // Import Dropdown from react-bootstrap if using react-bootstrap
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="nav-item mx-3">
-          <Link
+            <Link
               className="nav-link text-white"
               to="/newsandarticles"
               style={{ fontWeight: "bold", fontSize: "18px" }}
@@ -78,18 +78,19 @@ const Navbar = () => {
               Social
             </Link>
           </li>
+          <li className="nav-item mx-3">
+            <Link
+              className="nav-link text-white"
+              to="/gallery"
+              style={{ fontWeight: "bold", fontSize: "18px" }}
+            >
+              Gallery
+            </Link>
+          </li>
         </ul>
 
         {/* Language Selector and User Options */}
         <div className="d-flex align-items-center">
-          {/* Language Selector */}
-          <div
-            className="mx-3 text-white"
-            style={{ fontWeight: "bold", fontSize: "18px" }}
-          >
-            <i className="fas fa-photo"></i> Gallery
-          </div>
-
           {user ? (
             <Dropdown className="mx-3">
               <Dropdown.Toggle
@@ -101,9 +102,15 @@ const Navbar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/profile">Profile</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/contact">Report</Dropdown.Item>
-                <Dropdown.Item as={Link} to="/userorder">My Order</Dropdown.Item>
+                <Dropdown.Item as={Link} to="/profile">
+                  Profile
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/contact">
+                  Report
+                </Dropdown.Item>
+                <Dropdown.Item as={Link} to="/userorder">
+                  My Order
+                </Dropdown.Item>
                 <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
