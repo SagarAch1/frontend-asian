@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getGalleryApi } from "../../apis/Api"; // Adjust the API function for fetching galleries
-import "./gallery.css"; // Create your custom CSS for this component
+import { getGalleryApi } from "../../apis/Api"; 
+import "./gallery.css"; 
 
 const GalleryDisplay = () => {
   const [galleries, setGalleries] = useState([]);

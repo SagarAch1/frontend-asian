@@ -36,6 +36,15 @@ const Navbar = () => {
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
+              to="/aiecworkshop"
+              style={{ fontWeight: "bold", fontSize: "18px" }}
+            >
+              AIEC Learning Center
+            </Link>
+          </li>
+          <li className="nav-item mx-3">
+            <Link
+              className="nav-link text-white"
               to="/bookclass"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >

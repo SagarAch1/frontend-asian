@@ -119,6 +119,7 @@ import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
 import UpcomingNews from "./Pages/Newsarticles/News";
 import GalleryDisplay from "./Pages/Gallery/Gallerydisplay";
+import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
 
 function App() {
   return (
@@ -136,6 +137,7 @@ function App() {
         <Route path="/newlist" element={<Newslist />} />
         <Route path="/news" element={<Createnews />} />
         <Route path="/gallerycreate" element={<Gallerycreate />} />
+        <Route path="/aiecworkshop" element={<Aiecworkshop />} />
        
    
 
