@@ -81,7 +81,7 @@ const Navbar = () => {
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
-              to="/gallery"
+              to="/gallerydisplay"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >
               Gallery

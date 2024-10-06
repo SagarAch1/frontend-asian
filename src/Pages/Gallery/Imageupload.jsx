@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
 import { createGalleryApi } from "../../apis/Api";
 
 const Gallerycreate = () => {
@@ -9,13 +8,17 @@ const Gallerycreate = () => {
 
   const [galleryName, setGalleryName] = useState("");
   const [galleryType, setGalleryType] = useState("");
-  const [galleryImage, setGalleryImage] = useState(null);
-  const [previewImage, setPreviewImage] = useState(null);
+  const [galleryImages, setGalleryImages] = useState([]); // Updated to handle multiple images
+  const [previewImages, setPreviewImages] = useState([]); // Updated to handle multiple image previews
 
-  const handleImage = (event) => {
-    const file = event.target.files[0];
-    setGalleryImage(file);
-    setPreviewImage(URL.createObjectURL(file));
+  // Handle multiple image input
+  const handleImages = (event) => {
+    const files = Array.from(event.target.files); // Get all selected files
+    setGalleryImages(files);
+
+    // Create image previews
+    const imagePreviews = files.map((file) => URL.createObjectURL(file));
+    setPreviewImages(imagePreviews);
   };
 
   const handleAdd = async (e) => {
@@ -24,7 +27,11 @@ const Gallerycreate = () => {
 
     formData.append("galleryName", galleryName);
     formData.append("galleryType", galleryType);
-    formData.append("galleryImage", galleryImage);
+
+    // Append all images to the formData
+    galleryImages.forEach((image) => {
+      formData.append("galleryImages", image); // Append multiple images
+    });
 
     createGalleryApi(formData)
       .then((res) => {
@@ -93,21 +100,21 @@ const Gallerycreate = () => {
                 style={formControlStyle}
               >
                 <option value="">Select a gallery</option>
-                <option value="Our Sucess"> Our Sucess </option>
-                <option value="Events"> Events </option>
-              
+                <option value="Our Success">Our Success</option>
+                <option value="Events">Events</option>
               </select>
             </div>
             <div className="mb-3">
-              <label htmlFor="galleryImage" style={labelStyle}>
-                Choose Gallery Image
+              <label htmlFor="galleryImages" style={labelStyle}>
+                Choose Gallery Images
               </label>
               <input
-                onChange={handleImage}
+                onChange={handleImages}
                 type="file"
                 className="form-control"
-                id="galleryImage"
+                id="galleryImages"
                 style={formControlStyle}
+                multiple // Enable multiple file selection
               />
             </div>
             <button
@@ -120,7 +127,7 @@ const Gallerycreate = () => {
           </form>
         </div>
         <div className="col-md-6" style={textCenterStyle}>
-          {previewImage && (
+          {previewImages.length > 0 && (
             <>
               <h5
                 style={{
@@ -129,14 +136,20 @@ const Gallerycreate = () => {
                   marginBottom: "15px",
                 }}
               >
-                Gallery Image Preview
+                Gallery Image Previews
               </h5>
-              <img
-                src={previewImage}
-                alt="Gallery"
-                className="img-fluid rounded"
-                style={imgStyle}
-              />
+              <div className="row">
+                {previewImages.map((image, index) => (
+                  <div className="col-6 mb-3" key={index}>
+                    <img
+                      src={image}
+                      alt={`Preview ${index + 1}`}
+                      className="img-fluid rounded"
+                      style={imgStyle}
+                    />
+                  </div>
+                ))}
+              </div>
             </>
           )}
         </div>
@@ -146,4 +159,3 @@ const Gallerycreate = () => {
 };
 
 export default Gallerycreate;
-

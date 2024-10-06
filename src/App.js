@@ -118,6 +118,7 @@ import Navbar from "./components/Navbar";
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
 import UpcomingNews from "./Pages/Newsarticles/News";
+import GalleryDisplay from "./Pages/Gallery/Gallerydisplay";
 
 function App() {
   return (
@@ -154,6 +155,7 @@ function App() {
 
         <Route path="/slider" element={<Slider />} />
         <Route path="/event" element={<Event />} />
+        <Route path="/gallerydisplay" element={<GalleryDisplay />} />
 
         <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
 
