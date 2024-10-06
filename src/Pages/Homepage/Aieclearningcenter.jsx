@@ -106,16 +106,16 @@ const aiecWorkshop = () => {
       </div>
 
       <div style={styles.infoSection}>
-        <a href="/cde" style={{ ...styles.button, ...styles.secondaryButton }}>
+        <a href="/formpage" style={{ ...styles.button, ...styles.secondaryButton }}>
           Inquiry or Registration Form
         </a>
-        <a href="/abc" style={{ ...styles.button, ...styles.infoButton }}>
+        <a href="/bookclass" style={{ ...styles.button, ...styles.infoButton }}>
           aiec Learning Center Class Schedule 📖
         </a>
         <a href="/bcd" style={{ ...styles.button, ...styles.secondaryButton }}>
           Universities Represented by aiec 🎓
         </a>
-        <a href="/cde" style={{ ...styles.button, ...styles.infoButton }}>
+        <a href="/whystudyabroad" style={{ ...styles.button, ...styles.infoButton }}>
           Abroad Study Destination & Facts 🌍
         </a>
       </div>
