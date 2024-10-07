@@ -1,176 +1,233 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const  Bachelorofdesign = () => {
+const CourseDetail = () => {
+  const [activeSection, setActiveSection] = useState(null);
+
+  const toggleSection = (section) => {
+    setActiveSection(activeSection === section ? null : section);
+  };
+
   return (
-    <div style={styles.container}>
+    <div style={styles.pageContainer}>
+      {/* Header Section */}
       <header style={styles.header}>
-        <div style={styles.logo}>
-          <img 
-            src="https://asian.edu.np/wp-content/uploads/elementor/thumbs/new-logo-footer-qnlq1cjtwddgp0mduco1alft6pg7aqz42y3lcne8bk.png" 
-            alt="University Logo" 
-            style={styles.logoImage} 
-          />
+        <div style={styles.titleSection}>
+          <h1 style={styles.title}>Bachelor of Science in Biology - Cellular/Molecular Biology</h1>
+          <h3 style={styles.university}>At Humboldt State University (California State University, CSU)</h3>
         </div>
-        <div style={styles.courseInfo}>
-          <h1 style={styles.courseTitle}>Bachelor of Design</h1>
-          <h2 style={styles.courseSubtitle}>At THE UNIVERSITY OF MELBOURNE</h2>
+        <div style={styles.actionButtons}>
           <button style={styles.enquireButton}>Enquire now</button>
+          <button style={styles.actionButton}>❤</button>
+          <button style={styles.actionButton}>🔗</button>
         </div>
       </header>
-      <div style={styles.details}>
-        <div style={styles.detailItem}>Location: Australia</div>
-        <div style={styles.detailItem}>Qualification: Bachelor Degree</div>
-        <div style={styles.detailItem}>Fees: AUD37264 (2024)</div>
-        <div style={styles.detailItem}>Duration: 3 Year(s)</div>
-        <div style={styles.detailItem}>Next intake: 27 February 2025</div>
-        <div style={styles.detailItem}>Entry Score: 6.5 IELTS</div>
-      </div>
-      <section style={styles.aboutCourse}>
-        <h3 style={styles.sectionTitle}>About the course</h3>
-        <p style={styles.courseDescription}>
-          Designers apply creative and open approaches to defining and solving problems, leading to high-quality decisions. 
-          This enables businesses and industries to overcome rigid or outdated ways of doing things. Design has applications 
-          in the creation and improvement of our cities, buildings, transport networks, furniture, websites, processes, bridges, 
-          landscapes, and environment. Designers are innovators who enhance the way we live and interact with the world around us.
-        </p>
-        <p style={styles.courseDescription}>
-          As technology drives more and more aspects of our lives, designers are playing an important role in expanding 
-          the potential of the Internet of Things, such as smart homes, smart cities, and intelligent transportation.
-        </p>
-        <p style={styles.courseDescription}>
-          If you are imaginative, enjoy learning about new fields, and want to play a role in improving the way we live 
-          and the places we live in, Design could be a good fit for you.
-        </p>
-        <p style={styles.courseDescription}>
-          As a Bachelor of Design student, you’ll use innovative processes to solve problems creatively and determine solutions 
-          for a better future.
-        </p>
-        <div style={styles.careers}>
-          <h4 style={styles.careersTitle}>Careers</h4>
-          <ul style={styles.careersList}>
-            <li>Architecture and landscape architecture</li>
-            <li>Graphic design</li>
-            <li>Construction and civil engineering</li>
-            <li>Geospatial technology</li>
-            <li>Property</li>
-            <li>Software design</li>
-            <li>Virtual reality and augmented reality</li>
-            <li>Performance design</li>
-            <li>Design for mechanics and robotics</li>
-          </ul>
+
+      {/* Main Content Section */}
+      <div style={styles.contentContainer}>
+        {/* Left Column: Course Details */}
+        <div style={styles.leftColumn}>
+          {/* Course Information */}
+          <div style={styles.courseInfo}>
+            <div style={styles.courseRow}>
+              <p><strong>Location:</strong> United States</p>
+              <p><strong>Qualification:</strong> Bachelor Degree</p>
+            </div>
+            <div style={styles.courseRow}>
+              <p><strong>Fees:</strong> USD 19,738 (2024)</p>
+              <p><strong>Duration:</strong> 8 Semesters</p>
+            </div>
+            <div style={styles.courseRow}>
+              <p><strong>Next Intake:</strong> 21 January 2025</p>
+              <p><strong>Entry Score:</strong> 6.0 IELTS</p>
+            </div>
+          </div>
+
+          {/* About the Course */}
+          <div style={styles.aboutCourse}>
+            <h2>About the course</h2>
+            <p>
+              Biology majors study organisms and how they function in the natural world. You can be a general biology major 
+              or focus your studies by choosing a concentration in one of five specialty areas: Cellular and Molecular Biology, 
+              Ecology, Marine Biology, Microbiology, or Science Education.
+            </p>
+            <p>More course details...</p>
+            <div>
+              <p><strong>Scholarships:</strong> <a href="#">View all scholarships</a></p>
+              <p><strong>Internships:</strong> Available</p>
+            </div>
+          </div>
+
+          {/* Accordion Sections */}
+          <div style={styles.accordion}>
+            <AccordionSection
+              title="Start dates and prices"
+              isActive={activeSection === 'dates'}
+              onToggle={() => toggleSection('dates')}
+            />
+            <AccordionSection
+              title="How to apply"
+              isActive={activeSection === 'apply'}
+              onToggle={() => toggleSection('apply')}
+            />
+            <AccordionSection
+              title="Reviews and rankings"
+              isActive={activeSection === 'reviews'}
+              onToggle={() => toggleSection('reviews')}
+            />
+            <AccordionSection
+              title="About the school"
+              isActive={activeSection === 'school'}
+              onToggle={() => toggleSection('school')}
+            />
+          </div>
         </div>
-      </section>
-      <aside style={styles.counsellor}>
-        <h3 style={styles.counsellorTitle}>Feeling stuck? Let our expert counsellor help you.</h3>
-        <p style={styles.counsellorText}>
-          Can't decide on the university and course? Our experienced counsellors are here to guide and support you through 
-          each stage of your study abroad journey. Reach out today!
-        </p>
-        <button style={styles.counsellorButton}>Meet a counsellor</button>
-      </aside>
+
+        {/* Right Column: Counsellor Section */}
+        <div style={styles.rightColumn}>
+          <div style={styles.counselorBox}>
+            <h3>Feeling stuck? Let our expert counsellor help you.</h3>
+            <p>Our experienced counsellors are here to guide and support you through every step of your study abroad journey. Reach out today!</p>
+            <button style={styles.meetCounselorButton}>Meet a counsellor</button>
+            <img src={`${process.env.PUBLIC_URL}/assets/counsellor.jpg`} alt="Counsellor" style={styles.counselorImage} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
+const AccordionSection = ({ title, isActive, onToggle }) => (
+  <div style={styles.accordionItem}>
+    <div style={styles.accordionTitle} onClick={onToggle}>
+      <span>{title}</span>
+      <span>{isActive ? '-' : '+'}</span>
+    </div>
+    {isActive && (
+      <div style={styles.accordionContent}>
+        <p>Content for {title.toLowerCase()}</p>
+      </div>
+    )}
+  </div>
+);
+
 const styles = {
-  container: {
-    fontFamily: 'Arial, sans-serif',
+  pageContainer: {
+    maxWidth: '1200px',
     margin: '0 auto',
     padding: '20px',
-    maxWidth: '1200px',
-    backgroundColor: '#f7f7f7',
-    color: '#333',
+    fontFamily: 'Arial, sans-serif',
+    marginTop: '100px', // Ensures content is below the navbar
   },
   header: {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingBottom: '20px',
-    borderBottom: '1px solid #ccc',
-  },
-  logo: {
-    maxWidth: '100px',
-  },
-  logoImage: {
-    maxWidth: '100%',
-  },
-  courseInfo: {
-    textAlign: 'right',
-  },
-  courseTitle: {
-    fontSize: '24px',
-    margin: '0',
-  },
-  courseSubtitle: {
-    fontSize: '18px',
-    color: '#666',
-    marginTop: '5px',
-    marginBottom: '10px',
-  },
-  enquireButton: {
-    backgroundColor: '#ff6600',
-    color: 'white',
-    padding: '10px 20px',
-    border: 'none',
-    cursor: 'pointer',
-    borderRadius: '5px',
-  },
-  details: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    padding: '20px 0',
-    borderBottom: '1px solid #ccc',
-  },
-  detailItem: {
-    width: '16%',
-    fontSize: '14px',
-    color: '#555',
-  },
-  aboutCourse: {
-    marginTop: '20px',
-  },
-  sectionTitle: {
-    fontSize: '22px',
-  },
-  courseDescription: {
-    fontSize: '16px',
-    margin: '10px 0',
-    lineHeight: '1.6',
-  },
-  careers: {
-    marginTop: '20px',
-  },
-  careersTitle: {
-    fontSize: '20px',
-  },
-  careersList: {
-    listStyleType: 'disc',
-    paddingLeft: '20px',
-    fontSize: '16px',
-  },
-  counsellor: {
-    backgroundColor: '#f2f2f2',
-    padding: '20px',
-    borderRadius: '5px',
-    marginTop: '30px',
-    textAlign: 'center',
-  },
-  counsellorTitle: {
-    fontSize: '20px',
-    marginBottom: '10px',
-  },
-  counsellorText: {
-    fontSize: '16px',
     marginBottom: '20px',
   },
-  counsellorButton: {
+  titleSection: {
+    flex: 1,
+  },
+  title: {
+    fontSize: '26px',
+    fontWeight: 'bold',
+    color: '#333',
+    marginBottom: '10px',
+  },
+  university: {
+    fontSize: '16px',
+    color: '#777',
+  },
+  actionButtons: {
+    display: 'flex',
+    gap: '10px',
+  },
+  enquireButton: {
+    padding: '10px 20px',
+    backgroundColor: '#ff5722',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '16px',
+  },
+  actionButton: {
+    padding: '10px',
+    backgroundColor: '#eee',
+    border: '1px solid #ccc',
+    borderRadius: '50%',
+    cursor: 'pointer',
+    fontSize: '18px',
+  },
+  contentContainer: {
+    display: 'flex',
+    justifyContent: 'space-between',
+  },
+  leftColumn: {
+    width: '65%',
+  },
+  rightColumn: {
+    width: '30%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-start',
+  },
+  courseInfo: {
+    backgroundColor: '#f9f9f9',
+    padding: '20px',
+    borderRadius: '8px',
+    marginBottom: '20px',
+  },
+  courseRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    marginBottom: '10px',
+  },
+  aboutCourse: {
+    marginBottom: '20px',
+  },
+  accordion: {
+    marginTop: '20px',
+  },
+  accordionItem: {
+    marginBottom: '10px',
+  },
+  accordionTitle: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    padding: '15px',
+    border: '1px solid #ccc',
+    borderRadius: '4px',
+    backgroundColor: '#fff',
+    cursor: 'pointer',
+    fontWeight: 'bold',
+  },
+  accordionContent: {
+    padding: '10px 15px',
+    backgroundColor: '#f9f9f9',
+    border: '1px solid #ccc',
+    borderTop: 'none',
+    borderRadius: '0 0 4px 4px',
+  },
+  counselorBox: {
+    backgroundColor: '#f0f4f7',
+    padding: '20px',
+    borderRadius: '8px',
+    textAlign: 'center',
+  },
+  meetCounselorButton: {
+    padding: '10px 20px',
     backgroundColor: '#007bff',
     color: 'white',
-    padding: '10px 20px',
     border: 'none',
-    cursor: 'pointer',
     borderRadius: '5px',
+    cursor: 'pointer',
+    marginTop: '10px',
+  },
+  counselorImage: {
+    marginTop: '20px',
+    width: '100%',
+    borderRadius: '50%',
   },
 };
 
-export default  Bachelorofdesign;
+export default CourseDetail;
