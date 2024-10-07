@@ -80,7 +80,7 @@ import FormPage from "./Pages/Homepage/FormPage";
 
 import UniversityRankings from "./Pages/Findacourse/Universityranking";
 import Register from "./Pages/Register/Register";
-import Search from "./Pages/Search/Search";
+
 import UpcomingEvents from "./Pages/Events/Event";
 
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
@@ -148,7 +148,6 @@ function App() {
         <Route path="/messages" element={<Message />} />
         <Route path="/book" element={<Book />} />
 
-        <Route path="/search" element={<Search />} />
         <Route path="/thankyou" element={<Thankyou />} />
         <Route path="/myorder" element={<Myorder />} />
 
@@ -159,7 +158,7 @@ function App() {
         <Route path="/event" element={<Event />} />
         <Route path="/gallerydisplay" element={<GalleryDisplay />} />
 
-        <Route path="/bachelorofdesign" element={<Bachelorofdesign />} />
+        <Route path="/course-detail" element={<Bachelorofdesign />} />
 
         <Route path="/courseadvice" element={<Courseadvice />} />
 

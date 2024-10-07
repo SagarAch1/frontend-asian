@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import styled from "styled-components";
+
+
+import React, { useState, useEffect } from "react";
+import { useLocation, useNavigate } from 'react-router-dom';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCalendarAlt,
@@ -11,11 +13,9 @@ import {
   faStar,
   faBook,
 } from "@fortawesome/free-solid-svg-icons";
-import Footer from "../../Homepage/Footer";
-import FormPage from "../../Homepage/FormPage";
 
-const programs = [
-  //for Certified//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Sample data (replace this with your actual data)
+const courses = [
   {
     title: "Business and Management",
     university: "American University Washington",
@@ -8638,8 +8638,7 @@ const programs = [
   },
 
 
-
-  // Other programs
+  // Add more courses as needed
 ];
 
 const CourseUsa = () => {
@@ -8649,7 +8648,7 @@ const CourseUsa = () => {
 
   useEffect(() => {
     const searchCriteria = location.state || {};
-    const filtered = programs.filter(
+    const filtered = courses.filter(
       (program) =>
         (!searchCriteria.course ||
           program.title.toLowerCase().includes(searchCriteria.course?.toLowerCase()))
@@ -8658,12 +8657,23 @@ const CourseUsa = () => {
     setFilteredPrograms(filtered.length > 0 ? filtered : null);
   }, [location.state]);
 
-  const handleViewDetails = (link) => {
-    navigate(link);
+  const handleViewDetails = (course) => {
+    navigate("/course-detail", {
+      state: {
+        courseName: course.title,
+        universityName: course.university,
+        countryName: course.location.trim(),
+        worldRanking: course.worldRanking,
+        degree: course.degree,
+        intakeDate: course.intakeDate,
+        entryScore: course.entryScore,
+        fees: course.fees,
+      },
+    });
   };
 
-  const handleContactClick = () => {
-    navigate("/contact");
+  const handleContactAIEC = () => {
+    navigate("/formpage");
   };
 
   return (
@@ -8703,17 +8713,15 @@ const CourseUsa = () => {
                     </p>
                     <p>
                       <FontAwesomeIcon icon={faDollarSign} /> Fees: 
-                      <ContactLink onClick={handleContactClick}>
+                      {/* <ContactLink onClick={handleContactClick}>
                         {program.fees}
-                      </ContactLink>
+                      </ContactLink> */}
                     </p>
                   </ProgramDetails>
-                  <ViewDetailsButton
-                    onClick={() => handleViewDetails(program.link)}
-                  >
-                    View details
-                  </ViewDetailsButton>
-                </ProgramCard>
+                  <ViewDetailsButton onClick={() => handleViewDetails(program)}>
+              View details
+            </ViewDetailsButton>
+          </ProgramCard>
               ))}
             </GridContainer>
           </>
@@ -8724,11 +8732,6 @@ const CourseUsa = () => {
         )}
       </Container>
 
-      <FormPage />
-      
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 };
