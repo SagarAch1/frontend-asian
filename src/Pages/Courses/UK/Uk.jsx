@@ -14,7 +14,7 @@ import styled from "styled-components";
 import Footer from "../../Homepage/Footer";
 import FormPage from "../../Homepage/FormPage";
 
-const programs = [
+const courses = [
   //for Certified//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     title: "Science and Technology",
@@ -3543,30 +3543,39 @@ const programs = [
   // Other programs
 ];
 
-const CourseUk = () => {
+const CourseUk= () => {
   const location = useLocation();
   const navigate = useNavigate();
   const [filteredPrograms, setFilteredPrograms] = useState([]);
 
   useEffect(() => {
     const searchCriteria = location.state || {};
-    const filtered = programs.filter(
+    const filtered = courses.filter(
       (program) =>
-        !searchCriteria.course ||
-        program.title
-          .toLowerCase()
-          .includes(searchCriteria.course?.toLowerCase())
+        (!searchCriteria.course ||
+          program.title.toLowerCase().includes(searchCriteria.course?.toLowerCase()))
     );
 
     setFilteredPrograms(filtered.length > 0 ? filtered : null);
   }, [location.state]);
 
-  const handleViewDetails = (link) => {
-    navigate(link);
+  const handleViewDetails = (course) => {
+    navigate("/course-detail", {
+      state: {
+        courseName: course.title,
+        universityName: course.university,
+        countryName: course.location.trim(),
+        worldRanking: course.worldRanking,
+        degree: course.degree,
+        intakeDate: course.intakeDate,
+        entryScore: course.entryScore,
+        fees: course.fees,
+      },
+    });
   };
 
-  const handleContactClick = () => {
-    navigate("/contact");
+  const handleContactAIEC = () => {
+    navigate("/formpage");
   };
 
   return (
@@ -3575,8 +3584,7 @@ const CourseUk = () => {
         {filteredPrograms ? (
           <>
             <DataCount size="1.5em" bold>
-              Found {filteredPrograms.length} programs according to your
-              criteria in UK.
+              Found {filteredPrograms.length} programs according to your criteria in United Kingdom.
             </DataCount>
             <GridContainer>
               {filteredPrograms.map((program, index) => (
@@ -3591,15 +3599,14 @@ const CourseUk = () => {
                       <FontAwesomeIcon icon={faFileAlt} /> {program.Certified}
                     </p> */}
                     <p>
-                      <FontAwesomeIcon icon={faMapMarkerAlt} />{" "}
-                      {program.location}
+                      <FontAwesomeIcon icon={faMapMarkerAlt} /> {program.location}
                     </p>
                     <p>
                       <FontAwesomeIcon icon={faEarth} /> World Ranking:{" "}
                       {program.worldRanking}
                     </p>
                     <p>
-                      <FontAwesomeIcon icon={faCalendarAlt} /> Intake:{" "}
+                      <FontAwesomeIcon icon={faCalendarAlt} />  Intake:{" "}
                       {program.intakeDate}
                     </p>
                     <p>
@@ -3607,18 +3614,16 @@ const CourseUk = () => {
                       {program.entryScore}
                     </p>
                     <p>
-                      <FontAwesomeIcon icon={faDollarSign} /> Fees:
-                      <ContactLink onClick={handleContactClick}>
+                      <FontAwesomeIcon icon={faDollarSign} /> Fees: 
+                      {/* <ContactLink onClick={handleContactClick}>
                         {program.fees}
-                      </ContactLink>
+                      </ContactLink> */}
                     </p>
                   </ProgramDetails>
-                  <ViewDetailsButton
-                    onClick={() => handleViewDetails(program.link)}
-                  >
-                    View details
-                  </ViewDetailsButton>
-                </ProgramCard>
+                  <ViewDetailsButton onClick={() => handleViewDetails(program)}>
+              View details
+            </ViewDetailsButton>
+          </ProgramCard>
               ))}
             </GridContainer>
           </>
@@ -3629,10 +3634,6 @@ const CourseUk = () => {
         )}
       </Container>
 
-      <FormPage />
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 };
