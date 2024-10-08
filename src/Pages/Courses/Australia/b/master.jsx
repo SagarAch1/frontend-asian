@@ -14,7 +14,7 @@ import {
 import Footer from "../../../Homepage/Footer";
 import FormPage from "../../../Homepage/FormPage";
 
-const programs = [
+const courses = [
   //for Certified//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   {
     title: "Business and Management",
@@ -2635,7 +2635,7 @@ const CourseAustralia = () => {
 
   useEffect(() => {
     const searchCriteria = location.state || {};
-    const filtered = programs.filter(
+    const filtered = courses.filter(
       (program) =>
         (!searchCriteria.course ||
           program.title.toLowerCase().includes(searchCriteria.course?.toLowerCase()))
@@ -2644,12 +2644,23 @@ const CourseAustralia = () => {
     setFilteredPrograms(filtered.length > 0 ? filtered : null);
   }, [location.state]);
 
-  const handleViewDetails = (link) => {
-    navigate(link);
+  const handleViewDetails = (course) => {
+    navigate("/course-detail", {
+      state: {
+        courseName: course.title,
+        universityName: course.university,
+        countryName: course.location.trim(),
+        worldRanking: course.worldRanking,
+        degree: course.degree,
+        intakeDate: course.intakeDate,
+        entryScore: course.entryScore,
+        fees: course.fees,
+      },
+    });
   };
 
-  const handleContactClick = () => {
-    navigate("/contact");
+  const handleContactAIEC = () => {
+    navigate("/formpage");
   };
 
   return (
@@ -2669,9 +2680,9 @@ const CourseAustralia = () => {
                       <FontAwesomeIcon icon={faBook} />{" "}
                       <strong>{program.title}</strong>
                     </p>
-                    <p>
+                    {/* <p>
                       <FontAwesomeIcon icon={faFileAlt} /> {program.Certified}
-                    </p>
+                    </p> */}
                     <p>
                       <FontAwesomeIcon icon={faMapMarkerAlt} /> {program.location}
                     </p>
@@ -2680,7 +2691,7 @@ const CourseAustralia = () => {
                       {program.worldRanking}
                     </p>
                     <p>
-                      <FontAwesomeIcon icon={faCalendarAlt} /> Next Intake:{" "}
+                      <FontAwesomeIcon icon={faCalendarAlt} />  Intake:{" "}
                       {program.intakeDate}
                     </p>
                     <p>
@@ -2689,17 +2700,15 @@ const CourseAustralia = () => {
                     </p>
                     <p>
                       <FontAwesomeIcon icon={faDollarSign} /> Fees: 
-                      <ContactLink onClick={handleContactClick}>
+                      {/* <ContactLink onClick={handleContactClick}>
                         {program.fees}
-                      </ContactLink>
+                      </ContactLink> */}
                     </p>
                   </ProgramDetails>
-                  <ViewDetailsButton
-                    onClick={() => handleViewDetails(program.link)}
-                  >
-                    View details
-                  </ViewDetailsButton>
-                </ProgramCard>
+                  <ViewDetailsButton onClick={() => handleViewDetails(program)}>
+              View details
+            </ViewDetailsButton>
+          </ProgramCard>
               ))}
             </GridContainer>
           </>
@@ -2710,11 +2719,6 @@ const CourseAustralia = () => {
         )}
       </Container>
 
-      <FormPage />
-      
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 };
