@@ -1,71 +1,60 @@
-/* Container for the gallery */
+/* Grid layout for gallery display */
 .gallery-container {
-    margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Cover image style */
-  .gallery-image {
-    width: 100%;
-    height: 300px;
-    object-fit: cover; /* Keep cover for the cover image */
-    border-radius: 8px;
-  }
-  
-  /* Gallery card styling */
-  .gallery-card {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Gallery card header */
-  .gallery-card-header {
-    margin-bottom: 10px;
-  }
-  
-  /* Gallery title styling */
-  .gallery-title {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  /* Button styling */
-  .btn {
-    width: 150px;
-  }
-  
-  /* Grid for the gallery images when expanded */
-  .gallery-more-images {
-    margin-top: 10px;
-  }
-  
-  .gallery-more-images .row {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .gallery-more-images .col {
-    margin-bottom: 10px;
-  }
-  
-  /* Full image display for view more images */
-  .gallery-image-full {
-    width: 100%;   /* Full width */
-    height: auto;  /* Auto height to maintain aspect ratio */
-    border-radius: 8px;
-  }
-  
-  /* Forcing the image to fit completely within its container */
-  .gallery-image-full {
-    object-fit: contain;  /* Ensure the full image is shown without cropping */
-  }
-  
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.gallery-card {
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+/* Full-screen overlay styling */
+.full-screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Full-screen gallery layout */
+.full-screen-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 90%;
+  max-height: 80%;
+  overflow-y: auto;
+}
+
+.gallery-fullscreen-image {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  margin: 10px;
+  border-radius: 8px;
+}

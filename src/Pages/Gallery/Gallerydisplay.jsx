@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { getGalleryApi } from "../../apis/Api"; 
-import "./gallery.css"; 
+import { getGalleryApi } from "../../apis/Api";
+import "./gallery.css";
 
 const GalleryDisplay = () => {
   const [galleries, setGalleries] = useState([]);
@@ -16,8 +16,12 @@ const GalleryDisplay = () => {
       });
   }, []);
 
-  const handleViewMore = (galleryId) => {
-    setExpandedGallery(galleryId === expandedGallery ? null : galleryId); // Toggle view more
+  const handleImageClick = (galleryId) => {
+    setExpandedGallery(galleryId === expandedGallery ? null : galleryId); // Toggle full screen mode
+  };
+
+  const closeFullScreen = () => {
+    setExpandedGallery(null); // Close the full screen mode
   };
 
   return (
@@ -29,44 +33,33 @@ const GalleryDisplay = () => {
             <div className="col" key={gallery._id}>
               <div className="gallery-card">
                 <div className="gallery-card-header">
-                  {/* Display the first (cover) image */}
                   <img
                     src={`http://localhost:5000/gallery/${gallery.galleryImages[0]}`}
                     className="gallery-image"
                     alt="Gallery Cover"
+                    onClick={() => handleImageClick(gallery._id)} // Now clicking the image expands it
                   />
                 </div>
                 <div className="gallery-card-body">
                   <h5 className="gallery-title">{gallery.galleryName}</h5>
-
-                  {/* Display View More button if there are more than 1 images */}
-                  {gallery.galleryImages.length > 1 && (
-                    <button
-                      className="btn btn-primary mt-2"
-                      onClick={() => handleViewMore(gallery._id)}
-                    >
-                      {expandedGallery === gallery._id ? "View Less" : "View More"}
-                    </button>
-                  )}
-
-                  {/* Show additional images in rows of three if the gallery is expanded */}
-                  {expandedGallery === gallery._id && (
-                    <div className="gallery-more-images mt-3">
-                      <div className="row row-cols-1 row-cols-md-3 g-3">
-                        {gallery.galleryImages.slice(1).map((image, index) => (
-                          <div className="col" key={index}>
-                            <img
-                              src={`http://localhost:5000/gallery/${image}`}
-                              className="gallery-image-full"  /* Updated CSS class */
-                              alt={`Gallery Image ${index + 1}`}
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  )}
                 </div>
               </div>
+
+              {/* Full screen mode for the clicked gallery */}
+              {expandedGallery === gallery._id && (
+                <div className="full-screen-overlay" onClick={closeFullScreen}>
+                  <div className="full-screen-gallery">
+                    {gallery.galleryImages.map((image, index) => (
+                      <img
+                        key={index}
+                        src={`http://localhost:5000/gallery/${image}`}
+                        className="gallery-fullscreen-image"
+                        alt={`Gallery Image ${index + 1}`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           ))
         ) : (

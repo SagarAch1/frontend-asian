@@ -57,7 +57,7 @@ const CourseDetail = () => {
                 <strong>Duration:</strong> 4 Years
               </p>
               <p>
-                <strong>Next Intake:</strong> 06 January 2025
+                <strong> Intakes:</strong>  Jan (Spring), May (Summer), August (Fall)
               </p>
               <p>
                 <strong>Entry Score:</strong> 6.0 IELTS
