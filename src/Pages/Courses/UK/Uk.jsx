@@ -23,7 +23,7 @@ const courses = [
     worldRanking: "50",
     degree: "Certification",
     intakeDate: "Jan, May, September",
-    entryScore: "IELTS 6.5",
+    entryScore: "IELTS 6.0",
     fees: "Contact AIEC",
     link: "/bachelorofdesign",
   },
