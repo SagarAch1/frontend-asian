@@ -4,6 +4,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaTiktok,
+  FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
 
@@ -34,30 +35,36 @@ const Footer = () => {
             </p>
             <div>
               <a
-                href="https://facebook.com"
+                href="https://www.facebook.com/asian.edu.np"
                 style={{ color: "#fff", marginRight: "10px" }}
               >
                 <FaFacebook />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/asian.edu.np/"
                 style={{ color: "#fff", marginRight: "10px" }}
               >
                 <FaInstagram />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://x.com/asianedunp"
+                style={{ color: "#fff", marginRight: "10px" }}
+              >
+                <FaTwitter />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/asianedunp1"
                 style={{ color: "#fff", marginRight: "10px" }}
               >
                 <FaLinkedin />
               </a>
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@asian.edu.np1"
                 style={{ color: "#fff", marginRight: "10px" }}
               >
                 <FaYoutube />
               </a>
-              <a href="https://tiktok.com" style={{ color: "#fff" }}>
+              <a href="https://www.tiktok.com/@asian.edu.np" style={{ color: "#fff" }}>
                 <FaTiktok />
               </a>
             </div>
