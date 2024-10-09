@@ -2,6 +2,14 @@ import React from "react";
 import { Dropdown } from "react-bootstrap"; // Import Dropdown from react-bootstrap if using react-bootstrap
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaLinkedin,
+  FaYoutube,
+  FaTiktok,
+} from "react-icons/fa"; // Import social media icons
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -14,6 +22,16 @@ const Navbar = () => {
     localStorage.clear();
     toast.success("Successfully logged out");
     navigate("/login");
+  };
+
+  // Social media URLs
+  const socialLinks = {
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/",
+    twitter: "https://twitter.com/",
+    linkedin: "https://www.linkedin.com/",
+    youtube: "https://www.youtube.com/",
+    tiktok: "https://www.tiktok.com/",
   };
 
   return (
@@ -72,21 +90,71 @@ const Navbar = () => {
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
-              to="aiecglobal"
+              to="/aiecglobal"
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >
               About us
             </Link>
           </li>
+
+          {/* Social Dropdown */}
           <li className="nav-item mx-3">
-            <Link
-              className="nav-link text-white"
-              to="/social"
-              style={{ fontWeight: "bold", fontSize: "18px" }}
-            >
-              Social
-            </Link>
+            <Dropdown>
+              <Dropdown.Toggle
+                variant="link"
+                className="nav-link text-white"
+                style={{ fontWeight: "bold", fontSize: "18px" }}
+              >
+                Social
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaFacebook className="me-2" /> Facebook
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaInstagram className="me-2" /> Instagram
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href={socialLinks.twitter}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaTwitter className="me-2" /> Twitter
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href={socialLinks.linkedin}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaLinkedin className="me-2" /> LinkedIn
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href={socialLinks.youtube}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaYoutube className="me-2" /> YouTube
+                </Dropdown.Item>
+                <Dropdown.Item
+                  href={socialLinks.tiktok}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaTiktok className="me-2" /> TikTok
+                </Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </li>
+
           <li className="nav-item mx-3">
             <Link
               className="nav-link text-white"
