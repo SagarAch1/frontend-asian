@@ -24,14 +24,14 @@ const Navbar = () => {
     navigate("/login");
   };
 
-  // Social media URLs
+  // Custom social media URLs
   const socialLinks = {
-    facebook: "https://www.facebook.com/",
-    instagram: "https://www.instagram.com/",
-    twitter: "https://twitter.com/",
-    linkedin: "https://www.linkedin.com/",
-    youtube: "https://www.youtube.com/",
-    tiktok: "https://www.tiktok.com/",
+    facebook: "https://www.facebook.com/asian.edu.np",
+    instagram: "https://www.instagram.com/asian.edu.np/",
+    twitter: "https://x.com/asianedunp",
+    linkedin: "https://www.linkedin.com/company/asianedunp1",
+    youtube: "https://www.youtube.com/@asian.edu.np1",
+    tiktok: "https://www.tiktok.com/@asian.edu.np",
   };
 
   return (
