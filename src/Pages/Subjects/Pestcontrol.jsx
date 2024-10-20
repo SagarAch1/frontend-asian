@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
+import FormPage from "../Homepage/FormPage";
 
 const PestControl = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -79,6 +80,17 @@ const PestControl = () => {
     color: "#666",
   };
 
+//   const faqSubtitleStyle = {
+//     fontWeight: "bold",
+//     marginTop: "10px",
+//     color: "#333",
+//   };
+const faqSubtitleStyle = {
+    fontWeight: 'bold',
+    marginTop: '10px',
+    color: '#333',
+  };
+
   const faqItems = [
     {
       title: "About Pest and Weed Control",
@@ -88,22 +100,26 @@ const PestControl = () => {
     {
       title: "Is Pest and Weed Control right for me?",
       content:
-        "This field is perfect for those with an interest in biology, agriculture, and environmental science. It requires analytical skills and hands-on application in the field.",
+        "If you want a career in Pest and Weed Control, you must be comfortable working outdoors. Entomologists must not be afraid of insects and must be ready to handle them and their waste. Pest and weed specialists need high observation skills because their work often needs them to observe and record facts about insect behaviour, appearance, and habitat. Aside from that, depending on the work, Pest and Weed Control specialists must have good communication skills to convey their findings in writing to academics, students, policymakers, and other stakeholders. They must be able to draw conclusions from data gathered through research, observation, and experiments, which necessitates strong critical thinking abilities. If this sounds like you, then Pest and Weed Control might be a good choice for you.",
     },
     {
       title: "Pest and Weed Control study options and costs",
       content:
-        "There are multiple study options ranging from certificates to degrees. Costs vary by institution and location, but typically range from $10,000 to $30,000 annually.",
+        "A bachelor’s program in Pest and Weed Control takes about 4 years to complete and costs around $7,408-$18,634 per year in the US. The master’s program is 1-3 years long depending on your area of specialisation. The average tuition & fees of the Plant Protection and Integrated Pest Management programme are between $10,067 to $25,468 in the US.",
     },
     {
       title: "Future outlook",
       content:
-        "The future of pest and weed control is promising, with an increasing need for sustainable agriculture and environmental protection. Job growth is expected in the coming years.",
+        "The need for more crop production and better plant life has increased now more than ever before. A large part of reason is the booming population. With increased demand, the risk and complications of plant diseases has also increased. Thus, we need Pest and Weed Control specialists to help us keep productions high and prevent crop failures. According to U.S. Bureau of Labor Statistics, from 2020 to 2030, new jobs for agricultural and food scientists are expected to grow at a rate of 9%. Moreover, agricultural and food scientists are expected to have about 4,400 job opportunities each year this decade.",
     },
     {
-      title: "Career pathways for Pest and Weed Control graduates",
-      content:
-        "Graduates can pursue careers in agricultural management, research, environmental consulting, and pest control services, with potential for international work.",
+        title: 'Career pathways for Pest and Weed Control graduates',
+        subtitle1: 'Entomologist',
+        content1: 'Entomologists are scientists who study insects and pests. They conduct experimental research with insects in controlled or naturalistic settings. They also gather and evaluate biological data and specimens to learn more about insect traits, such as relationships with other species, habitat, reproduction, population dynamics, illnesses, and migratory patterns.',
+        subtitle2: 'Crop Consultant',
+        content2: 'A crop consultant or advisor provides advice on crop management, including seed planting, fertilisation, pest management, and treatment for plant diseases. Crop consultants can assist growers all around the globe increase crop productivity.',
+        subtitle3: 'Horticulturist',
+        content3: 'Growing crops, fruits, nuts, seeds, herbs, sprouts, mushrooms, flowers, grass, and ornamental trees in gardens is the role of a horticulturist. Horticulturists are responsible for boosting plant output, vigour, size, and flavour. They also coordinate certain crop research initiatives. Horticulturists need good knowledge in a wide range of plants, including trees, flowers, vegetables, nuts, bushes, and fruits.',
     },
   ];
 
@@ -153,25 +169,43 @@ const PestControl = () => {
       </div>
 
       {/* FAQ section */}
-      <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
-        {faqItems.map((item, index) => (
-          <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-              <span>{item.title}</span>
-              <span>{activeIndex === index ? "-" : "+"}</span>
-            </div>
-            {activeIndex === index && (
-              <div style={faqContentStyle}>
-                <p>{item.content}</p>
-              </div>
-            )}
-          </div>
-        ))}
+      {/* FAQ section */}
+<div style={faqSectionStyle}>
+  <h2>Subject Overview</h2>
+  {faqItems.map((item, index) => (
+    <div key={index} style={faqItemStyle}>
+      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+        <span>{item.title}</span>
+        <span>{activeIndex === index ? "-" : "+"}</span>
       </div>
+      {activeIndex === index && (
+        <div style={faqContentStyle}>
+          {/* Check for subtitles and content */}
+          {item.subtitle1 && (
+            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+          )}
+          {item.content1 && <p>{item.content1}</p>}
+          {item.subtitle2 && (
+            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+          )}
+          {item.content2 && <p>{item.content2}</p>}
+          {item.subtitle3 && (
+            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+          )}
+          {item.content3 && <p>{item.content3}</p>}
+          {item.content && <p>{item.content}</p>}
 
-      {/* Footer section */}
-      <Footer />
+          
+           {/* For items with single content */}
+        </div>
+      )}
+    </div>
+  ))}
+</div>
+
+<FormPage />
+<Footer />
+
     </div>
   );
 };
