@@ -108,6 +108,7 @@ import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
 import PestControl from "./Pages/Subjects/Pestcontrol";
 import PlantScience from "./Pages/Subjects/Studyplantscience";
+import HoriCulture from "./Pages/Subjects/Horticulture";
 
 
 
@@ -142,6 +143,7 @@ function App() {
         <Route path="/aiecworkshop" element={<Aiecworkshop />} />
         <Route path="/pestandweedcontrol" element={<PestControl />} />
         <Route path="/plantsciences" element={<PlantScience />} />
+        <Route path="/horticultureandviticulture" element={<HoriCulture />} />
        
    
 
