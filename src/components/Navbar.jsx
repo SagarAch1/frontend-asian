@@ -9,6 +9,7 @@ import {
   FaLinkedin,
   FaYoutube,
   FaTiktok,
+  FaWhatsapp,
 } from "react-icons/fa"; // Import social media icons
 
 const Navbar = () => {
@@ -32,6 +33,7 @@ const Navbar = () => {
     linkedin: "https://www.linkedin.com/company/asianedunp1",
     youtube: "https://www.youtube.com/@asian.edu.np1",
     tiktok: "https://www.tiktok.com/@asian.edu.np",
+    whatsapp: "https://api.whatsapp.com/send?phone=9779851053943",
   };
 
   return (
@@ -151,6 +153,13 @@ const Navbar = () => {
                 >
                   <FaTiktok className="me-2" /> TikTok
                 </Dropdown.Item>
+                <Dropdown.Item
+                  href={socialLinks.whatsapp}
+                  target="_blank"
+                  className="d-flex align-items-center social-item"
+                >
+                  <FaWhatsapp className="me-2" /> Whatsapp
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </li>
@@ -183,7 +192,7 @@ const Navbar = () => {
                   Profile
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/contact">
-                  Report
+                  Report 
                 </Dropdown.Item>
                 <Dropdown.Item as={Link} to="/userorder">
                   My Order

@@ -90,11 +90,23 @@ const BelowNavbar = () => {
             },
             {
               title: "Study Destinations",
-              content: ["USA", "UK", "Australia", "Canada", "New Zealand","Ireland"],
+              content: [
+                "USA",
+                "UK",
+                "Australia",
+                "Canada",
+                "New Zealand",
+                "Ireland",
+              ],
             },
             {
               title: "Find a Course",
-              content: ["Course Advice", "Fastlane Courses", "Scholarships","University Ranking-THE","University Ranking-CUG"],
+              content: [
+                "Course Advice",
+                "Fastlane Courses",
+                "Scholarships",
+                "University Ranking-THE",
+              ],
             },
             {
               title: "Test Preparation",
@@ -176,8 +188,6 @@ const BelowNavbar = () => {
                         ? handleNavigation("/scholarships")
                         : contentItem === "University Ranking-THE"
                         ? handleNavigation("/universityrankingthe")
-                        : contentItem === "University Ranking-CUG"
-                        ? handleNavigation("/universityrankingcug")
                         : contentItem === "Airport Pickup"
                         ? handleNavigation("/airportpickup")
                         : contentItem === "Guradianship"
@@ -187,7 +197,6 @@ const BelowNavbar = () => {
                         : contentItem === "Money Transfer"
                         ? handleNavigation("/moneytransfer")
                         : alert(`${contentItem} clicked`)
-
                     }
                   >
                     {contentItem}
