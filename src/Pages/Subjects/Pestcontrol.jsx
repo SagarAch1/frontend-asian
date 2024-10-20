@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Footer from '../Homepage/Footer';
 
 const PestControl = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -22,17 +23,32 @@ const PestControl = () => {
     padding: '50px',
   };
 
-  const statisticsStyle = {
+  const statisticsSection = {
     display: 'flex',
     justifyContent: 'space-around',
-    padding: '20px',
-    backgroundColor: '#f7f7f7',
+    padding: '40px',
+    backgroundColor: '#f8f9fa',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
   };
 
   const statItemStyle = {
-    width: '30%',
+    width: '22%',
     textAlign: 'center',
     fontSize: '16px',
+    backgroundColor: 'white',
+    padding: '20px',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.1)',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    color: '#333',
+  };
+
+  const iconStyle = {
+    fontSize: '40px',
+    color: '#4CAF50', // Change color to make it attractive
+    marginBottom: '10px',
   };
 
   const faqSectionStyle = {
@@ -43,19 +59,24 @@ const PestControl = () => {
   const faqItemStyle = {
     backgroundColor: 'white',
     marginBottom: '10px',
-    padding: '10px',
+    padding: '15px',
+    borderRadius: '8px',
     cursor: 'pointer',
+    boxShadow: '0 2px 6px rgba(0,0,0,0.1)',
   };
 
   const faqTitleStyle = {
     display: 'flex',
     justifyContent: 'space-between',
     fontSize: '18px',
+    fontWeight: 'bold',
+    color: '#555',
   };
 
   const faqContentStyle = {
     padding: '10px 0',
     fontSize: '14px',
+    color: '#666',
   };
 
   const faqItems = [
@@ -85,22 +106,29 @@ const PestControl = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Pest and Weed Control abroad</h1>
+        <h1>Study Pest and Weed Control Abroad</h1>
         <p>
           Pest and Weed Control is the science of utilizing tools and tactics to assess and manage pests for greater crop yield. Students of this programme find employment in sectors such as agri-business, natural resource management, and crop production.
         </p>
       </div>
 
       {/* Statistics section */}
-      <div style={statisticsStyle}>
+      <div style={statisticsSection}>
         <div style={statItemStyle}>
-          <p>$74,160: average annual salary for agricultural scientists</p>
+          <div style={iconStyle}>🌟</div>
+          <p><strong>$74,160</strong>: Average annual salary for agricultural scientists</p>
         </div>
         <div style={statItemStyle}>
-          <p>Projected job openings for agricultural workers every year this decade</p>
+          <div style={iconStyle}>📈</div>
+          <p><strong>Projected job openings</strong> for agricultural workers every year this decade</p>
         </div>
         <div style={statItemStyle}>
-          <p>9% projected job growth for agricultural scientists in job market by 2030</p>
+          <div style={iconStyle}>💼</div>
+          <p><strong>9% projected job growth</strong> for agricultural scientists by 2030</p>
+        </div>
+        <div style={statItemStyle}>
+          <div style={iconStyle}>🔧</div>
+          <p><strong>Projected job openings</strong> for ground maintenance workers every year</p>
         </div>
       </div>
 
@@ -121,6 +149,9 @@ const PestControl = () => {
           </div>
         ))}
       </div>
+
+      {/* Footer section */}
+      <Footer />
     </div>
   );
 };
