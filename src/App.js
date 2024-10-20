@@ -92,6 +92,10 @@ import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
 import Undergraduatescholar from "./Pages/Scholarships/Undergraduatescholarship";
 import Vetscholar from "./Pages/Scholarships/Vetscholarship";
 import Allsubjects from "./Pages/Subjects/Allsubjects";
+import CropScience from "./Pages/Subjects/Cropscience";
+import HoriCulture from "./Pages/Subjects/Horticulture";
+import PestControl from "./Pages/Subjects/Pestcontrol";
+import PlantScience from "./Pages/Subjects/Studyplantscience";
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
@@ -106,11 +110,6 @@ import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
 import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement";
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
-import PestControl from "./Pages/Subjects/Pestcontrol";
-import PlantScience from "./Pages/Subjects/Studyplantscience";
-import HoriCulture from "./Pages/Subjects/Horticulture";
-
-
 
 import OurTeam from "./Pages/Ourteam/OurTeam";
 import Support from "./Pages/Support/Support";
@@ -118,11 +117,11 @@ import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
 
-import AdminRoutes from "./protected_routes/AdminRoutes";
-import UserRoutes from "./protected_routes/UserRoutes";
-import UpcomingNews from "./Pages/Newsarticles/News";
 import GalleryDisplay from "./Pages/Gallery/Gallerydisplay";
 import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
+import UpcomingNews from "./Pages/Newsarticles/News";
+import AdminRoutes from "./protected_routes/AdminRoutes";
+import UserRoutes from "./protected_routes/UserRoutes";
 
 function App() {
   return (
@@ -144,8 +143,7 @@ function App() {
         <Route path="/pestandweedcontrol" element={<PestControl />} />
         <Route path="/plantsciences" element={<PlantScience />} />
         <Route path="/horticultureandviticulture" element={<HoriCulture />} />
-       
-   
+        <Route path="/cropsciences" element={<CropScience />} />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
