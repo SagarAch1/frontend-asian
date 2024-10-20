@@ -107,6 +107,7 @@ import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement"
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
 import PestControl from "./Pages/Subjects/Pestcontrol";
+import PlantScience from "./Pages/Subjects/Studyplantscience";
 
 
 
@@ -139,7 +140,8 @@ function App() {
         <Route path="/news" element={<Createnews />} />
         <Route path="/gallerycreate" element={<Gallerycreate />} />
         <Route path="/aiecworkshop" element={<Aiecworkshop />} />
-        <Route path="/pestcontrol" element={<PestControl />} />
+        <Route path="/pestandweedcontrol" element={<PestControl />} />
+        <Route path="/plantsciences" element={<PlantScience />} />
        
    
 

@@ -80,11 +80,7 @@ const PestControl = () => {
     color: "#666",
   };
 
-//   const faqSubtitleStyle = {
-//     fontWeight: "bold",
-//     marginTop: "10px",
-//     color: "#333",
-//   };
+
 const faqSubtitleStyle = {
     fontWeight: 'bold',
     marginTop: '10px',
