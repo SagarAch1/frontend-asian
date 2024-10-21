@@ -101,6 +101,8 @@ import TaxAccounting from "./Pages/Subjects/Taxaccounting";
 import Fishery from "./Pages/Subjects/Fishery";
 import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
 import Architecture from "./Pages/Subjects/Architecture";
+import HumanWelfare from "./Pages/Subjects/Humanwelfare";
+import Fashion from "./Pages/Subjects/Fashion";
 
 
 
@@ -155,10 +157,13 @@ function App() {
         <Route path="/cropsciences" element={<CropScience />} />
         <Route path="/woolscience" element={<WoolScience />} />
         <Route path="/fisheriesstudies" element={<Fishery />} />
+        <Route path="/fashionmerchandise" element={<Fashion />} />
 
         <Route path="/taxation" element={<TaxAccounting />} />
         <Route path="/pharmaceuticalscience" element={<Pharmaceutical />} />
         <Route path="/architecture" element={<Architecture />} />
+        <Route path="/humanwelfarestudiesandservices" element={<HumanWelfare />} />
+
 
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
