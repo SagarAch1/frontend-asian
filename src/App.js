@@ -103,6 +103,8 @@ import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
 import Architecture from "./Pages/Subjects/Architecture";
 import HumanWelfare from "./Pages/Subjects/Humanwelfare";
 import Fashion from "./Pages/Subjects/Fashion";
+import Visualarts from "./Pages/Subjects/Visualarts";
+import Productdesign from "./Pages/Subjects/Productdesign";
 
 
 
@@ -163,6 +165,8 @@ function App() {
         <Route path="/pharmaceuticalscience" element={<Pharmaceutical />} />
         <Route path="/architecture" element={<Architecture />} />
         <Route path="/humanwelfarestudiesandservices" element={<HumanWelfare />} />
+        <Route path="/visualarts" element={<Visualarts />} />
+        <Route path="/productdesign" element={<Productdesign />} />
 
 
 
