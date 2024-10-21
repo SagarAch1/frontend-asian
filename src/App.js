@@ -98,6 +98,7 @@ import PestControl from "./Pages/Subjects/Pestcontrol";
 import PlantScience from "./Pages/Subjects/Studyplantscience";
 import WoolScience from "./Pages/Subjects/Woolscience";
 import TaxAccounting from "./Pages/Subjects/Taxaccounting";
+import Fishery from "./Pages/Subjects/Fishery";
 
 
 
@@ -151,6 +152,7 @@ function App() {
         <Route path="/horticultureandviticulture" element={<HoriCulture />} />
         <Route path="/cropsciences" element={<CropScience />} />
         <Route path="/woolscience" element={<WoolScience />} />
+        <Route path="/fisheriesstudies" element={<Fishery />} />
 
         <Route path="/taxation" element={<TaxAccounting />} />
 
