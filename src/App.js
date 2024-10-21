@@ -97,6 +97,11 @@ import HoriCulture from "./Pages/Subjects/Horticulture";
 import PestControl from "./Pages/Subjects/Pestcontrol";
 import PlantScience from "./Pages/Subjects/Studyplantscience";
 import WoolScience from "./Pages/Subjects/Woolscience";
+import TaxAccounting from "./Pages/Subjects/Taxaccounting";
+
+
+
+
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
@@ -146,6 +151,8 @@ function App() {
         <Route path="/horticultureandviticulture" element={<HoriCulture />} />
         <Route path="/cropsciences" element={<CropScience />} />
         <Route path="/woolscience" element={<WoolScience />} />
+
+        <Route path="/taxation" element={<TaxAccounting />} />
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
