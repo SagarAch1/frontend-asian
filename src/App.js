@@ -99,6 +99,7 @@ import PlantScience from "./Pages/Subjects/Studyplantscience";
 import WoolScience from "./Pages/Subjects/Woolscience";
 import TaxAccounting from "./Pages/Subjects/Taxaccounting";
 import Fishery from "./Pages/Subjects/Fishery";
+import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
 
 
 
@@ -155,6 +156,8 @@ function App() {
         <Route path="/fisheriesstudies" element={<Fishery />} />
 
         <Route path="/taxation" element={<TaxAccounting />} />
+        <Route path="/pharmaceuticalscience" element={<Pharmaceutical />} />
+
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
