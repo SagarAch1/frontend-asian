@@ -106,6 +106,7 @@ import Fashion from "./Pages/Subjects/Fashion";
 import Visualarts from "./Pages/Subjects/Visualarts";
 import Productdesign from "./Pages/Subjects/Productdesign";
 import Industrialdesign from "./Pages/Subjects/Industrialdesign";
+import Graphicanddesign from "./Pages/Subjects/Graphicanddesign";
 
 
 
@@ -169,6 +170,7 @@ function App() {
         <Route path="/visualarts" element={<Visualarts />} />
         <Route path="/productdesign" element={<Productdesign />} />
         <Route path="/industrialdesign" element={<Industrialdesign />} />
+        <Route path="/graphicanddesignstudies" element={<Graphicanddesign />} />
 
 
 
