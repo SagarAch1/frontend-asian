@@ -100,6 +100,7 @@ import WoolScience from "./Pages/Subjects/Woolscience";
 import TaxAccounting from "./Pages/Subjects/Taxaccounting";
 import Fishery from "./Pages/Subjects/Fishery";
 import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
+import Architecture from "./Pages/Subjects/Architecture";
 
 
 
@@ -157,6 +158,7 @@ function App() {
 
         <Route path="/taxation" element={<TaxAccounting />} />
         <Route path="/pharmaceuticalscience" element={<Pharmaceutical />} />
+        <Route path="/architecture" element={<Architecture />} />
 
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
