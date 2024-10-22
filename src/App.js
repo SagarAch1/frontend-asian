@@ -120,6 +120,7 @@ import Technology from "./Pages/Subjects/Technology";
 import Planning from "./Pages/Subjects/Planning";
 import Landscapedesign from "./Pages/Subjects/Landscapedesign";
 import Townplanning from "./Pages/Subjects/Townplanning";
+import Psycology from "./Pages/Subjects/Psycology";
 
 
 
@@ -197,6 +198,7 @@ function App() {
         <Route path="/planning" element={<Planning />} />
         <Route path="/landscapedesignandarchitecture" element={<Landscapedesign />} />
         <Route path="/townplanning" element={<Townplanning />} />
+        <Route path="/psychology" element={<Psycology />} />
 
 
 
