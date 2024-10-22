@@ -113,6 +113,8 @@ import Vediogame from "./Pages/Subjects/Vediogame";
 import DigitalProduction from "./Pages/Subjects/Digitalproduction";
 import Pharmacology from "./Pages/Subjects/Pharmacology";
 import Botany from "./Pages/Subjects/Botany";
+import Forensics from "./Pages/Subjects/Forensics";
+import Biotechnology from "./Pages/Subjects/Biotechnology";
 
 
 
@@ -183,6 +185,9 @@ function App() {
         <Route path="/digitalproduction" element={<DigitalProduction />} />
         <Route path="/pharmacology" element={<Pharmacology />} />
         <Route path="/botany" element={<Botany />} />
+        <Route path="/forensics" element={<Forensics />} />
+        <Route path="/Biotechnology" element={<Biotechnology />} />
+
 
 
 
