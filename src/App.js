@@ -108,6 +108,9 @@ import Productdesign from "./Pages/Subjects/Productdesign";
 import Industrialdesign from "./Pages/Subjects/Industrialdesign";
 import Graphicanddesign from "./Pages/Subjects/Graphicanddesign";
 import FashionDesign from "./Pages/Subjects/Fashiondesign";
+import ArtHistory from "./Pages/Subjects/Arthistory";
+import Vediogame from "./Pages/Subjects/Vediogame";
+import DigitalProduction from "./Pages/Subjects/Digitalproduction";
 
 
 
@@ -173,6 +176,9 @@ function App() {
         <Route path="/industrialdesign" element={<Industrialdesign />} />
         <Route path="/graphicanddesignstudies" element={<Graphicanddesign />} />
         <Route path="/fashiondesign" element={<FashionDesign />} />
+        <Route path="/arthistory" element={<ArtHistory />} />
+        <Route path="/videogamedevelopment" element={<Vediogame />} />
+        <Route path="/digitalproduction" element={<DigitalProduction />} />
 
 
 
