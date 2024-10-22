@@ -115,6 +115,9 @@ import Pharmacology from "./Pages/Subjects/Pharmacology";
 import Botany from "./Pages/Subjects/Botany";
 import Forensics from "./Pages/Subjects/Forensics";
 import Biotechnology from "./Pages/Subjects/Biotechnology";
+import Biochemistry from "./Pages/Subjects/Biochemistry";
+import Technology from "./Pages/Subjects/Technology";
+import Planning from "./Pages/Subjects/Planning";
 
 
 
@@ -187,6 +190,9 @@ function App() {
         <Route path="/botany" element={<Botany />} />
         <Route path="/forensics" element={<Forensics />} />
         <Route path="/Biotechnology" element={<Biotechnology />} />
+        <Route path="/biochemistry" element={<Biochemistry />} />
+        <Route path="/technology" element={<Technology />} />
+        <Route path="/planning" element={<Planning />} />
 
 
 
