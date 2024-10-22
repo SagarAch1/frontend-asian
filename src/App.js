@@ -111,6 +111,8 @@ import FashionDesign from "./Pages/Subjects/Fashiondesign";
 import ArtHistory from "./Pages/Subjects/Arthistory";
 import Vediogame from "./Pages/Subjects/Vediogame";
 import DigitalProduction from "./Pages/Subjects/Digitalproduction";
+import Pharmacology from "./Pages/Subjects/Pharmacology";
+import Botany from "./Pages/Subjects/Botany";
 
 
 
@@ -179,6 +181,8 @@ function App() {
         <Route path="/arthistory" element={<ArtHistory />} />
         <Route path="/videogamedevelopment" element={<Vediogame />} />
         <Route path="/digitalproduction" element={<DigitalProduction />} />
+        <Route path="/pharmacology" element={<Pharmacology />} />
+        <Route path="/botany" element={<Botany />} />
 
 
 

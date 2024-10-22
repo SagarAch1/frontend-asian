@@ -91,19 +91,24 @@ const DigitalProduction = () => {
       title: "About Digital Production",
       content1:
         "Digital Production is a new and interdisciplinary field that lies at the cross-section of film production, sound production, design, screenwriting, communication and film theory. It entails transforming creative ideas and assets such as text, images and interactive apps into a variety of digital media, and includes the production of digital music, streaming video, and other widely distributed content.",
-      content2: "Students learn how to assess and comprehend the media in their environment, create media in a variety of formats, and manage the commercial and technological demands of working in the media industry. The program teaches compelling storytelling for fiction and nonfiction genres using a variety of media. Students can provide a voice to their community and their stories by using and adapting to evolving technologies and critical thinking abilities.",
-      content3: "This course mandates hands-on learning and your university is likely to provide you access to high-power digital cameras, dolly systems, recording rooms, studios and technical assistance to prepare you for the real world. Could you be the next big production star?",
-        },
+      content2:
+        "Students learn how to assess and comprehend the media in their environment, create media in a variety of formats, and manage the commercial and technological demands of working in the media industry. The program teaches compelling storytelling for fiction and nonfiction genres using a variety of media. Students can provide a voice to their community and their stories by using and adapting to evolving technologies and critical thinking abilities.",
+      content3:
+        "This course mandates hands-on learning and your university is likely to provide you access to high-power digital cameras, dolly systems, recording rooms, studios and technical assistance to prepare you for the real world. Could you be the next big production star?",
+    },
     {
       title: "Is Digital Production right for me?",
       content1:
         "Students looking to break into a digital production school typically need to demonstrate an aptitude for creative arts and media. Through the course of these studies, students are trained on a variety of different production software. They are taught latest video production techniques and trends. Digital production master's programs are particularly hands-on and project-based, with a strong emphasis on creativity and personal expression. Courses emphasise creativity and teaching emerging video concepts, as well as individual and group project work.",
-      content2: "If you are passionate about production and see yourself as a future content producer, then digital production will ratchet you up quickly in the field of filmmaking, music production and much more.",    },
+      content2:
+        "If you are passionate about production and see yourself as a future content producer, then digital production will ratchet you up quickly in the field of filmmaking, music production and much more.",
+    },
     {
       title: "Digital Production study options and costs",
       content1:
         "A bachelor's degree in Digital Production could cost anywhere between $20,000-$30,000 per year in the US. A bachelor's degree typically takes three to four years to complete. On the other hand, the cost of a master's degree ranges from $30,000 to $40,000 in the US and generally is two years long.",
-      content2:"Digital production certificate programs normally run one year and can be completed before or after earning a degree. Some certificate programs follow the same curriculum as associate's degree programs, but they only teach the essential technical elements such as digital video technology, multimedia, and editing. These programs are appropriate for those seeking employment in the digital production area as well as those working in other fields (such as broadcasting) who would benefit from digital media abilities. Other certificate programs may concentrate on a single aspect of digital production, such as image editing or the use of a certain software application, in order to help students enhance their skills.",
+      content2:
+        "Digital production certificate programs normally run one year and can be completed before or after earning a degree. Some certificate programs follow the same curriculum as associate's degree programs, but they only teach the essential technical elements such as digital video technology, multimedia, and editing. These programs are appropriate for those seeking employment in the digital production area as well as those working in other fields (such as broadcasting) who would benefit from digital media abilities. Other certificate programs may concentrate on a single aspect of digital production, such as image editing or the use of a certain software application, in order to help students enhance their skills.",
     },
     {
       title: "Future outlook",
@@ -147,25 +152,28 @@ const DigitalProduction = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>4.79%</strong>:  projected expansion of the global animation market
+            <strong>4.79%</strong>: projected expansion of the global animation
+            market
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>$93,940</strong>  median annual salary for digital production managers in the US
+            <strong>$93,940</strong> median annual salary for digital production
+            managers in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>4%</strong>  expected growth of employment opportunities for multimedia arts this decade
+            <strong>4%</strong> expected growth of employment opportunities for
+            multimedia arts this decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>$77,700</strong>  medium annual salary for multimedia artists
+            <strong>$77,700</strong> medium annual salary for multimedia artists
           </p>
         </div>
       </div>
@@ -195,6 +203,15 @@ const DigitalProduction = () => {
                   <div style={faqSubtitleStyle}>{item.subtitle3}</div>
                 )}
                 {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
+                {item.content5 && <p>{item.content5}</p>}
+
                 {item.content && <p>{item.content}</p>}
 
                 {/* For items with single content */}
