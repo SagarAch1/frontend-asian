@@ -137,7 +137,7 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>$74,160</strong>: Average annual salary for agricultural
+            <strong>$74,160</strong> Average annual salary for agricultural
             scientists
           </p>
         </div>
