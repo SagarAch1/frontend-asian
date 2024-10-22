@@ -91,27 +91,33 @@ const Technology = () => {
       title: "About Technology",
       content1:
         "This field of study is designed to help students foster technical and professional competence in the field of technology. You are groomed for technology-leadership roles by undergoing a blend of technology, leadership, communication and research courses.",
-      content2:"There is massive global demand for technologists who can lead in culturally diverse teams. Studying Technology formally can help you identify gaps in your knowledge and equip you with strategies needed to excel in the contemporary technological world.",
+      content2:
+        "There is massive global demand for technologists who can lead in culturally diverse teams. Studying Technology formally can help you identify gaps in your knowledge and equip you with strategies needed to excel in the contemporary technological world.",
     },
     {
       title: "Is Technology right for me? ",
       content1:
         "A career in technology is best suited for a problem-solving mind. If you are detail-oriented and like a structured work environment, then you have the ideal mindset to flourish in the technology industry.",
-      content2:"Students who excelled in algebra, pre-calculus, geometry and physics during their high school have a solid foundation for technology studies. However, since the degree is relatively skill-focused, transitioning from other fields of study to technology will not be too troublesome. The only key ingredient to succeed in this field is a profound belief in the transformative capability of technology to make our lives and societies better.",
+      content2:
+        "Students who excelled in algebra, pre-calculus, geometry and physics during their high school have a solid foundation for technology studies. However, since the degree is relatively skill-focused, transitioning from other fields of study to technology will not be too troublesome. The only key ingredient to succeed in this field is a profound belief in the transformative capability of technology to make our lives and societies better.",
     },
     {
       title: "Study options and costs",
       content1:
         "There are an array of options when it comes to studying Technology. You can begin with a two-year associate degree which is sufficient for some entry-level jobs in the industry. Many institutes even offer the chance to progress an associate degree into a four-year bachelor’s degree. Note, several institutes provide apprenticeship opportunities, so be sure to check for this before choosing what college you apply to for your degree.",
-      content2:"A bachelor’s degree in Technology is offered as a BTech or BSc Tech or BEng. Technology degree. The key difference between these programmes is that a BSc program focuses mainly on the theoretical understanding of technology whereas BEng or BTech degrees emphasises more on the technical and applied aspect of technology.",
-      content3:"The next stage in Technology education after a bachelor’s degree is a master’s degree. This degree can help you grab leadership and managerial positions in the tech industry.",
-      content4:"International students can expect their bachelor’s degree to cost around $11,000-30,000 in annual tuition. Whereas a master’s degree in Technology will cost on average about $38,000 annually. Additional charges apply for apprenticeships, books and other resource material.",
+      content2:
+        "A bachelor’s degree in Technology is offered as a BTech or BSc Tech or BEng. Technology degree. The key difference between these programmes is that a BSc program focuses mainly on the theoretical understanding of technology whereas BEng or BTech degrees emphasises more on the technical and applied aspect of technology.",
+      content3:
+        "The next stage in Technology education after a bachelor’s degree is a master’s degree. This degree can help you grab leadership and managerial positions in the tech industry.",
+      content4:
+        "International students can expect their bachelor’s degree to cost around $11,000-30,000 in annual tuition. Whereas a master’s degree in Technology will cost on average about $38,000 annually. Additional charges apply for apprenticeships, books and other resource material.",
     },
     {
       title: "Future outlook",
       content1:
         "Worldwide there is a massive industry demand for cutting-edge technologists. If you have a robust understanding of technological theories and technical skills paired with critical thinking abilities, then you will be highly prized in the job market.",
-        content2:"The conglomeration of tech giants has allowed them to rapidly expand and hire people across the globe. This has increased global demand for skilled labour in the field of cloud computing, big data and technology management. The employment opportunities in the technology industry according to the U.S. Bureau of Labor Statistics are expected to expand by 13% this decade! This equates to a whopping 667,000 new jobs being created.",
+      content2:
+        "The conglomeration of tech giants has allowed them to rapidly expand and hire people across the globe. This has increased global demand for skilled labour in the field of cloud computing, big data and technology management. The employment opportunities in the technology industry according to the U.S. Bureau of Labor Statistics are expected to expand by 13% this decade! This equates to a whopping 667,000 new jobs being created.",
     },
     {
       title: "Career pathways for Technology graduates",
@@ -125,7 +131,8 @@ const Technology = () => {
       content3:
         "Computer support specialists are an important ancillary role in large companies that are computer related. As a computer support specialist, you will help computer users resolve computer-related problems and proffer helpful advice. You’ll be analysing and troubleshooting technology-related issues for employees or may help external customers of an organisation. The average annual salary for a computer support specialist is $65,450. ",
       subtitle4: "Database Administrators",
-      content4:"Database administrators work in sectors with large and sensitive data like insurance and finance companies. They manage the systems in which the data is stored. As a database administrator, you’ll be responsible for capacity planning, configuration and troubleshooting of these databases. The average annual salary of a database administrator is $98,860.",
+      content4:
+        "Database administrators work in sectors with large and sensitive data like insurance and finance companies. They manage the systems in which the data is stored. As a database administrator, you’ll be responsible for capacity planning, configuration and troubleshooting of these databases. The average annual salary of a database administrator is $98,860.",
     },
   ];
 
@@ -147,19 +154,21 @@ const Technology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>$74,160</strong>: 13% expected increase in employment opportunities
+            <strong></strong>: 13% expected increase in employment opportunities
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $91,250: average annual salary for tech occupations
+            <strong></strong> $91,250: average annual salary for tech
+            occupations
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 667,600: new tech jobs projected in the US this decade
+            <strong></strong> 667,600: new tech jobs projected in the US this
+            decade
           </p>
         </div>
         <div style={statItemStyle}>

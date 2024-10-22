@@ -118,6 +118,7 @@ import Biotechnology from "./Pages/Subjects/Biotechnology";
 import Biochemistry from "./Pages/Subjects/Biochemistry";
 import Technology from "./Pages/Subjects/Technology";
 import Planning from "./Pages/Subjects/Planning";
+import Landscapedesign from "./Pages/Subjects/Landscapedesign";
 
 
 
@@ -193,6 +194,7 @@ function App() {
         <Route path="/biochemistry" element={<Biochemistry />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/planning" element={<Planning />} />
+        <Route path="/landscapedesignandarchitecture" element={<Landscapedesign />} />
 
 
 
