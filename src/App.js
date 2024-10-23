@@ -91,56 +91,62 @@ import ScholarshipList from "./Pages/Scholarships/Predegreevocationalscholarship
 import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
 import Undergraduatescholar from "./Pages/Scholarships/Undergraduatescholarship";
 import Vetscholar from "./Pages/Scholarships/Vetscholarship";
-import Allsubjects from "./Pages/Subjects/Allsubjects";
-import CropScience from "./Pages/Subjects/Cropscience";
-import HoriCulture from "./Pages/Subjects/Horticulture";
-import PestControl from "./Pages/Subjects/Pestcontrol";
-import PlantScience from "./Pages/Subjects/Studyplantscience";
-import WoolScience from "./Pages/Subjects/Woolscience";
-import TaxAccounting from "./Pages/Subjects/Taxaccounting";
-import Fishery from "./Pages/Subjects/Fishery";
-import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
-import Architecture from "./Pages/Subjects/Architecture";
-import HumanWelfare from "./Pages/Subjects/Humanwelfare";
-import Fashion from "./Pages/Subjects/Fashion";
-import Visualarts from "./Pages/Subjects/Visualarts";
-import Productdesign from "./Pages/Subjects/Productdesign";
-import Industrialdesign from "./Pages/Subjects/Industrialdesign";
-import Graphicanddesign from "./Pages/Subjects/Graphicanddesign";
-import FashionDesign from "./Pages/Subjects/Fashiondesign";
-import ArtHistory from "./Pages/Subjects/Arthistory";
-import Vediogame from "./Pages/Subjects/Vediogame";
-import DigitalProduction from "./Pages/Subjects/Digitalproduction";
-import Pharmacology from "./Pages/Subjects/Pharmacology";
-import Botany from "./Pages/Subjects/Botany";
-import Forensics from "./Pages/Subjects/Forensics";
-import Biotechnology from "./Pages/Subjects/Biotechnology";
-import Biochemistry from "./Pages/Subjects/Biochemistry";
-import Technology from "./Pages/Subjects/Technology";
-import Planning from "./Pages/Subjects/Planning";
-import Landscapedesign from "./Pages/Subjects/Landscapedesign";
-import Townplanning from "./Pages/Subjects/Townplanning";
-import Psycology from "./Pages/Subjects/Psycology";
-import BusinessAdministration from "./Pages/Subjects/Bussinessadministration";
-import Farmandagribusiness from "./Pages/Subjects/Farmandagribusiness";
-import Tourism from "./Pages/Subjects/Tourism";
-import WebDevelopment from "./Pages/Subjects/Webdevelopment";
-import SystemsEngineering from "./Pages/Subjects/Systemengineering";
-import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
-import HumanMovement from "./Pages/Subjects/Humanmovement";
-import Statistics from "./Pages/Subjects/Statistics";
-import InformationTechnology from "./Pages/Subjects/Informationtechnology";
-import QualitativeEconomics from "./Pages/Subjects/Qualitativeeco";
-import GeriatricStudies from "./Pages/Subjects/Geriatric";
 import AgricultureScience from "./Pages/Subjects/Agriculturescience";
-import FoodScience from "./Pages/Subjects/Foodscience";
-import SportsScience from "./Pages/Subjects/Sportscience";
-import Creativewriting from "./Pages/Subjects/Creativewriting";
+import Allsubjects from "./Pages/Subjects/Allsubjects";
+import AnimalandVeterinarySciences from "./Pages/Subjects/Animalandveterinary";
+import Architecture from "./Pages/Subjects/Architecture";
+import ArtHistory from "./Pages/Subjects/Arthistory";
+import Biochemistry from "./Pages/Subjects/Biochemistry";
+import Biotechnology from "./Pages/Subjects/Biotechnology";
+import Botany from "./Pages/Subjects/Botany";
+import BusinessAdministration from "./Pages/Subjects/Bussinessadministration";
 import Bussinessenglish from "./Pages/Subjects/Bussinessenglish";
+import Creativewriting from "./Pages/Subjects/Creativewriting";
+import CropScience from "./Pages/Subjects/Cropscience";
+import Dietetics from "./Pages/Subjects/Dietetics";
+import DigitalProduction from "./Pages/Subjects/Digitalproduction";
+import Environmentconservation from "./Pages/Subjects/Environmentconservation";
+import Farmandagribusiness from "./Pages/Subjects/Farmandagribusiness";
+import Fashion from "./Pages/Subjects/Fashion";
+import FashionDesign from "./Pages/Subjects/Fashiondesign";
+import Fishery from "./Pages/Subjects/Fishery";
+import Foodandhspitality from "./Pages/Subjects/Foodandhospitality";
+import FoodScience from "./Pages/Subjects/Foodscience";
+import Forensics from "./Pages/Subjects/Forensics";
+import GeriatricStudies from "./Pages/Subjects/Geriatric";
+import Graphicanddesign from "./Pages/Subjects/Graphicanddesign";
+import HoriCulture from "./Pages/Subjects/Horticulture";
+import HumanMovement from "./Pages/Subjects/Humanmovement";
+import HumanWelfare from "./Pages/Subjects/Humanwelfare";
+import Industrialdesign from "./Pages/Subjects/Industrialdesign";
+import InformationTechnology from "./Pages/Subjects/Informationtechnology";
+import Landscapedesign from "./Pages/Subjects/Landscapedesign";
+import PestControl from "./Pages/Subjects/Pestcontrol";
+import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
+import Pharmacology from "./Pages/Subjects/Pharmacology";
+import Planning from "./Pages/Subjects/Planning";
+import Productdesign from "./Pages/Subjects/Productdesign";
+import Psycology from "./Pages/Subjects/Psycology";
+import QualitativeEconomics from "./Pages/Subjects/Qualitativeeco";
+import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
+import SportsScience from "./Pages/Subjects/Sportscience";
+import Statistics from "./Pages/Subjects/Statistics";
+import PlantScience from "./Pages/Subjects/Studyplantscience";
 import Surgery from "./Pages/Subjects/Surgery";
-
-
-
+import SystemsEngineering from "./Pages/Subjects/Systemengineering";
+import TaxAccounting from "./Pages/Subjects/Taxaccounting";
+import Technology from "./Pages/Subjects/Technology";
+import Tourism from "./Pages/Subjects/Tourism";
+import Townplanning from "./Pages/Subjects/Townplanning";
+import Vediogame from "./Pages/Subjects/Vediogame";
+import Visualarts from "./Pages/Subjects/Visualarts";
+import WebDevelopment from "./Pages/Subjects/Webdevelopment";
+import WoolScience from "./Pages/Subjects/Woolscience";
+import SocialSkills from "./Pages/Subjects/Socialskill";
+import SpeechTherapy from "./Pages/Subjects/Speechtherapy";
+import OccupationalTherapy from "./Pages/Subjects/Occupationaltherapy";
+import DisabilityStudies from "./Pages/Subjects/Disabilitystudies";
+import Psychiatryandneurosurgery from "./Pages/Subjects/Psychiatryandneurosurgery";
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
@@ -233,8 +239,15 @@ function App() {
         <Route path="/creativewriting" element={<Creativewriting />} />
         <Route path="/businessenglish" element={<Bussinessenglish />} />
         <Route path="/surgery" element={<Surgery />} />
-
-
+        <Route path="/conservation" element={<Environmentconservation />} />
+        <Route path="/dietetics" element={<Dietetics />} />
+        <Route path="/foodandhospitality" element={<Foodandhspitality />} />
+        <Route path="/animalandveterinarystudies" element={<AnimalandVeterinarySciences />} />
+        <Route path="/socialskillsprogrammes" element={<SocialSkills />} />
+        <Route path="/speechtherapy" element={<SpeechTherapy />} />
+        <Route path="/occupationaltherapy" element={<OccupationalTherapy />} />
+        <Route path="/disabilitystudies" element={<DisabilityStudies />} />
+        <Route path="/psychiatryandneurosurgery" element={<Psychiatryandneurosurgery />} />
 
 
 

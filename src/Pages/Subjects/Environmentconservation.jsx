@@ -80,42 +80,45 @@ const Environmentconservation = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
-      title: "About Creative Writing",
-      content:
-        "A Creative Writing program is geared towards helping students develop competencies in writing compelling narratives. Students pursuing Creative Writing courses will study written works such as novels and plays, as well as courses on how to enhance their writing skills. These skills will enhance your employability in a wide array of sectors especially marketing and advertising.",
+      title: "About Environmental Conservation",
+      content1:
+        "Conservation is the academic disciple concered with the appropriate use of natural resources to protect the environment. It is an important field of study because it informs us about what we need to do to protect our planet and resources.",
+        content2:"In today’s world, as human population continues to grow rapidly, the demand for energy sources is also increasing. The alarming rates at which our natural resources continue depleting necessitates an urgent need to broaden the effort for sustainable practices which is why studying Conservation as a subject has gained immense popularity recently.",
     },
     {
-      title: "Is Creative Writing right for me?",
+      title: "Is Environmental Conservation right for me?",
       content:
-        "If you are good with words and love to put your thoughts into writing, then creative writing is the right field for you. Creative Writers are driven by their creativity to develop interesting characters, plots and ideas. They have exceptional critical thinking skills to have an in-depth understanding of other writer’s work. They must be good at time management to meet multiple deadlines. They also possess the quality of being persuasive as they, especially in advertising and media business, have to persuade a mass audience to feel a certain way about a service or product. They have deep social perceptiveness to understand how readers react to ideas to connect with their audience. Last but not the least, they have exceptional writing skills to be able to write clearly and effectively to convey feelings and emotion. If this sounds interesting to you, then an pursuing a degree in Creative Writing might be a great idea.",
+        "Conservation scientists are involved in extensive research and data mining, hence must possess good analytical skills, critical thinking and sound reasoning. Since they mostly work collaboratively with teams of field staff and analysts, a high level of team work and good interpersonal skills are a must. If this sounds like you, then a career in Conservation might be a good choice for you.",
     },
     {
-      title: "Creative Writing study options and costs",
+      title: "Conservation study options and costs",
       content:
-        "The undergraduate programme in Creative Writing takes about 3-4 years of full-time study to complete and costs around $13,296 in the US and £9,250 in the UK. Students who choose to go for a graduate programme to advance their careers can expect 1 year full-time or a 2-year part-time master’s programme. The cost of a master's in Creative Writing in the UK is around £9300-£13,000. In the US, it takes around 2 years to complete a master’s degree with an average tuition around $30,000-$40,000.",
+        "A bachelor’s degree is typically the minimum education required for entry level jobs in environmental conservation. It takes 4 years to complete and costs around $14,000-$38,000 per year. Further specialise can be pursued with a master's degree which takes about 1-2 years to complete and costs around $32,000 in the US.",
     },
     {
       title: "Future outlook",
       content:
-        "According to the U.S. Bureau of Labor Statistics, employment of writers and authors is projected to grow 9 percent from 2020 to 2030. Moreover, about 15,400 openings for writers and authors are projected every year! The data also shows that employment in media and communication occupations (including creative writers) is projected to grow 14 percent from 2020 to 2030.",
+        "The importance of Conservation studies has never been higher. With the effects climate change more evident than ever before, there is an increasing demand for qualified conservation professionals. According to U.S. Bureau of Labor Statistics, overall employment of conservation scientists and foresters is projected to grow 7 percent from 2020 to 2030, about as fast as the average for all occupations. About 40,000 new openings for conservation scientists and foresters are projected over the decade. ",
     },
     {
-        title: 'Career Pathways for Creative writing graduates',
-        subtitle1: 'Advertising Copywriter',
-        content1: 'As an advertising copywriter, youll collaborate with an art director at an advertising, media, or digital marketing agencys creative department. Youll create, develop, and generate gripping advertising campaigns based on client briefs. The tasks of an advertising copywriter include identifying the target demographic, as well as liaising with clients and interpreting their mandates. They also come up with creative concepts and ideas, typically in collaboration with the art director.',
-        subtitle2: 'Lexicographer',
-        content2: 'As a lexicographer, youll look for evidence of a word or phrases meanings and usages in specialist databases containing thousands of pieces of language from a variety of sources (known as the corpus) which may include literature, newspapers, online journals, blogs, discussion groups, and transcripts of television and radio. Youll analyse entries and examine potential new entries based on this data and your own judgment.',
-        subtitle3: 'Magazine Journalist',
-        content3: 'Consumer titles that cover both common interest and expert areas such as customer magazines and trade magazines, are among the publications that magazine journalists analyse and compose news articles and features for. As a magazine journalist, you may be involved with the publications production, such as sub-editing and design, in addition to writing.',
+      title: "Career Pathways for Environmental conservation graduates",
+      subtitle1: "Conservation Scientist",
+      content1:
+        "Conservation scientists play a critical role in helping to manage land, mines, farms, rivers, and forests with the aim to minimise the wastage of natural resources. They make plans that take into account current and future needs and see them all the way through till execution.",
+      subtitle2: "Forester",
+      content2:
+        "Foresters are in charge of planting, caring for, and managing trees and forests. They work within assigned territories and are responsible for afforestation or reforestation efforts that are critical to our future needs.",
+      subtitle3: "Horticulturist",
+      content3:
+        "Horticulturists are experts of growing plants, fruit, flowers and vegetables in a garden environment. With a conservation specialisation, they can provide environmental advice to communities, breed and experiment with various plants to learn about their growth patterns and disease susceptibility.",
     },
   ];
 
@@ -123,13 +126,12 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Creative Writing abroad
-        </h1>
+        <h1>Study Environmental Conservation abroad</h1>
         <p>
-        Creative Writing is the art of capturing the audience's attention and conveys a narrative. A degree in Creative Writing will help you understand the publishing industry and polish your writing skills.
-
-
-
+          Environmental Conservation refers to protecting and saving the world’s
+          natural resources so our future generations can enjoy them too. If you
+          care about the environment and sustainability, then this field of
+          study will be an excellent choice.
         </p>
       </div>
 
@@ -138,75 +140,68 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 15,400 estimated job openings for writers and authors every year
-
-
+            <strong></strong> 40,000 estimated openings for conservation
+            scientists and foresters this decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 9% projected employment growth of writers and authors this decade
-
-
+            <strong></strong> Median annual pay of conservation scientists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Median annual income of writers and authors
-
-
+            <strong></strong> Currently employed conservation scientists and
+            foresters in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 14% projected growth in employment of creative writers this decade
-
-
+            <strong></strong> 7% projected employment growth of conservation
+            scientists by 2030
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
       {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {/* Check for subtitles and content */}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.content && <p>{item.content}</p>}
+
+                {/* For items with single content */}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
