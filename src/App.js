@@ -128,6 +128,7 @@ import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import SystemsEngineering from "./Pages/Subjects/Systemengineering";
 import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
 import HumanMovement from "./Pages/Subjects/Humanmovement";
+import Statistics from "./Pages/Subjects/Statistics";
 
 
 
@@ -213,6 +214,8 @@ function App() {
         <Route path="/systemsengineering" element={<SystemsEngineering />} />
         <Route path="/rehabilitationtherapy" element={<RehabilitationTherapy />} />
         <Route path="/humanmovement" element={<HumanMovement />} />
+        <Route path="/statistics" element={<Statistics />} />
+
 
 
 
