@@ -132,6 +132,12 @@ import Statistics from "./Pages/Subjects/Statistics";
 import InformationTechnology from "./Pages/Subjects/Informationtechnology";
 import QualitativeEconomics from "./Pages/Subjects/Qualitativeeco";
 import GeriatricStudies from "./Pages/Subjects/Geriatric";
+import AgricultureScience from "./Pages/Subjects/Agriculturescience";
+import FoodScience from "./Pages/Subjects/Foodscience";
+import SportsScience from "./Pages/Subjects/Sportscience";
+import Creativewriting from "./Pages/Subjects/Creativewriting";
+import Bussinessenglish from "./Pages/Subjects/Bussinessenglish";
+import Surgery from "./Pages/Subjects/Surgery";
 
 
 
@@ -221,6 +227,13 @@ function App() {
         <Route path="/informationtechnology" element={<InformationTechnology />} />
         <Route path="/qualitativeeconomics" element={<QualitativeEconomics />} />
         <Route path="/geriatricstudies" element={<GeriatricStudies />} />
+        <Route path="/agricultureeducationservices" element={<AgricultureScience />} />
+        <Route path="/foodsciences" element={<FoodScience />} />
+        <Route path="/sportsscience" element={<SportsScience />} />
+        <Route path="/creativewriting" element={<Creativewriting />} />
+        <Route path="/businessenglish" element={<Bussinessenglish />} />
+        <Route path="/surgery" element={<Surgery />} />
+
 
 
 
