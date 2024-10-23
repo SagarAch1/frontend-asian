@@ -152,6 +152,7 @@ import Visualarts from "./Pages/Subjects/Visualarts";
 import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import WoolScience from "./Pages/Subjects/Woolscience";
 import Acupuncture from "./Pages/Subjects/Acupunture";
+import AlliedHealthScience from "./Pages/Subjects/Alliedhealthscience";
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
@@ -258,6 +259,7 @@ function App() {
         <Route path="/occupationalhealth&safety" element={<OccupationalHealth />} />
         <Route path="/speechpathology" element={<SpeechPathology />} />
         <Route path="/acupuncture" element={<Acupuncture />} />
+        <Route path="/alliedhealthscience" element={<AlliedHealthScience />} />
 
 
 
