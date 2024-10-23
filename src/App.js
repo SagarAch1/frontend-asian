@@ -124,6 +124,7 @@ import Psycology from "./Pages/Subjects/Psycology";
 import BusinessAdministration from "./Pages/Subjects/Bussinessadministration";
 import Farmandagribusiness from "./Pages/Subjects/Farmandagribusiness";
 import Tourism from "./Pages/Subjects/Tourism";
+import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 
 
 
@@ -205,6 +206,7 @@ function App() {
         <Route path="/businessadministration" element={<BusinessAdministration />} />
         <Route path="/farmandagribusiness" element={<Farmandagribusiness />} />
         <Route path="/tourism" element={<Tourism />} />
+        <Route path="/webdevelopment"element={<WebDevelopment />} />
 
 
 
