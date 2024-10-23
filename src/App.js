@@ -147,6 +147,9 @@ import SpeechTherapy from "./Pages/Subjects/Speechtherapy";
 import OccupationalTherapy from "./Pages/Subjects/Occupationaltherapy";
 import DisabilityStudies from "./Pages/Subjects/Disabilitystudies";
 import Psychiatryandneurosurgery from "./Pages/Subjects/Psychiatryandneurosurgery";
+import FirstAid from "./Pages/Subjects/Firstaid";
+import Podiatry from "./Pages/Subjects/Podiatry";
+import OccupationalHealth from "./Pages/Subjects/Occupationalhealth";
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
@@ -248,6 +251,9 @@ function App() {
         <Route path="/occupationaltherapy" element={<OccupationalTherapy />} />
         <Route path="/disabilitystudies" element={<DisabilityStudies />} />
         <Route path="/psychiatryandneurosurgery" element={<Psychiatryandneurosurgery />} />
+        <Route path="/firstaid" element={<FirstAid />} />
+        <Route path="/podiatry" element={<Podiatry />} />
+        <Route path="/occupationalhealth&safety" element={<OccupationalHealth />} />
 
 
 
