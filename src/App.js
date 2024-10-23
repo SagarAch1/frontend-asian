@@ -127,6 +127,7 @@ import Tourism from "./Pages/Subjects/Tourism";
 import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import SystemsEngineering from "./Pages/Subjects/Systemengineering";
 import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
+import HumanMovement from "./Pages/Subjects/Humanmovement";
 
 
 
@@ -211,6 +212,7 @@ function App() {
         <Route path="/webdevelopment"element={<WebDevelopment />} />
         <Route path="/systemsengineering" element={<SystemsEngineering />} />
         <Route path="/rehabilitationtherapy" element={<RehabilitationTherapy />} />
+        <Route path="/humanmovement" element={<HumanMovement />} />
 
 
 
