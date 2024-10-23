@@ -129,6 +129,9 @@ import SystemsEngineering from "./Pages/Subjects/Systemengineering";
 import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
 import HumanMovement from "./Pages/Subjects/Humanmovement";
 import Statistics from "./Pages/Subjects/Statistics";
+import InformationTechnology from "./Pages/Subjects/Informationtechnology";
+import QualitativeEconomics from "./Pages/Subjects/Qualitativeeco";
+import GeriatricStudies from "./Pages/Subjects/Geriatric";
 
 
 
@@ -215,6 +218,10 @@ function App() {
         <Route path="/rehabilitationtherapy" element={<RehabilitationTherapy />} />
         <Route path="/humanmovement" element={<HumanMovement />} />
         <Route path="/statistics" element={<Statistics />} />
+        <Route path="/informationtechnology" element={<InformationTechnology />} />
+        <Route path="/qualitativeeconomics" element={<QualitativeEconomics />} />
+        <Route path="/geriatricstudies" element={<GeriatricStudies />} />
+
 
 
 
