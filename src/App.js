@@ -105,10 +105,12 @@ import Creativewriting from "./Pages/Subjects/Creativewriting";
 import CropScience from "./Pages/Subjects/Cropscience";
 import Dietetics from "./Pages/Subjects/Dietetics";
 import DigitalProduction from "./Pages/Subjects/Digitalproduction";
+import DisabilityStudies from "./Pages/Subjects/Disabilitystudies";
 import Environmentconservation from "./Pages/Subjects/Environmentconservation";
 import Farmandagribusiness from "./Pages/Subjects/Farmandagribusiness";
 import Fashion from "./Pages/Subjects/Fashion";
 import FashionDesign from "./Pages/Subjects/Fashiondesign";
+import FirstAid from "./Pages/Subjects/Firstaid";
 import Fishery from "./Pages/Subjects/Fishery";
 import Foodandhspitality from "./Pages/Subjects/Foodandhospitality";
 import FoodScience from "./Pages/Subjects/Foodscience";
@@ -121,14 +123,21 @@ import HumanWelfare from "./Pages/Subjects/Humanwelfare";
 import Industrialdesign from "./Pages/Subjects/Industrialdesign";
 import InformationTechnology from "./Pages/Subjects/Informationtechnology";
 import Landscapedesign from "./Pages/Subjects/Landscapedesign";
+import OccupationalHealth from "./Pages/Subjects/Occupationalhealth";
+import OccupationalTherapy from "./Pages/Subjects/Occupationaltherapy";
 import PestControl from "./Pages/Subjects/Pestcontrol";
 import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
 import Pharmacology from "./Pages/Subjects/Pharmacology";
 import Planning from "./Pages/Subjects/Planning";
+import Podiatry from "./Pages/Subjects/Podiatry";
 import Productdesign from "./Pages/Subjects/Productdesign";
+import Psychiatryandneurosurgery from "./Pages/Subjects/Psychiatryandneurosurgery";
 import Psycology from "./Pages/Subjects/Psycology";
 import QualitativeEconomics from "./Pages/Subjects/Qualitativeeco";
 import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
+import SocialSkills from "./Pages/Subjects/Socialskill";
+import SpeechPathology from "./Pages/Subjects/Speechpathology";
+import SpeechTherapy from "./Pages/Subjects/Speechtherapy";
 import SportsScience from "./Pages/Subjects/Sportscience";
 import Statistics from "./Pages/Subjects/Statistics";
 import PlantScience from "./Pages/Subjects/Studyplantscience";
@@ -142,14 +151,7 @@ import Vediogame from "./Pages/Subjects/Vediogame";
 import Visualarts from "./Pages/Subjects/Visualarts";
 import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import WoolScience from "./Pages/Subjects/Woolscience";
-import SocialSkills from "./Pages/Subjects/Socialskill";
-import SpeechTherapy from "./Pages/Subjects/Speechtherapy";
-import OccupationalTherapy from "./Pages/Subjects/Occupationaltherapy";
-import DisabilityStudies from "./Pages/Subjects/Disabilitystudies";
-import Psychiatryandneurosurgery from "./Pages/Subjects/Psychiatryandneurosurgery";
-import FirstAid from "./Pages/Subjects/Firstaid";
-import Podiatry from "./Pages/Subjects/Podiatry";
-import OccupationalHealth from "./Pages/Subjects/Occupationalhealth";
+import Acupuncture from "./Pages/Subjects/Acupunture";
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
@@ -254,6 +256,8 @@ function App() {
         <Route path="/firstaid" element={<FirstAid />} />
         <Route path="/podiatry" element={<Podiatry />} />
         <Route path="/occupationalhealth&safety" element={<OccupationalHealth />} />
+        <Route path="/speechpathology" element={<SpeechPathology />} />
+        <Route path="/acupuncture" element={<Acupuncture />} />
 
 
 
