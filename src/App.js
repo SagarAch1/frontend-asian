@@ -169,6 +169,20 @@ import Cosmetology from "./Pages/Subjects/Cosmetology";
 import ReligiousStudies from "./Pages/Subjects/Religiousstudies";
 import Astrophysics from "./Pages/Subjects/Astrophysics";
 import Physicalsciences from "./Pages/Subjects/Physicalscience";
+import TheoreticalPhysics from "./Pages/Subjects/Theoreticalphysics";
+import SocialJustice from "./Pages/Subjects/Socialjustice";
+import SocialScience from "./Pages/Subjects/Socialscience";
+import Politicalscienceandpolicy from "./Pages/Subjects/Politicalscienceandpolicy";
+import Politicalscience from "./Pages/Subjects/Politicalscience";
+import Sociology from "./Pages/Subjects/Sociology";
+import SecondaryEducation from "./Pages/Subjects/Secondaryeducation";
+import PrimaryEducation from "./Pages/Subjects/Primaryeducation";
+import HigherEducation from "./Pages/Subjects/Highereducation";
+import EarlyChildhoodEducation from "./Pages/Subjects/Earlychildeducation";
+import CurriculumandEducation from "./Pages/Subjects/Curriculum";
+import Counselling from "./Pages/Subjects/Counselling";
+
+
 
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
@@ -293,6 +307,19 @@ function App() {
         <Route path="/religiousstudies" element={<ReligiousStudies />} />
         <Route path="/astrophysics" element={<Astrophysics />} />
         <Route path="/physicalsciences" element={<Physicalsciences />} />
+        <Route path="/theoreticalphysics" element={<TheoreticalPhysics />} />
+        <Route path="/socialjustice" element={<SocialJustice />} />
+        <Route path="/socialscience" element={<SocialScience />} />
+        <Route path="/politicalscienceandpolicy" element={<Politicalscienceandpolicy />} />
+        <Route path="/politicalscience" element={<Politicalscience />} />
+        <Route path="/sociology" element={<Sociology />} />
+        <Route path="/secondaryeducation" element={<SecondaryEducation />} />
+        <Route path="/primaryeducation" element={<PrimaryEducation />} />
+        <Route path="/highereducation" element={<HigherEducation />} />
+        <Route path="/earlychildhoodeducation" element={<EarlyChildhoodEducation />} />
+        <Route path="/curriculumandeducationstudies" element={<CurriculumandEducation />} />
+        <Route path="/counselling" element={<Counselling />} />
+
 
 
 
