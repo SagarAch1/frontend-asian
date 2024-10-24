@@ -153,6 +153,13 @@ import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import WoolScience from "./Pages/Subjects/Woolscience";
 import Acupuncture from "./Pages/Subjects/Acupunture";
 import AlliedHealthScience from "./Pages/Subjects/Alliedhealthscience";
+import Publichealth from "./Pages/Subjects/Publichealth";
+import Radiography from "./Pages/Subjects/Radiography";
+import Generalhistory from "./Pages/Subjects/Generalhistory";
+import Hotelandhospitality from "./Pages/Subjects/Hotelandhospitality";
+import Bakery  from "./Pages/Subjects/Bakery";
+import Beauty  from "./Pages/Subjects/Beauty";
+
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
@@ -260,6 +267,12 @@ function App() {
         <Route path="/speechpathology" element={<SpeechPathology />} />
         <Route path="/acupuncture" element={<Acupuncture />} />
         <Route path="/alliedhealthscience" element={<AlliedHealthScience />} />
+        <Route path="/publichealth" element={<Publichealth />} />
+        <Route path="/radiography" element={<Radiography />} />
+        <Route path="/generalhistory" element={<Generalhistory />} />
+        <Route path="/hotelandhospitality" element={<Hotelandhospitality />} />
+        <Route path="/beauty" element={<Beauty />} />
+        <Route path="/bakery" element={<Bakery />} />
 
 
 
