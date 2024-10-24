@@ -159,6 +159,7 @@ import Generalhistory from "./Pages/Subjects/Generalhistory";
 import Hotelandhospitality from "./Pages/Subjects/Hotelandhospitality";
 import Bakery  from "./Pages/Subjects/Bakery";
 import Beauty  from "./Pages/Subjects/Beauty";
+import Philosophyandreligious  from "./Pages/Subjects/Philosophyandreligious";
 
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
@@ -273,6 +274,7 @@ function App() {
         <Route path="/hotelandhospitality" element={<Hotelandhospitality />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/bakery" element={<Bakery />} />
+        <Route path="/philosophyandreligiousstudies" element={<Philosophyandreligious />} />
 
 
 
