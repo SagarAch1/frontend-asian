@@ -160,6 +160,9 @@ import Hotelandhospitality from "./Pages/Subjects/Hotelandhospitality";
 import Bakery  from "./Pages/Subjects/Bakery";
 import Beauty  from "./Pages/Subjects/Beauty";
 import Philosophyandreligious  from "./Pages/Subjects/Philosophyandreligious";
+import Policestudies from "./Pages/Subjects/Policestudies";
+import Writtencommunication from "./Pages/Subjects/Writtencommunication";
+import Masscommunication from "./Pages/Subjects/Masscommunication";
 
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
@@ -275,6 +278,9 @@ function App() {
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/bakery" element={<Bakery />} />
         <Route path="/philosophyandreligiousstudies" element={<Philosophyandreligious />} />
+        <Route path="/policestudies" element={<Policestudies />} />
+        <Route path="/writtencommunication" element={<Writtencommunication />} />
+        <Route path="/masscommunication" element={<Masscommunication />} />
 
 
 
