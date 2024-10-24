@@ -165,6 +165,10 @@ import Writtencommunication from "./Pages/Subjects/Writtencommunication";
 import Masscommunication from "./Pages/Subjects/Masscommunication";
 import Earthscience  from "./Pages/Subjects/Earthscience";
 import EnvironmentalEngineering from "./Pages/Subjects/Environmentalengineering";
+import Cosmetology from "./Pages/Subjects/Cosmetology";
+import ReligiousStudies from "./Pages/Subjects/Religiousstudies";
+import Astrophysics from "./Pages/Subjects/Astrophysics";
+import Physicalsciences from "./Pages/Subjects/Physicalscience";
 
 
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
@@ -285,6 +289,10 @@ function App() {
         <Route path="/masscommunication" element={<Masscommunication />} />
         <Route path="/earthsciences" element={<Earthscience />} />
         <Route path="/environmentalengineering" element={<EnvironmentalEngineering />} />
+        <Route path="/cosmetology" element={<Cosmetology />} />
+        <Route path="/religiousstudies" element={<ReligiousStudies />} />
+        <Route path="/astrophysics" element={<Astrophysics />} />
+        <Route path="/physicalsciences" element={<Physicalsciences />} />
 
 
 
