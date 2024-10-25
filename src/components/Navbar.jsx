@@ -33,7 +33,7 @@ const Navbar = () => {
     linkedin: "https://www.linkedin.com/company/asianedunp1",
     youtube: "https://www.youtube.com/@asian.edu.np1",
     tiktok: "https://www.tiktok.com/@asian.edu.np",
-    whatsapp: "https://api.whatsapp.com/send?phone=9779851053943",
+    whatsapp: "https://api.whatsapp.com/send?phone=9779801048957",
   };
 
   return (
@@ -171,6 +171,15 @@ const Navbar = () => {
               style={{ fontWeight: "bold", fontSize: "18px" }}
             >
               Gallery
+            </Link>
+          </li>
+          <li className="nav-item mx-3">
+            <Link
+              className="nav-link text-white"
+              to="/bloglist"
+              style={{ fontWeight: "bold", fontSize: "18px" }}
+            >
+              Blog
             </Link>
           </li>
         </ul>

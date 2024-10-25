@@ -181,6 +181,9 @@ import HigherEducation from "./Pages/Subjects/Highereducation";
 import EarlyChildhoodEducation from "./Pages/Subjects/Earlychildeducation";
 import CurriculumandEducation from "./Pages/Subjects/Curriculum";
 import Counselling from "./Pages/Subjects/Counselling";
+import BlogList from "./Blog/Blogasian";
+
+import Whywearethebest from "./Blog/Whywearethebest";
 
 
 
@@ -319,6 +322,10 @@ function App() {
         <Route path="/earlychildhoodeducation" element={<EarlyChildhoodEducation />} />
         <Route path="/curriculumandeducationstudies" element={<CurriculumandEducation />} />
         <Route path="/counselling" element={<Counselling />} />
+       
+        <Route path="/bloglist" element={<BlogList />} />
+        <Route path="/whywearethebest" element={<Whywearethebest />} />
+   
 
 
 

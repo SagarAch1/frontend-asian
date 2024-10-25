@@ -1,0 +1,120 @@
+/* General container styling */
+.blog-list-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 80px; /* Ensures it clears the navbar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Blog rows */
+.blog-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Better spacing between blog items */
+  margin-bottom: 40px;
+}
+
+/* Individual blog items */
+.blog-item {
+  position: relative;
+  margin: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s;
+  cursor: pointer;
+}
+.blog-header-image {
+  width: 2270px;
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 4px solid #007bff; /* Add a bottom border for style */
+}
+
+.blog-item.large {
+  width: 48%; /* Larger card for main articles */
+}
+
+.blog-item.small {
+  width: 23%; /* Smaller cards for the other articles */
+}
+
+/* Blog item images */
+.blog-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 4px solid #007bff; /* Add a bottom border for style */
+}
+
+/* Blog item content styling */
+.blog-item-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.blog-item h2, .blog-item h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle text shadow for readability */
+}
+
+.blog-item p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ddd; /* Lighter color for metadata */
+}
+
+/* Hover effects */
+.blog-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.blog-item-content:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* Button for view more */
+.view-more-button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Rounded button */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.2s;
+}
+
+.view-more-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Button hover shadow */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .blog-item.large {
+      width: 100%; /* Full-width on mobile */
+  }
+  .blog-item.small {
+      width: 48%; /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-item.small {
+      width: 100%; /* Full-width on very small screens */
+  }
+}
