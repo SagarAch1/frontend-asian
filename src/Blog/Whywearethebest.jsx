@@ -1,12 +1,11 @@
 import React from "react";
-import "./Blog.css"; // Link to updated CSS styles
 import FormPage from "../Pages/Homepage/FormPage";
-import Footer from "../Pages/Homepage/Footer";
+import "./Blog.css"; // Link to updated CSS styles
 const Blog = () => {
   return (
     <div className="blog-container">
       {/* Top Section */}
-      {/* <div className="header-section">
+      <div className="header-section">
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
           alt="Consultancy"
@@ -19,7 +18,7 @@ const Blog = () => {
             Universities Across the Globe
           </p>
         </div>
-      </div> */}
+      </div>
 
       {/* Blog Section */}
       <div className="blog-content">
@@ -28,11 +27,7 @@ const Blog = () => {
         </div>
 
         <div className="blog-main">
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
-            alt="Blog image"
-            className="blog-main-image"
-          />
+          
           <h2>Studying Abroad</h2>
           <p>
             Studying abroad is a dream for many Nepali students, offering a
@@ -44,6 +39,11 @@ const Blog = () => {
             help you achieve your study abroad goals and make the process
             smoother and more effective.
           </p>
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+            alt="Blog image"
+            className="blog-main-image"
+          />
         </div>
 
         {/* Additional Content - Inserted Section */}
@@ -119,12 +119,21 @@ const Blog = () => {
             </li>
           </ul>
         </div>
+        <div className="additional-section">
+          <h3>Conclusion</h3>
+          <p>
+            For Nepali students aiming to study abroad, Asian Education offers
+            the expertise, resources, and support you need to make your dreams a
+            reality. From test preparation to visa assistance, our comprehensive
+            services ensure that your study abroad journey is as smooth and
+            successful as possible.
+          </p>
+        </div>
       </div>
 
       {/* Footer */}
       <div className="footer">
         <FormPage />
-        <Footer />
       </div>
     </div>
   );

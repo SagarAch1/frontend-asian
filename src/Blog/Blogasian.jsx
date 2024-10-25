@@ -1,6 +1,7 @@
 import React from 'react';
 import './BlogList.css'; // Link to the updated CSS for styling
-import Footer from '../Pages/Homepage/Footer'
+import Footer from '../Pages/Homepage/Footer';
+import FormPage from '../Pages/Homepage/FormPage';
 
 const BlogList = () => {
 
@@ -10,23 +11,19 @@ const BlogList = () => {
 
     return (
         <div className="blog-list-container">
-
             {/* Header Section */}
             <div className="header-section">
-                <img src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`} alt="Consultancy" className="blog-header-image" />
-                <div className="blog-header-text">
-                    <h1>Why We Are The Best Consultancy</h1>
-                    <p>Asian Education Consultancy - Guiding Students to Their Dream Universities Across the Globe</p>
-                </div>
+                {/* <img src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`} alt="Consultancy" className="blog-header-image" /> */}
+               
             </div>
             
             {/* Top Section with 4 Items */}
             <div className="blog-row">
-                <div className="blog-item small" onClick={() => handleNavigation('exquisite-news')}>
-                    <img src={`${process.env.PUBLIC_URL}/assets/images/1b.webp`} alt="Exquisite News" />
+                <div className="blog-item small" onClick={() => handleNavigation('whywearethebest')}>
+                    <img src={`${process.env.PUBLIC_URL}/assets/images/1b.webp`} alt="whywearethebest" />
                     <div className="blog-item-content">
-                        <h2>Exquisite Admitting Cordially September Newspaper</h2>
-                        <p>Templates Yard | Dec 05, 2015</p>
+                        <h2>Why We Are The Best Consultancy</h2>
+                        <p>Studying abroad is a dream? | Dec 05, 2015</p>
                     </div>
                 </div>
                 <div className="blog-item small" onClick={() => handleNavigation('business-man')}>
@@ -84,7 +81,9 @@ const BlogList = () => {
                 </div>
             </div>
 
-           <Footer />
+            <FormPage />
+
+            <Footer />
         </div>
     );
 };

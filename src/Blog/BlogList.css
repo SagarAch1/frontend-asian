@@ -8,6 +8,22 @@
   background-color: #f8f9fa;
 }
 
+/* Header Section */
+.header-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Blog header image */
+.blog-header-image {
+  width: 100vw; /* Spans the full viewport width */
+  height: 350px;
+  object-fit: cover;
+  border-bottom: 4px solid #007bff; /* Add a bottom border for style */
+  position: relative;
+}
+
 /* Blog rows */
 .blog-row {
   display: flex;
@@ -25,12 +41,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for card effect */
   transition: transform 0.2s ease-in-out, box-shadow 0.3s;
   cursor: pointer;
-}
-.blog-header-image {
-  width: 2270px;
-  height: 350px;
-  object-fit: cover;
-  border-bottom: 4px solid #007bff; /* Add a bottom border for style */
 }
 
 .blog-item.large {
@@ -117,4 +127,11 @@
   .blog-item.small {
       width: 100%; /* Full-width on very small screens */
   }
+}
+
+/* Reset default margins */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling issues */
 }
