@@ -83,6 +83,7 @@ import Register from "./Pages/Register/Register";
 
 import UpcomingEvents from "./Pages/Events/Event";
 
+import BlogList from "./Blog/Blogasian";
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
 import Doctoratescholarship from "./Pages/Scholarships/Doctorate";
 import FoundationScholar from "./Pages/Scholarships/Foundationscholaraship";
@@ -91,21 +92,32 @@ import ScholarshipList from "./Pages/Scholarships/Predegreevocationalscholarship
 import ScholarshipPage from "./Pages/Scholarships/Totalscholarships";
 import Undergraduatescholar from "./Pages/Scholarships/Undergraduatescholarship";
 import Vetscholar from "./Pages/Scholarships/Vetscholarship";
+import Acupuncture from "./Pages/Subjects/Acupunture";
 import AgricultureScience from "./Pages/Subjects/Agriculturescience";
+import AlliedHealthScience from "./Pages/Subjects/Alliedhealthscience";
 import Allsubjects from "./Pages/Subjects/Allsubjects";
 import AnimalandVeterinarySciences from "./Pages/Subjects/Animalandveterinary";
 import Architecture from "./Pages/Subjects/Architecture";
 import ArtHistory from "./Pages/Subjects/Arthistory";
+import Astrophysics from "./Pages/Subjects/Astrophysics";
+import Bakery from "./Pages/Subjects/Bakery";
+import Beauty from "./Pages/Subjects/Beauty";
 import Biochemistry from "./Pages/Subjects/Biochemistry";
 import Biotechnology from "./Pages/Subjects/Biotechnology";
 import Botany from "./Pages/Subjects/Botany";
 import BusinessAdministration from "./Pages/Subjects/Bussinessadministration";
 import Bussinessenglish from "./Pages/Subjects/Bussinessenglish";
+import Cosmetology from "./Pages/Subjects/Cosmetology";
+import Counselling from "./Pages/Subjects/Counselling";
 import Creativewriting from "./Pages/Subjects/Creativewriting";
 import CropScience from "./Pages/Subjects/Cropscience";
+import CurriculumandEducation from "./Pages/Subjects/Curriculum";
 import Dietetics from "./Pages/Subjects/Dietetics";
 import DigitalProduction from "./Pages/Subjects/Digitalproduction";
 import DisabilityStudies from "./Pages/Subjects/Disabilitystudies";
+import EarlyChildhoodEducation from "./Pages/Subjects/Earlychildeducation";
+import Earthscience from "./Pages/Subjects/Earthscience";
+import EnvironmentalEngineering from "./Pages/Subjects/Environmentalengineering";
 import Environmentconservation from "./Pages/Subjects/Environmentconservation";
 import Farmandagribusiness from "./Pages/Subjects/Farmandagribusiness";
 import Fashion from "./Pages/Subjects/Fashion";
@@ -115,27 +127,44 @@ import Fishery from "./Pages/Subjects/Fishery";
 import Foodandhspitality from "./Pages/Subjects/Foodandhospitality";
 import FoodScience from "./Pages/Subjects/Foodscience";
 import Forensics from "./Pages/Subjects/Forensics";
+import Generalhistory from "./Pages/Subjects/Generalhistory";
 import GeriatricStudies from "./Pages/Subjects/Geriatric";
 import Graphicanddesign from "./Pages/Subjects/Graphicanddesign";
+import HigherEducation from "./Pages/Subjects/Highereducation";
 import HoriCulture from "./Pages/Subjects/Horticulture";
+import Hotelandhospitality from "./Pages/Subjects/Hotelandhospitality";
 import HumanMovement from "./Pages/Subjects/Humanmovement";
 import HumanWelfare from "./Pages/Subjects/Humanwelfare";
 import Industrialdesign from "./Pages/Subjects/Industrialdesign";
 import InformationTechnology from "./Pages/Subjects/Informationtechnology";
 import Landscapedesign from "./Pages/Subjects/Landscapedesign";
+import Masscommunication from "./Pages/Subjects/Masscommunication";
 import OccupationalHealth from "./Pages/Subjects/Occupationalhealth";
 import OccupationalTherapy from "./Pages/Subjects/Occupationaltherapy";
 import PestControl from "./Pages/Subjects/Pestcontrol";
 import Pharmaceutical from "./Pages/Subjects/Pharmaceutical";
 import Pharmacology from "./Pages/Subjects/Pharmacology";
+import Philosophyandreligious from "./Pages/Subjects/Philosophyandreligious";
+import Physicalsciences from "./Pages/Subjects/Physicalscience";
 import Planning from "./Pages/Subjects/Planning";
 import Podiatry from "./Pages/Subjects/Podiatry";
+import Policestudies from "./Pages/Subjects/Policestudies";
+import Politicalscience from "./Pages/Subjects/Politicalscience";
+import Politicalscienceandpolicy from "./Pages/Subjects/Politicalscienceandpolicy";
+import PrimaryEducation from "./Pages/Subjects/Primaryeducation";
 import Productdesign from "./Pages/Subjects/Productdesign";
 import Psychiatryandneurosurgery from "./Pages/Subjects/Psychiatryandneurosurgery";
 import Psycology from "./Pages/Subjects/Psycology";
+import Publichealth from "./Pages/Subjects/Publichealth";
 import QualitativeEconomics from "./Pages/Subjects/Qualitativeeco";
+import Radiography from "./Pages/Subjects/Radiography";
 import RehabilitationTherapy from "./Pages/Subjects/Rehabilationtherapy";
+import ReligiousStudies from "./Pages/Subjects/Religiousstudies";
+import SecondaryEducation from "./Pages/Subjects/Secondaryeducation";
+import SocialJustice from "./Pages/Subjects/Socialjustice";
+import SocialScience from "./Pages/Subjects/Socialscience";
 import SocialSkills from "./Pages/Subjects/Socialskill";
+import Sociology from "./Pages/Subjects/Sociology";
 import SpeechPathology from "./Pages/Subjects/Speechpathology";
 import SpeechTherapy from "./Pages/Subjects/Speechtherapy";
 import SportsScience from "./Pages/Subjects/Sportscience";
@@ -145,45 +174,35 @@ import Surgery from "./Pages/Subjects/Surgery";
 import SystemsEngineering from "./Pages/Subjects/Systemengineering";
 import TaxAccounting from "./Pages/Subjects/Taxaccounting";
 import Technology from "./Pages/Subjects/Technology";
+import TheoreticalPhysics from "./Pages/Subjects/Theoreticalphysics";
 import Tourism from "./Pages/Subjects/Tourism";
 import Townplanning from "./Pages/Subjects/Townplanning";
 import Vediogame from "./Pages/Subjects/Vediogame";
 import Visualarts from "./Pages/Subjects/Visualarts";
 import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import WoolScience from "./Pages/Subjects/Woolscience";
-import Acupuncture from "./Pages/Subjects/Acupunture";
-import AlliedHealthScience from "./Pages/Subjects/Alliedhealthscience";
-import Publichealth from "./Pages/Subjects/Publichealth";
-import Radiography from "./Pages/Subjects/Radiography";
-import Generalhistory from "./Pages/Subjects/Generalhistory";
-import Hotelandhospitality from "./Pages/Subjects/Hotelandhospitality";
-import Bakery  from "./Pages/Subjects/Bakery";
-import Beauty  from "./Pages/Subjects/Beauty";
-import Philosophyandreligious  from "./Pages/Subjects/Philosophyandreligious";
-import Policestudies from "./Pages/Subjects/Policestudies";
 import Writtencommunication from "./Pages/Subjects/Writtencommunication";
-import Masscommunication from "./Pages/Subjects/Masscommunication";
-import Earthscience  from "./Pages/Subjects/Earthscience";
-import EnvironmentalEngineering from "./Pages/Subjects/Environmentalengineering";
-import Cosmetology from "./Pages/Subjects/Cosmetology";
-import ReligiousStudies from "./Pages/Subjects/Religiousstudies";
-import Astrophysics from "./Pages/Subjects/Astrophysics";
-import Physicalsciences from "./Pages/Subjects/Physicalscience";
-import TheoreticalPhysics from "./Pages/Subjects/Theoreticalphysics";
-import SocialJustice from "./Pages/Subjects/Socialjustice";
-import SocialScience from "./Pages/Subjects/Socialscience";
-import Politicalscienceandpolicy from "./Pages/Subjects/Politicalscienceandpolicy";
-import Politicalscience from "./Pages/Subjects/Politicalscience";
-import Sociology from "./Pages/Subjects/Sociology";
-import SecondaryEducation from "./Pages/Subjects/Secondaryeducation";
-import PrimaryEducation from "./Pages/Subjects/Primaryeducation";
-import HigherEducation from "./Pages/Subjects/Highereducation";
-import EarlyChildhoodEducation from "./Pages/Subjects/Earlychildeducation";
-import CurriculumandEducation from "./Pages/Subjects/Curriculum";
-import Counselling from "./Pages/Subjects/Counselling";
-import BlogList from "./Blog/Blogasian";
 
+import Chooseusforyourstudy from "./Blog/Chooseusforyourstudy";
+import Choosethebestcounsaltancy from "./Blog/Choosingthebestcounsaltancy";
+import Createbalanceinfestival from "./Blog/Createbalanceinfestivaal";
+import Howtochoosetheright from "./Blog/Howtochoosetheright";
+import TestPrepForNepaliStudents from "./Blog/Testpre";
+import Thebestcounsaltancyinnepal from "./Blog/Thebestcoun";
 import Whywearethebest from "./Blog/Whywearethebest";
+import Whyyoushouldstudyinaustralia from "./Blog/Whyyoushouldstudyinaus";
+import Howtogetbetterieltsscore from "./Blog/Howtogetbetterscore";
+import Ieltstipsfornepalistudent from "./Blog/Ieltstipsfornepalistudent";
+import Improveyourvocabulary from "./Blog/Improveyourvocabulary";
+import Essentialstudymaterial from "./Blog/Essentialstudymaterial";
+import Howtostaymotivated from "./Blog/Howtostaymotivated";
+import Creatingbestschedule from "./Blog/Creatingbestschedule";
+import Howgoodarepractice from "./Blog/Howgoodarepractice";
+import Howtodealwithtest from "./Blog/Howtodealwithtest";
+import Ieltsortofel from "./Blog/Ieltsortofel";
+import Visarequirementfornepalistudents from "./Blog/Visareq";
+import Bestprogramfornepalistudent from "./Blog/Bestprogramfornepalistudent";
+import Satvsact from "./Blog/Satoract";
 
 
 
@@ -214,6 +233,7 @@ import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
 import UpcomingNews from "./Pages/Newsarticles/News";
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
+
 
 function App() {
   return (
@@ -325,6 +345,28 @@ function App() {
        
         <Route path="/bloglist" element={<BlogList />} />
         <Route path="/whywearethebest" element={<Whywearethebest />} />
+        <Route path="/howtochoosetheright" element={<Howtochoosetheright />} />
+        <Route path="/testprepfornepalistudents" element={<TestPrepForNepaliStudents />} />
+        <Route path="/choosingthebest" element={<Choosethebestcounsaltancy />} />
+        <Route path="/createbalanceinfestival" element={<Createbalanceinfestival />} />
+        <Route path="/chooseusforyourstudy" element={<Chooseusforyourstudy />} />
+        <Route path="/thebestcounsaltancyinnepal" element={<Thebestcounsaltancyinnepal />} />
+        <Route path="/whyyoushoulsstudyinaustralia" element={<Whyyoushouldstudyinaustralia  />} />
+        <Route path="/howtogetbetterscore" element={<Howtogetbetterieltsscore />} />
+        <Route path="/ieltstipsfornepalistudents" element={<Ieltstipsfornepalistudent />} />
+        <Route path="/improveyourvocabulary" element={<Improveyourvocabulary />} />
+        <Route path="/essentialstudymaterial" element={<Essentialstudymaterial />} />
+        <Route path="/howtostaymotivated" element={<Howtostaymotivated />} />
+        <Route path="/creatingbestschedule" element={<Creatingbestschedule />} />
+        <Route path="/howgoodarepractice" element={<Howgoodarepractice />} />
+        <Route path="/howtodealwithtest" element={<Howtodealwithtest />} />
+        <Route path="/ieltsortofel" element={<Ieltsortofel />} />
+        <Route path="/visarequirementfornepalistudents" element={<Visarequirementfornepalistudents />} />
+        <Route path="/satvsact" element={<Satvsact />} />
+        <Route path="/bestprogramfornepalistudent" element={<Bestprogramfornepalistudent />} />
+
+       
+        
    
 
 
