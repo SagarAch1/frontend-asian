@@ -1,7 +1,9 @@
+
 import React from "react";
 import Footer from "./Footer"; 
 import WhyChooseAiec from "../Homepage/WhyChooseAiec";
 import Youshouldknow from "./YouShouldknow";
+import { Fa } from "react-icons/fa";
 
 const aiecWorkshop = () => {
   const styles = {
@@ -47,25 +49,27 @@ const aiecWorkshop = () => {
       margin: "5px 0",
     },
     buttonContainer: {
-      display: "flex",
-      justifyContent: "center",
-      margin: "30px 0",
-      gap: "20px",
+      display: "grid",
+      gridTemplateColumns: "repeat(3, 1fr)",
+      gap: "15px",
+      marginTop: "30px",
+      width: "80%",
     },
     button: {
-      padding: "15px 25px",
-      border: "none",
-      borderRadius: "25px",
-      cursor: "pointer",
-      fontSize: "16px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      width: "100%",
+      height: "80px", // Reduced size for a sleeker look
+      borderRadius: "15px",
+      fontSize: "14px",
       fontWeight: "600",
       textDecoration: "none",
-      display: "inline-block",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-      transition: "background-color 0.3s ease, transform 0.3s ease",
-      background: "linear-gradient(135deg, #f06, #f79)",
       color: "#fff",
-      borderBottom: "3px solid rgba(0, 0, 0, 0.3)",
+      cursor: "pointer",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+      background: "linear-gradient(135deg, #00c6ff, #0072ff)",
+      transition: "transform 0.3s ease, box-shadow 0.3s ease",
     },
     primaryButton: {
       background: "linear-gradient(135deg, #ff7e5f, #feb47b)",
@@ -74,22 +78,30 @@ const aiecWorkshop = () => {
       background: "linear-gradient(135deg, #00c6ff, #0072ff)",
     },
     infoSection: {
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      marginTop: "40px",
+      display: "grid",
+      gridTemplateColumns: "repeat(3, 1fr)",
+      gap: "15px",
+      marginTop: "20px",
+      width: "80%",
     },
     infoButton: {
-      width: "280px",
-      margin: "10px 0",
-      padding: "15px 20px",
-      borderRadius: "25px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      width: "100%",
+      height: "80px",
+      borderRadius: "15px",
+      fontSize: "14px",
       fontWeight: "600",
-      transition: "background-color 0.3s ease, transform 0.3s ease",
-      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
-      background: "linear-gradient(135deg, #4facfe, #00f2fe)",
+      textDecoration: "none",
       color: "#fff",
-      borderBottom: "3px solid rgba(0, 0, 0, 0.3)",
+      background: "linear-gradient(135deg, #4facfe, #00f2fe)",
+      boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+      transition: "transform 0.3s ease, box-shadow 0.3s ease",
+      "&:hover": {
+        transform: "scale(1.05)",
+        boxShadow: "0 6px 12px rgba(0, 0, 0, 0.3)",
+      },
     },
   };
 
@@ -128,6 +140,12 @@ const aiecWorkshop = () => {
           >
             Duolingo Online Booking
           </a>
+          <a
+            href="/anotherLink"
+            style={{ ...styles.button, ...styles.primaryButton }}
+          >
+            Another Button
+          </a>
         </div>
 
         <div style={styles.infoSection}>
@@ -143,6 +161,12 @@ const aiecWorkshop = () => {
           <a href="/whystudyabroad" style={styles.infoButton}>
             Abroad Study Destination & Facts 🌍
           </a>
+          <a href="/additionalinfo" style={styles.infoButton}>
+            Additional Information
+          </a>
+          <a href="/moreinfo" style={styles.infoButton}>
+            More Information
+          </a>
         </div>
       </div>
 
@@ -156,3 +180,4 @@ const aiecWorkshop = () => {
 };
 
 export default aiecWorkshop;
+
