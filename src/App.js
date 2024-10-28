@@ -203,6 +203,15 @@ import Ieltsortofel from "./Blog/Ieltsortofel";
 import Visarequirementfornepalistudents from "./Blog/Visareq";
 import Bestprogramfornepalistudent from "./Blog/Bestprogramfornepalistudent";
 import Satvsact from "./Blog/Satoract";
+import Balancingjobsandstudy from "./Blog/Balancingjobsandstudy";
+import Managingfinance from "./Blog/Managingfinance";
+import Whystudyabroadin2024 from "./Blog/Whystudyabroadin2024";
+import Tenbestcourse from "./Blog/tenbestcourse";
+import Studyingabroadindepthlook from "./Blog/Studingabroadanindepthlook";
+import Feeincreaseforaustralia from "./Blog/Feeincreaseforasu";
+import Navigatingenglishproficiencytest from "./Blog/Navigatingenglishproficiency";
+import Whatisgoodscoreforsat from "./Blog/Whatisgood";
+import Ieltsmocktests from "./Blog/Ieltsmocktests";
 
 
 
@@ -233,6 +242,7 @@ import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
 import UpcomingNews from "./Pages/Newsarticles/News";
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
+import Ieltsmocktest from "./Blog/Ieltsmocktests";
 
 
 function App() {
@@ -364,6 +374,15 @@ function App() {
         <Route path="/visarequirementfornepalistudents" element={<Visarequirementfornepalistudents />} />
         <Route path="/satvsact" element={<Satvsact />} />
         <Route path="/bestprogramfornepalistudent" element={<Bestprogramfornepalistudent />} />
+        <Route path="/balancingjobsandstudy" element={<Balancingjobsandstudy />} />
+        <Route path="/managingfinance" element={<Managingfinance />} />
+        <Route path="/whystudyabroadin2024" element={<Whystudyabroadin2024 />} />
+        <Route path="/tenbestcourse" element={<Tenbestcourse />} />
+        <Route path="/studingabroadindepthlook" element={<Studyingabroadindepthlook />} />
+        <Route path="/feeincreaseforaustralia" element={<Feeincreaseforaustralia />} />
+        <Route path="/navigatingenglishproficiency" element={<Navigatingenglishproficiencytest />} />
+        <Route path="/whatisgoodforsat" element={<Whatisgoodscoreforsat />} />
+        <Route path="/ieltsmocktest" element={<Ieltsmocktest   />} />
 
        
         

@@ -309,6 +309,141 @@ const BlogList = () => {
             <p>Selecting The Right Program The selection of the right| Dec 05, 2015</p>
           </div>
         </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("balancingjobsandstudy")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            Balancing Jobs And Studies in 2024
+            </h3>
+            <p>Balancing Studies and Part-Time Work: Study| July 26, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("managingfinance")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            Managing Finances For Further Studies
+            </h3>
+            <p>The Finances and Financial Planning Concerning Nepali Students | July 25, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("tenbestcourse")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            10 Best Courses to Study in 2024
+            </h3>
+            <p>Best Courses for Nepali Students to Study Abroad for 2024/2025    | July 22, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("whystudyabroadin2024")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            Why Study Abroad in 2024?
+            </h3>
+            <p>Opening Doors to Global Education: Your Gateway from    | July 21, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("studingabroadindepthlook")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            Studying Abroad: An Indepth Look
+            </h3>
+            <p>  Beyond Borders: Study Abroad In many students’ lives, studying    | July 21, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("feeincreaseforaustralia")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            Fee increase for Australian international students
+            </h3>
+            <p>The Rising Costs of Student Visa Recently    | July 21, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("navigatingenglishproficiency")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            Navigating English Proficiency Tests
+            </h3>
+            <p>Navigating English Proficiency Tests Guidelines for Achieving High Grades in IELTS   | July 21, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("whatisgoodforsat")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            What Is A Good Score For The SAT?
+            </h3>
+            <p>What Is A Good Score For The SAT?  | July 21, 2024</p>
+          </div>
+        </div>
+        <div
+          className="blog-item small"
+          onClick={() => handleNavigation("ieltsmocktest")}
+        >
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            alt="essentialstudymaterial"
+          />
+          <div className="blog-item-content">
+            <h3>
+            IELTS Mock Tests in Kathmandu: Boost Your Score with Practice
+            </h3>
+            <p>The International English Language Testing System (IELTS)  | July 21, 2024</p>
+          </div>
+        </div>
       </div>
 
       <FormPage />
