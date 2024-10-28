@@ -88,19 +88,23 @@ const aiecWorkshop = () => {
           <p style={styles.bannerText}>Sunday to Friday | 10 am - 5 pm</p>
           <p style={styles.bannerText}>
             Venue: AIEC office
-            ADBL Bank's Building, AL3, Putalisadak , Kathmandu
+            ADBL Bank's Building, AL3, Putalisadak, Kathmandu
           </p>
           <p style={styles.bannerText}>977-01-5908881,  977-01- 5908882 </p>
-          
           <p style={styles.bannerText}>info@asian.edu.np</p>
         </div>
       </div>
 
       <div style={styles.buttonContainer}>
-        <a href="/abc" style={{ ...styles.button, ...styles.primaryButton }}>
+        <a href="/contact" style={{ ...styles.button, ...styles.primaryButton }}>
           PTE Mock Test Free* / Paid
         </a>
-        <a href="/bcd" style={{ ...styles.button, ...styles.secondaryButton }}>
+        <a 
+          href="https://englishtest.duolingo.com/applicants" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          style={{ ...styles.button, ...styles.secondaryButton }}
+        >
           Duolingo Online Booking
         </a>
       </div>
@@ -110,10 +114,10 @@ const aiecWorkshop = () => {
           Inquiry or Registration Form
         </a>
         <a href="/bookclass" style={{ ...styles.button, ...styles.infoButton }}>
-          aiec Learning Center Class Schedule 📖
+          AIEC Learning Center Class Schedule 📖
         </a>
         <a href="/bcd" style={{ ...styles.button, ...styles.secondaryButton }}>
-          Universities Represented by aiec 🎓
+          Universities Represented by AIEC 🎓
         </a>
         <a href="/whystudyabroad" style={{ ...styles.button, ...styles.infoButton }}>
           Abroad Study Destination & Facts 🌍
