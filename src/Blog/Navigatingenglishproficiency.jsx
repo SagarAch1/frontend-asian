@@ -8,7 +8,7 @@ const Navigatingenglishproficiencytest = () => {
       {/* Top Section */}
       <div className="header-section">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+          src={`${process.env.PUBLIC_URL}/assets/images/b27.jpg`}
           alt="Consultancy"
           className="blog-header-image"
         />
@@ -30,7 +30,7 @@ const Navigatingenglishproficiencytest = () => {
         <div className="blog-main">
           <h2>Studying Abroad</h2>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+            src={`${process.env.PUBLIC_URL}/assets/images/a2.webp`}
             alt="Blog image"
             className="blog-main-image"
           />

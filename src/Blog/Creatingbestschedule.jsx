@@ -8,7 +8,7 @@ const Creatingbestschedule = () => {
       {/* Top Section */}
       <div className="header-section">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+           src={`${process.env.PUBLIC_URL}/assets/images/b4.webp`}
           alt="Consultancy"
           className="blog-header-image"
         />

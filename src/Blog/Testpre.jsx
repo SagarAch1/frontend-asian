@@ -6,6 +6,11 @@ const TestPrepForNepaliStudents = () => {
     <div className="blog-container">
       {/* Blog Header */}
       <header className="blog-header">
+      <img
+           src={`${process.env.PUBLIC_URL}/assets/images/b3.jpg`}
+          alt="Consultancy"
+          className="blog-header-image"
+        />
         <h2>Test Preparation For Nepali Students</h2>
        
         <p>Comments (0)</p>

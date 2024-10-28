@@ -8,7 +8,7 @@ const Whatisgoodscoreforsat = () => {
       {/* Top Section */}
       <div className="header-section">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+          src={`${process.env.PUBLIC_URL}/assets/images/b28.png`}
           alt="Consultancy"
           className="blog-header-image"
         />
@@ -30,7 +30,7 @@ const Whatisgoodscoreforsat = () => {
         <div className="blog-main">
           <h2>What Is A Good Score For The SAT?</h2>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+            src={`${process.env.PUBLIC_URL}/assets/images/sat1.jpg`}
             alt="Blog image"
             className="blog-main-image"
           />
@@ -86,6 +86,11 @@ const Whatisgoodscoreforsat = () => {
               universities. Schools such as New York University, Boston College,
               etc., often take students with scores in this range.
             </li>
+            <img
+            src={`${process.env.PUBLIC_URL}/assets/images/b28.png`}
+            alt="Blog image"
+            className="blog-main-image"
+          />
             <li>
               <strong>Top Tier Scores (1500-1600):</strong> Scoring above 1500
               in the SAT puts you in the top 1-2% of the test takers. These

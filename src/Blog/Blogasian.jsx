@@ -27,7 +27,7 @@ const BlogList = () => {
           />
           <div className="blog-item-content">
             <h2>Why We Are The Best Consultancy</h2>
-            <p>Studying abroad is a dream? | Dec 05, 2015</p>
+            <p>Studying abroad is a dream? | September 3, 2024</p>
           </div>
         </div>
         <div
@@ -41,8 +41,7 @@ const BlogList = () => {
           <div className="blog-item-content">
             <h3>How To Chose The Right University</h3>
             <p>
-              Studying abroad is a dream for many Nepali students, | Mar 17,
-              2016
+              Studying abroad is a dream for many Nepali students, | September 1, 2024
             </p>
           </div>
         </div>
@@ -51,12 +50,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("testprepfornepalistudents")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/3b.webp`}
-            alt="Cars Waiting"
+            src={`${process.env.PUBLIC_URL}/assets/images/b3.jpg`}
+            alt="test preparation for nepali students"
           />
           <div className="blog-item-content">
             <h3>Test Preparation For Nepali Studentst</h3>
-            <p> For Nepali students aspiring to | Mar 17, 2016</p>
+            <p> For Nepali students aspiring to | August 24, 2024</p>
           </div>
         </div>
         <div
@@ -64,14 +63,14 @@ const BlogList = () => {
           onClick={() => handleNavigation("createbalanceinfestival")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a.jpeg`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b4.webp`}
             alt="Tablet on Table"
           />
           <div className="blog-item-content">
             <h3>Create Balance Between Festivals And Studies</h3>
             <p>
               How to Balance Study During Dashain and Tihar Festival: Tips for
-              Nepali Students | Mar 17, 2016
+              Nepali Students | August 15, 2024
             </p>
           </div>
         </div>
@@ -84,14 +83,14 @@ const BlogList = () => {
           onClick={() => handleNavigation("choosingthebest")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a1.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b5.png`}
             alt="howtochoosethe"
           />
           <div className="blog-item-content">
             <h3>Choosing The Best Consultancy In Nepal</h3>
             <p>
               A good consultancy doesn’t just stop at university applications |
-              Mar 17, 2016
+              August 8, 2024
             </p>
           </div>
         </div>
@@ -100,12 +99,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("chooseusforyourstudy")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a2.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b6.jpg`}
             alt="Choose Us For Your Study Plan"
           />
           <div className="blog-item-content">
             <h3>Choose Us For Your Study Plan</h3>
-            <p>Deciding to study abroad is a | Mar 17, 2016</p>
+            <p>Deciding to study abroad is a | October 16, 2024</p>
           </div>
         </div>
 
@@ -114,12 +113,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("whyyoushoulsstudyinaustralia")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a3.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b7.avif`}
             alt="Why You Should Study In Australia"
           />
           <div className="blog-item-content">
             <h3>Why You Should Study In Australia</h3>
-            <p>Australia has become one of the | Mar 17, 2016</p>
+            <p>Australia has become one of the | September 16, 2024</p>
           </div>
         </div>
         <div
@@ -127,12 +126,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("howtogetbetterscore")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a3.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b8.jpg`}
             alt="The Best Consultancy In Nepal"
           />
           <div className="blog-item-content">
             <h3>How To Get A Better IELTS Score 2024</h3>
-            <p>Achieving a high IELTS | Mar 17, 2016</p>
+            <p>Achieving a high IELTS | September 12, 2024</p>
           </div>
         </div>
         <div
@@ -140,12 +139,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("thebestcounsaltancyinnepal")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a3.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b9.jpg`}
             alt="The Best Consultancy In Nepal"
           />
           <div className="blog-item-content">
             <h3>The Best Consultancy In Nepal</h3>
-            <p>The International English Language  | Mar 17, 2016</p>
+            <p>The International English Language  | October 16, 2024</p>
           </div>
         </div>
         <div
@@ -153,12 +152,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("ieltstipsfornepalistudents")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a3.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b10.jpg`}
             alt="Ielts tips"
           />
           <div className="blog-item-content">
             <h3>The IELTS: Tips for Nepali Students</h3>
-            <p>The International English Language  | Mar 17, 2016</p>
+            <p>The International English Language  | September 10, 2024</p>
           </div>
         </div>
         <div
@@ -166,12 +165,12 @@ const BlogList = () => {
           onClick={() => handleNavigation("improveyourvocabulary")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a3.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b11.jpg`}
             alt="Ielts tips"
           />
           <div className="blog-item-content">
             <h3>Improve Your Vocabulary For TOEFL 2024</h3>
-            <p>Achieving proficiency in English, as measured by   | Mar 17, 2016</p>
+            <p>Achieving proficiency in English, as measured by   | October 16, 2024</p>
           </div>
         </div>
         
@@ -180,13 +179,13 @@ const BlogList = () => {
           onClick={() => handleNavigation("howtostaymotivated")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a3.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b12.jpg`}
             alt="Ielts tips"
           />
           <div className="blog-item-content">
             <h3>How To Stay Motivated While Studying 2024
             </h3>
-            <p>Stay Motivated During Long Study Sessions:   | Mar 17, 2016</p>
+            <p>Stay Motivated During Long Study Sessions:   | October 16, 2024</p>
           </div>
         </div>
         <div
@@ -194,14 +193,14 @@ const BlogList = () => {
           onClick={() => handleNavigation("essentialstudymaterial")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b13.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
             <h3>
             Essential Study Materials In 2024
             </h3>
-            <p>Studying abroad is an exciting opportunity| Dec 05, 2015</p>
+            <p>Studying abroad is an exciting opportunity| June 05, 2024</p>
           </div>
         </div>
         <div
@@ -209,14 +208,14 @@ const BlogList = () => {
           onClick={() => handleNavigation("creatingbestschedule")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b14.jpg`}
             alt="creatingbestschedule"
           />
           <div className="blog-item-content">
             <h3>
             Creating The Best Schedule For 2024
             </h3>
-            <p>Creating a Study Schedule That Works:| Dec 05, 2015</p>
+            <p>Creating a Study Schedule That Works:| july 05, 2024</p>
           </div>
         </div>
         <div
@@ -224,14 +223,14 @@ const BlogList = () => {
           onClick={() => handleNavigation("howgoodarepractice")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b15.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
             <h3>
             How Good Are Practice Tests In 2024?
             </h3>
-            <p>The Role of Practice Tests in SAT and GRE| Dec 05, 2015</p>
+            <p>The Role of Practice Tests in SAT and GRE| August 05, 2024</p>
           </div>
         </div>
         <div
@@ -239,14 +238,14 @@ const BlogList = () => {
           onClick={() => handleNavigation("howtodealwithtest")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b16.jpeg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
             <h3>
             How To Deal With Test Anxiety 2024
             </h3>
-            <p>Overcoming Test Anxiety: Strategies | Dec 05, 2015</p>
+            <p>Overcoming Test Anxiety: Strategies | October 05, 2024</p>
           </div>
         </div>
         <div
@@ -254,7 +253,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("ieltsortofel")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b17.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -269,7 +268,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("visarequirementfornepalistudents")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b18.avif`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -284,7 +283,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("satvsact")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b19.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -299,7 +298,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("bestprogramfornepalistudent")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b20.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -314,7 +313,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("balancingjobsandstudy")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b21.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -329,7 +328,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("managingfinance")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b22.jpeg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -344,7 +343,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("tenbestcourse")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b23.webp`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -359,7 +358,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("whystudyabroadin2024")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b24.webp`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -374,7 +373,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("studingabroadindepthlook")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b25.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -389,7 +388,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("feeincreaseforaustralia")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b26.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -404,7 +403,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("navigatingenglishproficiency")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b27.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -419,7 +418,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("whatisgoodforsat")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b28.png`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">
@@ -434,7 +433,7 @@ const BlogList = () => {
           onClick={() => handleNavigation("ieltsmocktest")}
         >
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/a4.webp`}
+            src={`${process.env.PUBLIC_URL}/assets/images/b29.jpg`}
             alt="essentialstudymaterial"
           />
           <div className="blog-item-content">

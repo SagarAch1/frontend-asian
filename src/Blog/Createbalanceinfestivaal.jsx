@@ -8,7 +8,7 @@ const Createbalanceinfestival = () => {
       {/* Top Section */}
       <div className="header-section">
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`}
+           src={`${process.env.PUBLIC_URL}/assets/images/b14.jpg`}
           alt="Consultancy"
           className="blog-header-image"
         />
