@@ -1,6 +1,13 @@
 import React from 'react';
 
 const SampleDocs = () => {
+  // Links for each download button
+  const documentLinks = [
+    "https://docs.google.com/document/d/1zbkuE0ejQAoqKJ7HcAm0buB87PbEqRso1i1lutApWGA/edit?tab=t.0",
+    "https://docs.google.com/document/d/1dng7_5Yj3QCV_nKDNwprR9igM6mDBcz0KVFBoaqZAdU/edit?tab=t.0",
+    "https://docs.google.com/document/d/12vXJfTl5y81nZ92V1N2PEuiwDCkIJM_1_QWRSM1Rzkc/edit?tab=t.0"
+  ];
+
   return (
     <div style={{ fontFamily: 'Arial, sans-serif', padding: '20px', backgroundColor: '#f4f4f9' }}>
       {/* Top Banner */}
@@ -34,17 +41,20 @@ const SampleDocs = () => {
             <h3 style={{ fontSize: '16px', marginBottom: '10px', color: '#666' }}>ASIAN INTERNATIONAL EDUCATION AND MIGRATION SERVICES PTY LTD</h3>
             <h2 style={{ fontSize: '22px', fontWeight: 'bold', color: '#0056b3', margin: '10px 0' }}>{title.toUpperCase()}</h2>
             <p style={{ color: '#888', fontSize: '14px', marginTop: '10px' }}>{title}</p>
-            <button style={{
-              backgroundColor: '#ff6600',
-              border: 'none',
-              color: '#fff',
-              padding: '12px 25px',
-              borderRadius: '8px',
-              marginTop: '20px',
-              fontSize: '16px',
-              cursor: 'pointer',
-              transition: 'background 0.3s',
-            }}>Download</button>
+            <button 
+              onClick={() => window.location.href = documentLinks[index]} // Navigate to specific document link
+              style={{
+                backgroundColor: '#ff6600',
+                border: 'none',
+                color: '#fff',
+                padding: '12px 25px',
+                borderRadius: '8px',
+                marginTop: '20px',
+                fontSize: '16px',
+                cursor: 'pointer',
+                transition: 'background 0.3s',
+              }}
+            >Download</button>
           </div>
         ))}
       </div>
