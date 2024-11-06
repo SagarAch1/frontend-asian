@@ -216,6 +216,7 @@ import SampleDocs from "./Pages/Homepage/Resources";
 import StudyInAustralia from "./Pages/Homepage/Australiaresource";
 import Resourcecanada from "./Pages/Homepage/Canadaresource";
 import Ukresource from "./Pages/Homepage/Unitedresource";
+import Newzelandresource from "./Pages/Homepage/Newzelandresource";
 
 
 
@@ -391,6 +392,7 @@ function App() {
         <Route path="/resourceaustralia" element={<StudyInAustralia />} />
         <Route path="/resourcecanada" element={<Resourcecanada />} />
         <Route path="/resourceuk" element={<Ukresource />} />
+        <Route path="/newzelandresource" element={<Newzelandresource />} />
 
 
 
