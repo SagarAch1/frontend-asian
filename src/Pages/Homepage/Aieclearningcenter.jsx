@@ -141,10 +141,10 @@ const aiecWorkshop = () => {
             Duolingo Online Booking
           </a>
           <a
-            href="/anotherLink"
+            href="/browsesubject"
             style={{ ...styles.button, ...styles.primaryButton }}
           >
-            Another Button
+            Browse Subjects
           </a>
         </div>
 
@@ -155,7 +155,7 @@ const aiecWorkshop = () => {
           <a href="/bookclass" style={styles.infoButton}>
             AIEC Learning Center Class Schedule 📖
           </a>
-          <a href="/bcd" style={styles.infoButton}>
+          <a href="/usauniversities" style={styles.infoButton}>
             Universities Represented by AIEC 🎓
           </a>
           <a href="/whystudyabroad" style={styles.infoButton}>
@@ -164,8 +164,8 @@ const aiecWorkshop = () => {
           <a href="/resources" style={styles.infoButton}>
             Resources
           </a>
-          <a href="/moreinfo" style={styles.infoButton}>
-            More Information
+          <a href="/officelocator" style={styles.infoButton}>
+            Find Us
           </a>
         </div>
       </div>
