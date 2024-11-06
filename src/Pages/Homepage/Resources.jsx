@@ -1,11 +1,12 @@
 import React from 'react';
+import Footer from './Footer';
+import FormPage from './FormPage';
 
 const SampleDocs = () => {
-  // Links for each download button
   const documentLinks = [
     "https://docs.google.com/document/d/1zbkuE0ejQAoqKJ7HcAm0buB87PbEqRso1i1lutApWGA/edit?tab=t.0",
-    "https://docs.google.com/document/d/1dng7_5Yj3QCV_nKDNwprR9igM6mDBcz0KVFBoaqZAdU/edit?tab=t.0",
-    "https://docs.google.com/document/d/12vXJfTl5y81nZ92V1N2PEuiwDCkIJM_1_QWRSM1Rzkc/edit?tab=t.0"
+    "https://docs.google.com/document/d/2zbkuE0ejQAoqKJ7HcAm0buB87PbEqRso1i1lutApWGA/edit?tab=t.0",
+    "https://docs.google.com/document/d/3zbkuE0ejQAoqKJ7HcAm0buB87PbEqRso1i1lutApWGA/edit?tab=t.0"
   ];
 
   return (
@@ -23,24 +24,27 @@ const SampleDocs = () => {
         </div>
       </div>
 
-      {/* Document Boxes with Wow Design */}
+      {/* Document Boxes */}
       <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '30px', paddingBottom: '50px' }}>
         {['Sample One', 'Affidavit of Sponsorship', 'Work Experience'].map((title, index) => (
           <div key={index} style={{
             width: '280px',
             textAlign: 'center',
             padding: '25px',
-            backgroundColor: '#fff',
-            color: '#333',
+            backgroundColor: '#0056b3',  // Blue background color
+            color: '#fff',
             borderRadius: '15px',
             boxShadow: '0px 10px 15px rgba(0,0,0,0.1)',
             border: '2px solid #e0e0e0',
             transition: 'transform 0.3s ease',
             overflow: 'hidden',
           }}>
-            <h3 style={{ fontSize: '16px', marginBottom: '10px', color: '#666' }}>ASIAN INTERNATIONAL EDUCATION AND MIGRATION SERVICES PTY LTD</h3>
-            <h2 style={{ fontSize: '22px', fontWeight: 'bold', color: '#0056b3', margin: '10px 0' }}>{title.toUpperCase()}</h2>
-            <p style={{ color: '#888', fontSize: '14px', marginTop: '10px' }}>{title}</p>
+            <h3 style={{ fontSize: '16px', marginBottom: '10px', color: '#ffffff' }}>ASIAN INTERNATIONAL EDUCATION AND MIGRATION SERVICES PTY LTD</h3>
+            <h2 style={{ fontSize: '22px', fontWeight: 'bold', color: '#ffffff', margin: '10px 0' }}>{title.toUpperCase()}</h2>
+            
+            {/* Set minimum height for text container to align buttons */}
+            <div style={{ minHeight: '60px' }}></div>
+            
             <button 
               onClick={() => window.location.href = documentLinks[index]} // Navigate to specific document link
               style={{
@@ -105,6 +109,8 @@ const SampleDocs = () => {
           </div>
         ))}
       </div>
+      <FormPage />
+      <Footer />
     </div>
   );
 };
