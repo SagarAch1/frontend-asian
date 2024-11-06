@@ -161,8 +161,8 @@ const aiecWorkshop = () => {
           <a href="/whystudyabroad" style={styles.infoButton}>
             Abroad Study Destination & Facts 🌍
           </a>
-          <a href="/additionalinfo" style={styles.infoButton}>
-            Additional Information
+          <a href="/resources" style={styles.infoButton}>
+            Resources
           </a>
           <a href="/moreinfo" style={styles.infoButton}>
             More Information

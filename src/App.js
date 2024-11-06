@@ -212,6 +212,7 @@ import Feeincreaseforaustralia from "./Blog/Feeincreaseforasu";
 import Navigatingenglishproficiencytest from "./Blog/Navigatingenglishproficiency";
 import Whatisgoodscoreforsat from "./Blog/Whatisgood";
 import Ieltsmocktests from "./Blog/Ieltsmocktests";
+import SampleDocs from "./Pages/Homepage/Resources";
 
 
 
@@ -383,6 +384,7 @@ function App() {
         <Route path="/navigatingenglishproficiency" element={<Navigatingenglishproficiencytest />} />
         <Route path="/whatisgoodforsat" element={<Whatisgoodscoreforsat />} />
         <Route path="/ieltsmocktest" element={<Ieltsmocktest   />} />
+        <Route path="/resources" element={<SampleDocs />} />
 
        
         
