@@ -67,8 +67,8 @@ const SampleDocs = () => {
       <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', paddingBottom: '50px', flexWrap: 'wrap' }}>
         {[
           { title: 'Accreditation', images: [{ src: 'aff.png', url: 'https://www.icef.com/agency/0010J000026RLxMQAW' }] },
-          { title: 'Professional Certification', images: [{ src: 'toefl.jpg', url: 'https://www.example.com/hij' }, { src: 'isana.png', url: 'https://www.example.com/klm' }, { src: 'qeac.png', url: 'https://www.example.com/efg' }, { src: 'think-new.jpg', url: 'https://www.example.com/efg' }] },
-          { title: 'Professional Membership', images: [{ src: 'naaer.jpg', url: 'https://www.example.com/nop' }, { src: 'ecan.jpg', url: 'https://www.example.com/qrs' }, { src: 'uni.jpg', url: 'https://www.example.com/tuv' }] }
+          { title: 'Professional Certification', images: [{ src: 'itac.png', url: 'https://www.icef.com/academy/icef-trained-agent-counsellors-itacs-list/' },{ src: 'toefl.jpg', url: 'https://www.ets.org/toefl/institutions/ibt.html' }, { src: 'isana.png', url: 'https://isana.org.au/' }, { src: 'qeac.png', url: 'https://www.icef.com/academy/qualified-education-agent-counsellors-qeacs-list/' }, { src: 'think-new.jpg', url: 'https://thinknewnz.com/' }] },
+          { title: 'Professional Membership', images: [{ src: 'naaer.jpg', url: 'https://www.naaer.org/' }, { src: 'ecan.jpg', url: 'https://ecan.org.np/' }, { src: 'uni.jpg', url: 'https://www.uniagents.com/' }] }
         ].map((item, index) => (
           <div key={index} style={{
             width: '100%',
