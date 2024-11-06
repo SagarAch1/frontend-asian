@@ -14,7 +14,7 @@ const SampleDocs = () => {
       {/* Top Banner */}
       <div style={{ backgroundColor: '#ffffff', textAlign: 'center', padding: '20px 0', position: 'relative', marginBottom: '40px' }}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/new.jpeg`}
+          src={`${process.env.PUBLIC_URL}/assets/images/aab.png`}
           alt="Banner"
           style={{ width: '2000px', height: '400px' }}
         />
