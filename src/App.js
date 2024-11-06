@@ -215,6 +215,7 @@ import Ieltsmocktests from "./Blog/Ieltsmocktests";
 import SampleDocs from "./Pages/Homepage/Resources";
 import StudyInAustralia from "./Pages/Homepage/Australiaresource";
 import Resourcecanada from "./Pages/Homepage/Canadaresource";
+import Ukresource from "./Pages/Homepage/Unitedresource";
 
 
 
@@ -389,6 +390,7 @@ function App() {
         <Route path="/resources" element={<SampleDocs />} />
         <Route path="/resourceaustralia" element={<StudyInAustralia />} />
         <Route path="/resourcecanada" element={<Resourcecanada />} />
+        <Route path="/resourceuk" element={<Ukresource />} />
 
 
 
