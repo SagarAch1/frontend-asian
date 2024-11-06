@@ -214,6 +214,7 @@ import Whatisgoodscoreforsat from "./Blog/Whatisgood";
 import Ieltsmocktests from "./Blog/Ieltsmocktests";
 import SampleDocs from "./Pages/Homepage/Resources";
 import StudyInAustralia from "./Pages/Homepage/Australiaresource";
+import Resourcecanada from "./Pages/Homepage/Canadaresource";
 
 
 
@@ -387,6 +388,7 @@ function App() {
         <Route path="/ieltsmocktest" element={<Ieltsmocktest   />} />
         <Route path="/resources" element={<SampleDocs />} />
         <Route path="/resourceaustralia" element={<StudyInAustralia />} />
+        <Route path="/resourcecanada" element={<Resourcecanada />} />
 
 
 

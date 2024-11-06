@@ -2,13 +2,11 @@ import React from 'react';
 import Footer from './Footer';
 
 const guides = [
-  { title: 'Processing Cycle', buttonText: 'Download', link: 'https://asian.edu.np/wp-content/uploads/2024/06/Processing-Cycle-1.pdf' },
-  { title: 'SOP Guide', buttonText: 'Download', link: 'https://asian.edu.np/wp-content/uploads/2024/06/SOP-Guide.pdf' },
-  { title: 'Document checklist for Australia', buttonText: 'Download', link: 'https://asian.edu.np/wp-content/uploads/2024/06/document-checklist-for-australia-.pdf' },
-  { title: 'Three Years Bachelor + PQP+ Pre Master', buttonText: 'Download', link: 'https://docs.google.com/spreadsheets/d/15nMvShmVIYw0fLtVExGqKhqzHw2tZQ56NuTwrec_QVs/edit?gid=397395363#gid=397395363' },
+  { title: 'Document checklist for Canada', buttonText: 'Download', link: 'https://docs.google.com/spreadsheets/d/1mXB-oQkbOVAvniehnGt0bz6paFWGFFfivsFIREIgiWo/edit?gid=763236539#gid=763236539' },
+  
 ];
 
-const StudyInAustralia = () => {
+const Resourcecanada = () => {
   return (
     <>
       <div style={styles.container}>
@@ -29,8 +27,8 @@ const StudyInAustralia = () => {
           {guides.map((guide, index) => (
             <div key={index} style={styles.card}>
               <img
-                src={`${process.env.PUBLIC_URL}/assets/images/studyaustralia.png`}
-                alt="Study in Australia"
+                src={`${process.env.PUBLIC_URL}/assets/images/recanada.png`}
+                alt="Study in Canada"
                 style={styles.image}
               />
               <div style={styles.title}>{guide.title}</div>
@@ -139,4 +137,4 @@ const styles = {
   },
 };
 
-export default StudyInAustralia;
+export default Resourcecanada;
