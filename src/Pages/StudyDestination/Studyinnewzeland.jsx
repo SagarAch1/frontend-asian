@@ -9,7 +9,7 @@ const Studyinnewzeland = () => {
         <div
           style={{
             ...styles.headerImage,
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`,
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/topp.png)`,
             marginTop: "83px",
           }}
         ></div>
@@ -680,6 +680,8 @@ const styles = {
   },
   headerTitle: {
     fontSize: "34px",
+    fontWeight: "bold",
+    color: "black",
     marginBottom: "10px",
     background: "",
     padding: "10px",

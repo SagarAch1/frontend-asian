@@ -2,14 +2,14 @@ import React from "react";
 import Exploreincanada from "../Homepage/Exploreincanada";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
-const StudyInUsa = () => {
+const StudyinCanada = () => {
   return (
     <div style={styles.container}>
       <header style={styles.headerSection}>
         <div
           style={{
             ...styles.headerImage,
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`,
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/topp.png)`,
             marginTop: "83px",
           }}
         ></div>
@@ -433,6 +433,8 @@ const styles = {
   },
   headerTitle: {
     fontSize: "34px",
+    fontWeight: "bold",
+    color: "black",
     marginBottom: "10px",
     background: "",
     padding: "10px",
@@ -495,4 +497,4 @@ const styles = {
   },
 };
 
-export default StudyInUsa;
+export default StudyinCanada;
