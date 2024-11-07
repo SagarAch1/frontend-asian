@@ -17,6 +17,15 @@ const searchButtonStyle = {
   borderRadius: "4px",
   cursor: "pointer",
 };
+const findEventButtonStyle = {
+  backgroundColor: "#ff6600",
+  color: "#fff",
+  padding: "10px 20px",
+  border: "none",
+  borderRadius: "4px",
+  cursor: "pointer",
+};
+
 
 const belowSliderSectionStyle = {
   padding: "20px",
@@ -154,6 +163,8 @@ const BelowSliderSection = ({ activeSection }) => {
       setIsDestinationDropdownOpen(false);
     }
   }, [activeSection]);
+ 
+  
 
   const handleCourseSubjectChange = (event) => {
     const value = event.target.value;
@@ -444,6 +455,19 @@ const BelowSliderSection = ({ activeSection }) => {
     </button>
   </>
 )}
+
+{activeSection === "event" && (
+  <button 
+    style={findEventButtonStyle} 
+    onClick={() => navigate("/upcomingevents")}
+  >
+    Find Event
+  </button>
+)}
+
+
+
+
 
 
         {activeSection === "universities" && (

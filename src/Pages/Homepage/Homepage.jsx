@@ -145,8 +145,7 @@ const Homepage = () => {
               "courses",
               "scholarships",
               "universities",
-              "events",
-              "guideMe",
+              
             ].map((section) => (
               <li key={section} style={navItemStyle}>
                 <a
