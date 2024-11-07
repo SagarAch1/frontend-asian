@@ -72,7 +72,7 @@ const Youshouldknow = () => {
         {/* Global Events Section */}
         <div
           style={infoLeftStyle}
-          onClick={() => navigate("/events")} // Navigate to /events
+          onClick={() => navigate("/upcommingevents")} // Navigate to /events
         >
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/you1.png`}
@@ -91,7 +91,7 @@ const Youshouldknow = () => {
           {/* FastLane Section */}
           <div
             style={infoBoxStyle}
-            onClick={() => navigate("/liveevent")} // Navigate to /liveevent
+            onClick={() => navigate("/upcommingevents")} // Navigate to /liveevent
           >
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/you2.jpeg`}

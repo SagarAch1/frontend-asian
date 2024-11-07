@@ -22,7 +22,7 @@ const PopularCourses = () => {
           </a>
         ))}
       </div>
-      <a href="#" style={styles.viewAllLink}>View all courses &#x2192;</a>
+      <a href="browsesubject" style={styles.viewAllLink}>View all courses &#x2192;</a>
     </div>
   );
 };
