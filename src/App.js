@@ -182,7 +182,6 @@ import Visualarts from "./Pages/Subjects/Visualarts";
 import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import WoolScience from "./Pages/Subjects/Woolscience";
 import Writtencommunication from "./Pages/Subjects/Writtencommunication";
-
 import Chooseusforyourstudy from "./Blog/Chooseusforyourstudy";
 import Choosethebestcounsaltancy from "./Blog/Choosingthebestcounsaltancy";
 import Createbalanceinfestival from "./Blog/Createbalanceinfestivaal";
@@ -218,10 +217,6 @@ import Resourcecanada from "./Pages/Homepage/Canadaresource";
 import Ukresource from "./Pages/Homepage/Unitedresource";
 import Newzelandresource from "./Pages/Homepage/Newzelandresource";
 import Usaresource from "./Pages/Homepage/Usaresource";
-
-
-
-
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
@@ -236,13 +231,11 @@ import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
 import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement";
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
-
 import OurTeam from "./Pages/Ourteam/OurTeam";
 import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
 import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
-
 import GalleryDisplay from "./Pages/Gallery/Gallerydisplay";
 import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
 import UpcomingNews from "./Pages/Newsarticles/News";
@@ -395,17 +388,6 @@ function App() {
         <Route path="/resourceuk" element={<Ukresource />} />
         <Route path="/newzelandresource" element={<Newzelandresource />} />
         <Route path="/resourceusa" element={<Usaresource />} />
-
-
-
-       
-        
-   
-
-
-
-
-
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
