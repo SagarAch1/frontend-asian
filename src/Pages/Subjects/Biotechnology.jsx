@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Biotechnology = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+const BiotechnologyPage = () => {
+  const [expandedIndex, setExpandedIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleSection = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index); // Toggle open/close
   };
 
-  const sectionStyle = {
+  const headerSectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,7 +24,7 @@ const Biotechnology = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statisticsSectionStyle = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -32,7 +32,7 @@ const Biotechnology = () => {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
   };
 
-  const statItemStyle = {
+  const statCardStyle = {
     width: "22%",
     textAlign: "center",
     fontSize: "16px",
@@ -46,9 +46,9 @@ const Biotechnology = () => {
     color: "#333",
   };
 
-  const iconStyle = {
+  const iconCardStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Green color for icons
     marginBottom: "10px",
   };
 
@@ -86,107 +86,101 @@ const Biotechnology = () => {
     color: "#333",
   };
 
-  const faqItems = [
+  const faqItemsData = [
     {
       title: "About Biotechnology",
       content:
-        "The study of biotechnology has been there in formal or informal ways throughout the centuries. In ancient times, humans used to manufacture cheese and yogurt by culturing milk with microbes. Whereas now, we have advances that allow us to study microbes at their genetic level. Thanks to biotechnology, now we have been able to mass-produce insulin as well. From creating lifesaving artificial hormones, a biotechnologist is at the forefront of innovation. The application of the field is immense and wide. Anyone pursuing a career in the field would find themselves constantly being challenged to find new solutions to problems.",
+        "Biotechnology has evolved over centuries, starting from ancient processes like making cheese and yogurt to modern genetic studies. Today, biotechnology is involved in life-saving innovations like insulin production and gene-level research. This field is vast and offers endless opportunities for new solutions to global challenges.",
     },
     {
       title: "Is Biotechnology right for me?",
       content:
-        "If you keep gravitating towards the scientific section of news but are not interested in pursuing a career in traditional medicine, then pursuing higher education in biotechnology can be the perfect fit for you. It is a lucrative career option for those who are keen researchers and aim to study in the field of biology. The field requires an individual to be detail-oriented and passionate about innovation that can make a difference for humanity in the longer run. From developing new vaccines for humanity to genetically engineering high-yielding crops, the field of biotechnology provides a great opportunity for an individual looking for growth and prosperity. Individuals with greater curiosity to understand living beings at a genetic level will find themselves perfectly fit for this field. It goes without saying that analytical skills and an aptitude for hard work are other key requirements for a biotechnologist.",
+        "If you're passionate about scientific discovery but not inclined towards traditional medicine, biotechnology could be your ideal career path. It requires a detail-oriented mind and a commitment to solving complex biological problems. From vaccine development to genetic engineering, this field promises growth and impact for those with curiosity and dedication.",
     },
     {
       title: "Biotechnology study options and costs",
       content1:
-        "Biotechnology degrees focuses on imparting knowledge in a wide range of subjects including bioinformatics, gene understanding and identification, DNA sequencing, drug and biologic development, genetic engineering, biotechnology management, and marketing within the industry, ethical implication of food and human biotechnology. Below are some degree options with associated costs:",
-      content2:"1. Bachelors in Bio Informatics can cost up to 17,280 USD/year in the USA",
-      content3:"2. Bachelors in Molecular Biology can cost you around $34,949",
-      content4:"3. Bachelor Of Biomedicine biotechnology can cost you up to the US $37,122 a year",
-      content5:"4. BSc in Biotechnology costs around $17,852 annually.",
-      content6:"5. A Diploma in Biotechnology is for two-year max and cost up to $15000",
-      content7:"Each area of study offers a broad base knowledge in biotechnology in various fields .while you can also pursue further on as graduate and postgraduate studies in biotechnology for future growth in your career.",
+        "Biotechnology degrees cover diverse areas including bioinformatics, gene sequencing, drug development, and the ethical implications of biotechnology. Below are some degrees with approximate costs:",
+      content2: "1. Bachelors in Bioinformatics: $17,280/year (USA)",
+      content3: "2. Bachelors in Molecular Biology: $34,949/year",
+      content4: "3. Bachelor of Biomedicine Biotechnology: $37,122/year",
+      content5: "4. BSc in Biotechnology: $17,852/year",
+      content6: "5. Diploma in Biotechnology (2 years): $15,000",
+      content7:
+        "Each of these programs offers a comprehensive foundation in biotechnology, with opportunities for further graduate studies.",
     },
     {
       title: "Future outlook",
       content:
-        "There is huge potential within the industry with regard to further growth within the field. According to BLS Occupational Employment and Wage Statistics survey, the market for biotechnologists is expected to grow at 6% from 2020-30. This means that 87000 jobs would be created for new entrants. As a biotechnologist, you would be at the forefront of research and development within medical science, healthcare, agriculture, and environmental development.",
+        "The biotechnology industry is expected to grow by 6% from 2020-2030, with 87,000 new jobs projected. As a biotechnologist, you could contribute to advancements in medicine, agriculture, and environmental science.",
     },
     {
-      title: "Career pathways for Biotechnology graduates",
-      subtitle1: "Lab specialist",
+      title: "Career paths for Biotechnology graduates",
+      subtitle1: "Lab Specialist",
       content1:
-        "You can work in pharmaceutical companies. Where you will be at forefront of developing new medicines and vaccinations. The annual remuneration of lab specialists averages at $46,340 per year",
+        "Lab specialists work in pharmaceutical companies, developing new medicines and vaccines, with an average annual salary of $46,340.",
       subtitle2: "Pathologist",
       content2:
-        "You would be working in a medical laboratory in order to understand the genetic coding of microbes and new viral diseases.",
-      subtitle3: "Forensic analyst",
+        "Pathologists analyze genetic information to study microbial diseases and viruses.",
+      subtitle3: "Forensic Analyst",
       content3:
-        "A Forensic Analyst usually works as a criminal investigator and carries out DNA analysis for police. A forensic analyst makes around $60,590 per year.",
-      subtitle4: "Environmental consultant",
-      content4:"As an environmental consultant, you would be working to assess and monitor viral and polluting contaminations within the environment and its implication on ecology. And provide services to various entities such as government or private institutes.",
+        "Forensic analysts conduct DNA analysis for criminal investigations, earning around $60,590 per year.",
+      subtitle4: "Environmental Consultant",
+      content4:
+        "Environmental consultants assess pollution levels and environmental impacts, offering services to governments and private organizations.",
       subtitle5: "Genetic Counselor",
-      content5: "As a genetic counselor, you would be working within a fertility clinic to research areas such as assistive reproduction and fetus gene therapist.",
-      subtitle6: "Marketing manager",
-      content6: "A Biotechnologist can also work as a marketing /sales representative, where you will be advising organisations in the application of biotechnical concepts and tools in the company’s manufacturing process.",
+      content5:
+        "Genetic counselors work in fertility clinics, advising on reproductive health and genetic testing.",
+      subtitle6: "Marketing Manager",
+      content6:
+        "Biotechnologists in marketing advise companies on applying biotechnological innovations in their manufacturing processes.",
       subtitle7: "Food Biotechnologist",
-      content7:"You would work in developing food products that are cost-effective and environmentally sustainable for organizations. On average, a food biotechnologist makes around $68,830 annually.",
+      content7:
+        "Food biotechnologists work on developing cost-effective, sustainable food products, earning an average of $68,830 annually.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
+      {/* Header Section */}
+      <div style={headerSectionStyle}>
         <h1>Study Biotechnology Abroad</h1>
         <p>
-          PBiotechnology is an interdisciplinary field that studies biological
-          matter at cellular level. It entails the study of cell biology, tissue
-          cultures, genetics, immunology, food biochemistry, microbiology, and
-          plant biotechnology.
+          Biotechnology is an interdisciplinary field studying biological matter at a cellular level, 
         </p>
+        <p>including areas like genetics, immunology, microbiology, and plant biotechnology.</p>
       </div>
 
-      {/* Statistics section */}
-      <div style={statisticsSection}>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong>: The median starting salary for a biotechnologist is $46,340 annually in the USA.
-          </p>
+      {/* Statistics Section */}
+      <div style={statisticsSectionStyle}>
+        <div style={statCardStyle}>
+          <div style={iconCardStyle}>🌟</div>
+          <p>The median starting salary for a biotechnologist in the USA is $46,340 annually.</p>
         </div>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> A Genetic Counselors can make up to $85,700
-          </p>
+        <div style={statCardStyle}>
+          <div style={iconCardStyle}>📈</div>
+          <p>Genetic counselors can earn up to $85,700 annually.</p>
         </div>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong>Biotechnology field is projected to grow by 6% in the next decade
-          </p>
+        <div style={statCardStyle}>
+          <div style={iconCardStyle}>💼</div>
+          <p>The biotechnology field is expected to grow by 6% in the next decade.</p>
         </div>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> 87000 new jobs will be created in the industry within the next 5 years
-          </p>
+        <div style={statCardStyle}>
+          <div style={iconCardStyle}>🔧</div>
+          <p>87,000 new jobs will be created in the biotechnology industry in the next 5 years.</p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
+      {/* FAQ Section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
-        {faqItems.map((item, index) => (
+        {faqItemsData.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleSection(index)}>
               <span>{item.title}</span>
-              <span>{activeIndex === index ? "-" : "+"}</span>
+              <span>{expandedIndex === index ? "-" : "+"}</span>
             </div>
-            {activeIndex === index && (
+            {expandedIndex === index && (
               <div style={faqContentStyle}>
                 {/* Check for subtitles and content */}
                 {item.subtitle1 && (
@@ -202,8 +196,6 @@ const Biotechnology = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
@@ -216,4 +208,4 @@ const Biotechnology = () => {
   );
 };
 
-export default Biotechnology;
+export default BiotechnologyPage;
