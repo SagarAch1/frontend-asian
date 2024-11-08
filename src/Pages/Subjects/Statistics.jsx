@@ -6,7 +6,7 @@ const Statistics = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close FAQ
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Statistics = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -90,37 +90,39 @@ const Statistics = () => {
     {
       title: "About Statistics",
       content1:
-        "Statistics refers to the application of mathematical methods for gathering, dividing, presenting, analysing, and interpreting quantitative data. The collection and analysis of numerical data to arrive at precise inferences is what statistics is all about. This academic discipline has applications in a variety of fields.",
-        content2:"Without statistics, we couldn't imagine economics. Statistics has helped make smarter decisions regarding the economy. Quantitative expression, policy formation, and economic equality are some of the economic benefits of Statistics.",
+        "Statistics involves applying mathematical methods to gather, analyze, and interpret quantitative data, providing insights for decision-making.",
+      content2:
+        "It plays a key role in various fields, including economics, helping to shape policies and make data-driven decisions.",
     },
     {
       title: "Is Statistics right for me?",
       content:
-        "Statisticians are individuals with great mathematical ability and computer literacy to develop their models and analyses. They possess exceptional analytical skills to analyse problems and come up with solutions. Students with a knack for mathematics and problem-solving tend to perform best in this field of study. If you believe you possess the aforementioned qualities, then Statistics might be the ideal fit for you.",
+        "If you're adept at mathematics and analytical thinking, and enjoy solving problems, Statistics might be the perfect field for you.",
     },
     {
       title: "Statistics study options and costs",
       content:
-        "The first step towards a career in Statistics is to earn a bachelor’s degree in Statistics which has powerful applications in disciplines such as biology, medicine, sociology, chemistry, agriculture, education, engineering, economics, psychology, and quality control. It takes approximately 4 years to complete and tuitions costs around $35,807 per year in the US. A Statistics undergraduate programme in UK takes 3-4 years to complete depending on your specialisation and costs around £32,480 for overseas students. Students could also advance their careers by opting for a master’s degree in Statistics which usually takes 1-2 years to complete and costs around $28,891 in US. The master’s programme in UK costs around £14,000 per annum and takes 1 year (full-time) to complete.",
+        "A bachelor's degree in Statistics takes about 4 years in the US ($35,807/year) or 3-4 years in the UK (£32,480 for international students). A master's degree typically takes 1-2 years and costs around $28,891 in the US or £14,000 in the UK.",
     },
     {
       title: "Future outlook",
       content:
-        "According to the U.S. Bureau of Labor Statistics, employment growth for statisticians is projected at 31% from 2021-2031. On average, 5,200 mathematicians and statisticians’ jobs will be available per year over the next decade.",
+        "Employment for statisticians is expected to grow by 31% from 2021-2031, with around 5,200 job openings annually.",
     },
     {
       title: "Career Pathways for Statistics graduates",
       subtitle1: "Financial Analyst",
       content1:
-        "Financial analysts use their statistical skills to acquire and evaluate pertinent financial data to assess the performance of stocks and bonds and estimate future market outcomes.",
+        "Financial analysts apply statistical methods to assess financial performance and predict market trends.",
       subtitle2: "Cost Estimator",
       content2:
-        "Cost estimators collect and analyse information in order to anticipate the total cost of completing a project, manufacturing a product, or providing a service. Cost estimators often incorporate more than just monetary costs in their assessments. To generate a comprehensive analysis, these professionals take into account factors such as time and labor. They usually specialise in certain marketplaces and use statistics to enhance the work of sales teams, product engineers and account managers.",
+        "Cost estimators use statistical analysis to predict project costs, considering factors like time and labor.",
       subtitle3: "Statistician",
       content3:
-        "When studying and solving organisational difficulties, statisticians and mathematicians analyse data and apply business models. They collect data through surveys and experiments after establishing the data they require to address a problem. In their assessments, these experts may use well-established notions, but they may also develop new theories, rules, and models. Following the completion of their analysis, statisticians write reports to assist their firms in making decisions and pursuing answers.",
+        "Statisticians collect and analyze data, develop new theories, and write reports to assist organizations in decision-making.",
       subtitle4: "Economist",
-      content4:"Economists study issues such as the manufacturing and distribution of resources, services, and goods in a market. They are experts at researching market trends, gathering data, and drawing conclusions using statistical models. These specialists frequently work with corporations and government agencies, providing answers to a wide range of economic issues.",
+      content4:
+        "Economists analyze data to study market trends and provide solutions to economic problems, often working with businesses and governments.",
     },
   ];
 
@@ -130,11 +132,9 @@ const Statistics = () => {
       <div style={sectionStyle}>
         <h1>Study Statistics abroad</h1>
         <p>
-          Statistics is concerned with the collection, analysis and
-          interpretation of data. You will not only learn the theoretical
-          aspects of statistics but in-demand skills such as statistical
-          modelling, boosting your employability in a variety of industries.
+          Statistics focuses on data collection, analysis, and interpretation. You will learn not only theoretical
         </p>
+        <p> concepts but also practical skills like statistical modeling, making you highly employable in various fields.</p>
       </div>
 
       {/* Statistics section */}
@@ -148,8 +148,7 @@ const Statistics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 33% projected employment growth of mathematicians
-            and statisticians this decade
+            <strong></strong> 33% projected employment growth of mathematicians and statisticians this decade
           </p>
         </div>
         <div style={statItemStyle}>
@@ -161,13 +160,11 @@ const Statistics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 52,000 projected job openings for mathematicians
-            and statisticians this decade
+            <strong></strong> 52,000 projected job openings for mathematicians and statisticians this decade
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -179,27 +176,15 @@ const Statistics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
-
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
