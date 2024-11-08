@@ -6,7 +6,7 @@ const Productdesign = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open and close of FAQ
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Productdesign = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Change to an appealing color
     marginBottom: "10px",
   };
 
@@ -88,55 +88,57 @@ const Productdesign = () => {
 
   const faqItems = [
     {
-      title: "About Product design",
+      title: "What is Product Design?",
       content1:
-        "Product design is essentially a merger of arts and engineering. A product designer creates new products while keeping the artistic value of the product for the consumer in mind, along with making sure the experience/convenience for the user remains intact.",
-      content2:"As a product designer, you create a product by working on 3 main components of the product design process i.e. User Experience (UX), User Interface (UI), and Product Design. All three elements create a complete user experience with regards to the product; the looks, the functionality, and the problem it resolves.",
-    },
-    {
-      title: "Is Product design right for me?",
-      content:
-        "If you find critiquing and studying the product outlook and details on your every shopping trip then you might find the field of product design just right for you. A product designers’ job is to combine the product utility and aesthetics in such a way that not only does the product become a source of interest for the buyer but also provides the ultimate utility that it was designed for. So if you find yourself spending time studying and breaking down a product to its utility and function in your mind then you will find this field as challenging and interesting to pursue as your career. A product designer not only has to be good in the artistic side of design but must have a good grip in the area of design aesthetics and consumer functionality of the product. If you are interested in arts and have a practical mind for problem-solving then this is definitely the field for you.",
-    },
-    {
-      title: "Product design study options and costs",
-      content1:
-        "The field of product design is ever-expanding. With changing technological and economic scenarios it is imperative to remember that job titles or roles might evolve in the future but the key skill requirement and knowledge within the field will always remain the same at its core.",
-        content2:"In the U.S., an average bachelor’s degree in product design costs around $15000-20000 per year. While it might be lower in European countries excluding the U.K., most western countries such as Australia might charge the same. Each degree focuses on teaching its students different skills within product design from Computer-aided design (CAD), 3D printing, multimedia design, product design within various software, retail design, and designing marketing strategies.",
-    },
-    {
-      title: "Future outlook",
-      content1:
-        "The field of product design is vast, as it encompasses industrial manufacturing to developing consumer products. The duties and job roles might change from industry to industry but the key skill required for a good product designer remains the same. Each role requires a designer to harness creativity and critical thinking in problem-solving.",
-        content2:"An undergraduate degree in arts or product design is a prerequisite for building the knowledge base for the field. Furthermore, deep knowledge of CAD design is a prerequisite in any product design job post. With annual growth of 86% in product design within the USA, a product designer could work in any of the following job roles as a Materials Engineer, Consumer product designer, Furniture designer, Exhibition designer, CAD technician, Product designer, Interior, and spatial designer, etc.",
-    },
-    {
-      title: "Career pathways for Product design graduates",
-      subtitle1: "The User Experience (UX) designer",
-      content1:
-        "The User Experience (UX) designer where you would focus on is the functionality and usability of the product for the user. A UX designer tests and research product and becomes a bridge between the company and the consumer.",
-      subtitle2: "User Interface (UI) designer",
+        "Product design merges art with engineering to create functional and visually appealing products. A product designer focuses on making sure the product not only serves its purpose but also looks good and is user-friendly.",
       content2:
-        "User Interface (UI) designer works on designing the product in terms of how it looks and feels to the consumer. Thereby assisting the organization in creating true value for its customer.",
-      subtitle3: "UX researcher",
-      content3:
-        "UX researcher's key skill is to conduct research survey with the consumers to create a clear understanding for the company to how the product should be designed this saves the company from wasting money on designing an excessive prototype which then can be tested in the market.",
-      subtitle4: "UX strategist",
-      content4:"UX strategist is someone who has the ability to look at the final picture of the whole process in his mind thereby assisting the teams to focus on user utility and product fit in the market.",
+        "As a product designer, you’ll work on three key areas: User Experience (UX), User Interface (UI), and Product Design. Together, these elements create an optimal product experience, combining functionality, aesthetics, and usability.",
     },
-
+    {
+      title: "Is Product Design the right field for me?",
+      content:
+        "If you enjoy analyzing and evaluating products' design and functionality during your shopping, then you might be well-suited for a career in product design. This role requires a blend of creativity and practicality, as product designers must ensure that a product is both attractive to the buyer and serves its intended function efficiently. A keen interest in design, problem-solving skills, and an appreciation for aesthetics are essential for success in this field.",
+    },
+    {
+      title: "Product Design Education & Costs",
+      content1:
+        "Product design is a growing field. While technological advancements and market trends may shift job roles, the core skills and knowledge required remain steady over time.",
+      content2:
+        "In the U.S., pursuing a bachelor’s degree in product design typically costs between $15,000 and $20,000 annually. In Europe, excluding the U.K., fees may be lower, though countries like Australia charge similarly. Degree programs offer a range of skills, including CAD (Computer-Aided Design), 3D printing, multimedia design, and retail design.",
+    },
+    {
+      title: "Future Outlook for Product Designers",
+      content1:
+        "Product design spans many industries, from manufacturing to consumer goods. Job roles may vary across sectors, but the fundamental skills remain the same. Designers must combine creativity with problem-solving abilities to succeed in this field.",
+      content2:
+        "An undergraduate degree in product design or a related field is essential for building a career in product design. Expertise in CAD design is also vital. With product design seeing an annual growth rate of 86% in the U.S., there are numerous job opportunities in roles such as Materials Engineer, Consumer Product Designer, CAD Technician, and Furniture Designer.",
+    },
+    {
+      title: "Career Paths for Product Design Graduates",
+      subtitle1: "UX Designer",
+      content1:
+        "UX designers focus on how a product works for the user. They test and research products to ensure that the end-user experience is smooth and intuitive, acting as a bridge between the company and its consumers.",
+      subtitle2: "UI Designer",
+      content2:
+        "UI designers work on the look and feel of a product, ensuring it is visually appealing and easy to interact with. They play a vital role in creating products that resonate with users and deliver real value.",
+      subtitle3: "UX Researcher",
+      content3:
+        "UX researchers conduct surveys and user studies to gather insights on product designs, helping companies avoid costly prototype errors. Their work ensures that designs are focused on meeting user needs.",
+      subtitle4: "UX Strategist",
+      content4:
+        "A UX strategist looks at the big picture, helping teams ensure that the final product design aligns with user needs and market demands. Their role focuses on balancing product functionality with the right market fit.",
+    },
   ];
 
   return (
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Product design abroad</h1>
+        <h1>Study Product Design Abroad</h1>
         <p>
-          People love buying things that look good. Studying product design
-          teaches you to create functional utility for the end-user, by
-          designing visual layouts that creates maximum convenience.
+        People prefer products that are functional and visually appealing.  
         </p>
+        <p>Product design teaches you to create user-friendly, convenient products. </p>
       </div>
 
       {/* Statistics section */}
@@ -144,32 +146,29 @@ const Productdesign = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>$50,757</strong>:The annual median salary for an entry-level product designer in the United States.
+            <strong>$50,757</strong> is the annual median salary for an entry-level product designer in the U.S.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> According to LinkedIn product design field shows 86% growth in job opening over the year.
-
-
+            <strong>86%</strong> growth in job opportunities within the product design field, according to LinkedIn.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Businesses that focus their resources on product design generate 30% more revenue on average
+            <strong>30%</strong> more revenue is generated by businesses that prioritize product design.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Businesses that focus their resources on product design generate 30% more revenue on average
+            Companies focusing on product design see, on average, <strong>30%</strong> higher revenue.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -182,25 +181,15 @@ const Productdesign = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                    <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
