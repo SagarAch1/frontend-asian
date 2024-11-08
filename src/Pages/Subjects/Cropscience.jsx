@@ -48,7 +48,7 @@ const CropScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Color for icon to enhance appearance
     marginBottom: "10px",
   };
 
@@ -90,36 +90,37 @@ const CropScience = () => {
     {
       title: "About Crop Sciences",
       content:
-        "Crop sciences emphasise the development and application of innovative technologies in order to provide a secure and sustainable food supply as well as a healthy agro-ecosystem. This field of study aims to improve various agricultural systems and analyse different cropping methods used in various farming systems. An education in crop sciences will give you a thorough understanding of the farming system and its differences. This will allow you to identify and innovate best practices in agriculture to boost food production in an eco-friendly manner. This course is aimed to improve your ability to appraise the disadvantages and benefits of various agricultural systems, including organic farming, as well as prepare to analyse different cropping methods utilised in various farming systems. Finally, it aspires to investigate future agricultural techniques for a world population on the rise.",
+        "Crop sciences focus on developing and applying new technologies to secure sustainable food production and a healthy agro-ecosystem. This field seeks to enhance agricultural practices and analyze different cropping systems. Studying crop sciences will provide you with a deep understanding of farming systems, allowing you to identify best practices to increase food production sustainably. The course will enhance your ability to evaluate pros and cons of various farming systems, such as organic farming, and analyze cropping methods across different farming setups. It ultimately aims to explore future farming techniques for a growing global population.",
     },
     {
       title: "Is Crop Sciences right for me?",
       content:
-        "Crop sciences emphasise the development and application of innovative technologies in order to provide a secure and sustainable food supply as well as a healthy agro-ecosystem. This field of study aims to improve various agricultural systems and analyse different cropping methods used in various farming systems. An education in crop sciences will give you a thorough understanding of the farming system and its differences. This will allow you to identify and innovate best practices in agriculture to boost food production in an eco-friendly manner. This course is aimed to improve your ability to appraise the disadvantages and benefits of various agricultural systems, including organic farming, as well as prepare to analyse different cropping methods utilised in various farming systems. Finally, it aspires to investigate future agricultural techniques for a world population on the rise.",
+        "Crop sciences focus on the development and application of innovative technologies to ensure a sustainable food supply and a healthy agro-ecosystem. The field aims to improve agricultural systems and evaluate cropping methods in different farming systems. With a degree in crop sciences, you will gain a thorough understanding of diverse farming systems, enabling you to identify and implement the best agricultural practices to boost sustainable food production. This course prepares you to assess the advantages and limitations of various agricultural approaches, including organic farming, and analyze cropping techniques used in diverse farming systems.",
     },
     {
       title: "Crop Sciences study options and costs",
       content:
-        "A degree in crop science or an agriculture-related discipline is typically required to work as a crop scientist. You need to complete high school/A-Levels before you can enrol in these courses. A large number of Australian institutions offer degrees in crop sciences. The average length of an agriculture related undergraduate degree is 4 years and costs around AUD $38,000 per year on average while in the US it costs around USD 14,510 per year on average.",
+        "A degree in crop sciences or a related agricultural field is generally required to become a crop scientist. Completion of high school or A-Levels is necessary to enroll in these programs. Numerous Australian universities offer degrees in crop sciences. The average duration of an undergraduate agriculture-related degree is 4 years and costs about AUD $38,000 per year, while in the US, the average annual cost is around USD 14,510.",
     },
     {
       title: "Future outlook",
       content:
-        "A qualification in crop sciences offers a wide number of work options. Public food agencies, food processing firms, insurance companies, as well as businesses that deal with farm supplies, fertilisers and agriculture all require crop science majors in various positions.With a growing global focus on sustainability, more and more funds are being allocated by international organisations like the US Agency for International Development and the World Bank to recruit and fund crop scientists. The job market for crop scientists is projected to grow considerably in the upcoming decade as more advanced crop production and protection techniques are sought after to conserve land and safeguard the environment. Graduates with advanced degrees are also offered teaching and research positions in community colleges and universities. ",
+        "A crop sciences degree opens up a variety of career opportunities. Employers include public food agencies, food processing firms, insurance companies, and companies dealing with farm supplies, fertilizers, and agriculture. With a growing global focus on sustainability, organizations like USAID and the World Bank are allocating more funds for crop scientists. Job prospects for crop scientists are expected to rise significantly over the next decade, driven by the need for advanced crop production techniques to conserve land and protect the environment. Graduates with advanced degrees may also pursue teaching and research roles at colleges and universities.",
     },
     {
-      title: "Career pathways for Crop sciences graduates",
-      subtitle1: "Crop Advisor ",
+      title: "Career pathways for Crop Sciences graduates",
+      subtitle1: "Crop Advisor",
       content1:
-        "Crop advisors are experts in the fields of plants and soil. They offer advice on everything from seed to fertiliser, as well as pest management and disease treatment. Their key responsibilities include collaborating with other consultants in the region to understand disease and pest outbreaks better, and providing advice to farmers about what countermeasures they should take if pest outbreaks occur. ",
-      subtitle2: "Biotechnologist ",
+        "Crop advisors are specialists in plants and soil, offering guidance on seeds, fertilizers, pest management, and disease control. They collaborate with other local consultants to understand and address pest and disease outbreaks, providing recommendations to farmers on countermeasures.",
+      subtitle2: "Biotechnologist",
       content2:
-        "Biotechnologists employ biological organisms to produce and improve agricultural, medical, and conservation products and processes. They look into the genetic, chemical, and physical characteristics of cells, tissues, and organisms to find commercial uses. Biotechnologists are on the front end of technology and explore new ways to optimise the farming process. Biotechnology is one of the fastest-growing fields in the world today. As a biotechnologist, you may be able to contribute significantly to fields like pest management, food security, soil preservation and disease control. ",
-      subtitle3: "Farm Manager ",
+        "Biotechnologists utilize biological organisms to develop and improve agricultural, medical, and conservation products and methods. They examine genetic, chemical, and physical properties of cells and tissues to identify commercial applications, helping optimize farming processes. Biotechnology is one of the fastest-growing fields, contributing to pest control, food security, soil health, and disease management.",
+      subtitle3: "Farm Manager",
       content3:
-        "A farm owner hires a farm manager to oversee a farm or a group of farms. What distinguishes a farmer from a farm manager is the unique expertise they bring to the table when caring for crops and livestock. Their job entails livestock management, increasing crop yield, planning farming tasks, managing farmworkers, crop protection, harvesting, and marketing the produce. Moreover, they are responsible for documenting  farm activities, and keeping track of all financial elements and strategic planning. ",
+        "A farm manager oversees a farm or group of farms, bringing expertise in crop and livestock management. Responsibilities include livestock care, crop yield enhancement, task planning, worker management, crop protection, harvesting, and marketing. Additionally, they maintain farm records, track finances, and manage strategic planning.",
       subtitle4: "Soil Fertility Specialist",
-      content4:"Soil fertility specialists are responsible for boosting agricultural output by regulating nutrients, crop rotations and cover crops. They provide advice on maximising yield by deploying commercial fertilisers and manure to provide nutrients and organic matter to the soil.",
+      content4:
+        "Soil fertility specialists focus on boosting crop yields by managing nutrients, crop rotation, and cover crops. They advise on how to maximize yield by applying commercial fertilizers and manure to enrich soil with nutrients and organic matter.",
     },
   ];
 
@@ -127,13 +128,10 @@ const CropScience = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Crop sciences abroad</h1>
-        <p>
-          Are you an advocate of sustainable development and
-          environment-friendly subsistence practices? Do you have a passion for
-          innovating new ways of crop cultivation? You’d be hard-pressed to find
-          a field of study more engaging than Crop Sciences. 
-        </p>
+        <h1>Study Crop Sciences Abroad</h1>
+        <p>Interested in sustainable development and eco-friendly practices?</p>
+        <p> Passionate about innovating crop cultivation methods? </p>
+        <p>Crop Sciences could be the perfect field for you.</p>
       </div>
 
       {/* Statistics section */}
@@ -141,30 +139,33 @@ const CropScience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>10,500 </strong>: certified crop advisers currently working in the US
+            <strong>10,500</strong>: certified crop advisors currently working
+            in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>$200</strong>  average hourly rate charged by private crop consultants.
+            <strong>$200</strong>: average hourly rate charged by private crop
+            consultants
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>8% </strong> expected growth in the demand of qualified crop scientists.
+            <strong>8%</strong>: projected increase in demand for crop
+            scientists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>$50,000</strong>  average pay for a certified crop advisor in the US
+            <strong>$50,000</strong>: average annual salary for certified crop
+            advisors in the US
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -176,7 +177,7 @@ const CropScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
+                {/* Display subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -194,8 +195,6 @@ const CropScience = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
