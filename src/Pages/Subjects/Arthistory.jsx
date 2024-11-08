@@ -80,8 +80,7 @@ const ArtHistory = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
+  const faqSubtitleStyle = {
     fontWeight: 'bold',
     marginTop: '10px',
     color: '#333',
@@ -91,36 +90,37 @@ const faqSubtitleStyle = {
     {
       title: "About Art and History",
       content1:
-        "Art history is the study of previous works of art that indicates how people regarded themselves and their surroundings, as well as how they wanted to communicate this knowledge to others. It uses art as a means of comprehending cultural history and connecting it to our present cultural existence.",
-        content2:"Art history gives us the tools and terminology we need to analyse the vast amount of visual culture that surrounds us, as well as to develop a historical understanding of artistic output in varied social and cultural settings.",
+        "Art history is the study of past artworks, reflecting how people viewed themselves, their surroundings, and how they conveyed this knowledge. It connects cultural history with modern-day understanding.",
+      content2:
+        "Art history equips us with the necessary tools and vocabulary to interpret visual culture and develop an understanding of art within different historical and cultural contexts.",
     },
     {
       title: "Is Art and History right for me?",
       content:
-        "Art historians must possess exceptional decision-making abilities, art evaluative competence, and a keen sense of detail. It's crucial to have a true interest in studying historical art since it reveals how people regarded themselves and their surroundings, and how they desired to communicate it to others. Furthermore, sense of colour, item arrangement, and a mind good at recognising patterns, are all desirable. If you believe you possess these traits then this course is a good fit for you.",
+        "Art historians require strong evaluative skills, attention to detail, and a passion for exploring historical art. A true interest in how art reflects human experience, combined with pattern recognition, is key. If these qualities resonate with you, this course could be a great fit.",
     },
     {
       title: "Art and History study options and costs",
       content:
-        "Unlike some other art professions, being an art historian requires many years of post-secondary education. Most art historians typically pursue Master's or Doctorate degrees in the field. Art historians who desire to teach might want to get teaching certification as well. Art conservation and restoration may also necessitate a fine arts degree. The usual tuition fee for an undergraduate degree of art history in Australia is around AUD 10,000-15,000 annually whereas in Canada it ranges from CAD 9,800 to 17,200.",
+        "Pursuing art history typically requires several years of higher education, often at the Master's or Doctoral level. In Australia, an undergraduate degree in art history costs approximately AUD 10,000-15,000 annually, while in Canada, it ranges from CAD 9,800 to 17,200.",
     },
     {
       title: "Future outlook",
       content:
-        "By the year 2029, the number of job openings in the art history field is predicted to increase by 9%. In the next years, jobs like as archivists, curators, and museum personnel are projected to be in great demand. These industry trends are similar to those of other sectors in that they are predicted to increase slowly and steadily.",
+        "By 2029, job opportunities in art history are expected to grow by 9%. Careers in archiving, curating, and museum roles are projected to see steady demand.",
     },
     {
-        title: 'Career pathways for Art and History graduates',
-        subtitle1: 'Curator',
-        content1: 'A curator is in charge of collecting, storing, and displaying artworks, historical objects, digital materials, and artefacts. Curators may be in charge of working with artists, collectors, benefactors, or other organisations to purchase artwork; documentation and storage; original research and publishing; and innovative exhibition of works, depending on the size of the organisation. Curators are traditionally employed by museums, libraries, and other cultural institutions.',
-        subtitle2: 'Art History Professor',
-        content2: 'Art history professors help foster an analytic frame of mind in the students to identify for themselves the evolution of art in relationship to culture through history. Art history instructors may spend a large amount of time conducting research, managing art artefacts and mentoring students, depending on their organisation, level of audience, and expertise.',
-        subtitle3: 'Museum Director',
-        content3: 'The ultimate responsibility for furthering a museums goal, creative direction, collections, scholarship, and programming rests with the director. The director is in charge of the museums daily operations. Directors, like curators, have a say in how the museums shows are designed and manage the collection, storage, and presentation of artworks. Museum directors are also in charge of the organizations administration.',
-        subtitle4: 'Art Restorer',
-        content4:"Art Restorers are experts at preserving, caring for, and restoring works of art. They oversee the safe storage and transit of works, as well as the analysis of the display environment, the documentation and recording of current conditions, and the determination of necessary restoration activities. They usually specialise in a particular substance of art history artefact like paper, textiles, painting or furniture.",
-        subtitle5: 'Art Authenticator',
-        content5:"Because of the complexity of art forgery, the ubiquity of art theft, and the illegal movement of artworks from war-torn nations, art buyers and dealers frequently seek the authentication services of an art historian. Authenticators usually specialise on a certain artist or style, and they must be well-versed in study and investigation. Authenticators investigate a work's provenance by tracing its ownership history as far back as feasible, consulting with other experts, consulting with artists' foundations, and contracting scientific tests to establish the viability of the materials employed.",
+      title: 'Career pathways for Art and History graduates',
+      subtitle1: 'Curator',
+      content1: 'Curators are responsible for managing collections, organizing exhibitions, conducting research, and overseeing the preservation of artworks. They may work in museums, galleries, or cultural institutions.',
+      subtitle2: 'Art History Professor',
+      content2: 'Professors in art history teach students to analyze the evolution of art in cultural contexts. They also engage in research and mentoring, contributing to the academic field.',
+      subtitle3: 'Museum Director',
+      content3: 'Museum directors oversee the institution’s mission, collections, and operations. They ensure the strategic direction of the museum and handle administrative responsibilities.',
+      subtitle4: 'Art Restorer',
+      content4: 'Art restorers focus on preserving and repairing artworks. They specialize in materials such as paintings, textiles, or sculptures and ensure safe handling and storage.',
+      subtitle5: 'Art Authenticator',
+      content5: 'Art authenticators examine artworks to verify their provenance and authenticity. They use research and scientific methods to establish the true origin of art pieces.',
     },
   ];
 
@@ -130,8 +130,9 @@ const faqSubtitleStyle = {
       <div style={sectionStyle}>
         <h1>Study Art and History abroad</h1>
         <p>
-        Do you have a penchant for creativity? Do you find yourself inspired by historical narratives? Then an Art and History degree is the perfect choice for you!
+          Have a passion for creativity and history? 
         </p>
+        <p> An Art and History degree is the ideal path for you! </p>
       </div>
 
       {/* Statistics section */}
@@ -139,75 +140,69 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>$49,873: </strong>:average income of Art Historians in the US
+            <strong>$49,873:</strong> Average income of Art Historians in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>9%</strong>  growth for archivists, curators, and museum workers
+            <strong>9%</strong> projected growth for archivists, curators, and museum workers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Art History</strong>  courses are now offered at over 100 institutions worldwide
+            <strong>Art History</strong> courses offered at over 100 global institutions
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>The worldwide arts market</strong>  is expected to be worth over AUD $700 billion by 2025.
+            <strong>Global arts market</strong> expected to reach over AUD $700 billion by 2025
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
+                {item.content5 && <p>{item.content5}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.subtitle5 && (
-            <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-          )}
-          {item.content5 && <p>{item.content5}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
