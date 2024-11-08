@@ -90,45 +90,46 @@ const Forensics = () => {
     {
       title: "Forensic Science",
       content:
-        "Forensic science is a field that majorly applies to both civil law and criminal law, tilting towards the latter. It is used to figure out how a crime scene has gone about, nitpicking every single detail, and gathering evidence from it. Cases such as sexual abuse and murder depend critically on forensic scientists to piece together all elements for the investigators to bring about justice. On the civil law side, forensic scientists are helpful in determining whether a person charged with a civil offense such as willingly polluting the air or a water source is guilty of the crime or not. The major difference between the traditional sciences and forensic science is that the practitioners of the latter apply it in legal matters. The following are the major fields in forensics:",
-        subtitle1: "Forensic anthropology",
-        content1:"relating to skeletal remains for evidence and data collection and analytics.",
-        subtitle2: "Digital and Computer forensics",
-        content2:"as the name suggests, it deals with electronics and data in digital form, particularly concerned with finding a “digital fingerprint”.",
-        subtitle3: "Forensic pathology ",
-        content3:"as always, the victim can tell everything even after they have passed. The human body can always be studied via laboratory analysis implementing mainly chemistry and biology.",
-        subtitle4: "Toxicology ",
-        content4:" this particular field deals with all types of traces elements in the human body and understands how they impact its functioning. For example, the ‘date-rape drug’ can be found in the victim’s body after the crime has occurred to establish evidence for the case.",
-        subtitle5: "Forensic engineering ",
-        content5:" this field deals with the investigation of failures as they relate to law and legal matters. They are meant to find out why a certain structure, product, etc. failed to function and what might be the cause behind it, leading to the entity on which the blame falls.",
+        "Forensic science is an essential field that bridges law enforcement with scientific inquiry, particularly within criminal investigations. It meticulously analyzes crime scenes and uncovers crucial evidence, such as in cases of homicide or assault. In civil matters, forensic experts help determine guilt or innocence in cases like pollution. Unlike traditional science fields, forensic science directly supports legal proceedings. The key areas within forensic science include:",
+      subtitle1: "Forensic Anthropology",
+      content1: "Analyzing skeletal remains for investigative purposes.",
+      subtitle2: "Digital and Computer Forensics",
+      content2: "Focused on retrieving digital evidence, like traces in data systems.",
+      subtitle3: "Forensic Pathology",
+      content3: "Examining bodies to determine causes of death using biology and chemistry.",
+      subtitle4: "Toxicology",
+      content4: "Studying trace elements in the body, such as substances found after a crime.",
+      subtitle5: "Forensic Engineering",
+      content5: "Investigating product or structural failures in legal contexts.",
     },
     {
       title: "Is Forensic Science right for me?",
       content:
-        "If you are looking for a career in forensic sciences, you need to ask yourself if you have an aptitude for this field. The things you need to be good at are data collection, analysis of data and evidence, a grip on mathematics and statistics, along with natural sciences, and mainly a problem-solving mind. However, this natural ability in all is not a must, aside from a problem-solving, analytical mind, almost all else can be learned along the way. The main focus and success factor is the motivation for choosing this field. If solving complex issues, finding a needle in the haystack, connecting the dots, and extracting information from data where others fail to do so is your thing, this field can be very well suited for your abilities. In short, thinking, solving, and writing are your friends.",
+        "To pursue a career in forensic science, consider if you have an analytical mindset, an interest in solving complex problems, and the ability to interpret data and evidence. While a natural aptitude for science and mathematics is helpful, much of the knowledge can be acquired during training. Critical thinking, problem-solving, and communication skills are key to excelling in this field. If you enjoy working through puzzles and uncovering hidden truths, forensic science might be the ideal career for you.",
     },
     {
       title: "Forensic Science study options and costs",
       content1:
-        "When opting for a forensic science program, always look at several factors such as the length of the programs, course requirements, concentration options, requirement and provision of internships, whether the coursework is in-line with your professional choices and interests, and is the school you are applying to accredited. Researching these things will help you make the best decision of where you want to go and how you want to go about it if you decide to pursue a career in this field.",
-      content2:"The average tuition fee per year in a forensic science program is between $10,000-$20,000 in the U.S. While not mandatory, a high GPA in this is usually required to enroll in a forensic science program. However, if someone already has a bachelor’s degree or doesn’t want to enroll in a 4-year program, they can also opt to become a Forensic Science Technician. In the U.S., the cost to become a Forensic Science Technician would be between $8000-$15,000.",
+        "When considering a forensic science program, make sure to evaluate factors such as the duration, curriculum, internship opportunities, and accreditation of the institution. These considerations will help you select the best fit for your professional goals and interests.",
+      content2:
+        "Tuition fees for forensic science programs typically range between $10,000 and $20,000 annually in the U.S. While not a strict requirement, a strong academic record is often necessary to enter a program. Alternatively, a Forensic Science Technician can pursue a shorter, more affordable training program costing between $8,000 and $15,000.",
     },
     {
       title: "Future outlook",
       content:
-        "Since the advent of forensics, it has been a growing field as there is always a need for good minds to solve complex problems. The demand for forensic scientists is predicted to increase by over 14% in the United States alone. With growing populations and a move towards the digital realm in the 21st century, the future of forensics is expanding from helping in investigations of homicides, data leaks, financial misappropriations, and cybersecurity among others. The need in highly populated metropolitans of the U.S., India, and China are more and more in need of skilled forensic scientists due to high physical and digital crime rates. The expected demand for forensic experts has been predicted to grow for the decade (the 2020s)",
+        "Forensic science continues to grow as a field due to the increasing need for skilled professionals to solve complex legal and criminal investigations. In the U.S., the demand for forensic experts is expected to rise by over 14%. As crime evolves, particularly with the rise of cybercrime, forensic science adapts to address emerging challenges. The demand for professionals is particularly high in urban areas in countries like the U.S., India, and China, where physical and digital crimes are more prevalent.",
     },
     {
       title: "Career pathways for Forensic Science graduates",
-      subtitle1: "Forensic technicians:",
+      subtitle1: "Forensic Technicians",
       content1:
-        "You will be working with law enforcement agencies providing expertise in criminal cases by performing lab and field tests to analyze data and evidence collected to bring more light as to what may have happened at the crime scene. Finding fingerprints at the crime scene, determining the time of death of a murder victim, or finding out if a person has been a victim of drug abuse would be part of the job. From working with blood to dead bodies can be part of the daily work along with dealing with the substance of critical nature such as toxins.",
-      subtitle2: "Digital forensic investigator / information security analyst:",
+        "Forensic technicians work with law enforcement agencies to conduct lab tests and field analysis of evidence, such as fingerprints, blood, and toxic substances, to help solve crimes. Their work can range from determining the time of death to identifying traces of drugs in a suspect's system.",
+      subtitle2: "Digital Forensic Investigator / Information Security Analyst",
       content2:
-        "Your job will be in the digital world of the computers. You will have to constantly test the cybersecurity systems of your employers and find out where the weak link in the chain exists and how it can be improved. As an investigator, you will be working to find out how a security breach has occurred, and where your job comes to finding that digital fingerprint that someone has left somewhere in the system.",
-      subtitle3: "Researcher:",
+        "Specializing in the digital realm, these professionals test and evaluate cybersecurity systems to identify vulnerabilities and trace cybercrimes. They work to uncover digital footprints left behind during security breaches or cyberattacks.",
+      subtitle3: "Researcher",
       content3:
-        "As a researcher, you can become an expert on the theoretical/practical side of the subject depending on what you’re interested in. This would see you doing lab work the majority of the time to understand your specific field in-depth and be approached by those that are in need of your expert knowledge.",
+        "Researchers in forensic science focus on advancing knowledge in their specific area of interest. Their work may involve theoretical or practical research in labs to develop new methodologies and contribute to the academic and practical aspects of forensic science.",
     },
   ];
 
@@ -136,12 +137,11 @@ const Forensics = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Forensics Science abroad</h1>
+        <h1>Study Forensic Science Abroad</h1>
         <p>
-          Forensic science is best suited for people with an inquisitive mind.
-          If you enjoy problem-solving and have a knack for looking into the
-          finer details of things, studying forensics may be good career choice
+        Forensic science is perfect for those with a curious mind and strong problem-solving skills,  
         </p>
+        <p> especially if you enjoy uncovering hidden truths and analyzing details.</p>
       </div>
 
       {/* Statistics section */}
@@ -149,25 +149,23 @@ const Forensics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: 16,640 forensic scientists in the US in 2020
+            <strong>16,640</strong> forensic scientists were employed in the US in 2020.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $60,590: median salary of a forensics technician
+            <strong>$60,590</strong> is the median salary for forensic technicians.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 14% growth in demand for forensics experts in US alone
+            <strong>14%</strong> growth is projected for forensic science careers in the US.
           </p>
         </div>
-       
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -179,7 +177,6 @@ const Forensics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -193,8 +190,6 @@ const Forensics = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
