@@ -6,7 +6,7 @@ const HoriCulture = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggles between open and close states
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const HoriCulture = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Adjusted color for better aesthetics
     marginBottom: "10px",
   };
 
@@ -80,44 +80,47 @@ const HoriCulture = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Horticulture and Viticulture",
       content:
-        "Horticulture is the discipline of growing, improving, and commercialising flowers, fruits, vegetables, and plants for decorative purposes. The science, production and study of grapes on the other hand is known as viticulture. Viticulture is the cultivation of grapes to produce wine. Before the grapes are picked, organic viticulture encompasses all sorts of grape growth.",
+        "Horticulture is the science of growing, refining, and commercializing flowers, fruits, vegetables, and plants for decorative purposes, while viticulture focuses on grape cultivation, primarily for wine production. Organic viticulture entails all grape-growing activities up until harvest.",
     },
     {
       title: "Are Horticulture and Viticulture right for me?",
       content:
-        "If you enjoy gardening and want to increasing your knowledge in growing new stuff, then Horticulture and Viticulture is a great career option for you. Professionals in this sector have a broad and in-depth understanding of the subject. Horticulture contributes to the long-term sustainability and rehabilitation of our environment by providing beauty, greenery, and a higher quality of life to our lives. On the other hand, viticulture is such a specialist degree; you'll almost certainly end up working with grapes and wine. If you have a love for fine wine and have a genuine interest in becoming a winemaker then a degree in viticulture is just the thing for you. If you have the capacity to work under pressure, this is a fantastic career option for you: Because grapes take around a year to develop, or one growing season, winemakers only get one chance every year to brew a new wine.",
+        "If you have a passion for gardening and a desire to deepen your knowledge in cultivating various plants, horticulture and viticulture could be ideal career paths. Horticulture contributes to environmental sustainability by enhancing quality of life with greenery and beauty, while viticulture specializes in grape cultivation, offering a niche in the wine industry. Viticulture is particularly suitable if you're interested in winemaking and can work well under the pressure of a once-yearly grape harvest season.",
     },
     {
       title: "Horticulture and Viticulture - study options and costs",
       content:
-        "In Australia, a degree in horticulture or parks and gardens is normally necessary to work as a horticulturalists. Bachelors of Horticulture is around a 3-year degree following which you can start your career in the field. The cost of these degrees in a public Australian university is around 20,000-25,000 AUD/year while for private universities it is around 20,000-45,000 AUD/year. In the case of Viticulture, you can do a graduate diploma in Australia, a bachelor’s degree similar to Horticulture with roughly the same cost, and later opt for a master’s degree.",
+        "In Australia, a degree in horticulture or a related field like parks and gardens is generally required for careers in horticulture. The Bachelor's in Horticulture is a three-year program, costing approximately 20,000-25,000 AUD per year at public universities, with private institutions charging between 20,000-45,000 AUD. A Bachelor’s degree is also common in viticulture, which shares similar costs, with options for further specialization in a graduate diploma or master’s program.",
     },
     {
       title: "Future outlook",
       content:
-        "Horticulture is a broad area with a lot of potential. Horticulturists might work at horticultural institutions, plantations, vegetable farms, and fruit groves. Horticultural technological advancements, rising product demand, and a growingexports make this a very attractive employment choice. The Greenhouse Horticulture industry is expected to reach US$ 43.85 billion by 2027. Similarly, viticulture is a highly rewarding profession. In 2020, the worldwide wine market was valued at USD 339.53 billion.",
+        "Horticulture offers a variety of job prospects in institutions, plantations, vegetable farms, and orchards. Technological advancements, increasing demand, and rising exports make it an attractive field. The greenhouse horticulture sector, projected to reach $43.85 billion by 2027, illustrates this growth. Similarly, viticulture offers strong career potential, with the global wine market valued at USD 339.53 billion in 2020.",
     },
     {
-        title: 'Career pathways for Horticulture and Viticulture graduates',
-        subtitle1: 'Assistant Winemaker',
-        content1: 'This job comprises managing the vineyard and winemaking techniques including bottling wine from barrels, fermentation of wine, racking & labeling them, and inventory control. You will also be responsible for keeping track of grounds care, such as spraying vines for pests, mowing lawns, trimming hedges, and composting or otherwise disposing of garbage. You would  essentially be a winerys errand boy.',
-        subtitle2: 'Grower Liaison Officer',
-        content2: 'This one integrates several different responsibilities into a single role. You will be in charge of monitoring the vineyards stock portfolio, comparing actual crop yields to anticipated yields, sample collection, quality testing, and grape harvest planning are all part of the process. If you dont want to get your hands dirty and have a knack for numbers, this may be a great option.',
-        subtitle3: 'Horticulturist',
-        content3: 'Horticulturists are responsible for boosting plant output, vigor, size, and flavor. They also coordinate certain crop research initiatives. Horticulturists must be well-versed in a wide range of plants, including trees, flowers, vegetables, nuts, shrubs, and fruits.',
-        subtitle4: 'Plant Pathologist',
-        content4: 'Plant pathologists study plant materials in the lab and conduct tests to discover the features of diseases that affect plants. This work may allow you to go to areas where plant disease is rampant, where you will most likely conduct soil composition tests and collect samples. Furthermore, you may be able to create new varieties of disease-resistant plants that will make a significant contribution to society, notably in the field of food production.',
+      title: "Career pathways for Horticulture and Viticulture graduates",
+      subtitle1: "Assistant Winemaker",
+      content1:
+        "This role involves overseeing vineyard operations and winemaking processes, such as bottling, fermentation, labeling, and inventory management. Responsibilities include grounds maintenance, vine care, and assisting with vineyard tasks.",
+      subtitle2: "Grower Liaison Officer",
+      content2:
+        "This role combines multiple duties, including stock monitoring, yield assessments, sampling, quality testing, and harvest planning. Ideal for individuals who enjoy data analysis over hands-on fieldwork.",
+      subtitle3: "Horticulturist",
+      content3:
+        "Horticulturists focus on maximizing plant health, growth, and quality across various species, including vegetables, nuts, shrubs, and fruits. They may also coordinate research projects on crop production.",
+      subtitle4: "Plant Pathologist",
+      content4:
+        "Plant pathologists study plant diseases through lab analysis and fieldwork, often traveling to affected regions. Their work contributes to developing disease-resistant plant varieties, playing a crucial role in global food production.",
     },
   ];
 
@@ -125,10 +128,11 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Horticulture and Viticulture abroad</h1>
+        <h1>Study Horticulture and Viticulture Abroad</h1>
         <p>
-        Do you wish to gain knowledge and expertise about the art & discipline of nurturing gardens? Studying horticulture may be a great career option for you.
+          Are you interested in gaining knowledge and skills in the art and science
         </p>
+        <p> of cultivating gardens? A career in horticulture might be perfect for you.</p>
       </div>
 
       {/* Statistics section */}
@@ -136,71 +140,66 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>In 2020,</strong>:  the worldwide greenhouse horticulture industry will be worth $25.2 billion.
+            <strong>As of 2020,</strong> the global greenhouse horticulture market was valued at $25.2 billion.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>In the years ahead,</strong>  the market is estimated to increase at a CAGR of roughly 5% between 2021 and 2026.
+            <strong>Looking ahead,</strong> the market is projected to grow at an approximate 5% CAGR between 2021 and 2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>According to a USDA </strong> estimate from 2019, horticulture sales were approximately $14 billion.
+            <strong>In 2019,</strong> USDA reported horticulture sales of about $14 billion.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>In the years 2019-2020,</strong>  the horticulture industry employed over 60,000 people.
+            <strong>From 2019-2020,</strong> over 60,000 people were employed in the horticulture sector.
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {/* Display subtitles and content */}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
