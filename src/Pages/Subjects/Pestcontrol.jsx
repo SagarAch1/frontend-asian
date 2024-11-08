@@ -6,15 +6,15 @@ const PestControl = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ open and close
   };
 
   const sectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
-    width: "100%",
+    height: "350px",
+    width: "1900px",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -22,6 +22,7 @@ const PestControl = () => {
     alignItems: "center",
     textAlign: "center",
     padding: "50px",
+    marginTop: "82px",
   };
 
   const statisticsSection = {
@@ -48,7 +49,7 @@ const PestControl = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -80,42 +81,44 @@ const PestControl = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Pest and Weed Control",
       content:
-        "One of the biggest reasons of crop failure is pest and weed attacking the crops. It is necessary for farmers to apply techniques that keep these insects, pest and weed away from their crops. For this purpose, the study of Pest and Weed Control holds great importance. Pest and Weed Control studies enable professional to prepare integrated pest management approaches that combine strategies for pest control that are both cost-effective and environmentally friendly.",
+        "Crop failures are often due to pests and weeds attacking crops. To mitigate this, farmers need to apply techniques that protect crops from insects, pests, and weeds. Pest and Weed Control studies equip professionals to develop integrated pest management methods that are both cost-effective and eco-friendly.",
     },
     {
       title: "Is Pest and Weed Control right for me?",
       content:
-        "If you want a career in Pest and Weed Control, you must be comfortable working outdoors. Entomologists must not be afraid of insects and must be ready to handle them and their waste. Pest and weed specialists need high observation skills because their work often needs them to observe and record facts about insect behaviour, appearance, and habitat. Aside from that, depending on the work, Pest and Weed Control specialists must have good communication skills to convey their findings in writing to academics, students, policymakers, and other stakeholders. They must be able to draw conclusions from data gathered through research, observation, and experiments, which necessitates strong critical thinking abilities. If this sounds like you, then Pest and Weed Control might be a good choice for you.",
+        "A career in Pest and Weed Control requires comfort with outdoor work. Entomologists must be unafraid of insects and able to handle them and their waste. Observation skills are crucial, as specialists often need to record insect behavior, appearance, and habitat. Strong communication and critical thinking skills are also essential to convey findings and draw conclusions. If this fits your interests, Pest and Weed Control could be a great choice.",
     },
     {
       title: "Pest and Weed Control study options and costs",
       content:
-        "A bachelor’s program in Pest and Weed Control takes about 4 years to complete and costs around $7,408-$18,634 per year in the US. The master’s program is 1-3 years long depending on your area of specialisation. The average tuition & fees of the Plant Protection and Integrated Pest Management programme are between $10,067 to $25,468 in the US.",
+        "A bachelor's program in Pest and Weed Control typically takes 4 years in the US, costing $7,408-$18,634 per year. Master's programs last 1-3 years, depending on specialization, with tuition ranging from $10,067 to $25,468 annually.",
     },
     {
       title: "Future outlook",
       content:
-        "The need for more crop production and better plant life has increased now more than ever before. A large part of reason is the booming population. With increased demand, the risk and complications of plant diseases has also increased. Thus, we need Pest and Weed Control specialists to help us keep productions high and prevent crop failures. According to U.S. Bureau of Labor Statistics, from 2020 to 2030, new jobs for agricultural and food scientists are expected to grow at a rate of 9%. Moreover, agricultural and food scientists are expected to have about 4,400 job opportunities each year this decade.",
+        "With population growth, crop production demands have risen, increasing plant disease risks. Pest and Weed Control experts are essential to maintain high yields and prevent crop losses. According to the U.S. Bureau of Labor Statistics, agricultural and food scientist jobs are projected to grow 9% from 2020 to 2030, with about 4,400 annual job openings.",
     },
     {
-        title: 'Career pathways for Pest and Weed Control graduates',
-        subtitle1: 'Entomologist',
-        content1: 'Entomologists are scientists who study insects and pests. They conduct experimental research with insects in controlled or naturalistic settings. They also gather and evaluate biological data and specimens to learn more about insect traits, such as relationships with other species, habitat, reproduction, population dynamics, illnesses, and migratory patterns.',
-        subtitle2: 'Crop Consultant',
-        content2: 'A crop consultant or advisor provides advice on crop management, including seed planting, fertilisation, pest management, and treatment for plant diseases. Crop consultants can assist growers all around the globe increase crop productivity.',
-        subtitle3: 'Horticulturist',
-        content3: 'Growing crops, fruits, nuts, seeds, herbs, sprouts, mushrooms, flowers, grass, and ornamental trees in gardens is the role of a horticulturist. Horticulturists are responsible for boosting plant output, vigour, size, and flavour. They also coordinate certain crop research initiatives. Horticulturists need good knowledge in a wide range of plants, including trees, flowers, vegetables, nuts, bushes, and fruits.',
+      title: "Career pathways for Pest and Weed Control graduates",
+      subtitle1: "Entomologist",
+      content1:
+        "Entomologists study insects and pests, conducting research in natural or controlled settings. They gather and analyze data to understand insect relationships, habitats, reproduction, and migration patterns.",
+      subtitle2: "Crop Consultant",
+      content2:
+        "Crop consultants advise on crop management, covering seeding, fertilization, pest control, and plant disease treatment, helping growers worldwide increase productivity.",
+      subtitle3: "Horticulturist",
+      content3:
+        "Horticulturists work on growing crops, fruits, herbs, flowers, and trees, aiming to boost plant yield, strength, size, and flavor. They also coordinate crop research projects, requiring broad plant knowledge.",
     },
   ];
 
@@ -125,10 +128,11 @@ const faqSubtitleStyle = {
       <div style={sectionStyle}>
         <h1>Study Pest and Weed Control Abroad</h1>
         <p>
-          Pest and Weed Control is the science of utilizing tools and tactics to
-          assess and manage pests for greater crop yield. Students of this
-          programme find employment in sectors such as agri-business, natural
-          resource management, and crop production.
+          Pest and Weed Control improves crop yield through pest management,
+        </p>
+        <p>
+          leading to careers in agri-business, resource management, and crop
+          production.
         </p>
       </div>
 
@@ -165,43 +169,40 @@ const faqSubtitleStyle = {
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {/* Check for subtitles and content */}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.content && <p>{item.content}</p>}
+
+                {/* For items with single content */}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };

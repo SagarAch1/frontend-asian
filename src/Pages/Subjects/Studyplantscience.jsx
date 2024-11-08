@@ -15,8 +15,8 @@ const PlantScience = () => {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
-    width: "100%",
+    height: "350px",
+    width: "1900px",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -24,6 +24,7 @@ const PlantScience = () => {
     alignItems: "center",
     textAlign: "center",
     padding: "50px",
+    marginTop: "82px",
   };
 
   const statisticsSection = {

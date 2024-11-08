@@ -192,8 +192,8 @@ const styles = {
   },
   topImage: {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/uk.webp)`,
-    width: '100%',
-    height: '300px',
+    width: '1900px',
+    height: '350px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     marginTop: '80px',

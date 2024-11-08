@@ -1,9 +1,7 @@
-
 import React from "react";
-import Footer from "./Footer"; 
 import WhyChooseAiec from "../Homepage/WhyChooseAiec";
+import Footer from "./Footer";
 import Youshouldknow from "./YouShouldknow";
-import { Fa } from "react-icons/fa";
 
 const aiecWorkshop = () => {
   const styles = {
@@ -24,8 +22,9 @@ const aiecWorkshop = () => {
       color: "#ffffff",
     },
     bannerImage: {
-      width: "100vw",
-      height: "40vh",
+      width: "1900px",
+      height: "350px",
+      marginTop: "-18px",
     },
     bannerContent: {
       position: "absolute",
@@ -121,7 +120,8 @@ const aiecWorkshop = () => {
             <h2 style={styles.bannerSubtitle}>WORKSHOP WEEK</h2>
             <p style={styles.bannerText}>Sunday to Friday | 10 am - 5 pm</p>
             <p style={styles.bannerText}>
-              Venue: AIEC office, ADBL Bank's Building, AL3, Putalisadak, Kathmandu
+              Venue: AIEC office, ADBL Bank's Building, AL3, Putalisadak,
+              Kathmandu
             </p>
             <p style={styles.bannerText}>977-01-5908881, 977-01-5908882</p>
             <p style={styles.bannerText}>info@asian.edu.np</p>
@@ -173,11 +173,10 @@ const aiecWorkshop = () => {
       {/* Footer - Placed outside of the main container */}
       <Youshouldknow />
       <WhyChooseAiec />
-      
+
       <Footer />
     </>
   );
 };
 
 export default aiecWorkshop;
-

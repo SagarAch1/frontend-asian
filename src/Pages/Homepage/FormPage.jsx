@@ -38,7 +38,7 @@ const formContentStyle = {
 
 const imageStyle = {
   width: "500px",
-  height: "1140px",
+  height: "1170px",
   objectFit: "cover",
 };
 
