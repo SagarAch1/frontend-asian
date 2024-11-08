@@ -88,37 +88,36 @@ const Planning = () => {
 
   const faqItems = [
     {
-      title: "About Planning",
+      title: "What is Planning?",
       content:
-        "The study of planning has its roots in geography, social welfare, landscape architecture, engineering, law, and government reform studies. Planning encompasses several disciplines from the social sciences. The discipline emphasises the development of people in society. In planning studies, the focus areas include environmental planning and management, land development planning, and urban design. During your degree, you’ll learn about the management of cities growth, transportation systems, recreational parks, and more. ",
+        "Planning is a multidisciplinary field that draws from geography, social welfare, law, and government reform. The discipline focuses on improving the functioning of society by managing urban growth, land use, transportation systems, and more. Through planning studies, students learn to develop strategies for the sustainable management of cities and communities.",
     },
     {
-      title: "Is Planning right for me?",
+      title: "Is Planning the Right Career for Me?",
       content:
-        "First and foremost, you must have a knack solve problems. Secondly, you should have a strategic mindset that enables you to see the bigger picture and come up with long-term strategies. If you think you have these two traits, you have the required ingredients to become a successful strategic planning professional. ",
+        "If you have a natural problem-solving ability and a knack for seeing the bigger picture, planning could be the perfect career. Those with a strategic mindset, capable of devising long-term solutions, will find success in the field of planning.",
     },
     {
-      title: "Planning study options and costs",
+      title: "What Are the Study Options and Costs for Planning?",
       content1:
-        "There are a number of different programs being offering in planning including Community development, long-range planning, economic development, natural resources planning, food systems planning, disaster recovery planning, housing, land use and code enforcement, parks and recreation, transportation planning, and urban design are a few to name. You may opt for a bachelor or master’s program. Some institutions also offer diploma programs in planning.",
-        content2:"A 4 year bachelor’s program in planning on average costs $28, 216 per year. As for a master’s degree, the average tuition fee per year is $18,751.",
+        "Planning covers various fields such as community development, urban design, economic development, and transportation. You can pursue either a bachelor's or master's degree, or opt for a diploma program. The cost of studying planning is around $28,216 annually for a bachelor's program, and $18,751 annually for a master's degree.",
     },
     {
-      title: "Future outlook",
+      title: "What is the Job Outlook in Planning?",
       content:
-        "A career in the field of planning is promising in terms of career growth. The demand for planning professionals is projected to increase by 11% over the next 6 years! Because it is a perennially in-demand profession, there are a number of universities programs offering post-graduate studies in this field. Just make sure to acquire industry experience during your degree through internships and you’re on a career trajectory for success.",
+        "The demand for planning professionals is expected to grow by 11% in the next six years. This field remains in demand across both the public and private sectors, with many universities offering postgraduate programs. Internships during your degree will provide valuable industry experience and help pave the way for career success.",
     },
     {
-      title: "Career pathways for Planning graduates",
+      title: "Career Opportunities for Planning Graduates",
       subtitle1: "Project Manager",
       content1:
-        "Those who serve as urban planners have a transformational impact on society. Urban planners or city planners are responsible for helping communities to use land and resources as effectively as possible. They are hired to advise and help plan different infrastructure projects and manage the growth of communities in a certain vicinity. They find abundant job opportunities to work in both the public and private sectors.",
+        "Urban planners help shape communities by guiding land and resource usage for infrastructure projects. They play a key role in both public and private sector planning, ensuring the efficient growth of urban areas.",
       subtitle2: "Urban Planner",
       content2:
-        "A crop consultant or advisor provides advice on crop management, including seed planting, fertilisation, pest management, and treatment for plant diseases. Crop consultants can assist growers all around the globe increase crop productivity.",
+        "Urban planners advise on the use and management of land, including zoning, housing, and infrastructure projects. This career offers abundant opportunities to influence the design and development of cities.",
       subtitle3: "Operations Manager",
       content3:
-        "An operation manager performs higher-level human resource duties. Their responsibilities include hiring, productivity, quality control and so on. Operations managers work closely with the project director to design an operational budget for a firm. They also manage performance audits and create reports to track the quality of their service. They must be technology savvy to make their work efficient.",
+        "Operations managers in planning oversee project execution and ensure quality control. They handle administrative duties such as budgeting, hiring, and performance audits, often working alongside project directors.",
     },
   ];
 
@@ -126,13 +125,12 @@ const Planning = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Planning abroad </h1>
+        <h1>Study Planning Abroad</h1>
         <p>
-          Before starting any project, it is critical to list down the scope and
-          objectives and make a detailed plan on the activities involved in the
-          successful execution of the project. With a degree in planning, you
-          could outline the plan for your organisation!
+          Planning is essential for organizing and managing projects effectively. By earning 
         </p>
+        <p>a degree in planning, you'll gain the skills to strategically plan and execute </p>
+        <p>large-scale projects, ensuring their success.</p>
       </div>
 
       {/* Statistics section */}
@@ -140,33 +138,29 @@ const Planning = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: $44,579-$104,030: annual income range of planning
-            professionals
+            <strong></strong>: $44,579-$104,030: annual salary range for planning professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 7% growth in employment rate expected for planners
-            this decade
+            <strong></strong> 7% expected job growth for planners this decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>44% of planners work private sector, while 56%
-            works in the public sector
+            <strong></strong>44% of planners work in the private sector, 56% in the public sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Planning professionals currently working in the US
+            <strong></strong> Growing number of planning professionals currently employed in the US
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -178,22 +172,13 @@ const Planning = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

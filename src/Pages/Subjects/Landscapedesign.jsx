@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Landscapedesign = () => {
+const LandscapeDesign = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -48,7 +48,7 @@ const Landscapedesign = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color for the icons
     marginBottom: "10px",
   };
 
@@ -88,40 +88,44 @@ const Landscapedesign = () => {
 
   const faqItems = [
     {
-      title: "About Landscape Design and Architecture",
+      title: "Overview of Landscape Design and Architecture",
       content1:
-        "Landscape Design and Architecture is a sub-domain of architecture concerned with the design of outdoor spaces. Landscape architects plan and collaborate with the construction to design outdoor areas such as parks, resorts, monuments and other related spaces that are to be inhabited by people.",
-      content2:"Today, environmental concerns and a general push for governments to promote outdoor planning and better designs of public areas has created a growing demand for landscape architects. Not only that, but private organizations also look for landscape architects to create workspaces that includes outdoor spaces, as well.",
+        "Landscape design and architecture focuses on creating outdoor spaces like parks, resorts, and monuments. Landscape architects collaborate with construction teams to plan these spaces, ensuring they are functional and aesthetically pleasing.",
+      content2:
+        "The growing demand for eco-friendly designs and public outdoor areas has led to an increased need for landscape architects. Private businesses also seek professionals to design their outdoor workspaces.",
     },
     {
-      title: "Is Landscape Design and Architecture right for me?",
+      title: "Is Landscape Design and Architecture suitable for me?",
       content1:
-        "Landscape design is a collaborative field. A professional in this field usually works alongside construction managers, other architects, engineers and planners to make sure the intended design is translated into the physical structure accurately. Not only that, but a landscape architect must have a creative problem-solving approach to tackle unanticipated challenges as they typically arise when working in outdoor spaces. To solve such problems, the landscape architect must also have an analytical approach, along with possessing the ability to visualise how a certain outdoor landscape will turn out.",
-      content2:"So, if you believe you believe you have skills such as teamwork, creativity and an analytical approach, visualisation, then perhaps landscape design and architecture is the right field for you.",
+        "Landscape architecture requires a collaborative approach, often involving construction managers, engineers, and architects. The role demands problem-solving skills and the ability to visualize how an outdoor area will look once completed.",
+      content2:
+        "If you possess creativity, teamwork, analytical skills, and the ability to visualize designs, landscape architecture might be a perfect fit for you.",
     },
     {
       title: "Study options and costs",
       content1:
-        "A number of universities across Europe, America and Australia are renowned for their undergraduate and graduate programs in landscape design and architecture. Typically, graduate programs have a higher number of applicants and are more competitive.",
-      content2:"In the US, international students typically pay an average of $30-40,000 annually to enrol in a landscape design and architecture program. The fee structure for graduate programs is similar, costing around $27,000-$35,000 annually. In Australia, the fee for a 4-year program in Landscape Design costs an average of $20-25,000. For graduate programs, students will be paying anywhere between $20-30,000 annually.",
+        "Top universities in Europe, America, and Australia offer both undergraduate and graduate programs in landscape design and architecture. Graduate programs tend to be more competitive and attract higher application numbers.",
+      content2:
+        "In the U.S., international students typically pay between $30,000 and $40,000 annually for undergraduate programs, while graduate programs cost around $27,000-$35,000 annually. In Australia, undergraduate programs cost around $20,000-$25,000 per year, with graduate programs ranging from $20,000-$30,000 annually.",
     },
     {
-      title: "Future outlook",
+      title: "Job Outlook",
       content1:
-        "Over the past decade or more, there has been a global effort by governments worldwide towards environmental sustainability. This effort includes a need for private and public sector organisations to developmore sustainable designs for outdoor spaces. Not only that, but more and more counties realise that the economic importance of tourism is closely tied to creating sustainable and aesthetic outdoor environments. In this regard, the need for and importance of landscape designers for projects such as public parks, monuments and other related spaces have increased dramatically.",
-        content2:"In the US alone, around 16,000 new jobs for landscape architects are expected this decade! Landscape Architects earn higher salaries than the average US citizen. Given all this, the future prospects for landscape architects look bright.",
+        "With the global emphasis on sustainability and eco-friendly designs, landscape architects are in high demand. Both the public and private sectors need professionals to design outdoor spaces such as parks and monuments.",
+      content2:
+        "In the U.S., around 16,000 new jobs are expected for landscape architects in the coming decade. The demand for professionals, along with their competitive salaries, makes this a promising field.",
     },
     {
-      title: "Career pathways  for Landscape Design and Architecture graduates",
+      title: "Career opportunities for Landscape Design and Architecture graduates",
       subtitle1: "Urban Design",
       content1:
-        "An urban designer has the responsibility of planning, creating and designs related to outdoor urban spaces. They often work with government organisations to coordinate the design and building of outdoor spaces in urban areas in this regard. This might include creating maps, coordinating with construction teams and on-site review of the urban area.",
+        "Urban designers focus on planning and designing outdoor urban spaces. They often work with government agencies and construction teams to create maps and oversee the development of outdoor spaces in urban areas.",
       subtitle2: "Landscape Planning and Management",
       content2:
-        "A landscape planner has the responsibility of creating designs for outdoor spaces, and further collaborating with the construction teams to review and provide feedback throughout the building process. They are often contracted to act as the final authority to pass or reject outdoor areas being worked on by construction crews. They provide their insights, suggest on-site changes, and decide whether the constructed area is in accordance with the original design or not.",
+        "Landscape planners develop designs for outdoor spaces and collaborate with construction teams to ensure that the designs are implemented accurately. They also provide feedback and make on-site adjustments as needed.",
       subtitle3: "Academia",
       content3:
-        "A landscape architect working in academia would typically be collecting data and presenting a unique analysis on specific approaches that can be undertaken by field workers to maximise efficiency. For example, an academic could research and suggest methods that can be implemented in the outdoor designing process to save resources and increase environmental sustainability.",
+        "In academia, landscape architects may conduct research and offer solutions to improve the efficiency of outdoor design processes. They focus on methods to conserve resources and increase sustainability in landscape design.",
     },
   ];
 
@@ -129,13 +133,11 @@ const Landscapedesign = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Landscape Design and Architecture abroad</h1>
+        <h1>Study Landscape Design and Architecture Abroad</h1>
         <p>
-          Ever wondered how outdoor spaces such as parks, resorts and monuments
-          are built? Landscape architects work behind the scenes to design it
-          all. If you are someone creative and have a love for outdoors, this
-          could be the career path for you.
+          Have you ever wondered how outdoor spaces like parks, resorts, and monuments  are designed?
         </p>
+        <p> Landscape architects make it happen. If you're creative and love working outdoors, this could be your ideal career path.</p>
       </div>
 
       {/* Statistics section */}
@@ -143,32 +145,29 @@ const Landscapedesign = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: Median annual wage of landscape architects
+            <strong>Median Salary</strong>: Average annual income of landscape architects
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>s</strong> Currently employed landscape architects in the US
+            <strong>Current Employment</strong>: Landscape architects currently employed in the U.S.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Landscape architects in the public sector have a
-            median annual pay of $83,800
+            <strong>Public Sector</strong>: Median salary of landscape architects in the public sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 3% expected growth in employment for landscape
-            architects
+            <strong>Job Growth</strong>: 3% increase in employment for landscape architects expected
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -180,7 +179,6 @@ const Landscapedesign = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -194,8 +192,6 @@ const Landscapedesign = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
@@ -208,4 +204,4 @@ const Landscapedesign = () => {
   );
 };
 
-export default Landscapedesign;
+export default LandscapeDesign;

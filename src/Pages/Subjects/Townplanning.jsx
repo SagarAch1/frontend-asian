@@ -6,7 +6,7 @@ const Townplanning = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ visibility
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Townplanning = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Making the icon visually appealing
     marginBottom: "10px",
   };
 
@@ -88,45 +88,45 @@ const Townplanning = () => {
 
   const faqItems = [
     {
-      title: "About Town Planning",
+      title: "What is Town Planning?",
       content1:
-        "Town planning is an interdisciplinary field that draws upon fields like planning, architecture, surveying, landscape architecture and construction engineering to help address the global challenge of land resource management in an integrated fashion. Town planning also includes strategy planning, which is imperative in order to manage the future requirement of land.",
+        "Town Planning is a multidisciplinary field that integrates areas such as architecture, engineering, surveying, and landscape design. The goal is to effectively manage land resources while addressing challenges like population growth, environmental sustainability, and community needs.",
       content2:
-        "It is important to note that the needs and requirements of managing land will depend greatly on the policies, development proposals, as well as the needs of the locals. Such dynamics are essential in order to ensure a balance between the demands of the land that is being developed, as well as meeting the needs of the locals.",
+        "It involves strategic planning that ensures the land is used efficiently and effectively, keeping in mind the policies, development proposals, and local requirements. These factors help create balanced environments that meet both developmental and social needs.",
     },
     {
-      title: "Is Town Planning right for me?",
+      title: "Is Town Planning the right field for me?",
       content:
-        "Town planners are skilled at analysing information, resources, conducting market research and management skills. Because town planners will have to manage resources, specifically land resources, they are highly skilled at planning assignments and decision-making. They combine creativity and realism to execute a plan or action. Town planners are also skilled communicators as they interact with different officials, interest groups, and locals presenting them with proposals. If you possess the above-mentioned qualities, then you are a great fit for this profession.",
-      
+        "A career in town planning requires strong analytical skills, effective communication, and the ability to make well-informed decisions. Town planners work with a variety of stakeholders, including government bodies, interest groups, and local communities, to ensure that plans meet both the technical and social needs of a community. If you possess skills in research, problem-solving, and coordination, town planning could be the perfect profession for you.",
     },
     {
-      title: "Town Planning study options and cost",
+      title: "Town Planning study options and costs",
       content1:
-        "There are various study options that could help you become a town planner including bachelors and masters degrees. If we look at the cost of a bachelor’s degree in town planning, it can cost you anywhere between $20,000 to $40,000 per year in the US. However, if you go for a Bachelor’s degree in the UK or Australia, it can cost you between $17,000 to $25,000 per year and $15,000 to $33,000 per year, respectively.",
+        "To pursue a career in town planning, you can opt for a bachelor's or master's degree. In the US, a bachelor's degree in town planning can cost between $20,000 to $40,000 annually. In the UK and Australia, tuition fees typically range from $17,000 to $25,000 and $15,000 to $33,000, respectively.",
       content2:
-        "The next step in your education would be a master’s degree in town planning. Of course, which master’s program you will go for will vary according to the electives, coursework, as well as geographical and environmental location of the school. You can further specialise in a subfield, such as environmental planning or city design. A master’s degree in town planning in the US will cost you anywhere between $10,000 to $30,000. As for the UK and Australia, a master’s degree in the same field will cost you £9,000 to £30,000 and AUD15,400 to AUD26,600, respectively.",
+        "For a master's degree, which allows for specializations in areas like environmental planning or city design, the costs vary by country. In the US, expect to pay between $10,000 to $30,000 annually. In the UK, tuition fees for a master's program are typically between £9,000 and £30,000, while in Australia, the cost is between AUD 15,400 and AUD 26,600.",
     },
     {
-      title: "Future outlook",
+      title: "What is the job outlook for Town Planners?",
       content1:
-        "Town Planning in the future is expected to continue being a promising career, as more town planners are needed in order to accommodate the growing population. As far as growth is concerned, reports by the US Bureau of Labor Statistics have estimated a 7% job growth between 2020-2030, which is as fast as the average for most occupations in the market.",
+        "The demand for town planners is expected to grow as urbanization increases and more professionals are needed to accommodate expanding populations. According to the US Bureau of Labor Statistics, the job growth for town planners is projected at 7% from 2020 to 2030, which is faster than the average growth rate for most occupations.",
       content2:
-        "It is further estimated that around 3,700 job openings for regional and town planners are projected each year over the decade.",
+        "Additionally, around 3,700 job openings for town and regional planners are projected each year over the next decade, creating abundant career opportunities in the field.",
     },
     {
-      title: "Career pathways for Town Planning graduates",
-      subtitle1: "Estate’s manager",
+      title: "Career paths for Town Planning graduates",
+      subtitle1: "Estate Manager",
       content1:
-        "Estate’s managers are responsible for managing land resources, as well as property for organisations in the public, heritage and private sectors. The core duty of an estates manager is to ensure an estate runs as smoothly as possible.",
-      subtitle2: "Local government Officer",
+        "Estate managers are responsible for managing and overseeing land and property resources, ensuring the smooth operation of estates in public, private, or heritage sectors.",
+      subtitle2: "Local Government Officer",
       content2:
-        "Local government officers have the responsibility to make decisions regarding the local government policy made by local councils. They ensure these policies are put into action, and local services are provided in the correct manner. Local government officers are also responsible for the practical development of council policies and procedures and ensuring that local services are delivered efficiently and cost-effectively.",
-      subtitle3: "Civil service administrator",
+        "Local government officers are tasked with implementing policies set by local councils and ensuring that community services are provided efficiently. They play a key role in ensuring that urban planning is aligned with government objectives.",
+      subtitle3: "Civil Service Administrator",
       content3:
-        "Civil service administrators are responsible for executing government policies and delivering basic services to the public. They also ensure the smooth day-to-day running of the town. Because civil service administrators directly interact with the community members, they have a chance to make positive change at the grassroots level of government. Of course, the job title will vary according to which department you will work in.",
+        "Civil service administrators help implement government policies and ensure the smooth running of public services. They have the opportunity to influence local development and contribute to the well-being of the community.",
       subtitle4: "Environmental Manager",
-      content4:"Environmental managers have the responsibility to oversee private, public or non-governmental organisations, to ensure that the environmental standards and legislation are met, according to the environmental guidelines and targets that have been set. Environmental managers analyse various sorts of corporate activities, in order to determine where improvements can be made. They are also responsible for devising and implementing environmental strategies to promote sustainable development.",
+      content4:
+        "Environmental managers oversee the implementation of sustainable practices in public, private, or non-governmental organizations. They ensure compliance with environmental standards and help develop strategies for sustainable development.",
     },
   ];
 
@@ -134,13 +134,12 @@ const Townplanning = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Town Planning abroad</h1>
+        <h1>Study Town Planning Abroad</h1>
         <p>
-          Town planning helps create liveable communities. It refers to
-          optimising urban land resources to cater to growing populations. Enrol
-          in a town planning program to open doors for exciting career
-          opportunities!
+        Town planning is key to creating livable communities by efficiently using urban
         </p>
+        <p>Enroll in a town planning program to unlock  land for growing populations.</p>
+        <p>exciting career opportunities in this evolving field</p>
       </div>
 
       {/* Statistics section */}
@@ -148,33 +147,29 @@ const Townplanning = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>$70,760: average annual salary for a town planner
+            <strong>$70,760:</strong> Average annual salary for a town planner
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 7%: expected employment growth rate of town
-            planners this decade
+            <strong>7%:</strong> Expected employment growth rate for town planners
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 3,700: job opening project each year for town
-            planners
+            <strong>3,700:</strong> Projected job openings for town planners annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 92.6% : growth rate in the number of town planners
-            from 2018 to 2019
+            <strong>92.6%:</strong> Growth in town planners' numbers from 2018 to 2019
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -186,7 +181,6 @@ const Townplanning = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -200,8 +194,6 @@ const Townplanning = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
