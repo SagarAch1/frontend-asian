@@ -5,11 +5,11 @@ import FormPage from "../Homepage/FormPage";
 const Pharmaceutical = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Open or close the FAQ item
   };
 
-  const sectionStyle = {
+  const headerSectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,7 +24,7 @@ const Pharmaceutical = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statsContainerStyle = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -32,7 +32,7 @@ const Pharmaceutical = () => {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
   };
 
-  const statItemStyle = {
+  const statCardStyle = {
     width: "22%",
     textAlign: "center",
     fontSize: "16px",
@@ -46,18 +46,18 @@ const Pharmaceutical = () => {
     color: "#333",
   };
 
-  const iconStyle = {
+  const statIconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Make icon visually appealing
     marginBottom: "10px",
   };
 
-  const faqSectionStyle = {
+  const faqContainerStyle = {
     padding: "40px",
     backgroundColor: "#f1f1f1",
   };
 
-  const faqItemStyle = {
+  const faqItemWrapperStyle = {
     backgroundColor: "white",
     marginBottom: "10px",
     padding: "15px",
@@ -66,7 +66,7 @@ const Pharmaceutical = () => {
     boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
   };
 
-  const faqTitleStyle = {
+  const faqTitleWrapperStyle = {
     display: "flex",
     justifyContent: "space-between",
     fontSize: "18px",
@@ -74,7 +74,7 @@ const Pharmaceutical = () => {
     color: "#555",
   };
 
-  const faqContentStyle = {
+  const faqContentWrapperStyle = {
     padding: "10px 0",
     fontSize: "14px",
     color: "#666",
@@ -90,126 +90,117 @@ const Pharmaceutical = () => {
     {
       title: "About Pharmaceutical Science",
       content1:
-        "Pharmaceutical science is a branch of science concerned with the development and synthesis of new medications and new drug therapies, and their testing in biological systems.",
+        "Pharmaceutical science focuses on creating and testing new medications and drug therapies in biological systems.",
       content2:
-        "Pharmaceutical scientists contribute to the discovery and development of innovative drug therapies that save lives and improve the quality of people’s lives. Drug development includes developing therapies with natural or synthetic ingredients, investigating new ways to use existing drugs to treat other diseases, or determining the most effective formulation of specific compounds. Common course modules you can expect to study are pathology, pharmaceutical analysis, pharmacology, biostatistics, medicinal chemistry, microbiology, immunology, cellular biochemistry and biosafety.",
+        "Pharmaceutical scientists help develop innovative therapies that improve lives. Studies include fields like pharmacology, medicinal chemistry, biostatistics, and more.",
     },
     {
       title: "Is Pharmaceutical Science right for me?",
       content:
-       " Pharmaceutical science is a good study option for students who want to shape the future of healthcare in a laboratory or research setting, or who want to apply to medical school in the future. Given the inquisitive nature of the work, curious minded individuals are naturally drawn to this field. To be successful in this field, you should be talented in math and science and have a keen interest in medicine, including drug discovery and development.",
-
+        "Pharmaceutical science suits students interested in healthcare innovation or those planning for medical school, particularly if strong in math, science, and drug development.",
     },
     {
       title: "Pharmaceutical Science study options and costs",
       content1:
-        "You can pursue pharmaceutical science at the bachelor’s, master’s and doctorate level. A Bachelor’s of Science in Pharmaceutical Science will prepare you for entry-level research positions. Following an undergraduate degree, possible careers include drug analysis, drug manufacturing, medicine marketing, and pharmaceutical sales. The average cost of a bachelor’s degree in pharmaceutical science is $34,000.",
+        "Bachelor’s programs prepare you for entry-level roles, with an average cost of $34,000. Career options include drug manufacturing, analysis, and marketing.",
       content2:
-      "Gaining a master's degree in pharmaceutical science—or a similar field such as pharmacology, medicinal chemistry, or biomedical science—is an excellent way to gain the skills and experience required for a career in pharmaceutical science. According to the American Association of Colleges of Pharmacy, tuition for a master's degree in pharmacy in the US ranges from 22,400 USD to 103,000 USD.",
-      content3:"A PhD in Pharmaceutical Sciences can be obtained with a focus on one of three research cores: drug discovery, drug action, or drug delivery. The Doctor of Pharmacy (PharmD) degree prepares pharmacists for careers in hospitals, outpatient ambulatory care settings, community pharmacies, nursing homes, managed care, academic institutions, research, industry, federal agencies, and other advanced clinical pharmacy settings. Its tuition cost can vary from $31,141 to $41,831.",
+        "A master’s degree enhances expertise, with tuition ranging from $22,400 to $103,000 in the US.",
+      content3:
+        "PhD and PharmD programs prepare professionals for specialized and advanced roles, with tuition typically between $31,141 and $41,831.",
     },
     {
       title: "Future outlook",
       content1:
-        "After the coronavirus outbreak, there has been a surge in demand for professionals in the medicine and healthcare industry and related sectors. Medical scientists' (including pharmaceutical researchers') employment is expected to grow by 13%.",
-        content2:"According to the US Bureau of Labor Statistics, those working in pharmaceutical and medicine manufacturing earn the most ($115,450), followed by those working in research and development ($90,910). According to BLS data, medical scientists working in academia earn the lowest median annual salary of $61,270. Employment in this field is expected to grow at a faster rate than the national average from 2018 to 2028.",
-        content3:"The handsome pay packages and brilliant employment growth opportunities is a testament to the bright prospects of studying pharmaceutical science.",
+        "Healthcare sector demand surged post-COVID-19. Employment in medical sciences is projected to grow by 13%.",
+      content2:
+        "Top earners in pharmaceutical manufacturing make $115,450, while academia salaries are lower at $61,270.",
+      content3:
+        "High salary and job growth underscore the value of a career in pharmaceutical science.",
     },
     {
       title: "Career pathways for Pharmaceutical Science graduates",
       subtitle1: "Pharmaceutical Scientist",
       content1:
-        "A pharmaceutical scientist's work encompasses biotechnology, clinical pharmacology, pharmacokinetics, pharmacoepidemiology, regulatory sciences, and other related disciplines. They can specialize in areas such as drug discovery, formulation and delivery, and toxicology testing.",
+        "Pharmaceutical scientists work in drug discovery, testing, and regulatory sciences, with specializations like formulation and toxicology.",
       subtitle2: "Associate in Clinical Research",
       content2:
-        "Clinical research associates are responsible for the development and implementation of clinical protocols, data collection, and quality control in clinical trials. They ensure that plans and practices adhere to regulatory and contractual requirements. Monitoring and evaluating the conduct and progress of studies, identifying potential problems and issues, and checking on-site records are all part of this.",
+        "Clinical researchers develop protocols, collect data, and monitor trial quality to ensure regulatory compliance.",
       subtitle3: "Biomedical Researcher",
       content3:
-        "Biomedical researchers study the causes and progression of diseases, as well as develop therapeutics and treatments to improve human health. This could include developing new treatments for chronic conditions, better understanding cancer metastasis, and improving early detection techniques.",
-        subtitle4: "Regulatory Affairs Specialist",
-        content4:"Regulatory affairs specialists are in charge of ensuring that a product complies with government and industry regulations. They collaborate with researchers and scientists to carry out drug trials, apply for regulatory approvals and permits, and submit the necessary data for a drug's approval and release.",
-        subtitle5: "Pharmaceutical Sales Representative",
-        content5:"Meeting with physicians and other medical professionals to promote prescription medications is part of a career in pharmaceutical sales and marketing. The job necessitates in-depth knowledge of products as well as medical issues, industry updates, and scientific breakthroughs.",
+        "Biomedical researchers investigate disease causes and treatments, advancing human health and early detection.",
+      subtitle4: "Regulatory Affairs Specialist",
+      content4:
+        "These specialists ensure products meet industry and government standards, overseeing trials and regulatory filings.",
+      subtitle5: "Pharmaceutical Sales Representative",
+      content5:
+        "Sales representatives promote prescription drugs to medical professionals, requiring extensive product and industry knowledge.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
+      {/* Header section with background image */}
+      <div style={headerSectionStyle}>
         <h1>Pharmaceutical Science abroad</h1>
         <p>
-          Pharmaceutical Science is the study of designing and developing new
-          medicine. Pursuing this field will tremendously boost your
-          employability and open you up to rewarding career opportunities
-          worldwide.
+          Pharmaceutical Science involves creating new medications. 
+        </p>
+        <p>
+        This field offers global career opportunities and high employability.
         </p>
       </div>
 
       {/* Statistics section */}
-      <div style={statisticsSection}>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>🌟</div>
+      <div style={statsContainerStyle}>
+        <div style={statCardStyle}>
+          <div style={statIconStyle}>🌟</div>
           <p>
-            <strong>4.49 million</strong>:  people employed in the pharmaceutical science industry (growing by 4.83%)
+            <strong>4.49 million</strong>: people employed in pharmaceutical science (4.83% growth)
           </p>
         </div>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>📈</div>
+        <div style={statCardStyle}>
+          <div style={statIconStyle}>📈</div>
           <p>
-            <strong>$77,002</strong>  average salary of pharma science professionals
+            <strong>$77,002</strong> average salary for pharma science professionals
           </p>
         </div>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>💼</div>
+        <div style={statCardStyle}>
+          <div style={statIconStyle}>💼</div>
           <p>
-            <strong>62.5%</strong>  female professionals in the pharma workforce
+            <strong>62.5%</strong> female representation in the pharma workforce
           </p>
         </div>
-        <div style={statItemStyle}>
-          <div style={iconStyle}>🔧</div>
+        <div style={statCardStyle}>
+          <div style={statIconStyle}>🔧</div>
           <p>
-            <strong>14% </strong> projected employment growth rate in the industry
+            <strong>14%</strong> projected industry employment growth
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-      <div style={faqSectionStyle}>
+      <div style={faqContainerStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
-          <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+          <div key={index} style={faqItemWrapperStyle}>
+            <div style={faqTitleWrapperStyle} onClick={() => toggleFaq(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
-              <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+              <div style={faqContentWrapperStyle}>
+                {/* Render content and subtitles */}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
