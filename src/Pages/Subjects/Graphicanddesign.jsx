@@ -6,7 +6,7 @@ const Graphicanddesign = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close functionality
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Graphicanddesign = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Updated color for better visual appeal
     marginBottom: "10px",
   };
 
@@ -90,36 +90,36 @@ const Graphicanddesign = () => {
     {
       title: "About Graphic and Design studies",
       content:
-        "Graphic designers communicate through the content they create. From making simple marketing advertisements to crafting the interface of applications, the skill of a graphic designer always remains in high demand. You will study a wide range of different subjects in a graphic designing program including visual identity graphic design, art and illustration, motion graphic design, packaging graphic design, marketing and advertising graphic design, publication graphic design, user interface graphic design, and environmental graphic design.",
-
+        "Graphic designers communicate through the content they create. From simple marketing advertisements to crafting application interfaces, the skill of a graphic designer remains in constant demand. In a graphic design program, you will study subjects such as visual identity design, art and illustration, motion graphics, packaging design, marketing and advertising, publication design, user interface design, and environmental graphics.",
     },
     {
       title: "Is Graphic and Design studies right for me?",
       content:
-        "Graphic design is for creative minds that can think out of the box to bring forward new and innovative ideas. If you see an advertisement and think of better ways to get the same message across, you probably have an aptitude for graphic design. Or if you are using an application or website interface and have ideas on how it can be more user-friendly, you are an ideal fit for this field.",
+        "Graphic design is ideal for creative thinkers who can innovate and bring fresh ideas to life. If you often think of better ways to convey a message when you see an advertisement, or if you have suggestions for improving the user experience of an app or website, graphic design may be the right field for you.",
     },
     {
       title: "Graphic and Design Studies study options and costs",
       content1:
-        "Bachelor of Arts in Graphic Design is 3-4 years long undergraduate degree course that deals with conceptualization, designing and execution of an idea. The course includes subjects such as color theory, typography and layout theory. Diploma in Graphic Design course is a 1-year diploma which focuses on topics such as multimedia, animation, and 3D modelling.",
-      content2:"The average tuition fees of bachelor’s in graphics and design studies is around $50,000 annually in the US. The learning is course and practice based with internships and mentorships.",
+        "A Bachelor of Arts in Graphic Design is a 3-4 year undergraduate program focusing on conceptualization, design, and execution. Subjects include color theory, typography, and layout theory. A Diploma in Graphic Design, on the other hand, is a 1-year course covering topics such as multimedia, animation, and 3D modeling.",
+      content2:
+        "In the US, the average annual tuition fee for a Bachelor's in Graphic Design is around $50,000. The learning process combines coursework and practical experience, with opportunities for internships and mentorship.",
     },
     {
       title: "Future outlook",
       content:
-        "Graphic designers are traditionally associated with the media, advertising and PR industry but there is huge demand in a wide range of industrial sectors. According to the New York Institute of Art and Design, the average salary for entry-level graphic designers is $49,806 per annum. Employment of graphic designers is projected to grow 3 percent from 2020 to 2030. In computer systems design services, the need for graphic designers is expected to grow as companies continue to increase their digital presence.",
+        "While graphic designers have historically been linked with media, advertising, and PR, their demand is now widespread across various industries. According to the New York Institute of Art and Design, the average salary for an entry-level graphic designer is $49,806 per year. Employment of graphic designers is expected to grow by 3% from 2020 to 2030. Particularly in computer systems design services, the need for graphic designers is anticipated to increase as more companies enhance their digital presence.",
     },
     {
       title: "Career pathways for Graphic and Design studies graduates",
-      subtitle1: "Creative designer",
+      subtitle1: "Creative Designer",
       content1:
-        "As a creative designer, you will be required to conceptualize and visualize new ideas. Working together with copywriters and art directors, a creative designer uses his skill with different graphic design tools to bring new ideas to life. Commercial creative designers make graphic design art for businesses that need design elements for logos, product packages or marketing materials. In the electronic arena, creative designers create banners for web pages or graphics for television broadcasts. In the advertising and publishing industries, creative designers make graphics used to complement or illustrate articles or ad layouts.",
-      subtitle2: "Web designer",
+        "Creative designers are responsible for brainstorming and visualizing fresh concepts. They collaborate with copywriters and art directors to transform these ideas into reality using various graphic design tools. Creative designers in the commercial field design logos, product packaging, and marketing materials, while in the electronic domain, they may create web banners or television broadcast graphics. In advertising and publishing, they design graphics to complement or illustrate articles and ads.",
+      subtitle2: "Web Designer",
       content2:
-        "A web designer, as the name suggests, designs websites. Having an in-depth understanding of website layouts, a web designer knows how to maneuver any issues that can present themselves and keep the smooth functioning of the website at all times. The task is to present the brand of the website, through the experience of the website itself. A web designer studies user traffic to craft a user-friendly experience.",
-      subtitle3: "User experience (UX) and User interface (UI) designer",
+        "A web designer's role involves designing websites. They must have a deep understanding of layout design and troubleshoot any issues to ensure smooth website functionality. The web designer’s task is to shape the brand's identity through the design and user experience of the website, analyzing user traffic to improve the overall experience.",
+      subtitle3: "UX/UI Designer",
       content3:
-        "UX-UI designers are generally responsible for collecting, researching, investigating and evaluating user requirements. Their responsibility is to deliver an outstanding user experience providing an exceptional and intuitive application design.",
+        "UX/UI designers focus on researching and evaluating user requirements to deliver an intuitive and exceptional application design that provides an outstanding user experience.",
     },
   ];
 
@@ -129,11 +129,9 @@ const Graphicanddesign = () => {
       <div style={sectionStyle}>
         <h1>Study Graphic and Design studies abroad</h1>
         <p>
-          Consumer behavior has shown that people react more positively towards
-          visual content than other formats such audio or text. This has led to
-          a growth in demand for graphic and design professionals who are
-          trained to produce such content.
+          Studies have shown that consumers are more responsive to visual content than other formats like text or audio.
         </p>
+        <p> As a result, the demand for graphic and design professionals who can create such content is on the rise.</p>
       </div>
 
       {/* Statistics section */}
@@ -147,24 +145,23 @@ const Graphicanddesign = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>23,900</strong>  jobs projected to open each year for new graphic designers
+            <strong>23,900</strong> new jobs expected each year for graphic designers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Digital categories in graphic design to rise by 24%
+            <strong>24%</strong> increase in digital categories in graphic design
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong> 5% </strong>projected increase in employment
+            <strong>5%</strong> projected employment increase
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -176,22 +173,13 @@ const Graphicanddesign = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
