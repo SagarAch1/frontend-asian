@@ -6,7 +6,7 @@ const FashionDesign = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle between expanding and collapsing
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const FashionDesign = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Added a vibrant color for emphasis
     marginBottom: "10px",
   };
 
@@ -90,57 +90,58 @@ const FashionDesign = () => {
     {
       title: "About Fashion Design",
       content1:
-        "Fashion designing can be defined as the creation of clothes, shoe accessories for consumers keeping both the design aesthetics and functionality of the item or end consumer in mind. In essence it deals with the creation and design of apparel and wearables while keeping utility and function in mind. ",
-      content2:"As a fashion designer, it is imperative to understand your customer's needs and requirements so that the end product created would be of value for the customer. Therefore, a fashion designer not only comes up with creative ideas but must be business savvy to be able to save resources.",
-    },
-    {
-      title: "Is Fashion Design right for me?",
-      content1:
-        "Not only is the fashion industry ever-expanding and changing, but over the last half-century, the need for fashion designers has increased exponentially. Even though tools and equipment within the industry have evolved, key skill requirement i.e. creativity and innovativeness has remained constant over time. As a fashion designer, you would not only be able to explore your creativity and love for the design side but would also be able to develop business management skills.",
-      content2:"As a fashion designer, you would just not be coming up with ideas for a new product but should also have the ability to market and produce your idea cost-effectively. Many people assume that the fashion designer just sits in the office and comes up with clothing ideas on a computer. But, this is not the only thing you would do as a designer, from creating an idea on board to manufacturing to the marketing of the product. As a fashion designer, you would be playing a critical role in each step of the process.",
-    },
-    {
-      title: "Fashion Design study options and costs",
-      subtitle1: "Bachelors in fashion designing",
-      content1:
-        " Doing your undergraduate in fashion design would enable you to start with the basics where you will be taught the fashion design history, clothing textiles, sketching and drawing clothes, fashion events, or managing a fashion house. A bachelors in fashion design would cost you around USD 10,000-$35,000 per annum.",
-      subtitle2: "Bachelors in visual arts",
+        "Fashion design refers to the art of creating clothes and accessories, combining aesthetic appeal with the functionality required by consumers. It involves the crafting of apparel while ensuring both style and practical use are maintained.",
       content2:
-        "A visual arts degree can cost up to $35000 but it would enable you to understand and interpret design elements you would be taught in fashion merchandising, professional photography, digital imaging. Here you can opt for specialization within fashion design.",
-      subtitle3: "Bachelors in graphic design with fashion specialization:",
-      content3:
-        " An undergraduate in graphic design would inculcate a strong knowledge base in tools and image manipulation in various design software. An undergraduate in graphic design can cost up to $25k per annum.",
-
+        "Fashion designers must understand their clients' preferences and needs to deliver products that resonate with them. Thus, they need not only creativity but also business skills to optimize resources and create value.",
     },
     {
-      title: "Future outlook",
+      title: "Is Fashion Design a good fit for me?",
+      content1:
+        "The fashion industry continues to grow rapidly, and the demand for fashion designers has surged over the years. While tools and equipment evolve, the core skills of creativity and innovation remain essential. Fashion design allows you to express your creativity while also developing business and management capabilities.",
+      content2:
+        "As a designer, your role extends beyond conceptualizing new products. You’ll also be involved in marketing and producing designs efficiently. Fashion design isn't just about sketching—it involves overseeing the entire process from idea generation to production and promotion.",
+    },
+    {
+      title: "Fashion Design study options and expenses",
+      subtitle1: "Bachelor's in Fashion Design",
+      content1:
+        "Pursuing a bachelor's in fashion design will introduce you to the fundamentals, such as the history of fashion, clothing textiles, sketching techniques, and fashion event management. The tuition for such a program ranges from $10,000 to $35,000 per year.",
+      subtitle2: "Bachelor's in Visual Arts",
+      content2:
+        "A visual arts degree, which may cost around $35,000 per year, covers design principles and techniques, including fashion merchandising, professional photography, and digital imaging. You can specialize in fashion design within this field.",
+      subtitle3: "Bachelor's in Graphic Design with Fashion Focus",
+      content3:
+        "A graphic design degree with a focus on fashion equips you with a strong understanding of design tools and image manipulation software. This program typically costs about $25,000 per year.",
+    },
+    {
+      title: "Career Outlook",
       content:
-        "The employment outlook for future fashion graduates is a project of growing by 22% within the retail industry. As businesses move towards personalization, new and innovative ideas in wearable fashion have to be explored.",
+        "The employment outlook for fashion design graduates is highly positive, with a 22% projected growth in the retail industry. As businesses continue to emphasize personalization, new and inventive approaches to wearable fashion will be in demand.",
     },
     {
-      title: "Career pathways for Fashion Design graduates",
-      subtitle1: "Senior fashion designer",
+      title: "Career paths for Fashion Design graduates",
+      subtitle1: "Senior Fashion Designer",
       content1:
-        "As a senior fashion designer, you would work in a fast-paced and changing environment where every day as a designer you would have to stay updated with the latest fashion trends. Communication and understanding consumer demand and dynamics are key skills apart from innate creativeness. Future job growth within this specialisation includes a position as a technical designer, apparel, and visual merchandise designer.  ",
-      subtitle2: "Creative director",
+        "Senior fashion designers work in dynamic environments where staying updated on the latest trends is crucial. Key skills include communication and understanding consumer behavior, in addition to creative talent. Job opportunities include roles such as technical designer or apparel and visual merchandise designer.",
+      subtitle2: "Creative Director",
       content2:
-        "This area of fashion design requires you to be able to implement creative ideas of your team within the industry by creating a bridge between designers and the business managers of the organisation. ",
-      subtitle3: "Product designer",
+        "Creative directors bridge the gap between designers and business managers. They ensure that the creative concepts from the design team are effectively translated into commercial products.",
+      subtitle3: "Product Designer",
       content3:
-        "A product designer with a fashion design degree is a highly sought-after individual within the retail business. With a strong grip on design concepts and tools as a product designer within the fashion industry, you would have the ability to create prototypes of designs.",
+        "Product designers with a fashion background are highly sought after in the retail sector. They possess expertise in design concepts and tools, enabling them to create prototypes for fashion products.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Main section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Fashion Design abroad</h1>
+        <h1>Study Fashion Design Abroad</h1>
         <p>
-          Do you consider yourself to be innovative and creative? Do color
-          patterns and materials excite you? Your Pinterest feed probably keeps
-          popping up with clothing ideas and trends. Then you should definitely
-          consider a career in fashion design!
+        Creative with a passion for design and trends?
+        </p>
+        <p>
+        Fashion design could be the perfect career for you!
         </p>
       </div>
 
@@ -149,33 +150,36 @@ const FashionDesign = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Fashion designers rate themselves at 3.66 out of 5 on the job satisfaction scale .
+            <strong></strong> Fashion designers rate their job satisfaction at
+            3.66 out of 5.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Average median salary of an entry-level fashion graduate is $53k with a bonus and overtime pay 
+            <strong></strong> Entry-level fashion graduates earn a median salary
+            of $53k, with potential for bonuses and overtime.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> The retail fashion industry is projected to grow by 22% over the next decade
+            <strong></strong> The retail fashion industry is projected to grow
+            by 22% over the next decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 27,800 new jobs in the industry were created in the year 2021 alone
+            <strong></strong> The industry created 27,800 new jobs in 2021
+            alone.
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Program Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
             <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
@@ -184,7 +188,7 @@ const FashionDesign = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
+                {/* Display subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -198,8 +202,6 @@ const FashionDesign = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
