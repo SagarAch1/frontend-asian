@@ -6,7 +6,7 @@ const WebDevelopment = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle visibility of content
   };
 
   const sectionStyle = {
@@ -80,46 +80,52 @@ const WebDevelopment = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Web Development",
       content1:
-        "Web Development refers to the process of writing the code that powers a website. The aim is to build user-friendly websites, which means they should be easy to navigate for users. Web developers also build important functions within websites, such as paywalls or newsletter sign-up forms, to help businesses meet their objectives.",
-        content2:"From static web pages to complex apps, web developers create a variety of solutions and tools that we all rely on every day. As more and more businesses pop up around the world, the demand for Web Development skills will only continue to grow, meaning it’s a great avenue to consider pursuing.",
+        "Web Development is the creation of websites. It focuses on building user-friendly sites that are easy to navigate. Developers also add necessary features like paywalls or signup forms to help businesses achieve their goals.",
+      content2:
+        "From basic static pages to complex applications, web developers create numerous solutions we rely on daily. As businesses continue to grow, the demand for web development expertise is expanding, making it a promising career option.",
     },
     {
       title: "Is Web Development right for me?",
       content1:
-        "Web Development is ideal for technically-minded people with strong coding skills. You’ll often work independently but may sometimes need to collaborate with other developers or designers to work on all elements of a website together. On a day to day basis, you’ll communicate with clients, plan layouts, write code and test websites, ensuring an all-round positive user experience. Your end objective is to develop a product that meets the client’s goals as well as the user’s needs.",
-        content2:"Aside from communication and technical skills, web developers are also organised people with a detail-oriented mindset. You should also be a creative problem-solver and have a patient attitude in order to tackle pesky bugs!",
-        content3:"Many web developers work in office environments, but it’s also possible to work remotely or in a freelance capacity. This means you can live in a low-cost area but still rake in a fantastic salary!",
+        "Ideal for those with a technical mindset and strong coding abilities, web developers often work independently but also collaborate with designers and other developers to create complete websites. Daily tasks include communicating with clients, planning layouts, coding, and testing sites.",
+      content2:
+        "In addition to strong communication and technical skills, web developers should be detail-oriented, creative, and patient when solving problems or debugging issues.",
+      content3:
+        "Web developers can work in offices, remotely, or freelance, offering the flexibility to live in affordable locations while earning a great salary.",
     },
     {
       title: "Web Development study options and costs",
       content1:
-        "17% of web developers hold a Computer Science degree, with other common degrees including Computer Engineering, Web Design and Information Technology. 50% of professional web developers hold a Bachelor’s degree, which costs an average of AUD$34,400 per year in Australia, CAD$38,000 in Canada and USD$50,000 in America. If you already have some transferable skills or are looking for a shorter course, consider an Associate’s degree or a certificate.",
-        content2:"Web developers also tend to study throughout their careers, picking up new certifications or taking short courses to keep their skills in line with evolving technologies. Certificates in up-and-coming programming languages or the latest web security measures are smart investments to make.",
+        "17% of web developers have a Computer Science degree, with other common degrees in Computer Engineering, Web Design, and Information Technology. A Bachelor's degree is held by 50% of professionals, costing an average of AUD$34,400 in Australia, CAD$38,000 in Canada, and USD$50,000 in the US.",
+      content2:
+        "Web developers often continue their education by obtaining certifications or taking short courses to stay current with new technologies. Learning up-to-date programming languages or web security practices is a valuable investment.",
     },
     {
       title: "Future outlook",
       content:
-        "Web developers are in high demand, with job opportunities in the US being expected to grow 13% by 2028. Among all IT skills, Web Development is also one of the most sought-after. Web applications are a huge part of our lives, with advancements in big data, cloud computing and more requiring the assistance of talented web developers. Java and app developers are in particularly high demand, which means it can be smart to specialise in these areas.",
+        "Web developers are in high demand, with job opportunities expected to increase by 13% in the US by 2028. As web applications become more integrated into our daily lives, the need for skilled developers continues to grow, especially in Java and app development.",
     },
     {
-        title: 'Career pathways for Web Development graduates',
-        subtitle1: 'Front-End Developers',
-        content1: 'Front-end developers code the front end of the website, i.e. what the user can see. Using markup languages, scripts, frameworks and designs, front-end developers create the environment that the end-users will eventually interact with. This includes the layout, fonts, menus, contact forms and colours, all dictating the user experience and reinforcing the brand aesthetic.',
-        subtitle2: 'Back-End Developers',
-        content2: 'Back-end developers build the components that allow a website to function. Their back-end code adds functionality to everything that appears on the front-end, while also boosting the overall performance of the website. By communicating with the front end, data is able to be stored efficiently and the website will continue to run smoothly. You’ll also be responsible for testing websites, identifying bugs and implementing fixes.',
-        subtitle3: 'Full-Stack Developers',
-        content3: 'Full-stack developers are the all-rounders of the Web Development world, working across the entire Web Development process. Taking the back end data, full-stack developers use HTML, Javascript and CS to bring this data to life. Due to their ability to look at the big picture, full-stack developers are sure to see high demand.',
+      title: "Career pathways for Web Development graduates",
+      subtitle1: "Front-End Developers",
+      content1:
+        "Front-end developers focus on the visible parts of websites that users interact with, such as layouts, fonts, and navigation menus. They use markup languages and scripts to shape the user experience and brand identity.",
+      subtitle2: "Back-End Developers",
+      content2:
+        "Back-end developers create the functionality behind the website’s interface. They ensure that data is stored efficiently and that the website runs smoothly, including fixing bugs and testing the site.",
+      subtitle3: "Full-Stack Developers",
+      content3:
+        "Full-stack developers are versatile, working across the entire web development process. They combine their back-end knowledge with front-end skills to create functional, interactive websites. Their broad expertise makes them highly sought after.",
     },
   ];
 
@@ -127,14 +133,11 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Web Development abroad
-        </h1>
+        <h1>Study Web Development abroad</h1>
         <p>
-        As technology continues to take up a bigger role in our lives, web Development presents a great pathway for technically-minded people with a creative streak, enabling them to build websites and tools for a variety of purposes.
-
-
-
+          Web development offers an exciting opportunity for creative, tech-savvy individuals to create digital 
         </p>
+        <p>solutions  that shape our daily experiences. It’s an ideal career for those passionate about technology.</p>
       </div>
 
       {/* Statistics section */}
@@ -142,75 +145,56 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>The average salary for US web developers is USD$69,038
-
-
+            <strong>The average salary for web developers in the US</strong> is USD$69,038.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Top-level web developers make USD$126,373
-
-
+            <strong>Top-level web developers</strong> can earn USD$126,373.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>9% projected job growth</strong> Demand is expected to grow 14.9% by 2026
-
-
+            <strong>9% job growth</strong> is expected in web development by 2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 72.8% of web developers report high job satisfaction
-
-
+            <strong>72.8% of web developers</strong> report high job satisfaction.
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {/* Display subtitles and content */}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
