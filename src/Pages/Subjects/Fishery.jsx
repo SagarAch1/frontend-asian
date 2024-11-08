@@ -6,7 +6,7 @@ const Fishery = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggles FAQ sections open/closed
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Fishery = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -90,41 +90,43 @@ const Fishery = () => {
     {
       title: "About Fishery studies",
       content:
-        "Fisheries are social, biological, and geographic entities dedicated to the production of fish for human use. The science comprises studying freshwater, marine, and aquatic systems which involve humans. It studies factors affecting capture and stock sustainability. There are a wide range of fisheries programs you can study at undergraduate and graduate level that will enable you pursue your quest for excellence in aquaculture. ",
+        "Fisheries science focuses on the social, biological, and environmental study of fish production. Students gain a foundational understanding of freshwater and marine systems and the factors influencing sustainability. Various undergraduate and graduate programs are available to foster expertise in aquaculture.",
     },
     {
       title: "Is Fishery studies right for me?",
       content:
-        "A background in biology is ideal, as this field requires developing a complex understanding of aquatic animalbehaviour and their relationship with the natural environment. It also requires constant communication with internal teams, field staff and the supply chain networks, which means you would need strong communication and team building skills. ",
+        "A biology background is beneficial, as fishery studies require a comprehensive grasp of aquatic ecosystems and animal behavior. Communication skills are also crucial, given the need to collaborate across departments, field teams, and supply networks.",
     },
     {
       title: "Fishery studies study options and costs",
       content:
-        "An Associate Degree (2 years), Bachelor's Degree (4 years) andMaster's Degree (1-3 years) are the most popular options for students who wish pursue fishery sciences. Theaverage tuition costs are $23,804 per year for undergraduate programs and $24,648 yearly for graduate programs in Australia.James Cook's University, Flinders University, TAFE Western Australia University, University of Wollongong, and the University of Tasmania are some renowned universities offering degree programs in the subject. ",
+        "Associate (2 years), Bachelor (4 years), and Master (1-3 years) degrees in fishery sciences are common. Undergraduate programs in Australia average $23,804 annually, while graduate programs cost around $24,648. Leading institutions include James Cook University, Flinders University, and the University of Tasmania.",
     },
     {
       title: "Future outlook",
       content:
-        "Fisheries are a primary source of income for nearly 250 million people around the world. Between 2016 and 2026, the number of people working in the field of fisheries sciences is projected to increase by 2.3 percent. ",
+        "With fisheries as a major income source for millions, the demand for fishery science professionals is set to grow 2.3% between 2016 and 2026.",
     },
     {
       title: "Career pathways for Fishery studies graduates",
       subtitle1: "Fisheries Biologist",
       content1:
-        "They are wildlife biologists who works with fish stocks in aquatic areas evaluating trends, stocks and changes in the environment.",
+        "Studies trends and stock levels in aquatic environments.",
       subtitle2: "Fisheries Officer",
       content2:
-        "The resource management of a fishery facility is overseen by a fisheries officer. They frequently supervise activities that may have an impact on endangered or threatened species.",
+        "Manages resource activities to protect threatened species.",
       subtitle3: "Fishery Manager",
       content3:
-        "Fishery managers are responsible for overseeing all parts of a fishery, including screening cultivation areas, monitoring the growth of fish, maintaining equipment, preparing food, prescriptions, and collaborating with other fishery managers.",
-      subtitle4: "Fishery technician",
-      content4:"A fisheries technician oversees and assists with the day-to-day operations of a fishery. They are in charge of feeding and caring for the fish, as well as the overall facility upkeep.",
+        "Oversees all fishery operations, including cultivation, growth monitoring, and equipment maintenance.",
+      subtitle4: "Fishery Technician",
+      content4:
+        "Handles daily operations such as feeding, care, and facility upkeep.",
       subtitle5: "Fishery Observer",
-      content5:"Fisheries Observers are the fisheries' eyes and ears on the water and at-sea monitors. They gather information from commercial fishing and processing vessels, as well as shore side processing businesses and receiving vessels.",
+      content5:
+        "Acts as the eyes and ears on fishing vessels, gathering industry data.",
       subtitle6: "Fisheries Development Officer",
-      content6:"They provide technical help, such as introducing new fishing tactics and planning and conducting training in fish quality and handling practices, vessel operations, at-sea safety, and fishing and fish-finding technology. They impart training for safe fishing operations to fishing captains and crews.",
-     
+      content6:
+        "Provides technical support and training in modern fishing practices, vessel operations, and safety.",
     },
   ];
 
@@ -134,11 +136,11 @@ const Fishery = () => {
       <div style={sectionStyle}>
         <h1>Study Fishery studies abroad</h1>
         <p>
-          Fishery studies are aimed at imparting academic and practical
-          knowledge about rearing, breeding and harvesting fish. A degree in
-          Fishery studies is great way to pursue your passion for aquaculture
-          and work towards building a rewarding career.
+          Fishery studies equip students with knowledge in fish breeding,
+          rearing,
         </p>
+        <p> and harvesting, laying a foundation for a career in
+        aquaculture.</p>
       </div>
 
       {/* Statistics section */}
@@ -146,30 +148,29 @@ const Fishery = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>More than 26 colleges</strong>:  in the US offer degrees in fishery sciences
+            <strong>More than 26 colleges</strong>: offer fishery science degrees in the U.S.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Fisheries sciences</strong>  opportunities are projected to grow by 8%
+            <strong>8% growth</strong> projected in fishery sciences.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Fishery graduates</strong>  earn on per year in USA
+            <strong>High earnings</strong> for U.S. fishery graduates.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>527% </strong> increase in global aquaculture production
+            <strong>527% increase</strong> in global aquaculture production.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -181,7 +182,6 @@ const Fishery = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -207,8 +207,6 @@ const Fishery = () => {
                 )}
                 {item.content6 && <p>{item.content6}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
