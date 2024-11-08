@@ -1,14 +1,12 @@
 import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
-import { connect } from "mongoose";
-import { sub } from "date-fns";
 
 const PlantScience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle between opening and closing
   };
 
   const sectionStyle = {
@@ -51,7 +49,7 @@ const PlantScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -83,49 +81,51 @@ const PlantScience = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Plant sciences",
       content1:
-        "Plants are provider of our essential requirements, from oxygen to food. As a result, understanding the mechanisms that drive plant production and their responses to changing environments is critical. ",
+        "Plants are essential to providing our fundamental needs, from oxygen to sustenance. Thus, understanding plant growth mechanisms and how they respond to environmental shifts is crucial.",
       content2:
-      "Plant Science studies how plants are used to make food, change the environment, restore damaged landscapes, promote human health and well-being, improve communal surroundings, and provide leisure and practical benefits to the general public. This research is critical to the preservation of the environment. ",
+        "Plant Science explores how plants are leveraged for food, environmental changes, landscape restoration, and benefits for human health, community environments, and recreation. This study is vital to environmental preservation.",
       content3:
-      "The application of science soil management and agricultural and horticulture crop production is the focus of Plant Sciences. It also covers pesticides, hydroponics, fertilizers, and supplements, as well as biological and chemical pest management. ",
-
+        "Plant Sciences focus on the scientific study of soil management, crop production, pest control, hydroponics, fertilizers, and biological/chemical pest management.",
     },
     {
       title: "Is Plant sciences right for me?",
       content:
-        "Plant scientists are driven by their curiosity and desire to protect the environment, and they are often involved in activities that help them explore more about plants and preservation. They are critical thinkers and good at problem-solving. Moreover, they have efficient data analysis skills to collect and interpret data using a variety of methods and are able to communicate their findings effectively for others to benefit from it. If you believe you have the aforementioned qualities, then Plant Sciences might be a good choice for you.",
+        "Plant scientists are inquisitive, environmentally conscious individuals, often involved in exploring plant behavior and conservation. They have strong problem-solving skills, critical thinking abilities, and are skilled in data analysis and effective communication. If these traits resonate with you, Plant Sciences may be a good fit.",
     },
     {
       title: "Study options and costs",
       content:
-        "Plant scientists typically need a bachelor's degree in agriculture or a related field, such as biology or chemistry. Undergraduate coursework for plant scientists typically includes biology, chemistry, botany, and plant conservation. A bachelor’s programme usually takes 4 years to complete and costs around $8,218-$20,790 in US. A master’s programme takes around 1-3 years to complete depending on the specialisation you opted for. The average tuition for a graduate programme in US is $23,902 per year.",
+        "Plant scientists generally require a bachelor’s degree in agriculture or related fields, with courses in biology, chemistry, botany, and conservation. Undergraduate programs last about 4 years, costing approximately $8,218-$20,790 in the US. A master’s program can range from 1-3 years, with average tuition around $23,902 annually.",
     },
     {
       title: "Future outlook",
       content:
-        "With increasing global population, the need for efficient crop production and better plant management has increased more than ever before. According to the U.S. Bureau of Labor Statistics, from 2020 to 2030, employment of agricultural scientists is expected to grow at a rate of 9%. Agricultural and food scientists are expected to have about 4,400 job opportunities every year this decade.",
+        "With global population growth, efficient crop production and improved plant management are increasingly important. According to the U.S. Bureau of Labor Statistics, employment in agricultural sciences is expected to grow by 9% from 2020 to 2030, with about 4,400 annual job openings projected.",
     },
     {
-        title: 'Career pathways  for Plant sciences graduates',
-        subtitle1: 'Agronomist',
-        content1: 'As an agronomist, you will be in charge of evaluating and increasing the farms agricultural productivity, as well as conducting laboratory tests on soil, seed, and crop samples. Youll also maintain records of study, testing, and outcomes, as well as perform quality control for seed caliber and soil standards.',
-        subtitle2: 'Horticulturist',
-        content2: 'Horticulturists are responsible for boosting plant output, vigor, size, and flavour. They also coordinate certain crop research initiatives. Horticulturists must have good knowledge in a wide range of plants, including trees, flowers, vegetables, nuts, bushes, and fruits.',
-        subtitle3: 'Entomologist',
-        content3: 'An entomologist is a "bug expert" who researches how to protect crops from pests by coming up with innovative approaches pest management.',
-        subtitle4: 'Crop Consultant',
-        content4: 'A crop consultant or advisor provides advice on crop management, including seed planting, fertilisation, pest management, and treatment for plant diseases. Crop consultants can assist farmers all around the globe increase crop yield.',
+      title: "Career pathways for Plant sciences graduates",
+      subtitle1: "Agronomist",
+      content1:
+        "Agronomists focus on analyzing and enhancing agricultural productivity through soil, seed, and crop testing. They maintain research records, ensure quality control, and set standards for seeds and soil.",
+      subtitle2: "Horticulturist",
+      content2:
+        "Horticulturists improve plant growth, quality, and flavor, coordinating specific crop research projects and having expertise in a range of plant species, including trees, flowers, and vegetables.",
+      subtitle3: "Entomologist",
+      content3:
+        "Entomologists, often called 'bug experts,' devise innovative pest management methods to protect crops from insects.",
+      subtitle4: "Crop Consultant",
+      content4:
+        "Crop consultants advise on crop management techniques, including seeding, fertilization, pest control, and disease treatment, aiding farmers globally in boosting crop yields.",
     },
   ];
 
@@ -133,10 +133,12 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Plant Sciences abroad</h1>
+        <h1>Study Plant Sciences Abroad</h1>
         <p>
-        Plant sciences is the study of plants and how they live, including structure, physiology, development, and classification. It can help you make the world a better place through a hands-on understanding of plants for food, fiber, medicine, and fuel.
+          Plant sciences study plant life, focusing on structure, function,
         </p>
+        <p> and
+        growth, with applications in food, medicine, and fuel. </p>
       </div>
 
       {/* Statistics section */}
@@ -158,61 +160,56 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>9% projected job growth</strong>  of agricultural and food scientists in job market this decade
+            <strong>9% projected job growth</strong> for agricultural and food
+            scientists this decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Estimated job openings</strong> of agricultural and food scientists this cade
-
-
+            <strong>Estimated job openings</strong> for ground maintenance
+            workers annually
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {/* Check for subtitles and content */}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
