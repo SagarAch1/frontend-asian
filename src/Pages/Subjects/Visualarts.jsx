@@ -6,7 +6,7 @@ const Visualarts = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ items
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Visualarts = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -88,40 +88,43 @@ const Visualarts = () => {
 
   const faqItems = [
     {
-      title: "About Visual arts",
+      title: "What is Visual Arts?",
       content:
-        "The term visual arts implies creating a knowledge-base for certain design principles and rules for visual art that hold for any medium that they are applied to, whether it be related to digital graphics, physical oil paintings, creating sculptures etc.",
+        "Visual arts refer to the practice of applying artistic knowledge and design concepts across various mediums, including digital illustrations, traditional painting, sculpture creation, and more.",
     },
     {
-      title: "Is Visual arts right for me?",
+      title: "Is a Career in Visual Arts Right for Me?",
       content:
-        "In this specific field, it is important for any aspiring candidate to be passionate about art in general. Not only that, but the candidate needs to be creative. While creativity is somewhat subjective, and it might be hard for any person to judge their own work, the field does require someone who is passionate about the subject, and can approach whatever they are working on in a creative manner.  ",
+        "In visual arts, a genuine passion for creativity is essential. This field suits those with artistic inclinations who can approach their work innovatively. Success here often requires a creative mindset and dedication to developing unique perspectives.",
     },
     {
-      title: "Visual arts study options and costs",
+      title: "Options and Expenses for Visual Arts Studies",
       content1:
-        "Candidates have a number of options to choose from. But if we consider the U.S. given its popularity, the most expensive art schools costs between $30,000-$35,000 annually. As is evident from the high price tag, art schools are generally known to be expensive all around the world.",
-      content2:"The average cost of a visual arts degree in Australia is AUD 126,000 and in Canada is CAD 136,000. Many candidates also secure valuable scholarships and financial aids.",
-      content3: "European universities are also famous for their art schools given the rich cultural history. Countries such as France, Italy, U.K., Netherlands are also famous for their visual arts programs as well. Other countries popular for their visual art degree include Japan and South Korea.",
+        "There are multiple study pathways, with the U.S. offering some of the priciest art schools, ranging from $30,000 to $35,000 per year. These programs are often costly worldwide.",
+      content2:
+        "In Australia, the average expense for a visual arts degree is AUD 126,000, while in Canada, it's around CAD 136,000. Scholarships and financial assistance are frequently available.",
+      content3:
+        "Europe is renowned for its art institutions, notably in countries like France, Italy, the UK, and the Netherlands. Japan and South Korea are also popular for visual arts degrees.",
     },
     {
-      title: "Future outlook",
+      title: "Career Prospects in Visual Arts",
       content:
-        "There are certain industries such as IT that are experiencing natural growth over the past few decades, which automatically implies that employment growth in such fields will be higher. But for developed and matured fields such as visual arts, the growth is slow but consistent. In the coming decade in the U.S., around 4% growth is expected in this field. While this field is growing, any aspiring candidates should keep in mind that they will be competing in a highly-competitive industry where skill will be required in order to grow. However, career growth and pay-outs in this industry are comparatively far higher for individuals when compared to other industries",
+        "Unlike fast-expanding fields like IT, visual arts grows at a steady, modest pace. In the U.S., job growth for visual arts careers is projected at 4% over the next decade. Given the competitive nature of the industry, honing skills and building expertise are key to career advancement.",
     },
     {
-      title: "Career pathways for Visual arts graduates",
+      title: "Visual Arts Career Opportunities",
       subtitle1: "Set Designer",
       content1:
-        "A set designer uses the design principles learned in order to create a visual environment that he/she knows will work with the audience. Certain methods of arranging the set might not be apparent to the normal person, but a set designer knows the devil is in the details. Knowing the principles/rules of visual art will help create a visual environment that connects with the audience without them even realizing it.",
-      subtitle2: "Product Design",
+        "Set designers craft visually appealing environments, applying design principles to subtly resonate with audiences. A strong grasp of visual art fundamentals enables them to create impactful, detailed settings.",
+      subtitle2: "Product Designer",
       content2:
-        "Today, companies spend millions (and even billions in some cases) of dollars on the design of their product. This is because they know that the visual appeal plays a major rule in the sale of their product. This is why they use the massive budget on hand to hire capable product designers who understand where attention detail is necessary, and how to translate it based on the rules of design that they have learned over the years.",
+        "Product designers are essential for companies focused on visual appeal, as product aesthetics greatly influence consumer interest. These designers leverage their design training to enhance product attractiveness.",
       subtitle3: "Photographer",
       content3:
-        "A degree in the visual arts category can land you a career as a photographer. As a photographer, you would take the lessons of design principles, understanding tone and different colours schemes, angles etc. in order to professionally translate it into a visual image.",
+        "A visual arts background can lead to a photography career, utilizing knowledge of color, tone, and composition to create striking images.",
       subtitle4: "Graphic Designer",
-      content4:"A graphic designer today has a diverse range of opportunities that can be taken advantage of, as almost every company today requires one for their marketing/advertisement. Not only that, but digital graphic designers today are in the spotlight due to the recent NFT boom that has created an entirely new industry and demand for such artists.",
+      content4:
+        "Graphic designers have numerous opportunities in today's market, as businesses increasingly rely on them for advertising and branding. Digital design has gained extra prominence due to the rise of NFTs, broadening demand for visual arts expertise.",
     },
   ];
 
@@ -129,13 +132,11 @@ const Visualarts = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Visual arts abroad</h1>
+        <h1>Explore Visual Arts Abroad</h1>
         <p>
-          Visually creative content seems to be a preference for viewers whether
-          it be in the shape of film, animation paintings or photography. A
-          career in visual seems to hold a bright and promising future, with an
-          expectancy to further grow over the next decade.
+          Visual arts, from film and animation to traditional art, offer promising 
         </p>
+        <p>careers with sustained growth expected in the upcoming years.</p>
       </div>
 
       {/* Statistics section */}
@@ -143,33 +144,32 @@ const Visualarts = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: The median salary for visual arts professionals in the U.S.
+            <strong></strong> Median income for visual arts professionals in the U.S.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>37000</strong>  new jobs projected by 2030
+            <strong>37,000</strong> new roles projected by 2030
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Increase in jobs in the last decade
+            <strong></strong> Job growth over the past ten years
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>4%</strong>  growth is expected in the animation/visual effects sector
+            <strong>4%</strong> growth expected in animation and visual effects
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Course Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
             <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
@@ -196,8 +196,6 @@ const Visualarts = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
