@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Vediogame = () => {
+const VideoGameDevelopment = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
+  // Function to toggle the FAQ section visibility
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
+  // Style settings for different sections
   const sectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
@@ -48,7 +50,7 @@ const Vediogame = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -88,56 +90,54 @@ const Vediogame = () => {
 
   const faqItems = [
     {
-      title: "About Video game development",
+      title: "About Video Game Development",
       content1:
-        "A program in video game development teaches a number of game engines, stylistic techniques to create immersive gameplay environment, 3D modelling, programming languages and the industry ethics.",
-      content2:"The video-gaming industry has been on the rise since the start of the century and is currently worth over $85billion. The rapid advancements in technology have allowed video game developers to create life like games with high fidelity graphics, which has been a key driver for its increased popularity for video games around the world.",
-        
+        "Video game development programs teach about game engines, design techniques, immersive gameplay environments, 3D modeling, programming languages, and industry ethics.",
+      content2:
+        "The gaming industry, worth over $85 billion, has experienced significant growth due to advancements in technology, which allows for the creation of highly realistic games.",
     },
     {
-      title: "Is Video game development right for me?",
+      title: "Is Video Game Development right for me?",
       content:
-        "To become a video game developer you should have an analytical frame of mind coupled with a passion for video games. Creative individuals are most likely to enjoy and excel in this field. Storytelling talent and a wide ranging knowledge of gaming trends in the industry are also a big plus. Additionally, video game developers work in teams so you must be cooperative and a team player.",
+        "To succeed as a video game developer, you need a strong analytical mind, creativity, passion for gaming, storytelling abilities, and knowledge of gaming trends. Collaboration is key, as developers work in teams.",
     },
     {
-      title: "Video game development study options and cost",
+      title: "Study Options and Costs for Video Game Development",
       content1:
-        "Video game development is offered as a bachelor’s degree in many universities worldwide. The cost might vary depending on the country you choose to apply. In the US, an average bachelor’s degree in Video Game Development costs on average approximately $38,000 to $80,000. Universities also offer Graduate programs in video game developments, such as Master’s in Game Design.",
-      content2:"Due to the rapid innovation in technology, certifications offer an easy alternative to get up to speed on emerging tools being used in video game development. The cost for such certifications also varies depending on the level of specialisation. On average, a certification will cost around $1000 to $10,000, depending on the level of specialisation.",
+        "Video game development is available as a bachelor's degree in many universities worldwide, with costs ranging from $38,000 to $80,000 in the US. Graduate programs like a Master's in Game Design are also available.",
+      content2:
+        "Certifications are an alternative to university degrees and can help developers learn emerging tools. The cost of certification courses ranges from $1,000 to $10,000, depending on specialization.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content1:
-        "The need for more crop production and better plant life has increased now more than ever before. A large part of reason is the booming population. With increased demand, the risk and complications of plant diseases has also increased. Thus, we need Pest and Weed Control specialists to help us keep productions high and prevent crop failures. According to U.S. Bureau of Labor Statistics, from 2020 to 2030, new jobs for agricultural and food scientists are expected to grow at a rate of 9%. Moreover, agricultural and food scientists are expected to have about 4,400 job opportunities each year this decade.",
-      content2:"Conservative estimates suggest an 8% increase in revenue for the video game industry in the next 5 years! With a rapidly growing user base, a career in video game development is likely to be a lucrative and rewarding field.",
-
+        "The video game industry is expected to continue its growth, with job opportunities expanding rapidly. By 2026, the US video game industry alone is projected to grow by 14.5%.",
+      content2:
+        "Overall, the video game industry is set for an 8% revenue growth in the next five years, making this a promising career path.",
     },
-    
     {
-      title: "Career pathways for Video game development graduates",
+      title: "Career Paths for Video Game Development Graduates",
       subtitle1: "Video Game Artist",
       content1:
-        "A video game artist is responsible for the front-end visual aspect of gaming. This covers areas such as animation, 3D modelling, creating concept-art etc. The video game artist is responsible for creating a seamless gameplay experience for users.",
+        "Video game artists focus on the visual aspects, such as animation, 3D modeling, and concept art, to ensure a smooth and engaging user experience.",
       subtitle2: "Video Game Programmer",
       content2:
-        "A video game programmer handles the back-end programming side of gaming. This means being aware of technical aspects and different programming languages used in gaming such as Python, C++, Java etc. Programmers often work with an entire team and coordinate different game functions such as coordinating with the visual artist to make sure the project scope is aligned.",
+        "Programmers handle the technical programming aspects of games, including different coding languages and collaborating with artists to ensure proper integration of visual elements.",
       subtitle3: "AI Programmer",
       content3:
-        "An AI programmer in video game development is a new but important specialisation. As experts in machine learning, they are responsible for integrating user data to create a more personalised user experience.",
+        "AI programmers specialize in using machine learning to personalize user experiences by integrating data into the game environment.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Main section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Video game development abroad</h1>
+        <h1>Study Video Game Development Abroad</h1>
         <p>
-          There are an estimated 2.5 billion gamers around the globe, a figure
-          that is the result of consistent growth over the past two decades. As
-          the industry is expected to further grow, studying video game
-          development offers exciting career prospects.
+          With an estimated 2.5 billion gamers globally, the industry continues to expand,
         </p>
+        <p>  presenting exciting career opportunities in video game development.</p>
       </div>
 
       {/* Statistics section */}
@@ -145,30 +145,29 @@ const Vediogame = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>Total size of video gaming industry was $8 billion in 2021
+            <strong>8 Billion USD:</strong> Total size of the video gaming industry in 2021.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Expected growth of 14.5% by 2026 in U.S. alone
+            <strong>14.5% Growth:</strong> Expected growth in the U.S. by 2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 5% job growth in video game development last year
+            <strong>5% Job Growth:</strong> Video game development saw a 5% job increase last year.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $71,000 average salary of video game developer
+            <strong>$71,000:</strong> Average salary of a video game developer.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -180,22 +179,13 @@ const Vediogame = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
@@ -208,4 +198,4 @@ const Vediogame = () => {
   );
 };
 
-export default Vediogame;
+export default VideoGameDevelopment;
