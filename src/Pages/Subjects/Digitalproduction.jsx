@@ -5,11 +5,11 @@ import FormPage from "../Homepage/FormPage";
 const DigitalProduction = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ visibility
   };
 
-  const sectionStyle = {
+  const heroSectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,7 +24,7 @@ const DigitalProduction = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statisticsSectionStyle = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -48,7 +48,7 @@ const DigitalProduction = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color
     marginBottom: "10px",
   };
 
@@ -88,133 +88,116 @@ const DigitalProduction = () => {
 
   const faqItems = [
     {
-      title: "About Digital Production",
+      title: "What is Digital Production?",
       content1:
-        "Digital Production is a new and interdisciplinary field that lies at the cross-section of film production, sound production, design, screenwriting, communication and film theory. It entails transforming creative ideas and assets such as text, images and interactive apps into a variety of digital media, and includes the production of digital music, streaming video, and other widely distributed content.",
+        "Digital Production is a cross-disciplinary field combining film production, sound design, screenwriting, and media theory. It involves turning creative ideas and assets such as images, text, and interactive apps into various forms of digital media, including music, videos, and online content.",
       content2:
-        "Students learn how to assess and comprehend the media in their environment, create media in a variety of formats, and manage the commercial and technological demands of working in the media industry. The program teaches compelling storytelling for fiction and nonfiction genres using a variety of media. Students can provide a voice to their community and their stories by using and adapting to evolving technologies and critical thinking abilities.",
+        "Students explore how to analyze media, create various types of content, and manage the technological and commercial aspects of working in the media industry. The program teaches storytelling for both fiction and nonfiction, utilizing different types of media.",
       content3:
-        "This course mandates hands-on learning and your university is likely to provide you access to high-power digital cameras, dolly systems, recording rooms, studios and technical assistance to prepare you for the real world. Could you be the next big production star?",
+        "This course emphasizes hands-on learning, offering access to high-end digital cameras, recording rooms, and studios to prepare students for professional work in the industry. Could you be the next production star?",
     },
     {
-      title: "Is Digital Production right for me?",
+      title: "Is Digital Production a good fit for me?",
       content1:
-        "Students looking to break into a digital production school typically need to demonstrate an aptitude for creative arts and media. Through the course of these studies, students are trained on a variety of different production software. They are taught latest video production techniques and trends. Digital production master's programs are particularly hands-on and project-based, with a strong emphasis on creativity and personal expression. Courses emphasise creativity and teaching emerging video concepts, as well as individual and group project work.",
+        "Prospective digital production students typically need to show a passion for the creative arts and media. The program covers the latest production techniques and tools, with a strong focus on creativity and personal expression. The hands-on nature of the program allows students to work on both individual and group projects, allowing for growth in the field.",
       content2:
-        "If you are passionate about production and see yourself as a future content producer, then digital production will ratchet you up quickly in the field of filmmaking, music production and much more.",
+        "If you are passionate about content creation and see yourself working in filmmaking, music production, or other media-related fields, Digital Production is a great choice to accelerate your career.",
     },
     {
-      title: "Digital Production study options and costs",
+      title: "Costs and study options for Digital Production",
       content1:
-        "A bachelor's degree in Digital Production could cost anywhere between $20,000-$30,000 per year in the US. A bachelor's degree typically takes three to four years to complete. On the other hand, the cost of a master's degree ranges from $30,000 to $40,000 in the US and generally is two years long.",
+        "A bachelor’s degree in Digital Production in the US costs between $20,000 and $30,000 annually, taking three to four years to complete. Master’s degree programs generally range from $30,000 to $40,000 and take two years.",
       content2:
-        "Digital production certificate programs normally run one year and can be completed before or after earning a degree. Some certificate programs follow the same curriculum as associate's degree programs, but they only teach the essential technical elements such as digital video technology, multimedia, and editing. These programs are appropriate for those seeking employment in the digital production area as well as those working in other fields (such as broadcasting) who would benefit from digital media abilities. Other certificate programs may concentrate on a single aspect of digital production, such as image editing or the use of a certain software application, in order to help students enhance their skills.",
+        "There are also certificate programs, typically lasting one year, that focus on essential production skills such as digital video technology, multimedia, and editing. These programs can be pursued before or after earning a degree and are suited for those looking to enhance their skills or transition into digital production from other industries.",
     },
     {
-      title: "Future outlook",
+      title: "Career Outlook for Digital Production Graduates",
       content:
-        "As the frontiers of technology continue to expand, the concept of digital media production evolves. In many cases, it relates to the creation of visual media, such as digitally improved animation, or new media, such as website development, multimedia authoring, and computer game development. As the field continues to expand, there are more job opportunities available. For example, the employment rate for video editors is predicted to increase by a whopping 18% this decade! It is safe to say that the future of digital production is full of potential and opportunities.",
+        "As technology advances, the digital production landscape evolves with new media formats, such as animation, multimedia, website development, and gaming. The job market for digital production professionals is expanding, with a predicted 18% increase in employment for video editors over the next decade. The future of this field holds great potential for growth and innovation.",
     },
     {
-      title: "Career pathways for Digital Production graduates",
+      title: "Career Opportunities for Digital Production Graduates",
       subtitle1: "Digital Media Strategist",
       content1:
-        "They analyse consumer behaviour and industry trends in order to devise and implement media strategies (e.g., ad campaigns, online media content) to raise brand awareness, sell products, and so on.",
-      subtitle2: "User Experience Designer (UX designer)",
+        "A digital media strategist analyzes consumer trends and behaviors to develop media strategies, such as advertising campaigns and online content, aimed at increasing brand awareness and sales.",
+      subtitle2: "User Experience Designer (UX)",
       content2:
-        "A crop consultant or advisor provides advice on crop management, including seed planting, fertilisation, pest management, and treatment for plant diseases. Crop consultants can assist growers all around the globe increase crop productivity.A UX designer studies and assesses how customers perceive technology applications (e.g., websites, apps, and software), and then uses that information to organise information and system interactions to constantly improve user experience.",
+        "A UX designer studies how users interact with technology (e.g., websites, apps) and uses that information to enhance the user experience by improving usability and design.",
       subtitle3: "Graphic Designer",
       content3:
-        "They draft layouts and create graphics for a variety of applications in both print and online mediums, using creative and design talents.",
-      subtitle4: "Digital illustrator",
+        "Graphic designers create visual layouts and graphics for both print and digital media, applying their creative and technical design skills.",
+      subtitle4: "Digital Illustrator",
       content4:
-        "As a self-employed designer or in-house for a corporation or other organisation, a digital illustrator creates drawings and illustrations for books, advertisements, product packaging, and more.",
+        "Digital illustrators produce drawings and designs for a variety of applications, such as advertisements, book covers, and product packaging, either independently or as part of a company’s creative team.",
       subtitle5: "Video Game Designer",
       content5:
-        "Video game designers use computer animation tools to develop characters, stage layouts, cut scenes, and other aspects of video games' visual style and art concepts.",
+        "Video game designers develop characters, environments, and visual styles for games, using computer animation tools to create compelling gaming experiences.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
-        <h1>Study Digital Production abroad</h1>
+      {/* Hero Section */}
+      <div style={heroSectionStyle}>
+        <h1>Study Digital Production Abroad</h1>
         <p>
-          Want to deliver riveting stories that grab viewer attention?.
-          ThisDigital production is an ideal field of study for those looking to
-          develop their storytelling abilities to move the world!
+          Looking to craft stories that captivate audiences? Digital production is the perfect
+         
         </p>
+        <p>  field to hone your storytelling skills and bring your creative
+        visions to life in the world of media.</p>
       </div>
 
-      {/* Statistics section */}
-      <div style={statisticsSection}>
+      {/* Statistics Section */}
+      <div style={statisticsSectionStyle}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>4.79%</strong>: projected expansion of the global animation
-            market
+            <strong>4.79%</strong> expected growth of the global animation market.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>$93,940</strong> median annual salary for digital production
-            managers in the US
+            <strong>$93,940</strong> median annual salary for digital production managers in the US.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>4%</strong> expected growth of employment opportunities for
-            multimedia arts this decade
+            <strong>4%</strong> job growth projected for multimedia arts professionals in this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>$77,700</strong> medium annual salary for multimedia artists
+            <strong>$77,700</strong> median salary for multimedia artists annually.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
+      {/* FAQ Section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Program Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleFaq(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
-
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
