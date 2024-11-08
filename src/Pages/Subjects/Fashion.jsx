@@ -48,7 +48,7 @@ const Fashion = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -88,37 +88,38 @@ const Fashion = () => {
 
   const faqItems = [
     {
-      title: "About Fashion merchandising",
+      title: "About Fashion Merchandising",
       content1:
-        "Fashion merchandising deals with the buying, selling, and marketing aspect of fashion. It ensures that fashion goods are available at the right place and time in the right price and quantity. Fashion merchandisers act as intermediaries between fashion designers who want their products available and the market (comprising of retailers and consumers).",
-      content2:"A program in fashion merchandising prepares students for exciting career prospects in rapidly growing fashion retail industry. As a Fashion Merchandising student, you will study fashion trends, learn about trend forecasting and learn to manage and marketing fashion goods. It will allow you to learn how to successfully develop, promote and sell fashion products. Furthermore, it will help you develop analytical business skills on fashion to recognize trends, design product lines, and understand the factors that shape buying behavior.",
+        "Fashion merchandising covers the business side of fashion, including buying, selling, and marketing. It ensures fashion products are available at the right time, place, price, and quantity. Fashion merchandisers connect designers with the market, which includes both retailers and consumers.",
+      content2:
+        "A degree in fashion merchandising equips students with skills for the fast-growing fashion retail industry. The curriculum includes studying fashion trends, forecasting, and managing fashion products. Students learn how to develop, promote, and market fashion items while gaining analytical business skills to identify trends and design product lines.",
     },
     {
-      title: "Is Fashion merchandising right for me?",
+      title: "Is Fashion Merchandising Right for Me?",
       content:
-        "You will need to closely follow fashion trends and have a keen eye for detail if you wish to pursue fashion merchandising as a career.  You will need excellent communication, interpersonal, time management and organizational skills to interact with fashion designers and a wide range of stakeholders. If you have these skills, then you will fit right in the world of fashion merchandising.",
+        "Pursuing a career in fashion merchandising requires a keen eye for detail and a strong sense of current fashion trends. Essential skills include communication, interpersonal abilities, time management, and organizational skills for effective interaction with designers and other stakeholders.",
     },
     {
-      title: "Fashion merchandising study options and costs",
+      title: "Fashion Merchandising Study Options and Costs",
       content:
-        "At the undergraduate level, students can enroll in a Bachelor of Business Administration (BBA) in Fashion Merchandising, Bachelor of Science in Fashion Merchandising and Consumer Studies, or Bachelor of Arts in Fashion Buying and Merchandising. The program duration is between 3-4 years depending on the institute. Besides a bachelor's degree, two-year associate degree options are also available. After completion of undergraduate studies, students can opt for Master of Sciences (MSc) or Master of Arts (MA) in Fashion Buying and Merchandising Management. An undergraduate degree in fashion merchandising on average costs $22,172 in the United States.",
+        "Undergraduate options include degrees like Bachelor of Business Administration (BBA) in Fashion Merchandising, Bachelor of Science in Fashion Merchandising, and Consumer Studies, or a Bachelor of Arts in Fashion Buying and Merchandising. These programs typically last 3-4 years. Associate degrees are also available. Postgraduate options include Master of Science (MSc) or Master of Arts (MA) in Fashion Buying and Merchandising Management. In the U.S., the average cost for an undergraduate degree in fashion merchandising is around $22,172.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content:
-        "Pursuing a fashion merchandising degree in 2022 and beyond is a fine choice since most estimates show that fashion merchandising professionals will be in high demand. The United States Bureau of Statistics (BLS) estimates that the job growth rate for fashion merchandising careers is projected to grow 4% by 2029.",
+        "Fashion merchandising careers are expected to grow, with the U.S. Bureau of Labor Statistics predicting a 4% job growth rate for fashion merchandising roles by 2029.",
     },
     {
-      title: "Career pathways for Fashion merchandising graduates",
+      title: "Career Pathways for Fashion Merchandising Graduates",
       subtitle1: "Visual Merchandiser",
       content1:
-        "A visual merchandiser is creates and installs storefronts and catalogs. They are responsible for point-of-sale displays and stands for exhibitions to attract customers. People in visual merchandising earn up to $62,997 annually.",
+        "Visual merchandisers design and set up storefronts, catalogs, and point-of-sale displays to attract customers. Average salaries can reach up to $62,997 annually.",
       subtitle2: "Retail/Fashion Buyer",
       content2:
-        "Retail or fashion buyers primarily order store merchandise, develop buying plans, and deal with vendors. They also work with designers and attend fashion and trade shows to purchase the trendiest fashion pieces. Individuals in this role have a keen eye for fashion trends.",
+        "Retail or fashion buyers manage store merchandise orders, work with vendors, and attend trade shows to identify trending items. A strong sense of fashion trends is essential.",
       subtitle3: "Marketing Specialist",
       content3:
-        "A marketing specialist is responsible for promoting fashion brands and products, by deploying a mix of resources and channels to create and implement marketing campaigns. They draw upon their expertise of fashion trends and marketing techniques to formulate a powerful merchandising strategy.",
+        "Marketing specialists promote fashion brands through various channels, using their knowledge of fashion trends to create and implement effective marketing campaigns.",
     },
   ];
 
@@ -126,12 +127,13 @@ const Fashion = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Fashion merchandising abroad</h1>
+        <h1>Study Fashion Merchandising Abroad</h1>
         <p>
-          Do you love the idea of combining fashion and business management? Are
-          you also interested in marketing fashion goods? If yes, then Fashion
-          Merchandising is a great career path for you!
+          Interested in a career that combines fashion and business management?  Passionate about
         </p>
+        <p>
+         marketing fashion items? If so, a career  in Fashion Merchandising may be right for you!</p>
+        
       </div>
 
       {/* Statistics section */}
@@ -145,24 +147,23 @@ const Fashion = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>11.5 million</strong>  people in the Fashion Merchandising workforce
+            <strong>11.5 million</strong> people work in Fashion Merchandising
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>4%</strong>  growth in the fashion merchandising industry
+            <strong>4%</strong> industry growth in fashion merchandising
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Total size of the global fashion industry
+            <strong></strong> Size of the global fashion industry
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -188,8 +189,6 @@ const Fashion = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
