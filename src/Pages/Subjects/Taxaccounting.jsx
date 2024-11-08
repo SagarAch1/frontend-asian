@@ -48,7 +48,7 @@ const TaxAccounting = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -90,44 +90,43 @@ const TaxAccounting = () => {
     {
       title: "About Tax Accounting",
       content1:
-        "As the name suggests, tax accounting focuses solely on a client’s taxes rather than their overall financial position. As a tax professional, you’ll have to follow the relevant laws when filing taxes on your clients’ behalf and also seek to maximise the tax write-offs they can claim. Tax accountants also provide tax planning advice to their clients and work to stay on top of changing tax laws.",
-      content2: "Tax accountants are required across all levels of the economy, from individuals to large-scale corporations.",
+        "Tax accounting, as the name suggests, centers on a client’s taxes instead of their overall finances. As a tax professional, you'll follow applicable laws when handling taxes for clients and aim to maximize the deductions they can claim. Tax accountants also offer tax planning and remain updated with evolving tax laws.",
+      content2: "Tax accountants serve at all levels of the economy, from individuals to large corporations.",
     },
     {
       title: "Is Tax Accounting right for me?",
       content1:
-        "Tax accounting is ideal for detail-oriented people who enjoy solving problems. Strong numeracy skills, time management skills and a willingness to adopt new technologies will also help you go far.",
-      content2: "For most of the year, you’ll likely have a routine work schedule between the hours of 9am and 5pm. At tax time, however, you’ll work long hours and even weekends to keep on top of your duties.",
-      content3: "When it comes to a tax accounting course, you should start off with an Accounting course to ensure you have a good understanding of business administration schemes, accounting theory and basic finance.",
-
-
+        "Tax accounting is perfect for detail-oriented individuals who enjoy problem-solving. Strong numerical, time management skills, and adaptability to new technology are also valuable.",
+      content2: "You’ll likely work standard hours most of the year, but during tax season, expect long hours, including weekends, to meet deadlines.",
+      content3: "When starting in tax accounting, it’s helpful to first complete an Accounting course to grasp business administration, accounting theory, and basic finance concepts.",
     },
     {
       title: "Tax Accounting study options and costs",
       content1:
-        "There’s a few different pathways to becoming a tax accountant, depending on the time commitment you’re willing to make and what your existing credentials are. Most professional tax accountants possess a Bachelor of Accounting or a Bachelor of Accounting and Finance. It’s also possible to become a tax professional with a two-year Diploma.",
-      content2: "Bear in mind that each country will have its own rules and regulations that tax professionals must abide by. This might include completing a board-approved course, getting registered with the relevant tax board, or completing relevant work experience.",
-      content3: "It’s also worth doing a cost-benefit analysis to determine what level of education you’d like to pursue. Accountants who have completed a Bachelor’s degree earn a median salary of USD$69,000 while those with a Master’s degree earn around USD$91,000, so it may be worth pursuing a higher level of education! To give you a general idea, most international students will spend upwards of $30,000 on their accounting degree.",
-      content4: "You’ll also have to factor in the cost of any certifications or registrations you need to legally practice in the country you intend to work in. For example, Australians have to register with the Tax Practitioners Board, while UK accountants must register with Her Majesty’s Revenue and Customs (HMRC).",
+        "There are multiple paths to becoming a tax accountant based on your commitment and prior credentials. Most professional tax accountants hold a Bachelor’s in Accounting or Accounting and Finance, though a two-year Diploma is also an option.",
+      content2: "Each country has unique tax professional regulations, which may require approved coursework, board registration, or relevant experience.",
+      content3: "Analyzing the education cost-benefit is crucial. Accountants with a Bachelor’s degree typically earn a median salary of USD $69,000, while those with a Master’s earn around USD $91,000. Most international students can expect to pay at least $30,000 for an accounting degree.",
+      content4: "You’ll also need to account for certification or registration costs specific to your country. For instance, Australians register with the Tax Practitioners Board, while UK accountants register with HMRC.",
     },
     {
       title: "Future outlook",
-      content1:"Tax accountants tend to have an above-average salary, with US accountants making $70,500 and British accountants earning £62,042 a year. The earning potential in the tax field can be enormous for those who run their own accounting firms or work as a consultant for high-value clients.",
-      content2:"In the accounting field more generally, jobs are expected to grow by 10-11% in the next five years, equating to 139,900 jobs. Given how complicated tax laws are, tax accountants are sure to remain in high demand.",
+      content1: "Tax accountants earn an above-average salary; US accountants make around $70,500, while UK accountants earn £62,042 annually. Those who establish their own firms or work with high-value clients have considerable earning potential.",
+      content2: "Accounting jobs are expected to grow by 10-11% over the next five years, adding roughly 139,900 positions. With complex tax regulations, demand for tax accountants is unlikely to wane.",
     },
     {
       title: "Career pathways for Tax Accounting graduates",
       subtitle1: "Financial Manager",
       content1:
-        "Financial managers monitor the financial health of an organisation, producing reports and developing strategies to meet the organisation’s financial goals. A relevant Bachelor’s degree in Accounting, Finance, Economics and Business Administration will help you get your foot in the door.",
+        "Financial managers oversee an organization’s financial health, preparing reports and strategies to meet financial objectives. A relevant Bachelor’s in Accounting, Finance, Economics, or Business Administration is beneficial.",
       subtitle2: "Financial Analyst",
       content2:
-        "Financial analysts use data to identify opportunities or evaluate business decisions, generating the best possible outcomes for their clients. A Bachelor’s degree in Mathematics or Finance is usually the benchmark for financial analysts.",
+        "Financial analysts analyze data to identify opportunities and assess business decisions to ensure favorable results for clients. A Bachelor’s in Mathematics or Finance is generally required.",
       subtitle3: "Budget Analyst",
       content3:
-        "Budget analysts help organisations allocate their financial resources through the use of detailed budgets. Budget analysts typically have a Bachelor’s degree in Accounting, Finance, Business or Economics.",
+        "Budget analysts help allocate financial resources through budgets. A Bachelor’s in Accounting, Finance, Business, or Economics is typical for this role.",
       subtitle4: "Financial Adviser",
-      content4:"Financial advisers work with individuals to help them meet their financial goals. As a financial adviser, you’ll create a game plan for your client and provide professional advice along the way. Financial advisers need to possess an approved degree - in Australia, for example, you’ll need to choose a degree that’s been approved by the Financial Adviser Standards and Ethics Authority (FASEA).",
+      content4:
+        "Financial advisers assist individuals in achieving financial goals. They create strategies and offer professional advice, usually requiring an approved degree, such as those accredited by bodies like Australia’s Financial Adviser Standards and Ethics Authority (FASEA).",
     },
   ];
 
@@ -137,11 +136,9 @@ const TaxAccounting = () => {
       <div style={sectionStyle}>
         <h1>Study Tax Accounting abroad</h1>
         <p>
-          Tax accountants handle the ins and outs of taxes for individuals,
-          businesses and government agencies. As well as making a difference in
-          people’s lives and finances, tax accountants also have an opportunity
-          to earn a great salary and enjoy a stable career.
+        Tax accountants manage taxes for individuals, businesses, and governments,
         </p>
+        <p> offering both financial impact and stable, high-earning career opportunities.</p>
       </div>
 
       {/* Statistics section */}
@@ -149,30 +146,29 @@ const TaxAccounting = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>The median annual salary</strong>: for accountants is USD$73,560
+            <strong>The median annual salary</strong>: for accountants is USD $73,560
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>The top 10%</strong>  of accountants earn around USD$122,840 a year
+            <strong>The top 10%</strong> of accountants earn about USD $122,840 annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Tax accountants</strong>  make more than the median average for other occupations
+            <strong>Tax accountants</strong> generally earn above the median for other jobs
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Jobs</strong>  are predicted to grow by 7% in the next ten years
+            <strong>Jobs</strong> in this field are projected to grow by 7% over the next decade
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -184,7 +180,7 @@ const TaxAccounting = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
+                {/* Render subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -201,10 +197,7 @@ const TaxAccounting = () => {
                   <div style={faqSubtitleStyle}>{item.subtitle4}</div>
                 )}
                 {item.content4 && <p>{item.content4}</p>}
-               
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
