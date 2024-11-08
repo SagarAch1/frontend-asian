@@ -90,35 +90,36 @@ const BusinessAdministration = () => {
     {
       title: "About Business Administration",
       content1:
-        "Businesses administration is concerned with the efficient management of a business, with the end goal of maximising revenue for the company. The study of business administration includes involves learning processes and methods to increase the organization’s internal efficiency (such as workforce productivity) so that it can perform well externally in the market.",
-      content2:"In simple words, business administrators assume a wide variety of roles in a business to grow the business. This can range from managing day-to-day operations such as ensuring good customer service or making high-value decisions such as developing policies and quarterly goals.",
+        "Business administration focuses on optimizing a company's operations to boost efficiency and revenue. It teaches methods to improve internal workflows and ensure external market success.",
+      content2: 
+        "In simple terms, business administrators handle various tasks from overseeing daily operations like customer service to making strategic decisions like setting goals and policies.",
     },
     {
       title: "Is Business Administration right for me?",
       content:
-        "In any business, a person in a management role has to juggle multiple responsibilities. You might have to meet sales personnel to discuss sales targets that might not have been met, deal with customer related issues, respond to e-mails, deliberate marketing strategies all the while streamlining the business processes to reduce costs. If you believe you have the ability to manage multiple operations simultaneously, perform well under pressure, adapt to changing situations easily, have an analytical mindset and can collaborate and work with teams easily, then a business administration degree may be a good pick for you. .",
+        "If you thrive in a fast-paced environment and are skilled at managing multiple responsibilities simultaneously—such as meeting targets, resolving issues, and streamlining processes—business administration could be the perfect fit for you.",
     },
     {
       title: "Study Options and Costs",
       content:
-        "A business administration degree is one of the most popular degrees with most universities offering both bachelor and masters programs. In the US, the average cost of a business degree is $30-35,000 per year. For a Master’s in Business Administration (MBA), which is typically a 2-year program, the average annual cost can be anywhere around $20,000-40,000. In the UK, the average cost of a bachelor program in business administration can cost anywhere between £13,000-15000 annually.",
+        "Business administration is a widely offered program, with both bachelor's and master's degrees available. In the US, a bachelor’s degree costs $30,000-35,000 per year, and an MBA typically ranges from $20,000-40,000 annually. In the UK, the cost of a bachelor’s program can range from £13,000 to £15,000 per year.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content:
-        "The world will always need professionals who can run and manage businesses. Of course, the ability to do this successfully requires more than just a business degree, as the right soft skills are also crucial. In the US alone, there is an estimated 8% growth in jobs for business professionals expected over the next decade. It is safe to say that the future outlook for individuals with a business degree is bright.",
+        "The demand for business professionals remains high. In the US, job growth for business professionals is expected to increase by 8% over the next decade, indicating strong career prospects for those with a business degree.",
     },
     {
-      title: "Career pathways for Pest and Weed Control graduates",
+      title: "Career pathways for Business Administration graduates",
       subtitle1: "Sales Executive",
       content1:
-        "A sales executive is required to maintain and grow a company’s sales so that the business can keep on generating revenue. This usually includes generating leads, communicating with clients, meeting sales targets, etc.",
+        "A sales executive drives revenue by generating leads, managing client relationships, and meeting sales targets.",
       subtitle2: "Human Resource Executive",
       content2:
-      "A human resource executive is responsible for the hiring and selection process of new employees, managing the payroll of existing employees, communicating with employees to resolve organisational issues and creating strategies to boost productivity.",
+        "An HR executive handles recruitment, payroll, employee relations, and strategies to boost organizational productivity.",
       subtitle3: "Market Research Analyst",
       content3:
-        "A market research analyst is concerned with scanning the external environment to create insightful reports for the company regarding market competition, potential risks, potential opportunities and conducting surveys for company products/services.",
+        "A market research analyst studies market trends, competition, and opportunities, providing insights to support business decisions.",
     },
   ];
 
@@ -126,13 +127,11 @@ const BusinessAdministration = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Business Administration abroad</h1>
+        <h1>Study Business Administration Abroad</h1>
         <p>
-          Businesses drive economies and skilled professionals and managers who
-          can help run businesses effectively will always be in demand globally.
-          That’s why a business degree continues being a popular choice among
-          students.
+          Business administration is key to running successful businesses, and professionals with expertise in this
         </p>
+        <p>  field are always in demand. This degree remains one of the most popular choices among students globally.</p>
       </div>
 
       {/* Statistics section */}
@@ -140,34 +139,29 @@ const BusinessAdministration = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>750,000</strong> news jobs to be created in business
-            administration this decade in the US
+            <strong>750,000</strong> new jobs are expected in business administration in the US this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Median pay for entry-level positions in business
-            administration
+            <strong>Entry-level pay</strong> for business administration professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Median annual pay of a business administration
-            professional
+            <strong>Annual salary</strong> for business administration professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 8% growth in business administrations job expected
-            this decade
+            <strong>8%</strong> job growth in business administration roles expected this decade.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -179,7 +173,6 @@ const BusinessAdministration = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -193,8 +186,6 @@ const BusinessAdministration = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

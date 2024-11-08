@@ -6,8 +6,8 @@ import { sub } from "date-fns";
 const Farmandagribusiness = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleSection = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open and close of sections
   };
 
   const sectionStyle = {
@@ -49,7 +49,7 @@ const Farmandagribusiness = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Make the icons more appealing
     marginBottom: "10px",
   };
 
@@ -89,40 +89,42 @@ const Farmandagribusiness = () => {
 
   const faqItems = [
     {
-      title: "About Agribusiness Management",
+      title: "What is Agribusiness Management?",
       content:
-        "Agribusiness management refers to the study of business skills and topics for people interested in running their own farms or agribusinesses. It encompasses a wide range of topics, including supply chain management, value-addition, marketing, distribution entrepreneurship, microfinance, among other things. Agricultural producers, firms that provide goods and services to farmers, businesses that add value to agricultural commodities, and businesses that make it simpler to sell agricultural products to an ever-growing market are all included in agribusiness management.",
+        "Agribusiness management involves the application of business principles and practices to the agricultural sector. It covers topics such as supply chain management, value addition, marketing, and entrepreneurship in the farming industry. Professionals in this field manage farms, agricultural product processing, and distribution, aiming to bring agricultural goods to a larger market.",
     },
     {
-      title: "Is Agribusiness Management right for me?",
+      title: "Is Agribusiness Management a good fit for me?",
       content:
-        "If you are good with managing finances and are a team player, you have a solid base to become an agribusiness manager. Agribusiness management studies are designed to equip you with the knowledge and skills required to run an agri-business successfully. Therefore, if you possess a passion and aptitude for farming or food production, studying agribusiness management might be a good option for you.",
+        "If you are organized, financially savvy, and enjoy working in teams, agribusiness management could be a great career path. The degree prepares you with the knowledge needed to manage agricultural businesses effectively, combining your interest in farming or food production with essential business skills.",
     },
     {
-      title: "Agribusiness Management study options and cost",
+      title: "What are the study options and costs for Agribusiness Management?",
       content:
-        "Typically universities offer three-year undergraduate programs in agribusiness management Students are trained on enterprise and innovation in agriculture and agricultural product marketing. Master’s degrees are usually two-year programs. In Australia, the average cost of a four-year undergraduate program in Agribusiness is between AUD 13,200 per year, while in the US, it is USD 12,000-14000 per year on average.",
+        "Universities generally offer three-year undergraduate programs in agribusiness management, which include studies in agricultural entrepreneurship and product marketing. Master’s programs usually span two years. In Australia, a four-year undergraduate degree costs around AUD 13,200 per year, while in the US, it typically ranges from USD 12,000 to 14,000 annually.",
     },
     {
-      title: "Future outlook",
+      title: "What is the future outlook for Agribusiness Management?",
       content:
-        "Agribusiness professionals are in great demand. The agriculture sector has a gaping void due to trends such as an ageing workforce, fewer young individuals with agricultural experience, and increasing urbanisation. Consequently, agribusiness management is largely unsaturated, and agribusiness graduates can quickly work up to managerial roles. A lot of exciting development has happened in precision agriculture, urban agriculture, sustainable agriculture, and agricultural technology. Employment of agribusiness management roles is predicted to grow by 9% between 2020 and 2030.",
+        "Agribusiness professionals are in high demand due to factors like an aging workforce, fewer young people with agricultural experience, and increasing urbanization. The agribusiness sector is largely underdeveloped, offering opportunities for quick career advancement. Innovations in precision agriculture, sustainable practices, and ag-tech are driving growth. Employment in agribusiness management is expected to grow by 9% from 2020 to 2030.",
     },
     {
-      title: "Career pathways for Agribusiness Management graduates",
+      title: "Career opportunities for Agribusiness Management graduates",
       subtitle1: "Grain Merchandiser",
       content1:
-        "Grain merchandisers are those who buy and sell grain. They decide when to acquire grain according to market conditions, which fluctuate depending on supply and demand, and then store or process it until it’s time to sell it. They buy crops from farmers at a harvest price and set the futures price of the procurement, which is the amount a buyer agrees to pay in the future. Merchandisers are employed by grain elevators, processors, and companies that store grain for resale.",
+        "Grain merchandisers are responsible for buying and selling grain, determining when to buy based on market trends and storing or processing it until it’s time to sell. They work with grain elevators, processors, and grain storage companies.",
       subtitle2: "Agricultural Bank Manager",
       content2:
-        "Agricultural bank managers are in charge of everyday activities on farm estates, including planning, organising, supervising, and administering them. Budgeting and keeping correct financial records are among their key responsibilities.",
+        "Agricultural bank managers oversee the operations of farm estates, including planning, organizing, and managing budgets and financial records.",
       subtitle3: "Agricultural Advisor",
       content3:
-        "Agriculture advisors are problem solvers who work in the agricultural industry. They provide business and technical advice to farmers, landowners, and conservation organisations. They can focus on offering agricultural consulting services to individuals, businesses, and organisations. Farmers, growers, landowners, conservation organisations, and government agencies are among their clients.",
+        "Agricultural advisors provide technical and business guidance to farmers, landowners, and conservation organizations. They may work as consultants or with government agencies to promote sustainable agricultural practices.",
       subtitle4: "Commodity Trader",
-      content4:"Commodity traders invest in tangible commodities such as oil, gold, and agricultural products. Economic trends that are expected to emerge, as well as opportunities for arbitrage in the commodities markets, have an influence on day-to-day purchasing and selling. Commodity markets are commonly used in the major economic sector, which includes enterprises that profit from natural resource exploitation. Most commodities trading involves buying and selling futures contracts, although physical trading and derivatives are also common. ",
+      content4:
+        "Commodity traders deal with tangible products like grains, oil, and other natural resources. They anticipate market trends and engage in buying and selling based on future market conditions, often using futures contracts.",
       subtitle5: "Farm Management Specialist",
-      content5: "Farm Management Specialists are known for devising the most profitable crop-growing and livestock-raising methods. They calculate the cost of each acre and quintal, as well as the link between farm size, land usage, cropping patterns, capital investment, and labour employment in dry regions.",
+      content5:
+        "Farm management specialists develop efficient farming methods to maximize production and profitability. They assess costs, manage land use, and advise on labor and capital investments, particularly in dry regions.",
     },
   ];
 
@@ -130,11 +132,11 @@ const Farmandagribusiness = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Agribusiness Management abroad</h1>
+        <h1>Study Agribusiness Management Abroad</h1>
         <p>
-          Do you wish to blend agricultural science with business management
-          education? Agribusiness management helps you achieve just that.  
+          If you're interested in combining agricultural science with business strategy, agribusiness management 
         </p>
+        <p>is the perfect field. This program will prepare you for managing businesses in the agricultural sector.</p>
       </div>
 
       {/* Statistics section */}
@@ -142,69 +144,51 @@ const Farmandagribusiness = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> USD 108,000: average salary of an agriculture
-            marketing manager
+            <strong>USD 108,000</strong>: Average salary for an agriculture marketing manager
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 84,000 openings every year for agribusiness
-            managers in the US
+            <strong>84,000</strong>: Number of openings for agribusiness managers annually in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> USD 145.7 billion: total size of US agri-exports
-            in 2020.
+            <strong>USD 145.7 billion</strong>: Total size of US agri-exports in 2020
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 28% of the world’s population is engaged in
-            agriculture.
+            <strong>28%</strong>: Percentage of the global population engaged in agriculture
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleSection(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

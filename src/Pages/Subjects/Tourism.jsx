@@ -5,8 +5,8 @@ import FormPage from "../Homepage/FormPage";
 const Tourism = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleActiveIndex = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Switch between open and close
   };
 
   const sectionStyle = {
@@ -90,36 +90,37 @@ const Tourism = () => {
     {
       title: "About Tourism",
       content:
-        "Despite the setback it received due to COVID-19, the tourism sector has quickly bounced back as countries reopen their borders for international travelers. From airlines, hotels, restaurants and cafes to destination marketers, travel agencies and transport providers, the industry continues catering to millions of business and leisure travelers across the world. Tourism studies are designed to train students with the skills necessary for designing, packaging and delivering memorable tourist experiences. Students learn about the fundamentals of the hospitality industry and deep dive into topics like catering, event management and gastronomy. If you enjoy travelling and planning trips, then Tourism is the right field for you.",
+        "Although the tourism sector was severely impacted by the COVID-19 pandemic, it has rapidly recovered as borders reopen globally. The industry continues to thrive, catering to millions of travelers, from airlines and hotels to travel agencies and transport services. Tourism studies prepare students with the necessary skills to create and deliver memorable travel experiences. Students explore the basics of hospitality, as well as more specialized areas like catering, event planning, and gastronomy. If you enjoy traveling and organizing trips, this field could be the perfect fit for you.",
     },
     {
-      title: "Is Tourism right for me?",
+      title: "Is Tourism a good fit for me?",
       content:
-        "As a tourism professional, one must be highly organised and have high attention to detail to ensure every client’s individual needs are addressed. They must have good communication and interpersonal skills and a high level of patience as they would need to interact directly with the clients most of the time. If you think this sounds like you, then a career in Tourism could be a good choice.",
+        "Tourism professionals need to be highly organized with a sharp attention to detail to cater to every client’s unique needs. Effective communication and interpersonal skills are essential, as is patience, as you will often interact directly with customers. If you feel that you possess these qualities, then pursuing a career in Tourism could be a great option.",
     },
     {
-      title: "Tourism study options and costs",
+      title: "Tourism education and costs",
       content:
-        "An Associate Degree in Tourism usually takes two years to complete in the US and is typically followed up by a short internship or work placement. A bachelor’s degree offers more in depth knowledge of the field and opens you to better job opportunities. It usually takes 4 years to complete in the US. The average cost of studying tourism in the US is $15,744 per year for international students. A master’s degree after the completion of your undergraduate program is a great way to enhance your employment prospects. It usually takes 2 years to complete and costs around $19,848 per year in US.",
+        "An Associate Degree in Tourism typically takes two years to complete in the United States, often followed by a short internship. A bachelor’s degree offers a deeper understanding of the industry and opens the door to more career opportunities, usually taking four years to complete. The average cost for international students to study tourism in the US is around $15,744 annually. For those looking to further their education, a Master’s degree takes approximately two years and costs about $19,848 per year.",
     },
     {
-      title: "Future outlook",
+      title: "Job outlook",
       content:
-        "Tourism is a $4.7-trillion-dollar industry offering livelihoods to millions of people worldwide. According to U.S. Bureau of Labor Statistics, the projected growth of travel agents alone in the job market is 5% by 2030. ",
+        "Tourism is a $4.7 trillion global industry that provides livelihoods for millions of people worldwide. The U.S. Bureau of Labor Statistics projects a 5% growth in travel agent employment by 2030.",
     },
     {
-      title: "Career pathways for Tourism graduates",
+      title: "Tourism career paths",
       subtitle1: "Tour Guide",
       content1:
-        "A tour guide assists and informs visitors about historical places, religious institutes, museums, sanctuaries, national parks, and other culturally significant locations.",
+        "Tour guides provide visitors with information about historical sites, museums, national parks, and other culturally significant locations, enriching their travel experience.",
       subtitle2: "Travel Agent",
       content2:
-        "A travel agent is someone who conducts research, plans, and organises vacations for individuals and organisations. They are typically responsible for ensuring that customers have comfortable lodging, visas, flights, and foreign exchange, among other things.",
+        "Travel agents assist clients in planning vacations by researching, organizing, and ensuring that all travel arrangements such as lodging, flights, and visas are in place.",
       subtitle3: "Guest Relations Manager",
       content3:
-        "A Guest Relations Manager supervises other members of the guest services team in a hotel, such as receptionists, concierges, housekeepers, and wait staff. Guest relations managers also evaluate staff performance.",
+        "Guest Relations Managers oversee hotel guest services teams, including receptionists and concierges, ensuring high standards of guest satisfaction and evaluating team performance.",
       subtitle4: "Housekeeping Manager",
-      content4:"Within the hotel they deal with, housekeeping managers guarantee that all rooms and premises are clean and well-organised. Maintaining and procuring supplies, investigating complaints, overseeing housekeepers, training new personnel, and guaranteeing customer happiness are all part of their responsibilities.",
+      content4:
+        "Housekeeping Managers ensure that rooms and facilities in hotels are maintained to a high standard. They manage housekeeping staff, procure supplies, and handle customer concerns.",
     },
   ];
 
@@ -127,13 +128,12 @@ const Tourism = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Tourism abroad</h1>
+        <h1>Study Tourism Abroad</h1>
         <p>
-          A multi-billion dollar industry that offers employment to millions of
-          people across the world, tourism is the lifeline of many a country’s
-          economy. A formal study in this subject can set you up for an exciting
-          and rewarding career.
+          As a multi-billion-dollar industry that sustains economies worldwide, 
         </p>
+        <p>tourism offers countless career opportunities. A formal education in this .</p>
+        <p>field can pave the way for an exciting and fulfilling career</p>
       </div>
 
       {/* Statistics section */}
@@ -141,45 +141,40 @@ const Tourism = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average annual pay of tour and travel guides
+            <strong></strong> Average salary for tour and travel guides annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Median annual pay of travel agents
+            <strong></strong> Median salary for travel agents annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $4.7 trillion: Travel and
-            tourism’s contribution to global GDP in 2020
+            <strong></strong> $4.7 trillion: Contribution of travel and tourism to global GDP in 2020
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Projected job openings for travel agents every year this decade
-
-
+            <strong></strong> Projected job openings for travel agents throughout this decade
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Overview of the Subject</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleActiveIndex(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -193,8 +188,6 @@ const Tourism = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
