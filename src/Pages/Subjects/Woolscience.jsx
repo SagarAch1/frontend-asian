@@ -6,7 +6,7 @@ const WoolScience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggles open/close
   };
 
   const sectionStyle = {
@@ -49,7 +49,7 @@ const WoolScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -89,90 +89,86 @@ const WoolScience = () => {
 
   const faqItems = [
     {
-      title: "About Wool science",
+      title: "About Wool Science",
       content1:
-        "Wool Science studies are designed to offer individuals skills and expertise in the production, harvesting, preparation, marketing, manufacturing, and processing of wool to the wool industry.",
+        "Wool Science educates on wool production, harvesting, preparation, marketing, and processing, tailored to industry needs.",
       content2:
-      "The different qualifications assist students in understanding wool categorization, production, and processing abilities and technical knowledge that meet the wool supply chain’s requirements, market, and customer requirements. Students also learn ways to maximize return in the wool supply chain.",
+        "The curriculum provides skills in wool classification and processing techniques, aimed at maximizing value in the wool supply chain.",
       content3:
-      "Wool science graduates can expect to work in consulting, regulatory, and research positions in the commercial and public sectors across the agricultural spectrum. A wide range of occupations are accessible, from large-scale rangeland farming to high-input grazing and feed lotting.",
+        "Graduates can pursue roles in consulting, regulation, and research across sectors, from large-scale farming to intensive grazing operations.",
     },
     {
-      title: "Is Wool science right for me?",
+      title: "Is Wool Science Right for Me?",
       content1:
-        "The wool Science studies take an in-depth look at the wool fibre, structure, chemistry and physics. They also explore the implications of the wool fibre’s structure, physics, and chemistry in terms of the properties and benefits of wool products. Students will be taught basic wool science principles, market structure, and domestic and international factors that influence the wool industry in order to expand the student’s knowledge and understanding of proper wool preparation.",
+        "Wool Science explores wool fiber's structure, chemistry, and physics, relating them to wool product properties.",
       content2:
-      "It is easier to understand the processing of wool and the performance of the subsequent products if you understand the behaviour of the wool fibre from the outset. The purpose of the Wool Science degree is to provide the wool industry with individuals who have the relevant skills and knowledge regarding the production, harvesting, preparation, marketing, manufacturing and processing of wool.",
+        "Students learn wool science fundamentals, industry structure, and market factors that affect the wool industry.",
     },
     {
-      title: "Wool Science study options and costs",
+      title: "Study Options and Costs",
       content:
-        "Wool science courses are provided as part of many Bachelor degrees especially in Australia. The Bachelor of Science with Honors degrees cost roughly $31,600 per year. Postgraduate study costs roughly $34,000 per year for students. Individual units from the face-to-face training and 4-year specialized degree in animal and wool science are now available online to students around the country",
+        "Bachelor’s degrees in wool science, particularly in Australia, cost around $31,600 annually, with postgraduate studies costing about $34,000 per year.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content1:
-        "Jobs in the wool sector can lead to a successful career path in a variety of fields, including warehousing and logistics, management, and more.",
+        "Wool industry roles cover areas like logistics, management, and more, with technology enhancing production.",
       content2:
-        "With the advent of technology in the wool production industry, there has been a rapid development of spinning and weaving tools, resulting in increased apparel sales all over the world. The expansion in the wool market is due to factors such as population growth and urbanization. As a result, students interested in pursuing a career in Wool Sciences have a wide range of opportunities available to them.",
-        
+        "Population growth and urbanization drive wool industry demand, presenting wide career opportunities.",
     },
     {
-      title: "Career pathways for Wool science graduates",
+      title: "Career Pathways",
       subtitle1: "Wool Classer/Storekeeper",
       content1:
-        "Wool classers / storekeepers are responsible for handling wool properly, safe storage, coring, receiving and dispatching. They also assist with stock take and other store person duties.",
+        "Classers manage wool handling, storage, stocktaking, and dispatching.",
       subtitle2: "Operations Coordinator",
       content2:
-        "Wool operations coordinators are primarily involved in wool sale advice and marketing to customers, with a focus on creating partnerships with wool farmers.",
+        "Coordinators focus on wool sales advice and partnerships with wool farmers.",
       subtitle3: "Wool Buyer",
       content3:
-        "Wool buyers are responsible for inspecting and buying wool at auctions and other marketplaces. They use their knowledge to assess different wool types, process bulk class bales, and purchase wool at the door.",
+        "Buyers assess wool at auctions and marketplaces, purchasing bulk class bales.",
       subtitle4: "Supply Coordinator",
-      content4:"Wool supply coordinators are in-charge of receiving and shipping wool to various locations, which requires them to have excellent communication abilities.",
+      content4:
+        "Supply coordinators oversee wool shipments, requiring strong communication skills.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Wool Science abroad</h1>
+        <h1>Study Wool Science Abroad</h1>
         <p>
-        Wool is an internationally traded commodity with a broad and ever-changing market diversity. A specialised education in wool sciences offers great career prospects.
+          Wool is a globally traded commodity with a dynamic market. Studying wool science offers promising career options.
         </p>
       </div>
 
-      {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>The global wool market </strong>:  is expected to grow at a CAGR of 4.8 percent (2021-2026)
+            <strong>Global wool market growth</strong>: expected CAGR of 4.8% (2021-2026)
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Wool Operations Coordinator</strong>   earns around $70,000 annually.
+            <strong>Operations Coordinator</strong> earns approximately $70,000 yearly.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Assistant wool buyer </strong>  & exporter earns around $60,000 annually.
+            <strong>Assistant Wool Buyer</strong> salary: around $60,000 annually.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>More than 200,000</strong>   people are employed in producing and exporting Australian wool.
+            <strong>200,000+</strong> employed in Australian wool production and export.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
@@ -183,7 +179,6 @@ const WoolScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -201,8 +196,6 @@ const WoolScience = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
