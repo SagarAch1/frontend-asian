@@ -5,11 +5,11 @@ import FormPage from "../Homepage/FormPage";
 const Pharmacology = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ visibility
   };
 
-  const sectionStyle = {
+  const heroSectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,7 +24,7 @@ const Pharmacology = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statsSectionStyle = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -48,7 +48,7 @@ const Pharmacology = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color
     marginBottom: "10px",
   };
 
@@ -88,124 +88,112 @@ const Pharmacology = () => {
 
   const faqItems = [
     {
-      title: "About Pharmacology",
+      title: "What is Pharmacology?",
       content:
-        "Pharmacology refers to the study of drugs and how they affect the body. This involves developing new chemical substances and studying their effects on the body, whether positive or negative. In this way, Pharmacology combines toxicology, biology, chemistry and physiology, which means it’s a skill set that can be relevant to many different jobs within life sciences. In fact, studying Pharmacology can lead you down a pathway into academia, industry or even civil service.",
+        "Pharmacology is the study of how drugs interact with the body. This includes researching new chemicals and their effects, whether beneficial or harmful. It merges multiple fields like toxicology, biology, chemistry, and physiology, making it applicable to various life sciences careers. A degree in Pharmacology can lead to opportunities in academia, industry, or government.",
     },
     {
-      title: "Is Pharmacology right for me?",
+      title: "Is Pharmacology the right fit for me?",
       content1:
-        "To thrive in Pharmacology, you should have strong research skills and technical expertise as well as the ability to manage yourself and stay organised. It’s also important to be able to communicate clearly and professionally, ensuring your findings are understood by all.",
-      content2:"Pharmacology is a flexible career path, which means it’s possible to hone into a specialisation that best suits your aptitude and temperament. For example, you could work in product management, marketing or medical information, using your knowledge of Pharmacology to facilitate communication between pharmaceutical companies, doctors and patients.",
+        "To succeed in Pharmacology, you'll need strong research skills, technical expertise, and the ability to stay organized. Communication is also key, ensuring your findings are clear and accessible to others.",
+      content2:
+        "Pharmacology is a versatile career, offering various specializations. You could work in product management, marketing, or medical information, bridging the gap between pharmaceutical companies, doctors, and patients.",
     },
     {
       title: "Pharmacology study options and costs",
       content1:
-        "At a minimum, pharmacologists require a graduate degree. This can be in Life Sciences, Chemistry, Pharmacy, Biology or a variety of other relevant fields. Some budding pharmacologists choose to study a Master’s or even a Doctorate to improve their understanding of toxicology. As a general guide, a Bachelor of Science might cost around USD$40,000 a year in the US and around AUD$40,000 a year in Australia.",
-      content2:"In most countries, you’ll be required to complete coursework in a classroom or laboratory setting as well as clinical practice or practical research. It’s also worth looking into whether you need any licenses or accreditations to work as a Pharmacologist in the country of your choice.",
-      content3:"Bear in mind the difference between Pharmacology and Pharmacy courses when you go to choose your study path. Pharmacy courses are focused on the dispensing of prescription medicines, while Pharmacology is more about the research of chemical compounds and medical innovations.",
+        "A graduate degree is essential to become a pharmacologist. This can be in fields like Life Sciences, Chemistry, Pharmacy, or Biology. Many pharmacologists pursue a Master's or Doctorate to deepen their knowledge of toxicology. As a general guide, tuition for a Bachelor of Science in the US is around USD$40,000 per year, and in Australia, it's about AUD$40,000 annually.",
+      content2:
+        "Pharmacology programs typically involve classroom and laboratory coursework, along with clinical practice or research. Check if any licenses or certifications are required for practicing Pharmacology in your chosen country.",
+      content3:
+        "When choosing your course, be mindful of the distinction between Pharmacology and Pharmacy. While Pharmacy focuses on dispensing medication, Pharmacology is centered on researching chemical compounds and medical advancements.",
     },
     {
-      title: "Future outlook",
+      title: "Career prospects in Pharmacology",
       content:
-        "Jobs for medical scientists in general are expected to grow 8% by 2028. As the world population grows, the need for innovative new medicines will also continue to grow. Pharmacology students also have a variety of opportunities to pursue in workplaces as diverse as academia, industry and hospitals.",
-       
+        "The demand for medical scientists is expected to rise by 8% by 2028. As the global population grows, so will the need for new medical solutions. Pharmacology graduates can pursue careers in diverse sectors like academia, industry, or healthcare.",
     },
     {
-      title: "Career pathways for Pharmacology graduates",
+      title: "Career opportunities for Pharmacology graduates",
       subtitle1: "Pharmacologist",
       content1:
-        "As a pharmacologist, you’ll be responsible for developing and analysing substances that will be used to treat disease. This involves modifying substances to minimise side effects, carrying out experiments to determine how drug concentrations change in the body over time and studying what happens to the body after a drug has been administered. You’ll also test new substances, write scientific reports on your research, and provide advice to healthcare workers, politicians and the general public.",
+        "As a pharmacologist, you'll research and develop substances to treat diseases. You'll modify compounds to minimize side effects, conduct experiments on drug absorption and metabolism, and provide scientific insights to healthcare professionals and the public.",
       subtitle2: "Pharmacist",
       content2:
-        "Pharmacists work within the community to dispense prescription medication and offer advice. As a pharmacist, you will also provide vaccinations and conduct basic medical tests on patients or customers. Pharmacists can also work in industrial settings, developing and quality testing new medicines.",
+        "Pharmacists dispense medications and offer advice to patients. They also administer vaccines and conduct health tests. Pharmacists may also work in pharmaceutical companies, testing and developing new medicines.",
       subtitle3: "Toxicologist",
       content3:
-        "Toxicologists test bodily fluids and tissue samples during the autopsy process to identify any chemicals or toxins that may be present. Typically working in laboratories, they are well-versed in a variety of methods required to determine the precise amount of drugs, poisons or toxins within a person’s body.",
-        subtitle4: "Biomedical scientist",
-        content4:"Biomedical scientists work to better understand human diseases, including diagnosis, treatment and prevention. By studying the human body, biomedical scientists help to find new ways to cure or treat diseases.",
-        subtitle5:"Analytical chemist",
-        content5:"Analytical chemists investigate the chemical nature of substances, conduct laboratory research, design instruments and participate in the product development process. In this way, they help to ensure that products are safe for human usage.",
+        "Toxicologists analyze bodily fluids and tissues to detect toxic substances. They work in laboratories and use advanced techniques to identify and measure drugs, poisons, or toxins in the body.",
+      subtitle4: "Biomedical Scientist",
+      content4:
+        "Biomedical scientists investigate diseases, focusing on diagnosis, treatment, and prevention. By studying human health, they contribute to new therapeutic methods and cures.",
+      subtitle5: "Analytical Chemist",
+      content5:
+        "Analytical chemists study the chemical properties of substances, conduct research, and develop instruments for testing. Their work ensures that products are safe for use in the medical and consumer industries.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
-        <h1>Study Pharmacology abroad</h1>
+      {/* Hero Section */}
+      <div style={heroSectionStyle}>
+        <h1>Study Pharmacology Abroad</h1>
         <p>
-          Pharmacology combines science and pharmacy to develop new medicines
-          and treat diseases. Studying Pharmacology offers you a chance to make
-          a real difference in the world as well as explore a multifaceted,
-          ever-changing career path
+        Pharmacology combines science and pharmacy to develop treatments, 
         </p>
+        <p>offering a rewarding career with a significant global impact. </p>
       </div>
 
-      {/* Statistics section */}
-      <div style={statisticsSection}>
+      {/* Statistics Section */}
+      <div style={statsSectionStyle}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>:Demand for medical scientists will grow 8% by 2028
+            <strong>8%</strong> projected growth in medical scientist jobs by 2028.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> The median salary for pharmacologists is USD$99,000
+            The average salary for pharmacologists is <strong>USD$99,000</strong>.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Pharmacology salaries in the US range between USD$71,000 and $214,000
+            Pharmacologist salaries in the US range between <strong>USD$71,000 and USD$214,000</strong>.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> The global revenue of the pharmaceutical industry is USD$1.27 trillion
+            The pharmaceutical industry's global revenue is <strong>USD$1.27 trillion</strong>.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
+      {/* FAQ Section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Course Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleFaq(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

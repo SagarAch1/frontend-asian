@@ -90,36 +90,38 @@ const Botany = () => {
     {
       title: "About Botany",
       content1:
-        "Botany is the branch of biology that deals with the study of the structure, form and biochemical processes involved in plant life. The scope of this study also includes the classification of plants and the study of plant interaction with its natural environment. Botanists draw upon their understanding of plant biology to contribute to a variety of organisations like the chemical industry, pharmaceutical corporates, oil and seed companies and biotechnology firms. Furthermore, as environmental concerns come to the forefront of the global consciousness more and more botanists will find opportunities in the public sector to help reverse environmental degradation",
-      content2: "By studying the biology, evolution and behaviour of plants, botanists expand the scope of plant knowledge and apply it to solve different challenges in horticulture, agriculture, horticulture and other allied fields.",
-        },
+        "Botany is the branch of biology that explores plant structure, function, and biochemical processes. It also studies plant classification and interactions with the environment. Botanists contribute to sectors such as agriculture, pharmaceuticals, and biotechnology. As environmental concerns rise, botanists are also needed in the public sector to address issues like environmental degradation.",
+      content2:
+        "Through studying plant biology, evolution, and behavior, botanists apply their knowledge to solve challenges in areas like agriculture, horticulture, and conservation.",
+    },
     {
       title: "Is Botany right for me?",
       content:
-        "To be a botanist, aspirants are required to possess multiple skills. Apart from an interest in biology or plants, candidates must have a keen interest and ability to take part in research activities. If you are someone who has strong analytical and communication skills, odds are you will be successful in this field. As a botanist, you will mostly be required to work outdoors and in labs, with patience and persistence. You also need to have a knack for computers and teamwork skills. If you think you possess these qualities, then botany may be a rewarding field for you.",
+        "Botany requires a mix of skills. Beyond an interest in plants and biology, aspiring botanists need strong research, analytical, and communication skills. Field and lab work are common, requiring patience and persistence. Knowledge of computers and teamwork is also important. If these qualities resonate with you, botany could be a fulfilling career.",
     },
     {
       title: "Botany study options and costs",
       content:
-      "The need for more crop production and better plant life has increased now more than ever before. A large part of reason is the booming population. With increased demand, the risk and complications of plant diseases has also increased. Thus, we need Pest and Weed Control specialists to help us keep productions high and prevent crop failures. According to U.S. Bureau of Labor Statistics, from 2020 to 2030, new jobs for agricultural and food scientists are expected to grow at a rate of 9%. Moreover, agricultural and food scientists are expected to have about 4,400 job opportunities each year this decade.",
+        "As the global population grows, the demand for crops and healthy plant life increases, along with the challenges posed by plant diseases. To address these issues, specialists in pest and weed control are essential. Agricultural and food scientists are expected to see a 9% growth in job opportunities from 2020 to 2030, according to U.S. Bureau of Labor Statistics, with around 4,400 job openings annually.",
     },
     {
       title: "Future outlook",
       content1:
-      "Botanical sciences hold a bright future for aspirants. Students who pursue botany as a career can opt to work in educational institutions and private as well as public sector organisations. And because of the interdisciplinary nature of botany, plant scientists can pursue a career in affiliated fields like ecology, conservation, agriculture, forestry and biotechnology",
-    content2:"The average growth in employment opportunities for botanists is 14%, which is much higher than the average for all other occupations.",
+        "The future of botany is promising. Graduates can work in educational institutions, private companies, or government organizations. Because botany intersects with many fields, opportunities in ecology, conservation, agriculture, and biotechnology are abundant.",
+      content2:
+        "Botany-related jobs are expected to grow by 14%, a rate significantly higher than other occupations.",
     },
     {
       title: "Career pathways for Botany graduates",
       subtitle1: "Naturalist",
       content1:
-        "A naturalist studies the impact of different living species on the environment, and how they interact with each other. Their job is generally research-based. Hence, they are always assisting and implementing research programs. The purpose of all such work is to gather scientific information and analyse which conditions may work in favour of certain environments or species. And considering that, a naturalist develops a plan to protect them, in case of damage.",
+        "Naturalists research the impact of species on the environment and their interactions. They assist in research programs to collect scientific data, aiming to protect species or ecosystems in case of harm.",
       subtitle2: "Florist",
       content2:
-        "A florist works with flowers. They may either grow their own flowers or acquire them through a wholesaler. They will then arrange these flowers into bouquets and baskets for customers. They have sufficient knowledge of which flowers bloom in which season, and what’s the impact of different environments on them. They also provide people with information about their products.",
+        "Florists work with flowers, either growing them or sourcing them from wholesalers. They create bouquets and arrangements, offering advice on plant care and providing customers with product information.",
       subtitle3: "Forester",
       content3:
-        "Their primary duties include managing, planting, and caring for trees in the forest. The job of a forester is associated with geologists and wildlife biologists. Therefore, they often find themselves collaborating with other experts in biological and conservation sciences. Protection of wilderness areas, facilitating public recreation, managing forest fires, and developing strategies to enhance habitats for different species in the woods are some of the responsibilities of a forester.",
+        "Foresters manage and care for forests, working alongside geologists and biologists. They help protect wilderness areas, manage forest fires, and create strategies to enhance habitats for various species.",
     },
   ];
 
@@ -129,11 +131,9 @@ const Botany = () => {
       <div style={sectionStyle}>
         <h1>Study Botany abroad</h1>
         <p>
-          The study of botany encompasses more than three hundred thousand
-          species of plants ranging from ground-hugging mosses to giant redwood
-          trees. It studies various aspects of plant biology including their
-          structure, properties, and biochemical processes.
+          Botany is the scientific study of plants, covering their structure, processes, and interactions with their environment. 
         </p>
+        <p> This field includes the study of over 300,000 plant species, from mosses to towering redwoods.</p>
       </div>
 
       {/* Statistics section */}
@@ -141,19 +141,19 @@ const Botany = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: $78,523: average annual salary of a botanist in the US
+            <strong></strong>: $78,523: Average annual salary of a botanist in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 9% expected rise in the average annual salaries of botanists in the UK
+            <strong></strong> 9% expected rise in average salaries of botanists in the UK
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 14%: rate of growth of employment opportunities for botanists
+            <strong></strong> 14%: Growth rate of employment opportunities for botanists
           </p>
         </div>
         <div style={statItemStyle}>
@@ -165,7 +165,6 @@ const Botany = () => {
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
@@ -176,7 +175,6 @@ const Botany = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -190,8 +188,6 @@ const Botany = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
