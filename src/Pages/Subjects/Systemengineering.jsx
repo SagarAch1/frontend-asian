@@ -6,7 +6,7 @@ const SystemsEngineering = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ sections open and closed
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const SystemsEngineering = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Changing color for visual appeal
     marginBottom: "10px",
   };
 
@@ -88,94 +88,85 @@ const SystemsEngineering = () => {
 
   const faqItems = [
     {
-      title: "About System Engineering",
+      title: "What is Systems Engineering?",
       content1:
-        "Systems Engineering is a branch of industrial engineering focused on the design, developing and implementation of integrative systems. Systems engineers are found in virtually every major industry, including health care, transportation, manufacturing, and software. It's a job that lets you solve problems, research answers, and create systems to solve an issue or achieve a goal.",
-      content2: "From the initial design of a complex system to the production and management of the end product or solution, systems engineers develop and oversee all aspects of a complex system to solve a problem.",
-      content3:"Products, people, services, information, natural components, or processes—or a combination of them—can all be part of a system, depending on the role. As a systems engineer, you're responsible for troubleshooting and communicating with all parties involved in the system's implementation and use.",
+        "Systems Engineering is an area of industrial engineering dedicated to the design, development, and implementation of integrated systems. This role is common in industries such as healthcare, transportation, manufacturing, and technology. It allows engineers to resolve challenges, investigate solutions, and create systems to address a problem or reach a goal.",
+      content2:
+        "From the conception of a system to the management and production of the final solution, systems engineers oversee every phase, ensuring that everything operates smoothly and effectively.",
+      content3:
+        "A system can encompass a wide range of elements such as products, services, data, or people—each serving a specific role. Systems engineers collaborate with various stakeholders to ensure the system is successfully implemented and operational.",
     },
     {
-      title: "Is System Engineering right for you?",
+      title: "Is Systems Engineering the right fit for me?",
       content:
-        "A systems engineer needs a diverse set of skills. to understand what needs to happen within a process, develop a system to make that process live, implement the system, and make sure it works while monitoring and problem-solving along the way. Since systems engineers work with other engineers and programmers, as well as end-users and other stakeholders, excellent communication is essential. You also need a beginner level proficiency in physics, calculus, statistics and a knack for project management to be a successful systems engineer. If you feel you have all these skills, studying Systems Engineering is a great option for you!",
+        "A systems engineer needs a versatile skill set, including an understanding of how processes work, the ability to build and implement systems, and the capacity to ensure their functionality while resolving any issues. Strong communication is key, as systems engineers often work alongside programmers, engineers, and stakeholders. A basic foundation in physics, calculus, statistics, and project management is essential. If these qualities resonate with you, pursuing Systems Engineering could be an excellent choice!",
     },
     {
-      title: "System Engineering Study Options and Costs",
+      title: "Education and Costs in Systems Engineering",
       content:
-        "A bachelor's degree in Systems Engineering is the basic requirement if you want to become a systems engineer. Further study options in this field focusing on specialised disciplines require enrolment in master’s programs. The average tuition and fees for a bachelor's program in systems engineering in the US is $37,251.",
+        "To pursue a career in Systems Engineering, a bachelor's degree is essential. Further specialization is possible through master's programs. In the United States, the average tuition for a Systems Engineering undergraduate program is $37,251 annually.",
     },
     {
-      title: "Future outlook",
+      title: "Job Outlook for Systems Engineers",
       content:
-        "The U.S. Bureau of Labor Statistics (BLS) predicts a 9 percent increase in employment opportunities for systems engineers. Systems engineers may be found in practically every major business, including health care, transportation, manufacturing, and software. Systems engineers earn an average of $92,380 a year, according to the BLS. It's a profession that lets you solve problems, research answers, and create systems to solve an issue or achieve a goal.",
+        "According to the U.S. Bureau of Labor Statistics (BLS), employment opportunities for systems engineers are expected to grow by 9%. These engineers play a critical role across many industries like healthcare, transportation, and software. The average salary for a systems engineer is $92,380 per year, making it an attractive profession for those looking to solve complex problems and create impactful systems.",
     },
     {
-      title: "Career Pathways for System Engineering graduates",
+      title: "Career Paths for Systems Engineering Graduates",
       subtitle1: "System Administrator",
       content1:
-        "System administrators are in charge of organising, installing, and maintaining a company's computer systems. Local area networks (LAN), wide area networks (WAN), and other data communication systems within their company, such as intranets or internet cafes, are examples.",
-      subtitle2: "System Engineer",
+        "System administrators manage, organize, and maintain an organization's computer networks and systems. This includes overseeing LAN, WAN, and other communication infrastructures like intranets or internet cafes.",
+      subtitle2: "Systems Engineer",
       content2:
-        "Systems engineers are in charge of evaluating systems, identifying problems, providing solutions to issues that arise, designing systems, upgrading systems, maintaining systems, and brainstorming future system improvements.",
+        "Systems engineers evaluate, troubleshoot, design, and upgrade systems. They are responsible for solving problems, enhancing system performance, and ensuring the smooth operation of all technical components.",
       subtitle3: "Engineering Consultant",
       content3:
-        "Engineering consultants give technological solutions and engineering advise to their clients. These highly skilled consultants meet with clients to discuss their technical requirements before project-managing the implementation of technical solutions in accordance with industry standards.",
+        "Engineering consultants offer their expertise to businesses, providing technical solutions and advice. They collaborate with clients to understand technical needs and then manage the execution of solutions based on industry standards.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Banner section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Systems Engineering abroad</h1>
+        <h1>Study Systems Engineering Abroad</h1>
         <p>
-          Systems Engineering is an interdisciplinary course concerned with
-          design, integration, and management of complex systems throughout
-          their life cycles. Students will be taught engineering and science
-          principles needed to help optimise and implement systems.
+        Systems Engineering focuses on designing, integrating, and managing complex 
         </p>
+        <p>systems using engineering and scientific principles to optimize solutions.</p>
       </div>
 
-      {/* Statistics section */}
+      {/* Statistics Section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $90,107: average annual salary of system engineers
-
-
+            <strong>Average salary for systems engineers</strong> is $90,107 annually.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Projected job openings</strong> Job openings projected for industrial engineers every year this decade
-
-
+            <strong>Projected job openings</strong> for systems engineers in the coming decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Projected employment growth for system engineers this decade
-
-
+            <strong>Growth in employment</strong> for systems engineers is anticipated.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Average annual salary of industrial engineers
-
-
+            <strong>Annual salary</strong> for industrial engineers is also noteworthy.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
+      {/* FAQ Section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Course Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
             <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
@@ -184,7 +175,6 @@ const SystemsEngineering = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -198,8 +188,6 @@ const SystemsEngineering = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
