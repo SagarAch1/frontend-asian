@@ -5,8 +5,8 @@ import FormPage from "../Homepage/FormPage";
 const InformationTechnology = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleFaq = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close for FAQ items
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const InformationTechnology = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Makes the icon attractive with a green color
     marginBottom: "10px",
   };
 
@@ -88,56 +88,58 @@ const InformationTechnology = () => {
 
   const faqItems = [
     {
-      title: "About Information Technology",
+      title: "What is Information Technology?",
+      content: 
+        "Information Technology (IT) is integral to modern life, influencing how we work, communicate, and live. IT professionals who are skilled and passionate about technology can thrive in a fast-paced, ever-evolving field. If you're eager to make an impact in the digital world, studying IT is a key starting point.",
+    },
+    {
+      title: "Is Information Technology the right fit for me?",
+      content1: 
+        "IT is perfect for those who enjoy solving problems and tackling complex challenges. It requires strong attention to detail and organizational skills. Furthermore, IT professionals often work in collaborative environments, so good communication skills and a positive attitude are essential.",
+      content2:
+        "Many IT professionals work in office settings, but remote opportunities or self-employment are also available. While a typical 9-to-5 schedule is common, certain areas such as cybersecurity or database management might require after-hours work for urgent matters. A strong work ethic is crucial in these situations.",
+    },
+    {
+      title: "What are the study options and costs for Information Technology?",
+      content1: 
+        "To pursue a career in IT, most professionals have at least a diploma, though a Bachelor's degree is now the industry standard. In Australia, a Bachelor's in IT can cost around AUD$30,000 per year, while an Associate's degree in the US costs approximately USD$18,000. Given the high earning potential in IT, the investment in education often pays off.",
+      content2: 
+        "Additionally, many IT roles require specific certifications, such as Google Professional Cloud Architect or CompTIA, depending on your career goals.",
+    },
+    {
+      title: "What is the future outlook for Information Technology?",
       content:
-        "Information Technology is a pivotal force in our society today, dictating the way we work, study, socialise and more. Talented IT professionals can enjoy fantastic stability, growth and opportunities, whether they’re tech-savvy, creatively-minded, or a mixture of both. If you’re looking to make your mark on the digital world, studying Information Technology is the first step to take.",
+        "IT careers are projected to grow by 13% by 2030, which is faster than the average for all occupations. IT professionals are in high demand not only within the tech industry but also in sectors like education, healthcare, and government. As technology evolves, the need for skilled IT professionals will continue to expand, particularly as new cybersecurity threats and performance standards emerge.",
     },
     {
-      title: "Is Information Technology right for me?",
-      content1:
-        "Information Technology tends to appeal to people who love solving problems and overcoming challenges. You’ll also need to have a keen eye for detail and a knack for organisation. Contrary to what some people might think, IT professionals also work closely with others, so strong communication skills and a positive attitude are key as well.",
-      content2:"IT professionals typically work in office environments but are sometimes able to score remote jobs or even work for themselves. While a 9-5 routine is typical, professionals in database management or cybersecurity may also have to work out-of-hours in urgent situations, so it’s important to have a strong work ethic as well.",
-    },
-    {
-      title: "Information Technology study options and costs",
-      content1:
-        "The majority of IT professionals have at least a diploma, although these days, a Bachelor’s degree is becoming the standard. A Bachelor’s degree in IT can cost around AUD$30,000 a year in Australia, while an Associate’s degree will set you back USD$18,000 in the US. When considering the high salaries IT professionals tend to make, getting a top-notch education can really pay for itself!",
-      content2:"It’s also a good idea to figure out the certifications you might need for your desired career path. Some options might include the Google Professional Cloud Architect certification or the CompTIA certification, depending on the role you’re aiming for.",
-    },
-    {
-      title: "Future outlook",
-      content:
-        "IT jobs are projected to grow by 13% by 2030, which is faster than the average for other occupations. Available jobs are now extending beyond the tech space as well, with educational institutions, government agencies, hospitals and more all requiring IT talent. This means there’s endless potential to switch industries or make a horizontal career change. In fact, as technology continues to evolve, the opportunities for talented tech professionals will only continue to grow. New cybersecurity threats will emerge and a higher standard of organisational performance will need to be met, all of which requires the help of IT professionals.",
-    },
-    {
-      title: "Career pathways for Information Technology graduates",
+      title: "Career paths for Information Technology graduates",
       subtitle1: "Cybersecurity Specialist",
       content1:
-        "Cybersecurity specialists are responsible for maintaining the security of computer systems and networks. This involves proactively developing and testing the effectiveness of security systems, as well as responding to cybersecurity incidents. Cybersecurity roles are growing faster than any other tech occupation, with a 31% increase in available jobs being expected over the next ten years, so it’s the perfect choice for future-minded tech lovers.",
+        "Cybersecurity specialists protect computer systems and networks from threats. They develop and test security measures and respond to cyber incidents. With an expected 31% job growth over the next decade, this career is perfect for those passionate about technology and security.",
       subtitle2: "Data Analyst",
       content2:
-        "Data analysts collect, analyse and interpret data for organisations, helping them identify problems and devise informed solutions. Data analysts typically have a background in computer science, statistics, mathematics or economics, and also need to be strong communicators in order to deliver reports and presentations to stakeholders.",
+        "Data analysts interpret data to help organizations make data-driven decisions. They often come from backgrounds in computer science, statistics, or economics and need to be strong communicators to present their findings effectively.",
       subtitle3: "IT Manager",
       content3:
-        "IT managers oversee IT teams and electronic networks, ensuring all system requirements are met. In this senior role, you’ll regularly run checks on network and data security, update software and systems, and train staff, to name just a few key responsibilities.",
+        "IT Managers supervise IT teams, ensure networks and systems meet requirements, and oversee the security and maintenance of company data. This senior role includes responsibilities like software updates and staff training.",
       subtitle4: "Software Developer",
-      content4:"Software developers create and build out software, using their detailed knowledge of programming languages to write guidelines for programmers or even doing the coding themselves. As well as writing new programs, you’ll also be responsible for updating existing software and training other users.",
+      content4: 
+        "Software developers write programs, using their expertise in coding languages to create software solutions. They are responsible for both developing new software and maintaining existing systems.",
       subtitle5: "Web Developer",
-      content5:"Similar to software developers, web developers are responsible for coding and designing websites. WIth knowledge of both programming and design, web developers create pages, navigation and user interfaces, as well as update websites in line with best practice guidelines.",
+      content5:
+        "Web developers design and build websites, utilizing both coding and design skills. They ensure websites are functional and user-friendly, regularly updating them to adhere to best practices.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Information Technology abroad</h1>
+        <h1>Study Information Technology Abroad</h1>
         <p>
-          The Information Technology (IT) industry encompasses a huge range of
-          professions, all with exciting prospects. As digital products and
-          services become an increasingly large part of our world, the need for
-          IT professionals has also skyrocketed.
+          The Information Technology (IT) field includes a wide range of careers, all with exciting growth prospects. 
         </p>
+        <p>As digital technologies become more integral to everyday life, the demand for skilled IT professionals has skyrocketed.</p>
       </div>
 
       {/* Statistics section */}
@@ -145,69 +147,51 @@ const InformationTechnology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> IT professionals earn a median salary of
-            USD$91,250
+            <strong></strong> Median salary for IT professionals: USD$91,250
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>IT jobs are predicted to grow by 13% between 2020
-            and 2030
+            <strong></strong> IT job growth projected at 13% from 2020 to 2030
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 245,500 new IT jobs will emerge in the US in 2021
-            alone
+            <strong></strong> 245,500 new IT jobs created in the US in 2021
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> The US tech industry contributes USD$2 trillion to
-            the economy
+            <strong></strong> US tech industry contributes USD$2 trillion to the economy
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleFaq(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
