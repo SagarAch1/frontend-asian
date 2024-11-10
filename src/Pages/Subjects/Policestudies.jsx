@@ -48,7 +48,7 @@ const Policestudies = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color
     marginBottom: "10px",
   };
 
@@ -90,47 +90,49 @@ const Policestudies = () => {
     {
       title: "About Police Studies",
       content1:
-        "The subject is specially designed to prepare students for a career in law enforcement. It will provide you a better understanding of law, management, crime analysis and investigation techniques. Police studies encompass a wide range of subjects including criminology, forensic sciences, community police, criminal justice. This subject will refine your critical thinking and improve your ability to analyse complex situations and make quick decisions.",
+        "This field is specifically crafted to prepare students for careers in law enforcement. It provides a deeper understanding of law, crime management, investigative techniques, and analysis. Police Studies covers a broad range of topics, including criminology, forensic sciences, community policing, and criminal justice. Students will enhance their ability to think critically and analyze complex situations, equipping them with the skills to make informed decisions.",
       content2:
-        "No matter which police or criminal justice department you chose to work in, Police Studies will provide you the knowledge and expertise for policing solutions in the real world. The subject will also provide you practical experience as most of the universities collaborate with police organisations to provide students internship opportunities.",
+        "Regardless of the police or criminal justice department you choose to work in, this program will provide you with the necessary knowledge and expertise for real-world policing. Additionally, the program includes practical experiences, as many universities partner with law enforcement organizations to offer internships.",
     },
     {
-      title: "Is Police Studies right for me?",
+      title: "Is Police Studies the right choice for me?",
       content1:
-        "If you are someone who aspires to make a change in the world and has critical thinking than this subject is for you. Police Studies requires discipline, diligence and physical fitness as the subject includes practical training with professionals.",
+        "If you're motivated by a desire to create positive change and have strong critical thinking skills, this program is a great fit. Police Studies demands discipline, dedication, and physical fitness, as it involves hands-on training with professionals.",
       content2:
-        "Some courses will require extra critical research and analytical thinking to understand legal theories and case studies. Practical training will include collaborations with field professionals and will provide you basic field experience.",
-      content3:"If you think you are capable of putting in the hard work and wish to serve the people than this field of study is definitely for you.",
-    },
-    {
-      title: "Police Studies study options and costs",
-      content1:
-        "In United States, 529 colleges are offering Police Studies programmes. You can do a bachelor’s, master’s as well as a PhD degree in Police Studies in the US. Most of doctorate holders are either senior ranking police executives or from the academia.",
-      content2:
-        "During your degree you can expect to study course modules such as community policing, forensic science, human kinetics for policing, policing and society, youth crime, investigation practices, police governance, organised crime and cybercrime.",
+        "Some courses require advanced research and analytical thinking to understand legal theories and case studies. Field training opportunities are offered through collaborations with professionals, providing you with essential real-world experience.",
       content3:
-        "On average a bachelor’s of Police Studies costs $9,636 for in-state students and $23,568 for out-of-state students in the US. In UK, an average annual tuition fee of a bachelor’s in Police Studies is between £9250- £15576 per year.",
+        "If you're prepared to work hard and have a passion for serving others, this field is a perfect match.",
     },
     {
-      title: "Future outlook",
+      title: "Police Studies programs and costs",
       content1:
-        "According to the U.S. Bureau of Labor Statistics, a whopping 67,100 job openings are expected each year over the decade for police and detectives in the US alone! The lion’s share of employment opportunities are from federal and state governments.",
+        "In the United States, 529 colleges offer Police Studies programs. You can pursue a bachelor's, master's, or even a PhD in this field. Many doctorate holders are senior police officials or academics.",
       content2:
-        "With the changing socio-political situations globally and an increase in crime rate, both government and private sector is looking to recruit more and more people that are professionally trained in policing and can help take effective decisions in emergency situations. The demand for more trained police professionals to maintain public safety is expected to rise even further in the future.",
+        "Throughout the degree, you'll study subjects such as community policing, forensic science, human kinetics for policing, policing in society, youth crime, investigative practices, police governance, organized crime, and cybercrime.",
+      content3:
+        "On average, a bachelor's degree in Police Studies costs $9,636 for in-state students and $23,568 for out-of-state students in the U.S. In the UK, tuition fees for a bachelor's degree in Police Studies range from £9,250 to £15,576 annually.",
     },
     {
-      title: "Career Pathways for Police Studies graduates",
-      subtitle1: "Police officer",
+      title: "Future Outlook",
       content1:
-        "A police officer is responsible to prevent crime in the society. They patrol and respond to emergency situations in aid of the general public. Police officers also collect evidence and file reports of their cases. They can also arrest and detain people if required.",
+        "According to the U.S. Bureau of Labor Statistics, approximately 67,100 job openings are expected each year over the next decade for police officers and detectives in the U.S. The majority of these job opportunities will be with federal and state governments.",
+      content2:
+        "Given the changing global socio-political climate and the rising crime rates, both public and private sectors are seeking more professionals trained in law enforcement to make effective decisions in emergencies. The demand for skilled police personnel is expected to grow significantly in the coming years.",
+    },
+    {
+      title: "Career Paths for Police Studies graduates",
+      subtitle1: "Police Officer",
+      content1:
+        "Police officers are responsible for preventing crime in communities. They patrol neighborhoods and respond to emergencies. Officers also gather evidence and file reports related to criminal cases. They have the authority to arrest and detain individuals when necessary.",
       subtitle2: "Parole Officer",
       content2:
-        "A parole officer or a probation officer is responsible to monitor and supervise a convicted felon when released on a parole. They facilitate a parolee’s re-entry into society. Parole officers are expected to have professional expertise and a diverse approach so they can communicate well with convicted felons.",
+        "Parole officers supervise convicted felons who have been released on parole, helping them reintegrate into society. These professionals need a diverse set of skills to communicate effectively with parolees and guide them through their re-entry.",
       subtitle3: "Emergency Relief Officer",
       content3:
-        "Emergency response officers are the first ones to response in an emergency situation. They work with different organisations and help them deal with emergency situations. They respond to local emergency calls and assess the situation.",
+        "Emergency relief officers are the first responders during emergencies. They collaborate with various organizations to manage crisis situations and provide immediate assistance to those in need. These officers assess emergencies and take appropriate action.",
       subtitle4: "Detective",
-      content4:"Detectives are investigators that work for law enforcement agencies. They conduct investigations to solve crimes cases by collecting evidence, recording witness statements and running background checks.",
+      content4:
+        "Detectives are law enforcement agents who investigate crimes by gathering evidence, interviewing witnesses, and conducting background checks to solve criminal cases. Their investigative work plays a crucial role in solving cases.",
     },
   ];
 
@@ -140,9 +142,9 @@ const Policestudies = () => {
       <div style={sectionStyle}>
         <h1>Study Police Studies abroad</h1>
         <p>
-          Police Studies give you a thorough understanding of police
-          investigation, criminal law, criminal justice and law enforcement.
+          Police Studies provide a comprehensive understanding of police work, 
         </p>
+        <p>criminal law, criminal justice, and law enforcement procedures.</p>
       </div>
 
       {/* Statistics section */}
@@ -150,38 +152,29 @@ const Policestudies = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $113,860: average annual salary of top policemen and detectives
-
-
+            <strong></strong> $113,860: average annual salary for top-ranking police officers and detectives
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 7% projected growth in employment opportunities
-
-
+            <strong></strong> 7% expected growth in employment opportunities for police officers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 67,100 job openings projected for police and detectives each year
-
-
+            <strong></strong> 67,100 projected job openings annually for police officers and detectives
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> $67,290: average annual salary of police and detectives
-
-
+            <strong></strong> $67,290: average annual salary for police officers and detectives
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -193,26 +186,14 @@ const Policestudies = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
