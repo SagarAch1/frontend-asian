@@ -48,7 +48,7 @@ const Bakery = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color change
     marginBottom: "10px",
   };
 
@@ -90,47 +90,49 @@ const Bakery = () => {
     {
       title: "About Bakery",
       content1:
-        "Baking is the culinary arts field that mainly focuses on the production of baked goods including breads, cakes, chocolates, pastries and pies. It differs from other culinary arts in several ways, one being that most bakery items are prepared beforehand and sold to customers later that day or next day of their preparation while culinary arts cooking is done in real time while customers wait on the table.",
+        "Baking is a specialized area in culinary arts that focuses on creating baked goods such as breads, cakes, pastries, pies, and chocolates. Unlike other forms of cooking, baking usually involves preparing products ahead of time, with many items being sold on the same day or the next day after they're made, while other culinary dishes are prepared fresh to order.",
       content2:
-        "Baking requires diligence and patience to get the best results possible. The career options in baking are endless with its growing demand. A baker or pastry chef is employed in various settings including restaurants, cafés and bakery shops.",
-        content3:"There are different courses offered to pursue a career in baking throughout the world. These courses usually provide a detailed introduction about baking terminology, commodities and equipment. They teach students how to maintain hygiene and sanitation, and adopt safety measures. However, the principal focus is on baking practices.",
+        "Baking requires great care and precision to ensure the best outcomes. With the increasing demand for baked goods, career opportunities in the field are expanding. Bakers and pastry chefs are employed in a wide range of settings, including restaurants, cafes, and bakeries.",
+      content3:
+        "Various courses around the world offer education in baking. These programs cover essential topics such as baking terminology, ingredients, and tools. Students learn about sanitation, hygiene, and safety procedures, but the main emphasis is on mastering baking techniques.",
     },
     {
       title: "Is studying Bakery right for me?",
       content1:
-        "If you are a detail-oriented individual who has a passion for baking, then this might be the right field for you. Since baking recipes must be followed strictly, attention to detail and exactitude is vital.",
+        "If you are detail-oriented and have a passion for baking, this field might be a great fit for you. Since baking requires following precise recipes, paying attention to detail is essential.",
       content2:
-        "Driven by creativity and curiosity to experiment with different ingredients, bakery chefs introduce delicious new recipes to the menu. If you think you can work under pressure and want a career in the culinary arts, then baking could be a right career choice for you.",
+        "If you enjoy experimenting with ingredients and want to introduce creative recipes, bakery chefs often innovate new treats. If you're comfortable working under pressure and have a passion for the culinary arts, a career in baking could be a perfect choice.",
     },
     {
-      title: "Public Health study options and costs",
+      title: "Study options and costs",
       content1:
-        "There are multiple online courses as well as in-person courses and diplomas available for baking majors. In Canada, online diploma courses in Baking and Pastry Arts are available for full-time study. These courses usually take around 2 years to complete and tuition costs around CAD$2,721 per year.",
+        "There are many options for studying baking, both online and in person. In Canada, online diploma courses in Baking and Pastry Arts typically take 2 years and cost about CAD$2,721 annually.",
       content2:
-        "In the US, many bachelor’s programmes are offered in culinary arts but for specifically baking- related education, you could earn an associate degree in Baking and Pastry Arts which usually takes less than 2 years to complete and costs around $6,333-$16,000 per semester.",
+        "In the United States, while many culinary arts programs are offered, you can pursue an associate degree in Baking and Pastry Arts. This program generally takes under 2 years to complete and costs between $6,333 and $16,000 per semester.",
       content3:
-        "In the UK, it usually takes 3 years to complete a BSc (Hons) in Bakery and Patisserie and costs around £9,250 per year.",
+        "In the UK, students can pursue a BSc (Hons) in Bakery and Patisserie, a 3-year course that costs around £9,250 per year.",
     },
     {
       title: "Future outlook",
       content1:
-        "Baking is currently seeing a meteoric rise in its popularity. Low sugar and gluten free bakery products are frequenting more in bakeries and supermarket stores. In addition, social media has further contributed to the eminence of bakery as people snap and share their diets and meals.",
+        "Baking is gaining immense popularity, particularly with the increasing demand for low-sugar and gluten-free baked goods. These products are becoming more common in both bakeries and supermarkets. Additionally, social media plays a significant role in boosting the popularity of baking, as people share photos of their meals and treats.",
       content2:
-        "Baking is currently seeing a meteoric rise in its popularity. Low sugar and gluten free bakery products are frequenting more in bakeries and supermarket stores. In addition, social media has further contributed to the eminence of bakery as people snap and share their diets and meals.",
+        "Baking's popularity is surging, with trends like low-sugar and gluten-free options becoming more prevalent. Social media has helped make baking even more popular as people showcase their culinary creations online.",
     },
     {
       title: "Career Pathways for Bakery graduates",
       subtitle1: "Baker",
       content1:
-        "As a baker, you can work in a restaurant or run your own bakery. Either way, you will be responsible for preparing all the bakery items on the menu. Your duties may include making bread and sandwiches, and pastries. You will also be responsible for managing employees, experimenting with new recipes, receiving orders, and ensuring their timely delivery.",
+        "As a baker, you can work in various settings, from restaurants to independent bakeries. Your responsibilities will include preparing a variety of bakery items, such as breads, pastries, and sandwiches. You may also manage staff, develop new recipes, handle orders, and ensure timely deliveries.",
       subtitle2: "Specialty Baker",
       content2:
-        "A specialty baker focuses on a particular branch of baking. Specialty bakers might find a niche in catering to a specific dietary restriction, like vegan, gluten-free, or plant-based baking. Others may specialise in baked goods from a certain country or cultural heritage. You can also specialise in a certain type of baked food. It could be macarons, bread or pastries.",
+        "Specialty bakers focus on specific niches in baking, such as gluten-free, vegan, or plant-based products. Some specialize in baked goods from certain cultural traditions or regions, while others may focus on a particular type of baked product, such as macarons or artisan bread.",
       subtitle3: "Pastry Chef",
       content3:
-        "Pastry refers to a broad range of desserts which also includes baking. Pastry chefs may work in bakeries — making tarts, pies, and laminated doughs like croissants or puff pastries. As a pastry chef you will oversee the pastry department as well as prepare the menu for the dessert section. Pastry chefs might either be the only person in the pastry department or may lead a team of chefs.",
+        "Pastry chefs are experts in creating a variety of desserts, including tarts, pies, and puff pastries. They may work independently or lead a team in a bakery. Pastry chefs are responsible for preparing and overseeing the dessert menu and managing the pastry department.",
       subtitle4: "Chocolatier",
-      content4:"A chocolatier is a specialist who makes desserts and confections out of various types of chocolate. These could include truffles, fudge, bonbons, chocolate bars, and more. As a chocolatier, you may also make intricate centrepieces of chocolate moulded into animals, flowers, and fruits. A chocolatier must know how to perfectly temper and mould different types of chocolate. Chocolatiers may work in a bakery, pastry shop, restaurant, or specialty chocolate shop.",
+      content4:
+        "A chocolatier specializes in making chocolate-based confections such as truffles, bonbons, and chocolate bars. They may also create decorative chocolate pieces for events. A chocolatier must be skilled in tempering and molding chocolate. They often work in bakeries, specialty chocolate shops, or restaurants.",
     },
   ];
 
@@ -140,11 +142,9 @@ const Bakery = () => {
       <div style={sectionStyle}>
         <h1>Study Bakery abroad</h1>
         <p>
-          Baking is a part of the wider professional culinary arts field. It is
-          the culinary branch that deals in baked goods and desserts ranging
-          from different types of breads and pastries to cakes and pies and
-          other savoury baked foods.
+          Baking is a branch of the culinary arts that focuses on producing a variety of baked 
         </p>
+        <p> goods, such as breads, cakes, pastries, and pies, along with savory baked products</p>
       </div>
 
       {/* Statistics section */}
@@ -152,33 +152,29 @@ const Bakery = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $507.38 billion is the estimated value of global
-            bakery products market in 2020
+            <strong></strong> $507.38 billion is the estimated value of the global bakery products market in 2020.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 28,300 projected job openings for bakers every
-            year
+            <strong></strong> 28,300 projected job openings for bakers every year.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $574.05 billion expected value of global bakery
-            goods market by 2026
+            <strong></strong> $574.05 billion expected value of the global bakery goods market by 2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 10% projected employment growth of bakers by 2030
+            <strong></strong> 10% projected employment growth for bakers by 2030.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -190,22 +186,13 @@ const Bakery = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
