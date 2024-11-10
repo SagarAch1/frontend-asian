@@ -88,60 +88,60 @@ const EarlyChildhoodEducation = () => {
 
   const faqItems = [
     {
-      title: "About Early Childhood Education",
+      title: "What is Early Childhood Education?",
       content1:
-        "Early Childhood Education degrees equip students to work with children from two to eight years old. Learn about the major developmental phases that children go through and how you may help young pupils develop important cognitive, emotional, and physical skills.",
+        "Degrees in Early Childhood Education prepare students to work with children aged two to eight. The courses explore the key developmental stages that children undergo and how to guide them in developing cognitive, emotional, and physical skills.",
       content2:
-        "Early Childhood Education programmes will allow you to study early childhood education curriculum theories and pedagogies, child development, health and wellness, diversity and inclusion, professional studies, and teaching and learning in the areas of literacy, mathematics, science, and the arts.",
-
+        "Programs in Early Childhood Education focus on curriculum theories, child development, health, diversity, inclusion, and the teaching of subjects like literacy, math, science, and the arts.",
     },
     {
-      title: "Is Early Childhood Education right for me?",
+      title: "Is Early Childhood Education a good fit for me?",
       content1:
-        "If you are someone who believes in the power of activity-based learning, this field will teach you how to harness the power of activities to advance learning in tiny humans at an age where they are most receptive. Early childhood educators design classes around play and hands-on activities, which are the major ways that young children learn. Games, music, artwork, videos, literature, and, increasingly, computers will be used by early childhood teachers.",
-      content2:"You'll discover inventive methods to assist young children master the skills they need for their intellectual, emotional, and physical growth. If this is something you find yourself drawn to, then this field is the right choice for you.",
-    },
-    {
-      title: "Study options and costs",
-      content1:
-        "There are 4 main types of degrees being offered when it comes to Early Childhood Education: associate’s degree which lasts for 2 years, bachelor’s degree which lasts for 4 years, master’s degree which lasts 2 years and doctoral degrees which last anywhere from 3 to 6 years.",
-      content2:"The 2-year associate degree equips you for a variety of entry-level positions in Early Childhood Education. It is the least expensive degree to obtain, and it may often be used to replace the first two years of a bachelor's degree programme if you choose to pursue one. This degree will qualify you for entry-level teaching and teaching support roles, but may not be sufficient for development within a school or organisation.",
-      content3:"A bachelor’s in Early Childhood Education will cost you on average anywhere between $29,000-$65,000 depending on the length of the programme and the institute.",
-      content4:"If you want to apply for more complex positions or want to go for research, a master’s and PhD is recommended. With a master's degree, you can also begin your profession at a higher level and rise more swiftly. An online master's degree in Early Childhood Education generally costs less and total tuition should range between $11,000 and $24,000. Depending on their preferences, students often specialise in curriculum and instruction, technological application in learning, educational administration, or organisational leadership.",
-    },
-    {
-      title: "Future outlook",
-      content1:
-        "Kindergarten and early primary teachers are expected to gain 86,000 new jobs over the next decade, while preschool instructors will gain over 50,000 new positions, according to the U.S. Bureau of Labor Statistics.",
-      content2:"This translates to a job growth rate of 7% to 10%, which is comparable to the national average for all other occupations. With abounding employment opportunities, competent applicants may look forward to a rewarding career in Early Childhood Education, where they will spend their days assisting young children in realising their full potential.",
-    },
-    {
-      title: "Career pathways for Early Childhood Education graduates",
-      subtitle1: "Early Childhood Education Teacher",
-      content1:
-        "Early childhood educators focus on the learning, development, and social and physical needs of children. These educators create a secure and comfortable atmosphere in which children may develop social, physical, and adaptive skills in addition to early academics.",
-      subtitle2: "Childcare Centre Director",
+        "If you believe in the power of play-based learning, this field will teach you how to use hands-on activities to help young children learn. Early childhood educators develop lessons based around play, which is the primary way young children absorb new concepts. Activities like games, music, artwork, videos, literature, and increasingly, technology, are key tools used by teachers in this field.",
       content2:
-        "Directors of preschools and day-care centres monitor and lead personnel, create programme plans, supervise daily activities, and prepare budgets. They are in charge of the whole programme at their facility, which may include before- and after-school care. This is a role that you can apply for with more advanced degrees such as a master’s or PhD.",
-      subtitle3: "Early Childhood Education Teacher",
+        "You'll discover creative ways to support children's intellectual, emotional, and physical development. If this sounds appealing, this field could be the right choice for you.",
+    },
+    {
+      title: "What are the study options and costs?",
+      content1:
+        "There are four main types of degrees in Early Childhood Education: a 2-year associate’s degree, a 4-year bachelor’s degree, a 2-year master’s degree, and a doctoral degree, which typically takes 3 to 6 years to complete.",
+      content2:
+        "An associate’s degree prepares you for entry-level roles in Early Childhood Education. It’s the most affordable option and can often serve as the first two years of a bachelor’s program. This degree qualifies you for teaching support roles but may not be sufficient for career advancement in schools or organizations.",
       content3:
-        "Early childhood researchers study and analyse services and practises that have an influence on the outcomes of young children and the early childhood programmes that support them and their families.",
-    
+        "A bachelor’s degree in Early Childhood Education typically costs between $29,000-$65,000 per year, depending on the institution and program duration.",
+      content4:
+        "If you’re aiming for more advanced positions or interested in research, a master’s or PhD is recommended. A master’s degree will allow you to start your career at a higher level and advance more quickly. Online master's programs generally cost between $11,000 and $24,000. You may specialize in areas such as curriculum design, educational leadership, or technology in learning.",
+    },
+    {
+      title: "What is the future job outlook?",
+      content1:
+        "The U.S. Bureau of Labor Statistics projects that over the next decade, kindergarten and early primary school teachers will see an addition of 86,000 new jobs, while preschool teachers will gain over 50,000 new positions.",
+      content2:
+        "This corresponds to a job growth rate of 7% to 10%, which is on par with the national average for all occupations. With plenty of job openings, qualified candidates can expect a fulfilling career helping young children achieve their full potential.",
+    },
+    {
+      title: "What career paths can I pursue with a degree in Early Childhood Education?",
+      subtitle1: "Early Childhood Educator",
+      content1:
+        "Early childhood educators focus on the academic and social development of young children. They create a safe and supportive environment in which children can develop social, physical, and adaptive skills, alongside their early academic learning.",
+      subtitle2: "Childcare Center Director",
+      content2:
+        "Preschool and daycare directors manage staff, create educational programs, supervise activities, and manage budgets. This role is suitable for individuals with advanced degrees such as a master’s or PhD.",
+      subtitle3: "Early Childhood Education Researcher",
+      content3:
+        "Researchers in this field study the impact of various services and practices on young children’s outcomes, and they analyze the effectiveness of early childhood education programs.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Early Childhood Education abroad
-        </h1>
+        <h1>Study Early Childhood Education Abroad</h1>
         <p>
-        Early Childhood Education is the field of study that deals with learning for children from birth till the age of eight. There are many different early education programmes you can choose from offering bright career advancement opportunities.
-
-
-
+          Early Childhood Education is the study of how to educate young children from birth to age eight. 
         </p>
+        <p>With many different programs available, this field offers excellent opportunities for career advancement.</p>
       </div>
 
       {/* Statistics section */}
@@ -149,39 +149,30 @@ const EarlyChildhoodEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $480 billion estimated worth of the global Early Childhood Education market by 2026
-
-
+            <strong></strong> $480 billion projected value of the global Early Childhood Education market by 2026
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average annual salary of a pre-school teacher 
-
-
+            <strong></strong> Average annual salary of a preschool teacher
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 124,300 job openings for kindergarten and early elementary teachers over the decade
-
-
+            <strong></strong> 124,300 job openings for kindergarten and early elementary teachers over the next decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 7% job growth rate for kindergarten and early elementary teachers
-
-
+            <strong></strong> 7% projected job growth rate for kindergarten and early elementary teachers
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
+      {/* FAQ Section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
@@ -193,25 +184,15 @@ const EarlyChildhoodEducation = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

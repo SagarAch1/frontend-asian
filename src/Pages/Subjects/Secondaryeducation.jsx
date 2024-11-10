@@ -88,45 +88,45 @@ const SecondaryEducation = () => {
 
   const faqItems = [
     {
-      title: "About Secondary Education",
+      title: "Overview of Secondary Education",
       content1:
-        "Secondary Education includes middle and high schools, or grades 7 to 12. For those looking to get a high school teaching degree or a middle school teaching degree, the Secondary Education major covers both high school and middle school with a single Bachelor’s of Science (BS) in Secondary Education.",
+        "Secondary Education encompasses both middle and high school levels, ranging from grades 7 to 12. Those seeking a teaching qualification in secondary education will find that the major provides a comprehensive Bachelor’s of Science (BS) degree in Secondary Education that covers both middle and high school education.",
       content2:
-        "Students who earn a degree in Secondary Education will be able to teach at different levels of education including both middle and high school. Students will specialise in their certification by subject area ranging from Mathematics and Science to Language.",
-      
+        "Students pursuing a degree in Secondary Education will be trained to teach in both middle and high schools. They will also specialize in specific subjects, such as Mathematics, Science, or Language, depending on their certification focus.",
     },
     {
-      title: "Is Secondary Education right for me?",
+      title: "Is Secondary Education suitable for me?",
       content:
-        "High school teachers tend to be socially active, which means they are empathetic, compassionate, cooperative, patient, tactful, and friendly. They must also possess high levels of creativity and communication skills. A degree in Secondary Education will help you hone your skills. During the programme you will get in-depth knowledge about your field work. You’ll start with general education courses, then pre-professional courses, then content courses in which you’ll build a broad knowledge base for your future classroom, and professional education courses where you’ll connect theory with practice and learn how to teach your future students. Secondary Education programmes will include placements in local schools where you can get real hands-on experience of working in the classroom. ",
-    
+        "High school teachers are typically sociable and possess qualities such as empathy, creativity, patience, and communication skills. A degree in Secondary Education will refine these traits, providing a deep understanding of the subject matter and teaching methodology. The program includes general education courses, content courses for knowledge building, and professional education courses that help bridge theory with real-world teaching practice. Additionally, students will complete placements in local schools for hands-on classroom experience.",
     },
     {
-      title: "Study options and costs",
+      title: "Study options and tuition",
       content1:
-        "You can undertake Secondary Education-focused degrees at most levels of study, including bachelor’s, master’s and PhD. To undertake this degree you must complete high school first. Thereafter you can enroll for a bachelor’s in Secondary Education. As part of a bachelor’s degree, you can major or minor in Secondary Education over four years, with the opportunity to study modules in the subject you want to teach. The program spans four years and typically costs up to $56,512 for international students.",
+        "Secondary Education degrees are available at various levels, including bachelor's, master's, and PhD programs. A bachelor’s degree in Secondary Education typically spans four years, allowing students to specialize in the subject they wish to teach. The average cost for international students is about $56,512 per year.",
       content2:
-        "Postgraduate degrees can be either an MSc (Master’s of Science) or MA (Master’s of Arts) depending on what area you want to specialise in. Total program duration is two years and the average annual tuition fee is $18,548 in the US.",
-        content3:"PhDs are usually designed for teachers who want to conduct further research in education. You could also study for an EdD (Doctor of Education), which tends to focus on administrative topics, like curriculum and policy.",
+        "Postgraduate degrees in Secondary Education can be pursued as a Master’s of Science (MSc) or Master’s of Arts (MA), depending on the desired area of specialization. These programs usually take two years, with an average annual tuition fee of $18,548 in the US.",
+      content3:
+        "For those interested in further research in education, PhDs are available, or a Doctor of Education (EdD), which focuses more on administrative topics like curriculum development and policy.",
     },
     {
-      title: "Future outlook",
+      title: "Job prospects in Secondary Education",
       content:
-        "Employment of secondary education teachers is projected to grow by 8% in this decade, about as fast as the average for all occupations. Projected job openings for high school teachers are likely to be 77,400 every year, for next ten years. Rising student enrollment shall also increase demand for secondary education teachers, but employment growth will vary by region. The average annual salary for secondary education teachers is $61,820.These statistics illustrate the bright prospects available to Secondary Education graduates.",
+        "The demand for secondary education teachers is expected to grow by 8% over the next decade, which is on par with the average growth for all occupations. The projected annual job openings for high school teachers will reach approximately 77,400. This growth is driven by an increase in student enrollment and the continued need for qualified educators. The average annual salary for secondary education teachers is $61,820, reflecting the promising career opportunities available in this field.",
     },
     {
-      title: "Career pathways for Secondary Education",
+      title: "Career options in Secondary Education",
       subtitle1: "High School Teacher",
       content1:
-        "High school teachers provide instruction, guidance, and grading to students in high school, helping students to become prepared for their lives after graduation. Teachers are required to have a bachelor's degree in Secondary Education or a related field, and some states also require teachers to have another area of concentration such as Mathematics or Language. The average annual salary for high school teachers is $62,870.",
-      subtitle2: "Instructional coordinator",
+        "High school teachers are responsible for instructing, guiding, and evaluating students in subjects such as Mathematics, History, or Science. To become a high school teacher, a bachelor's degree in Secondary Education or a related field is required. Some states may require additional specialization in subjects like Language or Mathematics. The average annual salary for high school teachers is $62,870.",
+      subtitle2: "Instructional Coordinator",
       content2:
-        "Instructional coordinators create and oversee materials used in education, curriculums and standards for teachers. Instructional coordinators also evaluate existing curriculums and methods, as well as train staff and teachers for new or revised programs. Instructional coordinators usually need a master's degree in an educational field along with related work experience, such as teaching. The average annual salary for an instructional coordinator is $61,603.",
-      subtitle3: "Middle school teacher",
+        "Instructional coordinators manage and develop educational materials, curricula, and teaching standards. They evaluate existing programs and train teachers on new teaching strategies. A master’s degree in education is typically required, along with teaching experience. Instructional coordinators earn an average salary of $61,603 annually.",
+      subtitle3: "Middle School Teacher",
       content3:
-        "Middle school teachers typically work with students in grades sixth, seventh, and eighth. Some middle school teachers may cover a wide variety of subjects, while others may specialise in one or more areas, such as Science. Requirements vary by region/country but most schools accept bachelor's degrees in Secondary Education. The average annual salary for a middle school teacher is $49,690.",
-      subtitle4: "Teacher assistant",
-      content4:"Teacher assistants work with licensed teachers and monitor, teach, grade, and assist students. These assistants typically need an associate's degree or two years of coursework in college. For individuals who have a bachelor's degree in Secondary Education, a teacher assistant position enables them to gain valuable experience that can help them move up to higher teaching positions. The average annual salary of a teacher assistant is $28,900.",
+        "Middle school teachers typically teach students in grades 6 to 8, often specializing in one or more subjects, such as Science or English. A bachelor's degree in Secondary Education is commonly required for this role. The average annual salary for middle school teachers is $49,690.",
+      subtitle4: "Teacher Assistant",
+      content4:
+        "Teacher assistants support classroom teachers by assisting with grading, monitoring, and teaching students. Typically, an associate's degree or two years of college coursework is needed. Teacher assistants with a bachelor’s degree in Secondary Education can gain valuable experience to advance to higher teaching positions. The average annual salary for teacher assistants is $28,900.",
     },
   ];
 
@@ -134,12 +134,11 @@ const SecondaryEducation = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Secondary Education abroad</h1>
+        <h1>Study Secondary Education Abroad</h1>
         <p>
-          A degree in Secondary Education is designed to train you to become a
-          high school teacher or a middle school teacher, usually in a specific
-          content area such as Mathematics, History, Science or Language.
+          A degree in Secondary Education prepares you to teach in middle or high school, 
         </p>
+        <p>usually specializing in a specific subject such as Math, History, Science, or Languages.</p>
       </div>
 
       {/* Statistics section */}
@@ -147,34 +146,29 @@ const SecondaryEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Estimated worth of the secondary education
-            industry
+            <strong></strong> Estimated value of the secondary education sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>$61,820: average annual salary of a secondary
-            school teachers
+            <strong></strong> $61,820: average salary for secondary school teachers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Average annual salary of top secondary school
-            teachers
+            <strong></strong> Average annual salary for top secondary school teachers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>77,400 projected job openings every year over the
-            decade
+            <strong></strong> 77,400 job openings projected annually over the next decade
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -186,7 +180,6 @@ const SecondaryEducation = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -204,8 +197,6 @@ const SecondaryEducation = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

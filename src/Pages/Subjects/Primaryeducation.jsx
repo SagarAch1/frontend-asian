@@ -90,39 +90,37 @@ const PrimaryEducation = () => {
     {
       title: "About Primary Education",
       content:
-        "Primary Education is a critical stage during the formative years of our lives. The knowledge and skills we learn during these years play a key role in our development as individuals. Primary Education studies are designed to help aspiring teachers to learn innovative new methods and techniques that foster, enable and maximise delivery of knowledge and its retention among young students. The aim of these studies is to provide you with knowledge across a range of contexts. The learning is largely practical-oriented and centres heavily on the principles and concepts relating to the primary school curriculum. During your studies, you will also be expected to gain professional experience in primary schools.",
-      
+        "Primary Education is an essential phase in early development. The lessons we absorb during this stage greatly influence our growth and shape our future. Primary Education programs are designed to equip future teachers with the latest methodologies and techniques to optimize learning and retention among young learners. These courses aim to provide a broad understanding across various contexts, focusing heavily on the core principles of the primary school curriculum. As part of your studies, you will also gain hands-on experience working in primary schools.",
     },
     {
-      title: "Is Primary Education right for me?",
+      title: "Is Primary Education suitable for me?",
       content:
-        "Do you remember your favourite teacher from primary school? Perhaps she/ he was someone you learned a lot from, and they taught you new ways of thinking or inspired you in some way. You could be that special teacher for future generations. It is an opportunity to empower the next generation and influence positive change. Studying a primary education course will further enhance your ability to think clearly, act decisively and exercise intelligence, traits much needed by a primary teacher.",
-      
+        "Do you remember your favorite teacher from primary school? Maybe they inspired you, introduced you to new ways of thinking, or made a lasting impact on your life. You can become that teacher and inspire future generations. Choosing to study Primary Education gives you the chance to empower young minds and contribute positively to their development. This course will enhance your critical thinking, decision-making, and problem-solving skills, all of which are essential qualities for a successful primary teacher.",
     },
     {
-      title: "Study options and costs",
+      title: "Study options and fees",
       content:
-        "To undertake a course in primary education you must complete high school first. Thereafter you can enrol for a Bachelor’s in Primary Education, that is designed to help you gain the knowledge, skills, and expertise to succeed as an elementary school teacher. Abachelor’s degree spans four years and costs around $12,083 per semester. You can choose to specialise in any subject area of your choice by pursuing a Master’s degree in primary education. These programs span two years and cost around $21,300 per year in the US.",
-     
+        "To pursue a career in Primary Education, you must first complete high school. Then, you can enroll in a Bachelor’s program in Primary Education, which prepares you with the knowledge and skills to become an effective elementary school teacher. A Bachelor’s degree typically takes four years to complete and costs approximately $12,083 per semester. You can further specialize by pursuing a Master’s degree in Primary Education, which usually lasts two years and costs around $21,300 per year in the U.S.",
     },
     {
-      title: "Future outlook",
+      title: "Job outlook",
       content:
-        "The education sector is growing rapidly, with 66,400 projected job openings for kindergarten and elementary school teachers every year! A large number of qualified educators are required to impart quality education to our younger generations. The average annual salary for elementary and kindergarten school teachers is $45,000.With a 7% growth in employment opportunities the prospects for Primary Education graduates are bright.",
+        "The education sector is expanding rapidly, with an estimated 66,400 job openings for kindergarten and elementary school teachers each year! There is a constant demand for qualified educators to deliver quality education to younger generations. The average annual salary for elementary and kindergarten teachers is around $45,000. With an expected 7% increase in employment opportunities, graduates in Primary Education have promising career prospects.",
     },
     {
-      title: "Career pathways  for Primary Education graduates",
-      subtitle1: "Primary teacher",
+      title: "Career opportunities for Primary Education graduates",
+      subtitle1: "Primary Teacher",
       content1:
-        "As a primary school teacher, you'll develop schemes of work and lesson plans in line with curriculum objectives. You'll facilitate learning by establishing a relationship with pupils, keeping your learning resources organised and creating a positive learning environment in the classroom. The average annual salary for a primary school teacher is $45,000.",
-      subtitle2: "Curriculum designer",
+        "As a primary teacher, you will develop teaching plans, organize learning materials, and create a positive and engaging learning environment. You will work directly with students to support their academic and personal growth. The average annual salary for a primary school teacher is approximately $45,000.",
+      subtitle2: "Curriculum Designer",
       content2:
-        "Curriculum designers work with teachers, organisations, and clients to create and implement educational programmes. They can work in schools, offices, universities and other organisations, and may require specialised subject knowledge and skills. They also create appropriate learning materials. The average annual salary for a curriculum designer is $73,795.",
-      subtitle3: "Principal teacher",
+        "Curriculum designers collaborate with teachers and educational organizations to develop and implement effective learning programs. They may work in schools, colleges, or other institutions and may need specialized knowledge in particular subjects. The average salary for a curriculum designer is $73,795 per year.",
+      subtitle3: "Principal Teacher",
       content3:
-        "Principal teachers usually work as department head with the responsibility of ensuring the smooth running of the department and maintaining the standards. The average annual salary for a principal teacher is $90,055.",
-        subtitle4:"Education research officer",
-        content4:"Education research officers supervise research projects from the early planning stages until the final project completion. They communicate with team members and verify that all projects and tasks are on schedule. During the research project, officers usually review gathered research and analyse various sets of data. The average annual salary for an education research officer is $59,749.",
+        "Principal teachers oversee departments, ensuring everything runs smoothly while maintaining high academic standards. Their leadership is crucial for the success of the department. The average annual salary for a principal teacher is $90,055.",
+      subtitle4: "Education Research Officer",
+      content4:
+        "Education research officers manage research projects from start to finish, ensuring tasks stay on track. They analyze data and assess the outcomes of various education programs. The average annual salary for an education research officer is $59,749.",
     },
   ];
 
@@ -132,11 +130,9 @@ const PrimaryEducation = () => {
       <div style={sectionStyle}>
         <h1>Study Primary Education abroad</h1>
         <p>
-          Primary school teachers instruct children through the formative years
-          of their lives. If you are passionate about educating the next
-          generation and enjoy interacting with children, this may be a great
-          career option for you.
+          Primary educators play a vital role in shaping the lives of young children. If you are passionate 
         </p>
+        <p> about helping others grow and enjoy working with children, this could be an ideal career for you.</p>
       </div>
 
       {/* Statistics section */}
@@ -144,34 +140,32 @@ const PrimaryEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Estimated worth of the primary education industry
+            <strong></strong> Estimated value of the Primary Education sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average annual salary of primary education teacher
+            <strong></strong> Average salary for primary education teachers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Average annual salary of an experienced primary
-            education teacher
+            <strong></strong> Average salary for experienced primary educators
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 66,400 projected employment growth every year
+            <strong></strong> 66,400 annual job openings for primary educators
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Program Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
             <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
@@ -198,8 +192,6 @@ const PrimaryEducation = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
