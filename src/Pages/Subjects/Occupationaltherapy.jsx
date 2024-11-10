@@ -6,7 +6,7 @@ const OccupationalTherapy = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close state
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const OccupationalTherapy = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Adjusted color for visual appeal
     marginBottom: "10px",
   };
 
@@ -88,55 +88,62 @@ const OccupationalTherapy = () => {
 
   const faqItems = [
     {
-      title: "About Occupational Therapy",
+      title: "Overview of Occupational Therapy",
       content1:
-        "Occupational Therapy is a type of rehabilitation that assists people with disabilities in resuming important everyday activities. Instead of depending on medications or surgical procedures, occupational therapists focus on patient education, functional skill training, and involvement in everyday activities.",
-      content2:"Some common course modules that student can expect to study are Kinesiology, Physiotherapy, Human Movement, Psychology, Biology, Anatomy, and Cell Biology.  ",
+        "Occupational Therapy focuses on assisting individuals with disabilities to regain the ability to perform essential tasks. Rather than relying on surgical procedures or medications, occupational therapists emphasize teaching patients functional skills and integrating them into daily activities.",
+      content2:
+        "Typical course modules include Kinesiology, Physiotherapy, Human Movement, Psychology, Biology, Anatomy, and Cell Biology.",
     },
     {
-      title: "Is Occupational Therapy right for me?",
+      title: "Is Occupational Therapy a Suitable Career for Me?",
       content1:
-        "If you enjoy studying the fundamentals of human movement and how exercise and physical activity affect the physiology of human movement then you are likely to certainly excel in this field. Another exciting part about studying Occupational Therapy is the fieldwork that it entails. During your Occupational Therapy degree, you will most likely spend a considerable amount of time under a licensed occupational therapist.",
-      content2: "Another important thing to keep in mind is that Occupational Therapy, like most healthcare professions, requires lifelong education. Chances are you will most likely pursue a postgraduate education to get a good job and even then, most occupational therapists keep upgrading their knowledge and skills.  ",
-      content3:"If you are an empathetic individual and are motivated by the desire to help others and have strong interpersonal skills, then this field of study is the right fit for you.",
+        "If you’re passionate about understanding human movement and the impact of physical activities on the body’s function, this field may be a good fit. A major aspect of the curriculum includes fieldwork, where students will gain practical experience under the supervision of a licensed occupational therapist.",
+      content2:
+        "Occupational Therapy, like most healthcare fields, requires continuous learning. It is common for practitioners to pursue postgraduate education and continually update their expertise throughout their careers.",
+      content3:
+        "If you are empathetic, possess strong interpersonal skills, and are driven to help others, Occupational Therapy could be the perfect field for you.",
     },
     {
-      title: "Study options and costs",
+      title: "Educational Options and Costs",
       content1:
-        "A bachelor’s in Occupational Therapy is 3 to 4 years in duration. It provides you with comprehensive knowledge of all the theoretical underpinnings and best practices of Occupational therapy.",
-        content2:"Students who have completed their bachelor’s can opt to pursue a master’s degree in Occupational Therapy. There is no specific undergraduate degree requirement. However students with education and healthcare degrees are preferred. A Master of Occupational Therapy (MOT) or a Doctor of Occupational Therapy (OTD) degree is also offered by a number of top universities in the developed world. Occupational Therapy programmes can cost anywhere from $65,000 to $200,000.",
+        "A Bachelor’s degree in Occupational Therapy typically takes 3 to 4 years to complete, providing a thorough understanding of both theoretical principles and practical applications in this field.",
+      content2:
+        "Graduates may continue their studies with a Master’s degree in Occupational Therapy. There are no strict undergraduate degree prerequisites, although degrees in education or healthcare are favored. Advanced programs like a Master of Occupational Therapy (MOT) or a Doctor of Occupational Therapy (OTD) are available and can cost between $65,000 and $200,000.",
     },
     {
-      title: "Future outlook",
+      title: "Career Prospects",
       content1:
-        "Occupational Therapy jobs are on the rise. According to the U.S. Bureau of Labor Statistics (BLS), the employment for occupational therapists is expected to increase by 17% from 2020 to 2030. More than 10,100 job openings are also projected each year from 2020 to 2030. ",
-        content2:"Occupational therapists work in hospitals around 29% of the time, while 25% work in rehabilitative offices with physical therapists, audiologists, and speech therapists. The remaining 46% work in places like schools, home health care, skilled nursing institutions, and other places. These figures show that occupational therapists are in high demand and that the specialty pays well in a variety of settings.",
+        "The demand for Occupational Therapy professionals is on the rise. According to the U.S. Bureau of Labor Statistics, employment opportunities for Occupational Therapists are projected to increase by 17% from 2020 to 2030. The field will also see over 10,000 new job openings annually during this period.",
+      content2:
+        "Occupational therapists primarily work in hospitals (29%), rehabilitative settings (25%), and other locations like schools, home healthcare, and nursing homes (46%). The field offers diverse job opportunities in various settings, with competitive salaries.",
     },
     {
-      title: "Career pathways  for Occupational Therapy graduates",
-      subtitle1: "Paediatric Occupational Therapist",
+      title: "Career Opportunities for Occupational Therapy Graduates",
+      subtitle1: "Pediatric Occupational Therapist",
       content1:
-        "Paediatric occupational therapists provide occupational therapy to children. They identify the causes of delays or limitations, particularly in the areas of fine motor abilities, cognitive skills, social development, and self-care routines.",
+        "Pediatric Occupational Therapists specialize in working with children, identifying causes of delays or limitations, especially in fine motor skills, cognitive abilities, social development, and daily routines.",
       subtitle2: "Occupational Therapy Assistant",
       content2:
-        "Occupational therapy assistants provide assistance to occupational therapists. They help patients complete therapeutic activities such as stretches and exercises. They keep track of patient progress and help patients become independent.",
-      subtitle3: "Director of Rehabilitation",
+        "Occupational Therapy Assistants support therapists by helping patients with exercises and activities, tracking progress, and promoting independence.",
+      subtitle3: "Rehabilitation Director",
       content3:
-        "Hospitals, nursing homes, and long-term care institutions have Directors of Rehabilitation who manage rehabilitation programmes and employees. Directors of Rehabilitation are responsible for managing processes and activities in physical therapy, occupational therapy, and speech therapy programmes at healthcare facilities.",
+        "Rehabilitation Directors oversee rehabilitation programs in healthcare facilities, managing physical therapy, occupational therapy, and speech therapy departments.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Banner section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Occupational Therapy abroad</h1>
+        <h1>Study Occupational Therapy Abroad</h1>
         <p>
-          Occupational Therapy (OT) is a branch of healthcare that focuses on
-          resolving issues that limit a person's ability to do the things that
-          matter to them, such as getting dressed, eating, moving around the
-          house, and being productive.
+          Occupational Therapy (OT) is a healthcare discipline focused on
+          helping  
         </p>
+        <p>individuals regain the ability to perform tasks essential to
+          daily life,such as  </p>
+        <p> dressing,eating, moving around, and engaging in
+        productive activities.</p>
       </div>
 
       {/* Statistics section */}
@@ -144,36 +151,32 @@ const OccupationalTherapy = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average annual salary of an occupational therapist
+            <strong></strong> Average yearly salary for an occupational therapist
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Estimated worth of the occupational therapy market
-            in 2022
+            <strong></strong> Estimated value of the occupational therapy market in 2022
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 17% projected growth in employment for
-            occupational therapists
+            <strong></strong> Projected 17% growth in employment for occupational therapists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 10,100 openings for occupational therapists every
-            year
+            <strong></strong> 10,100 annual job openings for occupational therapists
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
-        <h2>Subject Overview</h2>
+        <h2>Course Insights</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
             <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
@@ -182,22 +185,14 @@ const OccupationalTherapy = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {/* Display subtitles and content if available */}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
