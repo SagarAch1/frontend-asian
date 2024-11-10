@@ -6,7 +6,7 @@ const Dietetics = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Dietetics = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -90,53 +90,56 @@ const Dietetics = () => {
     {
       title: "About Dietetics",
       content1:
-        "Dietetics, a subdiscipline of medicine, is the science that studies food and its impact on human health and general well-being. Dietitians and nutritionists work to enhance people’s health by helping them make better food choices. They also assist patients in striking a balance between healthy food and exercise.",
-      content2:"If you choose a programme of Dietetics you will learn about food management, medical nutrition, metabolism, and other related topics. The programme is likely to comprehensively cover nutrition and relevant aspects from the fields of anatomy, biology, chemistry, and physiology.",
+        "Dietetics studies the effects of food and nutrition on health. Dietitians and nutritionists guide people to make healthier choices and balance diet with physical activity.",
+      content2:
+        "Dietetics programs cover food management, medical nutrition, metabolism, and include relevant sciences like anatomy, biology, chemistry, and physiology.",
     },
     {
-      title: "Is Dietetics right for me?",
+      title: "Is Dietetics Right for Me?",
       content1:
-        "Dietetics students learn why and how various eating and nutritional habits affect us, as well as how we may improve our health. You'll also learn how to properly consult with patients and devise nutritional regimens that are tailored to their unique metabolism. Dietetics is unique from other healthcare fields as its core focus lies on preventing diseases even before they occur by developing a strong immune system.",
-        content2:"If you are particularly fond of health and nutrition and enjoy the science of healthy eating, a degree in Dietetics will serve you remarkably well in building a rewarding career.",
+        "In dietetics, students learn the impact of different foods on health, and how to advise patients on diets tailored to their needs. Unlike other health fields, dietetics emphasizes disease prevention through nutrition.",
+      content2:
+        "If you’re passionate about health, nutrition, and the science of food, a dietetics degree could offer you a rewarding career path.",
     },
     {
-      title: "Study options and costs",
+      title: "Study Options and Costs",
       content1:
-        "To qualify for a bachelor’s in Dietetics, which is 3 to 4 years in duration, you only require a post-secondary level education; however, high-school students are encouraged to study subjects such as Biology, Chemistry, Human Anatomy, Psychology, Nutrition, Statistics or related subjects. Students that do not qualify for college criteria, which is sometimes the case for international students, will be required to take up foundation courses in their first year.",
-      content2:"Your bachelor's degree can then be followed by either a master’s in a more specialised field of Dietetics such as public health, clinical nutrition, sports dietetics, paediatric nutrition, gerontological nutrition, corporate nutrition. It’s important to keep in mind that most professional settings will expect to see some form of an accredited internship or experience in addition to your degree.",
-      content3:"A bachelor's degree in Dietetics costs around $16,000 per year in the US and prepares students for advanced careers in the field. It is also required for graduate studies in Dietetics specialties. In the UK, a bachelor's in Dietetics can cost on average anywhere between $20,000 per year.",
+        "A bachelor’s degree in dietetics, lasting 3-4 years, requires a high-school education with recommended subjects like biology, chemistry, and psychology. Some students may need foundation courses.",
+      content2:
+        "After a bachelor’s, students can pursue a master’s in specialties like public health, clinical nutrition, sports dietetics, or pediatric nutrition. Internships or professional experience are often required.",
+      content3:
+        "In the US, a bachelor’s in dietetics costs about $16,000 annually. In the UK, the average cost is approximately $20,000 per year.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content1:
-        "Dietitians’ and nutritionists’ employment is expected to increase by 11% between 2016 and 2026, faster than the average for all other occupations. The significance of food and nutrition in improving health and wellbeing has come to the fore in recent years. Consequently, its popularity as part of healthcare systems has also skyrocketed.",
-      content2:"The rise in the incidence of metabolic diseases, high healthcare spending, and the expansion of the middle class in emerging nations are all driving the worldwide clinical nutrition industry forward. Furthermore, the market is predicted to rise due to the rising number of senior people and the development of therapeutic nutrition products tailored to the needs of the aged. In fact, about 5,900 job openings are projects each year for dietitians and nutritionists in the US alone!",
+        "Demand for dietitians and nutritionists is growing, with job opportunities expected to rise 11% between 2016 and 2026, driven by a focus on health and wellness.",
+      content2:
+        "Factors like the increase in metabolic diseases and healthcare spending contribute to the growth of clinical nutrition. Around 5,900 job openings are projected annually in the U.S. alone.",
     },
     {
-      title: "Career pathways for Dietetics graduates",
+      title: "Career Pathways for Dietetics Graduates",
       subtitle1: "Clinical Nutritionist",
       content1:
-        "Clinical nutritionists look at a person's diet and medical history to see how their dietary choices might affect their health, prevent disease, or alleviate the symptoms of a chronic condition. In other words, they help patients and individuals lead healthier and more fulfilling lives despite having underlying medical conditions. A very common example of this is the management of diet for people suffering from diabetes.",
+        "Clinical nutritionists assess diets to help manage health issues or prevent diseases, enabling patients to live healthier lives. Common cases include managing diets for diabetes.",
       subtitle2: "Public Health Nutritionist",
       content2:
-        "The primary role of a public health nutritionist is to improve the health and well-being of targeted groups or the general population. They do this by typically planning and implementing population-based nutrition promotion strategies through careful evaluation of human nutrition, biochemistry, physiology, public health data, behavioural and social sciences, and food systems.",
+        "Public health nutritionists design strategies to improve community health through population-wide nutrition programs, informed by health data and social sciences.",
       subtitle3: "Dietitian",
       content3:
-        "A dietitian modifies a person's diet depending on medical issues, body composition, blood composition, or other contributing elements impacting nutrition. On a one-on-one basis, they examine, diagnose, suggest, and treat different medical diagnoses and nutritional disorders. Their main goal is to make sure that the person they're working with is getting the correct amount and type of nutrients.",
+        "Dietitians create personalized dietary plans based on medical or nutritional needs. They provide one-on-one support, diagnosing and treating nutrition-related health issues.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Hero section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Dietetics abroad</h1>
+        <h1>Study Dietetics Abroad</h1>
         <p>
-          Dietetics is the study of the effects of diet and nutrition on human
-          health. Dietetics has a heavy focus on public health and is dedicated
-          to informing the masses about the significance of eating healthy
-          foods.
+          Dietetics examines how diet and nutrition affect human health, 
         </p>
+        <p>with a focus on educating the public about healthy eating.</p>
       </div>
 
       {/* Statistics section */}
@@ -144,34 +147,29 @@ const Dietetics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $51,128 million estimated worth of the global
-            clinical nutrition market in 2028
+            <strong>Projected Market:</strong> $51,128 million in global clinical nutrition by 2028
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $61,650: average annual salary of dieticians and
-            nutritionists
+            <strong>Average Salary:</strong> $61,650 annually for dietitians and nutritionists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 5,900 openings projected for dietitians and
-            nutritionists each year
+            <strong>Annual Job Openings:</strong> 5,900 for dietitians and nutritionists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 6.1% annual growth rate of the clinical nutrition
-            market
+            <strong>Market Growth Rate:</strong> 6.1% annually in clinical nutrition
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -183,22 +181,13 @@ const Dietetics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
