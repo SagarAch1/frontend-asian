@@ -48,7 +48,7 @@ const Philosophyandreligious = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color
     marginBottom: "10px",
   };
 
@@ -90,52 +90,56 @@ const Philosophyandreligious = () => {
     {
       title: "About Philosophy and Religious Studies",
       content1:
-        "Philosophy and Religious Studies help students learn “how to think”. Students develop critical thinking skills, an appreciation for cultural diversity, a reading habit, and the ability to articulate themselves.",
+        "Philosophy and Religious Studies focus on helping students develop critical thinking abilities. Students gain insight into various cultures, learn to articulate their thoughts effectively, and build a habit of thoughtful reading.",
       content2:
-        "Philosophy and Religious Studies address questions like, what does it mean to be human? How do people make sense of the world? How does the individual relate to society? These questions are addressed under topics such as class, power, identity, nationality, ethics and gender.",
-      content3:"This subject will help you understand other people's beliefs and values and why they do things a certain way. It enables you to reflect on your own beliefs and ideals.",
-    },
-    {
-      title: "Is Philosophy and Religious Studies subject right for me?",
-      content1:
-        "This subject is for students who are curious about the ideologies and belief structures that act as the glue of our social structures. Students who tend to excel in this field are avid readers and have an insatiable curiosity. They enjoy asking challenging questions and are able to think more abstractly than others. Students must be able to connect ideas in novel ways to draw their own conclusions about a topic.",
-      content2:
-        "If you think you have all the aforementioned qualities, then this degree is a good fit for you.",
-    },
-    {
-      title: "Philosophy and Religious Studies study options and costs",
-      content1:
-        "Philosophy and Religious Studies degrees are offered in 1,193 schools in the United States. Most universities are offering four degrees in Philosophy and Religious Studies i.e. associate degree which is for 2 years, a bachelor`s degree of 4 years, a master’s degree of 1-3 years depending on the college and a Doctorate degree of 4-7 years.",
-      content2:
-        "The tuition fee for an undergraduate programme on average is $28,740 and $20,411 for a graduate program.",
+        "This field addresses profound questions like the meaning of human existence, the nature of the world, and how individuals relate to their society. It explores themes such as class, power, identity, ethics, and gender.",
       content3:
-        "In the UK, the average tuition fee for Philosophy and Religious Studies degree is £18,950 per year for international students. Whereas the average tuition fee for a master’s degree is £21,000 per year. A doctorate degree costs between £15,000 to £30,000 per year depending upon the university.",
+        "This subject allows you to reflect on your own beliefs while understanding why others hold differing views. It encourages a deeper examination of the values that guide human actions.",
     },
     {
-      title: "Future outlook",
+      title: "Is Philosophy and Religious Studies right for me?",
       content1:
-        "An education in Philosophy and Religious Studies prepares you to find employment in a variety of career paths. Due to the very nature of the subject students develop strong analytical and critical thinking skills making them highly effective in a number of occupations.",
+        "This field is ideal for students who are fascinated by the ideologies and belief systems that shape societies. Successful students are often avid readers, deeply curious, and enjoy tackling abstract problems. They excel at forming connections between different ideas to draw their own conclusions.",
       content2:
-        "As more and more jobs become automated there is a massive need for critical and creative thinkers. In the academic year 2019-2020 Philosophy and Religious Studies was the 29th most popular major. However, this number is expected to rise in relation to the increased demand in the job market for Philosophy and Religious Studies graduates. In fact, there is a 10.5% projected growth in employment opportunities for Philosophy and Religious Studies graduates.",
+        "If you resonate with these characteristics, this course could be a perfect fit for you.",
     },
     {
-      title: "Career Pathways for Philosophy and Religious Studies graduates",
-      subtitle1: "Community Development worker",
+      title: "Study options and costs for Philosophy and Religious Studies",
       content1:
-        "As a community development worker, you will help communities make appropriate changes and help improve the living standards of people. You will also ensure that people have a say in community matters and that their issues are properly addressed by the concerned authorities. A community development worker also proposes strategies for the development of the community.",
+        "In the United States, Philosophy and Religious Studies programs are available at 1,193 institutions. Most schools offer degrees such as associate (2 years), bachelor's (4 years), master's (1-3 years), and doctoral (4-7 years).",
+      content2:
+        "Undergraduate tuition for these programs averages around $28,740 per year, while graduate studies cost about $20,411 annually.",
+      content3:
+        "In the UK, international students pay an average tuition fee of £18,950 annually for a Philosophy and Religious Studies degree. For master's programs, fees average around £21,000, and doctoral programs range from £15,000 to £30,000 per year.",
+    },
+    {
+      title: "Future Outlook for Philosophy and Religious Studies Graduates",
+      content1:
+        "Studying Philosophy and Religious Studies equips students with strong analytical and critical thinking skills, which are highly valued in numerous careers. The versatility of these skills means that graduates are well-suited for a wide range of professional paths.",
+      content2:
+        "With increasing automation in many industries, the demand for critical thinkers is on the rise. In the 2019-2020 academic year, Philosophy and Religious Studies ranked as the 29th most popular major, but demand is expected to grow as more opportunities arise for graduates. Employment for Philosophy and Religious Studies graduates is expected to increase by 10.5%.",
+    },
+    {
+      title: "Career Paths for Philosophy and Religious Studies Graduates",
+      subtitle1: "Community Development Worker",
+      content1:
+        "As a community development worker, you'll help communities improve living standards and address social issues. You'll work to ensure that people's voices are heard in decision-making processes and develop strategies for community growth.",
       subtitle2: "Editorial Assistant",
       content2:
-        "A degree in philosophy and religious studies enhances your ability to articulate yourself well. If you have good grammar and writing skills, then you can easily score a job as an editorial assistant. As an editorial assistant, you’ll summarise and edit manuscripts, texts, articles and scripts.",
+        "A degree in this field enhances your communication skills. If you're skilled in writing and grammar, becoming an editorial assistant could be a great career choice. You'll assist in editing and summarizing texts, articles, and scripts.",
       subtitle3: "Journalist",
       content3:
-        "As a journalist, you’ll research and report different issues affecting the society. Journalists make news accessible to the public by reporting the affairs of the day in an easily understandable manner. Additionally, you will also attend conferences with political leaders and thought leaders and ask questions regarding the betterment of society.",
+        "Journalists research and report on current events, presenting news in an accessible format. You'll also have the opportunity to engage with leaders and experts to ask questions that aim to improve society.",
       subtitle4: "Youth Worker",
-      content4:"A youth worker helps and guides young people to understand themselves and supports them in their social and educational development. As a youth worker, you’ll get to work in schools, colleges and youth centres, and conduct training programs with young people as well as their parents.",
+      content4:
+        "Youth workers help young people understand their identity and provide support for their social and educational development. You'll work in schools, community centers, and conduct training for both young people and their families.",
       subtitle5: "Chaplain",
-      content5:"Chaplains are people of faith or philosophical beliefs who provide guidance and counselling to those in need. A career in chaplaincy would suit you if you're interested in helping people, are a good listener and have the capacity to deal with a range of challenges presented by individuals seeking pastoral care.",
+      content5:
+        "Chaplains offer spiritual guidance and counseling to those in need. If you're empathetic, a good listener, and enjoy helping others navigate personal challenges, a career in chaplaincy may be fulfilling.",
       subtitle6: "Lecturer",
-      content6:"As a lecturer, you will need expertise in your subject be it metaphysics, epistemology, logic, theology or comparative religion to teach students. Teaching methods include lectures, seminars, tutorials, practical demonstrations, fieldwork and e-learning. Multimedia technologies are increasingly being used by lecturers to complement and substitute in-class learning.",
-        },
+      content6:
+        "As a lecturer, you'll teach students in specialized areas like metaphysics, epistemology, logic, or comparative religion. Teaching methods may include lectures, seminars, e-learning, and practical demonstrations, utilizing multimedia tools to enhance the learning experience.",
+    },
   ];
 
   return (
@@ -144,11 +148,9 @@ const Philosophyandreligious = () => {
       <div style={sectionStyle}>
         <h1>Study Philosophy and Religious Studies abroad</h1>
         <p>
-          Religion and philosophy are fundamental parts of how people express
-          their understanding of the purpose of life, the foundations of
-          individual and social behaviour. This field of study explores the
-          frameworks people use to interpret and navigate the world.
+          Philosophy and Religious Studies explore the fundamental ways people interpret life, guiding their actions and behavior. 
         </p>
+        <p>This discipline examines how individuals and societies understand the world and the beliefs that shape their interactions.</p>
       </div>
 
       {/* Statistics section */}
@@ -156,34 +158,29 @@ const Philosophyandreligious = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>70% of the students get an employment opportunity
-            immediately after graduation
+            <strong></strong>70% of graduates find employment right after completing their degree.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 10.5% increase in employment opportunities for
-            Philosophy and Religious Studies related careers
+            <strong></strong> 10.5% increase in job opportunities for graduates in Philosophy and Religious Studies.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $6600: average annual salary of a Philosophy and
-            Religious Studies graduate
+            <strong></strong> $6600 is the average annual salary for graduates in this field.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Increase in the number of students enrolled in
-            Philosophy and Religious Studies programmes
+            <strong></strong> Increase in enrollment in Philosophy and Religious Studies programs.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -195,22 +192,13 @@ const Philosophyandreligious = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
