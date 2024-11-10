@@ -6,7 +6,7 @@ const HumanMovement = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open or close
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const HumanMovement = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color choice
     marginBottom: "10px",
   };
 
@@ -80,52 +80,59 @@ const HumanMovement = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Human Movement",
       content1:
-        "Human Movement is the field of study concerned with how humans move, its various aspects and recovery. Human Movement is focused on applying knowledge about mechanisms and methods of restoring and maximising human functional capacity and well-being across a lifespan. It also focuses on the abilities of humans to perform in sport activities. The new insights and knowledge of this field are used in physical education, athletic training, physical therapy, orthopedics, and physical medicine.",
-        content2:"The study of human movement provides key insights about how to prevent illnesses that hinder the body’s capabilities to move normally. Additionally, it also investigates physiological, neural and psychological adaptations to exercise, the role regular physical activity plays in chronic disease prevention and management, and how the brain controls and coordinates everyday movements.",
-        content3:"The expertise in this field spans the fields of biophysical, behavioral and socio-cultural enquiry to extend and apply knowledge and understanding about human movement and sports science.",
-        content4:"Some common course modules students can expect to study are Exercise Physiology, Biomechanics, Motor Control, Exercise Programming and Prescription, Anatomy, Biomechanics, and Sports Psychology.",
+        "Human Movement is the study of human motion and its recovery, focusing on restoring and optimizing functionality and well-being across the lifespan. It also covers the performance of humans in sports. This knowledge is utilized in physical education, athletic training, physical therapy, orthopedics, and physical medicine.",
+      content2:
+        "This field studies how to prevent conditions that impair normal movement. It also explores physiological, neural, and psychological adaptations to exercise, the impact of regular physical activity on chronic disease prevention, and the brain's control of movement.",
+      content3:
+        "The expertise in this area spans biophysical, behavioral, and socio-cultural knowledge to extend understanding of human movement and sports science.",
+      content4:
+        "Course modules may include Exercise Physiology, Biomechanics, Motor Control, Exercise Programming, Anatomy, and Sports Psychology.",
     },
     {
       title: "Is Human Movement right for me?",
       content1:
-        "If you have good leadership skills as well as an interest in the aspects of exercise, then the field of Human Movement is right for you. A human movement professional is patient with his clients, collaborative in terms of implementing different strategies to help his clients, and determined to help his clients to the maximum limit and to bring a positive change in their lives.",
-        content2:"Human movement professionals are intrigued by the details and complexities of muscle coordination in human body. They constantly focus on the intricate coordination of muscles, ligaments and joints. An expert in Human Movement ought to be realistic in his goals in terms of his client’s progress and must consider the client’s limits of performing according to the strategies. Therefore, human movement professionals are adaptable and have strong ethical values. If this sounds like you, then to seek a degree leading to a professional career in this field is right for you.",
+        "If you possess strong leadership skills and an interest in exercise, Human Movement is a fitting field. A human movement expert is patient, collaborative, and committed to achieving positive results for clients.",
+      content2:
+        "Professionals in this field are fascinated by muscle coordination, focusing on the interactions between muscles, ligaments, and joints. They should be realistic about clients' progress and adaptable in their strategies. If this resonates with you, a degree in Human Movement could be a perfect career path.",
     },
     {
       title: "Study options and costs",
       content1:
-        "The first step towards pursuing Human Movement as a professional field is earning a bachelor’s degree. A bachelor’s in Human Movement science usually takes 3 to 4 years to complete and costs around $24,228 to $59,970 per year in the US.",
-        content2:"After the completion of your bachelor’s program, you could enroll in a master’s programme to enter the field professionally. The master’s programme usually takes 1 to 2 years to complete and costs around $53,900 in the US.",
-
-
-        content3:"Furthermore, you could apply for a doctorate programme to contribute to the research of Human Movement. A PhD in Human Movement takes around 4 to 5 years to complete and costs around $35,530 to $64,600.",
+        "To enter the field of Human Movement, start with a bachelor's degree, which typically takes 3 to 4 years and costs between $24,228 and $59,970 annually in the US.",
+      content2:
+        "After completing your bachelor's degree, you may pursue a master's degree, usually taking 1 to 2 years and costing about $53,900 in the US.",
+      content3:
+        "A PhD in Human Movement, which takes 4 to 5 years to complete, can cost between $35,530 and $64,600.",
     },
     {
       title: "Future outlook",
       content:
-        "As sports become more competitive and awareness about the importance of nutrition increases, Human Movement graduates have a massive job market. According to the U.S. Bureau of Labor Statistics, the exercise physiologists job market is projected to grow by 13% which is faster than the average. Additionally, a whopping 69,100 jobs are projected each year for fitness instructors and trainers! This all provides a clear indicator that the expertise of Human Movement is in high demand in a rapidly expanding job market.",
+        "The job market for Human Movement graduates is growing, driven by the increasing competitiveness of sports and rising awareness of nutrition. According to the U.S. Bureau of Labor Statistics, exercise physiologists' job market is projected to grow by 13%, faster than average. Additionally, 69,100 new jobs for fitness instructors and trainers are expected annually.",
     },
     {
-        title: 'Career pathways for Human Movement graduates',
-        subtitle1: 'Trainers and Fitness Instructors',
-        content1: 'As a fitness instructor, you will be required to lead groups in structured exercise routines, usually at gyms and other fitness centres. As a personal trainer, you will develop and oversee exercise routines for individuals. You might also work at rehabilitation centers, hospitals, or retirement homes assisting people to regain their mobility or help them improve physical performance.',
-        subtitle2: 'Physical Education Teachers ',
-        content2: 'As a physical education teacher, you will be required to help students exercise, and teach related subjects such as Personal Fitness. In addition to coaching students in various sports, you might also teach students about the connections between education, nutrition and health. ',
-        subtitle3: 'Occupational Therapist',
-        content3: 'Being an occupational therapist, you will help patients with injuries or disabilities in their everyday lives and in common settings such as in school or at work. In some cases, this means developing rehabilitative exercise routines, while some patients may need adaptive equipment. ',
-        subtitle4: 'Physical Therapists',
-        content4:'Physical therapists help patients, who have been injured regain their strength and abilities, a process that often takes months. Physical therapists also help patients complete exercise regimens tailored to their specific needs.',
+      title: "Career pathways for Human Movement graduates",
+      subtitle1: "Trainers and Fitness Instructors",
+      content1:
+        "Fitness instructors lead group exercise sessions at gyms and fitness centers, while personal trainers design personalized routines. They may also work in rehabilitation centers or hospitals to help patients recover mobility or enhance performance.",
+      subtitle2: "Physical Education Teachers",
+      content2:
+        "As a physical education teacher, you'll teach students fitness and health subjects, coach sports, and connect education, nutrition, and health.",
+      subtitle3: "Occupational Therapists",
+      content3:
+        "Occupational therapists help people with injuries or disabilities improve their daily lives, sometimes by designing adaptive exercises or recommending equipment.",
+      subtitle4: "Physical Therapists",
+      content4:
+        "Physical therapists assist patients in recovering strength and mobility after injuries. They create exercise plans tailored to the specific needs of each patient.",
     },
   ];
 
@@ -133,16 +140,11 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Human Movement abroad        </h1>
+        <h1>Study Human Movement abroad</h1>
         <p>
-        Human Movement is the academic study of how human beings move, in various contexts, especially in sports. This is an interdisciplinary field integrating aspects of social, natural and health sciences concerning physical activity. 
-
-
-
-
-
-
-      </p>
+          Human Movement is the academic exploration of human motion in various contexts, especially in sports. 
+        </p>
+        <p>It integrates the social, natural, and health sciences surrounding physical activity.</p>
       </div>
 
       {/* Statistics section */}
@@ -150,84 +152,59 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $47,940: average annual salary of exercise physiologists
-
-
-
+            <strong></strong> $47,940: Average annual salary of exercise physiologists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong> 69,100 projected job openings for fitness instructors and trainers each year 
-
-
-
+            <strong></strong> 69,100 projected job openings annually for fitness instructors and trainers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 39% projected growth in employment opportunities for fitness instructors and trainers  
-
-
+            <strong></strong> 39% projected growth in fitness instructor and trainer jobs
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 13% projected growth of exercise physiologists in job market by year 2030 
-
+            <strong></strong> 13% projected job growth for exercise physiologists by 2030
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
 
-export default HumanMovement;
+export default HumanMovement;

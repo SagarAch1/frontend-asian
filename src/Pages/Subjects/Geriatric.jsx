@@ -3,13 +3,13 @@ import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
 const GeriatricStudies = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleSection = (index) => {
+    setSelectedIndex(selectedIndex === index ? null : index); // Toggle section visibility
   };
 
-  const sectionStyle = {
+  const heroSectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,7 +24,7 @@ const GeriatricStudies = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statsSectionStyle = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -32,7 +32,7 @@ const GeriatricStudies = () => {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
   };
 
-  const statItemStyle = {
+  const statBoxStyle = {
     width: "22%",
     textAlign: "center",
     fontSize: "16px",
@@ -48,11 +48,11 @@ const GeriatricStudies = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color for the icons
     marginBottom: "10px",
   };
 
-  const faqSectionStyle = {
+  const faqContainerStyle = {
     padding: "40px",
     backgroundColor: "#f1f1f1",
   };
@@ -74,154 +74,118 @@ const GeriatricStudies = () => {
     color: "#555",
   };
 
-  const faqContentStyle = {
+  const faqTextStyle = {
     padding: "10px 0",
     fontSize: "14px",
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
-  const faqItems = [
+  const faqDetails = [
     {
       title: "About Geriatric Studies",
-      content1:
-        "Ageing and the science behind it will be the primary subject of focus of Geriatric Studies. Geriatrics, often known as Geriatric Medicine, is a medical speciality that focuses on the care of the aged. Its goal is to improve the health of the aged by preventing and treating illnesses and impairments. Nurses, physician assistants, pharmacists, social workers, and a variety of other geriatric health professionals frequently collaborate with geriatricians.",
-        content2:"Some common course modules students can expect to study are Anatomy, Psychology, Physiology, Nutrition, Exercise, Pain Management, and the study of age-related diseases such as Dementia, Heart Failure, Frailty, Arthritis, Cataracts, and Osteoporosis.",
-      
+      content1: 
+        "Geriatric Studies focuses on aging and its scientific aspects. This medical field is dedicated to treating and preventing ailments in the elderly. The goal is to enhance the health and quality of life for older adults through coordinated care provided by healthcare professionals including nurses, pharmacists, and social workers.",
+      content2: 
+        "Typical course topics include Anatomy, Psychology, Physiology, Nutrition, Exercise, Pain Management, and diseases such as Dementia, Arthritis, Heart Disease, and Osteoporosis.",
     },
     {
       title: "Is Geriatric Studies right for me?",
-      content1:
-        "Obtaining a bachelor's degree is the first step towards becoming a geriatrician. Students will pursue an undergraduate degree after the completion of their secondary education. The bachelor’s degree is recommended to be in a science field such as Biology, Chemistry, or Psychology. After this you will clear your medical college entrance exam to secure admission into a medical school. A four-year medical school programme is followed by a three-year residency. Following residency, a doctor can either work for a period or apply to a geriatric medicine fellowship programme right away.",
-        content2:"Geriatric Studies can lead you to multiple career paths such as becoming a geriatric doctor, public health official that specialises in ageing, researcher, educator, geriatric nurse, or even a pharmacist. If you love studying medicine and are interested in healthcare as a field, a degree in Geriatric Studies could unfold a very fulfilling career for you. If you are an empathetic individual who wants to help others lead a better life, particularly the elderly, then this degree might be the right fit for you!",
+      content1: 
+        "The journey to becoming a geriatrician starts with an undergraduate degree in a science field, followed by medical school and a residency. After residency, a geriatric fellowship can be pursued. Alternatively, you can specialize in geriatrics directly after medical school.",
+      content2: 
+        "A career in Geriatric Studies opens doors to various roles, including geriatric doctor, researcher, educator, or even a pharmacist. If you're empathetic and want to improve the lives of the elderly, this could be a fulfilling career choice for you!",
     },
     {
       title: "Study options and costs",
-      content1:
-        "The first step towards pursuing Human Movement as a professional field is earning a bachelor’s degree. A bachelor’s in Human Movement science usually takes 3 to 4 years to complete and costs around $24,228 to $59,970 per year in the US.",
-        content2:"In most cases, you will also have to apply for a license to practice as a medical professional and this is usually done right before applying for a residency. You can also opt for a career in research or education and can pursue a PhD after medical school. Clinical research in Geriatric Studies will allow you to research the different pathways and the science behind the ageing process. You can also work on drugs used to prevent or treat ageing-related issues.",
-
-
-        content3:"In the UK, international undergraduate tuition rates range from$14,130 for undergraduate degrees to $53,700 or more for geriatric related studies.",
+      content1: 
+        "A bachelor's degree in Geriatrics typically spans 3-4 years, costing between $24,228 and $59,970 annually in the US. Clinical experience or further studies like a PhD in Geriatrics is often required for specialized roles.",
+      content2: 
+        "In the UK, tuition for international undergraduate programs can range from $14,130 to $53,700 or more depending on the course and institution.",
     },
     {
       title: "Future outlook",
-      content1:
-        "The job prospects for Geriatric Studies is highly encouraging. The need for geriatricians is predicted to rise in the coming years, owing to the necessity of physicians to care for an ageing population. In fact, the geriatric care service market is expected to grow at the rate of 10% between 2021 and 2027!",
-        content2:"Geriatricians are learning new treatment techniques and working in an area that is both expanding in demand and techniques. Geriatricians may now treat diseases and injuries in novel ways because of developments in medical technology and research that are enhancing treatment choices for the elderly. Laparoscopic surgery, for example, now allows elderly patients to undergo a variety of surgical procedures that were previously thought too dangerous.",
+      content1: 
+        "The demand for geriatricians is expected to increase as the population ages. The geriatric care market is projected to grow at a rate of 10% annually between 2021 and 2027.",
+      content2: 
+        "Advances in medical technology, such as laparoscopic surgery, have expanded treatment options for the elderly, making previously risky procedures safer and more effective.",
     },
     {
-        title: 'Career Pathways for Geriatric Studies graduates',
-        subtitle1: 'Geriatric Doctor',
-        content1: 'Geriatric doctors, often known as geriatricians, are doctors who specialise in caring for elderly people who have a variety of medical problems. They are concerned with helping the elderly lead a functional and high-quality life. Geriatric doctors are familiar with the responsibilities of carers and work closely with family members.',
-        subtitle2: 'Geriatric Pharmacist',
-        content2: 'Geriatric pharmacists, sometimes known as consultant pharmacists, specialise in delivering drugs to elderly patients and providing medication guidance. While all pharmacists label drugs and administer them according to a physicians or other health professionals prescription, some geriatric pharmacists do not.',
-        subtitle3: 'Geriatric Researcher',
-        content3: 'Geriatric researchers promote clinical and translational research on ageing-related health and illness. They also study ageing across a lifespan, including its effects on health. They concentrate on the creation of innovative therapies for age-related disorders, as well as the prevention and treatment of a variety of chronic illnesses in the aged.',
-      
+      title: "Career Pathways for Geriatric Studies graduates",
+      subtitle1: "Geriatric Doctor",
+      content1: 
+        "Geriatricians specialize in treating elderly patients with various health issues. They focus on enhancing the quality of life for older adults through personalized care, often working closely with caregivers and families.",
+      subtitle2: "Geriatric Pharmacist",
+      content2: 
+        "Geriatric pharmacists manage medications for elderly patients, ensuring appropriate dosing and avoiding drug interactions. Some also offer consultations and help adjust medications based on patient needs.",
+      subtitle3: "Geriatric Researcher",
+      content3: 
+        "Researchers in geriatrics study aging processes and related diseases, seeking new treatments and preventative strategies to improve the health of aging populations.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
-        <h1>Study Geriatric Studies abroad        </h1>
+      {/* Hero section with background image */}
+      <div style={heroSectionStyle}>
+        <h1>Study Geriatric Studies Abroad</h1>
         <p>
-        Geriatrics is a sub-discipline of medicine dealing with the prevention and treatment of illnesses in the elderly. Geriatric Studies graduates can expect to find abundant opportunities in social work, health administration and occupational therapy.
-
-
-
-
-
-
-      </p>
+          Geriatrics is a specialized branch of medicine focused on the health of the elderly. 
+        </p>
+        <p>Graduates in Geriatric Studies can expect diverse career opportunities in healthcare </p>
+        <p>administration, social work, and other related fields.</p>
       </div>
 
       {/* Statistics section */}
-      <div style={statisticsSection}>
-        <div style={statItemStyle}>
+      <div style={statsSectionStyle}>
+        <div style={statBoxStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> 164% increase in job advertisements for geriatrics in the last decade 
-
-
-
-
-          </p>
+          <p>164% increase in job postings for geriatrics in the last decade</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statBoxStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong>
-
-</strong>Average annual salary of a geriatric doctor
-
-          </p>
+          <p>Average annual salary of a geriatric doctor</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statBoxStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> 55,400: projected job openings for geriatric physicians between 2018-2028
-
-          </p>
+          <p>55,400 projected job openings for geriatric physicians between 2018-2028</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statBoxStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> 10% annual growth rate of the geriatric care services market between 2021-2027
-          </p>
+          <p>10% annual growth rate in geriatric care services market (2021-2027)</p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqContainerStyle}>
+        <h2>Subject Overview</h2>
+        {faqDetails.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => toggleSection(index)}>
+              <span>{item.title}</span>
+              <span>{selectedIndex === index ? "-" : "+"}</span>
+            </div>
+            {selectedIndex === index && (
+              <div style={faqTextStyle}>
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.content3 && <p>{item.content3}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
