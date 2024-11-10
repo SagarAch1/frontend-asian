@@ -6,7 +6,7 @@ const ReligiousStudies = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ open/close
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const ReligiousStudies = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -88,49 +88,51 @@ const ReligiousStudies = () => {
 
   const faqItems = [
     {
-      title: "About Religious Studies",
+      title: "Overview of Religious Studies",
       content1:
-        "Religious Studies is the in-depth study of what traditions, rituals, and beliefs are attributed to what religion, and how religion has shaped societies. Religion is a major chunk of the lives of people and plays an important social and cultural role. Pursuing Religious Studies will not only help you better understand the influence of religion on social and political interactions but also foster an analytical perspective to view the world.",
+        "Religious Studies examines beliefs, rituals, and traditions across religions, exploring how religion shapes societies. Studying this field offers insight into how religion impacts cultural and social interactions and promotes a critical, analytical worldview.",
       content2:
-        "This degree will embed skills, such as critical thinking, logical reasoning, ability to decipher information, and presentation skills, in you. Religious Studies degrees are known for their rigour and vast amounts of information that must be committed to memory. Furthermore, through this degree you will develop an intuition for cultural, ethical, political, and philosophical problems of religions.",
-
+        "This degree emphasizes skills in critical thinking, reasoning, information analysis, and presentation. Religious Studies programs require substantial knowledge retention, providing a foundation in the ethical, political, and philosophical questions associated with different religions.",
     },
     {
       title: "Is Religious Studies right for me?",
       content1:
-        "If you often zone out and wonder about the origin of the world, the existence of a divine creator, and the purpose of this universe, then this degree is well suited to you",
+        "If you often wonder about life’s origins, the existence of divine beings, or the universe’s purpose, this field may be for you.",
       content2:
-        "For example, if you find yourself wondering why Muslims circumambulate the Holy Kaaba seven times, why Sikhs visit the Golden Temple, and why Christians believe in the Holy Trinity, this degree will not only provide you with the answers that you need but help you develop an appreciation of the role religion plays in the life of people.",
-        content3:"To excel in this degree programme you must have a good memory, along with being patient. Reading through large textbooks and spending hours on end in the library are some things you must be mentally prepared to do. This might sound like a handful, but if you’re passionate then this degree will significantly broaden your career horizons.",
+        "For example, if you're curious about why Muslims circumambulate the Kaaba, why Sikhs visit the Golden Temple, or why Christians believe in the Trinity, this program provides insights while helping you appreciate religion's role in society.",
+      content3:
+        "To excel, you should be prepared for extensive reading and have strong memory skills. With dedication, this degree opens broad career possibilities.",
     },
     {
-      title: "Religious Studies study options and costs",
+      title: "Study options and costs in Religious Studies",
       content1:
-        "Religious Study programmes are offered at three levels: A bachelor’s which takes 3-4 years, a master’s which is 2 years, and a PhD which with a full-time study takes around 3-4 years, whereas part-time could take 6-7 years.",
+        "Religious Studies programs include a 3-4 year bachelor’s, a 2-year master’s, and a 3-4 year PhD, which may take up to 7 years part-time.",
       content2:
-        "There are multiple research and specialisation paths when enrolled in a Religious Studies programme. Some of those fields include but are not limited to anthropology of religion, geography of religion, history of religion, origin of religion, and literary and neurological approaches to Religions.",
-        content3:"A bachelor’s degree in Religious Studies will educate you about how religion relates to anthropology, what religious aspects make us human, and discuss human experiences of the past, also known as holism. A bachelor’s degree would cost you around $28,584 per academic year in the US. Master’s degrees which are more in-depth compared to undergraduate programs, typically cost around $30,000 to $40,000. Lastly, a PhD will prepare you to conduct independent research on religious questions that hold your interest using a variety of qualitative approaches. Average cost of PhD is $38,600 due to the intense fieldwork and research requirements.",
+        "Specializations cover areas like anthropology, history, and philosophical approaches to religion.",
+      content3:
+        "A bachelor’s costs around $28,584 per year in the US, while master’s programs range from $30,000 to $40,000. PhDs, with their intensive research demands, average around $38,600 annually.",
     },
     {
       title: "Future outlook",
       content1:
-        "Religion is one of the largest political and economic drivers in the world today. There is a large demand for formally educated theologians, clergy, and social and community workers. Religious Studies prepare graduates to make rich contributions to their societies. The open-mindedness and analytical mindset of these graduates make them highly effective in several career paths.",
+        "Religion plays a significant role in today’s world. Religious Studies graduates contribute to society in various impactful ways, offering career paths with a steady demand for theologians, clergy, and community workers.",
       content2:
-        "The employment opportunities for theologians, clergy and religious vocations are expected to steadily grow over the coming decades. In fact, there are 387,740 theologists currently employed in the US!",
+        "In the US, 387,740 people are employed in religious vocations, with steady job growth expected.",
     },
     {
-      title: "Career pathways  for Religious Studies graduates",
+      title: "Career pathways for Religious Studies graduates",
       subtitle1: "Teachers",
       content1:
-        "As a religious teacher your responsibilities include educating students about the fundamentals of religion, which include the 5W’s and 1H (who, what, when, where, why and how). This requires storytelling skills and patience because you are expected to get your point across while respecting the student’s point of view. The average annual salary of a religious teacher is $43,450.",
+        "Religious teachers educate students on the foundations of religion, requiring patience and effective storytelling skills. The average salary is $43,450.",
       subtitle2: "Missionary",
       content2:
-        "A job like this demands your full-time attention because this is where you dedicate your whole life to educating and informing people about religion, to spread faith. This job also requires you to travel often due to the various platforms you’re asked to talk at. The average annual income of a missionary is $44,566.",
+        "Missionaries dedicate themselves to spreading faith, often requiring travel. The average income is $44,566.",
       subtitle3: "United Nations Diplomacy",
       content3:
-        "This is an extremely prestigious job opportunity. This allows you to work with faith-based organizations, as well as non-government organizations (NGOs). The approximate income for this vocation is $95,000.",
+        "This prestigious role involves working with faith-based and non-governmental organizations, with an approximate income of $95,000.",
       subtitle4: "Chaplain",
-      content4:"This is the term used to refer to people or representatives who offer religious services for people who are not able to attend normal sermons, in areas such as warzones, prisons, and hospitals. The average annual salary for a chaplain is around $50,397.",
+      content4:
+        "Chaplains provide religious services for people in isolated locations, like prisons or hospitals, with an average salary of $50,397.",
     },
   ];
 
@@ -140,11 +142,9 @@ const ReligiousStudies = () => {
       <div style={sectionStyle}>
         <h1>Study Religious Studies abroad</h1>
         <p>
-          Have you ever wanted to explore different religious ideologies and
-          learn about the significance of holy places such as Jerusalem, Makkah
-          and The Golden Temple? Religious Studies could be your ticket to a
-          lifetime of fulfilling work!
+          Explore various religious beliefs and understand the importance of sacred sites like 
         </p>
+        <p>Jerusalem, Makkah, and the Golden Temple. Religious Studies can lead to a meaningful career!</p>
       </div>
 
       {/* Statistics section */}
@@ -178,7 +178,6 @@ const ReligiousStudies = () => {
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
@@ -189,7 +188,6 @@ const ReligiousStudies = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -206,9 +204,6 @@ const ReligiousStudies = () => {
                   <div style={faqSubtitleStyle}>{item.subtitle4}</div>
                 )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
