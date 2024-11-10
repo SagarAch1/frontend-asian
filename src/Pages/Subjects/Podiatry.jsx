@@ -5,8 +5,8 @@ import FormPage from "../Homepage/FormPage";
 const Podiatry = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleContent = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle content visibility
   };
 
   const sectionStyle = {
@@ -24,7 +24,7 @@ const Podiatry = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statisticsWrapper = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -48,16 +48,16 @@ const Podiatry = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive icon color
     marginBottom: "10px",
   };
 
-  const faqSectionStyle = {
+  const faqSection = {
     padding: "40px",
     backgroundColor: "#f1f1f1",
   };
 
-  const faqItemStyle = {
+  const faqItem = {
     backgroundColor: "white",
     marginBottom: "10px",
     padding: "15px",
@@ -74,7 +74,7 @@ const Podiatry = () => {
     color: "#555",
   };
 
-  const faqContentStyle = {
+  const faqDetailsStyle = {
     padding: "10px 0",
     fontSize: "14px",
     color: "#666",
@@ -90,39 +90,42 @@ const Podiatry = () => {
     {
       title: "About Podiatry",
       content1:
-        "Podiatry is defined as the medical care and treatment of the human foot. It is also known as Chiropody. Podiatry or Podiatric Medicine is a branch of medicine devoted to the study, diagnosis and medical/ surgical treatment of disorders of the foot, ankle, and lower extremities. ",
-      content2:"A podiatrist or Doctor of Podiatric Medicine (DPM), is a healthcare professional who diagnoses and treats conditions affecting the foot, ankle, and structures of the leg. They can help people deal with a range of mobility issues, relieve any existing pain and treat infections of the feet and lower legs. They can also treat injuries as well as complications from ongoing health issues like diabetes. You might hear them called a podiatric physician or doctor of podiatric medicine. ",
-      content3:"Podiatrists perform multiple roles; they can do surgery, reset broken bones, prescribe drugs, and order lab tests or X-rays. They often work closely with other specialists when a problem affects your feet or lower legs. In the US, podiatrists are licensed and regulated by state governments.  ",
-      content4:"Podiatrists work in several professional settings, ranging from offices of podiatry to clinics of physicians or specialists. They also provide their expertise in hospitals, outpatient care centres and other health care facilities.",
+        "Podiatry refers to the medical care and treatment of the feet, also known as Chiropody. It is a branch of medicine dedicated to diagnosing and treating disorders affecting the foot, ankle, and lower extremities.",
+      content2:
+        "A Podiatrist, or Doctor of Podiatric Medicine (DPM), is a healthcare professional who diagnoses and treats conditions related to the foot, ankle, and lower leg structures. They address mobility issues, relieve pain, and treat infections, injuries, and complications like diabetes-related foot problems.",
+      content3:
+        "Podiatrists perform a range of tasks, including surgery, resetting broken bones, prescribing medications, and ordering lab tests or X-rays. They often collaborate with other specialists when dealing with foot or leg problems. In the US, podiatrists are licensed and regulated by state authorities.",
+      content4:
+        "Podiatrists work in various settings, such as podiatry offices, clinics, hospitals, outpatient care centers, and other healthcare facilities.",
     },
     {
-      title: "Is Podiatry right for me?",
+      title: "Is Podiatry the right field for me?",
       content:
-      "A podiatrist needs to be a compassionate individual who has exceptional critical thinking skills to correctly diagnose a patient and determine the best course of treatment. Because podiatrists spend much of their time interacting with patients, they should be good listeners and be able to communicate effectively. Thus they must possess great interpersonal skills. If this sounds like you, then Podiatry is the right career field for you.",
-      
+        "To be a podiatrist, one needs to be compassionate with strong critical thinking skills to accurately diagnose and treat patients. Podiatrists interact with patients frequently, so good listening and communication skills are essential. If this sounds like you, Podiatry may be a great fit.",
     },
     {
       title: "Study options and costs",
       content1:
-        "After the graduate school course, you must enrol in college for a degree of Doctor of Podiatric Medicine (D.P.M.). The first two years concentrate on classroom instruction and laboratory work in the basic medical sciences. The third and fourth years of study focus on the clinical sciences and patient care. The degree spans 4 years and costs around $207,984 in the US.",
-        content2:"After completing podiatric medical school, you move on to residency training the duration of which may vary from country to country. A residency provides podiatrists with the chance to get specialised training through rotations, such as an aesthesiology, internal medicine, infectious disease, surgery, ER and paediatrics.",
+        "To become a Podiatrist, you must first complete graduate school and then pursue a Doctor of Podiatric Medicine (D.P.M.) degree. The first two years focus on classroom instruction and laboratory work in basic medical sciences, while the last two years emphasize clinical sciences and patient care. The program lasts for 4 years and typically costs around $207,984 in the US.",
+      content2:
+        "After completing podiatric medical school, students enter residency training, which varies by country. Residency allows podiatrists to gain specialized training through rotations in fields like anesthesiology, internal medicine, infectious disease, surgery, emergency room care, and pediatrics.",
     },
     {
-      title: "Future outlook",
+      title: "Job Outlook",
       content:
-        "As the number of working hours on the job have increased, so have ankle and foot injuries, due to continuous standing. Hence, podiatrists are in demand. According to the U.S. Bureau of Labor Statistics, employment of podiatrists is projected to grow 2% in this decade. About 900 openings for podiatrists are projected each year, on average, over the decade. Podiatry is a highly specialised field with lucrative career opportunities.",
+        "With an increase in working hours, there is a rise in foot and ankle injuries from prolonged standing. Therefore, podiatrists are in demand. According to the U.S. Bureau of Labor Statistics, the employment of podiatrists is expected to grow by 2% this decade. Approximately 900 job openings for podiatrists are projected each year. Podiatry is a highly specialized field with rewarding career opportunities.",
     },
     {
-      title: "Career Pathways for Creative writing graduates",
+      title: "Career Opportunities for Podiatry Graduates",
       subtitle1: "Specialist Podiatrist",
       content1:
-        "As a specialist podiatrist, you will be responsible for examining patients' legs to diagnose diseases as well as for performing foot and ankle procedures. You will also treat sports-related foot and leg injuries, like fractures and use various podiatric techniques to treat deformities and ailments. The average annual salary for a podiatrist in the US is $95,000",
+        "As a specialist podiatrist, you will diagnose foot and ankle diseases and perform various procedures. You will also treat sports-related injuries such as fractures and use advanced podiatric techniques to address deformities. The average annual salary for a podiatrist in the US is $95,000.",
       subtitle2: "Advanced Podiatrist",
       content2:
-        "As an advanced podiatrist, you will consult with patients in a clinic or hospital after reviewing a patient’s medical history. You will also be responsible for performing X-rays and physical scans of a patient’s lower extremities and for treating sport-related leg or foot injuries.",
-      subtitle3: "Specialist Podiatrist",
+        "As an advanced podiatrist, you will consult with patients, review their medical histories, perform X-rays and physical scans of lower extremities, and treat sports-related injuries.",
+      subtitle3: "Podiatry Researcher",
       content3:
-        "As a podiatry researcher, you will assess different types of injuries and work with various people to study the effects and causes of their medical conditions related to podiatry. Being a researcher, you will introduce new advancements in the field of podiatry that will open new doors for further research and knowledge. Your role will also include educating young aspiring podiatrists about the different aspects and implications of the field.",
+        "As a podiatry researcher, you will assess different types of injuries and conduct studies on their causes and effects. You will contribute to advancements in the field and educate future podiatrists about the discipline's various aspects.",
     },
   ];
 
@@ -132,56 +135,50 @@ const Podiatry = () => {
       <div style={sectionStyle}>
         <h1>Study Podiatry abroad</h1>
         <p>
-          The study of feet and their ailments is called Podiatry. If you have a
-          passion to make a change in people’s lives which would help them stand
-          on their feet (literally), then, Podiatry is a good career choice for
-          you!
+          Podiatry is the study of feet and their medical conditions. If you are passionate about making a difference 
         </p>
+        <p>in people's lives by helping them stand on their feet (literally), then Podiatry is an excellent career choice!</p>
       </div>
 
       {/* Statistics section */}
-      <div style={statisticsSection}>
+      <div style={statisticsWrapper}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 900 projected employment opportunities for
-            podiatrists every year
+            <strong>900</strong> projected job openings for podiatrists annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Average annual salary of podiatrists
+            <strong>Average Salary:</strong> Annual earnings of a podiatrist
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 12,100 jobs for podiatrists in the year 2021
+            <strong>12,100</strong> jobs for podiatrists in 2021
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 2% projected employment growth for podiatrists in
-            this decade
+            <strong>2%</strong> projected job growth for podiatrists this decade
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
-      <div style={faqSectionStyle}>
+      {/* FAQ Section */}
+      <div style={faqSection}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
-          <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+          <div key={index} style={faqItem}>
+            <div style={faqTitleStyle} onClick={() => toggleContent(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
-              <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
+              <div style={faqDetailsStyle}>
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -195,8 +192,6 @@ const Podiatry = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
