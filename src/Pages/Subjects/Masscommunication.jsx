@@ -6,7 +6,7 @@ const Masscommunication = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggles the accordion item open and close
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Masscommunication = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Adds a visually appealing color to icons
     marginBottom: "10px",
   };
 
@@ -90,46 +90,49 @@ const Masscommunication = () => {
     {
       title: "About Mass Communication",
       content1:
-        "The transmission of messages to many recipients at a time is called Mass Communication. At a larger level, it can be understood as an extensive circulation of information within regions and across the globe. It is a field of study which involves the use of print and digital media to effectively impart and disseminate news/ information using social media, books, newspapers, magazines, televisions or radio.",
-      content2:"The studies in Mass Communication chiefly focus on how the content persuades or affects the behaviours, attitudes, opinions and emotions of the people receiving the information. ",
-    },
-    {
-      title: "Is Mass communication right for me? ",
-      content:
-        "Students who are creative, spontaneous and have good social and communication skills may pursue studies or a profession in Mass Communication. During the studies, students will develop a keen awareness of media laws and ethics along with an understanding of modern communication means. Inquisitiveness, perseverance and determination are a few more qualities which will enable you to do well in the field. ",
-     
-    },
-    {
-      title: "Study options and cost ",
-      content1:
-        "After completion of high school, students may pursue a bachelor’s degree in Mass Communication. The course work includes the introduction to global media, journalism, film production, the publishing industry, visual communication and international politics. The degree spans four years and may cost up to $68,000.",
+        "Mass Communication refers to the dissemination of messages to large audiences at once. On a broader scale, it involves the widespread distribution of information across regions and globally. The field covers the use of print and digital media to communicate effectively through platforms like social media, books, newspapers, magazines, television, or radio.",
       content2:
-        "Graduates in Mass Communication may further pursue their studies at the level of master’s in Mass Communication. The course work is mostly based on research which culminates with the submission of a thesis. Students usually focus on Media Ethics, Communication Research, Digital Production, Media Laws and Ethics along with Strategic Communications in a Global Environment. The degree may span a period of two years and cost up to $48,900 in the US.",
-        content3:"Students who want to further specialise in the field or endeavour to improve career progression may undertake a PhD in the field. Students are expected to finish course work which usually comprises of seminars and theoretical classes. A comprehensive examination is also held in many universities where the students are supposed to conduct and submit a field survey, dissertation and take up an oral examination along with submitting a research paper and teaching a class, depending on the requisites of your certification. The degree may span over three to five years and cost up to $45,000 in the US. ",
+        "Mass Communication studies mainly explore how content influences or impacts the behaviors, attitudes, opinions, and emotions of recipients.",
+    },
+    {
+      title: "Is Mass Communication right for me?",
+      content:
+        "Mass Communication suits students who are creative, spontaneous, and possess strong social and communication skills. Throughout their studies, students will become familiar with media laws and ethics and the intricacies of modern communication tools. Qualities like curiosity, persistence, and dedication can further enhance success in this field.",
+    },
+    {
+      title: "Study options and costs",
+      content1:
+        "After completing high school, students can pursue a bachelor’s degree in Mass Communication, covering topics such as global media, journalism, film production, publishing, visual communication, and international politics. The degree typically spans four years and costs up to $68,000.",
+      content2:
+        "Graduates may continue to a master’s in Mass Communication, which usually involves research culminating in a thesis. Core areas include Media Ethics, Communication Research, Digital Production, and Strategic Communications in a Global Environment. The program generally lasts two years, with costs up to $48,900 in the US.",
+      content3:
+        "Students seeking further specialization or career advancement may consider a PhD in Mass Communication, requiring coursework, seminars, and theoretical classes. Many programs require comprehensive exams, research projects, and sometimes teaching assignments. The degree typically takes three to five years, costing up to $45,000 in the US.",
     },
     {
       title: "Future outlook",
       content:
-        "Employment in media and communication occupations is projected to grow by 14% in this decade, faster than the average for all occupations. There are likely to be 151,500 new jobs in the Mass Communication industry by the year 2030. Demand for media and communication occupations is expected to arise from the need to create, edit, translate, and disseminate information through a variety of different platforms, including social media.",
+        "Media and communication jobs are expected to grow by 14% in this decade, which is faster than the average for all fields. The Mass Communication industry is projected to add 151,500 new jobs by 2030, driven by demand to create, edit, translate, and distribute information across various platforms, including social media.",
     },
     {
       title: "Career Pathways for Mass Communication graduates",
       subtitle1: "Director of Communications",
       content1:
-        "A director of communications is responsible for monitoring the information that flows from an organisation to the public. They oversee a communications team and develop communication campaigns, direct public relations drives and marketing strategies. The average annual salary of a director of communications is $90,000 in the US. ",
+        "A Director of Communications manages the flow of information from an organization to the public. They oversee communications teams, develop campaigns, and lead public relations and marketing strategies. The average annual salary is around $90,000 in the US.",
       subtitle2: "Public Relations Specialist",
       content2:
-        "These specialists are involved in maintaining a good public image for their clients and businesses. They need to be adept at problem-solving and media handling to project a good image of the clientele. The average annual salary of a public relations specialist is $62,800 in the US. ",
-      subtitle3: "Journalist ",
+        "These specialists work on maintaining a positive public image for clients and businesses, requiring strong problem-solving and media skills. The average annual salary is $62,800 in the US.",
+      subtitle3: "Journalist",
       content3:
-        "The principal task of a journalist is to investigate, gather and deliver newsworthy information on various past, current and upcoming events. They look for leads, build contacts and sources for first-hand research and undertake second-hand research. The average annual salary of a journalist is $48,370 per year in the US. ",
-      subtitle4: "Film Editor ",
+        "Journalists research, gather, and present news on a variety of events. They build contacts, investigate leads, and conduct both first-hand and secondary research. Journalists earn an average of $48,370 per year in the US.",
+      subtitle4: "Film Editor",
       content4:
-        "Film or video editors are involved in manipulating images on a screen for the production of movies and shows. They ensure that images are in proper order and synchronous. The average annual salary of a film editor is $60,360 in the US. ",
-      subtitle5: "Media planner ",
-      content5:"Media planners work with advertising agencies, PR firms and businesses to plan, implement and oversee advertising and marketing campaigns for various promotional purposes. The average annual salary for a media planner is $60,319 in the US. ",
-      subtitle6: "Event Manager ",
-      content6:"They undertake the planning, handling, implementing and monitoring of various private and public events.  Event managers meet with clients to understand event objectives, specifications and budget. Their work involves finding and booking venues, getting permits, negotiating with sponsors and liaising with suppliers. The average annual salary of an event manager is $55,550 in the US.  ",
+        "Film editors manipulate images to produce movies and shows, ensuring images are properly sequenced. The average annual salary is $60,360 in the US.",
+      subtitle5: "Media Planner",
+      content5:
+        "Media planners work with advertising and PR agencies to develop and manage advertising campaigns. The average annual salary is $60,319 in the US.",
+      subtitle6: "Event Manager",
+      content6:
+        "Event managers oversee the planning, execution, and follow-up of various public and private events. They handle venue selection, permits, sponsor negotiation, and coordination with suppliers. The average salary is $55,550 per year in the US.",
     },
   ];
 
@@ -139,11 +142,9 @@ const Masscommunication = () => {
       <div style={sectionStyle}>
         <h1>Study Mass Communication abroad</h1>
         <p>
-          Mass Communication deals with the transmission of information to a
-          large number of people through legacy and modern media. After
-          completing your studies, you may work for a news agency, television
-          channel, film industry or a web company, amongst others.  
+          Mass Communication is the study of relaying information to a large audience through both traditional and 
         </p>
+        <p>modern media. Graduates may find employment in news agencies, television, film, or digital media companies.</p>
       </div>
 
       {/* Statistics section */}
@@ -151,38 +152,29 @@ const Masscommunication = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $54,000: average annual salary for employees with a communications degree
-
-
+            <strong></strong> $54,000: average annual salary for those with a degree in communications
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
             <strong></strong> Number of employees with a communications degree in the US
-
-
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Job openings for media and communication workers by year 2030
-
-
+            <strong></strong> Job openings for media and communication professionals by 2030
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 14% projected employment growth in field of media and communications  
-
-
+            <strong></strong> 14% projected job growth in media and communication fields
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -194,34 +186,20 @@ const Masscommunication = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {/* Render subtitles and content */}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
-                {item.subtitle6 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle6}</div>
-                )}
+                {item.subtitle6 && <div style={faqSubtitleStyle}>{item.subtitle6}</div>}
                 {item.content6 && <p>{item.content6}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
