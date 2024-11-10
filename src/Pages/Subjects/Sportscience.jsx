@@ -6,7 +6,7 @@ const SportsScience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle the expansion
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const SportsScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Color to attract attention
     marginBottom: "10px",
   };
 
@@ -80,8 +80,7 @@ const SportsScience = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
+  const faqSubtitleStyle = {
     fontWeight: 'bold',
     marginTop: '10px',
     color: '#333',
@@ -91,43 +90,39 @@ const faqSubtitleStyle = {
     {
       title: "About Sports Science",
       content:
-        "Sports Science is an interdisciplinary field and draws upon fields like Physiology, Psychology, Bioengineering, Chemistry, and Anatomy. It is a relatively new academic discipline but has gained immense popularity, as sports and fitness are approached more and more seriously in the modern world. There are groundbreaking advances in technology and medicine that affect the world of sports daily and it receives significant funding.",
-        
-      
+        "Sports Science is a multidisciplinary field integrating Physiology, Psychology, Bioengineering, Chemistry, and Anatomy. Though it is relatively new, it has rapidly gained popularity as sports and fitness are increasingly taken seriously. With technological and medical advancements shaping the sports world, it continues to receive substantial investment.",
     },
     {
       title: "Is Studying Sports Science right for me?",
       content:
-        "In a Sports Science degree you’ll study how the body and mind function during exercise and, after graduating, you can apply your specialist knowledge to a range of careers. You can expect practical sessions and lab work but be prepared to ditch the trainers and learn the theory that you can then apply to sports and exercise. During studies you’ll become accustomed to critically evaluating information, designing research studies, collecting data and dissecting the results.",
-    
+        "A degree in Sports Science covers the body's and mind's response to exercise. Upon graduation, you'll apply this expertise across various careers. Expect hands-on practical work, lab sessions, and theoretical lessons, where you'll critically assess information, design studies, gather data, and interpret the results.",
     },
     {
       title: "Study options and costs",
       content1:
-        "If you want to study Sports Science, then you should have earned a high school diploma from an accredited educational institution. Thereafter you can apply for a bachelor’s degree in Sports Science.",
-        content2:"The bachelor’s of Sports Science programme comprises 130 to 140 credit hours. The degree spans four years (8 semesters) and costs up to $126,240.",
-
-
-        content3:"Some sport-related careers require further study at the postgraduate level. For example, if you want to become a sports and exercise psychologist you'll need to complete relevant accredited psychology qualifications. To get a job as a sports coach, you'll need to gain the appropriate coaching qualification that's offered by the national governing body of your chosen sport.",
-        content4:"It's also possible to attain a master’s degree to increase your knowledge in a particular area of interest, such as Sports Biomechanics or Musculoskeletal Sports Science.",
+        "To pursue Sports Science, you need to have completed a high school diploma from an accredited institution. Afterward, you can apply for a bachelor’s degree in Sports Science.",
+      content2:
+        "A Bachelor's degree in Sports Science typically spans 130-140 credit hours over four years (8 semesters) and costs up to $126,240.",
+      content3:
+        "Some sports careers may require postgraduate study. For instance, becoming a sports and exercise psychologist requires relevant accredited psychology qualifications. To become a sports coach, you'll need to complete a coaching certification from your sport's national governing body.",
+      content4:
+        "A Master's degree can also enhance your expertise in specific areas, such as Sports Biomechanics or Musculoskeletal Sports Science.",
     },
     {
       title: "Future outlook",
       content:
-        "While Sports Science graduates tend to get jobs specifically in sports and fitness or coaching and teaching, they also find employment in a multitude of sectors. Management is also a popular option for graduates of this subject. Through a degree in Sports Science, you will also learn transferable skills including communication, team-working, time management, and leadership. Employers that recruit sports scientists include gyms, fitness centres, sports clubs, educational institutes and hospitals.",
-      
+        "Graduates in Sports Science often work in sports, fitness, coaching, and education. However, they also have opportunities in various other sectors. Management is another common career choice. A degree in Sports Science develops transferable skills like communication, teamwork, time management, and leadership. Employers hiring sports scientists include gyms, sports clubs, educational institutions, and hospitals.",
     },
     {
-        title: 'Career Pathways for Sports Science graduates',
-        subtitle1: 'Sports Coach',
-        content1: 'This is one of the most common careers you could go into and one with the most horizontal career mobility. Sports coaches are required across a range of different sports and ages, which means you could specialise in a sport you love and work in a variety of organisations too, such as schools, nurseries, sports teams.',
-        subtitle2: 'Sport Nutritionist',
-        content2: 'Sports nutritionists work with elite athletes, professional sports teams and with the general public to help them achieve their performance or health goals. Whether you choose to work with athletes or the public, your role will be highly varied and could include creating, designing and evaluating diet plans, assessing body composition and educating your clients about nutritional value. The average annual salary of a sports nutritionist is $60,427.',
-        subtitle3: 'Sport Therapist',
-        content3: 'As a sports therapist, you will have the knowledge and clinical skills needed to effectively prevent, assess, treat, and rehabilitate musculoskeletal injuries. You may choose to work in professional, semi-professional, or amateur sports. Alternatively, you may wish to work in private practice, treating a wide variety of individuals in a sports injury clinic. The average annual salary of a sports therapist is $78,054.',
-        subtitle4: 'Personal Trainer/ Conditioning Coach',
-        content4: 'Many sports students develop a passion for helping people achieve their health-related goals, coaching young performers or contributing towards optimising the performance of high-level athletes The role of a personal trainer or a conditioning coach is often varied, and can include monitoring athletes, fitness testing, and implementing recovery protocols and assisting with the rehabilitation of injured athletes. The average annual salary of a personal trainer is $63,961.',
-      
+      title: 'Career Pathways for Sports Science graduates',
+      subtitle1: 'Sports Coach',
+      content1: 'As a coach, you’ll guide athletes of all ages and skill levels across different sports. Whether at schools, nurseries, or sports teams, you could work in a variety of settings.',
+      subtitle2: 'Sport Nutritionist',
+      content2: 'Sports nutritionists work with elite athletes, teams, and the general public to optimize their health and performance. This job is highly varied, involving diet planning, body composition assessments, and nutrition education. The average salary for a sports nutritionist is $60,427.',
+      subtitle3: 'Sport Therapist',
+      content3: 'As a therapist, you will prevent, assess, treat, and rehabilitate musculoskeletal injuries, working with professional or amateur athletes, or in private practice. The average annual salary for a sports therapist is $78,054.',
+      subtitle4: 'Personal Trainer/Conditioning Coach',
+      content4: 'Personal trainers help clients achieve health and fitness goals, whether its performance enhancement for athletes or assisting with rehabilitation. Trainers monitor fitness progress, conduct fitness testing, and create recovery plans. The average salary is $63,961.',
     },
   ];
 
@@ -135,15 +130,11 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Sports Science abroad       </h1>
+        <h1>Study Sports Science Abroad</h1>
         <p>
-        Sports Science is the study of how the human body works during exercise, and how sports or physical activity promote health physically, mentally, and socially. This field focuses on areas like Physiology, Psychology, Biomechanics, and Nutrition.
-
-
-
-
-
-      </p>
+          Sports Science examines how the body responds during exercise and how physical activity 
+        </p>
+        <p>promotes overall health. It integrates Physiology, Psychology, Biomechanics, and Nutrition.</p>
       </div>
 
       {/* Statistics section */}
@@ -151,79 +142,67 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Estimated worth of the sports industry now
-
-
-
+            <strong></strong> Current estimated worth of the global sports industry
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong>$83,535: average annual salary of sports scientists
+            <strong></strong> Average salary of sports scientists: $83,535
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Annual salary of top sports scientists
-
+            <strong></strong> Top sports scientists' annual salary
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 1,500 projected job openings for sport scientists every year
+            <strong></strong> 1,500 job openings projected for sports scientists annually
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
 
-export default SportsScience;
+export default SportsScience;
