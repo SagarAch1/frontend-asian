@@ -5,8 +5,9 @@ import FormPage from "../Homepage/FormPage";
 const Creativewriting = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
+  // Function to toggle the FAQ item visibility
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   const sectionStyle = {
@@ -48,7 +49,7 @@ const Creativewriting = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -80,57 +81,58 @@ const Creativewriting = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Creative Writing",
       content:
-        "A Creative Writing program is geared towards helping students develop competencies in writing compelling narratives. Students pursuing Creative Writing courses will study written works such as novels and plays, as well as courses on how to enhance their writing skills. These skills will enhance your employability in a wide array of sectors especially marketing and advertising.",
+        "Creative Writing programs help students refine their narrative skills. Students analyze various genres, such as novels and plays, while honing their craft, which is valuable in careers like marketing and advertising.",
     },
     {
       title: "Is Creative Writing right for me?",
       content:
-        "If you are good with words and love to put your thoughts into writing, then creative writing is the right field for you. Creative Writers are driven by their creativity to develop interesting characters, plots and ideas. They have exceptional critical thinking skills to have an in-depth understanding of other writer’s work. They must be good at time management to meet multiple deadlines. They also possess the quality of being persuasive as they, especially in advertising and media business, have to persuade a mass audience to feel a certain way about a service or product. They have deep social perceptiveness to understand how readers react to ideas to connect with their audience. Last but not the least, they have exceptional writing skills to be able to write clearly and effectively to convey feelings and emotion. If this sounds interesting to you, then an pursuing a degree in Creative Writing might be a great idea.",
+        "If you have a talent for words and enjoy expressing ideas in writing, this field may suit you well. Creative writers leverage critical thinking, creativity, time management, and social perceptiveness to create engaging stories that connect with their audience.",
     },
     {
       title: "Creative Writing study options and costs",
       content:
-        "The undergraduate programme in Creative Writing takes about 3-4 years of full-time study to complete and costs around $13,296 in the US and £9,250 in the UK. Students who choose to go for a graduate programme to advance their careers can expect 1 year full-time or a 2-year part-time master’s programme. The cost of a master's in Creative Writing in the UK is around £9300-£13,000. In the US, it takes around 2 years to complete a master’s degree with an average tuition around $30,000-$40,000.",
+        "Undergraduate degrees typically take 3-4 years in the US or UK, with tuition costs of approximately $13,296 in the US and £9,250 in the UK. Master’s programs generally last 1-2 years, with tuition in the UK averaging £9,300-£13,000 and in the US around $30,000-$40,000.",
     },
     {
       title: "Future outlook",
       content:
-        "According to the U.S. Bureau of Labor Statistics, employment of writers and authors is projected to grow 9 percent from 2020 to 2030. Moreover, about 15,400 openings for writers and authors are projected every year! The data also shows that employment in media and communication occupations (including creative writers) is projected to grow 14 percent from 2020 to 2030.",
+        "The U.S. Bureau of Labor Statistics forecasts a 9% growth for writers and authors by 2030, with 15,400 job openings projected annually. Media and communications roles, including creative writing, are expected to grow by 14% over the same period.",
     },
     {
-        title: 'Career Pathways for Creative writing graduates',
-        subtitle1: 'Advertising Copywriter',
-        content1: 'As an advertising copywriter, youll collaborate with an art director at an advertising, media, or digital marketing agencys creative department. Youll create, develop, and generate gripping advertising campaigns based on client briefs. The tasks of an advertising copywriter include identifying the target demographic, as well as liaising with clients and interpreting their mandates. They also come up with creative concepts and ideas, typically in collaboration with the art director.',
-        subtitle2: 'Lexicographer',
-        content2: 'As a lexicographer, youll look for evidence of a word or phrases meanings and usages in specialist databases containing thousands of pieces of language from a variety of sources (known as the corpus) which may include literature, newspapers, online journals, blogs, discussion groups, and transcripts of television and radio. Youll analyse entries and examine potential new entries based on this data and your own judgment.',
-        subtitle3: 'Magazine Journalist',
-        content3: 'Consumer titles that cover both common interest and expert areas such as customer magazines and trade magazines, are among the publications that magazine journalists analyse and compose news articles and features for. As a magazine journalist, you may be involved with the publications production, such as sub-editing and design, in addition to writing.',
+      title: "Career Pathways for Creative Writing Graduates",
+      subtitle1: "Advertising Copywriter",
+      content1:
+        "An advertising copywriter works with an art director to develop compelling campaigns. This role involves understanding target audiences, interpreting client briefs, and crafting creative ideas.",
+      subtitle2: "Lexicographer",
+      content2:
+        "Lexicographers analyze and document word usage across various media. They evaluate potential new entries for dictionaries based on observed language trends.",
+      subtitle3: "Magazine Journalist",
+      content3:
+        "Magazine journalists write for consumer and trade publications, covering a range of topics. They may also assist with sub-editing and design tasks as part of the production process.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Introductory section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Creative Writing abroad
-        </h1>
+        <h1>Study Creative Writing Abroad</h1>
         <p>
-        Creative Writing is the art of capturing the audience's attention and conveys a narrative. A degree in Creative Writing will help you understand the publishing industry and polish your writing skills.
-
-
-
+          A degree in Creative Writing sharpens storytelling abilities, helping
+          students 
         </p>
+        <p>understand the publishing landscape and develop their unique
+        voices.</p>
       </div>
 
       {/* Statistics section */}
@@ -138,75 +140,64 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 15,400 estimated job openings for writers and authors every year
-
-
+            <strong></strong> 15,400 estimated job openings for writers and
+            authors annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 9% projected employment growth of writers and authors this decade
-
-
+            <strong></strong> 9% projected employment growth for writers this
+            decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
             <strong></strong> Median annual income of writers and authors
-
-
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 14% projected growth in employment of creative writers this decade
-
-
+            <strong></strong> 14% projected employment growth for creative
+            writers by 2030
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
