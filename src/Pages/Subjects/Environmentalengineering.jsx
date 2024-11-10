@@ -6,7 +6,7 @@ const EnvironmentalEngineering = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close for FAQs
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const EnvironmentalEngineering = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Icon color enhancement
     marginBottom: "10px",
   };
 
@@ -88,62 +88,65 @@ const EnvironmentalEngineering = () => {
 
   const faqItems = [
     {
-      title: "About Environmental Engineering",
+      title: "Introduction to Environmental Engineering",
       content1:
-        "Environmental Engineering is interdisciplinary degree, which intergrates environmental science, mechanical engineering, chemistry, civil engineering and ecology. Students learn how to design, develop and produce tools, devices and systems that mitigate pollution and help preserve the environment.",
+        "Environmental Engineering is a multi-disciplinary field that combines environmental science, mechanical engineering, chemistry, civil engineering, and ecology. Students learn to design and create solutions to address environmental challenges, helping to reduce pollution and protect natural resources.",
       content2:
-        "As an Environmental Engineering student, you will research water, soil, and air pollution issues and develop technical solutions compatible with legislative, economic, social, and political concerns to solve, mitigate, or control these issues.",
-      content3:"Environmental Engineering is geared towards making societal growth and the utilisation of water, land, and air resources as sustainable as possible. This objective is attained by managing these resources in such a way that pollution and deterioration of the environment are minimised.",
-      content4:"Some core subject areas may include air pollution control, industrial hygiene, hazardous waste management, toxic materials control, risk assessment, environmental chemistry, wastewater management, solid waste disposal, public health, and land management.",
-    },
-    {
-      title: "Is Environmental Engineering right for me?",
-      content1:
-        "Environmental Engineering blends both environmental science and engineering together. Therefore, a thorough understanding of both the sciences and mathematics are pre-requisites to excel in this programme. However, don't be taken aback since the mathematics involved is not as advanced as in other engineering programmes.",
-      content2:
-        "An intrinisic motivation to help preserve the environment is a strong indicator of your interest in this subject. Classroom lectures, laboratory science work, and fieldwork will all be part of your education. Moreover, students who have analytical minds and have a gift for problem-solving tend to perform best. If you believe you possess the aforementioned qualities, then you're an ideal fit for Environmental Engineering.",
-    },
-    {
-      title: "Environmental Engineering study options and costs",
-      content1:
-        "A bachelor's in Environmental Engineering is the ideal education for those looking to become environmental engineers. Typically you must have have a background in similar education such as chemical, civil, or general engineering.",
-      content2:
-        "You can also enrol in a 5-year programme that leads to both a bachelor's and a master's degree at several institutions and universities. An engineer with a master's degree can also teach at colleges and universities or conduct research and development.",
+        "Students in Environmental Engineering study pollution in water, air, and soil and develop technologies that align with environmental, social, and regulatory needs to solve or manage these issues.",
       content3:
-        "The average tuition cost of Environmental Engineering courses in the US is $10,000 to $30,000 per year.",
+        "The goal of Environmental Engineering is to make societal development and the use of resources like water, air, and land as sustainable as possible by minimizing pollution and environmental damage.",
+      content4:
+        "Key study areas often include topics like air quality management, industrial hygiene, hazardous waste management, toxic materials control, environmental chemistry, wastewater management, solid waste disposal, public health, and land-use planning.",
     },
     {
-      title: "Future outlook",
+      title: "Is Environmental Engineering a Good Fit for You?",
       content1:
-        "Employment opportunities for environmental engineers is expected to expand by 7% this decade. Environmental engineers will see the majority of their job growth in professional, scientific, and technical services, as state and local governments turn to the industry for help with water efficiency concerns.",
+        "Environmental Engineering merges environmental science with engineering, requiring a solid grasp of science and mathematics, though it is less mathematically intensive than other engineering fields.",
       content2:
-        "Environmental engineers are expected to have roughly 40,000 job openings this decade. Plentiful career opportunities, handsome salary packages and the sense of preserving the environment make environmental engineering an increasingly popular branch of study.",
+        "A strong desire to protect the environment is a positive indicator of interest in this field. Classroom theory, lab experiments, and field studies are all part of the learning experience. Students with analytical minds and strong problem-solving skills tend to excel. If this sounds like you, Environmental Engineering might be an excellent fit.",
     },
     {
-      title: "Career pathways for Environmental Engineering graduates",
+      title: "Education Paths and Costs in Environmental Engineering",
+      content1:
+        "A bachelor’s degree in Environmental Engineering is the standard qualification for aspiring environmental engineers, typically requiring a background in similar fields like chemical, civil, or general engineering.",
+      content2:
+        "Some institutions offer a combined 5-year program leading to both a bachelor's and a master’s degree. A master’s degree opens opportunities to teach at universities or engage in research and development.",
+      content3:
+        "In the US, the average annual cost for Environmental Engineering programs ranges from $10,000 to $30,000.",
+    },
+    {
+      title: "Career Outlook",
+      content1:
+        "Job opportunities for environmental engineers are expected to grow by 7% over the next decade, with many positions arising in professional, scientific, and technical services as governments seek assistance with water conservation efforts.",
+      content2:
+        "An estimated 40,000 jobs will open in this field over the next decade, making Environmental Engineering a promising career with attractive salaries and the rewarding aspect of environmental preservation.",
+    },
+    {
+      title: "Career Options for Environmental Engineering Graduates",
       subtitle1: "Environmental Engineer",
       content1:
-        "Environmental engineers use knowledge of engineering, soil science, chemistry, and biology to solve problems in the environment. They tackle a variety of issues, and their concerns include pollution control, recycling, and public health issues. They help bring public and non-public bodies bring their activities in conformity with environmental standards mandated by legislation. Environmental engineers may find work in consulting firms, municipalities, government agencies, industries, non-governmental organisations.",
+        "Environmental engineers apply expertise in engineering, soil science, chemistry, and biology to resolve environmental issues. They work in areas like pollution control, recycling, and public health, ensuring compliance with environmental standards. They may work in consulting firms, government agencies, municipalities, or non-governmental organizations.",
       subtitle2: "Civil Engineer",
       content2:
-        "Civil engineers plan, design, and supervise the construction and maintenance of building structures and infrastructure such as roads, railways, airports, bridges, harbours, dams, irrigation projects, power plants, and water and sewerage systems, among other things.",
+        "Civil engineers design, build, and maintain infrastructure, including roads, airports, bridges, power plants, and water systems, playing a crucial role in sustainable urban development.",
       subtitle3: "Hydrologist",
       content3:
-        "Hydrologists investigate the flow of water over and through the Earth's crust. They investigate how precipitation such as rain and snow affect river flows and groundwater levels, as well as how surface and groundwater evaporate back into the atmosphere or eventually reach the oceans.",
+        "Hydrologists study the movement of water through the Earth's crust, including precipitation and river flow patterns, as well as how water interacts with other natural elements before returning to the atmosphere or oceans.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Environmental Engineering abroad</h1>
+        <h1>Study Environmental Engineering Abroad</h1>
         <p>
-          Environmental Engineering is the branch of engineering concerned with
-          applying engineering principles to provide solutions to environmental
-          challenges. Global opportunities paired with the chance to serve the
-          environment help make this subject popular.
+          Environmental Engineering applies engineering knowledge to solve
+          environmental problems. 
         </p>
+        <p>Global opportunities and the chance to make a
+        positive environmental impact make this </p>
+        <p>an appealing field of study.</p>
       </div>
 
       {/* Statistics section */}
@@ -151,33 +154,31 @@ const EnvironmentalEngineering = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average annual salary of an environmental engineer
+            <strong></strong> Average salary of environmental engineers per
+            year
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Jobs openings project for environmental engineers
-            this decade
+            <strong></strong> Expected job openings for environmental engineers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>7% expected growth in employment opportunities for
-            environment engineers
+            <strong></strong> 7% anticipated growth in environmental engineering
+            jobs
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Average annual salary of top environmental
-            engineers
+            <strong></strong> Average salary for top environmental engineers
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -189,7 +190,6 @@ const EnvironmentalEngineering = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -207,8 +207,6 @@ const EnvironmentalEngineering = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
