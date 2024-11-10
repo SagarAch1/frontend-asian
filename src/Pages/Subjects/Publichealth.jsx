@@ -90,40 +90,44 @@ const Publichealth = () => {
     {
       title: "About Public Health",
       content1:
-        "The field of Public Health focuses on maintaining the physical and psychological health of the public. This field is also concerned with the prevention of illnesses and healthcare disparities. The key difference between the field of Public Health and general medicine is that Public Health focuses on promoting health and preventing disease while general medicine is concerned with the diagnosis and treatment of health issues once they have occurred.",
-      content2: "The discipline focuses on providing students a solid foundation related to issues that affect health of the masses and healthcare systems. Common course module you can expect to study are epidemiology, environmental health science, health policy, health communication, biostatistics, health communication, and social and behavioral aspects of health. Public health is a great field which has lots to offer, ranging from good monetary benefits to a sense of service to the community.",
+        "Public Health is focused on improving the physical and mental well-being of communities. This field emphasizes disease prevention and tackling healthcare inequities. Unlike general medicine, which diagnoses and treats illnesses, Public Health aims to enhance overall health and avert potential health problems.",
+      content2:
+        "Students in Public Health gain a broad understanding of key issues affecting population health and healthcare systems. Typical course topics include epidemiology, health policy, environmental health science, biostatistics, and social factors in health. This discipline offers both a rewarding career path and the opportunity to contribute positively to society.",
     },
     {
       title: "Is Public Health right for me?",
       content1:
-      "A public health worker has many responsibilities in various fields of the healthcare system. Moreover, a public health worker is responsible for addressing crucial health issues and raising awareness regarding them. If you are motivated by serving the community and you identify yourself as an empathetic individual, then this field might by a good fit for you.",
-      content2:"A public health worker needs to deal with public and hospital administrators on a daily basis. Therefore, it is essential to have good communication skills. These skills will also play a pivotal role in health communication during health crises such as virus outbreaks. As mentioned earlier, empathy is a key characteristic needed to excel in this field. Empathy will help you better understand the suffering of the afflicted people and spur you into action. If you think you check all these boxes, then you are well suited to this field.",
+        "A public health professional has diverse responsibilities within the healthcare system. They address critical health concerns and promote awareness. If you are passionate about community service and are empathetic, this field could be a perfect fit for you.",
+      content2:
+        "Public health workers often collaborate with both the public and healthcare administrators. Strong communication skills are essential, particularly during health crises like epidemics. Empathy is also vital, as it allows you to better understand the needs of those affected and motivates action. If you possess these qualities, Public Health might be your ideal career choice.",
     },
     {
       title: "Public Health study options and costs",
       content1:
-        "If you intend on pursuing a career in Public Health, then earning a bachelor’s degree in Public Health can be your first step. The undergraduate programme usually takes 3 to 4 years to complete and costs between $10,032 to $25,935 in the US.",
-        content2:"After the completion of your undergraduate degree, you can opt to pursue a master’s degree in Public Health. It usually takes 2 years to complete in US. It usually costs around $11,000-$57,000.",
-        content3:"After having completed you master’s you have the opportunity to study Public Health at the doctoral level. A PhD programme usually takes 3 to 5 years of full-time study to complete. Original research and a dissertation on a sub-topic of Public Health is required to earn your doctoral degree.",
-      
+        "To begin a career in Public Health, pursuing a bachelor’s degree is the first step. Typically lasting 3 to 4 years, the undergraduate program can cost between $10,032 and $25,935 in the United States.",
+      content2:
+        "Upon completing your bachelor's degree, you can continue with a master’s program in Public Health, which typically takes 2 years to finish and costs between $11,000 and $57,000, depending on the institution.",
+      content3:
+        "After obtaining your master’s degree, you may choose to pursue a PhD in Public Health, which involves 3 to 5 years of full-time study, including original research and a dissertation on a specialized topic within Public Health.",
     },
     {
       title: "Future outlook",
       content1:
-      "The future of Public Health field seems very promising with its diverse implications in healthcare fields. More policy analysts and professional policy makers are being brought in to devise public health strategies. Public health workers are playing a leading role in fighting against pandemics like the corona virus and endemics such as malaria.",
-      content2:"According to U.S. Bureau of Labor Statistics, the job market for healthcare occupations is expected in increase by 16%! This is double the average rate of employment growth for all other occupations. An employment change of 21,100 is also estimated by year 2030. This field seems to be a highlighted interest for many prospective professionals and for all the right reasons!",
+        "The future of Public Health is bright, with increasing demand for policy makers and analysts to shape effective health strategies. Public health professionals are at the forefront of combating pandemics like COVID-19 and addressing ongoing health crises like malaria.",
+      content2:
+        "According to the U.S. Bureau of Labor Statistics, employment in healthcare occupations is expected to grow by 16%, double the average for all occupations. This indicates a growing interest in Public Health as a career and the increasing importance of its role in global healthcare.",
     },
     {
       title: "Career pathways for Public Health graduates",
       subtitle1: "Public Health Educators",
       content1:
-        "Public health educators are also known as ‘health promotion specialist’ and ‘community health consultant’. The key responsibility of a public health educator is to raise awareness and educate people about the practices that enhance well-being. Public health educators work directly with public, in healthcare facilities. As a public health educator, you will be responsible to plan strategies for promoting well-being and for communities at greater risk of health conditions.",
+        "Public Health Educators, also called health promotion specialists or community health consultants, are responsible for educating the public on practices that improve health. They work in communities and healthcare facilities to create strategies for enhancing well-being, especially for high-risk populations.",
       subtitle2: "Public Health Nurses",
       content2:
-        "Public health nurses are also known as community nurses. They are registered nurses who educate the public about health concern and how to prevent them. They also administer healthcare services and advocate for healthcare betterment.",
-      subtitle3: "Epidemiologist",
+        "Public Health Nurses, also known as community nurses, educate individuals on health issues and preventive measures. They provide care and advocate for improved healthcare standards.",
+      subtitle3: "Epidemiologists",
       content3:
-        "An epidemiologist gather data using qualitative and quantitative methods. They then analyse this data to investigate health and disease in populations. Epidemiologists draw conclusions from their data to help formulate health policies that restrict the spread of diseases and help treat them.",
+        "Epidemiologists use both qualitative and quantitative methods to gather and analyze data on health trends and diseases in populations. Their research helps shape health policies aimed at preventing the spread of diseases and improving treatment methods.",
     },
   ];
 
@@ -133,11 +137,10 @@ const Publichealth = () => {
       <div style={sectionStyle}>
         <h1>Study Public Health abroad</h1>
         <p>
-          Public health is the field concerned with the improvement of health
-          and wellness of populations worldwide. If leading a meaningful life in
-          service to the community is your raison d'être, then Public Health
-          might be the right fit for you.
+          Public Health is dedicated to enhancing the health and well-being of 
         </p>
+        <p>people around the world.If you’re looking for a meaningful career  </p>
+        <p>in service to society, Public Health might be the perfect choice for you.</p>
       </div>
 
       {/* Statistics section */}
@@ -145,33 +148,29 @@ const Publichealth = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $48,860: the average annual salary of public
-            health workers
+            <strong></strong> $48,860: the average yearly income for public health professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 16%: the projected job growth for healthcare
-            occupations
+            <strong></strong> 16%: projected job growth for healthcare roles
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Estimated employment change by year 2030
+            <strong></strong> Employment change estimate by 2030
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 125,200 people employed in public health in 2020
-            in the US alone
+            <strong></strong> 125,200 public health professionals working in the US by 2020
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -197,8 +196,6 @@ const Publichealth = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
