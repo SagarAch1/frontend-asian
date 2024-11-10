@@ -6,7 +6,7 @@ const AgricultureScience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle visibility
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const AgricultureScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Adjust color to be more appealing
     marginBottom: "10px",
   };
 
@@ -88,91 +88,80 @@ const AgricultureScience = () => {
 
   const faqItems = [
     {
-      title: "About Agriculture Science",
+      title: "Introduction to Agriculture Science",
       content:
-        "Agriculture Science comprises fields like Animal Science, Plant & Soil Science and Agricultural Engineering. Degrees in these fields can be attained at bachelor’s, master’s and PhD levels. People who decide to pursue this subject eventually learn how to improve the sustainability and quality of crops, create new food products and solve environmental problems that directly affect agricultural products.",
+        "Agricultural Science covers areas like Animal Science, Plant & Soil Science, and Agricultural Engineering. Degrees are available at bachelor's, master's, and doctoral levels. Those studying in this field learn ways to enhance crop sustainability, develop new food items, and address environmental issues affecting agricultural products.",
     },
     {
-      title: "Is Agriculture Science right for me?",
+      title: "Is Agriculture Science Suitable for Me?",
       content:
-        "Agriculture Science imbues the skills of adaptability, problem-solving, critical thinking, collaboration, organisation and analytical thinking in the students. It also provides necessary technical and business skills along with the knowledge of environmental and life sciences to prepare the students for their professional life. If you want to lead a life close to nature and desire to promote a green economy, then studying agriculture as a subject may appeal to you.",
+        "Agricultural Science imparts skills such as adaptability, problem-solving, critical thinking, teamwork, and analytical thinking. It also provides technical and business skills combined with environmental and life science knowledge, preparing students for their careers. If you’re drawn to working close to nature and promoting a green economy, this subject may appeal to you.",
     },
     {
-      title: "Agriculture Science study options and cost",
+      title: "Agriculture Science Study Choices and Costs",
       content1:
-        "Students may pursue a bachelor’s degree in Agriculture Science after high school. The courses are generally focused on biological and agricultural sciences, management of livestock and agricultural business. The general coursework may include livestock biometrics, agricultural research and statistics, microeconomics in agriculture, business management and agricultural marketing. The degree spans four years and costs up to $180,000.",
-        content2:"After a bachelor’s, students may pursue a master’s degree in the discipline of choice. This degree also enables the students to undertake independent research work and teaching as a profession. The general coursework may include disciplines like agriculture technology, food chain theory, research methods in agriculture, plant pathology, pest management, water science, preventive veterinary medicine, biostatistics and agricultural leadership. Upon completion of this degree, students may endeavour to enhance crop management and agricultural development in rural areas of a country. Students must submit a research paper towards the end of their degree. The programme spans two years and may cost up to $72,000, depending on the university you choose.",
-        content3:"Students desirous of specialising and carrying out research in a specific sub-field of Agriculture Science may undertake a PhD programme. Specialisations usually include agriculture and environmental risks, agricultural statistics, integrated animal management, agribusiness management and soil/plant relationships. This degree is purely based on research and ends with a dissertation. The degree spans three to four years and may cost up to $98,000."
+        "After high school, students can begin a bachelor’s degree in Agricultural Science. The courses focus on biological and agricultural sciences, livestock management, and agribusiness. Typical coursework includes livestock biometrics, agricultural research and statistics, agricultural microeconomics, business management, and marketing. The program lasts four years and can cost up to $180,000.",
+      content2:
+        "After obtaining a bachelor’s degree, students may pursue a master’s degree in a chosen field. This advanced degree also enables independent research and may lead to teaching roles. Coursework typically covers agricultural technology, food chain theory, research methods in agriculture, plant pathology, pest control, water science, preventive veterinary care, biostatistics, and agricultural leadership. Students must submit a research paper at the end. The program spans two years and may cost up to $72,000, depending on the institution.",
+      content3:
+        "Students wishing to specialize further and conduct research in a specific area of Agricultural Science may pursue a PhD. Typical specializations include environmental risks in agriculture, agricultural statistics, animal management, agribusiness, and soil-plant relationships. This program is research-oriented and concludes with a dissertation. The degree takes three to four years and may cost up to $98,000.",
     },
     {
-      title: "Future outlook",
+      title: "Future Job Outlook",
       content:
-        "According to the U.S. Bureau of Labor Statistics, the overall employment of agriculture/food scientists and agricultural engineers is projected to grow by 9% and 5%, respectively. Challenges such as population growth, increased demand for water resources, combating pests and pathogens, changes in climate and weather patterns, and additional demand for agriculture products, such as biofuels, will continue to create demand for research in agricultural efficiency and sustainability. Growing populations and stronger global competition will result in the industry needing more efficient means of production, which will increase the demand for agricultural engineers as well. Thus professionals having a degree in Agriculture Science may well be in demand.",
+        "According to the U.S. Bureau of Labor Statistics, jobs for agriculture/food scientists and agricultural engineers are expected to grow by 9% and 5%, respectively. Growing population and rising demands for efficient production drive the need for agricultural scientists and engineers, making graduates in Agricultural Science in demand.",
     },
     {
-      title: "Career Pathways for Agriculture Science graduates",
+      title: "Career Options for Agriculture Science Graduates",
       subtitle1: "Agricultural Equipment Technician",
       content1:
-        "They maintain, install and repair machines and implements. They also have expertise in preventive maintenance, which may involve refuelling machines, replacing batteries, changing the oil and lubricating moving parts. The average annual salary of an agriculture equipment technician is up to $64,570.",
+        "Technicians maintain, install, and repair machinery and tools, including preventive maintenance tasks like refueling, battery replacement, oil changes, and lubrication. The average annual salary is around $64,570.",
       subtitle2: "Crop Manager",
       content2:
-        "The professionals who supervise seed sourcing, planting processes and scheduling as well as fertilising, irrigation and harvesting are known as crop managers or farm managers, interchangeably. Crop managers oversee teams of growers, farm workers and other labourers, and they are responsible for maintaining equipment and supplies. The average annual salary of a crop manager is $85,380.",
+        "Crop managers oversee planting, fertilizing, irrigation, and harvesting schedules, coordinating teams of growers and workers. Their responsibilities include managing equipment and supplies, with an average annual salary of $85,380.",
       subtitle3: "Environmental Engineer",
       content3:
-        "Environmental engineers are involved in assessing and analysing soil and water drainage capabilities along with developing methods for the sustainability and efficiency of farms. The average annual salary of an environmental engineer is $96,820.",
+        "Environmental engineers analyze soil and water conditions and develop sustainable farm methods. The average salary for this role is $96,820 per year.",
       subtitle4: "Research Scientist",
-      content4:"Researchers in agriculture often work as food scientists who research and develop processes for manufacturing, packaging and storing food. They also assess the nutritional makeup of ingredients, research new sources of food and determine strategies for making foods healthier or more delicious. The average annual salary of a research scientist is $80,650.",
-      subtitle5: "Zoologists/Wildlife Biologists",
-      content5:"Zoologists and wildlife biologists study animals and other wildlife and how they interact with their ecosystems. They study the physical characteristics of animals, animal behaviours, and the impacts humans have on wildlife and their natural habitats. The average annual salary of a zoologist is $70,700.",
-      },
+      content4:
+        "Agriculture research scientists, often food scientists, develop processes for food production, packaging, and storage, assess nutrition, and explore new food sources. They earn about $80,650 per year.",
+      subtitle5: "Zoologist/Wildlife Biologist",
+      content5:
+        "Zoologists and wildlife biologists study animals and ecosystems, observing physical traits, behaviors, and human impacts. The average salary for a zoologist is $70,700.",
+    },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header with background image */}
       <div style={sectionStyle}>
-        <h1>Study Agriculture Science abroad</h1>
+        <h1>Study Agricultural Science Abroad</h1>
         <p>
-          Agriculture has formed the foundation of human civilisation since its
-          beginning and is one of the largest providers of employment. An
-          agriculture science degree provides an understanding of the
-          interaction between society and nature.
+          Agriculture has been the backbone of human civilization and a major employment source. 
         </p>
+        <p>A degree in agricultural science explores the balance between society and nature.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> Average annual salary of agricultural engineers in
-            the US
-          </p>
+          <p>Average annual salary for agricultural engineers in the US</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> Average annual salary of agricultural engineers in
-            the US
-          </p>
+          <p>Average annual salary for agricultural engineers in the US</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> Projected employment growth for animal, plant and
-            soil scientists this decade
-          </p>
+          <p>Projected growth for animal, plant, and soil scientists over the next decade</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> Total worth of global agricultural production
-            industry
-          </p>
+          <p>Total value of the global agriculture industry</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -184,30 +173,17 @@ const AgricultureScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

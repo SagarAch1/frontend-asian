@@ -303,7 +303,7 @@ function App() {
         <Route path="/qualitativeeconomics" element={<QualitativeEconomics />} />
         <Route path="/geriatricstudies" element={<GeriatricStudies />} />
         <Route path="/agricultureeducationservices" element={<AgricultureScience />} />
-        <Route path="/foodsciences" element={<FoodScience />} />
+        <Route path="/foodscience" element={<FoodScience />} />
         <Route path="/sportsscience" element={<SportsScience />} />
         <Route path="/creativewriting" element={<Creativewriting />} />
         <Route path="/businessenglish" element={<Bussinessenglish />} />

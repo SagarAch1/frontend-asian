@@ -5,11 +5,11 @@ import FormPage from "../Homepage/FormPage";
 const FoodScience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close
   };
 
-  const sectionStyle = {
+  const heroSectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
@@ -24,7 +24,7 @@ const FoodScience = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statisticsContainer = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -32,7 +32,7 @@ const FoodScience = () => {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
   };
 
-  const statItemStyle = {
+  const statisticCard = {
     width: "22%",
     textAlign: "center",
     fontSize: "16px",
@@ -48,16 +48,16 @@ const FoodScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Highlighted color for icons
     marginBottom: "10px",
   };
 
-  const faqSectionStyle = {
+  const faqContainer = {
     padding: "40px",
     backgroundColor: "#f1f1f1",
   };
 
-  const faqItemStyle = {
+  const faqCard = {
     backgroundColor: "white",
     marginBottom: "10px",
     padding: "15px",
@@ -66,7 +66,7 @@ const FoodScience = () => {
     boxShadow: "0 2px 6px rgba(0,0,0,0.1)",
   };
 
-  const faqTitleStyle = {
+  const faqHeaderStyle = {
     display: "flex",
     justifyContent: "space-between",
     fontSize: "18px",
@@ -80,7 +80,7 @@ const FoodScience = () => {
     color: "#666",
   };
 
-  const faqSubtitleStyle = {
+  const subtitleStyle = {
     fontWeight: "bold",
     marginTop: "10px",
     color: "#333",
@@ -90,117 +90,96 @@ const FoodScience = () => {
     {
       title: "About Food Science",
       content:
-        "Food science is a diverse field that combines a wide range of subjects including chemistry, microchemistry, nutrition, microbiology and engineering. It is a relatively new field of study that aims to provide a wholly transformed understanding of food nutrition, biochemistry, microbiology and engineering so companies can develop food products that last longer, are safe and more nutritious. If you are interested in learning how food production, processing, packaging, marketing and distribution work than food science may be a good option.",
+        "Food science is a multidisciplinary field combining chemistry, microbiology, and engineering to improve food quality and safety. The field explores food production, processing, and distribution.",
     },
     {
       title: "Is Food Science right for me?",
       content1:
-        "If you have an interest in the science behind food production, its relation to the human body and how it can help develop healthier and happier communities, then food science could be the perfect fit for you!",
-      content2:"Being a food scientist involves working in a lab, since the field is still relatively new and evolving, there are plenty of opportunities to make breakthroughs in the industry by delving into new and exciting research. On the other hand, plenty of fieldwork can be expected. It usually involves extensive travel across multiple sites to perform food testing in different regions.",
+        "If you're passionate about the science of food production and its impact on health, food science could be a great fit.",
+      content2:
+        "The role often involves lab work and research, with opportunities to make significant advancements. Fieldwork may also be involved, such as food testing in various locations.",
     },
     {
       title: "Food Science study options and costs",
       content1:
-        "Within Australia, colleges offer a wide range of programs in Food Science, including undergraduate degrees such as Food science and Microbiology, Food and Human Nutrition and Food Science.",
-        content2:"Within these programs, a wide range of modules are covered that range from nutrient analysis, agri-food supply chain, quality assurance to new food product development, food taste and food sustainability.",
-        content3:"Cost of studying food science courses varies depending on the country and institution. For example, the cost of Bachelors of Food Science in Australia ranges from AUD 100,000 to 140,000 annually. While the expense of studying a Bachelors degree in the US ranges from USD 120,00 to 150,00.",
-        },
+        "In Australia, Food Science programs range from undergraduate to postgraduate options, covering topics like nutrition, food safety, and quality assurance.",
+      content2:
+        "Programs include courses on nutrient analysis, food sustainability, and food chain management. In Australia, a Bachelor’s degree may cost AUD 100,000–140,000, while in the U.S., it ranges from USD 120,000–150,000.",
+    },
     {
       title: "Future outlook",
       content1:
-        "With the world population increasing day by day, a better understanding of food science is essential. As such, recent advancements in Food Science have allowed scientists to make progress in meeting the food demand of the global population.",
-        content2:"Further development in this field could pave the way for a reduction in diet related health conditions, improved quality of food, diversification of food items, better preservation techniques, and less food wastage.",
+        "With a growing population, advancements in food science are essential for sustainable food supply.",
+      content2:
+        "Future developments could reduce diet-related health issues, improve food quality, and reduce waste.",
     },
     {
       title: "Career pathways for Food Science graduates",
       subtitle1: "Food Technologist",
       content1:
-        "A food technologist is primarily responsible for ensuring food safety standards and refining the food development process. As a food technologist, you will be expected to modify existing products and processes, and develop new ones.",
+        "Food technologists work on improving food production processes, ensuring quality and safety.",
       subtitle2: "Food and Drug Inspector",
       content2:
-        "As a food and drug inspector, you will be responsible for sampling food, drugs and cosmetic items and ensure proper documentation of production and storage of all items involved in the production process.",
+        "Inspectors oversee food safety and documentation in food and drug production.",
       subtitle3: "Food Manufacturing Specialist",
       content3:
-        "A food manufacturing specialist is an exciting role for anyone interested in supply chain and food science. A food manufacturing specialist oversees the various processes involved with food production in order to ensure quality and nutritional standards are maintained.",
+        "Specialists manage food production, ensuring standards are met throughout the process.",
       subtitle4: "Food Safety Analyst",
-      content4:"A food safety analyst is responsible for the supervision and maintenance of safety standards in food. They conduct and implement all food safety checks to ensure the highest quality standards.",
+      content4:
+        "Safety analysts conduct checks to uphold high food safety standards.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
-        <h1>Study Food Science abroad</h1>
+      {/* Hero section with background image */}
+      <div style={heroSectionStyle}>
+        <h1>Study Food Science Abroad</h1>
         <p>
-          As global population continues to expand, scientists are constantly
-          innovating new ways to ensure ample availability of food resources to
-          cater to a growing demand. An education in food science equips you
-          with the knowledge to drive this change.
+          With population growth, food science is key to ensuring sufficient, safe food supplies.
         </p>
       </div>
 
       {/* Statistics section */}
-      <div style={statisticsSection}>
-        <div style={statItemStyle}>
+      <div style={statisticsContainer}>
+        <div style={statisticCard}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong>$73,450: average annual income of food scientists
-          </p>
+          <p>$73,450: average salary for food scientists</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statisticCard}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> 9% projected growth in employment rates
-          </p>
+          <p>9% projected job growth</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statisticCard}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> 2000+ students enrolled in food science courses in
-            Australia last year
-          </p>
+          <p>2000+ students enrolled in Australia last year</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statisticCard}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> The food market is expected to expand 8.3% by 2025
-          </p>
+          <p>Food market projected to grow by 8.3% by 2025</p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-      <div style={faqSectionStyle}>
+      <div style={faqContainer}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
-          <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+          <div key={index} style={faqCard}>
+            <div style={faqHeaderStyle} onClick={() => toggleFAQ(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={subtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={subtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={subtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={subtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
