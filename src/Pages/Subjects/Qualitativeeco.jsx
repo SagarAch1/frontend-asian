@@ -88,38 +88,39 @@ const QualitativeEconomics = () => {
 
   const faqItems = [
     {
-      title: "About Qualitative Economics",
+      title: "Overview of Qualitative Economics",
       content:
-        "Qualitative Economics is a type of economics through which data is collected using questionnaires, interviews, or observation, and frequently appears in narrative form. For example, it could be notes taken during a focus group on the quality of the food at a cafe, or responses from an open-ended questionnaire. The data may be in the form of descriptive words that can be examined for patterns or meaning, sometimes through the use of coding. This degree will prepare students in theories, methodologies, and methods of qualitative research. Graduates will be poised to be leaders in their respective fields and to share with others, through future scholarship, the efficacy of Qualitative Economics.",
+        "Qualitative Economics is a branch that involves collecting data through methods like surveys, interviews, or observations. This data often takes a descriptive form, such as notes from a group discussion about a café's quality or responses to open-ended surveys. By using coding or pattern analysis, this degree equips students with skills to interpret and conduct qualitative research, preparing them to lead in diverse fields and to contribute to future research on the effectiveness of qualitative methods in economics.",
     },
     {
-      title: "Is Qualitative Economics right for me?",
+      title: "Is Qualitative Economics suited to my interests?",
       content:
-        "Qualitative Economics uses subjective judgment to analyse a company's value or prospects based on non-quantifiable information, such as management expertise, industry cycles, strength of research and development, and labour relations. You will study economics with a qualitative research focus. If understanding how economic agents and economies work is interesting to you, then Qualitative Economics is the right choice for you.",
+        "Qualitative Economics relies on subjective assessments to evaluate a company's worth or potential, based on non-quantitative factors like leadership quality, market trends, innovation strengths, and employee relations. The program focuses on qualitative economic studies, ideal for those interested in understanding economic dynamics and agent interactions in real-world scenarios.",
     },
     {
-      title: "Study options and costs",
+      title: "Program pathways and expenses",
       content:
-        "Following a bachelor in economics, you can choose opt for a Master's degree in Qualitative Economics. This degree focuses on gaining a deep understanding of current economic theory along with economic analysis and modeling methods. It prepares graduates for a career path in economics, banking and finance. A master's in Qualitative Economics usually takes about two years to complete and the cost is around $15,400 per year in the US.",
+        "After earning a bachelor’s in economics, students may choose to pursue a master’s in Qualitative Economics. This program emphasizes economic theories and modeling techniques, preparing graduates for careers in finance, banking, and economics. Completing this master’s generally takes around two years, with an approximate annual cost of $15,400 in the U.S.",
     },
     {
-      title: "Future outlook",
+      title: "Career prospects",
       content:
-        "Qualitative Economics graduates are highly sought after in a variety of sectors as most large scale enterprises utilise economic analysis and quantitative data to forecast and plan for business. In fact, the employment growth for economists is 13% which is substantially faster than the average of all other occupations. ",
+        "Qualitative Economics graduates are in demand across multiple industries, as many large organizations rely on economic analysis and quantitative data for strategic planning. Employment for economists is expected to grow by 13%, which is significantly faster than the average for other careers.",
     },
     {
-      title: "Career pathways for Qualitative Economics",
-      subtitle1: "Economic Consultant",
+      title: "Career paths in Qualitative Economics",
+      subtitle1: "Economic Consultant",
       content1:
-        "Economic consultants use analytical and research skills to carry out studies regarding economic scenarios. They analyse industry trends to help organisations improve their performance. They might work for organisations in a variety of industries, including business, finance, healthcare, education, the government, and more. The average annual salary for an economic consultant is $76,487.",
+        "Economic consultants use analytical and research skills to conduct studies on economic scenarios. They analyze industry trends to assist organizations in improving performance across fields like business, finance, healthcare, education, and government. The average salary for an economic consultant is around $76,487 per year.",
       subtitle2: "Credit Analyst",
       content2:
-        "Credit analysts conduct analyses of prospective clients to assess the risks involved with loaning funds to those people or businesses. They take into account economic trends and factors impacting the region, industries, and competitors of prospective clients. Credit analysts earn an average annual salary of $73,650.",
+        "Credit analysts assess the risks involved with lending to individuals or businesses by analyzing economic trends and relevant regional or industry-specific factors. The average annual income for a credit analyst is $73,650.",
       subtitle3: "Business Reporter",
       content3:
-        "Business reporters research, write and broadcast stories about business leaders, companies, industry trends, economic developments, and financial markets. The capitalise on their unique insight into economics to write compelling and lucid articles. The average annual salary for business reporters is $61,862.",
+        "Business reporters investigate, write, and present stories about business leaders, companies, industry developments, and financial markets. They leverage their knowledge of economics to produce clear, engaging reports, with an average annual salary of $61,862.",
       subtitle4: "Research Analyst",
-      content4:"Research analysts tap knowledge of industry trends to assess how products or services might fare under various economic conditions. These analysts apply many of the skills that economics majors develop, such as the use of presentation software and graphical representation, as well as writing skills. The average annual salary of a research analyst is $63,790.",
+      content4:
+        "Research analysts apply industry knowledge to evaluate how various conditions impact products or services. They utilize presentation and writing skills, and the average salary for a research analyst is about $63,790 annually.",
     },
   ];
 
@@ -127,13 +128,11 @@ const QualitativeEconomics = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Qualitative Economics abroad</h1>
+        <h1>Study Qualitative Economics Abroad</h1>
         <p>
-          Qualitative Economics is a vibrant blend of the contemporary economics
-          and qualitative methods. The subject is designed to help students
-          analyse economic data in a quantitative manner, equipping them with a
-          unique skills to succeed in the job market.
+          Qualitative Economics combines contemporary economics and qualitative methods, enabling 
         </p>
+        <p>students to analyze data in a narrative form, preparing them with unique skills to excel in various careers.</p>
       </div>
 
       {/* Statistics section */}
@@ -141,33 +140,29 @@ const QualitativeEconomics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 13% projected employment growth of economists this
-            decade
+            <strong></strong> 13% job growth rate for economists expected this decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>$105,630: average yearly salary of an qualitative
-            economist
+            <strong></strong> $105,630: average annual earnings of a qualitative economist
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> The salary of top qualitative economists
+            <strong></strong> Top-tier salaries for qualitative economists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 16,000 job openings projected for economists this
-            decade
+            <strong></strong> 16,000 economist job openings projected this decade
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
