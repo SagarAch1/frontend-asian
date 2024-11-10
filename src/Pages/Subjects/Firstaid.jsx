@@ -5,12 +5,12 @@ import FormPage from "../Homepage/FormPage";
 const FirstAid = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleActiveIndex = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close state
   };
 
-  const sectionStyle = {
-    backgroundImage:    `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+  const headerStyle = {
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "400px",
@@ -24,7 +24,7 @@ const FirstAid = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statsContainer = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -32,7 +32,7 @@ const FirstAid = () => {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
   };
 
-  const statItemStyle = {
+  const statCard = {
     width: "22%",
     textAlign: "center",
     fontSize: "16px",
@@ -48,7 +48,7 @@ const FirstAid = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Green color for attraction
     marginBottom: "10px",
   };
 
@@ -80,8 +80,7 @@ const FirstAid = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
+  const faqSubtitleStyle = {
     fontWeight: 'bold',
     marginTop: '10px',
     color: '#333',
@@ -91,148 +90,114 @@ const faqSubtitleStyle = {
     {
       title: "About First Aid",
       content1:
-        "First Aid is the emergency care given immediately after an injury to an injured or sick person. The main goal of First Aid is to minimise the consequences of the injury and prevent further health complications. In some cases, First Aid can be crucial in saving a life. It could include placing an unconscious casualty in the recovery position, incident management, performing cardiopulmonary resuscitation (CPR), use of automated external defibrillators (AED), stopping the bleeding using pressure and elevation and, keeping a fractured limb still.",
-        content2:"First Aid education is mandatory for employees in many workplaces and organisations worldwide. The type of first aid equipment and training required depends on the number of employees, the types of hazards present in the workplace and, the travel distance to a hospital/availability of professional medical assistance.",
-        content3:"An education in First Aid allows you to become a certified first aid officer. Their primary responsibility is to provide immediate lifesaving care before the arrival of proper medical care. Some common course modules students can expect to study are Injury Assessment, Wounds and Bleeding, Introduction to Skeletal System, Introduction to Circulatory System, Head and Spinal Injuries, Medical Emergencies, Introduction to Respiratory System, Casualty Safety, and Limb Emergencies.",
-      
+        "First Aid involves immediate care given to an injured or sick person, aiming to reduce injury effects and avoid further complications. In critical cases, it can save lives by performing CPR, managing incidents, using AEDs, controlling bleeding, and immobilizing fractures.",
+      content2:
+        "Workplaces often mandate First Aid training for employees depending on hazards and the availability of medical assistance.",
+      content3:
+        "First Aid courses provide certifications that prepare individuals to deliver lifesaving care until medical professionals arrive. Key modules include Injury Assessment, Wound Care, Skeletal and Circulatory Systems, Spinal Injuries, CPR, and Limb Emergencies.",
     },
     {
       title: "Is First Aid right for me?",
       content:
-        "As the initial response to a medical emergency is provided by the first aid officer, he must have good analytical skills and should be able to assess the situation well in order to manage it. Staying calm and providing adequate assurance to the casualty is also a significant part of the role. As the first aid officer deals directly with the casualty, they ought to have good communication and leadership skills. If this sounds like you, then First Aid might be the right choice for you.",
+        "A First Aid officer must have excellent analytical, communication, and leadership skills, with the ability to stay calm and provide reassurance during emergencies. If you are calm under pressure and compassionate, this role might be suitable for you.",
     },
     {
       title: "Study options and costs",
       content1:
-        "There are multiple diploma courses in First Aid available that could be accessed throughout the world. These courses are divided into various modules and could be completed over any time period without any limit.",
-        content2:"In the US, First Aid certification is provided by American Red Cross and the classes could be taken online, in-person or combined. The training is a few hours long and provides a 2-year certification to the learners.",
-        content3:"If you plan to consider certification to become a first aid trainer in Australia, first and foremost, you will need to have an entry-level teaching qualification. Trainers and assessors will be required to hold a TAE40116 Certificate IV in Training and Assessment, or an ASQA recognised equivalent qualification. It is commonly known as the “Train the Trainer” qualification, “Cert IV TAE”, or “Cert IV Training”.",
-        content4:"After obtaining teaching qualifications that prove your competence as a trainer, the next step is to match your qualifications with relevant experience. You can hold other vocational qualifications and become an eligible trainer for the following courses: Basic Life Support Training (BLS), CPR, First Aid, Emergency Response in Education Care Setting.",
-        content5:"The cost of first aid courses, diplomas and programmes, though relatively affordable compared to other fields, varies from country to country, so it’s best to check with the relevant institutes you are interested in applying at.",
+        "Diploma courses in First Aid are available globally and can be completed in flexible timeframes. Training is available online or in-person, often through institutions like the American Red Cross in the US, offering a two-year certification.",
+      content2:
+        "In Australia, to become a First Aid trainer, you must hold a TAE40116 Certificate IV in Training and Assessment or an equivalent qualification. These credentials allow you to teach basic life support, CPR, and other emergency courses.",
+      content3:
+        "The costs for First Aid training vary by country, but they are generally affordable compared to other fields. Always check with local institutions for specific fees.",
     },
     {
       title: "Future outlook",
       content1:
-        "The training industry opens thousands of opportunities for you to work in both the public and private sectors. First Aid is always in demand, which means the demand for First Aid-certified professionals will be omnipresent, and there will always be demand for First Aid trainers.",
-        content2:"It is estimated that the professional field of First Aid is expected to grow by 11% by 2028 in the US. This illustrates that the outlook of this professional field is promising.",
-      
+        "First Aid professionals will always be in demand across both public and private sectors. The field is expected to grow by 11% in the US by 2028, ensuring a promising future for certified professionals.",
     },
     {
-        title: 'Career pathways for First Aid graduates',
-        subtitle1: 'First Aid Trainer',
-        content1: 'As a First Aid trainer, you are expected to deliver a high-quality First Aid training programme, ensure that lesson plans are followed in all training courses and, that all student assessment procedures are thoroughly prepared, and that students are aware of assessment requirements beforehand.',
-        subtitle2: 'Firefighters',
-        content2: 'Firefighters are often the first to arrive at an emergency scene. In addition to dealing with structure fires, firefighters are often called in to rescue people from car accidents and other tragedies where there may be multiple victims.',
-        subtitle3: 'Flight Attendants',
-        content3: 'Human services professionals help disabled clients find helpful community service. They also help to find emotional and financial support for the disabled as well as their families. The focus of this career is usually to help those with disabilities to be able to live independently. Human service workers might be tasked with directing disabled people to organisations that provide help, and they may also help employers who are interested in hiring disabled individuals to design a workplace where they can thrive. Their salaries can range from the low $30,000 range to over $42,000.At thirty-three-thousand feet, flight attendants must be prepared to deal with whatever comes their way – including cardiac arrest. Having a medical professional on hand is never a guarantee, so flight attendants are required to know CPR, First Aid and how to operate the on-board AED unit.',
-        subtitle4: 'Construction Workers',
-        content4: 'Construction workers haul heavy materials, work with powerful tools and labour in all types of weather. In this high-risk work environment, life-saving skills are an essential requirement.',
-        subtitle5:"Lifeguards",
-        content5:"Cardiac arrest and drowning are just two of the life-threatening emergencies a lifeguard may encounter. CPR is an essential skill for lifeguards whether they work at a pool, lake, or beach.",
-      
+      title: 'Career pathways for First Aid graduates',
+      subtitle1: 'First Aid Trainer',
+      content1: 'As a trainer, you will lead First Aid courses, ensure lesson plans are followed, and assess students according to set criteria.',
+      subtitle2: 'Firefighters',
+      content2: 'Firefighters often respond first to emergencies, providing crucial care before medical teams arrive.',
+      subtitle3: 'Flight Attendants',
+      content3: 'Flight attendants must know CPR and First Aid to handle in-flight emergencies, ensuring passenger safety.',
+      subtitle4: 'Construction Workers',
+      content4: 'In construction, workers must be trained in First Aid due to the high-risk nature of the job.',
+      subtitle5: 'Lifeguards',
+      content5: 'Lifeguards must be prepared for emergencies like drowning or cardiac arrest, making CPR and First Aid essential skills.',
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
-      <div style={sectionStyle}>
-        <h1>Study First Aid abroad       </h1>
+      <div style={headerStyle}>
+        <h1>Study First Aid Abroad</h1>
         <p>
-        First Aid is the immediate care provided after an injury to a patient until further medical treatment is available. This field of study equips you with the critical skills needed to effectively respond to and manage emergency situations
-
-
-
-
-
-
-      </p>
+          First Aid is the immediate medical assistance provided after an injury, offering
+        </p>
+        <p> critical skills to handle emergency situations until professional help arrives.</p>
       </div>
 
-      {/* Statistics section */}
-      <div style={statisticsSection}>
-        <div style={statItemStyle}>
+      <div style={statsContainer}>
+        <div style={statCard}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 11% employment growth of first aid providers by 2028
-
-
-
-
-
-
+            <strong>11%</strong> projected growth in First Aid employment by 2028.
           </p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statCard}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong>155,000 expected job openings in first aid field by 2028
+            <strong>155,000</strong> new job openings in First Aid by 2028.
           </p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statCard}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Average annual income of a first aid instructor
+            <strong>First Aid Instructor</strong> average annual salary details.
           </p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statCard}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>£36,930 average annual salary of a paramedic
+            <strong>£36,930</strong> average salary for a paramedic.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => toggleActiveIndex(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.content5 && <p>{item.content5}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.subtitle5 && (
-            <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-          )}
-           {item.content5 && <p>{item.content5}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
 
-export default FirstAid;
+export default FirstAid;

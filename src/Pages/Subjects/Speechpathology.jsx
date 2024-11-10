@@ -5,8 +5,8 @@ import FormPage from "../Homepage/FormPage";
 const SpeechPathology = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleContent = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle content visibility
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const SpeechPathology = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color change
     marginBottom: "10px",
   };
 
@@ -80,8 +80,7 @@ const SpeechPathology = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
+  const faqSubtitleStyle = {
     fontWeight: 'bold',
     marginTop: '10px',
     color: '#333',
@@ -91,144 +90,133 @@ const faqSubtitleStyle = {
     {
       title: "About Speech Pathology",
       content1:
-        "Speech pathology is an allied health profession that is concerned with the evaluation, assessment, diagnosis and prevention of speech, language, social communication, cognitive communication and swallowing disorders in children as well as in adults. It deals with issues like stuttering, lisping or dysphagia.",
-        content2:"Speech pathology is a rewarding career, both in terms of the financial aspect and community bonding. The work you do as a speech pathologist leaves a positive mark on the lives of the people you work with. Speech pathologists do not only work with people who are suffering from speech disorders but also work with people who aspire to improve their communication skills. Common course modules you can expect to study are anatomy and physiology of speech, linguistics and phonetics, acquired language disorders, clinical practice, speech pathology research and multiple speech pathology practicums.",
-        content3:"Speech pathologists work in different environments depending on their various job roles. It could be research, educational and/or health care facility. Often speech pathologists work as a part of collaborative team which includes physicians, teachers, mental health specialists and audiologists.",
-      
+        "Speech pathology is a healthcare profession focused on evaluating, diagnosing, and treating speech, language, cognitive communication, and swallowing disorders in both children and adults. This includes conditions like stuttering, speech difficulties, and dysphagia.",
+      content2:
+        "This field offers a rewarding career not only in financial terms but also in terms of positively impacting lives. Speech pathologists assist individuals with speech disorders and also those looking to improve their communication abilities. You will study subjects like anatomy, linguistics, acquired language disorders, clinical practice, and engage in speech pathology research.",
+      content3:
+        "Speech pathologists can work in diverse settings, including research, education, and healthcare. They often collaborate with other professionals, such as physicians, teachers, mental health experts, and audiologists.",
     },
     {
       title: "Is Speech Pathology right for me?",
       content1:
-        "If you believe yourself to be empathetic and possess good communication skills, you may find speech pathology a rewarding field. A speech pathologist is driven by curiosity and is a strong adherent of ethics. As speech pathologists have to work with people of varying ages, all of them, with unique problems, they must be adaptable and compassionate.",
-        content2:"Often the client will not be able to express himself completely due to their speech impediment. It is, then, the responsibility of the speech pathologist to deal with them patiently, listen carefully and display compassion. Every patient will come with their distinct set of speech complications; therefore, a speech pathologist must be flexible in his approach towards different clients.",
-        content3:"Speech pathology requires a lot of verbal communication so one should have outstanding interpersonal skills to become a speech pathologist. It also requires dealing with clients on one-on-one basis to provide appropriate therapy and exercise for their speech problem. Extroverted people who enjoy interactive jobs tend to feel most at home in this field.",
+        "If you have a strong sense of empathy and excellent communication skills, you might find speech pathology to be a fulfilling career. This profession requires curiosity and ethical standards. As speech pathologists work with people of all ages facing unique challenges, adaptability and compassion are essential.",
+      content2:
+        "Clients may struggle to express themselves fully due to their speech impairments. It is the speech pathologist's role to be patient, listen carefully, and show empathy. Every patient has their own set of challenges, so flexibility is required in their approach.",
+      content3:
+        "This field demands excellent interpersonal communication. As a speech pathologist, you will work closely with clients one-on-one to provide personalized therapy. Extroverted individuals who enjoy interactive roles tend to thrive in this career.",
     },
     {
       title: "Study options and costs",
       content1:
-        "If you plan on becoming a speech pathologist, the first step is to complete bachelors in Speech Pathology or in a related field. A bachelor’s degree usually take 3 to 4 years to complete and costs around $30,000 per year for international students in the US.",
-        content2:"After earning your undergraduate degree, you can apply for a master’s programme in Speech Pathology. The master’s programme paves the way for securing good jobs in this field. It takes 2 to complete and costs around $23,000-$75,000 per year in the US depending on the institute.",
-        content3:"If you wish to earn a doctoral degree, you can pursue a PhD in Speech Pathology which usually takes 4 to 6 years. You need to complete a clinical fellowship of a minimum of 1260 hours, after completing your graduate programme in order to obtain state licensure.",
-      
+        "To pursue a career in speech pathology, the first step is obtaining a bachelor's degree in Speech Pathology or a related field. Typically, a bachelor's degree takes 3 to 4 years and costs approximately $30,000 per year for international students in the US.",
+      content2:
+        "After completing your undergraduate degree, you can enroll in a master's program in Speech Pathology, which typically takes 2 years to complete. The cost for the master's program ranges from $23,000 to $75,000 per year in the US, depending on the institution.",
+      content3:
+        "For those wishing to further their expertise, pursuing a PhD in Speech Pathology is an option. The PhD program takes 4 to 6 years to complete and includes a clinical fellowship of at least 1,260 hours. This is necessary to obtain state licensure.",
     },
     {
       title: "Future outlook",
       content1:
-        "Speech Pathology is a promising career with demand on the rise. Many healthcare and rehabilitation facilities hire speech pathologists to work with patients experience speech disorders. A large number of speech pathologists work in schools as counsellors. Some Speech pathologists might specialise in children speech pathologies and find occupation in primary education institutes.",
-        content2:"According to U.S. Bureau of Labor Statistics, the employment rate of speech pathologists is expected to grow by 29% by year 2030. It is a much faster growth rate compared to the average of all other occupations. Around 15,200 job openings are projected each year for speech pathologists!",
-        content3:"Speech pathology is one of the most secure and rewarding career fields due to its high demand, financial benefits, and flexibility in work.",
-      
+        "Speech Pathology is a growing field with increasing demand. Many healthcare and rehabilitation facilities hire speech pathologists to help patients with speech disorders. A significant number also work in schools as counselors. Some specialize in pediatric speech pathologies and work in primary education settings.",
+      content2:
+        "According to the U.S. Bureau of Labor Statistics, employment in speech pathology is expected to grow by 29% by 2030, much faster than the average growth rate across all professions. There will be approximately 15,200 job openings each year for speech pathologists.",
+      content3:
+        "Speech Pathology is one of the most secure and rewarding career paths due to its high demand, excellent salary prospects, and flexible work environment.",
     },
     {
-        title: 'Career pathways  for Speech Pathology graduates',
-        subtitle1: 'Voice Coach',
-        content1: 'Many speech pathologists who do not wish to work in a clinical setting opt to become voice coaches. As a voice coach, it is your job to train different actors, singers, executives and other clients to reduce their accents, adapt new dialects and prevent voice injuries by using their voice properly.',
-        subtitle2: 'Temporary Speech Language Pathologist',
-        content2: 'Temporary speech language pathologists take on temporary assignments in a variety of clinical and domestic settings locally and internationally. In order to secure a travelling position, you must have experience working in a clinical setting.',
-        subtitle3: 'Researcher or Professor ',
-        content3: 'Speech language pathologists can choose to become professors once they have secured sufficient experience. Speech Pathology professors train other prospective speech pathologists and conduct new research. A doctoral degree is a typical requirement for most teaching positions in Speech Pathology.',
-      
-      
+      title: 'Career paths for Speech Pathology graduates',
+      subtitle1: 'Voice Coach',
+      content1:
+        'Some speech pathologists choose to work as voice coaches, helping clients such as actors, singers, and executives improve their vocal techniques, reduce accents, and prevent voice strain.',
+      subtitle2: 'Temporary Speech Language Pathologist',
+      content2:
+        'Temporary speech language pathologists take on short-term assignments in various clinical and non-clinical settings, both locally and internationally. Experience in a clinical setting is required for these roles.',
+      subtitle3: 'Researcher or Professor',
+      content3:
+        'Experienced speech pathologists can transition into academic roles, either as professors or researchers. Teaching future speech pathologists and conducting research are typical roles in academia. A doctoral degree is generally required for most faculty positions.',
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Main Section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Speech Pathology abroad       </h1>
+        <h1>Study Speech Pathology Abroad</h1>
         <p>
-        Many people suffer from speech and language difficulties. This is where a speech pathologist steps in and helps. Speech pathology deals with the scientific study and treatment of disorders, defects and problems of speech, language and communication.
-
-
-
-
-
-      </p>
+          Speech pathologists help individuals overcome speech and language difficulties. 
+        </p>
+        <p>The field focuses on diagnosing and treating issues related to communication, </p>
+        <p>swallowing, and speech, aiming to improve the lives of those affected.</p>
       </div>
 
-      {/* Statistics section */}
+      {/* Statistics Section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
             <strong></strong> $79,060: median annual salary of speech pathologists
-
-
-
-
-
-
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong>29% projected growth in employment opportunities
+            <strong></strong> 29% projected job growth in the field
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>$125,560: average annual salary of top speech pathologists
+            <strong></strong> $125,560: average salary of top speech pathologists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>15,200 projected career and job openings every year
+            <strong></strong> 15,200 job openings expected annually
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      {/* FAQ Section */}
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => toggleContent(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
+                {item.content5 && <p>{item.content5}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.subtitle5 && (
-            <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-          )}
-           {item.content5 && <p>{item.content5}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
