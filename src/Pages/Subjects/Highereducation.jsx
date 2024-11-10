@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const  HigherEducation = () => {
+const HigherEducation = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
@@ -10,7 +10,7 @@ const  HigherEducation = () => {
   };
 
   const sectionStyle = {
-    backgroundImage:    `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "400px",
@@ -80,55 +80,52 @@ const  HigherEducation = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Higher Education",
       content1:
-        "A degree in Higher Education provides broad knowledge about education theory and pedagogical best practices. This degree will prepare you for positions in higher education administration, policymaking, and research. You'll get to work alongside, and learn from, an intellectually stimulating community of students, professors, and alumni. Depending on whether you choose to do a bachelor's or master’s, your career options will vary. Some people opt for a degree in Higher Education to become great teachers!",
-        content2:"Some common course modules that you will likely come across during this degree programme will be Education Policy, Educational Leadership, Analysis, Human Development, and Education, Adolescent Psychology, Learning Design, and Curriculum Design.",
-      
+        "A degree in Higher Education offers a deep understanding of educational theories and effective teaching practices. This qualification prepares individuals for roles in higher education management, policy development, and research. You'll collaborate with an inspiring community of students, professors, and alumni. Depending on whether you pursue a bachelor's or master's, your career prospects will differ. Some individuals pursue a Higher Education degree to become educators themselves!",
+      content2:
+        "Throughout this program, you will engage in courses such as Education Policy, Educational Leadership, Human Development in Education, Adolescent Psychology, Learning Design, and Curriculum Design.",
     },
     {
       title: "Is Higher Education right for me?",
       content1:
-        "If you are passionate about ensuring the success of higher education and improving student learning, then the answer to this field of study is “yes”. For example, a Bachelor of Science in Higher Education offers several advantages. If you decide to become a teacher, you will benefit from a flexible schedule and a secure job. If you choose to become an administrator, lucrative pay packages and job growth are just some of its pros.",
-        content2:"If you believe in the transformative power of education and want to see better learning in higher education institutes, then this field provides you with the necessary tools and paraphernalia needed to execute your vision.",
-      
+        "Are you passionate about enhancing the quality of higher education and fostering student success? If so, this field may be a perfect fit for you. A Bachelor of Science in Higher Education offers numerous benefits, including flexible schedules and job security for those opting to teach. Administrators enjoy lucrative compensation and robust job growth.",
+      content2:
+        "If you believe in the power of education to transform lives and want to influence the quality of education in higher institutions, this field will equip you with the skills to realize your goals.",
     },
     {
       title: "Study options and costs",
       content1:
-        "You have the option to either go for a bachelor’s or a master’s in Higher Education after you have completed your secondary education. Many individuals get a Bachelor of Science degree in Higher Education as an undergraduate degree. There are normally particular coursework requirements for this degree. Students can pursue a specific subject relating to their future job ambitions, such as Higher Education, after completing these courses. A bachelor’s degree will take on average 4 years to complete whereas different options for masters are available depending on the university you choose. There are some universities that offer a one-year master’s in Higher Education with different specialisation programmes to choose from.",
-        content2:"A master's degree in Higher Education blends perspectives on classroom management and education with specialised coursework. Individuals participating in the programme have the freedom to delve into their areas of interest within the larger field of higher education.",
-        content3:"On average a master’s programme will cost you around $20,000to $25,000. In the US, the average yearly tuition and fees for a four-year bachelor's degree is $30,000 for international students. The cost of your master’s in Higher Education will vary depending on the specialisation you opted for.",
-
-
-
-
+        "After completing your secondary education, you can choose to pursue either a bachelor’s or a master’s degree in Higher Education. Many students pursue a Bachelor of Science in Higher Education, which comes with specific coursework requirements. After completing these, you can focus on a subject related to your career aspirations, such as Higher Education itself. Typically, a bachelor’s degree takes around 4 years to complete. Some universities offer a one-year master's program with various specializations in Higher Education.",
+      content2:
+        "A master's degree in Higher Education combines practical teaching techniques with advanced coursework. This allows students to explore specific areas within the broader field of higher education.",
+      content3:
+        "On average, the cost of a master’s program ranges from $20,000 to $25,000. In the United States, international students typically pay around $30,000 annually for a four-year bachelor’s degree. The cost of a master's degree in Higher Education varies based on the specialization chosen.",
     },
     {
       title: "Future outlook",
       content:
-        "Increased student enrolment in colleges and universities is predicted to drive growth. Furthermore, people will continue to pursue higher education in order to achieve their employment objectives. According to studies, master's degree holders earn more, and the Department of Education projects that, by 2020, two-thirds of employment vacancies will require post-secondary education or training. In fact, the US Bureau of Labor Statistics states that post-secondary education administrator jobs are expected to rise by 10%, faster than the average for all other occupations.",
-      
+        "The demand for higher education professionals is expected to rise due to increasing student enrollments in colleges and universities. More individuals are pursuing higher education to enhance their career prospects. Studies show that individuals with a master’s degree earn higher salaries, and the Department of Education forecasts that by 2020, two-thirds of job openings will require postsecondary education. According to the US Bureau of Labor Statistics, positions for postsecondary education administrators are expected to grow by 10%, faster than the average for most other jobs.",
     },
     {
-        title: 'Career Pathways for Higher Education graduates',
-        subtitle1: 'Dean',
-        content1: 'Deans are academic leaders who oversee a schools academic programmatic administrative and financial operations Deans oversee recruiting admissions and academic advancement as well as maintain a high quality of education and monitor academic integrity They are responsible for academic leadership with the faculty, faculty strategic decision making, to represent the faculty in important college fora, and to incorporate the facultys interests into the broader college plan.',
-        subtitle2: 'Higher Education Administrator',
-        content2: 'Administrators in Higher Education are in charge of college or university departments, teachers, staff, programmes of study, curriculum, finances, and buildings. They assist instructional personnel and ensure that universities function efficiently by managing administrative and financial responsibilities and initiatives.',
-        subtitle3: 'Training and Development Manager ',
-        content3: 'A training and development manager is in charge of increasing the productivity of a companys personnel, such as faculty, higher education authorities, and administrative staff. This job evaluates developmental requirements in order to drive training efforts for staff. They help provide a platform and a framework for the development of technical and behavioural skills in human resources at higher education institutes.',
-      
-      
+      title: "Career Pathways for Higher Education graduates",
+      subtitle1: "Dean",
+      content1:
+        "Deans are academic leaders responsible for overseeing all aspects of a school's academic, administrative, and financial operations. They manage recruitment, admissions, and academic development, ensuring high-quality education and academic integrity. Deans play a key role in strategic decisions, representing faculty interests in broader institutional planning.",
+      subtitle2: "Higher Education Administrator",
+      content2:
+        "Higher Education Administrators manage various aspects of university departments, staff, programs, and curriculum. They provide support to faculty and ensure the smooth functioning of the institution by overseeing financial and administrative matters.",
+      subtitle3: "Training and Development Manager",
+      content3:
+        "A Training and Development Manager is responsible for improving the productivity of an institution's staff, including faculty and administrative personnel. This role involves evaluating staff development needs and implementing training programs to enhance technical and behavioral skills.",
     },
   ];
 
@@ -136,13 +133,12 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Higher Education abroad      </h1>
+        <h1>Study Higher Education Abroad</h1>
         <p>
-        A degree programme in Higher Education prepares educators who can lead colleges as well as non-profit organisations and government agencies that affect national higher education policy, or you can opt to become an educator. The options are endless! 
-
-
-
-      </p>
+          A Higher Education degree prepares individuals to lead academic institutions or work 
+        </p>
+        <p>in non-profit organizations and government bodies shaping national education policies.</p>
+        <p> Alternatively, you can choose to become an educator. The possibilities are endless!</p>
       </div>
 
       {/* Statistics section */}
@@ -150,85 +146,69 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>14,500 projected openings for postsecondary education administrators each year
-
-
-
-
-
-
-
+            <strong></strong>14,500 projected openings for postsecondary education administrators annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong>Average annual salary of a chief academic officer in the US
-
+            <strong></strong>Average salary for a chief academic officer in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>10% projected employment growth for postsecondary education administrators from 2016-2026
+            <strong></strong>10% projected growth in postsecondary education administrator jobs from 2016-2026
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>Two-thirds of job openings will require postsecondary education or training in the next decade
+            <strong></strong>Two-thirds of job openings in the coming decade will require postsecondary education or training
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
+                {item.content5 && <p>{item.content5}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.subtitle5 && (
-            <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-          )}
-           {item.content5 && <p>{item.content5}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };

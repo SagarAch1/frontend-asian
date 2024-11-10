@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const  Counselling = () => {
+const Counselling = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle between opening and closing the FAQ
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const  Counselling = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Adjusted color for better appeal
     marginBottom: "10px",
   };
 
@@ -80,62 +80,63 @@ const  Counselling = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Counselling",
       content1:
-        "Counselling is a psychological specialty that allows people to discuss their problems with trained professionals in a safe and non-judgmental ambiance. The exact meaning of Counselling might vary but broadly it is the process of communication between a client and a counsellor with the intent to help the client overcome challenges or explore their thoughts comprehensively. These challenges can range from career planning, and relationship problems to stress, and health issues.",
-        content2:"Counselling programmes are aimed at providing students with a comprehensive understanding of theoretical and experimental understanding of practical Counselling. During their studies, students will develop skills needed to explore and secure a profession in the contemporary Counselling services landscape. Their vocational training prepares them to become a certified counsellor, though some graduates might choose to pursue post-graduate education.",
-        content3:"A Counselling degree has a strong practical focus and you can expect a healthy dose of practicums year-round. Once a strong theoretical foundation is set, students may also spend a decent amount of time in clinical sessions under supervision. Some universities require students to complete placements as part of their programme",
-        content4:"Areas of expertise you might encounter during your degree in counselling include group therapy, addiction, high intensity therapy, eating disorders, bereavement, mental health, homelessness, family therapy, adoption, decision counselling, trauma therapy, post-offending therapy, or even counselling associated with specific industries.",
-      
+        "Counselling is a professional field where individuals can seek help from trained professionals in a secure and impartial environment. Though its definition can vary, the central idea of Counselling is communication between a client and a counsellor aimed at assisting the client to overcome challenges or gain insight into their thoughts. These challenges may include career planning, personal relationships, stress, and mental health issues.",
+      content2:
+        "Counselling programs provide students with both theoretical knowledge and practical skills in the field. Students will acquire essential skills to explore career opportunities in Counselling services. Upon completing their training, students can become certified counsellors, though some may opt for postgraduate studies.",
+      content3:
+        "A Counselling degree emphasizes practical experience, with students expected to engage in practical training and clinical sessions under supervision. Some universities also require placements as part of the curriculum.",
+      content4:
+        "Areas of specialization within Counselling include group therapy, addiction therapy, high-intensity therapy, eating disorders, grief counselling, mental health issues, homelessness, family therapy, adoption, decision-making therapy, trauma recovery, post-offending therapy, and even specialized counselling services in certain industries.",
     },
     {
       title: "Is Counselling right for me?",
       content:
-        "A Counselling programme is designed to be intellectually immersive as it is an explorative experience of the human psyche. You’ll learn about the development of humans – from infant development, to tumultuous adolescence, the coming of adulthood – culminating in the experience of older age, illness. The degree gives you the opportunity to learn interpersonal competencies, including communication, self-reflection, negotiation, interpersonal skills and conflict resolution skills. These skills will not only make you more socially-skilled but also boost your employment opportunities in a wide array of sectors. Students who tend to do best in Counselling are empathetic individuals with a strong desire to help others. If this sounds like you, then you are well-suited to this field of study.",
-      
+        "A Counselling program is intellectually stimulating, exploring human psychological development from infancy to adulthood, including the challenges of aging and illness. The degree helps develop interpersonal skills such as communication, self-reflection, conflict resolution, and negotiation. These competencies enhance social interactions and increase employment opportunities across many fields. Ideal candidates for this program are empathetic individuals who have a strong desire to help others. If this describes you, Counselling might be the right path for your studies.",
     },
     {
       title: "Study options and costs",
-      content1:
-        "Students with a post-secondary education can enrol in a Counselling programme.",
-        content2:"A diploma in Counselling can be earned in less than two years of full-time schooling. This educational programme qualifies individuals to work in Counselling professions, allied healthcare specialties and client support fields. Some of the courses offered are Human Development, Learning Disabilities, Professional Ethics, Interpersonal Communication, and Mental Health. These subjects are taught to provide graduates with a wide breadth of knowledge that will help prepare them for the challenges they may face while working in the healthcare industry. By earning a diploma in Counselling, graduates develop strong communication, organisation, and critical-thinking skills. The cost of receiving a diploma in Counselling is around $18,600 in the US.",
-        content3:"A bachelor’s of Counselling will provide students with a solid foundation of human behaviour and counselling methodology. Students will develop the skills necessary to effectively provide counselling services. Some course modules include Child Development, Ethics, Psychotherapy, and Group Dynamics. Graduates with a bachelor’s in Counselling often go on to work in schools, career counselling firms, research, mental health and well-being organisations, or pursue postgraduate education. This programme is three to four years in duration and students can expect to pay around $48,000 in total tuition.",
-
-
-
-
+      content1: "Individuals with post-secondary education can enroll in Counselling programs.",
+      content2:
+        "A Counselling diploma can typically be completed in less than two years of full-time study. This qualification prepares individuals for work in Counselling and allied healthcare sectors. Some of the courses in this program include Human Development, Learning Disabilities, Professional Ethics, Interpersonal Communication, and Mental Health. The diploma equips students with essential skills such as communication, organization, and critical thinking. The average cost for a Counselling diploma is around $18,600 in the United States.",
+      content3:
+        "A Bachelor's degree in Counselling offers a thorough foundation in human behavior and counselling methods. Students will develop the skills needed to effectively provide counselling services. Course modules may include Child Development, Ethics, Psychotherapy, and Group Dynamics. Graduates typically find employment in schools, career counselling firms, research, or mental health organizations, or they may pursue further postgraduate education. A bachelor's degree typically takes 3 to 4 years to complete and costs around $48,000 in total tuition.",
     },
     {
       title: "Future outlook",
       content1:
-        "Counsellors have, and will continue to experience, an ongoing career development as technology advances. With the right knowledge and qualifications, the Counselling profession will continue to be indispensable for the healthcare industry.",
-        content2:"Due to increased awareness, technology advancements and general education about the importance of mental healthcare, the Counselling industry is booming.",
-        content3:"Working as a counsellor is a strong career choice if you want to earn a stable yet flexible living. Both full time and part-time opportunities are in abundance, with the current workforce split down the middle. The average annual salary of a counsellor sits at approximately $73,847. Not to mention employment for counsellors is expected to grow rapidly — about 38,000 counsellors are predicted to be employed by 2025.",
-      
+        "Counselling as a profession continues to grow as technology advances. With the proper qualifications and knowledge, Counselling professionals will remain integral to healthcare systems.",
+      content2:
+        "The Counselling industry is expanding rapidly due to increased awareness, advancements in technology, and greater focus on mental health.",
+      content3:
+        "Becoming a counsellor offers both stability and flexibility. The demand for counsellors is high, with full-time and part-time opportunities readily available. The average annual salary for a counsellor is approximately $73,847. Employment in the field is projected to grow significantly, with an estimated 38,000 new counsellor jobs expected by 2025.",
     },
     {
-        title: 'Career Pathways for Counselling graduates',
-        subtitle1: 'Mental Health Counsellors',
-        content1: 'Mental health counsellors provide therapeutic support to clients facing mental, emotional or behavioural health issues, such as anxiety, depression, stress, and low self-esteem. Their average annual salary is $44,938 per year.',
-        subtitle2: 'School Counsellors',
-        content2: 'Professional school counsellors provide services to students to support their academic, personal, and social development while working with teachers, administrators, and parents. Their average annual salary is $58,120.',
-        subtitle3: 'Career Counsellors',
-        content3: 'Career counsellors help individuals understand themselves and their needs to make solid occupational, education, and life decisions. Their average annual salary is $45,656.',
-        subtitle4:'Child Counsellors',
-        content4:'Child and adolescent counsellors help children and teens with physical, emotional, or mental roadblocks that impede healthy development. Their average annual salary is $187,200.',
-        subtitle5:'Rehabilitation Counsellors',
-        content5:'Rehabilitation counsellors assist individuals with physical, mental, developmental, or emotional disabilities in leading fulfilling and successful independent lives. Their annual average salary is $37,530.',
-      
-      
+      title: "Career Pathways for Counselling graduates",
+      subtitle1: "Mental Health Counsellors",
+      content1:
+        "Mental health counsellors help individuals struggling with mental, emotional, or behavioral health issues, such as anxiety, depression, and stress. The average annual salary for this role is $44,938.",
+      subtitle2: "School Counsellors",
+      content2:
+        "School counsellors assist students with their academic, personal, and social development while collaborating with teachers, administrators, and parents. Their average annual salary is $58,120.",
+      subtitle3: "Career Counsellors",
+      content3:
+        "Career counsellors help individuals make informed decisions about their career paths, education, and personal goals. The average annual salary for career counsellors is $45,656.",
+      subtitle4: "Child Counsellors",
+      content4:
+        "Child and adolescent counsellors support children and teens with emotional, behavioral, or mental obstacles. Their average annual salary is $187,200.",
+      subtitle5: "Rehabilitation Counsellors",
+      content5:
+        "Rehabilitation counsellors assist individuals with physical, mental, or developmental disabilities to live independent and successful lives. The average annual salary for rehabilitation counsellors is $37,530.",
     },
   ];
 
@@ -143,10 +144,12 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Counselling abroad      </h1>
+        <h1>Study Counselling Abroad</h1>
         <p>
-        Counselling is the field of study concerned with helping people overcome emotional and professional challenges in their lives. A Counselling programme fosters strong critical thinking skills and in-depth understanding of Counselling theories and concepts.
-      </p>
+          Counselling is a field dedicated to assisting individuals in overcoming emotional and professional 
+        </p>
+        <p>obstacles. A Counselling program equips students with critical thinking abilities and a deep </p>
+        <p>understanding of counselling theories and practices.</p>
       </div>
 
       {/* Statistics section */}
@@ -154,22 +157,13 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>1,300 job openings projected for Counsellors each year
-
-
-
-
-
-
+            <strong></strong>1,300 job openings for counsellors each year
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong>Average annual salary of counsellors
-
+            <strong></strong>Average annual salary of a counsellor
           </p>
         </div>
         <div style={statItemStyle}>
@@ -181,59 +175,43 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>$83,503 is the average annual salary of top counsellors
+            <strong></strong>Top counsellors have an average annual salary of $83,503
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.content5 && <p>{item.content5}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.subtitle5 && (
-            <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-          )}
-           {item.content5 && <p>{item.content5}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
 
-export default Counselling;
+export default Counselling;
