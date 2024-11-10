@@ -48,7 +48,7 @@ const Astrophysics = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -88,43 +88,46 @@ const Astrophysics = () => {
 
   const faqItems = [
     {
-      title: "About Physical science",
+      title: "About Astrophysics",
       content:
-        "Physical science is the study of non-living materials that are found in the natural environment and their qualities. The study of matter and energy is referred to as physical science. It comprises chemistry, which is concerned with matter, and physics, which is concerned with energy. Its advancements allow us to achieve extraordinary feats like flight and space travel. ",
+        "Astrophysics is a branch of astronomy focusing on celestial positions, motions, and unique characteristics. The study involves theories and explorations of space, enriching our understanding of gravity, black holes, nebulae, stars, galaxies, and the origin and structure of the universe and solar system. Degrees can be pursued at the bachelor’s, master’s, and doctoral levels.",
     },
     {
-      title: "Is Physical science right for me?",
+      title: "Is studying Astrophysics right for me?",
       content1:
-        "For motivated students, this field of study will help you get a good job while also satisfying your intellectual curiosity about the physical world.",
-      content2:
-        "Physical sciences students must have a solid background in math and science, particularly chemistry and physics. Analytical and critical thinking, communication, problem-solving, and teamwork abilities are also required for a successful career in this sector. This is because scientists frequently collaborate to solve problems, it's critical that accurate information be disseminated quickly, and project needs be fully stated. If as a child you were always inclined towards the sciences, then this degree is a good choice for you.",
+        "Pursuing Astrophysics builds skills like complex problem-solving, critical thinking, logical reasoning, data analysis, teamwork, technical expertise, and project management. Students with a curious and dedicated personality are encouraged to consider this path if they aim to gain these skills and succeed professionally.",
     },
     {
-      title: "Physical science study options and costs",
+      title: "Study options and costs",
       content1:
-        "Physical science degrees come at a variety of levels. A two-year Associate Degree in Physical Science is available. A bachelor's degree in physical science is a three to four-year program. A master's degree usually takes 1.5 to 2 years to complete. A doctorate program in physical science, including the thesis or dissertation, takes at least four years.",
+        "Astrophysics at the bachelor’s level provides foundational knowledge. This 4-year program includes core and elective courses. Common core topics are planetary dynamics, asteroids, comets, satellite systems, cosmology, introductory quantum mechanics, classical and particle dynamics, optics, and planetary atmospheres. At the University of California, Berkeley, international students pay around $29,750 annually.",
       content2:
-        "The average tuition prices of colleges providing physical science programs for the academic year 2020-2021 were $17,809 for undergraduate programs and $21,182 for graduate programs.",
+        "Students can specialize by pursuing a master’s degree, allowing custom coursework and a final thesis. This 2-year program might include topics like stellar and planetary systems, plasma physics, high-energy astrophysics, dark matter, plasma waves, propulsion, computing, and differential equations. The thesis may lead to teaching roles. In the US, tuition averages $13,600 per year for locals and $36,300 for internationals.",
+      content3:
+        "Doctoral studies, ideal for research and teaching, involve 4-5 years of independent research depending on dissertation completion. Topics may include cosmic ray astrophysics, solar particles, stellar astronomy, black holes, thunderstorm physics, planetary surfaces, exoplanets, radiation, and cosmology. The average US cost for a Ph.D. ranges from $118,000 to $120,000.",
     },
     {
       title: "Future outlook",
       content:
-        "Overall, the employment of physical science graduates is predicted to grow at an annual rate of 8% from 2020 to 2030, which is about the same as the average for all occupations. Over the next decade, physicists and astronomers will have roughly 1,500 employment openings every year on average. One occupation branching from physical science:astronomers, earned a median annual wage of $119,730.",
+        "According to the U.S. Bureau of Labor Statistics, astrophysicist employment is expected to grow by 8%, adding approximately 21,100 jobs this decade with 1,500 new openings annually. Astrophysics graduates have diverse career opportunities, with high-paying roles offering flexible work hours and promising careers.",
     },
     {
-      title: "Career pathways for Physical science graduates",
-      subtitle1: "Research Assistant",
+      title: "Career Pathways for Astrophysics graduates",
+      subtitle1: "Systems analyst",
       content1:
-        "A research assistant assists in the execution of a research agenda. They're most commonly found in fieldwork or laboratory settings. They are in charge of conducting research and technical activities in the lab related to sponsored projects, with a focus on equipment maintenance.",
-      subtitle2: "Physicist",
+        "Systems analysts focus on designing, implementing, and monitoring information systems. An astrophysicist in this role might develop and maintain software for astronomical data and research, with an average US salary of $71,816.",
+      subtitle2: "Research engineer",
       content2:
-        "A physicist is a scientist who studies matter, energy and their relationship. His or her work encompasses everything from basic research into nature's most fundamental laws to the invention of practical gadgets and tools. Because of the wide breadth of subject matter, physicists usually specialise in one sub-field of physics at the graduate level for example an astrophysicist or a theoretical physicist.",
-      subtitle3: "Geoscientists",
+        "Research engineers support studies and initiatives. In astrophysics, they may conduct research to aid spacecraft and tool development. Their US average salary is $81,876.",
+      subtitle3: "Senior scientist",
       content3:
-        "Geoscientists investigate the Earth's physical characteristics, such as its composition, structure, and processes, in order to understand more about the planet's past, present, and future. They advise senior management on geological factors affecting exploration and produce geological maps and reports for their clients.",
-      subtitle4: "Astronomers",
+        "Senior scientists lead teams in conducting research, experiments, and developing tools and spacecraft, working with managers to validate hypotheses. Their average US salary is $101,600.",
+      subtitle4: "Aerospace engineer",
       content4:
-        "Astronomers study the planets, stars, galaxies, and other celestial bodies. The responsibilities of an astronomer can comprise anything from collecting and evaluating data from instruments to generating hypotheses about the nature of cosmic objects, as well as practical issues like space flight and navigation, as well as satellite communications.",
+        "Aerospace engineers design and build space exploration vehicles. They collaborate on shuttles, satellites, probes, and telescopes. Their US average salary is $103,970.",
+      subtitle5: "Director of technology",
+      content5:
+        "Directors of technology oversee computer systems in labs, spacecraft, and telescopes, leading teams in inter-space communication systems. The average salary in the US is $104,870.",
     },
   ];
 
@@ -132,47 +135,33 @@ const Astrophysics = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Physical science abroad </h1>
+        <h1>Study Astrophysics Abroad</h1>
         <p>
-          Physical science involves the study of the non-living world. This
-          academic discipline aims to uncover the underlying laws of nature. The
-          four main branches are physics, astronomy, chemistry, and the earth
-          sciences, which includes meteorology and geology.
+          Physical science explores the non-living world, seeking to reveal the fundamental laws of nature. Main 
         </p>
+        <p>areas include physics, astronomy, chemistry, and earth sciences, such as meteorology and geology.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> 18th most popular major in the 2020-2021 academic
-            year
-          </p>
+          <p>18th most popular major in the 2020-2021 academic year</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> Median annual pay of physical science graduates
-          </p>
+          <p>Median annual pay for physical science graduates</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> 8% employment rate growth projected for physical
-            sciences this decade
-          </p>
+          <p>8% projected job growth in physical sciences this decade</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> Physical science graduates employed in the US
-            alone
-          </p>
+          <p>Number of physical science graduates employed in the US</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -184,30 +173,17 @@ const Astrophysics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

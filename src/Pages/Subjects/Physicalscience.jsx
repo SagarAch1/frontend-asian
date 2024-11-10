@@ -90,42 +90,44 @@ const Physicalscience = () => {
     {
       title: "About Physicalscience",
       content:
-        "Physicalscience is a branch of astronomy that focuses mainly on positions, motions and special characteristics of celestial bodies. This degree involves learning about theories and expeditions related to outer space which strengthened our view of gravity, black holes, nebulae, stars, galaxies and the overall origin and nature of the universe along with that of our solar system. This degree can pursued on a bachelor’s, masters and doctoral level.",
+        "Physicalscience is a branch of astronomy focusing mainly on positions, motions, and special characteristics of celestial bodies. This degree involves learning theories and expeditions about outer space that strengthen our understanding of gravity, black holes, nebulae, stars, galaxies, and the universe's origin, along with that of our solar system. This degree can be pursued at the bachelor’s, master's, and doctoral levels.",
     },
     {
       title: "Is studying Physicalscience right for me?",
       content:
-        "Pursuing Physicalscience will inculcate various skills such as complex problem-solving skills, critical thinking, logical reasoning, data collection and analysis, teamwork, technical skills and project management. Students with an inquisitive and determined personality are encouraged to pursue this degree if they wish to acquire these skills and flourish in their professional lives.",
+        "Pursuing Physicalscience fosters various skills such as complex problem-solving, critical thinking, logical reasoning, data collection and analysis, teamwork, technical skills, and project management. Students with an inquisitive and determined personality are encouraged to pursue this degree if they wish to acquire these skills and thrive professionally.",
     },
     {
       title: "Study options and costs",
       content1:
-        "Physicalscience can be pursued on the bachelor’s level to gain a basic foundation in the subject. The duration of this programme is 4 years and it consists of core and elective courses. The usual core classes include the study of the following: dynamics of the planets, asteroids and comets, satellite systems, astronomical coordinate systems, cosmology, introductory quantum mechanics, classical and particle dynamics, physical optics and planetary atmospheres. The average cost of this degree in University of California, Berkeley, is around $29,750 per year for international students.",
+        "Physicalscience can be pursued at the bachelor’s level to gain a foundational understanding. The program duration is four years and includes core and elective courses. Core classes typically cover the study of planetary dynamics, asteroids, comets, satellite systems, astronomical coordinate systems, cosmology, introductory quantum mechanics, classical and particle dynamics, physical optics, and planetary atmospheres. The average cost at the University of California, Berkeley, is about $29,750 per year for international students.",
       content2:
-        "If students wish to specialise in a particular field of Physicalscience, they can choose to go for a master’s. Pursuing this degree will allow students to design their own course work which will culminate with a thesis. The duration of this programme is 2 years. The usual courses may include the following: dynamics of stellar and planetary systems, general plasma physics, high energy Physicalscience and dark matter, plasma waves and propulsion, scientific computing and differential equations. The thesis should be based on original research and can ricochet the students’ career towards the path of teaching as well. The average cost of this degree in the US is approximately $13,600 per year for local students and $36,300 for international students.",
+        "For specialization, students can pursue a master's degree in Physicalscience, which allows them to design their coursework culminating with a thesis over two years. Typical courses include dynamics of stellar and planetary systems, general plasma physics, high-energy Physicalscience and dark matter, plasma waves and propulsion, scientific computing, and differential equations. The thesis should involve original research, potentially leading students toward teaching. The average cost in the US is approximately $13,600 per year for local students and $36,300 for international students.",
       content3:
-        "If a student aims for research and teaching positions, they can pursue this subject at the doctoral level. A doctorate is based on independent research and its duration is 4-5 years depending on the time your doctoral dissertation is completed. Students are usually provided with a list of research topics, some of them being cosmic ray Physicalscience, solar energetic particles, stellar astronomy, black holes and active galactic nuclei, thunderstorm and lightning physics, planetary surfaces, exoplanets, energetic radiation and cosmology. The total average cost of pursuing this degree in the US is $118,000-120,000.",
+        "For those aiming for research and teaching roles, a doctoral degree in Physicalscience involves independent research, typically spanning 4-5 years, depending on dissertation completion. Research topics may include cosmic ray Physicalscience, solar energetic particles, stellar astronomy, black holes and active galactic nuclei, thunderstorm and lightning physics, planetary surfaces, exoplanets, energetic radiation, and cosmology. The average total cost in the US is between $118,000 and $120,000.",
     },
     {
       title: "Future outlook",
       content:
-        "According to the U.S. Bureau of Labor Statistics, the overall employment for astrophysicists is expected to grow 8%, adding an approximate of 21,100 jobs over the decade as 1,500 new openings will be seen each year. Students pursuing Physicalscience will also have the privilege to choose from a wide variety of high-paying careers where they can control their work hours, thus, ensuring a successful and sustainable career.",
+        "According to the U.S. Bureau of Labor Statistics, astrophysicist employment is expected to grow 8%, adding around 21,100 jobs over the decade, with 1,500 new openings annually. Physicalscience graduates will have diverse high-paying career options, often with flexible work hours, promoting a successful and sustainable career.",
     },
     {
       title: "Career Pathways for Physicalscience graduates",
       subtitle1: "Systems analyst",
       content1:
-        "Systems analysts specialise in the technology of designing, implementing and monitoring information systems. An astrophysicist can create and maintain complex computer software related to storing and managing astronomical data and research. Their average salary in the US is $71,816 per year.",
+        "Systems analysts specialize in designing, implementing, and monitoring information systems. An astrophysicist may create and maintain complex software for astronomical data management and research, earning an average salary of $71,816 per year in the US.",
       subtitle2: "Research engineer",
       content2:
-        "A research engineer helps complete research studies and initiatives. In Physicalscience, they may conduct research in order to assist with the design and construction of spacecraft, space observation tools and suits for astronauts and aerospace pilots. Their average salary in the US is $81,876 per year.",
+        "Research engineers support research studies and initiatives. In Physicalscience, they might design and build spacecraft, space observation tools, and suits for astronauts and pilots. Their average US salary is $81,876 per year.",
       subtitle3: "Senior scientist",
       content3:
-        "As a senior scientist in an Physicalscience role, these professionals may lead a team of engineers, research technicians and other scientists to conduct experiments, complete research studies, develop spacecraft, observation tools and consult with project managers and directors to prove hypotheses and theories. Their average salary in the US is $101,600 per year.",
+        "As a senior scientist in Physicalscience, professionals may lead teams to conduct experiments, complete research, develop spacecraft and tools, and consult with project managers to validate hypotheses. The average salary is $101,600 per year in the US.",
       subtitle4: "Aerospace engineer",
-      content4:"Aerospace engineers design and build spacecraft and space exploration vehicles. They often work with a team of scientists, researchers, project managers and other engineers to create safe and operational spacecraft. They may design space shuttles, satellites, probes and telescopes. Their average salary in the US is $103,970 per year.",
+      content4:
+        "Aerospace engineers design and construct space exploration vehicles. Collaborating with scientists, researchers, and project managers, they may develop shuttles, satellites, probes, and telescopes. The average salary in the US is $103,970 per year.",
       subtitle5: "Director of technology",
-      content5:"In an Physicalscience role, a director of technology often leads the development of laboratory computer systems and those aboard spacecraft, telescopes and satellites. Directors of technology often lead a team of other technology specialists to design, install, monitor and repair the complex computer software needed for inter-space communication. Their average salary in the US is $104,870 per year.",
+      content5:
+        "In Physicalscience, a director of technology oversees the development of laboratory and spacecraft computer systems. They often lead teams to design, install, monitor, and repair complex software for inter-space communication. The average US salary is $104,870 per year.",
     },
   ];
 
@@ -135,46 +137,31 @@ const Physicalscience = () => {
       <div style={sectionStyle}>
         <h1>Study Physicalscience abroad</h1>
         <p>
-          Have you ever wondered how the stars, planets and other celestial
-          bodies remain in perfect harmony? An Physicalscience degree can quench
-          your thirst of astronomical knowledge as it deals with the origin and
-          nature of these celestial bodies.
+          Ever wondered how stars, planets, and other celestial bodies stay in harmony?
         </p>
+        <p> A Physicalscience degree dives into the origins and nature of these celestial bodies.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> 21,100 estimated job openings for astrophysicists
-            this decade
-          </p>
+          <p><strong></strong> 21,100 estimated job openings for astrophysicists this decade</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> Average annual salary for physicists and
-            astronomers in the US
-          </p>
+          <p><strong></strong> Average annual salary for physicists and astronomers in the US</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> Contribution of the physics industry in the US
-            economy in 2016
-          </p>
+          <p><strong></strong> Contribution of the physics industry to the US economy in 2016</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> 8% estimated employment growth of astronomers in
-            the US
-          </p>
+          <p><strong></strong> 8% estimated employment growth of astronomers in the US</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -186,30 +173,17 @@ const Physicalscience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-                )}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
