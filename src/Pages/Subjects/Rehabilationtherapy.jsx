@@ -6,7 +6,7 @@ const RehabilitationTherapy = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle visibility of FAQ sections
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const RehabilitationTherapy = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive green color
     marginBottom: "10px",
   };
 
@@ -90,89 +90,74 @@ const RehabilitationTherapy = () => {
     {
       title: "About Rehabilitation Therapy",
       content1:
-        "Rehabilitation Therapy is defined as care that helps enhance or recover functional ability of individuals enabling them to lead normal lives, after an accident or injury. It also helps individuals improve their lifestyles by adopting new habits or eliminating old ones.One of the biggest reasons of crop failure is pest and weed attacking the crops. It is necessary for farmers to apply techniques that keep these insects, pest and weed away from their crops. For this purpose, the study of Pest and Weed Control holds great importance. Pest and Weed Control studies enable professional to prepare integrated pest management approaches that combine strategies for pest control that are both cost-effective and environmentally friendly.",
+        "Rehabilitation Therapy is a practice that aims to help individuals regain their ability to function after an injury or illness. It also supports people in improving their overall quality of life by adopting healthier habits or removing harmful ones.",
       content2:
-        "Rehabilitation Therapy is provided to any individual who has been, or is, chronically ill or injured and has health complications which hinder adequate functioning in their everyday life. Many individuals require Rehabilitation Therapy because they lose or impair their physical or mental abilities as a result of prior medical treatment.",
+        "This therapy is essential for individuals who experience chronic illness or injury that hampers their ability to carry out day-to-day activities. Many people benefit from rehabilitation therapy due to the loss or impairment of physical or mental abilities caused by medical treatments.",
       content3:
-        "Rehabilitation therapists work in several settings including hospitals, mental health clinics, physiotherapy clinics, nursing homes and other healthcare facilities. They may further choose to specialise as occupational therapists, physical therapists or speech therapists etc.",
+        "Rehabilitation therapists work in a variety of environments such as hospitals, mental health clinics, physiotherapy centers, nursing homes, and other healthcare settings. They can also specialize as occupational therapists, physical therapists, or speech therapists, among other roles.",
     },
     {
       title: "Is Rehabilitation Therapy right for me?",
       content1:
-        "IAre you a determined individual full of optimism and empathy? If so, then Rehabilitation Therapy may appeal to you. Rehabilitation counsellors work directly with the client; hence they must possess good interpersonal and communication skills. Rehabilitation Therapy usually takes time so the therapist must be patient and determined to improve the client’s condition.f you want a career in Pest and Weed Control, you must be comfortable working outdoors. Entomologists must not be afraid of insects and must be ready to handle them and their waste. Pest and weed specialists need high observation skills because their work often needs them to observe and record facts about insect behaviour, appearance, and habitat. Aside from that, depending on the work, Pest and Weed Control specialists must have good communication skills to convey their findings in writing to academics, students, policymakers, and other stakeholders. They must be able to draw conclusions from data gathered through research, observation, and experiments, which necessitates strong critical thinking abilities. If this sounds like you, then Pest and Weed Control might be a good choice for you.",
+        "Do you have the compassion, patience, and determination to help others? If so, rehabilitation therapy could be a great career path for you. Therapists work closely with clients, so good interpersonal and communication skills are essential. Since therapy can take time, a therapist needs to remain dedicated to improving their client’s condition.",
       content2:
-        "Driven by compassion and desire to serve the community, rehabilitation therapists play an important role in improving the lifestyles of injured or ill individuals. If this sounds exciting to you, then a career in Rehabilitation Therapy might be a good choice for you.",
+        "If you're driven by empathy and a desire to help others, a career in rehabilitation therapy might be fulfilling for you as it plays a key role in improving the lives of those who are ill or injured.",
     },
     {
       title: "Rehabilitation Therapy study options and costs",
       content:
-        "The first step in becoming a rehabilitation therapist is to earn a bachelor’s degree in a related field such as Social Sciences. It usually takes 4 years to complete the undergraduate programme. Aspecialisation in rehabilitation therapy  can be achieved by undertaking a master’s programme that spans two years and costs up to $60,000 in the US.  .",
+        "To become a rehabilitation therapist, you’ll typically need to earn a bachelor’s degree in a related field like Social Sciences, which takes about four years. Specializing in rehabilitation therapy can be done by completing a master’s program, typically lasting two years and costing up to $60,000 in the U.S.",
     },
     {
       title: "Future outlook",
       content:
-        "The demand for rehabilitation therapists is increasing day by day with the growth in the elderly population and the continuous rehabilitation requirements of individuals with special care needs. Rehabilitation therapists play a role in helping them live independently and adapt to new changes effectively. According to the U.S Bureau of Labor Statistics, the projected employment growth of rehabilitation therapists in this decade is up to 10%. This shows that this professional field is, and will be, in demand in the future as well..",
+        "The demand for rehabilitation therapists is growing as the aging population increases and more people require rehabilitation services. Therapists help individuals live independently and adapt to new life changes. According to the U.S. Bureau of Labor Statistics, the employment growth for rehabilitation therapists is expected to rise by 10% in this decade, indicating a strong demand for this profession.",
     },
     {
       title: "Career Pathways for Rehabilitation Therapy graduates",
       subtitle1: "Disability Specialist",
       content1:
-        "The role of a disability specialist is to make sure that individuals with physical or mental disabilities receive the help they need to properly function in their everyday life. As a disability specialist, you will determine your client’s eligibility status to receive services and accommodation. You will also keep track of your client’s progress to make changes in their services according to their needs. The average annual salary of a disability specialist is up to $53,500..",
-      subtitle2: "Program coordinator",
+        "A disability specialist ensures that individuals with physical or mental disabilities receive the appropriate services and accommodations to function in everyday life. Your job will involve determining eligibility for services and tracking progress. The average annual salary for a disability specialist is up to $53,500.",
+      subtitle2: "Program Coordinator",
       content2:
-        "A program coordinator plans and oversees the activities for a particular organisation, usually in healthcare, education or nonprofit settings. Your role as a program coordinator in rehabilitation clinics and hospitals will be to organise activities to raise awareness about different health complications and strategies to avoid or overcome them. You will also manage office operations and records. The average annual salary of a programme coordinator is up to $43,582..",
+        "A program coordinator plans and manages activities for an organization, often within healthcare, education, or nonprofit sectors. As a coordinator in rehabilitation clinics, you’ll organize events to raise awareness about health issues and manage records. The average salary for a program coordinator is up to $43,582.",
       subtitle3: "Rehabilitation Nurse",
       content3:
-        "A rehabilitation nurse’s main role is to assist patients with disabilities and chronic illnesses to adapt to their altered life. They will help clients to reach their health goals and ensure they follow the proper treatment plans. They will also teach them new life skills that they could use in their everyday life. The average annual salary of a rehabilitation nurse is up to $67,162..",
+        "Rehabilitation nurses help patients with chronic illnesses or disabilities adjust to their new circumstances. They assist clients in achieving their health goals and following treatment plans, while also teaching them new life skills. The average salary for a rehabilitation nurse is up to $67,162.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Rehabilitation Therapy abroad </h1>
+        <h1>Study Rehabilitation Therapy abroad</h1>
         <p>
-          Rehabilitation Therapy involves a set of interventions and strategies,
-          designed to minimise disabilities and better the functioning of
-          individuals with health complications in their everyday interactions
-          with the environment.
+          Rehabilitation Therapy focuses on interventions that help people manage
         </p>
+        <p> disabilities and improve their functioning in everyday interactions.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> Average annual salary of rehabilitation
-            counsellors in 2021
-          </p>
+          <p>Average annual salary for rehabilitation counselors in 2021</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> 10% projected employment growth of rehabilitation
-            counsellors in this decade
-          </p>
+          <p>10% expected growth in rehabilitation counselor employment in this decade</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> Projected job openings for rehabilitation
-            counsellors
-          </p>
+          <p>Projected job openings for rehabilitation counselors</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> 104,500: current number of rehabilitation
-            counsellors employed in the US
-          </p>
+          <p>104,500 rehabilitation counselors employed in the U.S.</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -184,22 +169,13 @@ const RehabilitationTherapy = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
