@@ -90,48 +90,54 @@ const Hotelandhospitality = () => {
     {
       title: "About Hotel and Hospitality",
       content1:
-        "Hotel and Hospitality is a broad field that deals with all aspects of the hotel stay of guests. The two terms ‘hotel’ and ‘hospitality’ are closely related but have a significant distinction. While hotel management specifically deals with all operations within the hotel, hospitality is a more inclusive and broader term. Hospitality and tourism management are closely aligned and involve all the sectors that require service such as food and beverage, accommodation and event management.",
+        "Hotel and Hospitality is a comprehensive field that covers every aspect of guest services in hotels. While hotel management focuses on the operational side of hotels, hospitality is a broader concept. Hospitality and tourism management are connected, covering areas such as food and beverage services, accommodation, and event management.",
 
       content2:
-        "The discipline focuses on providing students a solid foundation related to issues that affect health of the masses and healthcare systems. Common course module you can expect to study are epidemiology, environmental health science, health policy, health communication, biostatistics, health communication, and social and behavioral aspects of health. Public health is a great field which has lots to offer, ranging from good monetary benefits to a sense of service to the community.Hotel and Hospitality is a broad field that deals with all aspects of the hotel stay of guests. The two terms ‘hotel’ and ‘hospitality’ are closely related but have a significant distinction. While hotel management specifically deals with all operations within the hotel, hospitality is a more inclusive and broader term. Hospitality and tourism management are closely aligned and involve all the sectors that require service such as food and beverage, accommodation and event management.",
+        "This field also examines how public health issues relate to service delivery and how healthcare systems are affected. Students typically study subjects like epidemiology, environmental health, health policies, and biostatistics. Public health offers many opportunities, including financial rewards and the chance to contribute to community well-being. Hotel and Hospitality remains a broad sector, with a focus on various service aspects, including tourism, food, and accommodation management.",
 
-      content3:"Hospitality management is a very broad field which involves the overseeing of the day-to-day operations within the hospitality industry. These operations may vary in nature from the operational, commercial, or administrative industry. The departments that fall under the responsibility of a hospitality manager may vary from housekeeping, concierge, in-room dining to spa or front desk. This subject prepares you for employment in organisations such as hotels, resorts, conferences, convention centres, tourism consultancies, spas, and guest services.",
+      content3:
+        "Hospitality management is an expansive field involving the management of day-to-day activities across different sectors of the hospitality industry. These tasks range from commercial operations to administrative duties. Hospitality managers often oversee areas like housekeeping, concierge services, in-room dining, and even spa or front desk operations. This area of study prepares students for roles in hotels, resorts, conference centers, spas, and tourism consultancies.",
     },
     {
       title: "Is Hotel and Hospitality right for me? ",
       content1:
-        "Are you a person with great management skills? Would you enjoy working in a dynamic and challenging work environment? If so, then Hotel and Hospitality is well suited for you. The hospitality sector is massive and has abundant opportunities for individuals with varying strengths and skills.",
+        "Do you possess strong management abilities? Do you thrive in dynamic, fast-paced environments? If yes, Hotel and Hospitality may be the ideal career path for you. This field offers numerous opportunities across various specializations, catering to different skill sets and strengths.",
+
       content2:
-        "Hotel and Hospitality managers are affable and adept at interpersonal skills. They are adaptive and flexible towards the needs of their clients. Furthermore, they must have excellent collaboration skills as they will be working in tandem with colleagues and staff to deliver a memorable customer experience. If you possess the aforementioned qualities, then this field is the right fit for you. ",
+        "Hospitality managers are sociable, possessing excellent interpersonal skills, and are adaptable to client needs. They must work collaboratively with their teams to create positive customer experiences. If you excel in these areas, this industry could be a perfect match for you.",
     },
     {
       title: "Study options and costs",
       content1:
-        "An associate degree, which usually takes 2 years to complete, is a good choice if you are looking to pursue Hotel and Hospitality as a professional field. An associate in Hotel and Hospitality prepares students to take on entry-level hotel, restaurant, and tourism jobs.",
+        "An associate degree in Hotel and Hospitality typically takes 2 years to complete and prepares students for entry-level positions in hotels, restaurants, and tourism industries.",
+
       content2:
-        "The next step to further gain knowledge and expertise will be to earn a bachelor’s degree which usually takes 3 to 4 years to complete. The estimated tuition fee per year for Hotel and Hospitality programme is $20,615 to $43,413 in the US. You could further attend a graduate school to earn a master’s degree in Hotel and Hospitality Management to broaden your job prospects and secure higher ranking job roles. It usually takes 1 year to complete and costs around $24,750 to $60,879.",
-     
+        "For more in-depth knowledge, a bachelor's degree, which takes 3 to 4 years, is a great next step. The average tuition fee for such programs in the US is between $20,615 and $43,413 per year. To expand career opportunities, a master's degree in Hospitality Management, taking about 1 year to complete, can cost anywhere from $24,750 to $60,879.",
     },
     {
       title: "Future outlook",
       content1:
-        "Hotel and Hospitality courses offer excellent career opportunities in multiple industries. Hotel and Hospitality graduates not only earn good salaries but also have superb growth opportunities. A job in the hospitality industry allows a great deal of freedom and mobility, as well as the rare opportunity to meet, service, and interact with people from all walks of life.",
+        "Hotel and Hospitality studies provide fantastic career opportunities across diverse industries. Graduates not only earn competitive salaries but also enjoy substantial growth prospects. A career in hospitality offers freedom, mobility, and the chance to interact with people from various backgrounds.",
+
       content2:
-        "The global hospitality market is expected to grow from $3486.77 billion in 2020 to $4132.5 billion in 2021. This trend is likely to continue and become profound in the future making the prospects of the Hotel and Hospitality industry bright.",
+        "The global hospitality market is projected to increase from $3486.77 billion in 2020 to $4132.5 billion in 2021, indicating continued expansion and a promising future for those in the field.",
     },
     {
       title: "Career pathways for Public Health graduates",
       subtitle1: "Front Office Manager ",
       content1:
-        "As a front office manager you will have many day-to-day duties, including overseeing employees, maintaining guest accounts, and coordinating hotel sales. ",
+        "As a front office manager, your responsibilities will include managing employees, overseeing guest accounts, and coordinating hotel sales.",
       subtitle2: "Directors of Housekeeping ",
       content2:
-        "Commonly seen in hotels, directors of housekeeping can be expected to oversee the cleanliness and appearances of the hotel, control labour costs, and maintain supplies, among other related responsibilities. ",
+        "Directors of housekeeping ensure that the hotel maintains cleanliness and aesthetic standards, manage labor costs, and maintain supplies.",
+
       subtitle3: "Catering Assistant",
       content3:
-        "As a catering assistant you may work directly for a catering company, in-house at a restaurant, or at a hotel to arrange bookings, oversee production and more.",
-        subtitle4: "Sous Chef",
-        content4:"Another job pertaining to the food and beverage industry is that of a sous chef — second-in-command role within a kitchen. As a sous chef you will report to the head chef and oversee various meal preparations and kitchen operations. ",
+        "A catering assistant handles bookings and supervises meal preparations, working within catering companies or at hotels and restaurants.",
+        
+      subtitle4: "Sous Chef",
+      content4:
+        "In the food and beverage sector, a sous chef is the second-in-command in a kitchen, overseeing meal preparations and daily kitchen operations.",
     },
   ];
 
@@ -141,11 +147,10 @@ const Hotelandhospitality = () => {
       <div style={sectionStyle}>
         <h1>Study Hotel and Hospitality abroad</h1>
         <p>
-          Hotel and Hospitality is the science of managing hotel and hospitality
-          services.   This subject will provide you with the knowledge needed to
-          succeed in the hospitality industry — be it becoming a hotel manager
-          or an entrepreneur.  
+          Hotel and Hospitality is the art and science of managing services within 
         </p>
+        <p>the hospitality industry. This field will equip you with the skills required  </p>
+        <p>to succeed in various roles, such as hotel management or entrepreneurial ventures.</p>
       </div>
 
       {/* Statistics section */}
@@ -160,13 +165,13 @@ const Hotelandhospitality = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average annual salary of a hotel manager 
+            <strong></strong> Average annual salary of a hotel manager 
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>41,400 projected job openings for food services
+            <strong></strong> 41,400 projected job openings for food services
             managers each year 
           </p>
         </div>
@@ -180,7 +185,6 @@ const Hotelandhospitality = () => {
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
@@ -191,26 +195,15 @@ const Hotelandhospitality = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
