@@ -142,10 +142,12 @@ const Beauty = () => {
         <h1>Study Beauty Care abroad</h1>
         <p>
           Do you find yourself constantly being drawn to subjects like skincare,
-          haircare, or cosmetology? If yes, then a degree in Beauty Care will
-          help you build a career on what you love. You will learn extensively
-          about beauty best-practices and cosmetics.
+          
         </p>
+        <p>haircare, or cosmetology? If yes, then a degree in Beauty Care will
+          </p>
+          <p> help you build a career on what you love. You will learn extensively
+          about beauty best-practices and cosmetics.</p>
       </div>
 
       {/* Statistics section */}
