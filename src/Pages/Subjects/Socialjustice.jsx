@@ -5,8 +5,8 @@ import FormPage from "../Homepage/FormPage";
 const SocialJustice = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleSection = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle section visibility
   };
 
   const sectionStyle = {
@@ -24,7 +24,7 @@ const SocialJustice = () => {
     padding: "50px",
   };
 
-  const statisticsSection = {
+  const statisticsSectionStyle = {
     display: "flex",
     justifyContent: "space-around",
     padding: "40px",
@@ -32,7 +32,7 @@ const SocialJustice = () => {
     boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
   };
 
-  const statItemStyle = {
+  const statCardStyle = {
     width: "22%",
     textAlign: "center",
     fontSize: "16px",
@@ -48,7 +48,7 @@ const SocialJustice = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Green color for better visibility
     marginBottom: "10px",
   };
 
@@ -90,123 +90,96 @@ const SocialJustice = () => {
     {
       title: "About Social Justice",
       content:
-        "A Social Justice degree focuses on the social disparity in the human society and the ways to fix them. Students learn about the political and ethical contexts of social work while working to eradicate problems like inequity, poverty, discrimination and injustice. Social Justice can be pursued on the bachelor’s, master’s and doctoral levels. This degree will also introduce students to the concept of social welfare as they will interact with the marginalised communities and advocate for their rights.",
-   
+        "A degree in Social Justice examines the societal disparities and the solutions to address them. Students explore political and ethical aspects of social work, focusing on issues like inequality, poverty, discrimination, and injustice. It can be pursued at the bachelor’s, master’s, and doctoral levels. The degree also introduces students to social welfare and involves advocacy for marginalized groups.",
     },
     {
       title: "Is studying Social Justice right for me? ",
       content:
-        "A Social Justice degree will imprint admirable skills such as those of patience, building of trust, open-mindedness, an appreciation for diversity, active listening, report writing, a sense of humour, communication skills and most importantly, empathy. Majority of these skills are useful and transferable to the professional sector. Thus, this degree might be right for students who aim to become better versions of themselves by aiding in the innovation, reformation and advancement of society.",
-    
+        "A degree in Social Justice helps develop valuable skills such as patience, trust-building, empathy, communication, and open-mindedness. These abilities are highly transferable to the professional world, making the degree suitable for those who wish to contribute to societal improvement through reformation and innovation.",
     },
     {
       title: "Study options and costs ",
       content1:
-        "Students seeking to do practical work in the field of Social Justice must have a bachelor’s degree. The duration of this programme is 4 years and it lays out the entire foundation of community and social work. The general core modules offered in this degree are social service systems, statistics for social workers, human behaviour and social environment, theoretical principles of social justice, diversity and persecution in a social work context, and social movements. The average cost of this degree in the US is $28,000-35,350 per year, depending upon the university you choose.",
+        "A bachelor's degree in Social Justice is essential for those wanting to work practically in the field. The program lasts 4 years and covers essential topics such as social service systems, human behavior, diversity, and social movements. The typical cost in the US ranges from $28,000 to $35,350 annually, depending on the university.",
       content2:
-        "Students who wish to engage critically in research and theory on issues pertaining to Social Justice might aim for a masters in it. The duration of this programme is 2 years and it involves the selection of your desired subject of specialisation. Some of the core and optional modules offered for this degree are: sociology of gender, sexuality and race, rights of minorities and immigrants, child welfare, mental and physical disability, critical race studies and contemporary issues in Social Justice. The degree will reach completion with a thesis, which is based on original research. The cost of pursuing this degree in the University College London, UK is $32,000-34,000 for international students.",
+        "For those interested in research and theory, a master's degree lasts 2 years and includes specialization options. Core topics might include gender studies, child welfare, mental health, and critical race studies. The average cost for international students at University College London is around $32,000 to $34,000 per year.",
       content3:
-        "The doctoral level of Social Justice is based on independent research on a particular course of the student’s interest followed by a dissertation. The duration of this programme is usually 3-5 years. The diverse community of scholars unites students and faculty across academic boundaries to strategically create social change that is democratic and just. The interdisciplinary doctoral program in social justice prepares future scholars and change agents to address complex social problems and become tomorrow's leaders. Some of the core courses usually available are data analysis for social justice research, justice research methodology, theoretical perspectives on Social Justice and criminal justice. The average cost of a doctoral degree in this subject in the US is $40,000-120,000 per year, depending upon the university you choose.",
+        "A doctoral degree focuses on independent research and takes 3-5 years to complete. The program prepares students to address complex social issues with the aim of creating positive social change. The cost for a doctorate in the US ranges from $40,000 to $120,000 per year, depending on the institution.",
     },
     {
       title: "Future outlook",
       content:
-        "According to the U.S. Bureau of Labor Statistics, employment in community and social service occupations is projected to grow 12 percent from 2020 to 2030, faster than the average for all occupations, adding about 346,900 jobs. This increase will result due to a spike in the demand for social workers in schools, homes and healthcare centres. Hiring of social workers is estimated to expand as more people seek treatment for mental illness, substance and domestic abuse along with the ageing population that needs to be cared for.",
-      
+        "The demand for social workers is expected to grow by 12% from 2020 to 2030, with an additional 346,900 jobs. The increasing need for social workers in schools, healthcare, and community settings, particularly due to rising mental health issues and an aging population, is driving this growth.",
     },
     {
       title: "Career pathways for Social Justice graduates",
       subtitle1: "Journalist",
       content1:
-        "The main responsibilities of a journalist include researching, interviewing, reporting and writing to inform the public of current events. Journalists that focus on social justice share stories of vulnerable populations, expose injustices and work to ensure that societal powers are accountable for their actions. Their average salary in the US is $48,370 per year.",
+        "Journalists specializing in social justice focus on raising awareness about vulnerable groups, exposing injustices, and holding societal powers accountable. The average salary in the US is $48,370 per year.",
       subtitle2: "Community developer",
       content2:
-        "Community developers work with marginalised communities by designing projects, assisting in funding distribution and uniting members of the community. Responsibilities include assessing community needs, researching local trends, working with shareholders, understanding legal regulations and developing plans. Their average salary in the US is $61,835 per year.",
+        "Community developers work with marginalized groups to plan projects, manage funding, and foster community unity. Their responsibilities include assessing needs and understanding legal frameworks. The average salary is $61,835 per year.",
       subtitle3: "Analyst",
       content3:
-        "Policy analysts research about local and national trends as it relates to social, economic, international and other political issues. Through this research, they are able to raise public awareness, influence public policy and political events. They also evaluate current policies and draft reviews based on their research to help with policy development and the implementation of new programmes for the betterment of the community. Their average salary in the US is $83,380 per year.",
-        subtitle4: "Social worker",
-      content4:"A social worker is a professional who works with individuals and families with the goal of improving their lives by teaching mechanisms to overcome abuse, unemployment, mental illness, abuse, addiction and trauma. Their average salary in the US is $50,400 per year.",
+        "Policy analysts research trends related to social, economic, and political issues, influencing public policy and societal changes. They evaluate policies and help develop new programs. The average salary in the US is $83,380 per year.",
+      subtitle4: "Social worker",
+      content4:
+        "Social workers assist individuals and families to overcome challenges such as abuse, addiction, and mental illness. They focus on improving lives through supportive interventions. The average salary in the US is $50,400 per year.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Hero section with background image */}
       <div style={sectionStyle}>
         <h1>Study Social Justice abroad</h1>
         <p>
-          If you believe that helping the community and being a beacon for
-          change is your calling, then studying Social Justice may be the right
-          choice for you. It focuses on social policy, politics, welfare and
-          mental health.
+          If you’re passionate about making a difference and promoting change, 
         </p>
+        <p>studying Social Justice could be the right path for you. The field covers  </p>
+        <p>areas like social policy, politics, welfare, and mental health.</p>
       </div>
 
       {/* Statistics section */}
-      <div style={statisticsSection}>
-        <div style={statItemStyle}>
+      <div style={statisticsSectionStyle}>
+        <div style={statCardStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> Median annual wage of social and community service
-            workers in the US
-          </p>
+          <p>Median annual salary of social and community service workers in the US</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statCardStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> 15% increase in employment of social and community
-            service workers
-          </p>
+          <p>15% increase in employment of social and community service workers</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statCardStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> projected employment of social workers in the US
-            from 2020-2030
-          </p>
+          <p>Projected growth in social worker employment (2020-2030)</p>
         </div>
-        <div style={statItemStyle}>
+        <div style={statCardStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> High satisfaction rate among social justice
-            workers
-          </p>
+          <p>High satisfaction rate among social justice professionals</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleSection(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

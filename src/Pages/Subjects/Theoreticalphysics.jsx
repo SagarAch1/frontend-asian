@@ -6,7 +6,7 @@ const TheoreticalPhysics = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Switch between open and closed states
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const TheoreticalPhysics = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Alter color to enhance appeal
     marginBottom: "10px",
   };
 
@@ -90,48 +90,46 @@ const TheoreticalPhysics = () => {
     {
       title: "About Theoretical Physics",
       content:
-        "Theoretical physics employs mathematical models, hypotheses and systems of different abstractions, experiments and simulations to formulate theories that explain natural phenomena. This branch of physics will inculcate advanced mathematical and research skills in you along with developing strong critical thinking and problem-solving skills. The coursework for theoretical physics includes quantum mechanics, astrophysics, thermodynamics, cosmology and much more. A theoretical physics degree, although requires a lot of study, is a respected profession and can lead you to exciting career opportunities. ",
+        "Theoretical physics utilizes mathematical models, hypotheses, and simulations to create theories that explain natural phenomena. This field develops strong mathematical, research, and critical thinking skills. The coursework covers topics like quantum mechanics, astrophysics, thermodynamics, and cosmology. A degree in theoretical physics is demanding but respected, opening up various career possibilities.",
     },
     {
-      title: "Is Theoretical Physics right for me? ",
+      title: "Is Theoretical Physics right for me?",
       content1:
-        "A career in theoretical physics is best suited for an analytical and agile mind which is capable of thinking outside the box and can perceive ideas on a higher level to “look at the bigger picture”.",
+        "A theoretical physics career is best suited for an analytical and open-minded individual who can think creatively and analyze complex ideas at a higher level.",
       content2:
-        "Determination and patience are qualities that will serve you well in this degree. Students who excel in subjects like mathematics, algebra, statistical mechanics, pre-calculus and physics during high school have a solid foundation for a degree in theoretical physics. Students who like to question the environment around them and are eager to find answers are encouraged to go for this degree. ",
+        "Patience and determination are essential for success in this field. Students with strong backgrounds in subjects such as mathematics, algebra, and physics are well-positioned for this degree. Those curious about the world around them and driven to find answers should consider this field.",
     },
     {
-      title: "Study options and costs ",
+      title: "Study options and costs",
       content1:
-        "Due to the advanced nature of the subject theoretical physics is only taught at the bachelor’s level and beyond. The duration of a bachelor’s degree in Theoretical Physics is four years and the average tuition and fees is variable according to the university of your choice. However, the average annual tuition fee is AUD 39,800 in Australia. A bachelor’s degree will prepare the students’ basic foundation for theoretical and applied physics. Newtonian laws, thermodynamics, calculus and electronics along with the basics of nuclear and quantum physics are common coursework. After this, students can secure jobs such as research assistants and high school physics teachers.",
+        "Theoretical physics is taught at bachelor’s level and beyond. A bachelor’s degree typically lasts four years, with average tuition fees of AUD 39,800 in Australia. The course covers topics like Newtonian laws, thermodynamics, calculus, and quantum physics. Graduates can work as research assistants or physics teachers.",
       content2:
-        "After the students have finished their bachelor’s, it is beneficial to go for research positions as it familiarises them with the practical aspects of their subject. Getting a master’s or postgraduate degree is also easier with research experience.",
+        "After completing a bachelor’s, students can gain research experience to prepare for a master's or postgraduate degree, which is research-intensive and requires a thesis. Tuition fees for a master’s range from AUD 36,000 to AUD 60,000, with a typical duration of two years.",
       content3:
-        "Postgraduate degrees are highly-research oriented and an original thesis must be submitted in order to graduate. Tuition fees can vary depending on multiple factors, like specialisation, length of study, university and city. The duration of a master’s degree is two years and the average tuition costs between AUD 36,000-60,000.",
-      content4:
-        "Following the completion of the master’s degree, acquiring a doctorate is the next step. Its duration is usually four to six years and ends with a dissertation. The average total tuition fee is around $30,000 in the UK. Completing a PhD will allow students to become physicists in universities and can apply for grants for further research.",
+        "Following a master's, a PhD takes four to six years and requires submitting a dissertation. The average tuition fee for a PhD in the UK is around $30,000. A PhD opens the door to becoming a university physicist and applying for research grants.",
     },
     {
       title: "Future outlook",
       content:
-        "People with a theoretical physics degree can be employed as lecturers, federal or private researchers, nuclear physicists, medical physicists, astrophysicists and cosmologists. According to the US Bureau of Labor Statistics, the growth in employment opportunities at 9% coupled with lucrative salaries make this a secure and desirable career. Rapid technological breakthroughs and the need to address crucial questions about the nature of the universe are likely to see large amounts of grants and investment being channelled in the field of theoretical physics. Undoubtedly, Theoretical physics is one of the most stable and ideal career paths going into the future.",
+        "Graduates with a theoretical physics degree can pursue careers as lecturers, researchers, nuclear physicists, medical physicists, astrophysicists, and cosmologists. Employment in the field is expected to grow by 9% in the coming decade, with high earning potential. The field’s continuous advancements ensure job security and a promising career trajectory.",
     },
     {
-      title: "Career Pathways  for Theoretical Physics graduates",
+      title: "Career Pathways for Theoretical Physics graduates",
       subtitle1: "Research Scientist",
       content1:
-        "Research scientists are hired by both public and private sector organisations. Their primary role is to conduct research on natural phenomena. They work on theories, design experiments to prove their hypotheses and document their findings for publication. The average salary of a research scientist is $83,490 per year.",
+        "Research scientists work in public or private sectors, conducting experiments to explore natural phenomena and testing hypotheses. The average annual salary is $83,490.",
       subtitle2: "Astrophysicist",
       content2:
-        "Astronomers observe the stars, planets and other celestial entities in the universe. NASA and The Department of Defense are their major employers in the US. However, they work in close association with research scientists and meteorologists. Their average base salary for an astrophysicist is $117,220 per year.",
+        "Astrophysicists study celestial objects like stars and planets, often working for agencies like NASA. Their average salary is $117,220 per year.",
       subtitle3: "Medical Physicist",
       content3:
-        "Medical physicists use their knowledge in the field of radiology. They study the effects and treatments of radiation on the human body and are often consultants along with medical professionals to oversee operative procedures that require radiation. Their average salary is $129,183 per year. ",
+        "Medical physicists focus on the effects of radiation on the human body and work alongside medical professionals in treatment procedures. Their average salary is $129,183 per year.",
       subtitle4: "Aerospace Engineer",
       content4:
-        "Aerospace engineers design air crafts and space crafts like satellites, jets and rockets. They may be recruited by space exploration and travel companies or by governments with space programmes. They analyse and interpret flight data to design efficient projects. Their average annual salary is $89,195.",
+        "Aerospace engineers design aircraft and spacecraft. They may be employed by space agencies or private companies, analyzing flight data to improve designs. The average salary is $89,195 annually.",
       subtitle5: "Cosmologists",
       content5:
-        "A cosmologist is a scientist who uses space-based and ground-based telescopes and satellites to study the properties of the universe, including planets, black holes and galaxies. They obtain data and observe certain aspects of astronomical objects, including distance, size, motion and brightness The average annual salary of a cosmologist is $87,818. ",
+        "Cosmologists use telescopes to study the universe, including black holes and galaxies. They gather data on various astronomical objects. The average annual salary is $87,818.",
     },
   ];
 
@@ -139,12 +137,12 @@ const TheoreticalPhysics = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Theoretical Physics abroad</h1>
+        <h1>Study Theoretical Physics Abroad</h1>
         <p>
-          Theoretical physicists study and research natural phenomena and
-          entities ranging from sub-atomic particles to celestial systems like
-          galaxies and black holes. Sounds cool? This is just scratching the
-          surface of the field.  
+          Theoretical physicists explore and analyze everything from subatomic particles to vast galaxies. 
+        </p>
+        <p>
+        This field is both exciting and vast—just the beginning of an incredible journey in science.
         </p>
       </div>
 
@@ -153,33 +151,29 @@ const TheoreticalPhysics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>9% project growth in employment opportunities for
-            physicists this decade 
+            <strong></strong> 9% projected growth in physicist job opportunities this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Average annual salary for physicists
+            <strong></strong> Average annual salary for physicists.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 21,100 projected jobs for physicists in the US
-            this decade
+            <strong></strong> 21,100 new physicist positions projected in the US this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> $987,240 - total estimated worth of theoretical
-            physicists in various industries 
+            <strong></strong> $987,240 estimated worth of physicists in various industries.
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -191,7 +185,6 @@ const TheoreticalPhysics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -214,8 +207,6 @@ const TheoreticalPhysics = () => {
                 {item.content5 && <p>{item.content5}</p>}
 
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
