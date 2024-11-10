@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
-const Foodandhspitality = () => {
+const FoodAndHospitality = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open/close on click
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Foodandhspitality = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Styled to make icons visually appealing
     marginBottom: "10px",
   };
 
@@ -90,88 +90,76 @@ const Foodandhspitality = () => {
     {
       title: "About Food and Hospitality",
       content1:
-        "Food and Hospitality degree programmes will prepare you for positions in hotels and resorts, restaurants, meeting and event planning, club management, agritourism, and other related sectors. Hotel Operations, Food and Beverage Management, and Meeting and Event Planning are among the most common specialisations available to students. Keep in mind that like any other fast-paced industry, Food and Hospitality is cut-throat and you will constantly have to learn new things and maybe even pursue further education to keep growing.",
-
-      content2: "You'll study subjects like Finance, Administration, Marketing, Human Resource Management and Strategy, as well as other classic hotel management subjects. Elective courses such as sustainable food production, food science and safety or food policy can be taken to enhance your hospitality education.",
+        "A degree in Food and Hospitality prepares students for roles in hotels, restaurants, event planning, and related sectors. Common specializations include Hotel Operations, Food and Beverage Management, and Event Planning. Expect a competitive, fast-paced environment where continuous learning and potential further education are necessary for growth.",
+      content2:
+        "Topics covered include finance, administration, marketing, and HR management, alongside hotel management fundamentals. Electives may include sustainable food production, food safety, or food policy for a well-rounded education.",
     },
     {
-      title: "Is Food and Hospitality right for me?  ",
+      title: "Is Food and Hospitality Right for Me?",
       content1:
-        "Typically, bachelor's degree programmes in hospitality management provide tracks focused toward specific parts of the sector, such as Food and Beverage Management. These courses will equip you to work in hotels, restaurants, resorts, and other businesses with large Food and Beverage operations. A hotel management curriculum with a Food and Beverage Management specialisation teaches you both the business and culinary sides of managing bars and restaurants, as well as other related businesses.",
-        content2:"Research, academia, regulatory agencies, quality assurance, quality control, product development, sensory science, flavour chemistry, higher education, hospitality, tourism management, and agricultural systems technologies are all common places for graduates of the Food and Hospitality programme to work. If any of these are a part of your end goals and you have a passion for the culinary arts, then you are on the right track!",
+        "Hospitality management programs often provide paths focused on specific sectors, such as Food and Beverage Management. These courses prepare students for work in hotels, resorts, and other food and beverage-focused businesses, covering both business and culinary management.",
+      content2:
+        "Graduates frequently find careers in research, academia, regulatory agencies, quality assurance, product development, and tourism. If culinary arts and hospitality are your passions, this field offers many rewarding career paths.",
     },
     {
-      title: "Study options and costs ",
+      title: "Study Options and Costs",
       content1:
-        "Depending on location and region, a bachelor's in Food and Hospitality is followed by a more advanced degree in the form of a master’s or PhD. You can also opt for diplomas in case of entry-level positions. A diploma will cost you on average $25,000. Most universities offer undergraduate degrees in Food and Hospitality under the title of Bachelor of Science in Food and Hospitality or Bachelor of Science in Food and Beverage Industry Management. It’s advisable you go over the curriculum closely before making decisions so you know exactly what you will be offered.",
-        content2:"The cost of a bachelor’s is anywhere around $90,000 - $120,000 but scholarships are available from most universities. Also, the cost of the programme depends on the institute itself and the location. For example, in Australia a bachelor’s in Food and Hospitality costs around $40,000 to$50,000 so is relatively cheaper.",
-        content3:"Postgraduate degrees in Food and Hospitality usually focus on more in-depth knowledge of food science and offer different tracks of specialisation such as Food Science, Hospitality Management, Agricultural Systems Technology, and Food Supply Chains.",
+        "A bachelor's in Food and Hospitality is often followed by advanced degrees (master’s or PhD) or diplomas for entry-level roles. Diplomas average around $25,000. Bachelor's degrees typically cost between $90,000 - $120,000, with financial aid available. Costs can vary by region; for example, in Australia, the cost ranges from $40,000 to $50,000.",
+      content2:
+        "Postgraduate programs often dive into food science and offer specializations in Hospitality Management, Agricultural Systems, and Food Supply Chains.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content1:
-        "Food and beverage specialists with a bachelor's degree in Food and Hospitality are equipped to ensure that an organisation's restaurant and bar divisions profit and function efficiently. Food and Beverage Directors make on average $70,883 per year while top earners make as much as $104,000 or more.",
-        content2:"Hotels prefer candidates with bachelor's degrees in Food and Hospitality due their comprehensive understanding of the culinary and hospitality field. The rapid 15% projected employment growth of Food Services Managers is a testament to the bright outlook of this degree. ",
+        "Graduates in Food and Hospitality can work as food and beverage specialists to ensure organizational success in restaurant and bar operations. Food and Beverage Directors earn an average of $70,883 annually, with top earners reaching $104,000 or more.",
+      content2:
+        "Hotels prioritize candidates with hospitality degrees for their comprehensive culinary understanding. A projected 15% growth rate for Food Services Managers highlights the promising career prospects in this field.",
     },
     {
-      title: "Career Pathways for Food and Hospitality graduates",
+      title: "Career Pathways for Graduates",
       subtitle1: "Food and Beverage Manager",
       content1:
-        "Restaurants, bars, cafeteria, and other enterprises that provide food and beverage have food and beverage managers who plan, organise, direct, regulate, and analyse their operations.  ",
+        "Food and Beverage Managers oversee the operations of restaurants, bars, cafeterias, and similar establishments, ensuring efficient management and profitability.",
       subtitle2: "Restaurant Manager",
       content2:
-        "Restaurant managers are responsible for a variety of tasks, including hiring and managing personnel, monitoring operations, dealing with client complaints, and preparing financial reports. A restaurant manager's responsibilities also include following health and safety regulations. They may also budget and be responsible for managing inventories.",
+        "Restaurant Managers are responsible for staff management, customer service, health and safety compliance, budgeting, and inventory management.",
       subtitle3: "Director of Hospitality in Food and Beverage",
       content3:
-        "A food and beverage director is in charge of all areas of an organisation's food and beverage planning and service. This includes menu planning and costs, food and beverage preparation and presentation, and maintaining quality and safety standards.",
+        "The Director of Hospitality oversees all aspects of food and beverage planning, including menu design, food preparation, and quality standards.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Food and Hospitality abroad</h1>
+        <h1>Study Food and Hospitality Abroad</h1>
         <p>
-          Today, people seek a culinary experience that encompasses cuisines
-          from around the world, a distinct environment, and distinguishing
-          qualities that set one place apart from the other. This is what a
-          degree in Food and Hospitality is all about! 
+          A Food and Hospitality degree is more than just food service—it's about creating 
         </p>
+        <p>unique dining experiences and ambiance that set establishments apart.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> 41,400 openings projected for food service
-            managers each year
-          </p>
+          <p>41,400 annual job openings expected for food service managers</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> Average annual salary of a food and beverage
-            director  
-          </p>
+          <p>Average annual salary of a food and beverage director</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong>15% projected employment growth for food service
-            managers 
-          </p>
+          <p>15% projected growth for food service manager roles</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> 1.6 million new restaurant jobs expected by 2028 
-          </p>
+          <p>1.6 million new restaurant jobs projected by 2028</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -183,7 +171,7 @@ const Foodandhspitality = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
+                {/* Display subtitle and content if available */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -197,8 +185,6 @@ const Foodandhspitality = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
@@ -211,4 +197,4 @@ const Foodandhspitality = () => {
   );
 };
 
-export default Foodandhspitality;
+export default FoodAndHospitality;
