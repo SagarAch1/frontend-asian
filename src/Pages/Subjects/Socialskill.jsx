@@ -6,7 +6,7 @@ const SocialSkills = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle the FAQ visibility
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const SocialSkills = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive green color for icons
     marginBottom: "10px",
   };
 
@@ -90,35 +90,36 @@ const SocialSkills = () => {
     {
       title: "About Social Skills",
       content:
-        "Social Skills programmes educate students on how to connect effectively with people in a variety of settings, including private, social, and professional. It is a highly diverse subject that caters to different segments of society.  If you are passionate about learning and teaching people the art of effective communication, empathy and emotional intelligence, then Social Skills is the subject for you. ",
+        "Social Skills programmes are designed to teach students how to connect with people across various contexts, such as personal, social, and professional settings. It's a multifaceted subject that serves a broad range of society. If you have a passion for communication, emotional intelligence, and empathy, then this field is for you.",
     },
     {
       title: "Is Social Skills right for me?",
       content:
-        "Social Skills training programmes are high in demand for the behavioural intervention of young individuals and for making people better employees in general. Above all, if you struggle in socialising, it is all the more reason to pick up Social Skills programmes, as it will help you hone these skills.",
+        "Social Skills training is in high demand for behavioral intervention, especially for improving interpersonal skills and enhancing workplace performance. If you struggle with social interactions, this programme will help you develop these important skills.",
     },
     {
       title: "Study options and costs",
       content:
-        "Social Skills study programmes may be pursued after completion of high school. Several disciplines and study options in corporate social skills as part of the curriculum in bachelor’s and master’s degree programs. Some of the most common programs that featuring social skills courses are degrees in business Administration, Workplace Development and Social Sciences. All these programs will have social skills development or education as part of the course curriculum. These degrees will span four years and may cost up to $50,500. ",
+        "Social Skills programmes can be pursued after high school completion. These courses are often incorporated into bachelor’s and master’s degree programs, especially in fields like Business Administration, Workplace Development, and Social Sciences. These programmes typically span four years and may cost up to $50,500.",
     },
     {
       title: "Future outlook",
       content1:
-        "Social skills are in high demand across all professions involving people-to-people contact, especially in the corporate sector. Professionals who can teach Social Skills training programmes in post-secondary schools are also highly sought after. These programmes will not only assist students in their interpersonal connections, but will also have a significant impact on the self-confidence and future career success of their students.",
-      content2: "It is projected that soft skill-intensive occupations will grow significantly in the future and account for two-thirds of jobs in all professions by 2030. Another promising area for people with degrees in Social Skills is a corporate training. According to the U.S. Bureau of Labor Statistics, the job outlook for corporate trainers is expected to grow by 11% in the next five years.",
+        "Social skills are essential in professions that involve frequent people interaction, particularly in corporate environments. Professionals who can teach these skills at post-secondary institutions are also in demand. These programmes have a significant impact on students' interpersonal relationships and future career success.",
+      content2:
+        "Soft skill-intensive jobs are expected to grow rapidly, making up two-thirds of all jobs by 2030. Corporate training is also a promising field, with the job outlook for corporate trainers expected to grow by 11% in the next five years.",
     },
     {
       title: "Career pathways for Social Skills",
       subtitle1: "Social Skills Trainer - Autism",
       content1:
-        "If you are an empathetic individual and want to affect the lives of people with disorders then this job may appeal to you. Social skills trainers use a reward system (reward-motivated behaviour) to educate children with autism on how to recognise and use regular social skills. A trainer who works with these youngsters exclusively would have studied Social Skills as a primary subject during their education. The average annual salary of a social skills trainer is up to $40,281.",
+        "Social skills trainers working with children on the autism spectrum use reward systems to teach social interactions. A trainer in this field would have specialized in Social Skills during their studies. The average salary for a social skills trainer is $40,281 annually.",
       subtitle2: "Training Coordinator",
       content2:
-        "Communication with managers to identify training requirements and drawing outgrowth programmes for teams and individuals are among the tasks of the training coordinator. All training programmes are managed, designed, developed, coordinated, and conducted by the training coordinators. The average annual salary of training coordinators is up to $52,128.",
+        "Training coordinators identify training needs, design, and oversee training programs for employees. The role involves creating and conducting training to improve employees’ skills. The average salary for a training coordinator is $52,128 annually.",
       subtitle3: "Child Welfare Trainer",
       content3:
-        "Social services employ child welfare officers. Child welfare officers are social workers who work for government agencies and are responsible for assessing, investigating, or advising on matters involving kids. They seek to ensure that minors are not living in unhealthy environments. They are also responsible for the rehabilitation of children who have been subjected to such unhealthy environments. A large part of this process involves helping them learn social skills to form positive connections within society and their future relations. The average annual salary of the child welfare trainer is $52,389.",
+        "Child welfare trainers work for social services, ensuring children live in safe environments. They help children develop social skills necessary for positive relationships in society. The average salary for a child welfare trainer is $52,389 annually.",
     },
   ];
 
@@ -128,11 +129,10 @@ const SocialSkills = () => {
       <div style={sectionStyle}>
         <h1>Study Social Skills abroad</h1>
         <p>
-          Humans utilise gestures, body language, and personal appearance to
-          communicate and engage with others. Studying Social Skills helps
-          individuals develop and refine these skills in order to excel in both
-          personal and professional settings.
+          Humans use gestures, body language, and appearance to communicate and 
         </p>
+        <p> connect with others. Social Skills helps individuals refine these abilities</p>
+        <p>  for success in personal and professional environments.</p>
       </div>
 
       {/* Statistics section */}
@@ -140,34 +140,29 @@ const SocialSkills = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average annual salary of a social skills
-            facilitator
+            <strong></strong> Average salary for a social skills facilitator
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 11% projected employment growth for corporate
-            trainers in this decade
+            <strong></strong> Projected 11% growth in corporate trainer jobs in the coming decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Projected annual growth rate of the soft skills
-            market in next five years
+            <strong></strong> Expected annual growth rate of the soft skills market over the next five years
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Two thirds of all jobs by 2030 will be social
-            skills-intensive
+            <strong></strong> Social skills-intensive jobs will account for two-thirds of the workforce by 2030
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -179,7 +174,6 @@ const SocialSkills = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -193,8 +187,6 @@ const SocialSkills = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
