@@ -5,8 +5,8 @@ import FormPage from "../Homepage/FormPage";
 const Politicalscienceandpolicy = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
-  const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+  const toggleFAQ = (index) => {
+    setActiveIndex(activeIndex === index ? null : index); // Toggle between opening and closing the FAQ
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Politicalscienceandpolicy = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color
     marginBottom: "10px",
   };
 
@@ -90,45 +90,50 @@ const Politicalscienceandpolicy = () => {
     {
       title: "About Political Science and Policy Studies",
       content1:
-        "Political science seeks to understand how communities deal with conflict, seek various forms of justice, and make collective decisions for the greater good. It is the study of the structure, procedure, and policies of governments, as well as how communities impose conditions on governments through political parties, elections, interest group advocacy, and public opinion outlets. Policy studies is a subcategory of political science that examines the process of policymaking (the policy process) as well as the contents of policy (policy analysis). Policy study focuses on understanding substantive area research (such as health or education policy), programme evaluation and impact studies, as well as policy design.",
-     
+        "Political Science focuses on how societies manage conflict, seek justice, and make collective decisions for the common good. It involves studying government structures, political procedures, and how communities influence governments through political parties, elections, interest groups, and public opinion. Policy Studies, a branch of Political Science, focuses on the policymaking process and policy analysis, including areas like health or education policy, programme evaluation, and policy design.",
     },
     {
       title: "Is Political Science and Policy Studies Right for Me?",
       content1:
-        "Are you interested in theories about government, power structures and resource distribution? Do you wonder how legislation is done and what makes some policies more effective than others? If this is the case, then Political Science and Policy Studies might be the right major for you.",
-        content2:"Political Science and Policy Studies tend to appeal most to abstract thinkers and to those who want to work in government or the nonprofit sector, as well as those who want to pursue law. Students who are interested in current affairs and enjoy public discourse may be interested in the major. You'll be well-equipped to understand the forces that shape political processes if you major in Political Science and Policy Studies. If you want to play your role as an active citizen and help steer the direction of policy and legislation, then this degree may lead you to empowering career paths.",
+        "If you’re interested in understanding government theories, power structures, and the distribution of resources, and if you’re curious about how legislation is created and why some policies work better than others, then Political Science and Policy Studies could be the perfect fit for you.",
+      content2:
+        "This field typically attracts those who enjoy abstract thinking and want to pursue careers in government, law, or nonprofit sectors. If you’re passionate about current affairs and enjoy engaging in public discussions, this major offers the right tools to help you shape political processes and impact policy decisions.",
     },
     {
       title: "Political Science and Policy Studies Study Options and Costs",
       content1:
-        "Political Science and Policy Studies is offered at the bachelor's, master's and doctoral level.",
-        content2:"The bachelor of Political Science and Policy Studies degree combines fundamental concepts with standard courses in government, politics, public policy, international relations, and law. You’ll learn about the emergence of complex global political dynamics, race relations, social justice movements, and foreign policy. A bachelor's degree in Political Science and Policy Studies can cost anywhere between $10,560 for public in-state colleges and $37,650 for private schools.",
-        content3:"A master's degree allows you to specialise in an area of special interest to you. You are expected to gain mastery of the subject by narrowing your focus and publishing your findings for wider consumption. A master's degree typically costs $8,950 for in-state students and can cost up to $42,030 for private colleges.",
-        content4:"The PhD degree typically requires advanced coursework, including the submission of a book-length dissertation, teaching programmes, and comprehensive examinations. Clearly, these are suited to students who are naturally drawn to classic scholarship and have a passion for the subject. A doctoral degree may cost $11,440 for in-state students and $25,0083 for out-of-state students. The average tuition fee for a doctoral degree in a private school is $44,910.",
+        "Political Science and Policy Studies are available at the bachelor's, master's, and doctoral levels.",
+      content2:
+        "A Bachelor’s degree in this field includes core courses in government, politics, public policy, international relations, and law. You’ll study the complexities of global political dynamics, race relations, social justice movements, and foreign policy. The tuition fees for a bachelor’s program vary, ranging from $10,560 at public in-state colleges to $37,650 at private institutions.",
+      content3:
+        "A Master’s degree allows you to specialize in a specific area, focusing your research and publishing your findings. The average cost for in-state students is $8,950, while private colleges may charge up to $42,030.",
+      content4:
+        "A PhD program generally involves advanced coursework, a dissertation, teaching experience, and comprehensive exams. This option is for those passionate about academic research. Tuition costs for doctoral programs can range from $11,440 for in-state students to $44,910 at private universities.",
     },
     {
-      title: "Future outlook",
+      title: "Future Outlook",
       content1:
-        "Political Science and Policy Studies graduates with extensive knowledge of political systems, institutions, and policies are in high demand.",
-        content2:"Political Science and Policy Studies majors can be found at the highest echelons of both public and private organisations, with a job outlook of 9%, which is faster than the national average of all other occupations. Political Science and Policy Studies graduates can earn $60,000-$90,000 as research analysts, program and account managers, and marketing professionals. According to the U.S. Bureau of Labor Statistics, on average, 700 openings for political scientists are expected each year over the next decade. In today’s globalised economy the critical thinking skills developed by the academic rigour of a Political Science and Policy Studies degree is invaluable making the future outlook for this degree welcoming.",
+        "Graduates with a deep understanding of political systems, institutions, and policies are highly sought after. The job market for Political Science and Policy Studies professionals is expected to grow by 9%, faster than the average growth rate for other fields.",
+      content2:
+        "Political Science and Policy Studies graduates can earn between $60,000 and $90,000 in roles such as research analysts, program managers, and marketing professionals. The U.S. Bureau of Labor Statistics predicts around 700 job openings for political scientists annually in the next decade. The critical thinking skills gained from this degree make it highly valuable in today’s globalized economy.",
     },
     {
       title: "Career Pathways for Political Science and Policy Studies graduates",
       subtitle1: "Political Scientist",
       content1:
-        "As a political scientist you will be expected to analyse current events, policy pronouncements, and other related issues. You will be expected to conduct research on international issues and present your findings to public and private stakeholders.",
+        "Political Scientists analyze current events, policy decisions, and other relevant issues. Their research on global topics helps inform public and private sector decisions.",
       subtitle2: "Campaign Director",
       content2:
-        "Campaign directions, as the name suggests, manage campaigns for political candidates. They are in charge of key operations such as strategising, fundraising, political advertising, polling, and other activities aimed at rallying support and votes.",
+        "Campaign Directors manage political campaigns, overseeing strategy, fundraising, advertising, and public polling to garner support for candidates.",
       subtitle3: "City Administrator",
       content3:
-        "As a city administrator, you work for the government and report to the mayor. You will be responsible for monitoring, coordinating, and supervising office activities and functions. You are also authorized to create and implement internal policies and procedures governing the city's administrative activities. In additional, you are responsible to evaluate city employees, and to take the necessary steps to improve city administration operations.",
+        "City Administrators manage city government operations, report to the mayor, and oversee office functions. They are responsible for policy creation, implementation, and ensuring the effective operation of the city’s administration.",
       subtitle4: "Diplomat",
       content4:
-        "Simply put, diplomats represent their country’s interests in foreign lands. They are tasked with defending their country and its citizens, repairing relationships with other countries, and forging long-term bonds in order to shape sound foreign policy.",
+        "Diplomats represent their countries abroad, protect national interests, foster international relations, and influence foreign policy decisions.",
       subtitle5: "Political Analyst",
-      content5:"Policy analysts assess the effectiveness of existing policies and propose new programmes and legislation to modify and improve them. They raise public awareness of the consequences of policies while also influencing political and social events.",
+      content5:
+        "Political Analysts evaluate the impact of existing policies, propose new programs, and raise public awareness on the consequences of policy decisions, shaping political and social events.",
     },
   ];
 
@@ -136,58 +141,45 @@ const Politicalscienceandpolicy = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Political Science and Policy Studies abroad</h1>
+        <h1>Study Political Science and Policy Studies Abroad</h1>
         <p>
-          Interested in understanding how politics shapes global dynamics and
-          foreign policies of different countries? Studying Political Science
-          and Policy Studies can address these questions and open doors to
-          rewarding career opportunities!
+          If you’re curious about how politics shape global dynamics and influence foreign policy, 
         </p>
+        <p>pursuing a degree in Political Science and Policy Studies could be the answer. </p>
+        <p>This field opens doors to rewarding career opportunities and intellectual growth.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> 9% projected growth in employment opportunities
-            for political scientists
-          </p>
+          <p>9% projected growth in employment opportunities for political scientists</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> Average annual salary of political scientists
-          </p>
+          <p>Average annual salary of political scientists</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> 7,400: the number of predicted job openings by
-            2029
-          </p>
+          <p>7,400 job openings expected by 2029</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong>Average annual salary of top earners
-          </p>
+          <p>Average annual salary of top earners in political science</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
         {faqItems.map((item, index) => (
           <div key={index} style={faqItemStyle}>
-            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+            <div style={faqTitleStyle} onClick={() => toggleFAQ(index)}>
               <span>{item.title}</span>
               <span>{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -209,8 +201,6 @@ const Politicalscienceandpolicy = () => {
                 )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

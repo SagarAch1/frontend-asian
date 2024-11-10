@@ -88,43 +88,44 @@ const Sociology = () => {
 
   const faqItems = [
     {
-      title: "About Sociology",
+      title: "Understanding Sociology",
       content1:
-        "Sociology focuses on societal aspects such as social interaction, social behavior, social change, and the social correlation and causations of human behavior. This field of study explores and evaluates all the characteristics which makes a society whole. For example, primary institution, secondary institutions, beliefs, values, and norms.",
+        "Sociology explores societal dynamics, including human behavior, social interactions, changes in society, and the relationships between individuals and society. It investigates the structures and elements that hold society together, such as family, institutions, values, norms, and belief systems.",
       content2:
-        "A degree in this branch of study will provide you with insights that help understand the choices an individual makes, and how those choices shape their lives along with the society they’re living in. Sociology graduates also gain the ability to critically think about social topics and problems that occur in our society. Sociology enriches student lives while also preparing them for employment in a world that is becoming increasingly diverse.",
+        "A sociology degree helps you understand why people make certain choices, and how these choices affect both individuals and the broader community. Students also develop critical thinking skills, enabling them to analyze societal problems and topics that shape our daily lives. Sociology provides valuable knowledge to thrive in a diverse and evolving world.",
       content3:
-        "A program in sociology will teach you skills such as critical thinking, problem-solving, interpersonal communication, and fieldwork skills, which will not only benefit you academically, but wherever you may decide to go.",
+        "Studying sociology teaches you essential skills like critical thinking, problem-solving, communication, and field research—skills that are useful not only academically but also in various career fields.",
     },
     {
-      title: "Is Sociology right for me?",
+      title: "Is Sociology a good fit for you?",
       content1:
-        "Have you ever wondered why a criminal commits crime? Why teenagers resort to deviant behavior? Or how the building blocks of a culture are set in place? If yes, then this is the field of study you’ve been in search of.",
-      content2:"Before diving into Sociology, you need to make sure you can express your thoughts, relate everyday experiences to what you’re studying, and analyse data effectively. This will enable you to formulate and test hypotheses. Your job would demand you to think critically, improvise, and find quick but effective solutions. If you think you have these character traits, then this field of study is well suited to you.",
+        "Have you ever wondered what drives criminal behavior, why teenagers act rebelliously, or how cultural norms are established? If you find these questions intriguing, sociology may be the right field for you.",
+      content2:
+        "Before diving into sociology, it's important to be able to express your ideas, connect your daily experiences with theoretical concepts, and analyze data effectively. If you possess strong analytical skills, creativity, and the ability to find practical solutions, this discipline could be a perfect match for you.",
     },
     {
-      title: "Sociology study options and costs",
+      title: "Sociology program options and costs",
       content1:
-        "The cost of a bachelor’s of Sociology is on average $27,488 for international students. A master’s in this degree is about 1-2 years in duration. If you’re planning on doing master’s full-time, it would cost you around $21,000 per year and if you decide to do it half-time, that will cost around $11,000 per year. Since masters is an advanced degree as compared to bachelors, this will incorporate subjects such as politics of environment, qualitative and quantitative data analysis, social research, social change leading to political order, sociology of violence, power structures, cultural norms, and sociology of religion.",
-      content2:"After having a bachelors and master’s degree, if your passion for Sociology perseveres, put your best foot forward to enroll yourself in a PhD programme. A PhD in Sociology would mean spending another three years of your life, six if you’re doing it half time, studying. A PhD in Sociology costs around $20,500 per year. This is perhaps the most challenging programme due to the extensive fieldwork you are required to do, on any topic of your choice.",
+        "The average cost of a bachelor's degree in Sociology for international students is around $27,488. A master’s degree typically lasts 1-2 years, and the tuition fees for full-time students range from $21,000 per year, while part-time students can expect to pay around $11,000 annually. Graduate studies delve into specialized topics such as environmental politics, data analysis, social research, and cultural studies.",
+      content2:
+        "For those who wish to continue studying, a PhD in Sociology can take about 3 years full-time (or 6 years part-time), with an average cost of $20,500 annually. This advanced degree involves extensive field research and a focus on your chosen area of interest.",
     },
     {
-      title: "Future outlook",
+      title: "Future Career Prospects in Sociology",
       content:
-        "After all the hassle one might go through, the future outlooks of this course are bright. Because sociology is the study of society and all cultural aspects that make a society, your expertise find employment in a variety of sectors. The academic rigour of a Sociology degree equips you with transferrable skills such as critical thinking, analytical and research skills which increase your market worth. This coupled with the steady growth in employment opportunities for Sociology careers ensure a good future outlook for students.",
+        "Sociology graduates enjoy a promising future due to the increasing demand for their skills across various industries. The knowledge and research capabilities gained through a sociology degree, such as critical thinking and problem-solving, enhance employability. The diverse nature of sociology offers job opportunities in various sectors, including academia, research, social services, and government, ensuring a positive career outlook.",
     },
     {
-      title: "Career pathways for Sociology graduates",
+      title: "Career Opportunities for Sociology Graduates",
       subtitle1: "Human Resources Manager",
       content1:
-        "As a HR manager you oversee tasks such as interviewing candidates and developing strategies to optimise productivity. You are responsible for talent acquisition and organisational cultural development. Those in charge of this job are seen as the bridge between the organisation and its employees.",
+        "HR managers oversee hiring, interviewing, and developing strategies to enhance employee productivity. They manage talent acquisition and help shape the organizational culture, serving as a bridge between management and employees.",
       subtitle2: "Guidance Counselor",
       content2:
-        "Guidance counsellors work in educational institutes. They help students make smart choices regarding their academics and careers. They provide support to students and help they see things from new perspectives.",
+        "Guidance counselors work in educational institutions, helping students make informed decisions regarding their academic and career paths. They offer support and assist students in gaining new perspectives on their challenges.",
       subtitle3: "Social Worker",
       content3:
-        "Social workers assist people in overcoming obstacles in their lives, such as problems with family, health, finances, or employment. Counselling services, such as financial support, client data processing, individual progress tracking, and more can also be included in your duties.",
-    
+        "Social workers assist individuals and families in overcoming challenges related to family issues, health, finances, or employment. They provide counseling, track client progress, and offer financial or legal assistance when needed.",
     },
   ];
 
@@ -132,13 +133,12 @@ const Sociology = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Sociology abroad</h1>
+        <h1>Study Sociology Abroad</h1>
         <p>
-          Want to get a better understanding of how societies build, evolve and
-          operate? Want to know the reasons for differences in social
-          behaviours? Then studying Sociology might just be what you’re looking
-          for.
+          Are you interested in understanding how societies form, evolve, and operate? 
         </p>
+        <p>Do you want to explore the reasons behind variations in social behavior? </p>
+        <p>If so, Sociology may be the perfect field for you.</p>
       </div>
 
       {/* Statistics section */}
@@ -146,33 +146,29 @@ const Sociology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $93,420: average annual wage of a sociologist
+            <strong></strong> $93,420: Average annual salary for a sociologist
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>5% growth in employment opportunities for
-            sociologists
+            <strong></strong> 5% increase in job opportunities for sociologists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $135,420: average annual income of top
-            sociologists
+            <strong></strong> $135,420: Top annual salary for experienced sociologists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 37% Sociology jobs are research and fieldwork
-            based
+            <strong></strong> 37% of sociology jobs involve research and fieldwork
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -202,8 +198,6 @@ const Sociology = () => {
                 )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

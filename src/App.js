@@ -342,7 +342,7 @@ function App() {
         <Route path="/theoreticalphysics" element={<TheoreticalPhysics />} />
         <Route path="/socialjustice" element={<SocialJustice />} />
         <Route path="/socialscience" element={<SocialScience />} />
-        <Route path="/politicalscienceandpolicy" element={<Politicalscienceandpolicy />} />
+        <Route path="/politicalscienceandpolicystudies" element={<Politicalscienceandpolicy />} />
         <Route path="/politicalscience" element={<Politicalscience />} />
         <Route path="/sociology" element={<Sociology />} />
         <Route path="/secondaryeducation" element={<SecondaryEducation />} />

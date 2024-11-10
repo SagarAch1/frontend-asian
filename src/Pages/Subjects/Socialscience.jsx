@@ -48,7 +48,7 @@ const SocialScience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractive color
     marginBottom: "10px",
   };
 
@@ -88,42 +88,41 @@ const SocialScience = () => {
 
   const faqItems = [
     {
-      title: "About Social Science",
+      title: "What is Social Science?",
       content1:
-        "Social Science is an interdisciplinary field that includes numerous subjects such as psychology, economics, politics, law, linguistics, history, anthropology, and sociology. This field is known to be developed in the 18th century. Social Science helps you perceive society and quantify it as a whole. This aids in viewing the progression of a society’s decline as well as its enhancement. It will as a subject, enhance your ability to think critically, analyse and develop your problem-solving skills.",
-      content2: "Social Science, being an umbrella term, can lead you to study psychology that will allow you to study and explore the mind and behavior of people. Another subject that this domain offers is economics which will let you examine the relationship between the process of producing as well as exchanging of good and the individual handling the two. It will also allow you to understand the microeconomics and macroeconomics in detail. You can become an analyst who plays an integral role in shaping the economic policies of the country. Similarly, it opens door for you to study the political scene of a country and understand different political trends.",
-      content3: "Many careers ranging from legal services, political occupations, counseling, and many other human services require you to study this field of academia. The salary bracket varies from USD 50,000 to USD 100,000+ for these careers. The best part about studying this particular subject is the flexibility of career paths. With varied choices, you can choose the best one suited for your personality and skillset.",
-        },
-    {
-      title: "Is Social Science right for me?",
-      content:
-        "If you want to pursue social sciences, you must have good communication skills, research skills, writing ability, interpersonal skills, listening skills and most of all curiosity. If you have all these, this field of study will only make you shine professionally.",
+        "Social Science is a broad field that includes disciplines like psychology, economics, politics, law, linguistics, history, anthropology, and sociology. Emerging in the 18th century, it helps in understanding society as a whole. It allows you to examine societal progress and challenges. As a subject, it strengthens critical thinking, analytical, and problem-solving abilities.",
+      content2: "Social Science gives you the opportunity to study various areas such as psychology, economics, and political systems. Economics allows you to explore the relationship between production and consumption, while also covering micro and macroeconomics. It opens career paths as an analyst, helping shape economic policies. Similarly, political studies help understand and analyze a country's political trends.",
+      content3: "Various careers in law, politics, counseling, and social services require a background in Social Science. Salaries in these fields range from USD 50,000 to over USD 100,000. One of the advantages of studying Social Science is the flexibility in choosing from a range of career paths that align with your skills and interests.",
     },
     {
-      title: "Social Science study options and costs",
+      title: "Is Social Science suitable for me?",
+      content:
+        "To excel in Social Science, strong communication, research, writing, interpersonal, and listening skills are essential, along with a deep curiosity. If you possess these qualities, this field will foster your professional growth.",
+    },
+    {
+      title: "Study options and costs for Social Science",
       content1:
-        "In United States, 529 colleges are offering Social Science programmes. You can do a bachelor’s, master’s as we To get into a Social Sciences programme, you do not require a pre-requisite degree. You can begin by simply enrolling in a Bachelor’s degree programme. The perk that also follows this degree is that you can set your majors as well as a minor subject that can help shape your career choices. In the US, a bachelor’s in Social Science will cost around USD 17,000 a year while in Australia it might average AUD 30,000 a year.",
-     
+        "In the United States, 529 colleges offer Social Science programs. You can pursue both undergraduate and postgraduate degrees. To enroll, there’s no specific prerequisite degree required. A Bachelor's degree in Social Science allows you to select a major and minor to guide your career decisions. The average cost for a bachelor's in Social Science in the US is around USD 17,000 per year, while in Australia it’s about AUD 30,000 annually.",
     },
     {
-      title: "Future outlook",
+      title: "Future prospects for Social Science",
       content:
-        "In our dynamic world, new challenges as well as innovative solutions are emerging every day in every field ranging from economics to sociology. There is thus a large demand for Social Science majors to help research the impact of challenges faced in various fields and the efficacy of our solutions. In the coming years, this field will not only grow but also prosper. In addition to a steady demand for social scientists, the salaries will also be competitive and remain high over time. Employment opportunities are expected to increase by 13% in the near future for Social Science majors.",
+        "As the world evolves, new challenges and solutions arise in fields like economics and sociology. This has led to a growing demand for Social Science experts who can study the impact of these challenges and evaluate the effectiveness of solutions. The field is expected to thrive, with job opportunities rising by 13%. Salaries in Social Science will remain competitive and high over the years.",
     },
     {
-      title: "Career pathways for Social Science graduates",
+      title: "Career opportunities for Social Science graduates",
       subtitle1: "Sociologist",
       content1:
-        "Sociologists study the societal patterns involving human interaction and cultural growth. This is a research-based profession, which involves interviewing people, collecting data, analysing data, and drawing conclusions.",
-      subtitle2: "Law and Justice Professional",
+        "Sociologists analyze social patterns and cultural development. Their work involves conducting interviews, gathering and analyzing data, and drawing conclusions based on their findings.",
+      subtitle2: "Legal and Justice Careers",
       content2:
-        "Social Science majors can opt to work as lawyers, paralegals or as legal assistants. Within this domain, you will find various career paths that pay well and are fulfilling. You may also take the road to being a counselor or a judge.",
-      subtitle3: "Economists",
+        "Social Science graduates can pursue careers in law as lawyers, paralegals, or legal assistants. Career options within this field include becoming a counselor or judge.",
+      subtitle3: "Economist",
       content3:
-        "Economists have a very important role to play in the strategic planning of a government. Their primary role is to analyse data and forecast economic trends. They do this by analysing vast amounts of data related to work productivity, wages, supply and demand and so on. Findings of economists play a role in legislation and policy making.",
-      subtitle4: "Social worker",
+        "Economists play a crucial role in strategic government planning by analyzing data and forecasting economic trends. Their analysis influences legislation and policymaking.",
+      subtitle4: "Social Worker",
       content4:
-        "Social workers play an important role in the healthcare systems as well as non-profit organisations. Their help people overcome challenges such as drug addiction, poverty, disability and so on. Social workers must have at least a bachelor’s degree to practice.",
+        "Social workers help people overcome challenges like addiction, poverty, and disabilities. To practice, a Bachelor's degree is required, and they are essential in both healthcare and non-profit sectors.",
     },
   ];
 
@@ -133,11 +132,10 @@ const SocialScience = () => {
       <div style={sectionStyle}>
         <h1>Study Social Science abroad</h1>
         <p>
-          If you want to learn about the behaviours and interactions of people
-          belonging to different backgrounds and how this behavior influences
-          the development of culture and economy, then pursuing Social Science
-          will help you satiate your intellectual thirst.
+          If you are interested in understanding human behavior and the interactions 
         </p>
+        <p>between people from various backgrounds and how this influences the  </p>
+        <p>economy and culture, studying Social Science is the perfect choice for you.</p>
       </div>
 
       {/* Statistics section */}
@@ -145,32 +143,29 @@ const SocialScience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 13% growth in employment opportunities in the
-            Social Science job market
+            <strong></strong> 13% increase in employment opportunities in the Social Science job market
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $85,847: average annual earning of a social
-            scientist
+            <strong></strong> $85,847: average annual earnings of a social scientist
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $105,630: average annual pay of economists
+            <strong></strong> $105,630: average yearly salary of economists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Average annual income of data analysts
+            <strong></strong> Average salary of data analysts
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -182,26 +177,15 @@ const SocialScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>

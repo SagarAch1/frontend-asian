@@ -6,7 +6,7 @@ const Politicalscience = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle to show or hide FAQ section
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Politicalscience = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Use an attractive color for icons
     marginBottom: "10px",
   };
 
@@ -88,53 +88,52 @@ const Politicalscience = () => {
 
   const faqItems = [
     {
-      title: "About Political Science ",
+      title: "Overview of Political Science",
       content1:
-        "The significance of politics in our daily lives is undeniable. Political Science is the scientific study of politics, helping us better understand political discourse, governance and political behaviour. Political Science has many sub-disciplines including political theory, comparative politics, international relations, history of politics, public policy and political methodology.",
-      content2: "Political Science provides us with a holistic understanding of power and resource distribution in society, evolution of political thought, comparative analysis of political regimes, and politics at the international stage. An education in Political Science will teach you how to critically analyse politics. You will also learn about public policy and empirical methodology to solve political challenges.",
-      content3:"Political scientists, due to their piercing analytical capabilities, have superb career advancement opportunities. Political science graduates find plentiful opportunities in government institutions, legislative bodies, political administration, NGOs, international organisations, public service organisations, thinktanks and journalism.",
-    },
-    {
-      title: "Is Political Science right for me?",
-      content:
-        "Some indicators that you are well suited to this field are that you often think deeply about the world and how it can be made better. Or you think about topics like migration, authoritarianism, freedom of speech, laws, populism and globalisation. Furthermore, Political Science requires one to have strong analytical skills. Political scientists must be able to gather and evaluate both qualitative and quantitative data and possess a great deal of ingenuity, which is essential to produce original and groundbreaking papers. Creativity allows political scientists to think about old political issues through novel viewpoints and draw new conclusions.",
-     
-    },
-    {
-      title: "Political Science study options and costs",
-      content1:
-        "Students can pursue a bachelor’s degree in Political Science which is typically a four-year programme. During your bachelor’s you will be familiarised with the fundamentals of politics, legislation and government. Some course modules students can expect to study are public policy, populism, qualitative research methods, identity politics, democracy and authoritarianism, and gender and politics. This degree will qualify you for some entry-level positions such as policy analyst, legislative assistant, political campaign worker or public relations specialist. A bachelor’s degree in Political Science in the US costs around $29,457 for international students.",
+        "Politics is a critical part of our everyday existence. Political Science examines political discourse, governance, and behavior, offering insights into these key aspects. It is an expansive field covering sub-disciplines such as political theory, comparative politics, international relations, political history, public policy, and political methodology.",
       content2:
-        "Next up, students can choose to pursue a master’s degree in Political Science which will enable them to work as political scientists. This degree will emphasise research methodology and tend to be more specific in nature compared to a bachelor’s degree. A master’s degree in Political Science costs around £23,000 to £30,000 in the UK.",
+        "This discipline provides a comprehensive view of how power and resources are distributed within societies, the development of political ideologies, comparisons of political regimes, and global politics. A Political Science education will equip you with skills to analyze political matters, including studying public policy and applying empirical methods to address political issues.",
       content3:
-        "A PhD can be an excellent acquisition for political scientists who have some experience under their belt allowing them to advance in their careers. A PhD degree in Political Science qualifies you for senior research positions as well as to teach at the university level.",
-     
+        "Political scientists, recognized for their strong analytical abilities, have excellent career prospects. Graduates in this field often find opportunities in governmental agencies, legislative bodies, political administrations, NGOs, international organizations, public service bodies, think tanks, and journalism.",
     },
     {
-      title: "Future outlook",
+      title: "Is Political Science the Right Choice for Me?",
+      content:
+        "If you frequently reflect on global challenges and consider how the world can improve, or if you ponder on issues such as migration, authoritarianism, freedom of speech, laws, populism, and globalization, Political Science might be a suitable field. Analytical skills are crucial in this discipline, as political scientists must evaluate both qualitative and quantitative data, demonstrating creativity to offer original perspectives on complex political issues.",
+    },
+    {
+      title: "Study Options and Costs in Political Science",
       content1:
-        "In today’s politically partisan world, there is an increasing demand for public policy analysts in the private sector. Similarly, governments are recruiting more and more political scientists to assess government policies and improve public service. According to the US Bureau of Labor Statistics, employment opportunities for political scientists is expected to increase by 9% from 2020 to 2030.",
+        "Students can begin their Political Science studies with a bachelor's degree, typically a four-year program. During this time, students will be introduced to the core elements of politics, government structures, and legislation. Common courses include public policy, populism, qualitative research methods, identity politics, democracy vs authoritarianism, and gender and politics. This degree can lead to entry-level positions like policy analyst, legislative assistant, political campaign worker, or public relations specialist. The cost for an international student's bachelor’s degree in Political Science in the US averages around $29,457 per year.",
       content2:
-        "Political parties, lobbying firms, labour unions and other political entities rely on the insights provided by political scientists to navigate political straits. This is expected to drive the demand for Political Science graduates even higher. Many international firms are hiring political scientists to analyse and advise regarding policies pertaining to their fields such as food policies for food chains or drug policies for pharmaceutical companies.",
+        "Students can then opt for a master’s degree in Political Science, focusing more on research methodologies and specific areas of political science. A master’s degree in Political Science typically costs between £23,000 and £30,000 in the UK.",
+      content3:
+        "For those with some experience, pursuing a PhD in Political Science can be an excellent career booster, leading to senior research roles or university teaching positions.",
     },
     {
-      title:
-        "Career pathways for Political Science graduates",
+      title: "Job Outlook in Political Science",
+      content1:
+        "As the world becomes more politically polarized, there is a growing need for policy analysts in both the private sector and government. Political scientists are being hired to evaluate policies and improve public services. According to the US Bureau of Labor Statistics, the demand for political scientists is expected to grow by 9% from 2020 to 2030.",
+      content2:
+        "Political parties, lobbyists, labor unions, and various other political organizations rely on the insights of political scientists to make informed decisions. Many international companies are also employing political scientists to advise on policies affecting their industries, such as food regulations for food chains or pharmaceutical policies for healthcare companies.",
+    },
+    {
+      title: "Career Opportunities for Political Science Graduates",
       subtitle1: "Policy Analyst",
       content1:
-        "Policy analysts utilise their critical thinking and analytical skills to evaluate the impact of public policies. They draft proposals for policies and write detailed reports in support of their proposed policy. They also suggest improvements to current policies.",
+        "Policy analysts use their critical thinking and analytical skills to assess the effects of public policies. They propose new policies and write in-depth reports to support their recommendations, suggesting improvements to existing policies.",
       subtitle2: "Legislative Assistant",
       content2:
-        "Assembly members and other political representatives hire legislative assistants to help them conduct their duties. Legislative assistants use their communication skills to help legislators write and speak better. They also assess the demands of the constituents regarding developmental and political issues. Furthermore, legislative assistants will keep tabs on senate or national assembly happenings and policy issues.",
+        "Legislative assistants work for political representatives to support them in their legislative duties. They assist in writing speeches, drafting legislation, tracking political issues, and managing public concerns.",
       subtitle3: "Public Relations Specialist",
       content3:
-        "Public relations specialists are often hired by political organisations or leaders to help sway public opinion in their favour. Public relations specialists write persuasive press releases and use media to highlight the positive work of their client.Other responsibilities of a PR specialist may include organizing press conferences, garnering media attention and organising campaign events.",
+        "Political organizations or figures often hire PR specialists to help shape public opinion. They write press releases, arrange media coverage, and organize events to promote their client’s image and ideas.",
       subtitle4: "Diplomat",
       content4:
-        "Simply put, diplomats represent their country’s interests in foreign lands. They are tasked with defending their country and its citizens, repairing relationships with other countries, and forging long-term bonds in order to shape sound foreign policy.",
+        "Diplomats represent their country's interests abroad. They are responsible for safeguarding their nation's citizens, maintaining diplomatic relations, and influencing foreign policies to align with national goals.",
       subtitle5: "Political Scientist",
       content5:
-        "A political scientist studies political theory and research political phenomena. They analyse the current political climate and proffer advice on policymaking. Political scientists rely on qualitative research, historical trends and their own experience to predict the future political scenario and help their clients navigate dire political straits.",
+        "Political scientists research political theories, analyze political behavior, and forecast future political trends. They provide advice on policy-making, utilizing both historical data and current political scenarios to help shape decisions.",
     },
   ];
 
@@ -142,13 +141,12 @@ const Politicalscience = () => {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Political Science abroad</h1>
+        <h1>Study Political Science Abroad</h1>
         <p>
-          Political Science is the study of political structures, policies and
-          practices. Studying political science gives you a firm footing to
-          participate in community organisation and prepares you for future
-          roles in policy, international affairs and media.
+          Political Science involves studying political structures, policies, and practices. 
         </p>
+        <p>It provides a solid foundation for engaging in community organizations and  </p>
+        <p>preparing for future roles in policy-making, international relations, and media.</p>
       </div>
 
       {/* Statistics section */}
@@ -156,34 +154,29 @@ const Politicalscience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 9% growth in employment opportunities for
-            political scientists
+            <strong></strong> 9% increase in political science job opportunities
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $125,350: the average annual salary of political
-            scientists
+            <strong></strong> $125,350: the average yearly income for political scientists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 50% of all political scientists are employed by
-            the federal government in the US
+            <strong></strong> 50% of political scientists in the US work for the federal government
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>$170,800: the average annual salary of top
-            political scientists
+            <strong></strong> $170,800: the top annual salary for leading political scientists
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -217,8 +210,6 @@ const Politicalscience = () => {
                 )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
