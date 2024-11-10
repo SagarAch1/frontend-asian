@@ -6,7 +6,7 @@ const DisabilityStudies = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle visibility
   };
 
   const sectionStyle = {
@@ -80,51 +80,55 @@ const DisabilityStudies = () => {
     color: "#666",
   };
 
-
-const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+  const faqSubtitleStyle = {
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
     {
       title: "About Disability Studies",
       content1:
-        "Disability Studies is a vibrant field of study, developed over the past 40 years. It is both interdisciplinary and multi-disciplinary, informed by scholarships in History, Sociology, Literature, Political Science, Law, Policy Studies, Economics, Cultural Studies, Anthropology, Geography, Philosophy, Theology, Gender Studies, Media Studies and the arts.",
-        content2:"Disability Studies challenges the way in which disability is understood in our society by developing new research and educational models. These help to remove the physical, legal, political, and attitudinal barriers that exclude people from society. Disability Studies programmes challenge conventional and medicalised understandings of the body and mind in order to recognise and promote a more diverse spectrum of humanity.",
-      
+        "Disability Studies is a dynamic and evolving field that has been developing for over four decades. This interdisciplinary area draws on knowledge from various domains, including History, Sociology, Literature, Political Science, Law, Policy Studies, Economics, Cultural Studies, Anthropology, Geography, Philosophy, Theology, Gender Studies, Media Studies, and the Arts.",
+      content2:
+        "The field of Disability Studies questions the traditional views of disability in society and aims to create new educational frameworks and research methodologies. These efforts seek to dismantle the physical, legal, political, and social barriers that often marginalize people with disabilities. The discipline challenges the conventional, medicalized definitions of the body and mind, fostering a more inclusive understanding of human diversity.",
     },
     {
-      title: "Is Disability Studies right for me?",
+      title: "Is Disability Studies the Right Choice for Me?",
       content1:
-        "Disability Studies students have the opportunity to study disability rights and culture through courses in the humanities, arts, and social sciences. Disability Studies investigates, critiques, and enhances societal understandings of disability. The field of study will introduce you to a critical framework for recognising how people with disabilities have experienced disadvantages and exclusion because of personal and societal responses to impairment. If you are an empathetic individual who is motivated to work for the minoritised and otherised section of the society, then this field is a good fit for you.",
-        content2:"Graduates are currently employed in positions with state and regional disability advocacy organisations, community agencies, independent living centres, higher-education disability resource offices, local government in civil rights policy, K-12 education, and the state medical association in legislative and regularly affairs. Some have also gone on to law school and to graduate school in diverse disciplines, including Public Policy and Administration, Psychology, Speech and Hearing Sciences, Communication, Education, and social work. Disability Studies provide the opportunity to find meaningful work",
+        "Disability Studies students engage with disability rights and culture through a blend of humanities, arts, and social sciences courses. The program critiques and enhances societal perceptions of disability, offering a critical perspective on how people with disabilities have historically faced exclusion and disadvantage. If you're an empathetic person passionate about advocating for marginalized communities, this field may be a perfect fit for you.",
+      content2:
+        "Graduates of Disability Studies often find employment with disability advocacy organizations, community agencies, independent living centers, academic disability resource offices, civil rights policy divisions of local governments, K-12 education systems, and state medical associations. Some alumni pursue further studies in law or graduate programs in Public Policy, Psychology, Speech and Hearing Sciences, Communication, Education, or Social Work, where they continue to have a significant impact in various fields.",
     },
     {
-      title: "Disability Studies study options and costs",
+      title: "Disability Studies Education and Costs",
       content1:
-        "Students can pursue a programme in Disability Studies after completing their secondary education.",
-        content2:"An associate degree in Disability Studies is a good choice for students who are looking to build a career in disability or human service management. This associate degree also acts as a pathway course to a bachelor’s in Disability Studies. During the course, students will develop a holistic view of disability and the social structures that influence learning and development for people with special needs. The main areas of study will be inclusive education, social justice, disabled empowerment, advocacy, disability and learning, social dynamics and positive behaviour support. The associate degree is 1 to 2 years in duration and costs around $11,894.",
-        content3:"Next up, you have the option to enrol in a bachelor’s in Disability Studies which allows students to gain in-depth knowledge of physical, mental and developmental disabilities which affect the way people live their lives. Students who enrol in one of these programmes study both impairments and treatment methods. Generally, programme participants focus on a specific type of disability, taking courses in Psychology, Nursing, Physical Therapy, Counselling, Social Work and other related subjects. Students also usually study general education topics, such as Language, Math and Science. Those who graduate in Disability Studies often acquire counselling, project-planning and time-management skills. These skills help students find gainful employment and better handle personal tasks. Obtaining a bachelor’s degree in Disability Studies typically allows graduates to compete for exciting careers in disability care, advocacy and social work fields. The duration of this programme is 3 to 4 years and its cost can be around $28,345.",
+        "Students can begin their journey in Disability Studies after completing their secondary education.",
+      content2:
+        "An associate degree in Disability Studies is ideal for students aiming to start a career in disability or human services management. This degree also serves as a stepping stone to a bachelor's degree in Disability Studies. Students will explore disability from a social justice and empowerment perspective, covering topics such as inclusive education, social dynamics, advocacy, and positive behavioral support. The program typically takes 1 to 2 years to complete and costs around $11,894.",
+      content3:
+        "After completing an associate degree, students can pursue a bachelor’s degree in Disability Studies, which provides deeper insights into various physical, mental, and developmental disabilities. The curriculum includes studies in Psychology, Nursing, Physical Therapy, Counseling, Social Work, and related disciplines. Graduates of this program often gain valuable skills in counseling, project management, and time management, making them competitive candidates for jobs in disability care, advocacy, and social work. A bachelor's degree typically takes 3 to 4 years to complete and costs approximately $28,345.",
     },
     {
-      title: "Future outlook",
+      title: "Career Outlook",
       content:
-        "The field of Disability Studies is showing considerable growth. In fact, the U.S. Bureau of Labor Statistics expects a strong 10% growth in this field. As more people elect this academic discipline, we are likely to see more focused concentrations and specialisations available to the students pursuing this career.",
-      
+        "The field of Disability Studies is expected to experience significant growth. According to the U.S. Bureau of Labor Statistics, employment in this field is projected to grow by 10%. As more students enter this academic discipline, we can expect to see more specialized concentrations and career opportunities emerge.",
     },
     {
-        title: 'Career pathways for Disability Studies graduates',
-        subtitle1: 'Rehabilitation Counsellor',
-        content1: 'Areas where rehabilitation counsellors have the biggest impact on the lives of the disabled are in advocacy, job training and job support, case management, and helping the disabled find social and leisure services. Their pay averages between $29,000 and $35,000, but that varies according to specific job responsibilities, geographic areas and college degrees earned.',
-        subtitle2: 'Occupational Therapist',
-        content2: 'Teaching the disabled to function well in everyday activities, despite their injuries, illnesses or other factors that caused them to become disabled, is the biggest responsibility of an occupational therapist. Professional therapists help those with disabilities develop new skills and to recover skills that may have been lost when they became disabled. Occupational therapists with a master’s degree in Disability Studies can expect earnings of up to $80,000.',
-        subtitle3: 'Human Services Professional',
-        content3: 'Human services professionals help disabled clients find helpful community service. They also help to find emotional and financial support for the disabled as well as their families. The focus of this career is usually to help those with disabilities to be able to live independently. Human service workers might be tasked with directing disabled people to organisations that provide help, and they may also help employers who are interested in hiring disabled individuals to design a workplace where they can thrive. Their salaries can range from the low $30,000 range to over $42,000.',
-        subtitle4: 'Special Education Teacher',
-        content4: 'Special education teachers work with students who are mentally and physically disabled in various degrees to help them achieve their full potential. Lessons may be specially adapted to help students learn in ways that best suit them. Teachers focus on basic skills such as reading, writing and communication techniques, as well as specialised focuses. Each child is given special attention and individual focus. Students are equipped with skills that promote life-long learning. Special education teachers can expect to make up to $57,000 with a bachelor’s degree.',
-      
+      title: "Career Paths for Disability Studies Graduates",
+      subtitle1: "Rehabilitation Counselor",
+      content1:
+        "Rehabilitation counselors play a key role in advocating for people with disabilities, assisting them with job training, case management, and finding appropriate social services. Their average salary ranges from $29,000 to $35,000, depending on their job responsibilities, location, and educational qualifications.",
+      subtitle2: "Occupational Therapist",
+      content2:
+        "Occupational therapists help individuals with disabilities improve their ability to perform daily activities, despite their impairments. These therapists aid in skill development and rehabilitation, ensuring individuals regain functionality. Occupational therapists with a master's degree in Disability Studies can earn up to $80,000 annually.",
+      subtitle3: "Human Services Professional",
+      content3:
+        "Human services professionals assist individuals with disabilities in accessing community resources, emotional support, and financial aid. They focus on helping people with disabilities live independently. Salaries for human services professionals typically range from the low $30,000s to over $42,000 annually.",
+      subtitle4: "Special Education Teacher",
+      content4:
+        "Special education teachers work with students who have physical or mental disabilities, providing tailored lessons to help them reach their full potential. The focus is on basic skills such as reading, writing, and communication, as well as specialized training. Special education teachers can expect to earn up to $57,000 per year with a bachelor's degree.",
     },
   ];
 
@@ -132,15 +136,12 @@ const faqSubtitleStyle = {
     <div>
       {/* Top section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Disability Studies abroad       </h1>
+        <h1>Study Disability Studies Abroad</h1>
         <p>
-        Disability Studies provides an incisive insight into the world of disability through various social and cultural perspectives. A programme in Disability Studies will help you broaden your understanding of disability and boost your employment opportunities.
-
-
-
-
-
-      </p>
+          Disability Studies offers a comprehensive look at disability from various social and  
+        </p>
+        <p>cultural perspectives. A degree in Disability Studies can enhance your understanding  </p>
+        <p>of disability issues and improve your employment prospects.</p>
       </div>
 
       {/* Statistics section */}
@@ -148,82 +149,60 @@ const faqSubtitleStyle = {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Estimated worth of the disability sector
-
-
-
-
-
+            <strong></strong> Estimated value of the disability sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>
-
-</strong>Average yearly salary of disabilities specialists/professionals
+            <strong></strong> Average annual salary for disability professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Salary of top disabilities specialists/professionals
+            <strong></strong> Top earnings for disability specialists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>1,200 job openings projected each year
+            <strong></strong> Projected 1,200 job openings annually
           </p>
         </div>
       </div>
 
       {/* FAQ section */}
-      {/* FAQ section */}
-<div style={faqSectionStyle}>
-  <h2>Subject Overview</h2>
-  {faqItems.map((item, index) => (
-    <div key={index} style={faqItemStyle}>
-      <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
-        <span>{item.title}</span>
-        <span>{activeIndex === index ? "-" : "+"}</span>
+      <div style={faqSectionStyle}>
+        <h2>Subject Overview</h2>
+        {faqItems.map((item, index) => (
+          <div key={index} style={faqItemStyle}>
+            <div style={faqTitleStyle} onClick={() => handleToggle(index)}>
+              <span>{item.title}</span>
+              <span>{activeIndex === index ? "-" : "+"}</span>
+            </div>
+            {activeIndex === index && (
+              <div style={faqContentStyle}>
+                {/* Check for subtitles and content */}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.content1 && <p>{item.content1}</p>}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.content2 && <p>{item.content2}</p>}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.content3 && <p>{item.content3}</p>}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.content4 && <p>{item.content4}</p>}
+                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.content5 && <p>{item.content5}</p>}
+                {item.content && <p>{item.content}</p>}
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-      {activeIndex === index && (
-        <div style={faqContentStyle}>
-          {/* Check for subtitles and content */}
-          {item.subtitle1 && (
-            <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-          )}
-          {item.content1 && <p>{item.content1}</p>}
-          {item.subtitle2 && (
-            <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-          )}
-          {item.content2 && <p>{item.content2}</p>}
-          {item.subtitle3 && (
-            <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-          )}
-          {item.content3 && <p>{item.content3}</p>}
-          {item.subtitle4 && (
-            <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-          )}
-          {item.content4 && <p>{item.content4}</p>}
-          {item.subtitle5 && (
-            <div style={faqSubtitleStyle}>{item.subtitle5}</div>
-          )}
-           {item.content5 && <p>{item.content5}</p>}
-          {item.content && <p>{item.content}</p>}
 
-          
-           {/* For items with single content */}
-        </div>
-      )}
-    </div>
-  ))}
-</div>
-
-<FormPage />
-<Footer />
-
+      <FormPage />
+      <Footer />
     </div>
   );
 };
