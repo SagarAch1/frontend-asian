@@ -6,7 +6,7 @@ const Cosmetology = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ open/close state
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Cosmetology = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Add a pop of color
     marginBottom: "10px",
   };
 
@@ -90,58 +90,56 @@ const Cosmetology = () => {
     {
       title: "About Cosmetology",
       content1:
-        "Cosmetology is the discipline that explores and implements different ways to beautify hair, nails and skin of individuals. It primarily focuses on enhancing beauty through different cosmetic procedures and therapies. The field of Cosmetology includes makeup application, scalp care, facial treatments, hair styling, and manicures and pedicures.",
+        "Cosmetology focuses on beauty techniques for enhancing hair, nails, and skin. It includes makeup, scalp care, skin treatments, and more.",
       content2:
-        "A cosmetologist is a certified professional who has completed their training in the field of Cosmetology. A cosmetologist helps clients meet their unique aesthetic goals, helping them feel more confident. Cosmetologists work in barbershops, salons, spa, hotels and even resorts that offer spa and salon services. Cosmetology offers a lot of career flexibility, plenty of creative freedom, and above all the opportunity to impact the lives of others in a meaningful way.",
-        content3:"Common course modules students may expect to study include Makeup Application, Cosmetology Fundamentals, Aesthetics, Contemporary Design, Safe Chemical Processes, Cosmetology Entrepreneurship, Digital Marketing, Salon Management, Professional Imaging, and Product Marketing.",
+        "A licensed cosmetologist applies their skills to help clients feel confident by achieving aesthetic goals. They work in salons, spas, hotels, and more, enjoying a creative career with the potential to make a positive impact on people's lives.",
+      content3:
+        "Typical coursework might cover areas like Makeup Techniques, Aesthetics, Safe Chemical Practices, Salon Management, Digital Marketing, and Product Promotion.",
     },
     {
       title: "Is Cosmetology right for me?",
       content1:
-        "If you consider yourself to be creative, have a strong inclination towards beauty practices and are gregarious, then you are well suited to this field. A cosmetologist is driven by his passion for beauty, creativity and professional skills.",
+        "This field is ideal for individuals who are creative, enjoy beauty practices, and are outgoing. Passion for aesthetics and skill are key traits.",
       content2:
-        "Students that possess a knack for creativity and aesthetics tend to do best in this field. The best cosmetologists have their own unique artistic vision but at the same time are adaptable to the client’s needs. As a cosmetologist directly interacts with customers, he must have good communication and interpersonal skills. A good colour and style perception just adds to the charms of a good cosmetologist. If you are passionate about helping others feel more beautiful and confident, then this field is a good fit for you.",
+        "Successful cosmetologists combine creativity with a client-focused approach. Strong interpersonal skills and a keen eye for color and style enhance this role. If you are driven to help others look and feel their best, cosmetology could be a good fit.",
     },
     {
       title: "Study options and costs",
       content1:
-        "In order to pursue Cosmetology as a professional degree, you must have completed your high school education. Only after this can you enrol in a state-licensed Cosmetology school. The duration of courses and programmes varies considerably, based on the institute you attend. It takes almost 9 to 15 months to complete most certification programmes. An associate degree in Cosmetology usually takes 2 years to complete and costs approximately $15,000 to $20,000 in the US.",
+        "To enter cosmetology, you must complete high school before attending a licensed cosmetology school. Programs can range from 9 to 15 months, with associate degrees taking about 2 years, costing around $15,000 to $20,000 in the U.S.",
       content2:
-        "After the completion of their Cosmetology programme, students complete their required training hours which range from 1,000 to 2,300 hours, including the time spent in classroom. The final step is to clear the state licensing exam. You must graduate from a Cosmetology programme that is approved by state and clear the state licensing exam to professionally practice cosmetology.",
-
+        "Graduates complete required training hours (1,000-2,300) and must pass a state licensing exam to practice cosmetology professionally.",
     },
     {
       title: "Future outlook",
       content1:
-        "The Cosmetology industry has been growing rapidly for many years. In fact, the estimated global worth of the global cosmetology industry is predicted to jump to $716 billion in 2025 from $511 billion in 2021. The beauty influencer and blogging industry is playing a significant role in driving this rapid growth.",
+        "The global cosmetology market is growing, with its value projected to reach $716 billion by 2025. Beauty influencers are a key driver of this expansion.",
       content2:
-        "According to the U.S. Bureau of Labor Statistics, the projected growth of cosmetologists’ and hairstylists’ employment in the job market is 19% by 2030, which is much faster than the average of all other occupations. Moreover, on average almost 85,300 openings for barbers, hairstylists, and cosmetologists are projected each year. Incredible and numerous job opportunities are available for cosmetologists making this programme an attractive choice for many.",
+        "The U.S. job market for cosmetologists and hairstylists is expected to grow by 19% by 2030, with about 85,300 openings each year. This demand highlights the promising career potential in this field.",
     },
     {
       title: "Career Pathways for Cosmetology graduates",
       subtitle1: "Hairstylist",
       content1:
-        "As a hairstylist, you will cut, style and dye hair of your customers. Hairstylist works in spas, salons, and barbershops to cater to the hair needs of their clients. As a stylist, not only will you provide regular haircuts, you will also fix your client’s hair with unique styles. Hairstylists may also be employed by individuals as part of their entourage such as political figures, celebrities, influencers, and athletes.",
+        "Hairstylists provide haircuts, styling, and coloring services. They work in salons, spas, or for individuals, including high-profile clients.",
       subtitle2: "Consultant",
       content2:
-        "As a beauty consultant, you share insight and knowledge about the beauty industry with your clients, who are seeking advice. You will provide information to beauty Cosmetology es to enhance their quality of services and help them formulate strategies to grow their Cosmetology es. Beauty consultants may either choose to establish their own practice or work as part of a large beauty consultancy firm.",
+        "Beauty consultants offer expertise to clients and businesses, helping them improve service quality and grow. They may work independently or in firms.",
       subtitle3: "Technician",
       content3:
-        "As a nail technician, you will be primarily focused on enhancing the look of customer’s hands and feet by shaping, cutting and colouring their nails. Responsibilities of nail technicians also include giving manicures and pedicures to customers. You will be required to stay up to date on latest trends and learn artistic techniques to meet the varied stylistic needs of clients.",
+        "Nail technicians specialize in manicures and pedicures, enhancing the appearance of clients' hands and feet. They stay updated on trends to meet diverse client needs.",
     },
   ];
 
   return (
     <div>
-      {/* Top section with background image */}
+      {/* Header section with background image */}
       <div style={sectionStyle}>
-        <h1>Study Cosmetology abroad</h1>
+        <h1>Study Cosmetology Abroad</h1>
         <p>
-          Cosmetology is the study and application of beauty treatment. Pursuing
-          Cosmetology can help you land a flexible and creative career path in a
-          blooming beauty industry. Cosmetology is the science and art of
-          beautifying skin, hair and nails.
+          Cosmetology encompasses the science and art of enhancing beauty 
         </p>
+        <p>for skin, hair, and nails, offering a creative career in a thriving industry.</p>
       </div>
 
       {/* Statistics section */}
@@ -149,33 +147,29 @@ const Cosmetology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 19% projected growth of Cosmetology professions by
-            2030
+            <strong></strong> 19% projected job growth in Cosmetology by 2030
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average annual salary of cosmetologists and
-            hairstylists
+            <strong></strong>Average yearly salary for cosmetologists and stylists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Estimated global worth of the Cosmetology industry
+            <strong></strong> Estimated global industry value in Cosmetology
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 85,300 projected job opening for cosmetologists,
-            barbers and hairstylists each year
+            <strong></strong> 85,300 projected openings yearly in cosmetology
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -187,7 +181,7 @@ const Cosmetology = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
+                {/* Render subtitles and content if available */}
                 {item.subtitle1 && (
                   <div style={faqSubtitleStyle}>{item.subtitle1}</div>
                 )}
@@ -201,8 +195,6 @@ const Cosmetology = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
