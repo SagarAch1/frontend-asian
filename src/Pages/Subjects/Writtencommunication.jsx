@@ -6,7 +6,7 @@ const Writtencommunication = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Writtencommunication = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50",
     marginBottom: "10px",
   };
 
@@ -90,45 +90,41 @@ const Writtencommunication = () => {
     {
       title: "About Written Communication",
       content:
-        "Written Communication teaches you a variety of skills that prepare you be a writer, communicator, and storyteller in a professional capacity. The degree is pertinent to multiple fields, including marketing, corporate communications, technical writing, and others. Not only do you learn to write well, you learn the ‘back end’ of writing, too—the fundamentals of good communication, information design, rhetoric, and other useful concepts and tools most people are unaware of. Written Communication means being successful in making complex or unfamiliar concepts easy for others to understand. It also means making those ideas interesting for others.  ",
-      
-        
+        "The Written Communication program provides a foundation in skills essential to being a proficient writer, communicator, and storyteller in professional contexts. It covers fields like marketing, corporate communication, and technical writing, and imparts not only strong writing skills but also an understanding of key communication theories and tools. This program hones your ability to present complex information in an accessible and engaging way.",
     },
     {
       title: "Is Written Communication right for me?",
       content1:
-        "Studying Written Communication will lead you to careers like marketing, technical writer, content specialist, procurement specialist, technical analyst, and document designer. The Written Communication programme will teach you the value of rhetoric in both reading and writing techniques.",
+        "Pursuing a degree in Written Communication can lead to roles in marketing, technical writing, content creation, and document design. The program emphasizes rhetoric, audience engagement, and diverse writing formats, including proposals, reports, and case studies. Students will learn to communicate effectively across varied audiences, working both individually and in teams.",
       content2:
-        "Students will learn to write for diverse audiences, from colleagues and management to customers and clients. Various forms of written communications will be completed in departmental courses, including professional proposals, reports, memos, research papers, and case analyses. Students will have opportunities to write both individually and in a team environment.",
-        content3:"Students will be evaluated for specific written communication skills. The instructor will give clear guidance on the requirements of written communication assignments as well as the standards the student will be expected to meet. If you are fascinated with writing, research, critical thinking and design, then this programme is the right fit for you.",
+        "Assignments evaluate specific writing skills with clear expectations from instructors. If you’re drawn to writing, research, and critical thinking, this program could be a great fit.",
     },
     {
-      title: "Written Communication study options and costs",
+      title: "Study options and costs",
       content1:
-        "A Bachelor's in Written Communication is an undergraduate degree that provides students with valuable skills for writing and presenting in the public and private sector. Generally, coursework takes four years to complete and the cost varies from $14,842 to $28,741 per year depending on the institution.",
+        "A Bachelor's degree in Written Communication typically takes four years and costs between $14,842 and $28,741 annually, depending on the institution. The curriculum focuses on developing writing and communication skills for both public and private sector roles.",
       content2:
-        "A master's in Written Communication is a postgraduate degree that provides students advanced research, writing, and presenting skills. Students will typically investigate topics based on a broad range of course subject matters that will apply their academic experience to their careers. The length of time it takes to complete coursework towards this advanced degree is two years. The average cost of a master’s program in Written Communication is $42,672.",
-
+        "A Master's degree in this field provides advanced research and writing skills. This two-year program costs around $42,672 on average and prepares students to apply their expertise in various professional contexts.",
     },
     {
       title: "Future outlook",
       content:
-        "As technology and electronics become increasingly sophisticated the need for accompanying manuals that can clearly communicate the technical instructions to users clearly is skyrocketing. Written Communication specialists are employed by pharmaceutical, electronics, automobile, scientific research and similar sectors to write journal articles, how-to guides and instruction manuals. Employment growth for written communication specialists is projected to be 12% this decade, which will result in more than 55,000 new jobs! ",
-
+        "With the rise of technology and complex products, demand for writers who can explain technical information is growing. Fields like pharmaceuticals, electronics, and research often hire written communication specialists. Job growth in this area is expected to reach 12% over the next decade, adding over 55,000 jobs.",
     },
     {
-      title: "Career Pathways for Written Communication graduates",
+      title: "Career Pathways for graduates",
       subtitle1: "Editor",
       content1:
-        "It’s an editor’s job to oversee a piece of writing from draft to publication. Depending on the type of writing they’re editing, this can include honing the thesis, framing, and structure. Editors need to have an in-depth understanding of all things writing—including grammar, style, narrative, and structure. Editors earn on average $53,520 per year.",
+        "Editors guide the development of written content, from draft to publication, focusing on structure, tone, and style. Editors earn around $53,520 per year on average.",
       subtitle2: "Content Marketing Manager",
       content2:
-        "Content marketing managers are the leads when developing and executing content for a company is concerned. While some content marketing managers take a generalist approach, many specialise in creating and overseeing specific types of content. Their annual average income is around $68,395.",
+        "These professionals lead content creation strategies for companies, often specializing in certain types of content. They typically earn about $68,395 per year.",
       subtitle3: "Communications Manager",
       content3:
-        "Communications managers are in charge of a company’s communications, often both internal and external. Responsibilities could include defining, developing and managing the company’s communication strategy, writing internal guides and resources. The average annual salary of a communication manager is $65,852.",
-        subtitle4: "Curriculum Developer",
-      content4:"Curriculum developers are responsible for researching and writing academic, educational, and/or training materials, including textbooks, digital and college course materials. Depending on the type of curriculum they specialise in, curriculum developers may work for universities, research institutions, nonprofits, or corporations. The average annual salary of a curriculum developer is $63,750.",
+        "Managing internal and external company communications, these managers earn around $65,852 annually. They handle strategy and ensure consistency in messaging.",
+      subtitle4: "Curriculum Developer",
+      content4:
+        "Curriculum developers create educational content, including textbooks and course materials, and often work in educational institutions or corporations. They average $63,750 per year.",
     },
   ];
 
@@ -138,45 +134,33 @@ const Writtencommunication = () => {
       <div style={sectionStyle}>
         <h1>Study Written Communication abroad</h1>
         <p>
-          Written Communication students learn about rhetoric, grammar,
-          etymology and communication. The study is designed to train them in
-          digital, copy and content writing. They are employed in a variety of
-          sectors as a technical writer or similar roles.
+          Students in Written Communication study the art of rhetoric, grammar,
+          and communication, 
         </p>
+        <p>preparing for roles in digital, copy, and content writing
+        across multiple sectors.</p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>
-            <strong></strong> $60,340: average yearly salary of a written
-            communication specialist
-          </p>
+          <p><strong></strong> $60,340: average yearly salary of a written communication specialist</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>
-            <strong></strong> 11,200 projected job openings for editors every
-            year this decade
-          </p>
+          <p><strong></strong> 11,200 projected job openings for editors annually this decade</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>
-            <strong></strong> Average annual salary of technical writers
-          </p>
+          <p><strong></strong> Average salary of technical writers</p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>
-            <strong></strong> 12% projected employment growth of written
-            communication specialists
-          </p>
+          <p><strong></strong> 12% projected employment growth for written communication specialists</p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -188,26 +172,15 @@ const Writtencommunication = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {/* Check for subtitles and content */}
-                {item.subtitle1 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
-                )}
+                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
-                )}
+                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
-                )}
+                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && (
-                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
-                )}
+                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
