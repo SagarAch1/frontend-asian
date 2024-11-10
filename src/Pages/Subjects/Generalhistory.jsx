@@ -6,7 +6,7 @@ const Generalhistory = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleToggle = (index) => {
-    setActiveIndex(activeIndex === index ? null : index); // Toggle between open and close
+    setActiveIndex(activeIndex === index ? null : index); // Toggle open or closed state
   };
 
   const sectionStyle = {
@@ -48,7 +48,7 @@ const Generalhistory = () => {
 
   const iconStyle = {
     fontSize: "40px",
-    color: "#4CAF50", // Change color to make it attractive
+    color: "#4CAF50", // Attractively styled icon color
     marginBottom: "10px",
   };
 
@@ -90,42 +90,40 @@ const Generalhistory = () => {
     {
       title: "About General History",
       content1:
-        "General History majors learn how to critically study the past, allowing them to view the current geo-politcial and socio-cultural events through a historical perspective. Students who seek a General History degree may expect to study about ancient civilisations of the world. Majors at various schools are required to take a seminar where they polish their skills at analysing history. They learn how to interact with original materials, study historical literature, and debate opposing viewpoints in such classes.",
+        "Students pursuing a General History degree learn to critically examine the past, enabling them to interpret present geopolitical and cultural events with historical context. Those enrolled in this major often study ancient world civilizations and are required to participate in seminars to refine their historical analysis skills. These courses teach students to engage with original documents, review historical texts, and engage in debates surrounding diverse perspectives.",
       content2:
-        "Many history programmes have chronological and geographic course requirements, requiring students to learn about the premodern era and travel to different parts of the world.",
+        "Many history programs require students to take courses that cover various chronological periods and geographical regions, ensuring exposure to the premodern era and a global view of history.",
     },
     {
       title: "Is General History right for me?",
       content:
-        "A General History degree can be a good fit for you if you constantly ask questions about issues like politics, war, or culture and aren't content with simple answers. Because history is such a large subject, students will be asked to speciailise in the history of a particular region or culture. Students should also expect to spend a significant amount of time reading and writing, as well as being able to comprehend different, often opposing points of view. ",
-      
+        "A General History degree is ideal for those who are always asking deeper questions about topics like politics, war, or culture and are unsatisfied with simple explanations. Given the breadth of the subject, students must specialize in a particular region or culture. Expect significant reading and writing, and be prepared to engage with conflicting viewpoints.",
     },
     {
       title: "General History study options and costs",
       content1:
-        "Study options highly depend on the career path you aim to take in the future. For example, you must have a bachelor's degree in General History to work as a historian. After that, most historians pursue a master's or doctorate degree, during which time they conduct research and submit a thesis in their chosen field. Generally, you'll take introductory History courses in the first year of your college degree. You'll also have electives to pursue a second major of your choice in some cases. History courses will make up 40% of your classes in your senior year. History majors may also be required to take a capstone course that requires them to write a large research report.",
+        "The path you take in studying General History depends on your career goals. For example, a bachelor's degree is required to pursue a career as a historian. Afterward, many historians go on to complete a master's or PhD, conducting research and writing a thesis in their chosen area of study. Your first year of study typically includes introductory courses in history, and you may also take electives or pursue a second major. By your senior year, history courses will comprise approximately 40% of your classes, and you may need to complete a capstone project that involves substantial research writing.",
       content2:
-        "If you plan on becoming a historian, you must first complete high school and then pursue a history degree at college. After earning a bachelor's degree, aspiring historians must enrol in a graduate school in their chosen field of study. Some historical professions require candidates to hold a PhD in their field of study. In such a competitive sector, a history applicant must have research experience in the field of his specialisation.",
+        "To become a historian, you first need to complete high school and then pursue a history degree in college. After earning a bachelor's degree, you must attend graduate school in your specific field. Some historical career paths, such as academic or advanced research roles, require a PhD. In a competitive field like history, experience in research is often essential.",
       content3:
-        "According to the Bureau of Labor Statistics (BLS), historians with a bachelor's degree in general history mostly pursue instructional and research careers. Becoming a museum technician is another popular career. If they do not go into public school teaching, those with bachelor's degrees in history seek jobs in media, law, or business. A master's or doctorate in history is required for most historians to work in the discipline.",
+        "According to the Bureau of Labor Statistics (BLS), most historians with a bachelor's degree work in teaching and research roles, while some also pursue positions as museum technicians. If not pursuing a career in education, history graduates may find opportunities in fields like media, law, or business. However, most serious historians require a graduate degree (master's or PhD) to advance in the field.",
     },
     {
       title: "Future outlook",
       content:
-        "The BLS predicts that the occupation of historians will grow at a pace of 6%, which is about average for all occupations. Since technological advancements have offered more opportunities for big changes in how museums will show their collections to the public, there is a greater need in the museum sector. For qualified historians, there will be more development in the archive profession than in other positions.",
-
+        "The BLS projects that employment for historians will grow at an average rate of 6%, in line with other professions. Technological advancements in how museums display their collections have created new opportunities in the museum sector, providing greater demand for qualified historians. The archival field is expected to see more growth compared to other areas in historical professions.",
     },
     {
       title: "Career pathways for General History graduates",
       subtitle1: "Historian",
       content1:
-        "A historian's task is to locate and use historical documents, records, newspapers, pictures, videos, diaries, books, letters, and artefacts to explain and identify changes that occurred through time in the era of study. The historian must first collect data from many sources, formulate hypotheses based on the facts, then proceed to draw conclusions about all of these facets of life at that time and location.",
+        "Historians are responsible for locating and analyzing historical documents, records, photographs, videos, letters, books, and other artefacts to understand and explain changes over time. They gather data from various sources, develop hypotheses based on their findings, and draw conclusions about historical events and eras.",
       subtitle2: "History Researcher",
       content2:
-        "To better comprehend the past, a research historian does a significant study on historical individuals, locations, items, and events. Organising data, communicating with other researchers, creating papers with your results, and assuring information accuracy are all part of this job. Their daily responsibilities include reviewing documents and artefacts, locating significant facts, evaluating the data, and presenting the data through exhibitions, films, and other historical programmes.",
+        "History researchers conduct in-depth studies of historical figures, events, places, and objects to gain a better understanding of the past. They organize data, collaborate with other researchers, write papers detailing their findings, and ensure the accuracy of the information they present. Daily tasks include analyzing historical documents, identifying key facts, and creating exhibits or films to showcase their discoveries.",
       subtitle3: "History Professor",
       content3:
-        "A history professor instructs college students on the past in general and on specific issues and can assist students in interpreting events and teachings from different time periods, as well as how they influenced later events.",
+        "A history professor teaches students about both general history and specific historical topics, helping students analyze events and their long-term impacts on society and later developments.",
     },
   ];
 
@@ -135,11 +133,10 @@ const Generalhistory = () => {
       <div style={sectionStyle}>
         <h1>Study General History abroad </h1>
         <p>
-          General History majors learn about the key historical events that
-          shape our world. They explore the diversity of human experience in the
-          past and build competencies in critical-thinking, research and
-          communication.
+          General History majors explore significant historical events that have 
         </p>
+        <p>shaped our world. They investigate human experiences from the </p>
+        <p>past and develop critical thinking, research, and communication skills.</p>
       </div>
 
       {/* Statistics section */}
@@ -147,38 +144,29 @@ const Generalhistory = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average annual salary of historians
-
-
+            <strong></strong> Average yearly earnings of historians
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average annual salary of museum workers and conservators
-
-
+            <strong></strong> Average yearly earnings for museum workers and conservators
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 5% expected growth in employment opportunities for historians this decade
-
-
+            <strong></strong> 5% projected increase in historian job opportunities this decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Average annual salary of top historians
-
-
+            <strong></strong> Average annual income of leading historians
           </p>
         </div>
       </div>
 
-      {/* FAQ section */}
       {/* FAQ section */}
       <div style={faqSectionStyle}>
         <h2>Subject Overview</h2>
@@ -204,8 +192,6 @@ const Generalhistory = () => {
                 )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
-
-                {/* For items with single content */}
               </div>
             )}
           </div>
