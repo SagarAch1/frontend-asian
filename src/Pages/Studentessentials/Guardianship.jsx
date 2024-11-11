@@ -71,20 +71,20 @@ const Guardianship = () => {
       </section>
 
       <div style={styles.contentSection}>
-        <h2 style={styles.mainTitle}>If you're under 18, we'll find you a guardian</h2>
+        <h2 style={styles.mainTitle}>We will locate a guardian for you if you are under the age of 18.</h2>
         <p>
-          In Australia, all international students who are under 18 years of age need to have approved welfare arrangements in place before they arrive in the country. AIEC Australia has teamed up with ISA Student Advocates to assist in providing welfare services to our students.
+        Prior to their arrival in Australia, all international students under the age of eighteen must have approved welfare plans in place. To help provide welfare services to our students, AIEC Australia has partnered with ISA Student Advocates.
         </p>
-        <p>Your safety and well-being are our top priorities throughout your study journey.</p>
+        <p>Throughout your academic journey, your safety and wellbeing are our first priority.</p>
 
         <h3 style={styles.subTitle}>Guardians you can trust</h3>
         <p>
-          AIEC has access to a nationwide network of caring and experienced guardians. If you don’t have a family member to look after you in your destination city, talk to us about arranging a guardian for you until you turn 18.
+        A nationwide network of knowledgeable and compassionate guardians is available to AIEC. Speak with us about setting up a guardian for you until you become 18 if you don't have a family member in your destination city to take care of you.
         </p>
 
         <h3 style={styles.subTitle}>Reliable care and support</h3>
         <p>
-          Your guardian’s goal is to support you in your study abroad journey. You’ll also find them helpful in other ways, like settling you in and giving study advice. They’ll even help you meet new people and discover social and extracurricular activities.
+        Your guardian wants to help you during your study abroad experience. They will also be beneficial to you in other ways, such as helping you get settled and offering study tips. They will even assist you in finding social and extracurricular activities and meeting new people.
         </p>
       </div>
 
@@ -94,7 +94,7 @@ const Guardianship = () => {
           <FontAwesomeIcon icon={faHandsHelping} style={styles.icon} />
           <h4 style={styles.featureTitle}>ISA Student Advocates</h4>
           <p style={styles.featureText}>
-            AIEC Education have chosen ISA Student Advocates to assist in providing approved welfare services to our students.
+          ISA Student Advocates has been selected by AIEC Education to help deliver authorised welfare services to our students.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ const Guardianship = () => {
           <FontAwesomeIcon icon={faShieldAlt} style={styles.icon} />
           <h4 style={styles.featureTitle}>Your safety is our priority</h4>
           <p style={styles.featureText}>
-            All our guardians undergo rigorous police checks in accordance with Australian law.
+          Under Australian law, all of our guardians go through a thorough police check.
           </p>
         </div>
 
@@ -110,7 +110,7 @@ const Guardianship = () => {
           <FontAwesomeIcon icon={faCheckCircle} style={styles.icon} />
           <h4 style={styles.featureTitle}>Continued support</h4>
           <p style={styles.featureText}>
-            Guardians stay in regular contact with your parents and educational provider to update on your progress.
+          Guardians keep your parents and school provider informed about your development on a regular basis.
           </p>
         </div>
       </div>
@@ -120,4 +120,4 @@ const Guardianship = () => {
   );
 };
 
-export default Guardianship;
+export default Guardianship;
