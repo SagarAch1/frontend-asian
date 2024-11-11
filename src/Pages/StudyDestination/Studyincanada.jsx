@@ -37,39 +37,37 @@ const StudyinCanada = () => {
         </h2>
         <p style={styles.paragraph}>
           To study in Canada students require a study permit. While a student
-          visa authorises your entry into Canada, a study permit validates your
-          stay in Canada. It is a mandatory immigration document for an
+          visa authorises your admission into Canada, a study permit verifies
+          your stay in Canada. It is a mandatory immigration paperwork for an
           international student.
         </p>
         <p style={styles.paragraph}>
-          if you hold a study permit, you must remain enrolled and make
-          reasonable and timely progress towards completing your course.
+          If you have a study permission, you must stay enrolled and make fair
+          progress toward completing your course.
         </p>
         <p style={styles.paragraph}>
-          Your study permit is always accompanied by a visitor visa or
-          Electronic Travel Authorization (ETA). Please note that a study permit
-          is a document that allows you to study in Canada while a visitor visa
-          or ETA allows you to enter Canada. Your expert will help you access
-          the latest information and connect you with authorised migration
-          experts.
+          Your study permit is always accompanied by a guest visa or Electronic
+          Travel Authorization (ETA). Please remember that a study permit is a
+          document that allows you to study in Canada whereas a guest visa The
+          ETA permits you to enter Canada. Your expert will help you access the
+          newest information and connect you with certified migration experts.
         </p>
 
         <h2 style={styles.sectionTitle}>
           Cost of studying in Canada for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-          Your expenditure on tuition fees depends on the type of qualification
-          and institution you opt for. To cover this, you will need
-          approximately between CAD 13,000 - CAD 35,000 a year.
+          Your expenditure on tuition fees depends on the sort of qualification
+          and institution you pick for. To cover this, you will need about
+          between CAD 13,000 - CAD 35,000 a year.
         </p>
         <p style={styles.paragraph}>
-          Most commonly, courses in humanities, education, and arts are a little
-          cheaper, while subjects such as medicine and engineering are likely to
-          be more expensive. If you wish to study at a postgraduate level, the
-          tuition fee is typically higher, and the costs vary depending on the
-          program. As with most other countries, MBA programs are often the most
-          expensive. The average cost for these programs ranges between CAD
-          30,000-42,000.
+          Generally, courses in humanities, education, and arts tend to be less
+          expensive, whereas fields like medicine and engineering are usually
+          pricier. Postgraduate programs typically have higher tuition fees,
+          with costs varying by program. Like in many other countries, MBA
+          programs are often the most costly, with average fees ranging from CAD
+          30,000 to 42,000.
         </p>
         <table style={styles.table}>
           <thead>
@@ -110,8 +108,8 @@ const StudyinCanada = () => {
 
         <h2 style={styles.sectionTitle}>Scholarships to study in Canada</h2>
         <p style={styles.paragraph}>
-          Here are some popular government-funded scholarships available for
-          Nepalese students to study in Canada:
+          Here are some well-known government-sponsored scholarships for
+          Nepalese students pursuing studies in Canada:
         </p>
         <table style={styles.table}>
           <thead>
@@ -128,9 +126,9 @@ const StudyinCanada = () => {
                 Canadian Commonwealth Scholarship and Fellowship Plan
               </td>
               <td style={styles.tableCell}>
-                This program is designed to enable students to pursue programs
-                of advanced study and research at the Master's and PhD levels in
-                Commonwealth countries other than their own.
+                This program is intended to allow students to undertake advanced
+                study and research at the Master's and PhD levels in
+                Commonwealth countries outside their own.
               </td>
             </tr>
             <tr>
@@ -139,9 +137,9 @@ const StudyinCanada = () => {
                 National Research Council of Canada (NRCC)
               </td>
               <td style={styles.tableCell}>
-                Research associateship is offered to master degree holders in
-                engineering and PhD holders in natural science or engineering
-                disciplines.
+                The research associateship is available to individuals with a
+                master's degree in engineering or a PhD in natural science or
+                engineering fields.
               </td>
             </tr>
             <tr>
@@ -159,16 +157,17 @@ const StudyinCanada = () => {
                 Quebec Provincial Government Scholarship
               </td>
               <td style={styles.tableCell}>
-                For students studying in Quebec. Financial assistance is
-                available to students studying master’s level or above.
+                Financial assistance is offered to students studying at the
+                master's level or higher in Quebec.
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>5</td>
               <td style={styles.tableCell}>Ontario Trillium Scholarship</td>
               <td style={styles.tableCell}>
-                First announced in November 2010 for the best doctoral students
-                from around the world to study in Ontario.
+                Originally introduced in November 2010, this program is aimed at
+                attracting the top doctoral students from across the globe to
+                study in Ontario.
               </td>
             </tr>
           </tbody>
@@ -180,10 +179,10 @@ const StudyinCanada = () => {
 
         <h2 style={styles.sectionTitle}>Intakes in Canada</h2>
         <p style={styles.paragraph}>
-          Unlike a single intake in Nepalese universities, Canadian colleges and
-          universities offer three intakes. In some universities in Canada,
-          intakes may also be referred to as a semester. The three intakes
-          available in Canada are:
+          In contrast to the single intake system in Nepalese universities,
+          Canadian colleges and universities offer three intakes. In some
+          institutions, these intakes may also be referred to as semesters. The
+          three available intakes in Canada are:
         </p>
         <ul style={styles.courseList}>
           <li>Fall</li>
@@ -208,13 +207,13 @@ const StudyinCanada = () => {
 
         <h2 style={styles.sectionTitle}>IELTS for studying in Canada</h2>
         <p style={styles.paragraph}>
-          IELTS band score requirements vary among Canadian institutions for
-          undergraduate (UG) and postgraduate (PG) courses. Typically, colleges
-          commonly ask for an overall band score of 6.0 for UG courses and 6.5
-          for PG courses. In universities, an overall 6.5 band score is often
-          required for both UG and PG programs. It is advisable to verify the
-          specific IELTS band score requirements of your chosen institution when
-          applying to ensure you meet the criteria.
+          IELTS band score requirements differ across Canadian institutions for
+          undergraduate (UG) and postgraduate (PG) programs. Generally, colleges
+          require an overall band score of 6.0 for UG courses and 6.5 for PG
+          courses. Universities often require an overall band score of 6.5 for
+          both UG and PG programs. It is recommended to check the specific IELTS
+          band score requirements of your selected institution when applying to
+          ensure you meet the necessary criteria.
         </p>
 
         <h2 style={styles.sectionTitle}>Top courses to study in Canada</h2>
@@ -308,16 +307,16 @@ const StudyinCanada = () => {
           Cost of living in Canada for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-          Indeed, there exists a substantial difference between living in Canada
-          and your home country. It is important to explore the Canadian
-          lifestyle and cost of living of the place where you plan to stay.
-          Quebec makes one of the most affordable Canadian cities with the cost
-          of living far less compared to other cities.
+          There is a significant difference between living in Canada and your
+          home country. It's essential to research the Canadian lifestyle and
+          the cost of living in the area where you plan to stay. Quebec stands
+          out as one of the most affordable cities in Canada, with living costs
+          much lower than in other major cities.
         </p>
         <p style={styles.paragraph}>
-          Also, while applying for your student permit, you have to prove to the
-          Canadian government that you have enough money to meet the financial
-          expenses. So, keep that in mind!
+          Additionally, when applying for your student permit, you must
+          demonstrate to the Canadian government that you have sufficient funds
+          to cover your financial expenses. Be sure to keep this in mind!
         </p>
         <p style={styles.paragraph}>
           When planning your budget, do include the following expenses:
@@ -327,77 +326,75 @@ const StudyinCanada = () => {
           <li>Communication costs</li>
         </ul>
         <p style={styles.paragraph}>
-          Always set aside money in your budget for phone and data bills as
-          you’d be calling your friends and family back home frequently. Look
-          for low-cost calling plans as well as student discounts. The average
-          monthly cost will be around CAD 20.
+          Make sure to allocate funds in your budget for phone and data bills,
+          as you'll likely be calling friends and family back home often. Look
+          for affordable calling plans and student discounts. The average
+          monthly cost for these services is approximately CAD 20.
         </p>
         <ul style={styles.courseList}>
           <li>Textbooks and supplies</li>
         </ul>
         <p style={styles.paragraph}>
-          Buying textbooks can be costly. Books for engineering courses, for
-          example, might cost anywhere between CAD 250 and CAD 350. The value of
-          courses like law, medicine, and pharmacy can be even higher. You may
-          keep this within your budget by buying used books, purchasing digital
-          versions, or even enrolling in a library membership.
+          Textbooks can be expensive, with books for engineering courses, for
+          instance, ranging from CAD 250 to CAD 350. For courses like law,
+          medicine, and pharmacy, the cost can be even higher. To manage this
+          expense, consider buying used books, opting for digital versions, or
+          getting a library membership.
         </p>
         <ul style={styles.courseList}>
           <li>Personal expenses and incidentals</li>
         </ul>
         <p style={styles.paragraph}>
-          Laundry, toiletries, clothing, dining out, and so on will be part of
-          your everyday spending. This is largely dependent on the type of
-          lifestyle you select.
+          Everyday expenses such as laundry, toiletries, clothing, dining out,
+          and more will be part of your budget. These costs largely depend on
+          the lifestyle choices you make.
         </p>
 
         <h2 style={styles.sectionTitle}>Job prospects in Canada</h2>
         <p style={styles.paragraph}>
-          Canada, over the past few years, has seen an abundance of
-          international students from around the world and has provided various
-          work opportunities to both, students and working professionals. Canada
-          has experienced job growth in various sectors, including technology,
-          healthcare, and construction. In August 2023, the Canadian labour
-          market demonstrated resilience by adding 39.9k jobs, marking a
-          positive trend in employment. This increase was primarily driven by a
-          surge in full-time employment, which saw a notable rise of 32.2k
-          positions, complemented by a growth of 7.8k part-time jobs. The
-          unemployment rate held steady at 5.5%, reflecting stability, while the
-          participation rate experienced a minor dip of 0.1 percentage point,
-          settling at 65.5%.*
+          In recent years, Canada has seen a significant influx of international
+          students from around the world and has offered various work
+          opportunities for both students and professionals. The country has
+          experienced job growth across multiple sectors, including technology,
+          healthcare, and construction. In August 2023, the Canadian labor
+          market demonstrated resilience, adding 39.9k jobs, continuing the
+          positive employment trend. This increase was largely driven by a rise
+          of 32.2k full-time positions, along with 7.8k new part-time jobs. The
+          unemployment rate remained stable at 5.5%, while the participation
+          rate saw a slight decline of 0.1 percentage point, reaching 65.5%.
         </p>
 
         <p style={styles.sectionTitle}>Frequently Asked Questions (FAQs):</p>
         <p style={styles.paragraph}>
-          Beginning the application process may feel like a complicated process,
-          so we have answered some commonly asked question about studying and
-          living in the USA.
+          Starting the application process can seem complicated, so we've
+          addressed some frequently asked questions about studying and living in
+          the USA.
         </p>
         <p style={styles.section}>Ques 1: Is IELTS required for Canada?</p>
         <p style={styles.paragraph}>
-          Ans: IELTS serves as recognised proof of English language proficiency
-          for Immigration, Refugees and Citizenship Canada (IRCC). When seeking
-          admission to Canadian undergraduate or postgraduate programs, you will
-          probably need to submit your IELTS scores as a mandatory component of
-          your application.
+          Ans: IELTS is an accepted proof of English language proficiency by
+          Immigration, Refugees, and Citizenship Canada (IRCC). When applying
+          for undergraduate or postgraduate programs in Canada, submitting your
+          IELTS scores will likely be a required part of the application
+          process.
         </p>
         <p style={styles.section}>
           Ques 2: How much GPA is required to study in Canada from Nepal?
         </p>
         <p style={styles.paragraph}>
-          Ans: GPA requirements may vary with the institution you are applying
-          to. It’s best to check with the institution you have chosen or an AIEC
-          expert for the same.
+          Ans: GPA requirements can vary depending on the institution you're
+          applying to. It's recommended to check with your chosen institution or
+          consult an AIEC expert for specific details.
         </p>
 
         <p style={styles.section}>
           Ques 3: Can I go to Canada with 50% in 12th?
         </p>
         <p style={styles.paragraph}>
-          Ans: A The specific minimum percentage required for Canadian programs
-          after completing the 12th grade varies depending on the chosen
-          program. Nevertheless, students should strive to achieve a minimum
-          score of 70% in their 12th standard examinations
+          Ans: The minimum percentage required for Canadian programs after
+          completing the 12th grade varies based on the program chosen. However,
+          students should aim for at least a 70% score in their 12th standard
+          exams.
         </p>
 
         <Exploreincanada />
