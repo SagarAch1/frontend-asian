@@ -172,15 +172,15 @@ const Afterreceivingoffer = () => {
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>It's decision time</h2>
           <p>
-            Congratulations! An approved university application means you’re one
-            step closer to achieving your dream to study abroad. It’s an
-            exciting time but it’s natural to feel nervous. AIEC is here to
-            support you at every step of your journey. You can speak to one of
-            our experienced counsellors to guide you through the process after
-            you receive an offer. We’ll also help you with student visas, money
-            transfer, health cover and accommodation before your move. So take a
-            deep breath, and make a confident decision with the reassurance that
-            we have your back every step of the way.
+            Congratulations! An accepted university application means you’re one
+            step closer to achieving your dream of studying abroad. It’s an
+            exciting moment, but it’s also common to feel a bit anxious. Our team
+            is here to assist you at every stage. Speak with one of our skilled
+            counselors for guidance after receiving your offer. We can also
+            support you with visa applications, money transfers, health insurance,
+            and accommodation before you move. Relax, take a deep breath, and make
+            your decision confidently knowing we are here to support you at every
+            step.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -195,7 +195,7 @@ const Afterreceivingoffer = () => {
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
-            Create your profile and unlock a wide array of features, including
+            Set up your profile and gain access to a host of features, such as
             personalized recommendations, fast-tracked applications, and much
             more.
           </p>
@@ -205,16 +205,16 @@ const Afterreceivingoffer = () => {
         </div>
       </div>
 
-      {/* Additional Section */}
-      <div style={styles.additionalSection}>
+     {/* Additional Section */}
+     <div style={styles.additionalSection}>
         <h2 style={styles.additionalTitle}>
           Next steps after receiving an offer
         </h2>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>1. Track your application</h3>
           <p>
-            Stay informed every step of the way through our ‘Application
-            Tracker’ while you wait for the outcome.
+            Stay updated every step of the way with our ‘Application Tracker’ as
+            you await your results.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -222,15 +222,15 @@ const Afterreceivingoffer = () => {
             2. Choosing between multiple offers
           </h3>
           <p>
-            Got more than one offer? It’s an exciting yet challenging scenario
-            that requires thoughtful deliberation.
+            Received more than one offer? This exciting, yet tricky situation
+            calls for careful thought and consideration.
           </p>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>3. Pay admission and tution fees</h3>
+          <h3 style={styles.listItemTitle}>3. Pay admission and tuition fees</h3>
           <p>
-            You nailed it! Need help transferring funds? We’ve got you covered
-            every step of the way.
+            Congratulations! Need assistance with fund transfers? We are here
+            to support you through the process.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -238,70 +238,70 @@ const Afterreceivingoffer = () => {
             4. Access our Student Essential Services
           </h3>
           <p>
-            Plan your upcoming move. Find accommodation, apply for Health
-            Insurance and more.
+            Plan your move by finding accommodation, applying for health
+            insurance, and more.
           </p>
           <a href="#" style={styles.listItemLink}>
-            Student visa | Money transfer |Student banking |Accommodation
-            |Health insurance
+            Student visa | Money transfer | Student banking | Accommodation |
+            Health insurance
           </a>
         </div>
       </div>
-      {/* Second Additional Section */}
       <div style={styles.additionalSection}>
-        <h2 style={styles.additionalTitle}>Frequently asked questions</h2>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
-          <p>
-            Studying abroad is the experience of living overseas in order to
-            acquire a foreign education. It can take many forms – from a few
-            weeks in a short course, to a four years’ program of full-time
-            study. 
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            How is it different from studying locally?
-          </h3>
-          <p>
-            While studying locally is the easier option, in the longer run
-            studying abroad offers unique opportunities and experiences that
-            cannot be found at home. For more information, read this article
-            about whether to study abroad or locally. 
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            What are the main benefits of studying overseas?
-          </h3>
-          <p>
-            Studying abroad offers a wide range of benefits, from inspiring a
-            global mindset to helping you learn new skills and enhancing your
-            career prospects. To read all about it, check our article about the
-            benefits of studying abroad.
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>What's the experience like?</h3>
-          <p>
-            Studying abroad is a transformative experience of personal growth
-            that helps you broaden your perspective, develop independence,
-            self-confidence and a greater understanding and appreciation of
-            different cultures. To see what it’s like, meet some students who
-            have made the move to study abroad with AIEC. 
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
-          <p>
-            Studying abroad is not as expensive as you may think! Use our cost
-            of living calculator to estimate how much you will need to cover all
-            your expenses as an international student. We connect you to over
-            5,100 scholarships across our partner university network. Reach out
-            to us to explore your options.
-          </p>
-        </div>
-      </div>
+  <h2 style={styles.additionalTitle}>Commonly asked questions</h2>
+  <div style={styles.listItem}>
+    <h3 style={styles.listItemTitle}>
+      Does having an acceptance offer guarantee a student visa?
+    </h3>
+    <p>
+      While having an acceptance offer increases your chances of securing a student
+      visa, it does not guarantee approval. Visa approval depends on various factors
+      such as your application, eligibility criteria, and compliance with immigration laws.
+      IDP is here to assist you with your visa process. Contact our expert counsellors
+      to maximize your chances of a successful visa application.
+    </p>
+  </div>
+  <div style={styles.listItem}>
+    <h3 style={styles.listItemTitle}>
+      Can I reapply if I decline an offer?
+    </h3>
+    <p>
+      Yes, you can usually reapply to the same university or program at a later time.
+      However, make sure to review the university’s reapplication guidelines, deadlines,
+      and any changes in admission criteria when considering your next application.
+    </p>
+  </div>
+  <div style={styles.listItem}>
+    <h3 style={styles.listItemTitle}>
+      Do I need health insurance before applying for a student visa?
+    </h3>
+    <p>
+      Health insurance requirements differ by country. In some countries, like Australia,
+      you’ll need health coverage before applying for a student visa. Contact an IDP counsellor
+      for detailed information about health insurance for studying abroad.
+    </p>
+  </div>
+  <div style={styles.listItem}>
+    <h3 style={styles.listItemTitle}>
+      How can I connect with students from different universities to learn about their experiences?
+    </h3>
+    <p>
+      Gain insights from IDP students studying at international universities by checking out
+      our #AskIDP videos and articles on our website and the IDP Live app.
+    </p>
+  </div>
+  <div style={styles.listItem}>
+    <h3 style={styles.listItemTitle}>What if I'm not accepted?</h3>
+    <p>
+      Don’t be disheartened if you’re not accepted. There are many other courses that may
+      still be a good fit for you. Reach out to an IDP counsellor to discuss your study
+      objectives, and they’ll connect you with the right program, country, university,
+      and even scholarships. They can also guide you toward pathway programs that can
+      lead you to your desired course.
+    </p>
+  </div>
+</div>
+
       <FormPage />
       <Footer />
     </div>
