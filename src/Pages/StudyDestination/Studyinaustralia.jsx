@@ -135,14 +135,16 @@ const StudyInAustralia = () => {
           Intakes in Australia for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-        Australian universities have two main intakes: Semester 1, which begins in February/March, and Semester 2, which starts in July/August. Admission deadlines vary based on the program.
+          Australian universities have two main intakes: Semester 1, which
+          begins in February/March, and Semester 2, which starts in July/August.
+          Admission deadlines vary based on the program.
         </p>
 
         <h2 style={styles.sectionTitle}>IELTS to study in Australia</h2>
         <p style={styles.paragraph}>
           The International English Language Testing System (IELTS) is widely
-          accepted by Australian universities. For standard courses, a minimum
-          overall score of 6.5, with no individual score below 6.0, is required.
+          recognized by Australian universities. For most courses, a minimum
+          overall score of 6.5 is required, with no individual score below 6.0.
         </p>
 
         <h2 style={styles.sectionTitle}>Top courses to study in Australia</h2>
@@ -208,10 +210,10 @@ const StudyInAustralia = () => {
 
         <h2 style={styles.sectionTitle}>Job prospects in Australia</h2>
         <p style={styles.paragraph}>
-          Did you know that you can cut down your cost of living and gain work
-          experience while pursuing your study program in Australia? Thanks to
-          Australian laws, working part-time on a student visa for up to 48
-          hours per fortnight is permitted.
+          Did you know that you can reduce your living costs and gain work
+          experience while studying in Australia? Australian laws allow students
+          on a student visa to work part-time for up to 48 hours per fortnight,
+          helping you support yourself during your studies.
         </p>
         <h3 style={styles.sectionTitle}>Employment options:</h3>
         <ul style={styles.courseList}>
@@ -227,15 +229,15 @@ const StudyInAustralia = () => {
         <h2 style={styles.sectionTitle}>Cost of living in Australia</h2>
         <p style={styles.paragraph}>
           According to the Human Development Index 2023 and the Quality-of-Life
-          Index 2022, Australia is ranked among the top 10 nations*, which
-          implies Australia is counted in the top countries in terms of GDP,
-          education system, and purchasing power parity index. So, along with
-          the high level of income, it enjoys an excellent quality of health
-          awareness, the medical system, and political stability. So, excited?
+          Index 2022, Australia ranks among the top 10 countries, reflecting its
+          strong GDP, education system, and purchasing power parity index. In
+          addition to high income levels, Australia benefits from excellent
+          health awareness, a robust medical system, and political stability.
+          Sounds exciting, right?
         </p>
         <p style={styles.paragraph}>
-          You should also consider these common expenses when creating your
-          budget:
+          When creating your budget, you should also consider these common
+          expenses:
         </p>
         <table style={styles.table}>
           <thead>
@@ -273,27 +275,27 @@ const StudyInAustralia = () => {
         </table>
         <p style={styles.sectionTitle}>Frequently Asked Questions (FAQs):</p>
         <p style={styles.paragraph}>
-          We know you have a lot of questions in your mind, so have answered
-          common questions students as you raise about studying and living in
-          the UK.
+          We understand you may have many questions, so we've answered some
+          common queries that students like you often have about studying and
+          living in the UK.
         </p>
         <p style={styles.section}>
           Ques 1: How much show money do I need to study in Australia?
         </p>
         <p style={styles.paragraph}>
-          Ans: Beginning October 1, 2023, students applying for a visa must
-          prove that they have at least AUD 24,505 in savings to cover their
-          living expenses for one year.
+          Ans: Starting October 1, 2023, students applying for a visa must
+          demonstrate that they have a minimum of AUD 24,505 in savings to cover
+          their living expenses for one year.
         </p>
         <p style={styles.section}>
           Ques 2: Who can sponsor me to study in Australia?
         </p>
         <p style={styles.paragraph}>
-          Ans: Unless you are entirely self-sponsoring, your visa application
-          can be sponsored by your parents, legal guardians, or spouse. In this
-          context, sponsorship relates to the individuals responsible for
-          funding your travel, educational expenditures, and associated
-          financial requirements while you pursue your studies in Australia.
+          Ans: Unless you are fully self-sponsoring, your visa application can
+          be sponsored by your parents, legal guardians, or spouse. In this
+          case, sponsorship refers to the individuals who will be responsible
+          for funding your travel, education costs, and other financial needs
+          while you study in Australia.
         </p>
         <p style={styles.section}>
           Ques 3: What is the maximum age limit for a student visa in Australia?
@@ -301,22 +303,20 @@ const StudyInAustralia = () => {
         <p style={styles.paragraph}>
           Ans: To apply for an Australian student visa, you must be at least 18
           years old. There is no upper age limit for student visas in Australia.
-          The conditions of the Subclass 500 student visa in Australia do not
-          apply to those under 18 years old.
+          However, the conditions of the Subclass 500 student visa do not apply
+          to individuals under 18 years of age.
         </p>
         <p style={styles.section}>
           Ques 4: How much will it cost to study in Australia?
         </p>
         <p style={styles.paragraph}>
-          Ans: On average, tuition fees at Australian tertiary institutions
-          typically fall within the range of AUD 20,000 to AUD 30,000 per year.
+          Ans: On average, tuition fees at Australian tertiary institutions range from AUD 20,000 to AUD 30,000 per year.
         </p>
         <p style={styles.section}>
           Ques 5: What are the new rules for student visas in Australia 2023?
         </p>
         <p style={styles.paragraph}>
-          Ans: Starting on July 1, 2023, there will be a maximum limit of 48
-          hours per fortnight for work restrictions on student visa holders.
+          Ans: Starting July 1, 2023, student visa holders will be restricted to working a maximum of 48 hours per fortnight.
         </p>
         <Exploreinaustralia />
         <FormPage />
