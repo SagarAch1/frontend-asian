@@ -6,7 +6,7 @@ import VideoSection from "../Homepage/Homevedio";
 
 const Preparetodepart = () => {
   const videoRef = useRef(null);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const styles = {
     page: { fontFamily: "Arial, sans-serif", padding: "20px" },
@@ -173,13 +173,13 @@ const Preparetodepart = () => {
             Expand your horizons, skills and opportunities
           </h2>
           <p>
-            Want to make an investment in yourself to secure a successful
-            future? Studying abroad is a journey of a lifetime that opens up new
-            possibilities and pathways. It is an opportunity to gain a
-            world-class foreign education, develop a global mindset, learn new
-            skills, and acquire vital expertise to boost your employability. So
-            prepare yourself to take the leap and get ready to explore the world
-            from an international student's perspective!
+            Looking to invest in yourself for a successful future? Studying
+            abroad is a once-in-a-lifetime journey that unlocks new
+            opportunities and pathways. It’s your chance to obtain a world-class
+            education, embrace a global perspective, develop valuable skills,
+            and gain essential expertise to enhance your career prospects. So,
+            get ready to take the leap and experience the world through the eyes
+            of an international student!
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -194,9 +194,8 @@ const Preparetodepart = () => {
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
-            Create your profile and unlock a wide array of features, including
-            personalized recommendations, fast-tracked applications, and much
-            more.
+            Set up your profile to access a variety of features, such as
+            tailored recommendations, expedited applications, and much more.
           </p>
           <button style={styles.signupButton} onClick={handleSignUpClick}>
             Sign up
@@ -212,9 +211,9 @@ const Preparetodepart = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>1. Benefits of studying abroad</h3>
           <p>
-            From quality education, personal growth to career progression,
-            discover how studying abroad can help you succeed through these
-            helpful articles and videos.
+            Explore how studying abroad can support your success—from quality
+            education and personal growth to career advancement—through these
+            insightful articles and videos.
           </p>
           <a href="#" style={styles.listItemLink}>
             What is studying abroad | Why study abroad|Study abroad vs study
@@ -243,9 +242,9 @@ const Preparetodepart = () => {
             4. Study abroad guide for parents
           </h3>
           <p>
-            Learn more about how you can support your child’s overseas education
-            journey with helpful resources such as articles and videos on what
-            to expect and what it’s like living in each country.
+            Discover how you can assist your child's international education
+            journey with valuable resources, including articles and videos that
+            explain what to expect and what life is like in different countries.
           </p>
           <a href="#" style={styles.listItemLink}>
             Study abroad parent's guide | Is it safe?
@@ -254,9 +253,9 @@ const Preparetodepart = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>5. Hear from our students</h3>
           <p>
-            If you’re interested in studying overseas, you can read and watch
-            videos to hear first-hand experiences from our students to inform
-            your study abroad decisions.
+            If you're considering studying abroad, you can read and watch videos
+            featuring firsthand experiences from our students to help guide your
+            study abroad choices.
           </p>
           <a href="#" style={styles.listItemLink}>
             First-hand experiences
@@ -271,10 +270,10 @@ const Preparetodepart = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
           <p>
-            Studying abroad is the experience of living overseas in order to
-            acquire a foreign education. It can take many forms – from a few
-            weeks in a short course, to a four years’ program of full-time
-            study. 
+            Studying abroad involves living in another country to pursue an
+            international education. This experience can vary greatly, from
+            short courses lasting a few weeks to full-time study programs
+            extending over four years.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -282,10 +281,10 @@ const Preparetodepart = () => {
             How is it different from studying locally?
           </h3>
           <p>
-            While studying locally is the easier option, in the longer run
-            studying abroad offers unique opportunities and experiences that
-            cannot be found at home. For more information, read this article
-            about whether to study abroad or locally. 
+            Although studying locally may be the more convenient choice,
+            studying abroad provides unique opportunities and experiences that
+            you won’t find at home. For further insights, read our article
+            comparing studying abroad to studying locally.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -293,32 +292,31 @@ const Preparetodepart = () => {
             What are the main benefits of studying overseas?
           </h3>
           <p>
-            Studying abroad offers a wide range of benefits, from inspiring a
-            global mindset to helping you learn new skills and enhancing your
-            career prospects. To read all about it, check our article about the
+            Studying abroad brings numerous advantages, from fostering a global
+            outlook to helping you acquire new skills and boost your career
+            opportunities. To learn more, explore our article on the many
             benefits of studying abroad.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>What's the experience like?</h3>
           <p>
-            Studying abroad is a transformative experience of personal growth
-            that helps you broaden your perspective, develop independence,
-            self-confidence and a greater understanding and appreciation of
-            different cultures. To see what it’s like, meet some students who
-            have made the move to study abroad with AIEC. 
+            Studying abroad is a life-changing experience that fosters personal
+            growth, helping you expand your outlook, build independence, boost
+            self-confidence, and gain a deeper appreciation for different
+            cultures. To understand what it’s truly like, hear from students who
+            have chosen to study abroad with AIEC.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
           <p>
-            Studying abroad is not as expensive as you may think! Use our cost
-            of living calculator to estimate how much you will need to cover all
-            your expenses as an international student. We connect you to over
-            5,100 scholarships across our partner university network. Reach out
-            to us to explore your options.
+            Studying abroad might be more affordable than you expect! Use our
+            cost of living calculator to estimate the total expenses you’ll need
+            as an international student. We also offer access to over 5,100
+            scholarships through our partner universities. Contact us to explore
+            all your available options.
           </p>
-         
         </div>
       </div>
 

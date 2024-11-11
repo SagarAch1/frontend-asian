@@ -142,8 +142,8 @@ const WhereAndWhatToStudy = () => {
       <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>Where and What to Study</h1>
         <p style={styles.subheader}>
-          We're here to help you navigate through your study abroad options with
-          ease. From choosing a destination through to course advice
+          We are here to assist you in exploring your study abroad options, from
+          selecting a destination to receiving advice on courses and programs.
         </p>
       </div>
 
@@ -172,19 +172,18 @@ const WhereAndWhatToStudy = () => {
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Pick your dream destination and course</h2>
           <p>
-            You've taken a significant step by deciding to study overseas. Now
-            it’s time to choose where and what to study. Navigating through
-            hundreds of course and university options can be overwhelming, plus
-            you’ll have tons of other questions on your mind. With AIEC, you’re
-            in good hands. Simply create an account, complete your profile, and
-            we’ll provide you with personalised course recommendations that
-            align perfectly with your aspirations. If your shortlisted course
-            has an AIEC FastLane tag, you can check if you’re likely to be
-            accepted even before applying – so give it a go! We also offer a
-            wide array of tools and resources – from city, university, and
-            subject guides to cost calculators, scholarship finders and tons of
-            insightful articles – to make your decision on where and what to
-            study abroad smooth and stress-free.
+            You’ve made a major decision to study abroad. Now, it’s time to
+            choose the perfect destination and program for you. With so many
+            universities and courses to explore, it can feel daunting, but don’t
+            worry—AIEC is here to guide you every step of the way. Simply set up
+            your profile and we’ll provide you with customized course options
+            that match your goals. If you see a course with an AIEC FastLane
+            label, you can get a head start by checking your chances of
+            acceptance even before submitting your application. We also offer a
+            range of helpful tools like city guides, university comparisons,
+            cost calculators, scholarship resources, and expert articles to
+            simplify your decision-making process and make studying abroad as
+            seamless as possible.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -199,9 +198,8 @@ const WhereAndWhatToStudy = () => {
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
-            Create your profile and unlock a wide array of features, including
-            personalized recommendations, fast-tracked applications, and much
-            more.
+            Set up your profile to unlock exclusive features like personalized
+            recommendations, expedited applications, and much more.
           </p>
           <button style={styles.signupButton} onClick={handleSignUpClick}>
             Sign up
@@ -217,42 +215,42 @@ const WhereAndWhatToStudy = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>1. Choose a destination</h3>
           <p>
-            You can choose from six amazing countries to study abroad in. Click
-            the links below to learn more about each destination including what
-            it’s like to live there and post education career and residency
-            options.
+            Choose from six fantastic countries to study in. Click below to
+            explore more about each destination, including living conditions,
+            career prospects after graduation, and residency opportunities.
           </p>
           <a href="#" style={styles.listItemLink}>
-            UK | Australia | USA | Canada | New Zeland | Ireland | Korea |
+            UK | Australia | USA | Canada | New Zealand | Ireland | Korea |
             Germany
           </a>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>2. Explore Cost</h3>
           <p>
-            Find out how much things cost in your chosen destination, and what
-            options you have after your study by using our Cost Calculator.
+            Learn about the costs associated with studying in your chosen
+            destination and discover financial options using our Cost
+            Calculator.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>3. Pick a Study Level</h3>
           <p>
-            Undergraduate, graduate, PhD or pathway courses, learn which is
-            appropriate for you and what is required before you start studying
-            across each level.
+            Explore undergraduate, graduate, PhD, or pathway courses and find
+            the right level for you, along with the requirements for each
+            program.
           </p>
           <a href="#" style={styles.listItemLink}>
-            Study bachelor's | Study master's |Study PhD | Check your
+            Study bachelor's | Study master's | Study PhD | Check your
             eligibility
           </a>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>4. Find a Course</h3>
           <p>
-            You can explore course advice or jump straight into browsing
-            available courses online. If you can't decide on which course to
-            pursue, let us guide you through the process with a short 4 question
-            quiz.
+            You can either explore course recommendations or dive right into
+            browsing the available courses online. If you're unsure about which
+            course to choose, let us help you by guiding you through a quick
+            4-question quiz.
           </p>
           <a href="#" style={styles.listItemLink}>
             Course advice | Subject guides |Find a Course
@@ -261,8 +259,8 @@ const WhereAndWhatToStudy = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>5. Choose a University</h3>
           <p>
-            Browse institutions across 6 different country destinations to see
-            which align with your academic goals and aspirations.
+            Explore universities in six different countries to find the ones
+            that match your academic objectives and ambitions.
           </p>
           <a href="#" style={styles.listItemLink}>
             Check uni ranking | Find a uni
@@ -275,10 +273,9 @@ const WhereAndWhatToStudy = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
           <p>
-            Studying abroad is the experience of living overseas in order to
-            acquire a foreign education. It can take many forms – from a few
-            weeks in a short course, to a four years’ program of full-time
-            study. 
+            Studying abroad involves living in another country to pursue an
+            education. It can range from a short course lasting a few weeks to a
+            full-time, four-year degree program.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -286,10 +283,10 @@ const WhereAndWhatToStudy = () => {
             How is it different from studying locally?
           </h3>
           <p>
-            While studying locally is the easier option, in the longer run
-            studying abroad offers unique opportunities and experiences that
-            cannot be found at home. For more information, read this article
-            about whether to study abroad or locally. 
+            Although studying locally may seem like the simpler choice, studying
+            abroad provides unique opportunities and experiences that are
+            unavailable at home. To learn more, read this article on whether to
+            study abroad or stay local.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -297,30 +294,30 @@ const WhereAndWhatToStudy = () => {
             What are the main benefits of studying overseas?
           </h3>
           <p>
-            Studying abroad offers a wide range of benefits, from inspiring a
-            global mindset to helping you learn new skills and enhancing your
-            career prospects. To read all about it, check our article about the
-            benefits of studying abroad.
+            Studying abroad provides numerous advantages, including fostering a
+            global perspective, developing new skills, and boosting your career
+            opportunities. For more details, read our article on the benefits of
+            studying abroad.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>What's the experience like?</h3>
           <p>
-            Studying abroad is a transformative experience of personal growth
-            that helps you broaden your perspective, develop independence,
-            self-confidence and a greater understanding and appreciation of
-            different cultures. To see what it’s like, meet some students who
-            have made the move to study abroad with AIEC. 
+            Studying abroad is a life-changing journey that fosters personal
+            growth, expands your worldview, and helps you build independence,
+            self-confidence, and a deeper understanding of diverse cultures. To
+            learn more about the experience, meet students who have chosen to
+            study abroad with AIEC.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
           <p>
-            Studying abroad is not as expensive as you may think! Use our cost
-            of living calculator to estimate how much you will need to cover all
-            your expenses as an international student. We connect you to over
-            5,100 scholarships across our partner university network. Reach out
-            to us to explore your options.
+            Studying abroad may be more affordable than you imagine! Use our
+            cost of living calculator to get an estimate of your expenses as an
+            international student. Additionally, we provide access to over 5,100
+            scholarships through our partner universities. Contact us to explore
+            the opportunities available to you.
           </p>
         </div>
       </div>

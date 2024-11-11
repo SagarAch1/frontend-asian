@@ -210,7 +210,7 @@ import Studyingabroadindepthlook from "./Blog/Studingabroadanindepthlook";
 import Feeincreaseforaustralia from "./Blog/Feeincreaseforasu";
 import Navigatingenglishproficiencytest from "./Blog/Navigatingenglishproficiency";
 import Whatisgoodscoreforsat from "./Blog/Whatisgood";
-import Ieltsmocktests from "./Blog/Ieltsmocktests";
+
 import SampleDocs from "./Pages/Homepage/Resources";
 import StudyInAustralia from "./Pages/Homepage/Australiaresource";
 import Resourcecanada from "./Pages/Homepage/Canadaresource";

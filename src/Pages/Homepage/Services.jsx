@@ -35,7 +35,7 @@ const services = [
     icon: '📅', 
     title: 'Events', 
     description: 'Explore events where you can meet with partner universities and discuss your dream to study abroad.', 
-    link: '#',
+    link: 'upcommingevents',
   },
 ];
 
