@@ -23,16 +23,18 @@ const StudyInUsa = () => {
       </header>
       <div style={styles.contentSection}>
         <p style={styles.paragraph}>
-          The US hosts the greatest number of international students in the
-          world. Quality education, a unique curriculum, a multicultural
-          environment, and abundant opportunities are just some of the reasons
-          why many students want to study in the USA from Nepal.
+          The United States has the highest number of international students
+          worldwide. Its exceptional education system, unique curriculum,
+          diverse cultural environment, and abundant opportunities are just a
+          few of the reasons many students from Nepal choose to study in the
+          USA.
         </p>
         <h2 style={styles.sectionTitle}>Top 10 reasons to study in the USA</h2>
         <p style={styles.paragraph}>
-          The US is renowned for its world-class education system, diverse
-          culture, and abundant opportunities for personal and professional
-          growth. Here are the top 10 reasons to study in the US:
+          The US is renowned for its top-tier educational institutions,
+          multicultural society, and vast opportunities for personal and career
+          growth. Here are the top 10 reasons why studying in the US is a great
+          choice:
         </p>
 
         <ul style={styles.courseList}>
@@ -62,20 +64,20 @@ const StudyInUsa = () => {
             <tr>
               <td style={styles.tableCell}>F-1 Student Visa</td>
               <td style={styles.tableCell}>
-                to study at an accredited US college or university
+                For studying at an accredited US college or university
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>J Exchange Visa (J-1)</td>
               <td style={styles.tableCell}>
-                To participation in work and / or study-based exchange program.
+                For participation in work and/or study-based exchange programs.
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>M Student Visa (M1)</td>
               <td style={styles.tableCell}>
-                for vocational study or training that are primarily non-academic
-                in nature
+                For vocational study or training, generally non-academic in
+                nature
               </td>
             </tr>
           </tbody>
@@ -83,53 +85,51 @@ const StudyInUsa = () => {
 
         <h2 style={styles.sectionTitle}>Intakes available in the USA</h2>
         <p style={styles.paragraph}>
-          Unlike a single intake in Napalese universities, American colleges and
-          universities offer three intakes. In some universities, intakes may
-          also be referred to as a semester. The three intakes available in the
-          US are:
+          Unlike Nepali universities with a single intake, American institutions
+          offer three intakes. Some universities may also refer to these as
+          semesters. The three main intakes are:
         </p>
 
         <ul style={styles.courseList}>
           <li>
-            Fall: A popular intake among Napalese students, The Fall intake
-            starts in the month of September.
+            Fall: This is the most popular intake among Nepali students,
+            starting in September.
           </li>
 
           <li>
-            Spring: Starts in January; it’s best if you miss the Fall intake.{" "}
+            Spring: This intake begins in January, and is a good option if you
+            miss the Fall intake.
           </li>
 
           <li>
-            Summer: Available for limited programs and Institutions, the Summer
-            intake usually starts around May.{" "}
+            Summer: Available for specific programs and institutions, Summer
+            intake typically starts in May.
           </li>
         </ul>
 
         <h2 style={styles.sectionTitle}>IELTS for studying in the USA</h2>
         <p style={styles.paragraph}>
-          When you're applying for a US F1 student visa, you'll usually need to
-          take the IELTS Academic exam and get a score of at least 6.5. The
-          minimum score can be different for different types of degree programs.
-          For undergraduate degrees, they typically look for a score of 6.0,
-          while postgraduate programs usually require a 6.5. However, keep in
-          mind that specific universities may have their own score requirements.
-          Some prestigious schools like Ivy League universities often want a
-          higher score, around 7.0, while other schools might ask for 6.0 or
+          When applying for an F1 student visa to the US, you usually need to
+          take the IELTS Academic exam and score at least 6.5. This minimum
+          score may vary depending on the program. Undergraduate programs often
+          require a score of 6.0, while postgraduate programs typically need
+          6.5. However, individual universities may have their own score
+          thresholds. Prestigious institutions such as Ivy League schools may
+          ask for a score around 7.0, while other universities may accept 6.0 or
           6.5.
         </p>
 
         <h2 style={styles.sectionTitle}>Cost to study in the USA</h2>
         <p style={styles.paragraph}>
-          The total cost to study in the US for Nepalese students may vary
-          because of several factors like institution, location, course, living
-          choices, etc. Universities in the US are majorly divided into two
-          categories - Public/State and Private. The education cost at a
-          public/state university is comparatively less than that of a private
-          institution while private universities give more in grants or
-          scholarships. Your expenditure on tuition fees depends on the type of
-          qualification and university or school you opt for. To cover tuition
-          fees, you will need approx. $8,000 to $55,000 (USD) a year
-          (indicative).
+          The overall cost of studying in the US for Nepali students can vary
+          based on several factors such as the institution, location, program,
+          and living preferences. US universities are generally categorized into
+          two types: Public/State and Private. Tuition fees at public or state
+          universities tend to be lower compared to private institutions,
+          although private universities may offer more grants or scholarships.
+          The amount you'll spend on tuition depends on the program and the
+          institution you choose. On average, tuition fees can range from
+          approximately $8,000 to $55,000 (USD) per year (subject to variation).
         </p>
         <table style={styles.table}>
           <thead>
@@ -166,13 +166,13 @@ const StudyInUsa = () => {
 
         <h2 style={styles.sectionTitle}>Scholarships to study in the USA</h2>
         <p style={styles.paragraph}>
-          If you are wondering how to get a scholarship to study in the US, you
-          can contact an AIEC expert. They will help apply for eligible
-          scholarships. However, the amount of funding available and the type of
-          award varies between institutions. Certain research programs may
-          provide up to 100% waiver on the tuition fee besides covering a part
-          of your living expenditures. Here are some popular scholarship
-          programs you can apply to study in the US as a Nepalese student:{" "}
+          If you're looking for ways to secure a scholarship to study in the US,
+          an AIEC expert can assist you with the application process for
+          eligible scholarships. The amount of financial aid and the type of
+          award differ across institutions. Some research programs may offer up
+          to a full tuition fee waiver, along with coverage for part of your
+          living expenses. Below are some well-known scholarship programs you
+          can apply for as a Nepali student planning to study in the US:{" "}
         </p>
 
         <table style={styles.table}>
@@ -190,10 +190,10 @@ const StudyInUsa = () => {
                 Fulbright Foreign student program
               </td>
               <td style={styles.tableCell}>
-                Applicable for international students who are applying to
-                master’s programs; this scholarship covers tuition fees,
-                accident and sickness coverage as per US guidelines, airfare,
-                and living costs for selected universities.
+                This scholarship is available for international students
+                applying to master's programs. It covers tuition fees, accident
+                and sickness insurance as per US guidelines, airfare, and living
+                expenses for selected universities.
               </td>
             </tr>
             <tr>
@@ -203,10 +203,10 @@ const StudyInUsa = () => {
                 Program (Government-funded)
               </td>
               <td style={styles.tableCell}>
-                This program is a part of the Fullbright program and aims to
-                bring an accomplished young and mid-career professional from a
-                developing country to study in the US for 10 months of
-                non-degree graduate study and related practical experience
+                This program, part of the Fulbright initiative, is designed to
+                bring talented young and mid-career professionals from
+                developing countries to the US for 10 months of non-degree
+                graduate study and relevant hands-on experience.
               </td>
             </tr>
             <tr>
@@ -215,9 +215,9 @@ const StudyInUsa = () => {
                 #YouAreWelcomeHere Scholarship (Non-Government scholarship)
               </td>
               <td style={styles.tableCell}>
-                It’s a scholarship and social media campaign designed to welcome
-                international students into the US higher education system
-                irrespective of the subject area
+                This scholarship and social media campaign is aimed at welcoming
+                international students into the US higher education system,
+                regardless of their field of study.
               </td>
             </tr>
             <tr>
@@ -226,10 +226,9 @@ const StudyInUsa = () => {
                 UEFA (Non-Government scholarship)
               </td>
               <td style={styles.tableCell}>
-                This is a summer program sponsored by Abbey Road Inc. which
-                grants scholarships to 14-18 aged high school student that shows
-                exemplary performance in their academics and extracurricular
-                activities
+                This summer program, sponsored by Abbey Road Inc., offers
+                scholarships to high school students aged 14-18 who demonstrate
+                outstanding academic and extracurricular achievements.
               </td>
             </tr>
             <tr>
@@ -238,28 +237,29 @@ const StudyInUsa = () => {
                 AAUW International Fellowships (Non-Government scholarship)
               </td>
               <td style={styles.tableCell}>
-                These fellowships are awarded to international women students
-                for full-time study and research in the US. It supports both
-                graduate and post-graduate students for selected universities.
+                These fellowships are granted to international women students
+                pursuing full-time study and research in the US. They support
+                both graduate and postgraduate students at selected
+                universities.
               </td>
             </tr>
           </tbody>
         </table>
         <p style={styles.paragraph}>
-          *This is an indicative list, speak with your AIEC expert for details
-          and the best available options suited to your profile Please note: An
-          MBA degree can cost significantly more, as can professional programs
-          such as law, medicine, dentistry, some design programs, etc. Most
-          doctoral degrees are 100% funded through research/teaching
-          assistantships and fellowships. If you want to bring down your
-          educational expenses, it is best to apply to various US scholarships
-          available for Napalese students.
+          *This is a general list. Consult your AIEC expert for detailed
+          guidance and the best scholarship options based on your profile.
+          Please note: MBA programs and professional degrees like law, medicine,
+          dentistry, and certain design programs tend to have significantly
+          higher costs. Most doctoral degrees are fully funded through research
+          or teaching assistantships and fellowships. To reduce your educational
+          expenses, consider applying for various US scholarships available to
+          Nepalese students.
         </p>
 
         <h2 style={styles.sectionTitle}>Top courses to study in the US</h2>
         <p style={styles.paragraph}>
-          If you are wondering about the best course to study in the US, here
-          are the top fields preferred by international students:
+          If you're curious about the most popular courses to pursue in the US,
+          here are the top fields chosen by international students:
         </p>
 
         <ul style={styles.courseList}>
@@ -343,24 +343,23 @@ const StudyInUsa = () => {
         </table>
         <h2 style={styles.sectionTitle}>Job prospects in the USA</h2>
         <p style={styles.paragraph}>
-          Owing to a skills shortage across various sectors in the American
-          market, international students with skills are in demand and those who
-          are willing to settle in America have the option to apply under a
-          Skilled Worker Visa and permanently work and reside in the country.
-          Graduates are in high demand in the USA, especially in the field of
-          healthcare, film production, real estate, agriculture, engineering,
-          and computer information technology. There are also various of
-          internship programs available that can be taken up by international
-          students.
+          Due to a shortage of skilled workers in various industries in the US,
+          international students with relevant skills are in high demand. Those
+          willing to settle in the US can apply for a Skilled Worker Visa,
+          allowing them to live and work permanently in the country. Graduates,
+          especially in fields like healthcare, film production, real estate,
+          agriculture, engineering, and IT, are highly sought after.
+          Additionally, numerous internship opportunities are available for
+          international students.
         </p>
         <h2 style={styles.sectionTitle}>Cost of living in the USA</h2>
         <p style={styles.paragraph}>
-          In the US, living costs vary by a substantial amount due to the vast
-          territory of the country. Usually, urban areas are more expensive (in
-          or near a big city) in contrast to smaller towns or suburban areas.
-          Therefore, to have a fair view of the general living costs in the US,
-          you should also consider these common expenses when creating your
-          budget:
+          Living expenses in the US can vary greatly due to the country's large
+          size. Typically, urban areas, particularly those in or near major
+          cities, tend to be more expensive compared to smaller towns or
+          suburban regions. Therefore, when planning your budget, it's important
+          to consider common living costs to get a clear idea of what to expect
+          in the US.
         </p>
 
         <table style={styles.table}>
@@ -398,18 +397,18 @@ const StudyInUsa = () => {
         </p>
         <p style={styles.sectionTitle}>Frequently Asked Questions (FAQs):</p>
         <p style={styles.paragraph}>
-          Beginning the application process may feel like a complicated process,
-          so we have answered some commonly asked question about studying and
-          living in the USA.
+          Starting the application process might be overwhelming, so we've
+          compiled answers to frequently asked questions on studying and living
+          in the US to help ease your mind.
         </p>
         <p style={styles.section}>
           Ques 1: What are the exams you need to take to study in the US?
         </p>
         <p style={styles.paragraph}>
-          Ans: Depending on your profile and the university requirements, you
-          will need to take English language proficiency test, and standardized
-          test (like SAT/ACT/GRE/GMAT, etc.) Consult with an AIEC exert to learn
-          about your requirements.
+          Ans:You may be required to take an English language proficiency
+          examination and a standardized test (such as the SAT/ACT/GRE/GMAT) in
+          accordance with the university's requirements and your profile. To
+          ascertain your requirements, consult with an AIEC exert.
         </p>
         <p style={styles.section}>
           Ques 2: What are the popular fields in the US after NEB/PCL diploma?
@@ -433,20 +432,20 @@ const StudyInUsa = () => {
           Ques 3: How much gap is accepted for study in the US?
         </p>
         <p style={styles.paragraph}>
-          Ans: Although the US education system is recognised for its stringent
-          regulations, most academic institutions typically allow for a one to
-          two years gap for undergraduate students. Incases where the gap
-          extends beyond his period, it becomes imperative for students to
-          provide a well-founded explanation.
+          Ans: While the United States education system is acknowledged for its
+          rigorous regulations, the majority of academic institutions permit
+          undergraduate students to take a one- to two-year hiatus. In
+          situations where the delay exceeds his period, it is essential for
+          students to offer a well-reasoned explanation.
         </p>
         <p style={styles.section}>
           Ques4: How much percentage is required to study in the US?
         </p>
         <p style={styles.paragraph}>
-          Ans: The percentage/GPA requirement varies with the university you are
-          applying to and the level you are applying for. However, a percentage
-          of 65% and GPA of 3.0 would be better for your admission to the US
-          institutions.
+          Ans: The percentage or GPA requirement is contingent upon the level of
+          the university to which you are applying and the application you are
+          submitting. However, a percentage of 65% and GPA of 3.0 would be
+          preferable for your admission to the US institutions.
         </p>
         <Exploreinusa />
         <FormPage />
