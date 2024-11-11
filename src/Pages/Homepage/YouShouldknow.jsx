@@ -82,8 +82,9 @@ const Youshouldknow = () => {
           <div>
             <h3 style={infoTextHeaderStyle}>Global events</h3>
             <p style={infoTextParagraphStyle}>
-              At our Global events, you can meet university representatives and
-              discuss your study prospects, and more in person.
+              At our global events, you’ll have the opportunity to connect with
+              university representatives in person to discuss your study
+              options, future opportunities, and much more.
             </p>
           </div>
         </div>
@@ -101,15 +102,14 @@ const Youshouldknow = () => {
             <div>
               <h4 style={infoTextHeaderStyle}>Live life in the FastLane</h4>
               <p style={infoTextParagraphStyle}>
-                You can get an express response from your dream university in
-                seconds!
+              Receive an instant response from your dream university in just seconds!
               </p>
             </div>
           </div>
           {/* Visa Application Assistance Section */}
           <div
             style={infoBoxStyle}
-            onClick={() => navigate("/visaapplicationassistance")} 
+            onClick={() => navigate("/visaapplicationassistance")}
           >
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/you3.webp`}
@@ -119,8 +119,7 @@ const Youshouldknow = () => {
             <div>
               <h4 style={infoTextHeaderStyle}>Visa application assistance</h4>
               <p style={infoTextParagraphStyle}>
-                Applying for visas can be challenging, but our team ensures you
-                access to accurate information for a smoother process.
+              Visa applications can be complex, but our team provides precise information to make the process easier for you.
               </p>
             </div>
           </div>

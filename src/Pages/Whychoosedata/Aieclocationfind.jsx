@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Footer from "../Homepage/Footer";
 import { useNavigate } from "react-router-dom";
+import Footer from "../Homepage/Footer";
 
 const OfficeLocator = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -55,7 +55,6 @@ const OfficeLocator = () => {
       navigate("/sydneyoffice");
     }
   };
-
 
   const renderOfficeDetails = (office) => {
     let officeData = null;
@@ -125,7 +124,7 @@ const OfficeLocator = () => {
               border: "none",
               borderRadius: "5px",
             }}
-            onClick={() => handleMoreDetailsClick(office)} 
+            onClick={() => handleMoreDetailsClick(office)}
           >
             More details
           </button>
@@ -210,22 +209,22 @@ const OfficeLocator = () => {
           <div style={styles.col}>
             <h4>Connect globally</h4>
             <p>
-              Get one to one access to more than 2,200 expert education
-              counsellors across 190 AIEC offices in 35 countries.
+              Gain personalized support from over 2,200 expert education
+              counselors available at 190 AIEC offices across 35 countries.
             </p>
           </div>
           <div style={styles.col}>
             <h4>Experts in their field</h4>
             <p>
-              Our counsellors are highly trained to support you to find and
-              apply to courses matching your interest and aptitude.
+              Our counselors are expertly trained to help you discover and apply
+              to courses that align with your interests and strengths.
             </p>
           </div>
           <div style={styles.col}>
             <h4>An unbeatable track record</h4>
             <p>
-              To date, we have helped more than half a million students achieve
-              their dream of studying abroad.
+              So far, we've supported over half a million students in fulfilling
+              their dreams of studying abroad.
             </p>
           </div>
         </div>
@@ -233,22 +232,23 @@ const OfficeLocator = () => {
           <div style={styles.col}>
             <h4>Friendly and approachable</h4>
             <p>
-              Many AIEC counsellors were once international students too. You'll
-              always find them ready to go the extra mile.
+              Many of our AIEC counselors were once international students
+              themselves, so they’re always ready to go above and beyond to
+              help.
             </p>
           </div>
           <div style={styles.col}>
             <h4>Zero commission</h4>
             <p>
-              AIEC doesn’t charge you for its services. Many universities also
-              waive their application fees when you apply through AIEC.
+              AIEC provides its services free of charge, and many universities
+              waive their application fees when you apply through us.
             </p>
           </div>
           <div style={styles.col}>
             <h4>Putting you first</h4>
             <p>
-              All our services are designed to enhance your experience and
-              ensure that you achieve your study abroad goals.
+              Our services are tailored to improve your experience and help you
+              achieve your study abroad aspirations.
             </p>
           </div>
         </div>

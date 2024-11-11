@@ -17,7 +17,7 @@ const Contact = () => {
     container: {
       backgroundColor: "#f7f8fc",
       padding: "50px",
-      paddingTop: "100px", // Add padding to push content down from the top
+      paddingTop: "100px",
     },
     header: {
       textAlign: "center",
@@ -33,17 +33,17 @@ const Contact = () => {
     },
     content: {
       display: "flex",
-      justifyContent: "center", // Center the content horizontally
-      alignItems: "center", // Center the content vertically
+      justifyContent: "center",
+      alignItems: "center",
     },
     box: {
-      width: "80%", // Set the width of the box
-      maxWidth: "600px", // Set a max width for the box
+      width: "80%",
+      maxWidth: "600px",
       backgroundColor: "#fff",
       padding: "30px",
       borderRadius: "10px",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
-      border: "1px solid #ddd", // Add a light border to the box
+      border: "1px solid #ddd",
     },
     formGroup: {
       marginBottom: "15px",
@@ -70,6 +70,12 @@ const Contact = () => {
       textAlign: "center",
       marginTop: "20px",
     },
+    footerContainer: {
+      marginTop: "50px",
+      padding: "20px 0",
+      backgroundColor: "#f0f0f5",
+      textAlign: "center",
+    },
   };
 
   const handleInputChange = (e) => {
@@ -93,6 +99,13 @@ const Contact = () => {
       toast.error("Failed to send message");
     }
   };
+
+  // Footer container defined outside of the return
+  const footerContainer = (
+    <div style={styles.footerContainer}>
+      <Footer />
+    </div>
+  );
 
   return (
     <div style={styles.container}>
@@ -173,7 +186,7 @@ const Contact = () => {
         </div>
       </div>
       <WhyChooseAiec />
-      <Footer />
+      {footerContainer}
     </div>
   );
 };
