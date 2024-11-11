@@ -60,13 +60,7 @@ const DuolingoPreparationPage = () => {
             Comprehensive Guide to the Duolingo English Test (DET)
           </h1>
           <p style={styles.introduction}>
-            The Duolingo English Test is an innovative and accessible online
-            English proficiency exam designed for international students and
-            professionals. Unlike traditional English language tests like TOEFL
-            or IELTS, the Duolingo English Test can be taken online from the
-            comfort of your own home. The test is increasingly recognized by a
-            growing number of universities globally because of its convenience
-            and fast results.
+            The Duolingo English Test offers a modern and convenient way to assess English proficiency for international students and professionals. Unlike traditional exams like TOEFL and IELTS, Duolingo can be taken from anywhere, making it accessible and easy to schedule. Increasingly recognized by universities worldwide, it provides rapid results, making it a preferred choice for many.
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/duolingo.webp`}
@@ -215,6 +209,7 @@ const DuolingoPreparationPage = () => {
     </div>
   );
 };
+
 
 const styles = {
   pageContainer: {

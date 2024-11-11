@@ -60,11 +60,11 @@ const ToeflPreparationPage = () => {
             The Ultimate Guide to TOEFL: Your Roadmap to English Proficiency
           </h1>
           <p style={styles.introduction}>
-            The Test of English as a Foreign Language (TOEFL) is a standardized
-            test designed to measure the English language ability of non-native
-            speakers wishing to enroll in English-speaking universities. It is
-            an essential criterion for admissions to higher education
-            institutions across the globe.
+            The TOEFL (Test of English as a Foreign Language) is a standardized
+            assessment aimed at evaluating the English language proficiency of
+            non-native speakers who wish to attend universities in
+            English-speaking countries. It is a key factor for admissions to
+            higher education institutions worldwide.
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/tofel.png`}
@@ -78,81 +78,92 @@ const ToeflPreparationPage = () => {
               <div style={styles.iconCircle}>
                 <FaUsers style={styles.icon} />
               </div>
-              <p>Develop time management skills to complete each section</p>
+              <p>
+                Master time management techniques to effectively finish each
+                section.
+              </p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaBookOpen style={styles.icon} />
               </div>
-              <p>Focus on grammar, vocabulary, and coherence</p>
+              <p>
+                Pay close attention to grammar, vocabulary, and sentence
+                structure.
+              </p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaGraduationCap style={styles.icon} />
               </div>
-              <p>Engage in regular speaking practice</p>
+              <p>
+                Practice speaking regularly to improve fluency and confidence.
+              </p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaHandshake style={styles.icon} />
               </div>
-              <p>Enhance your listening skills by exposing yourself</p>
+              <p>
+                Boost your listening abilities by immersing yourself in English
+                audio.
+              </p>
             </div>
           </div>
 
           <h2 style={styles.subHeading}>Understanding the TOEFL Test</h2>
           <p style={styles.text}>
-            TOEFL tests the language proficiency in academic settings,
-            reflecting how well you can combine your listening, reading,
-            speaking, and writing skills to perform academic tasks.
+            The TOEFL exam evaluates your ability to use the English language in
+            academic situations, measuring how effectively you can apply
+            listening, reading, speaking, and writing skills in academic tasks.
           </p>
 
           <h2 style={styles.subHeading}>Key Versions of TOEFL</h2>
           <ul style={styles.list}>
             <li>
-              <strong>TOEFL iBT (Internet-based Test):</strong> The most common
-              form of the exam, conducted online.
+              <strong>TOEFL iBT (Internet-based Test):</strong> This is the most
+              commonly taken version, delivered online.
             </li>
             <li>
               <strong>TOEFL Paper-delivered Test:</strong> Available in
-              locations where testing via the internet is not possible.
+              locations where internet testing is unavailable.
             </li>
             <li>
-              <strong>TOEFL Essentials Test:</strong> A newer version that
-              assesses both academic and general English proficiency.
+              <strong>TOEFL Essentials Test:</strong> A recent variant that
+              tests both general and academic English proficiency.
             </li>
           </ul>
 
           <h2 style={styles.subHeading}>Global Recognition and Acceptance</h2>
           <p style={styles.text}>
-            TOEFL scores are recognized by over 10,000 colleges, universities,
-            and agencies in more than 150 countries worldwide, including top
-            universities in the U.S., Canada, Australia, and the UK, making it
-            one of the most widely respected English-language tests in the
-            world.
+            Over 10,000 colleges, universities, and agencies in more than 150
+            countries accept TOEFL scores, including prestigious universities in
+            the U.S., Canada, Australia, and the UK. This widespread acceptance
+            makes it one of the most respected English proficiency exams
+            worldwide.
           </p>
 
           {/* Added Section */}
           <h2 style={styles.subHeading}>Test Duration</h2>
           <p style={styles.text}>
-            The TOEFL iBT test lasts about 3 hours, not including the check-in
-            time at the testing center.
+            The TOEFL iBT typically lasts around 3 hours, not accounting for
+            check-in time at the testing center.
           </p>
           {/* Added Section */}
           <h2 style={styles.subHeading}>Band Scale and Interpretation</h2>
           <p style={styles.text}>
-            Scores are reported on a scale of 0 to 30 for each section, with a
-            total score range of 0 to 120. Each institution or agency sets its
+            The scores are reported on a scale from 0 to 30 for each section,
+            with a total range from 0 to 120. Institutions or agencies set their
             own score requirements.
           </p>
 
           <h2 style={styles.subHeading}>Our Benefits</h2>
 
           <p style={styles.text}>
-            Choosing the right consultancy can make a world of difference in
-            your journey toward international exploration, growth, and success.
-            At AIEC GLOBAL, we take pride in the distinctive benefits of
-            partnering with us:
+            Selecting the right consultancy can have a significant impact on
+            your journey toward academic and personal growth. At AIEC GLOBAL, we
+            pride ourselves on offering unique benefits when you choose to work
+            with us:
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/beni.png`}
@@ -161,31 +172,31 @@ const ToeflPreparationPage = () => {
           />
           <ul style={styles.benefitsList}>
             <li>
-              <FaStar style={styles.starIcon} /> Experienced Instructors
+              <FaStar style={styles.starIcon} /> Expert Instructors
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Targeted Preparation Strategies
+              <FaStar style={styles.starIcon} /> Focused Preparation Strategies
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Interactive Learning
-              Environment
+              <FaStar style={styles.starIcon} /> Engaging Learning Environment
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Support Beyond the Classroom
+              <FaStar style={styles.starIcon} /> Support Beyond Classroom
+              Sessions
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Free Mock Test
+              <FaStar style={styles.starIcon} /> Complimentary Mock Tests
             </li>
             <h2 style={styles.subHeading}>Registration Information</h2>
             <p style={styles.text}>
-              Register for the TOEFL test through the official ETS website or by
-              contacting us. It’s advisable to register early to secure your
-              preferred test date and location. By understanding the nuances of
-              the TOEFL test and following these preparation tips, candidates
-              can significantly enhance their prospects of achieving an
-              outstanding score, thereby improving their chances of admission to
-              leading universities and fulfilling their academic and
-              professional goals.
+              You can register for the TOEFL exam through the official ETS
+              website or by contacting us directly. It’s advisable to register
+              well in advance to secure your preferred test date and location.
+              By comprehending the nuances of the TOEFL exam and following these
+              preparatory guidelines, candidates can greatly improve their
+              chances of obtaining an outstanding score, which will enhance
+              their chances of gaining admission to top universities and
+              advancing their academic and career goals.
             </p>
           </ul>
 
@@ -194,30 +205,31 @@ const ToeflPreparationPage = () => {
             Why Choose Our Toefl Preparation Course?
           </h2>
           <p style={styles.text}>
-            Our Toefl preparation course offers personalized coaching, practice
-            tests, and feedback sessions to help you achieve your desired band
-            score. With experienced instructors and comprehensive study
-            materials, we provide all the tools you need to succeed. Whether
-            you're aiming for academic excellence or pursuing your career
-            abroad, our course is designed to maximize your potential and boost
+            Our TOEFL preparation course offers personalized coaching, practice
+            tests, and feedback sessions, all designed to help you reach your
+            desired score. With experienced instructors and comprehensive study
+            materials, we provide all the resources you need to succeed. Whether
+            you’re aiming for academic excellence or pursuing opportunities
+            abroad, our course is crafted to maximize your potential and boost
             your confidence.
           </p>
           <ul style={styles.list}>
-            <li>Tailored study plans based on your current skill level</li>
-            <li>Interactive sessions with expert Toefl instructors</li>
+            <li>Customized study plans tailored to your current abilities</li>
+            <li>Interactive sessions with expert TOEFL instructors</li>
             <li>
-              Access to a vast library of study materials and practice tests
+              Access to an extensive collection of study materials and practice
+              exams
             </li>
-            <li>Flexible scheduling options to fit your busy lifestyle</li>
+            <li>Flexible scheduling to accommodate your busy lifestyle</li>
             <li>
-              Regular assessments to track your progress and adjust your
-              learning plan
+              Ongoing assessments to monitor your progress and refine your study
+              plan
             </li>
           </ul>
           <p style={styles.text}>
-            Join our Toefl preparation course today and take the first step
-            towards achieving your goals. Our dedicated team is here to support
-            you every step of the way.
+            Enroll in our TOEFL preparation course today and take the first step
+            toward achieving your aspirations. Our dedicated team is here to
+            guide you every step of the way.
           </p>
         </div>
       </div>
@@ -227,7 +239,6 @@ const ToeflPreparationPage = () => {
     </div>
   );
 };
-
 const styles = {
   pageContainer: {
     display: "flex",
@@ -246,8 +257,8 @@ const styles = {
   },
   contentContainer: {
     flex: 1, // Makes sure the content takes up the remaining space
-    display: 'flex',
-    flexWrap: 'wrap', // Ensures responsiveness
+    display: "flex",
+    flexWrap: "wrap", // Ensures responsiveness
     marginTop: navbarHeight, // Adjust this based on your navbar height
   },
 

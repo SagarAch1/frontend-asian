@@ -22,11 +22,18 @@ const Courseadvice = () => {
       </header>
       <div style={styles.contentSection}>
         <p style={styles.paragraph}>
-          Every course is a unique mix of academic subjects, campus environment, and career potential. Whether you're exploring your study options, deciding on a field, or still uncertain about your career direction, your AIEC counselor is ready to help. We'll guide you in selecting the perfect course and navigating the university application process seamlessly.
+          Every course is a unique mix of academic subjects, campus environment,
+          and career potential. Whether you're exploring your study options,
+          deciding on a field, or still uncertain about your career direction,
+          your AIEC counselor is ready to help. We'll guide you in selecting the
+          perfect course and navigating the university application process
+          seamlessly.
         </p>
         <h2 style={styles.sectionTitle}>Finding the best fit</h2>
         <p style={styles.paragraph}>
-          Our team utilizes a sophisticated matching system that includes up-to-date information on our partner institutions, including schools, English language colleges, vocational colleges, and universities.
+          Our team utilizes a sophisticated matching system that includes
+          up-to-date information on our partner institutions, including schools,
+          English language colleges, vocational colleges, and universities.
         </p>
         <p style={styles.paragraph}>
           During our consultations, we cover essential factors like:
@@ -35,25 +42,38 @@ const Courseadvice = () => {
           <li>Subject Matter</li>
         </ul>
         <p style={styles.paragraph}>
-          While it may seem obvious, your interests, academic background, and previous experiences are the foundation of finding the right course. Your AIEC counselor will help you explore course handbooks and subject options to create a tailored shortlist.
+          While it may seem obvious, your interests, academic background, and
+          previous experiences are the foundation of finding the right course.
+          Your AIEC counselor will help you explore course handbooks and subject
+          options to create a tailored shortlist.
         </p>
         <ul style={styles.courseList}>
           <li>Career Goals</li>
         </ul>
         <p style={styles.paragraph}>
-          It's important to choose a course that aligns with your future career aspirations. Your AIEC counselor will assist in identifying courses that match your desired career path, setting you on the right track.
+          It's important to choose a course that aligns with your future career
+          aspirations. Your AIEC counselor will assist in identifying courses
+          that match your desired career path, setting you on the right track.
         </p>
         <ul style={styles.courseList}>
           <li>Timelines and Budgets</li>
         </ul>
         <p style={styles.paragraph}>
-          Understanding the cost of your chosen course and the budget for your education is crucial when selecting where to study. Your AIEC counselor will help you keep track of application deadlines and course start dates, ensuring you stay on top of the process.
+          Understanding the cost of your chosen course and the budget for your
+          education is crucial when selecting where to study. Your AIEC
+          counselor will help you keep track of application deadlines and course
+          start dates, ensuring you stay on top of the process.
         </p>
         <ul style={styles.courseList}>
           <li>Course Experience and Campus Life</li>
         </ul>
         <p style={styles.paragraph}>
-          The atmosphere of the university and campus life play a huge role in your overall satisfaction. Some students thrive in vibrant, city-centered campuses, while others prefer more intimate, rural environments. Whether you're drawn to cultural diversity or active student clubs, we ensure that all your preferences are considered in your decision-making.
+          The atmosphere of the university and campus life play a huge role in
+          your overall satisfaction. Some students thrive in vibrant,
+          city-centered campuses, while others prefer more intimate, rural
+          environments. Whether you're drawn to cultural diversity or active
+          student clubs, we ensure that all your preferences are considered in
+          your decision-making.
         </p>
         <h2 style={styles.sectionTitle}>Contact Us For More Info</h2>
 

@@ -61,12 +61,7 @@ const PtePreparationPage = () => {
           </h1>
           
           <p style={styles.text}>
-            The Pearson Test of English (PTE) is a renowned computer-based
-            English language proficiency test that evaluates the language skills
-            of non-native English speakers. Designed to assess reading, writing,
-            listening, and speaking abilities, PTE offers a streamlined testing
-            experience with quick results and an emphasis on real-life language
-            use.
+            The Pearson Test of English (PTE) is a globally recognized computer-based test that assesses the language proficiency of non-native English speakers. It evaluates key language skills, including reading, writing, listening, and speaking, offering a smooth testing experience with rapid results. PTE focuses on practical language use in everyday situations.
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/Pte.jpg`}
@@ -79,78 +74,57 @@ const PtePreparationPage = () => {
               <div style={styles.iconCircle}>
                 <FaUsers style={styles.icon} />
               </div>
-              <p>Develop time management skills to complete each section</p>
+              <p>Improve your time management to finish each section efficiently.</p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaBookOpen style={styles.icon} />
               </div>
-              <p>Focus on grammar, vocabulary, and coherence</p>
+              <p>Concentrate on refining your grammar, vocabulary, and writing coherence.</p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaGraduationCap style={styles.icon} />
               </div>
-              <p>Engage in regular speaking practice</p>
+              <p>Make speaking practice a part of your daily routine.</p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaHandshake style={styles.icon} />
               </div>
-              <p>Enhance your listening skills by exposing yourself</p>
+              <p>Enhance your listening comprehension by immersing yourself in English audio.</p>
             </div>
           </div>
           <h2 style={styles.subHeading}>Understanding the Pte Test</h2>
           <p style={styles.text}>
-            The Pte test comprises four sections: Listening, Reading, Writing,
-            and Speaking. Each section assesses different language skills
-            essential for effective communication in an English-speaking
-            environment. Understanding the format of the test and practicing
-            with authentic materials are crucial steps toward success.
+            The PTE exam is divided into four sections: Listening, Reading, Writing, and Speaking. These sections test different aspects of language proficiency that are essential for effective communication in English-speaking settings. Familiarizing yourself with the test structure and practicing with real-world materials will significantly boost your chances of success.
           </p>
           <h2 style={styles.subHeading}>Key Versions of Pte</h2>
           <ul style={styles.list}>
             <li>
-              <strong>Academic Version:</strong> Aspiring university students,
-              medical professionals, and nurses seeking academic enrollment or
-              practice.
+              <strong>Academic Version:</strong> Intended for university-bound students, medical professionals, and nurses seeking academic admissions or licensure.
             </li>
             <li>
-              <strong>General Training Version:</strong> Individuals pursuing
-              non-academic training, employment opportunities, or immigration
-              purposes.
+              <strong>General Training Version:</strong> Designed for individuals pursuing vocational training, employment, or immigration.
             </li>
           </ul>
           <h2 style={styles.subHeading}>Global Recognition and Acceptance</h2>
           <p style={styles.text}>
-            PTE scores are widely accepted by educational institutions,
-            employers, and government bodies worldwide. Recognized for its
-            reliability and accuracy, PTE is endorsed by thousands of
-            universities, colleges, and organizations across the globe, making
-            it a trusted measure of English proficiency.
+            PTE scores are widely accepted by universities, employers, and government agencies around the world. Known for its consistency and precision, PTE is endorsed by thousands of academic institutions, professional organizations, and governments globally, making it a trusted measure of English proficiency.
           </p>
           {/* Added Section */}
           <h2 style={styles.subHeading}>Test Duration</h2>
           <p style={styles.text}>
-            TThe complete PTE Academic test typically lasts around 3 hours, with
-            each module – speaking, writing, reading, and listening –
-            administered sequentially without breaks in between.
+            The total duration of the PTE Academic test is approximately 3 hours, with each section (Speaking, Writing, Reading, Listening) completed in sequence, without breaks.
           </p>
           {/* Added Section */}
           <h2 style={styles.subHeading}>Band Scale and Interpretation</h2>
           <p style={styles.text}>
-          PTE scores are reported on a scale from 10 to 90, with higher scores
-          indicating greater proficiency in English. Each score level
-          corresponds to a specific proficiency level, ranging from beginner to
-          expert, providing a comprehensive evaluation of language skills across
-          the four test modules.
+            PTE scores range from 10 to 90, with higher scores reflecting a higher level of English proficiency. Each score level corresponds to a specific proficiency range, from beginner to expert, offering a clear evaluation of your abilities across the four test areas.
           </p>
           <h2 style={styles.subHeading}>Our Benefits</h2>
           <p style={styles.text}>
-            Choosing the right consultancy can make a world of difference in
-            your journey toward international exploration, growth, and success.
-            At AIEC GLOBAL, we take pride in the distinctive benefits of
-            partnering with us:
+            Choosing the right consultancy can significantly impact your international journey and success. At AIEC GLOBAL, we take pride in the unique advantages we offer:
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/beni.png`}
@@ -159,20 +133,19 @@ const PtePreparationPage = () => {
           />
           <ul style={styles.benefitsList}>
             <li>
-              <FaStar style={styles.starIcon} /> Experienced Instructors
+              <FaStar style={styles.starIcon} /> Experienced Trainers
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Targeted Preparation Strategies
+              <FaStar style={styles.starIcon} /> Customized Test Preparation Plans
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Interactive Learning
-              Environment
+              <FaStar style={styles.starIcon} /> Engaging Learning Atmosphere
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Support Beyond the Classroom
+              <FaStar style={styles.starIcon} /> Ongoing Support Beyond Classes
             </li>
             <li>
-              <FaStar style={styles.starIcon} /> Free Mock Test
+              <FaStar style={styles.starIcon} /> Complimentary Mock Tests
             </li>
           </ul>
           {/* Added Section */}
@@ -180,30 +153,21 @@ const PtePreparationPage = () => {
             Why Choose Our Pte Preparation Course?
           </h2>
           <p style={styles.text}>
-            Our Pte preparation course offers personalized coaching, practice
-            tests, and feedback sessions to help you achieve your desired band
-            score. With experienced instructors and comprehensive study
-            materials, we provide all the tools you need to succeed. Whether
-            you're aiming for academic excellence or pursuing your career
-            abroad, our course is designed to maximize your potential and boost
-            your confidence.
+            Our PTE preparation course provides personalized coaching, practice tests, and feedback to help you achieve your target score. With seasoned instructors and comprehensive learning materials, we offer everything you need for success. Whether you're preparing for academic goals or career advancement abroad, our course is designed to unlock your potential and enhance your confidence.
           </p>
           <ul style={styles.list}>
-            <li>Tailored study plans based on your current skill level</li>
-            <li>Interactive sessions with expert Pte instructors</li>
+            <li>Customized study plans based on your current skills</li>
+            <li>Interactive sessions with expert PTE trainers</li>
             <li>
-              Access to a vast library of study materials and practice tests
+              Access to an extensive library of study resources and practice tests
             </li>
-            <li>Flexible scheduling options to fit your busy lifestyle</li>
+            <li>Flexible scheduling to fit your lifestyle</li>
             <li>
-              Regular assessments to track your progress and adjust your
-              learning plan
+              Regular evaluations to track your progress and adjust your study plan
             </li>
           </ul>
           <p style={styles.text}>
-            Join our Pte preparation course today and take the first step
-            towards achieving your goals. Our dedicated team is here to support
-            you every step of the way.
+            Enroll in our PTE preparation course today and begin your journey toward achieving your aspirations. Our team is dedicated to supporting you throughout every step of your preparation.
           </p>
         </div>
       </div>
@@ -232,8 +196,8 @@ const styles = {
   },
   contentContainer: {
     flex: 1, // Makes sure the content takes up the remaining space
-    display: 'flex',
-    flexWrap: 'wrap', // Ensures responsiveness
+    display: "flex",
+    flexWrap: "wrap", // Ensures responsiveness
     marginTop: navbarHeight, // Adjust this based on your navbar height
   },
 

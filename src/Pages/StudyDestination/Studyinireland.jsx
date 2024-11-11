@@ -15,110 +15,115 @@ const Studyinireland = () => {
         ></div>
         <div style={styles.headerContent}>
           <h1 style={styles.headerTitle}>
-            Study in Ireland from Nepal – Top Universities, Courses, Cost &
-            Scholarships
+          Study in Ireland with Nepal: Leading Universities, Programs, Prices, and Scholarships
+
           </h1>
           <button style={styles.contactBtn}>Contact Us</button>
         </div>
       </header>
       <div style={styles.contentSection}>
         <h2 style={styles.sectionTitle}>
-          Here’s a comprehensive guide for all Nepalese students who want to
-          study in Ireland
+        For all Nepalese students who wish to study in Ireland, here is a thorough handbook.
+
         </h2>
         <p style={styles.paragraph}>
-          Ireland consistently ranks in the world's top 20 for excellent quality
-          of life, peace, and human development, making it an increasingly
-          popular destination for Nepalese students . Its vibrant culture
-          encourages entrepreneurialism and offers numerous professional growth
-          opportunities, providing valuable life lessons beyond the classroom.
+        Ireland is becoming a more and more popular destination for Nepalese students, since it is constantly ranked in the top 20 countries in the world for exceptional quality of life, peace, and human development. Its lively culture
+
+          promotes entrepreneurship and provides a wealth of opportunities for professional development
+
+          chances, offering priceless life lessons outside of the classroom.
+
+
         </p>
         <h2 style={styles.sectionTitle}>Why study in Ireland?</h2>
         <p style={styles.paragraph}>
-          Studying in Ireland offers a blend of high-quality education, a
-          welcoming culture, and ample opportunities for personal and
-          professional growth. Here’s why you should study in Ireland:
+        A combination of excellent education, a friendly culture, and lots of chances for both professional and personal development are provided by studying in Ireland. The following justifies studying in Ireland:
+
+
         </p>
         <ul style={styles.courseList}>
           <li>Quality education</li>
         </ul>
         <p style={styles.paragraph}>
-          Ireland's universities are globally respected for their high-quality
-          education and research programs.
+        Ireland's universities are renowned throughout the world for their excellent research and teaching initiatives.
+
         </p>
         <ul style={styles.courseList}>
           <li>English language</li>
         </ul>
         <p style={styles.paragraph}>
-          As English is the primary language of instruction, it's an excellent
-          destination for international students.
+        It's a great place for overseas students to study because English is the main language of instruction.
+
         </p>
         <ul style={styles.courseList}>
           <li>Vibrant culture</li>
         </ul>
         <p style={styles.paragraph}>
-          Ireland's rich culture and history provide a unique and welcoming
-          atmosphere for students.
+        For students, Ireland's rich history and culture create a special and friendly environment.
+
         </p>
         <ul style={styles.courseList}>
           <li>Global opportunities</li>
         </ul>
         <p style={styles.paragraph}>
-          The country's strong ties to international businesses offer great
-          post-graduation employment opportunities
+        Excellent post-graduation job prospects are provided by the nation's close ties to global corporations.
+
         </p>
         <ul style={styles.courseList}>
           <li>Beautiful landscape</li>
         </ul>
         <p style={styles.paragraph}>
-          From historic cities to stunning landscapes, Ireland offers a
-          beautiful backdrop for your studies.
+        Ireland provides a lovely setting for your studies, with its historic cities and breathtaking scenery.
+
         </p>
         <ul style={styles.courseList}>
           <li>Safety</li>
         </ul>
         <p style={styles.paragraph}>
-          Ireland is considered one of the safest countries in the world,
-          ensuring a secure environment for students,
+        Ireland is regarded as one of the safest nations in the world, guaranteeing pupils a safe atmosphere.
+
         </p>
         <ul style={styles.courseList}>
           <li>Scholarship options</li>
         </ul>
         <p style={styles.paragraph}>
-          Many Irish universities offer scholarships for international students,
-          helping with tuition costs.
+        International students can receive financial aid for tuition at a number of Irish universities.
+
         </p>
         <ul style={styles.courseList}>
           <li>Innovation</li>
         </ul>
         <p style={styles.paragraph}>
-          Ireland is a hub for technology and innovation, making it a prime
-          location for cutting-edge research and opportunities
+        Ireland is a centre for innovation and technology, which makes it an ideal place for possibilities and cutting-edge research.
+
         </p>
         <ul style={styles.courseList}>
           <li>Multicultural experience</li>
         </ul>
         <p style={styles.paragraph}>
-          Ireland's diverse student population creates a multicultural
-          environment that enriches your global perspective.
+        The multicultural atmosphere fostered by Ireland's diverse student body broadens your outlook on the world.
+
         </p>
         <ul style={styles.courseList}>
           <li>English-speaking environment</li>
         </ul>
         <p style={styles.paragraph}>
-          An English-speaking environment enhances your language skills, a
-          valuable asset for your future career.
+        Your language abilities will improve in an English-speaking atmosphere, which will be a great advantage for your future profession.
+
         </p>
         <h2 style={styles.sectionTitle}>
-          Student visa requirements for Nepalese students to study in Ireland
+        Conditions for Nepalese students seeking to study in Ireland with a student visa
         </h2>
         <p style={styles.paragraph}>
-          The Irish Government extends an invitation to Nepalese students to
-          pursue their education in the country. To begin your journey, you'll
-          need to secure a student visa. The specific visa type required is
-          determined by the duration of your study in Ireland. Here’s an
-          overview of the types of study visas and their application
-          requirements
+        Nepalese students are invited to continue their education in Ireland by the Irish government. You will need to obtain a student visa in order to start your journey. The particular kind of visa that is needed is
+
+based on how long you plan to study in Ireland. This is an
+
+summary of the various kinds of study visas and how to apply for them
+
+prerequisites
+
+
         </p>
 
         <table style={styles.table}>
@@ -150,11 +155,13 @@ const Studyinireland = () => {
           Cost of studying in Ireland for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-          The cost of studying in Ireland for Nepalese students can vary
-          depending on factors such as the level of study (undergraduate or
-          postgraduate), the choice of university, and the city or region where
-          the institution is located. Here's a general overview of the costs to
-          consider:
+        Nepalese students' study expenses in Ireland might differ based on a number of variables, including their chosen university, location or region, and degree of study (undergraduate or postgraduate).
+
+It's where the institution is. This is a broad summary of the expenses to
+
+Think about:
+
+
         </p>
         <table style={styles.table}>
           <thead>
@@ -183,21 +190,26 @@ const Studyinireland = () => {
           </tbody>
         </table>
         <p style={styles.paragraph}>
-          Most commonly, courses in humanities, education, and arts are a little
-          cheaper, while subjects such as medicine, engineering, business, and
-          management are likely to be more expensive. If you wish to study at a
-          postgraduate level, the tuition fee is typically higher, and the costs
-          vary depending on the program.
+        Subjects like medical, engineering, business, and management are likely to be more expensive than courses in the humanities, education, and arts, which are often a little less expensive. If you want to attend a
+
+At the postgraduate level, tuition is usually more expensive, and the expenses
+
+differ based on the program.
+
+
         </p>
 
         <h2 style={styles.sectionTitle}>Education system in Ireland</h2>
         <p style={styles.paragraph}>
-          The Irish education system closely resembles that of the UK, which is
-          a testament to the high-quality education it offers. the system
-          promotes critical thinking, creativity, and independent learning.
-          Ireland's universities are known for their research and innovation,
-          attracting students from around the world. Education in Ireland is
-          typically divided into four primary levels.
+        The fact that the Irish and UK educational systems are so similar is evidence of the high calibre of education that is provided there. The system encourages autonomous learning, creativity, and critical thinking.
+
+Universities in Ireland are renowned for their inventiveness and research.
+
+drawing pupils from all over the world. In Ireland, education is
+
+usually separated into four main levels.
+
+
         </p>
         <ul style={styles.courseList}>
           <li>Primary education including pre-primary</li>
@@ -209,9 +221,9 @@ const Studyinireland = () => {
 
         <h2 style={styles.sectionTitle}>Top universities in Ireland</h2>
         <p style={styles.paragraph}>
-          Ireland is home to some of the world-renowned universities that are
-          known for producing great scholars. Here are the top universities in
-          Ireland, according to the QS World University Rankings 2024 :
+        Some of the top universities in the world, which are famous for turning forth outstanding scholars, are located in Ireland. The QS World University Rankings 2024 list the following as Ireland's best universities:
+
+
         </p>
         <table style={styles.table}>
           <thead>
@@ -271,30 +283,30 @@ const Studyinireland = () => {
 
         <h2 style={styles.sectionTitle}>Upcoming intakes in Ireland</h2>
         <p style={styles.paragraph}>
-          Ireland offers various intake options, which may vary depending on the
-          educational level and the institution providing the program. Here are
-          some common intakes in Ireland:
+        Ireland provides a range of admission possibilities, which can change based on the program's institution and educational level. The following are some typical intakes in Ireland:
+
+
         </p>
         <ul style={styles.courseList}>
           <li>Autumn intake in Ireland</li>
         </ul>
         <p style={styles.paragraph}>
-          This is the primary intake for most undergraduate and postgraduate
-          courses in Ireland, usually commencing in September or October,
-          depending on the institution and program.
+        Depending on the school and program, this is the main intake for the majority of undergraduate and graduate courses in Ireland, which typically start in September or October.
+
+
         </p>
         <ul style={styles.courseList}>
           <li>Spring intake in Ireland</li>
         </ul>
         <p style={styles.paragraph}>
-          Some institutions offer a secondary intake in January or February,
-          primarily for postgraduate programs. This intake is typically smaller
-          in scale compared to the autumn intake.
+        For postgraduate programs in particular, some universities provide a secondary admission in January or February. Generally speaking, this intake is lower in scope than the autumn intake.
+
+
         </p>
         <h2 style={styles.sectionTitle}>IELTS for studying in Ireland</h2>
         <p style={styles.paragraph}>
-          The IELTS score requirement for studying in Ireland varies depending
-          on the type of degree. Here’s an overview:
+        Depending on the degree type, different IELTS scores are needed to study in Ireland. Here is a summary:
+
         </p>
 
         <table style={styles.table}>
@@ -308,26 +320,28 @@ const Studyinireland = () => {
             <tr>
               <td style={styles.tableCell}>Bachelor’s Degree</td>
               <td style={styles.tableCell}>
-                While a standard IELTS band score of 6.5 is typically required
-                by most colleges and universities in Ireland, the specific
-                requirement can vary depending on the university and the course
-                you are seeking admission to.
+              Although the majority of Irish colleges and universities normally require an IELTS band score of 6.5, the precise criteria may differ based on the university and the degree.
+
+You're trying to get in.
+
+
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>Postgraduate Degree</td>
               <td style={styles.tableCell}>
-                Ireland's leading academic institutions commonly stipulate an
-                IELTS score of 6.5. However, some universities may have
-                instances where they mandate a band score of 7.0, while others
-                may accept a score of 6.0.
+              Leading academic institutions in Ireland typically require an IELTS score of 6.5. But in certain cases, universities might require a band score of 7.0, while others would not.
+
+might agree to a 6.0.
+
+
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>Foundation Courses</td>
               <td style={styles.tableCell}>
-                Students must satisfy a minimum IELTS requirement of an overall
-                4.5 band to be eligible for enrolment in foundation courses.
+              For students to be eligible to study in foundation courses, they must meet the IELTS minimum criterion of an overall score of 4.5 bands.
+
               </td>
             </tr>
           </tbody>
@@ -335,8 +349,8 @@ const Studyinireland = () => {
 
         <h2 style={styles.sectionTitle}>Scholarships to study in Ireland</h2>
         <p style={styles.paragraph}>
-          Here are some popular scholarship programs you can apply to study in
-          Ireland as a Nepalese student:
+        The following well-known scholarship schemes are available to Nepalese students who wish to study in Ireland:
+
         </p>
         <table style={styles.table}>
           <thead>
@@ -350,35 +364,49 @@ const Studyinireland = () => {
             <tr>
               <td style={styles.tableCell}>1</td>
               <td style={styles.tableCell}>
-                The Government of Ireland International Education Scholarship
+              The International Education Scholarship of the Government of Ireland
               </td>
               <td style={styles.tableCell}>
-                Under this initiative, 60 scholarships are granted for 1-year
-                study at Bachelor, Masters or PhD levels, if you have been
-                offered to study in an Irish higher education institution. Upon
-                securing the scholarship, you will receive: A €10,000 stipend
-                for 1 year of study Fully funded tuition and other registration
-                costs at the higher education institution opted for.
+              60 scholarships are awarded under this program for one year of study at the bachelor's, master's, or doctoral levels, provided that you have received an offer to enrol in an Irish university. After
+
+Receiving the award will grant you a salary of €10,000.
+
+for a year of coursework Tuition and other registration fees are fully subsidised.
+
+expenses at the chosen higher education school.
+
+
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>2</td>
               <td style={styles.tableCell}>The Walsh Fellowship</td>
               <td style={styles.tableCell}>
-                Awarded to postgraduates relevantly working on projects related
-                to the Teagasc Research and Knowledge Transfer Program, majorly
-                in fields of food, crops, animal and grasslands, environment,
-                economics and rural development. The fellowship commemorates the
-                late Dr Tom Walsh's contribution to agriculture and food
-                research in Ireland. There are up to 30 new places each year
-                with a grant of €22,000 per student. The duration is Up to two
-                years for an MSc course and four years maximum for a PhD program
-                and the location is preferably Teagasc Research Centre. The
-                applications for scholarships are invited each June and the
-                deadline extends to early-September. Applications are not
-                invited from individual PG students, and it does not include
-                taught (non-research) postgraduate programmes (Source:
-                https://www.teagasc.ie/about/research--innovation/postgraduate-scholarships/)
+              Given to postgraduate students who are actively engaged in initiatives associated with the Teagasc Research and Knowledge Transfer Program, primarily in the areas of agriculture, food, animal and grassland habitats, and the environment,
+
+rural development and economics. The fellowship honours the
+
+The contributions of the late Dr. Tom Walsh to food and agriculture
+
+studies conducted in Ireland. Up to 30 additional locations are added annually.
+
+with each student receiving a €22,000 stipend. It lasts for up to two
+
+years for an MSc study, while a PhD program can last up to four years.
+
+and the Teagasc Research Centre is the ideal site. The
+
+Scholarship applications are accepted in June, and the
+
+The deadline has been moved to early September. Applications aren't
+
+invited from certain postgraduate students, and it excludes
+
+Postgraduate courses that are taught but do not include research (Source:
+
+Postgraduate scholarships: https://www.teagasc.ie/about/research--innovation/
+
+
               </td>
             </tr>
             <tr>
@@ -387,13 +415,17 @@ const Studyinireland = () => {
                 Government of Ireland Postgraduate Scholarship
               </td>
               <td style={styles.tableCell}>
-                This scholarship is funded by the Department of Education and
-                Skills and managed by the Council. This opens up a gateway for
-                international students to pursue their Research MS and PhD or
-                Direct PhD (MS leading to PhD). The amount includes: - a stipend
-                of €16,000 per annum a contribution to fees, including non-EU
-                fees, up to a maximum of €5,750 per annum eligible direct
-                research expenses of €2,250 per annum
+              The Department of Education and Skills provides funding for this scholarship, which is overseen by the Council. This creates an opportunity for overseas students to earn their master's and doctoral degrees in research or
+
+Direct PhD (PhD after MS). The sum consists of: a stipend
+
+Approximately €16,000 annually as a fee payment, including non-EU
+
+costs, up to €5,750 annually for qualified direct
+
+annual research expenditures of €2,250
+
+
               </td>
             </tr>
           </tbody>
@@ -402,31 +434,34 @@ const Studyinireland = () => {
         <p style={styles.sectionTitle}>Frequently Asked Questions (FAQs):</p>
 
         <p style={styles.section}>
-          Ques 1:Can I work and study in Ireland as an international student?
+        Question 1: As a foreign student, is it possible for me to work and study in Ireland?
         </p>
         <p style={styles.paragraph}>
-          Ans:Yes, as an international student in Ireland, you can work and
-          study. You are generally allowed to work part-time during term and
-          full-time during vacation periods. You can work for 20 hours per week
-          during the term and 40 hours per week during holidays.
+        Yes, you can work and study in Ireland as an international student. Generally speaking, you are permitted to work full-time during vacations and part-time during the school year. You are able to work 20 hours a week.
+
+40 hours a week throughout the holidays and during the school year.
+
+
         </p>
         <p style={styles.section}>
-          Ques 2: Can I study in Ireland with a study gap?
+        Question 2: Can I take a study gap and still study in Ireland?
         </p>
         <p style={styles.paragraph}>
-          Ans:You can study in Ireland with a study gap, but it's crucial to be
-          aware that admission and visa requirements may vary based on the
-          duration and reasons for the gap. Some universities and colleges in
-          Ireland accept students with study gaps, while others may have
-          stricter policies
+        You can study in Ireland while taking a study gap, but it's important to note that the length of the break and the reasons for it may affect the requirements for entrance and a visa. A few colleges and universities in
+
+Students with study gaps are accepted in Ireland, however others may have
+
+more stringent regulations
+
+
         </p>
 
         <p style={styles.section}>
-          Ques 3:What are the best courses to study in Ireland
+        Question 3: Which courses are the finest to take in Ireland?
         </p>
         <p style={styles.paragraph}>
-          Ans: Here are some popular and well-regarded courses and areas of
-          study in Ireland:
+        The following are a few well-liked and respected programs and fields of study in Ireland:
+
         </p>
         <ul style={styles.courseList}>
           <li>Computer Science and Information Technology</li>
@@ -440,9 +475,9 @@ const Studyinireland = () => {
           <li>Hospitality and Tourism Management</li>
         </ul>
         <p style={styles.paragraph}>
-          If you want to know more about studying in Ireland, get in touch with
-          our international education expert at AIEC. They will help you with
-          the end-to-end admission process.
+        Contact AIEC, our international education specialist, for more information about studying in Ireland. They will assist you throughout the entire admissions process.
+
+
         </p>
 
         <Exploreinireland />
@@ -541,4 +576,4 @@ const styles = {
   },
 };
 
-export default Studyinireland;
+export default Studyinireland;

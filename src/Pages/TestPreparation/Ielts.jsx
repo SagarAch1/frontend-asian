@@ -1,13 +1,20 @@
-import React from 'react';
-import { FaCheckCircle, FaUsers, FaBookOpen, FaGraduationCap, FaHandshake, FaStar } from 'react-icons/fa';
-import FormPage from '../Homepage/FormPage';
-import Footer from '../Homepage/Footer';
-const navbarHeight = '60px';
+import React from "react";
+import {
+  FaBookOpen,
+  FaCheckCircle,
+  FaGraduationCap,
+  FaHandshake,
+  FaStar,
+  FaUsers,
+} from "react-icons/fa";
+import Footer from "../Homepage/Footer";
+import FormPage from "../Homepage/FormPage";
+const navbarHeight = "60px";
 
 const IELTSPreparationPage = () => {
   return (
-    <div style={styles.pageContainer}> 
-    <header style={styles.header}>
+    <div style={styles.pageContainer}>
+      <header style={styles.header}>
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/ib.png`} // Replace with your image path
           alt="IELTS Preparation"
@@ -17,25 +24,54 @@ const IELTSPreparationPage = () => {
       <div style={styles.contentContainer}>
         <div style={styles.sidebar}>
           <ul style={styles.testList}>
-            <li><button style={styles.testButton}>PTE <FaCheckCircle style={styles.arrowIcon} /></button></li>
-            <li><button style={styles.testButton}>TOEFL <FaCheckCircle style={styles.arrowIcon} /></button></li>
-            <li><button style={styles.testButton}>SAT <FaCheckCircle style={styles.arrowIcon} /></button></li>
-            <li><button style={styles.testButton}>Duolingo <FaCheckCircle style={styles.arrowIcon} /></button></li>
+            <li>
+              <button style={styles.testButton}>
+                PTE <FaCheckCircle style={styles.arrowIcon} />
+              </button>
+            </li>
+            <li>
+              <button style={styles.testButton}>
+                TOEFL <FaCheckCircle style={styles.arrowIcon} />
+              </button>
+            </li>
+            <li>
+              <button style={styles.testButton}>
+                SAT <FaCheckCircle style={styles.arrowIcon} />
+              </button>
+            </li>
+            <li>
+              <button style={styles.testButton}>
+                Duolingo <FaCheckCircle style={styles.arrowIcon} />
+              </button>
+            </li>
           </ul>
-          
-          <img src={`${process.env.PUBLIC_URL}/assets/images/logo.jpeg`} alt="IELTS Preparation" style={styles.sidebarImage} />
-          
+
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/logo.jpeg`}
+            alt="IELTS Preparation"
+            style={styles.sidebarImage}
+          />
+
           <button style={styles.bookButton}>Book Your IELTS</button>
         </div>
 
         <div style={styles.mainContent}>
-          <h1 style={styles.heading}>IELTS Preparation: Your Gateway to Success</h1>
+          <h1 style={styles.heading}>
+            IELTS Preparation: Your Gateway to Success
+          </h1>
           <p style={styles.introduction}>
-            Are you aspiring to study abroad, immigrate to an English-speaking country, or enhance your career opportunities?
-            The International English Language Testing System (IELTS) is the key to unlocking these possibilities. With thorough
-            preparation and strategic guidance, you can achieve your desired band score and open doors to a brighter future.
+            Are you looking to study abroad, move to an English-speaking
+            country, or expand your professional prospects? The International
+            English Language Testing System (IELTS) is a vital step toward
+            making these aspirations a reality. With the right preparation and
+            expert guidance, you can secure your target band score and take a
+            major step toward a successful future.
           </p>
-          <img src={`${process.env.PUBLIC_URL}/assets/images/ielts.png`} alt="IELTS Preparation" style={styles.image} />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/ielts.png`}
+            alt="IELTS Preparation"
+            style={styles.image}
+          />
 
           <h2 style={styles.subHeading}>Expert Tips for Success</h2>
           <div style={styles.tipsGrid}>
@@ -43,98 +79,185 @@ const IELTSPreparationPage = () => {
               <div style={styles.iconCircle}>
                 <FaUsers style={styles.icon} />
               </div>
-              <p>Develop time management skills to complete each section</p>
+              <p>
+                Master time management to ensure you can complete every section
+                on time
+              </p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaBookOpen style={styles.icon} />
               </div>
-              <p>Focus on grammar, vocabulary, and coherence</p>
+              <p>
+                Concentrate on improving your grammar, vocabulary, and sentence
+                structure
+              </p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaGraduationCap style={styles.icon} />
               </div>
-              <p>Engage in regular speaking practice</p>
+              <p>Engage in regular speaking practice to enhance fluency</p>
             </div>
             <div style={styles.tipCard}>
               <div style={styles.iconCircle}>
                 <FaHandshake style={styles.icon} />
               </div>
-              <p>Enhance your listening skills by exposing yourself</p>
+              <p>
+                Refine your listening abilities by immersing yourself in diverse
+                audio content
+              </p>
             </div>
           </div>
 
           <h2 style={styles.subHeading}>Understanding the IELTS Test</h2>
           <p style={styles.text}>
-            The IELTS test comprises four sections: Listening, Reading, Writing, and Speaking. Each section assesses different
-            language skills essential for effective communication in an English-speaking environment. Understanding the format of the test
-            and practicing with authentic materials are crucial steps toward success.
+            The IELTS exam is divided into four sections: Listening, Reading,
+            Writing, and Speaking. Each section evaluates different language
+            skills that are critical for effective communication in an
+            English-speaking environment. Familiarizing yourself with the test's
+            format and practicing with genuine test materials are essential
+            steps toward success.
           </p>
 
           <h2 style={styles.subHeading}>Key Versions of IELTS</h2>
           <ul style={styles.list}>
-            <li><strong>Academic Version:</strong> Aspiring university students, medical professionals, and nurses seeking academic enrollment or practice.</li>
-            <li><strong>General Training Version:</strong> Individuals pursuing non-academic training, employment opportunities, or immigration purposes.</li>
+            <li>
+              <strong>Academic Version:</strong> Designed for those seeking
+              university admission, medical professionals, and nurses who wish
+              to study or practice in English-speaking countries.
+            </li>
+            <li>
+              <strong>General Training Version:</strong> Intended for
+              individuals who need English for work, immigration, or
+              non-academic training purposes.
+            </li>
           </ul>
 
           <h2 style={styles.subHeading}>Global Recognition and Acceptance</h2>
           <p style={styles.text}>
-            IELTS is recognized by a multitude of esteemed academic institutions worldwide, including those in Australia, the UK, Canada, Ireland,
-            New Zealand, and over 1800 US institutions. It serves as the mandatory English language test for immigration to Australia.
+            IELTS is widely accepted by universities, employers, and immigration
+            authorities around the globe. It is recognized by institutions in
+            the UK, Australia, New Zealand, Canada, Ireland, and more than 1800
+            universities across the United States. Additionally, IELTS is the
+            required English language proficiency test for immigration to
+            Australia.
           </p>
 
           {/* Added Section */}
           <h2 style={styles.subHeading}>Test Duration</h2>
           <p style={styles.text}>
-            The total test duration is 2 hours and 45 minutes. The Listening, Reading, and Writing modules are completed consecutively, followed by the Speaking module either on the same day or the following day.
+            The total time for the IELTS exam is 2 hours and 45 minutes. The
+            Listening, Reading, and Writing tests are completed consecutively,
+            and the Speaking test is usually conducted on the same day or the
+            following day.
           </p>
           {/* Added Section */}
           <h2 style={styles.subHeading}>Band Scale and Interpretation</h2>
           <ul style={styles.list}>
-            <li><strong>9 Expert User:</strong> Full command of the language with accuracy, fluency, and complete understanding.</li>
-            <li><strong>8 Very Good User:</strong> Fully operational command with occasional inaccuracies, handling complex arguments proficiently.</li>
-            <li><strong>7 Good User:</strong> Operational command with occasional inaccuracies, handling complex language and reasoning well.</li>
-            <li><strong>6 Competent User:</strong>: Effective command despite some errors, understanding complex language in familiar contexts.</li>
-            <li><strong>5 Modest User:</strong> Partial command, coping with overall meaning but likely making frequent mistakes.</li>
-            <li><strong>4 Limited User:</strong> Basic competence limited to familiar situations, struggles with complex language.</li>
-            <li><strong>3 Extremely Limited User:</strong> Conveys general meaning in familiar situations but experiences frequent breakdowns.</li>
-            <li><strong>2 Intermittent User:</strong> Limited communication beyond basic information purposes, difficulty in understanding English.</li>
-            <li><strong>1 Non User:</strong> Minimal ability to use the language beyond isolated words.</li>
-            <li><strong>0 Did not attempt the test:</strong> No assessable information provided.</li>
+            <li>
+              <strong>9 Expert User:</strong> Complete control of the language
+              with accuracy, fluency, and full understanding.
+            </li>
+            <li>
+              <strong>8 Very Good User:</strong> Fully functional command of the
+              language, with occasional errors but able to handle complex
+              situations.
+            </li>
+            <li>
+              <strong>7 Good User:</strong> Effective command with occasional
+              errors and a strong ability to handle complex language and
+              concepts.
+            </li>
+            <li>
+              <strong>6 Competent User:</strong>: Solid command despite errors,
+              capable of understanding complex language in familiar situations.
+            </li>
+            <li>
+              <strong>5 Modest User:</strong> Basic command with frequent errors
+              but able to understand general meaning.
+            </li>
+            <li>
+              <strong>4 Limited User:</strong> Basic proficiency restricted to
+              familiar contexts, struggles with complex language.
+            </li>
+            <li>
+              <strong>3 Extremely Limited User:</strong> Can convey general
+              meaning in familiar situations, but has frequent breakdowns in
+              communication.
+            </li>
+            <li>
+              <strong>2 Intermittent User:</strong> Limited ability to
+              communicate beyond basic information, struggles to understand
+              English.
+            </li>
+            <li>
+              <strong>1 Non User:</strong> Has little ability to use the
+              language beyond isolated words.
+            </li>
+            <li>
+              <strong>0 Did not attempt the test:</strong> No assessable data
+              provided.
+            </li>
           </ul>
 
           <h2 style={styles.subHeading}>Our Benefits</h2>
-   
+
           <p style={styles.text}>
-            Choosing the right consultancy can make a world of difference in your journey toward international exploration, growth, and success.
-            At AIEC GLOBAL, we take pride in the distinctive benefits of partnering with us:
+            Selecting the right consultancy can significantly influence your
+            journey toward studying abroad, career advancement, and personal
+            growth. At AIEC GLOBAL, we take pride in the unique advantages of
+            collaborating with us:
           </p>
-          <img src={`${process.env.PUBLIC_URL}/assets/images/beni.png`} alt="IELTS Preparation" style={styles.sidebrImage} />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/beni.png`}
+            alt="IELTS Preparation"
+            style={styles.sidebrImage}
+          />
           <ul style={styles.benefitsList}>
-            <li><FaStar style={styles.starIcon} /> Experienced Instructors</li>
-            <li><FaStar style={styles.starIcon} /> Targeted Preparation Strategies</li>
-            <li><FaStar style={styles.starIcon} /> Interactive Learning Environment</li>
-            <li><FaStar style={styles.starIcon} /> Support Beyond the Classroom</li>
-            <li><FaStar style={styles.starIcon} /> Free Mock Test</li>
+            <li>
+              <FaStar style={styles.starIcon} /> Skilled Instructors
+            </li>
+            <li>
+              <FaStar style={styles.starIcon} /> Focused Preparation Techniques
+            </li>
+            <li>
+              <FaStar style={styles.starIcon} /> Engaging Learning Environment
+            </li>
+            <li>
+              <FaStar style={styles.starIcon} /> Continuous Support
+            </li>
+            <li>
+              <FaStar style={styles.starIcon} /> Complimentary Mock Test
+            </li>
           </ul>
 
           {/* Added Section */}
-          <h2 style={styles.subHeading}>Why Choose Our IELTS Preparation Course?</h2>
+          <h2 style={styles.subHeading}>
+            Why Choose Our IELTS Preparation Course?
+          </h2>
           <p style={styles.text}>
-            Our IELTS preparation course offers personalized coaching, practice tests, and feedback sessions to help you achieve your desired band score.
-            With experienced instructors and comprehensive study materials, we provide all the tools you need to succeed. Whether you're aiming for academic
-            excellence or pursuing your career abroad, our course is designed to maximize your potential and boost your confidence.
+            Our IELTS prep course offers tailored coaching, practice exams, and
+            constructive feedback to help you reach your target score. With
+            experienced instructors and comprehensive materials, we provide
+            everything you need to succeed. Whether you're aiming for academic
+            success or planning to further your career abroad, our course is
+            designed to enhance your abilities and boost your confidence.
           </p>
           <ul style={styles.list}>
-            <li>Tailored study plans based on your current skill level</li>
+            <li>Custom study plans based on your individual needs</li>
             <li>Interactive sessions with expert IELTS instructors</li>
-            <li>Access to a vast library of study materials and practice tests</li>
-            <li>Flexible scheduling options to fit your busy lifestyle</li>
-            <li>Regular assessments to track your progress and adjust your learning plan</li>
+            <li>
+              Access to an extensive collection of study materials and practice
+              exams
+            </li>
+            <li>Flexible scheduling to accommodate your busy life</li>
+            <li>Regular progress evaluations to optimize your learning path</li>
           </ul>
           <p style={styles.text}>
-            Join our IELTS preparation course today and take the first step towards achieving your goals. Our dedicated team is here to support you every step of the way.
+            Enroll in our IELTS preparation course today and take the first step
+            toward achieving your academic or professional objectives. Our
+            dedicated team is here to guide you throughout the process.
           </p>
         </div>
       </div>
@@ -147,13 +270,13 @@ const IELTSPreparationPage = () => {
 
 const styles = {
   pageContainer: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100vh', // Ensures the page takes at least the full height of the viewport
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100vh", // Ensures the page takes at least the full height of the viewport
   },
   header: {
-    width: '100%',
-    overflow: 'hidden',
+    width: "100%",
+    overflow: "hidden",
   },
   headerImage: {
     width: "100%",
@@ -163,125 +286,121 @@ const styles = {
   },
   contentContainer: {
     flex: 1, // Makes sure the content takes up the remaining space
-    display: 'flex',
-    flexWrap: 'wrap', // Ensures responsiveness
-    marginTop: navbarHeight, // Adjust this based on your navbar height
+    display: "flex",
+    flexWrap: "wrap", // Ensures responsiveness
+    marginTop: navbarHeight, // Adjust this based on your actual navbar height
+    padding: "0 2rem",
   },
-
   sidebar: {
-    width: '25%',
-    padding: '20px',
-    backgroundColor: '#f8faff',
-    borderRadius: '16px',
-    marginRight: '20px',
-    textAlign: 'center',
+    width: "20%",
+    paddingRight: "2rem",
+    flexShrink: 0, // Prevents sidebar from shrinking
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
   },
   testList: {
-    listStyle: 'none',
-    padding: 0,
-    marginBottom: '20px',
+    padding: "0",
+    listStyleType: "none",
+    margin: "0 0 2rem 0",
+    fontSize: "18px",
   },
   testButton: {
-    backgroundColor: '#fff',
-    color: '#333',
-    border: '1px solid #e0e0e0',
-    padding: '12px 20px',
-    borderRadius: '12px',
-    fontSize: '16px',
-    width: '100%',
-    cursor: 'pointer',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginBottom: '10px',
+    border: "none",
+    background: "transparent",
+    fontSize: "18px",
+    fontWeight: "bold",
+    color: "#2c3e50",
+    cursor: "pointer",
+    textAlign: "left",
+    padding: "10px 0",
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
   arrowIcon: {
-    marginLeft: '10px',
+    fontSize: "20px",
+    color: "#3498db",
   },
   sidebarImage: {
-    width: '400px',
-    marginBottom: '20px',
+    width: "80%",
+    borderRadius: "5px",
+    marginBottom: "1rem",
+    boxShadow: "0 2px 6px rgba(0, 0, 0, 0.1)",
   },
   bookButton: {
-    backgroundColor: '#0d6efd',
-    color: '#fff',
-    border: 'none',
-    padding: '15px 20px',
-    borderRadius: '12px',
-    cursor: 'pointer',
-    fontSize: '16px',
+    padding: "15px 30px",
+    fontSize: "18px",
+    backgroundColor: "#3498db",
+    color: "white",
+    border: "none",
+    borderRadius: "30px",
+    cursor: "pointer",
+    width: "100%",
   },
   mainContent: {
-    flex: 1,
-    padding: '20px',
+    width: "80%",
+    display: "flex",
+    flexDirection: "column",
   },
   heading: {
-    fontSize: '35px',
-    fontWeight: 'bold',
-    marginBottom: '20px',
-    color: '#333',
-  },
-  introduction: {
-    fontSize: '1.1em',
-    marginBottom: '20px',
-  },
-  image: {
-    width: '1000px',
-    marginBottom: '20px',
+    fontSize: "2.5rem",
+    fontWeight: "bold",
+    color: "#2c3e50",
+    margin: "2rem 0",
   },
   subHeading: {
-    fontSize: '29px',
-    fontWeight: 'bold',
-    marginBottom: '10px',
-    color: '#333',
+    fontSize: "2rem",
+    fontWeight: "bold",
+    color: "#2c3e50",
+    margin: "1.5rem 0",
   },
-  tipsGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-    gap: '20px',
-    marginBottom: '20px',
-  },
-  tipCard: {
-    backgroundColor: '#f1f1f1',
-    borderRadius: '8px',
-    padding: '20px',
-    textAlign: 'center',
-  },
-  iconCircle: {
-    backgroundColor: '#0d6efd',
-    borderRadius: '50%',
-    width: '50px',
-    height: '50px',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    margin: '0 auto 10px auto',
-  },
-  icon: {
-    color: '#fff',
-    fontSize: '24px',
+  introduction: {
+    fontSize: "1.25rem",
+    lineHeight: "1.6",
+    color: "#34495e",
+    margin: "1rem 0",
   },
   text: {
-    fontSize: '1.1em',
-    
-    marginBottom: '20px',
+    fontSize: "1.2rem",
+    lineHeight: "1.6",
+    color: "#34495e",
   },
-  list: {
-    listStyle: 'disc inside',
-    fontSize: '18px',
-    lineHeight: '1.6',
-    marginBottom: '20px',
+  image: {
+    width: "100%",
+    margin: "2rem 0",
+  },
+  tipsGrid: {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    gap: "2rem",
+  },
+  tipCard: {
+    background: "#ecf0f1",
+    padding: "20px",
+    borderRadius: "8px",
+    display: "flex",
+    alignItems: "center",
+  },
+  iconCircle: {
+    backgroundColor: "#3498db",
+    padding: "15px",
+    borderRadius: "50%",
+    marginRight: "15px",
+  },
+  icon: {
+    color: "white",
+    fontSize: "24px",
   },
   benefitsList: {
-
-    listStyle: 'none',
-    padding: 0,
-    marginBottom: '20px',
+    paddingLeft: "20px",
+    listStyleType: "none",
+    fontSize: "1.25rem",
   },
-  sidebrImage: {
-    width: '600px',
-    height: 'auto',
-    marginBottom: '20px',
+  starIcon: {
+    color: "#f39c12",
+    marginRight: "10px",
   },
 };
 
