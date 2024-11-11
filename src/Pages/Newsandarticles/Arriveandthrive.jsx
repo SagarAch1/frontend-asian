@@ -142,7 +142,7 @@ const Arriveandthrive = () => {
       <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>Arrive and Thrive</h1>
         <p style={styles.subheader}>
-          Learn how to make the most of your study abroad experience.
+          Learn how to maximize your study abroad experience.
         </p>
       </div>
 
@@ -171,18 +171,17 @@ const Arriveandthrive = () => {
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Supporting you all the way through</h2>
           <p>
-            Welcome to an exciting new journey of studying abroad. Get ready for
-            a fascinating adventure where you’ll meet new people, forge new
-            friendships, learn new skills and create unforgettable memories.
-            Adjusting in a foreign land can take time at first, but once you
-            settle in, it’s sure to be a rewarding experience. We are here to
-            guide and counsel you every step of the way, from accommodation
-            changes to financial planning and migration advice. Your wellbeing
-            is our priority and we’ve also partnered with mental health
-            professionals to provide you with any support you might need along
-            the away. This is your time to shine and create a remarkable success
-            story, filled with achievements and experiences to cherish for a
-            lifetime.
+            Embarking on your study abroad journey is a thrilling experience
+            filled with opportunities. From meeting new people to learning
+            valuable skills, every moment holds the potential for personal and
+            academic growth. Adjusting to a new environment can take time, but
+            the effort pays off with enriching experiences. We’re here to
+            provide continuous support, whether it’s helping with accommodation,
+            managing finances, or offering guidance through the immigration
+            process. Your well-being is our priority, and we’ve partnered with
+            mental health experts to ensure you have access to all the help you
+            need. This is your moment to thrive and build a journey you’ll
+            cherish forever.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -197,8 +196,8 @@ const Arriveandthrive = () => {
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
-            Create your profile and unlock a wide array of features, including
-            personalized recommendations, fast-tracked applications, and much
+            Create your profile and unlock a range of features, including
+            personalized suggestions, quicker application processing, and much
             more.
           </p>
           <button style={styles.signupButton} onClick={handleSignUpClick}>
@@ -213,24 +212,27 @@ const Arriveandthrive = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>1. Settle into your new life</h3>
           <p>
-          Continue making the most of your study abroad experience and thrive in your journey. 
+            Make the most of your time abroad and embrace your new surroundings.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>2. Get work experience</h3>
           <p>
-          Learn how you can further your career through internships, planning, working part-time or finding a mentor while you study.
+            Discover opportunities to advance your career through internships,
+            part-time jobs, or mentorships during your studies.
           </p>
           <a href="#" style={styles.listItemLink}>
-          Working part-time  
+            Working part-time
           </a>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>3. Know what to pack</h3>
-          <p>Before you pull out your suitcase, review</p>
+          <p>
+            Before you pack, take a moment to review this checklist to ensure
+            you’ve got everything you need while abroad.
+          </p>
           <a href="#" style={styles.listItemLink}>
-            this travel checklist to ensure you have everything you need whilst
-            overseas.
+            This travel checklist
           </a>
         </div>
         <div style={styles.listItem}>
@@ -238,78 +240,81 @@ const Arriveandthrive = () => {
             4. Access our Student Essential Services
           </h3>
           <p>
-            Whether it's on-arrival support, accommodation assistance or
-            cultural integration
+            Whether you need support with accommodation, cultural integration,
+            or arrival assistance, we’ve got you covered.
           </p>
           <a href="#" style={styles.listItemLink}>
-            we're here to help
+            We're here to help
           </a>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>4. Make a study plan</h3>
-          <p>Make sure you have a plan to achieve your</p>
+          <h3 style={styles.listItemTitle}>5. Make a study plan</h3>
+          <p>
+            Ensure you have a clear plan to accomplish your academic and
+            personal goals.
+          </p>
           <a href="#" style={styles.listItemLink}>
-            study goals
+            Study tips
           </a>
         </div>
       </div>
       {/* Second Additional Section */}
       <div style={styles.additionalSection}>
-        <h2 style={styles.additionalTitle}>Frequently asked questions</h2>
+        <h2 style={styles.additionalTitle}>Frequently Asked Questions</h2>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
+          <h3 style={styles.listItemTitle}>
+            How do I make new friends? What are the networking opportunities?
+          </h3>
           <p>
-            Studying abroad is the experience of living overseas in order to
-            acquire a foreign education. It can take many forms – from a few
-            weeks in a short course, to a four years’ program of full-time
-            study. 
+            As an international student, you’ll find many chances to connect
+            with others and form friendships. Start by engaging with fellow
+            students on campus and attending social events. You can also tap
+            into alumni networks for mentorship or join clubs and interest
+            groups to meet people with similar passions. There will be numerous
+            events to participate in, providing opportunities to create lasting
+            friendships, discover job prospects, and get answers to your
+            questions. Stay open to new experiences, and you’ll build meaningful
+            relationships that enhance your time abroad.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>How do I deal with homesickness?</h3>
+          <p>
+            Feeling homesick when you first move abroad is completely normal,
+            and most students go through it. To cope, try connecting with
+            others, exploring your new surroundings, keeping in touch with
+            family and friends, and making your space feel familiar and
+            comforting. Know that homesickness is just a phase in your journey
+            and will gradually fade as you embrace your new adventure.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>How do I find a part-time job?</h3>
+          <p>
+            As a student, you’re usually allowed to work a set number of hours
+            part-time. To find opportunities, check your university’s job board,
+            look at local job listings online, network with other students, and
+            ask around at local businesses. Be sure to ask about any work-study
+            programs that may be available as well.
           </p>
         </div>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>
-            How is it different from studying locally?
+            Who can help me if I need counselling?
           </h3>
           <p>
-            While studying locally is the easier option, in the longer run
-            studying abroad offers unique opportunities and experiences that
-            cannot be found at home. For more information, read this article
-            about whether to study abroad or locally. 
+            It's normal to seek guidance when you're in a new place, whether
+            it’s related to academics, social life, or career. Your university
+            likely offers counselling services, and you can also find external
+            counsellors in your city. For migration-related questions, AIEC can
+            provide assistance in specific locations. Additionally, we’ve
+            partnered with mental health professionals who can offer support
+            throughout your journey.
           </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            What are the main benefits of studying overseas?
-          </h3>
-          <p>
-            Studying abroad offers a wide range of benefits, from inspiring a
-            global mindset to helping you learn new skills and enhancing your
-            career prospects. To read all about it, check our article about the
-            benefits of studying abroad.
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>What's the experience like?</h3>
-          <p>
-            Studying abroad is a transformative experience of personal growth
-            that helps you broaden your perspective, develop independence,
-            self-confidence and a greater understanding and appreciation of
-            different cultures. To see what it’s like, meet some students who
-            have made the move to study abroad with AIEC. 
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
-          <p>
-            Studying abroad is not as expensive as you may think! Use our cost
-            of living calculator to estimate how much you will need to cover all
-            your expenses as an international student. We connect you to over
-            5,100 scholarships across our partner university network. Reach out
-            to us to explore your options.
-          </p>
-         
         </div>
       </div>
       <FormPage />
+
       <Footer />
     </div>
   );

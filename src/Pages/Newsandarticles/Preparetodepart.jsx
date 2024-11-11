@@ -171,7 +171,14 @@ const Preparetodepart = () => {
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Let's set you up for the big move</h2>
           <p>
-            The countdown has started, and you're all set to depart! While it's an exciting time, we understand it can be just as overwhelming to leave the comfort of your home for a new country. We're here to ease your transition. From packing tips and arrival support to setting up essential services like bank accounts and accommodation, we’re here to guide you. Our team will assist you in ensuring everything is ready, allowing you to focus on your studies and embrace the next chapter of your life.
+            The countdown has started, and you're all set to depart! While it's
+            an exciting time, we understand it can be just as overwhelming to
+            leave the comfort of your home for a new country. We're here to ease
+            your transition. From packing tips and arrival support to setting up
+            essential services like bank accounts and accommodation, we’re here
+            to guide you. Our team will assist you in ensuring everything is
+            ready, allowing you to focus on your studies and embrace the next
+            chapter of your life.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -186,7 +193,8 @@ const Preparetodepart = () => {
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
-            Create your profile to unlock exclusive features, including personalized recommendations, fast-tracked applications, and more.
+            Create your profile to unlock exclusive features, including
+            personalized recommendations, fast-tracked applications, and more.
           </p>
           <button style={styles.signupButton} onClick={handleSignUpClick}>
             Sign up
@@ -196,21 +204,19 @@ const Preparetodepart = () => {
 
       {/* Additional Section */}
       <div style={styles.additionalSection}>
-        <h2 style={styles.additionalTitle}>
-          Before you depart
-        </h2>
+        <h2 style={styles.additionalTitle}>Before you depart</h2>
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>1. Get pre-departure support</h3>
           <p>
-            Our counsellors will provide in-depth pre-departure briefings, ensuring you're well-prepared for your journey abroad.
+            Our counsellors will provide in-depth pre-departure briefings,
+            ensuring you're well-prepared for your journey abroad.
           </p>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            2. Get to know your destination
-          </h3>
+          <h3 style={styles.listItemTitle}>2. Get to know your destination</h3>
           <p>
-            Familiarize yourself with what to expect at your destination before you arrive.
+            Familiarize yourself with what to expect at your destination before
+            you arrive.
           </p>
           <a href="#" style={styles.listItemLink}>
             Explore amenities | Find local food | Find groceries
@@ -219,7 +225,8 @@ const Preparetodepart = () => {
         <div style={styles.listItem}>
           <h3 style={styles.listItemTitle}>3. Know what to pack</h3>
           <p>
-            Before packing your bags, take a moment to review this checklist to make sure you have everything you need during your stay abroad.
+            Before packing your bags, take a moment to review this checklist to
+            make sure you have everything you need during your stay abroad.
           </p>
           <a href="#" style={styles.listItemLink}>
             Check out the travel checklist
@@ -230,60 +237,84 @@ const Preparetodepart = () => {
             4. Access our Student Essential Services
           </h3>
           <p>
-            Whether it's on-arrival support, accommodation assistance, or cultural integration, we’re here to help.
+            Whether it's on-arrival support, accommodation assistance, or
+            cultural integration, we’re here to help.
           </p>
           <a href="#" style={styles.listItemLink}>
             We're here to help
           </a>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            5. Make a study plan
-          </h3>
+          <h3 style={styles.listItemTitle}>5. Make a study plan</h3>
           <p>
-            Ensure you have a well-structured plan to achieve your academic goals while studying abroad.
+            Ensure you have a well-structured plan to achieve your academic
+            goals while studying abroad.
           </p>
           <a href="#" style={styles.listItemLink}>
             Read more about making a study plan
           </a>
         </div>
       </div>
-      
 
-     {/* Second Additional Section */}
-<div style={styles.additionalSection}>
-  <h2 style={styles.additionalTitle}>Frequently Asked Questions</h2>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>How do I find accommodation?</h3>
-    <p>
-      We can assist you in finding accommodation in your destination country. Through our partnerships with trusted providers, we offer options such as homestays and student apartments. Once you decide, we'll guide you through the application process to ensure you secure a place that meets your needs.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>Who will receive me upon arrival?</h3>
-    <p>
-      Arrival support varies depending on your destination. If our team is on the ground in your destination country, we can help arrange an airport pick-up and provide support upon your arrival. Many universities also offer airport transfers. For detailed information, check our 'Preparing to Depart' and 'Arrive and Thrive' pages or reach out during the planning stage.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>How do I find transport?</h3>
-    <p>
-      Before you depart, we will provide a city guide with information on bus and train routes. You can also explore other public transportation options available in your destination. If needed, feel free to contact an onshore counselor for additional help in arranging your transport.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>Will I find local cuisine at the destination?</h3>
-    <p>
-      Most destinations offer a variety of international food options, making it easy to find something familiar. However, we encourage you to explore and enjoy local cuisines as part of your study abroad experience. Check our city guide for more information on food options at your destination.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>What about groceries?</h3>
-    <p>
-      Large supermarkets in many destinations have international sections where you can find your favorite food items. Additionally, there are specialized stores for Asian, Indian, and Middle Eastern groceries. For more details, refer to our city guides or contact an onshore counselor if available.
-    </p>
-  </div>
-</div>
+      {/* Second Additional Section */}
+      <div style={styles.additionalSection}>
+        <h2 style={styles.additionalTitle}>Frequently Asked Questions</h2>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>How do I find accommodation?</h3>
+          <p>
+            We can assist you in finding accommodation in your destination
+            country. Through our partnerships with trusted providers, we offer
+            options such as homestays and student apartments. Once you decide,
+            we'll guide you through the application process to ensure you secure
+            a place that meets your needs.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            Who will receive me upon arrival?
+          </h3>
+          <p>
+            Arrival support varies depending on your destination. If our team is
+            on the ground in your destination country, we can help arrange an
+            airport pick-up and provide support upon your arrival. Many
+            universities also offer airport transfers. For detailed information,
+            check our 'Preparing to Depart' and 'Arrive and Thrive' pages or
+            reach out during the planning stage.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>How do I find transport?</h3>
+          <p>
+            Before you depart, we will provide a city guide with information on
+            bus and train routes. You can also explore other public
+            transportation options available in your destination. If needed,
+            feel free to contact an onshore counselor for additional help in
+            arranging your transport.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            Will I find local cuisine at the destination?
+          </h3>
+          <p>
+            Most destinations offer a variety of international food options,
+            making it easy to find something familiar. However, we encourage you
+            to explore and enjoy local cuisines as part of your study abroad
+            experience. Check our city guide for more information on food
+            options at your destination.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>What about groceries?</h3>
+          <p>
+            Large supermarkets in many destinations have international sections
+            where you can find your favorite food items. Additionally, there are
+            specialized stores for Asian, Indian, and Middle Eastern groceries.
+            For more details, refer to our city guides or contact an onshore
+            counselor if available.
+          </p>
+        </div>
+      </div>
 
       <FormPage />
       <Footer />
