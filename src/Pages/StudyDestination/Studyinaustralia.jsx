@@ -1,7 +1,7 @@
 import React from "react";
 import Exploreinaustralia from "../Homepage/Exploreinaus";
-import FormPage from "../Homepage/FormPage";
 import Footer from "../Homepage/Footer";
+import FormPage from "../Homepage/FormPage";
 const StudyInAustralia = () => {
   return (
     <div style={styles.container}>
@@ -10,7 +10,7 @@ const StudyInAustralia = () => {
           style={{
             ...styles.headerImage,
             backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/topp.png)`,
-            marginTop:"83px",
+            marginTop: "83px",
           }}
         ></div>
         <div style={styles.headerContent}>
@@ -23,31 +23,30 @@ const StudyInAustralia = () => {
       </header>
       <div style={styles.contentSection}>
         <h2 style={styles.sectionTitle}>
-          There are abundant reasons why students choose Australia, which one is
-          yours?
+          There are many reasons why students choose Australia—what's yours?
         </h2>
         <p style={styles.paragraph}>
-          If you’re looking for better opportunities, Australia is a world-class
-          place to reach your career. Australia offers a range of opportunities.
-          Whatever you choose, studying in Australia will equip you with skills
-          and English language proficiency, which will benefit you for a
-          lifetime in terms of career and future earnings.
+          If you're seeking better opportunities, Australia is an excellent
+          destination to advance your career. The country offers a wide range of
+          opportunities, and studying there will help you develop valuable
+          skills and improve your English language proficiency, which will
+          benefit you throughout your career and future earnings.
         </p>
 
         <h2 style={styles.sectionTitle}>
           Student visa requirements for Nepalese students to study in Australia
         </h2>
         <p style={styles.paragraph}>
-          The visa you will need depends on your age, the type of study you want
-          to undertake, and how long you want to stay in Australia. As an
+          The type of visa you need depends on your age, the type of study you
+          plan to pursue, and the duration of your stay in Australia. As an
           international student, you must apply for a student visa (subclass
-          500). Once your visa is granted, it will be valid for the duration of
-          your study program, as well as a bit longer to give you time to finish
-          your study. As of July 2016, the only student visa available for study
-          in Australia is the Subclass 500 student visa, which is valid for up
-          to five years and costs AUD 620. Before applying, ensure you have
-          enough funds to cover your tuition and living expenses in Australia,
-          and get your Overseas Student Health Cover (OSHC).
+          500). Once granted, your visa will be valid for the length of your
+          study program, plus some additional time to allow for completion of
+          your studies. Since July 2016, the Subclass 500 student visa is the
+          only visa available for studying in Australia. It is valid for up to
+          five years and costs AUD 620. Before applying, make sure you have
+          sufficient funds to cover your tuition and living expenses, and ensure
+          you have Overseas Student Health Cover (OSHC).
         </p>
 
         <h2 style={styles.sectionTitle}>
@@ -136,9 +135,7 @@ const StudyInAustralia = () => {
           Intakes in Australia for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-          Australian universities have two major intakes: Semester 1 starts in
-          February/March and Semester 2 starts in July/August. The admission
-          deadlines vary depending on the program.
+        Australian universities have two main intakes: Semester 1, which begins in February/March, and Semester 2, which starts in July/August. Admission deadlines vary based on the program.
         </p>
 
         <h2 style={styles.sectionTitle}>IELTS to study in Australia</h2>
@@ -281,7 +278,7 @@ const StudyInAustralia = () => {
           the UK.
         </p>
         <p style={styles.section}>
-          Ques 1: How much show money do I need to study in Australia? 
+          Ques 1: How much show money do I need to study in Australia?
         </p>
         <p style={styles.paragraph}>
           Ans: Beginning October 1, 2023, students applying for a visa must
@@ -289,7 +286,7 @@ const StudyInAustralia = () => {
           living expenses for one year.
         </p>
         <p style={styles.section}>
-          Ques 2: Who can sponsor me to study in Australia? 
+          Ques 2: Who can sponsor me to study in Australia?
         </p>
         <p style={styles.paragraph}>
           Ans: Unless you are entirely self-sponsoring, your visa application
@@ -300,7 +297,6 @@ const StudyInAustralia = () => {
         </p>
         <p style={styles.section}>
           Ques 3: What is the maximum age limit for a student visa in Australia?
-          
         </p>
         <p style={styles.paragraph}>
           Ans: To apply for an Australian student visa, you must be at least 18
@@ -309,14 +305,14 @@ const StudyInAustralia = () => {
           apply to those under 18 years old.
         </p>
         <p style={styles.section}>
-          Ques 4: How much will it cost to study in Australia? 
+          Ques 4: How much will it cost to study in Australia?
         </p>
         <p style={styles.paragraph}>
           Ans: On average, tuition fees at Australian tertiary institutions
           typically fall within the range of AUD 20,000 to AUD 30,000 per year.
         </p>
         <p style={styles.section}>
-          Ques 5: What are the new rules for student visas in Australia 2023? 
+          Ques 5: What are the new rules for student visas in Australia 2023?
         </p>
         <p style={styles.paragraph}>
           Ans: Starting on July 1, 2023, there will be a maximum limit of 48
@@ -326,7 +322,6 @@ const StudyInAustralia = () => {
         <FormPage />
       </div>
       <Footer />
-     
     </div>
   );
 };
