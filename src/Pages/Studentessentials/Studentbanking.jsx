@@ -163,7 +163,7 @@ const Studentbanking = () => {
         <div>
             
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/bankicon.jpg`}
+             src={`${process.env.PUBLIC_URL}/assets/images/bankicon.jpg`}
             alt="Bank Icon"
             style={iconStyle}
           />
@@ -174,10 +174,11 @@ const Studentbanking = () => {
       <div style={contentSectionStyle}>
         <h3>Open a bank account even before you arrive!</h3>
         <p>
-          We’ve established exclusive collaborations with top financial
-          institutions across key destinations. This means you can open a bank
-          account, manage your finances, and enjoy competitive banking services
-          even before you set foot in your chosen country.
+        We have formed exclusive partnerships with leading financial institutions in strategic locations. This implies that you can manage your money, create a bank account, and take advantage of affordable financial services.
+
+even before you arrive in the nation of your choice.
+
+
         </p>
 
         <div style={countrySelectionStyle}>
@@ -215,37 +216,39 @@ const Studentbanking = () => {
                 <span style={checkmarkStyle}>✔</span> Australia’s largest bank.
               </li>
               <li style={liStyle}>
-                <span style={checkmarkStyle}>✔</span> Join more than 5 million
-                Australians who bank on the go with the CommBank app.
+                <span style={checkmarkStyle}>✔</span> Join the 5 million Australians who use the CommBank app to bank while on the go.
+
               </li>
               <li style={liStyle}>
-                <span style={checkmarkStyle}>✔</span> Bilingual staff in some
-                branches and language-enabled ATMs.
+                <span style={checkmarkStyle}>✔</span> certain branches have bilingual employees, and certain ATMs have language capabilities.
+
               </li>
               <li style={liStyle}>
-                <span style={checkmarkStyle}>✔</span> An extensive Branch and
-                ATM network available across Australia – including on some
-                student campuses
+                <span style={checkmarkStyle}>✔</span> There is a vast branch and ATM network available all over Australia, especially on certain college campuses.
+
+
               </li>
               <li style={liStyle}>
-                <span style={checkmarkStyle}>✔</span> A range of special offers
-                are available for students – ask the staff at any CommBank
-                branch for more details (and make sure you take your student ID
-                or letter of enrolment when you do).
+                <span style={checkmarkStyle}>✔</span> Students can take advantage of a number of unique deals; ask the employees at any CommBank branch for more information (and don't forget to bring your student ID).
+
+or enrolment letter when you do).
+
+
               </li>
               <li style={liStyle}>
-                <span style={checkmarkStyle}>✔</span> Tips and guidance about
-                moving to, and studying in, Australia available on their
-                website.
+                <span style={checkmarkStyle}>✔</span> They give advice and tips on their website regarding studying and relocating to Australia.
+
+
               </li>
             </ul>
             <h5>Things you should know:</h5>
             <ul style={ulStyle}>
               <li style={liStyle}>
-                <span style={checkmarkStyle}>✔</span> :Commonwealth Bank of
-                Australia ABN 48 123 123 124 is a company incorporated in
-                Australia with limited liability and subject to Australian
-                regulation.
+                <span style={checkmarkStyle}>✔</span> :The Commonwealth Bank of Australia, a limited liability business with an ABN of 48 123 123 124, was established in Australia and is governed by Australian
+
+control.
+
+
               </li>
             </ul>
             <button style={exploreButtonStyle} onClick={handleEnquireNowClick}>
@@ -260,54 +263,57 @@ const Studentbanking = () => {
               <h4>CIBC</h4>
               <p>CIBC International Student Banking Offer (ISBO)</p>
               <p>
-                As an international student who is preparing to study abroad, we
-                know there’s a lot to do before you arrive, and that the banking
-                system in Canada may be different from the one in your home
-                country. That’s why we developed the CIBC ISBO Program. At CIBC,
-                we’re dedicated to supporting you at every step of your journey
-                in Canada
+              As a foreign student getting ready to study overseas, we are aware that there are many things to complete before you get there and that the banking system in Canada could differ from your native country.
+
+nation. We created the CIBC ISBO Program for this reason. At CIBC,
+
+We're committed to helping you along the way at every turn.
+
+in Canada
+
+
               </p>
               <p>Key Program Highlights:</p>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Use our secure online
-                  platform to submit your application within 5 minutes.
+                  <span style={checkmarkStyle}>✔</span> Within five minutes, submit your application using our safe online platform.
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span>Conveniently make
-                  payments in your preferred currency with no additional fee
-                  prior to arrival in Canada.
+                  <span style={checkmarkStyle}>✔</span>Make payments in your favourite currency conveniently and without incurring any additional fees before travelling to Canada.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span>Once funds have been
-                  deposited into your GIC Program account, you’ll receive a
-                  confirmation of funds letter for study permit application.
+                  <span style={checkmarkStyle}>✔</span>You will receive a confirmation of funds letter for your study permit application as soon as the money has been put into your GIC Program account.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> View the status of your
-                  application in real-time on our online platform.
+                  <span style={checkmarkStyle}>✔</span> On our online platform, you may view the status of your application in real time.
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Our team of experts is
-                  available to assist you 24 hours a day and 7 days a week in
-                  multiple languages.
+                  <span style={checkmarkStyle}>✔</span>Our staff of professionals is accessible to help you in several languages, twenty-four hours a day, seven days a week.
+
+
                 </li>
               </ul>
               <h5>Additional Benefits:</h5>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span>Enjoy the perks of
-                  unlimited transactions and no monthly account fees up until
-                  six months after your graduation date (up to four years).
+                  <span style={checkmarkStyle}>✔</span>Up to four years, or six months after your graduation date, take advantage of the benefits of limitless transactions and no monthly account fees.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Access to free Interac
-                  e-Transfers for transferring money from one Canadian account
-                  to another.
+                  <span style={checkmarkStyle}>✔</span> Free Interac e-Transfers are available for moving funds between Canadian accounts.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Credit card options with
-                  $0 annual fees and a minimum limit of $1000 are available.
+                  <span style={checkmarkStyle}>✔</span> There are credit card options that have a minimum limit of $1000 and no annual fees.
+
                 </li>
               </ul>
               <button
@@ -321,9 +327,9 @@ const Studentbanking = () => {
             <div style={bankOptionStyle}>
               <h4>Simplii Financial</h4>
               <p>
-                With Simplii Financial, international students can access a
-                suite of financial services through the ISBO Program to make
-                their banking journey in Canada as successful as possible!
+              International students can obtain a range of financial services from Simplii Financial through the ISBO Program to ensure the success of their banking experience in Canada!
+
+
               </p>
               <ul style={ulStyle}>
                 <li style={liStyle}>
@@ -331,45 +337,46 @@ const Studentbanking = () => {
                   online in just 5 minutes
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Receive a proof of
-                  funding letter for your study permit application within one
-                  business day of us receiving funds.
+                  <span style={checkmarkStyle}>✔</span> Within one business day of us receiving payments, you will receive a proof of funding letter for your study permit application.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Take advantage of our no
-                  fee offer when you select to send funds in your local
-                  currency.
+                  <span style={checkmarkStyle}>✔</span> Don't forget to take advantage of our free offer when you decide to send money in your local currency.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Easily apply for a
-                  Simplii Credit Card with a credit limit of up to $2,000
-                  without any prior Canadian credit history while you complete
-                  your ISBO application.
+                  <span style={checkmarkStyle}>✔</span> Without having any prior Canadian credit history, you may quickly apply for a Simplii Credit Card with a credit limit of up to $2,000 while you finish
+
+your application to ISBO.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span>Completely digital
-                  process to activate your account upon arrival - no need to
-                  visit a physical location.
+                  <span style={checkmarkStyle}>✔</span>There is no need to physically visit a site because the account activation process is entirely digital upon arrival.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Our team of experts is
-                  available to assist you 24 hours a day and 7 days a week.
+                  <span style={checkmarkStyle}>✔</span> We have a team of professionals on hand to help you every single day of the week.
+
                 </li>
               </ul>
               <h5>Additional Benefits:</h5>
               <ul style={ulStyle}>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Enjoy no-fee daily
-                  banking with no minimum balance required.
+                  <span style={checkmarkStyle}>✔</span> Take advantage of free daily banking with no minimum balance needed.
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Get access to free
-                  Interac e-Transfer® transactions and outbound payment
-                  services, like Global Money Transfer.
+                  <span style={checkmarkStyle}>✔</span> Gain access to free Interac e-Transfer® transactions and services for outgoing payments, such as Global Money Transfer.
+
+
                 </li>
                 <li style={liStyle}>
-                  <span style={checkmarkStyle}>✔</span> Multi-language support
-                  is available to answer any questions you may have.
+                  <span style={checkmarkStyle}>✔</span> Support for multiple languages is available to address any queries you might have.
+
                 </li>
               </ul>
               <button
@@ -392,33 +399,33 @@ const Studentbanking = () => {
               alt="Footer Bank Icon"
               style={footerIconStyle}
             />
-            <p>Want to open a bank account in your chosen study destination from your home country? We can help</p>
+            <p>Do you want to open a bank account from your home country in the study location of your choice? We are able to assist</p>
           </div>
           <div style={footerLinkItemStyle}>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/star.png`}
+             src={`${process.env.PUBLIC_URL}/assets/images/star.png`}
               alt="Footer Bank Icon"
               style={footerIconStyle}
             />
-            <p>A wide range of financial products are available that can be tailored to the needs of international students</p>
+            <p>There are numerous financial packages that can be customised to meet the demands of overseas students.</p>
           </div>
           <div style={footerLinkItemStyle}>
             <img
-              src={`${process.env.PUBLIC_URL}/assets/images/mb.jpeg`}
+                 src={`${process.env.PUBLIC_URL}/assets/images/mb.jpeg`}
               alt="Footer Bank Icon"
               style={footerIconStyle}
             />
-            <p>Easy access to your account to complete transactions or even access your card to pay at shops using your mobile.</p>
+            <p>Simple access to your account to finish purchases or even use your mobile device to pay with your card at stores.</p>
           </div>
         </div>
       </div>
 
       <div style={footerSectionStyle}>
-        <Contact />
+        
         <Footer />
       </div>
     </div>
   );
 };
 
-export default Studentbanking;
+export default Studentbanking;
