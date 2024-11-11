@@ -23,16 +23,16 @@ const Studyinnewzeland = () => {
       </header>
       <div style={styles.contentSection}>
         <h2 style={styles.sectionTitle}>
-          Know why Studying in New Zealand is a great option for Nepalese
-          Students
+          Discover why studying in New Zealand is an excellent choice for
+          Nepalese students.
         </h2>
         <p style={styles.paragraph}>
-          Ranking fourth on the Global Peace Index 2023, New Zealand is
-          undoubtedly the safest country to study in. With globally ranked
-          universities and a responsive education system, it has the right mix
-          of opportunities, culture, economy and climate to thrive for a
-          Nepalese student. Not to miss, its unspoiled scenery will make your
-          experience worth every penny.
+          Ranked fourth on the Global Peace Index 2023, New Zealand is
+          undeniably one of the safest countries for students. With top-ranked
+          universities and a responsive education system, it offers the perfect
+          blend of opportunities, culture, economy, and climate for Nepalese
+          students. Additionally, its pristine natural beauty ensures that your
+          experience will be truly memorable and worth every penny.
         </p>
         <h2 style={styles.sectionTitle}>10 reasons to study in New Zealand</h2>
         <ul style={styles.courseList}>
@@ -51,9 +51,9 @@ const Studyinnewzeland = () => {
           Student visa requirements for New Zealand
         </h2>
         <p style={styles.paragraph}>
-          If you are over 18 years old and plan to study in New Zealand for more
-          than six months, here’s an overview of the types of student visas
-          available for you:
+          If you are over 18 and intend to study in New Zealand for more than
+          six months, here is an overview of the student visa options available
+          to you:
         </p>
 
         <table style={styles.table}>
@@ -115,8 +115,8 @@ const Studyinnewzeland = () => {
 
         <h2 style={styles.sectionTitle}>Intakes available in New Zealand</h2>
         <p style={styles.paragraph}>
-          In some universities, intakes may also be referred to as a semester.
-          The two intakes available in New Zealand are:
+          In some universities, intakes may also be called semesters. The two
+          intakes available in New Zealand are:
         </p>
         <table style={styles.table}>
           <thead>
@@ -151,9 +151,9 @@ const Studyinnewzeland = () => {
 
         <h2 style={styles.sectionTitle}>IELTS for studying in New Zealand</h2>
         <p style={styles.paragraph}>
-          New Zealand has a total of 8 universities, all of which hold prominent
-          positions in prestigious global rankings, including the QS World
-          University Ranking and Times Higher Education Ranking.
+          New Zealand is home to 8 universities, all of which are highly
+          regarded in prestigious global rankings, such as the QS World
+          University Ranking and the Times Higher Education Ranking.
         </p>
         <p style={styles.paragraph}>
           Here are the IELTS requirements of all the Kiwi universities:
@@ -256,15 +256,14 @@ const Studyinnewzeland = () => {
 
         <h2 style={styles.sectionTitle}>Cost of studying in New Zealand</h2>
         <p style={styles.paragraph}>
-          If you want to know the total cost of studying in New Zealand for
-          Nepalese students , you can get in touch with an AIEC expert . Most
-          commonly humanities, arts and education courses are cheaper, while
-          subjects such as medicine and engineering are likely to be more
-          expensive. If you wish to study at the postgraduate level, the tuition
-          fees are typically higher, and the costs vary depending on the
-          program. As with most other countries, MBA programs are often the most
-          expensive. The average cost for these programs ranges between NZD
-          31,000 and NZD 50,000 (indicative).
+          If you want to learn about the total cost of studying in New Zealand
+          for Nepalese students, you can consult an AIEC expert. Generally,
+          courses in humanities, arts, and education are more affordable, while
+          fields like medicine and engineering tend to be more expensive.
+          Postgraduate tuition fees are typically higher, and the costs vary
+          depending on the program. Like many other countries, MBA programs are
+          often the priciest, with average costs ranging between NZD 31,000 and
+          NZD 50,000 (indicative).
         </p>
         <table style={styles.table}>
           <thead>
@@ -305,8 +304,8 @@ const Studyinnewzeland = () => {
           Scholarships to study in New Zealand
         </h2>
         <p style={styles.paragraph}>
-          Here are some popular scholarship programs you can apply to as a
-          Nepalese student:
+          Here are some popular scholarship programs available for Nepalese
+          students to apply for:
         </p>
         <table style={styles.table}>
           <thead>
@@ -322,13 +321,13 @@ const Studyinnewzeland = () => {
                 (NZIDRS)
               </td>
               <td style={styles.tableCell}>
-                Funded by the New Zealand government, these scholarships are for
-                Nepalese students who wish to pursue a PhD in New Zealand.
-                Inclusions under this award are university tuition fees,
-                associated student levies, living stipend (up to NZ25,000
-                tax-free) and health insurance coverage (up to NZ600 annually)
-                for three years. (However, it may vary as per different
-                education providers)
+                Funded by the New Zealand government, these scholarships are
+                available for Nepalese students who wish to pursue a PhD in New
+                Zealand. The award covers university tuition fees, student
+                levies, a living stipend of up to NZD 25,000 (tax-free), and
+                health insurance coverage of up to NZD 600 annually for three
+                years. (Please note, details may vary depending on the education
+                provider.)
                 (Source:https://www.findaphd.com/study-abroad/aus-nz/phd-study-in-new-zealand.aspx)
               </td>
             </tr>
@@ -354,14 +353,13 @@ const Studyinnewzeland = () => {
                 New Zealand Excellence Awards (NZEA){" "}
               </td>
               <td style={styles.tableCell}>
-                NZEA features scholarships across all eight universities,
-                offering an opportunity for Nepalese students to experience New
-                Zealand excellence in various fields. This scholarship is funded
-                by Education New Zealand (ENZ) and New Zealand universities
-                catering to Nepalese students. The number of scholarships in PG
-                programs is 28 and in UG is 3. The value of this scholarship is
-                NZ 5,000 each for the PG course and NZ 10,000 each for the UG
-                course.
+                The NZEA offers scholarships at all eight universities in New
+                Zealand, providing Nepalese students the chance to experience
+                New Zealand's excellence in various fields. Funded by Education
+                New Zealand (ENZ) and New Zealand universities, the scholarship
+                provides 28 opportunities for postgraduate (PG) programs and 3
+                for undergraduate (UG) programs. The scholarship value is NZD
+                5,000 for PG courses and NZD 10,000 for UG courses.
                 (Source:https://www.studyinnewzealand.govt.nz/how-to-apply/scholarship/)
               </td>
             </tr>
@@ -372,30 +370,29 @@ const Studyinnewzeland = () => {
               </td>
               <td style={styles.tableCell}>
                 The Global Research Alliance on Agricultural Greenhouse Gas
-                Emissions has launched a new NZ-GRADS program if you aspire to
-                complete your PhD in agriculture emission science. It covers the
-                following expenses for 36 months (3 years): Tuition fees up to
-                NZD 10,000 per year An annual stipend for covering expenses of
-                NZD 28,000 per year (tax-free) Medical insurance up to NZD 700
-                per year Visa application costs do not exceed up to 1,000
-                Airfare upon returning to New Zealand up to a maximum amount of
-                6,000 Research allowance up to 1,500 Feel free to reach out to
-                your AIEC international education expert for the application
-                process (
+                Emissions has introduced the NZ-GRADS program for those
+                interested in pursuing a PhD in agricultural emission science.
+                The program provides funding for the following expenses over 36
+                months (3 years): - Tuition fees up to NZD 10,000 per year - An
+                annual stipend of NZD 28,000 (tax-free) for living costs -
+                Medical insurance coverage up to NZD 700 per year - Visa
+                application costs up to NZD 1,000 - Airfare to New Zealand for
+                return trips up to NZD 6,000 - A research allowance up to NZD
+                1,500 For more information on the application process, feel free
+                to contact your AIEC international education expert. (
                 Source:https://www.studyinnewzealand.govt.nz/how-to-apply/scholarship/)
               </td>
             </tr>
             <tr>
               <td style={styles.tableCell}>SEG Scholarship</td>
               <td style={styles.tableCell}>
-                This scholarship program is funded by the Soshi Educational
-                Group. It encourages the study of geophysics and related
-                geosciences for undergraduate (A and B scholarships) and other
-                programs (C scholarships) Value of the scholarships a)
-                Scholarship A: NZD 7,000 annually b) Scholarship B: NZD 5,000
-                annually c) SEG Scholarship C: NZD 3,000 annually The length of
-                the award is one year Sources:
-                *https://www.careers.govt.nz/scholarship/
+                This scholarship program, funded by the Soshi Educational Group,
+                promotes the study of geophysics and related geosciences for
+                undergraduate (A and B scholarships) and other programs (C
+                scholarships). The scholarship values are as follows: -
+                Scholarship A: NZD 7,000 annually - Scholarship B: NZD 5,000
+                annually - SEG Scholarship C: NZD 3,000 annually The award
+                duration is one year. *https://www.careers.govt.nz/scholarship/
                 https://www.studyinnewzealand.govt.nz/how-to-apply/scholarship/
               </td>
             </tr>
@@ -404,20 +401,21 @@ const Studyinnewzeland = () => {
                 Palmerston North City Mayor's Goodwill Ambassador Scholarship
               </td>
               <td style={styles.tableCell}>
-                It is sponsored by the City Council of Palmerston North for
-                promoting Palmerston North as a favourable location for
-                international students. It is provided for
+                Sponsored by the City Council of Palmerston North, this
+                scholarship aims to promote the city as an ideal destination for
+                international students. It is available for
                 career-based/vocational, undergraduate, and postgraduate
-                courses. Value of the scholarship: NZD 1,000 towards the first
-                year's tuition (Source: https://www.studyinnewzealand.govt.nz/)
+                courses. The scholarship offers NZD 1,000 towards the first
+                year's tuition fees. (Source:
+                https://www.studyinnewzealand.govt.nz/)
               </td>
             </tr>
           </tbody>
         </table>
         <h2 style={styles.sectionTitle}>Top courses to study in New Zealand</h2>
         <p style={styles.paragraph}>
-          New Zealand offers a wide range of courses and programs for
-          international students. Here are some of the top courses:
+          New Zealand provides a diverse selection of courses and programs for
+          international students. Here are some of the top courses available:
         </p>
         <ul style={styles.courseList}>
           <li>Business and Management</li>
@@ -440,10 +438,10 @@ const Studyinnewzeland = () => {
           Top universities to study New Zealand
         </h2>
         <p style={styles.paragraph}>
-          New Zealand is home to several reputable universities known for their
-          academic excellence and research contributions. Here are some of the
-          top universities in New Zealand according to the QS World University
-          Rankings 2024:
+          New Zealand is home to several renowned universities recognized for
+          their academic excellence and research contributions. Here are some of
+          the top universities in New Zealand, according to the QS World
+          University Rankings 2024:
         </p>
 
         <table style={styles.table}>
@@ -514,25 +512,25 @@ const Studyinnewzeland = () => {
           Job prospects in New Zealand for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-          New Zealand offers favourable job prospects for Nepalese students.
+          New Zealand provides excellent job prospects for Nepalese students.
           Graduates can apply for post-study work visas, and the country
-          periodically highlights skill shortages, making it easier to find
-          employment in those areas. Quality education, work experience
-          opportunities, and networking can enhance job prospects. Proficiency
-          in English is crucial, and familiarity with the New Zealand work
-          culture is essential. Explore diverse job opportunities in sectors
-          like healthcare, IT, engineering, and more, and consider long-term
-          residency options if desired.
+          frequently identifies skill shortages, which makes it easier to secure
+          employment in these fields. Quality education, work experience, and
+          networking opportunities can significantly boost job prospects.
+          Proficiency in English and understanding New Zealand's work culture
+          are important. Students can explore job opportunities in various
+          sectors, including healthcare, IT, engineering, and more, while also
+          considering long-term residency options if desired.
         </p>
         <h2 style={styles.sectionTitle}>
           Cost of living in New Zealand for Nepalese students
         </h2>
         <p style={styles.paragraph}>
-          The cost of living in New Zealand can vary depending on factors such
-          as location, lifestyle, and personal preferences. Generally, New
-          Zealand is considered to have a moderately high cost of living. Here
-          are some key expenses to consider when estimating the cost of living
-          in New Zealand:
+          The cost of living in New Zealand can vary based on factors such as
+          location, lifestyle, and personal preferences. Overall, New Zealand is
+          regarded as having a moderately high cost of living. Here are some key
+          expenses to consider when estimating your cost of living in New
+          Zealand:
         </p>
         <table style={styles.table}>
           <thead>
@@ -611,40 +609,41 @@ const Studyinnewzeland = () => {
           international students?
         </p>
         <p style={styles.paragraph}>
-          Ans:To study in New Zealand as an international student, you'll
-          typically need to secure admission from a New Zealand institution,
-          demonstrate adequate financial resources, meet English language
-          proficiency requirements, obtain a student visa , maintain health and
-          travel insurance, pay tuition fees, provide academic records, and meet
-          character and health criteria. It's essential to fulfil these
-          requirements and provide any additional documents requested by the
-          institution or immigration authorities for a smooth application and
-          successful enrolment in a New Zealand educational institution.
+          Ans:To study in New Zealand as an international student, you will
+          generally need to gain admission to a New Zealand institution, prove
+          you have sufficient financial resources, meet English language
+          proficiency standards, secure a student visa, maintain health and
+          travel insurance, pay tuition fees, submit academic records, and
+          fulfill character and health requirements. It is important to meet all
+          these criteria and provide any additional documents requested by the
+          institution or immigration authorities to ensure a smooth application
+          process and successful enrollment in a New Zealand educational
+          institution.
         </p>
         <p style={styles.section}>
           Ques 2: How much gap is accepted for study in New Zealand?
         </p>
         <p style={styles.paragraph}>
-          Ans: A student can apply to a university in New Zealand even with a
-          10-year gap in their education. However, in such cases, the student
-          may need to demonstrate their credentials and qualifications
-          thoroughly.
+          Ans: A student can apply to a university in New Zealand even if there
+          is a 10-year gap in their education. However, in such cases, the
+          student may be required to provide detailed documentation of their
+          credentials and qualifications to support their application.
         </p>
 
         <p style={styles.section}>
           Ques 3:Can I work and study in New Zealand simultaneously?
         </p>
         <p style={styles.paragraph}>
-          Ans: Yes, as an international student in New Zealand, you can work
-          while studying, subject to certain conditions. Typically, you can work
-          up to 20 hours per week during the academic year and full-time during
-          scheduled breaks, such as summer or winter vacations. However, it's
-          essential to check the specific conditions and limitations of your
-          student visa, as they may vary based on the type of visa you hold and
-          your program of study. Additionally, some research or postgraduate
-          programs may have different work rights. Be sure to comply with New
-          Zealand's immigration regulations to maintain your legal status while
-          working and studying.
+          Ans: Yes, as an international student in New Zealand, you are allowed
+          to work while studying, with certain conditions. Generally, you can
+          work up to 20 hours per week during the academic term and full-time
+          during scheduled breaks, such as summer or winter holidays. However,
+          it is important to review the specific conditions and restrictions of
+          your student visa, as they may vary depending on the type of visa and
+          your program of study. Some research or postgraduate programs may have
+          different work rights. Ensure you comply with New Zealand's
+          immigration regulations to maintain your legal status while working
+          and studying.
         </p>
 
         <Exploreinnewzeland />
