@@ -102,7 +102,10 @@ const Visaapplicationassistance = () => {
   };
 
   const visaButtons = [
-    { text: "Student visa requirements for the USA", path: "/usavisarequirement" },
+    {
+      text: "Student visa requirements for the USA",
+      path: "/usavisarequirement",
+    },
     {
       text: "Student visa requirements for the UK",
       path: "/ukvisarequirement",
@@ -111,8 +114,14 @@ const Visaapplicationassistance = () => {
       text: "Student visa requirements for Australia",
       path: "/australiavisarequirement",
     },
-    { text: "Student visa requirements for Canada", path: "/canadavisarequirement" },
-    { text: "Student visa requirements for New Zealand", path: "/newzelandvisarequirement" },
+    {
+      text: "Student visa requirements for Canada",
+      path: "/canadavisarequirement",
+    },
+    {
+      text: "Student visa requirements for New Zealand",
+      path: "/newzelandvisarequirement",
+    },
   ];
 
   const learnMoreButtons = [
@@ -144,74 +153,78 @@ const Visaapplicationassistance = () => {
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Student visa application assistance by AIEC</h2>
         <p style={subtitleStyle}>
-          Applying for visas can sometimes feel challenging, but our team is
-          dedicated to providing you with accurate information and guidance
-          throughout the process.
+          The process of applying for visas may seem overwhelming, but our team
+          is committed to providing you with precise guidance and support
+          throughout the entire process.
         </p>
         <h3 style={titleStyle}>
-          When should you apply for your student visa?{" "}
+          When should you start applying for your student visa?{" "}
         </h3>
         <p style={paragraphStyle}>
-          You can generally begin your student visa application once you receive
-          confirmation of your enrolment in your chosen school or university.
+          You can typically start your student visa application once you receive
+          confirmation of your enrollment in your chosen educational
+          institution.
         </p>
         <p style={paragraphStyle}>
-          It is best to apply as early as possible, regardless of when your
-          program is due to start, as visa processing times can vary.
+          It is advisable to apply as early as possible, regardless of when your
+          program is set to begin, as visa processing times can differ.
         </p>
-        <h3 style={titleStyle}>How do you apply for a student visa?</h3>
+        <h3 style={titleStyle}>
+          What is the process for applying for a student visa?
+        </h3>
         <p style={paragraphStyle}>
-          There are several steps to apply for a student visa. The order of
-          these steps and how you complete them may vary according to where you
-          are planning to study.
-        </p>
-        <p style={paragraphStyle}>Most students will require:</p>
-        <p style={paragraphStyle}>
-          1. Proof of enrolment in a recognised educational institution.
+          There are multiple steps involved in applying for a student visa. The
+          order of these steps and how you proceed may depend on your
+          destination country.
         </p>
         <p style={paragraphStyle}>
-          2. Proof of your capacity to cover the cost of air fares, course
-          tuition fees and living costs for you and your family members for the
-          duration of your stay.
+          Most students will need to provide the following:
         </p>
         <p style={paragraphStyle}>
-          3. A passport valid for at least six months beyond your period of
+          1. Proof of enrollment in a recognized educational institution.
+        </p>
+        <p style={paragraphStyle}>
+          2. Proof of your ability to cover the costs of airfare, tuition fees,
+          and living expenses for both you and your dependents throughout your
           stay.
         </p>
         <p style={paragraphStyle}>
-          4. You may also be required to show evidence of your English language
-          proficiency and undertake health examinations and/or police checks.
+          3. A passport valid for at least six months beyond your intended stay.
+        </p>
+        <p style={paragraphStyle}>
+          4. You may also need to provide evidence of your English proficiency
+          and undergo medical examinations and/or police clearance.
         </p>
         <h3 style={titleStyle}>
-          How can AIEC help with your visa applications?
+          How can AIEC assist with your visa application?
         </h3>
         <p style={paragraphStyle}>
-          Your AIEC counsellor can provide you with information about what
-          documents you will need to provide.
+          Your AIEC advisor will assist you by explaining which documents are
+          required for submission.
         </p>
         <p style={paragraphStyle}>
-          All documents need to be scanned and certified, and certified
-          translations may be required. Your counsellor can help with the
-          translation services.
+          All documents need to be scanned and certified, and in some cases,
+          certified translations may also be necessary. Your advisor can help
+          facilitate translation services.
         </p>
         <p style={paragraphStyle}>
-          As visa requirements can change quickly, we will ensure you have
-          access to official websites and can make sure you have the latest
-          application forms.
+          Since visa requirements can change frequently, we will provide you
+          with up-to-date information and ensure that you have access to the
+          official websites and necessary forms.
         </p>
         <p style={paragraphStyle}>
-          To reduce the hassle, we can also help with translating and couriering
-          your documents.
+          To make the process smoother, we also offer help with document
+          translation and couriering.
         </p>
         <p style={paragraphStyle}>
-          The processes and requirements that international students must meet
-          to be eligible for a student visa vary from one country to another.
+          The requirements and procedures for obtaining a student visa vary from
+          one country to another.
         </p>
         <p style={paragraphStyle}>
-          We can help you stay up to date with the latest information on visa
+          We are here to help you stay informed about the most current visa
           requirements.
         </p>
-        <h3 style={titleStyle}>Find out more about visa requirements</h3>
+        <h3 style={titleStyle}>Learn more about visa requirements</h3>
 
         {/* Visa Requirements Button Section */}
         <div style={buttonGroupStyle}>
@@ -232,7 +245,7 @@ const Visaapplicationassistance = () => {
           ))}
         </div>
 
-        <h3 style={titleStyle}>Learn More</h3>
+        <h3 style={titleStyle}>Discover More</h3>
 
         {/* Learn More Button Section */}
         <div style={buttonGroupStyle}>
