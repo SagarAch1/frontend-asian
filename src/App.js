@@ -383,11 +383,7 @@ function App() {
         <Route path="/whatisgoodforsat" element={<Whatisgoodscoreforsat />} />
         <Route path="/ieltsmocktest" element={<Ieltsmocktest   />} />
         <Route path="/resources" element={<SampleDocs />} />
-        <Route path="/resourceaustralia" element={<StudyInAustralia />} />
-        <Route path="/resourcecanada" element={<Resourcecanada />} />
-        <Route path="/resourceuk" element={<Ukresource />} />
-        <Route path="/newzelandresource" element={<Newzelandresource />} />
-        <Route path="/resourceusa" element={<Usaresource />} />
+    
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
@@ -546,6 +542,12 @@ function App() {
           <Route path="/courseusa" element={<CourseUsa />} />
           <Route path="/courseuk" element={<CourseUk />} />
           <Route path="/coursecanada" element={<CourseCanada />} />
+          
+        <Route path="/resourceaustralia" element={<StudyInAustralia />} />
+        <Route path="/resourcecanada" element={<Resourcecanada />} />
+        <Route path="/resourceuk" element={<Ukresource />} />
+        <Route path="/newzelandresource" element={<Newzelandresource />} />
+        <Route path="/resourceusa" element={<Usaresource />} />
         </Route>
       </Routes>
     </Router>
