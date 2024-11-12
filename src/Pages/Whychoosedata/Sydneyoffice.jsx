@@ -4,12 +4,11 @@ import Youshouldknow from "../Homepage/YouShouldknow";
 
 const SydneyOffice = () => {
   const officeData = {
-    address:
-      "Sydney Office 70 Raymond Avenue, Campbelltown, Sydney-Australia",
+    address: "Sydney Office 70 Raymond Avenue, Campbelltown, Sydney-Australia",
     phone: "0425883105 /+61 425883105",
     openingHours: "09:00 AM - 05:30 PM",
     mapUrl:
-    "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3305.1133377415745!2d150.82584917556113!3d-34.066608773151515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-34.0665821!2d150.82847769999998!5e0!3m2!1sen!2snp!4v1726980802528!5m2!1sen!2s", 
+      "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3305.1133377415745!2d150.82584917556113!3d-34.066608773151515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-34.0665821!2d150.82847769999998!5e0!3m2!1sen!2snp!4v1726980802528!5m2!1sen!2s",
   };
 
   const navigateToFormPage = () => {
@@ -58,9 +57,8 @@ const SydneyOffice = () => {
             <div style={styles.card}>
               <h3>Not sure about your study abroad journey?</h3>
               <p>
-                Answer a few questions to get personalized content optimized for
-                you or get in touch with one of our counsellors for a free
-                consultation.
+                Take a short quiz to receive personalized recommendations or
+                connect with one of our counselors for free guidance.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
                 Get started
@@ -69,9 +67,9 @@ const SydneyOffice = () => {
             <div style={styles.card}>
               <h3>Feeling stuck? Let our expert counsellor help you.</h3>
               <p>
-                Can't decide on the university and courses? Our experienced
-                counsellors are here to guide and support you through each step
-                of your study abroad journey.
+                Struggling to choose the right university or course? Our
+                experienced counselors are here to assist and guide you through
+                every step of your study abroad process.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
                 Meet a counsellor
@@ -83,36 +81,34 @@ const SydneyOffice = () => {
         <div style={styles.footer}>
           <h2>Study abroad with AIEC Nepal - Kathmandu</h2>
           <p>
-            We at AIEC Nepal: Kathmandu assist you in fulfilling your dream of
-            studying abroad in the most sought-after countries – Australia,
-            Canada, the USA, the UK, New Zealand, and Ireland.
+            At AIEC Nepal: Kathmandu, we help students achieve their aspirations
+            to study in top destinations like Australia, Canada, the USA, the
+            UK, New Zealand, and Ireland.
           </p>
           <p>
-            AIEC provides a wide range of services to support your international
-            education journey. We are dedicated to you and your international
-            future – from course information to career advice to efficient
-            processing of your admission application, student visa processing,
-            and helping you find a better scholarship. AIEC will be here to help
-            you.
+            AIEC offers a comprehensive range of services to support your global
+            education goals, from course guidance and career advice to admission
+            processing, visa assistance, and securing scholarships. We're here
+            for you every step of the way.
           </p>
           <p>
-            We have been creating a huge network of opportunities to support
-            students planning to study abroad. With offices in 32 countries, AIEC
-            Kathmandu has an extensive network of experts to help you identify
-            and secure the university or college where you can thrive.
+            Our extensive network of experts and offices in 32 countries enables
+            us to assist students in finding the right university or college
+            where they can excel.
           </p>
           <p>
-            Our counsellors at AIEC are experienced and trained to provide you
-            with end-to-end knowledge about studying and living in your dream
-            destination. Located in Hattisar, Kathmandu we’ve helped many
-            students hailing from Lalitpur, Syuchatar, New Baneshwor, Gothatar,
-            Mahankal, Baglung, Butwal, Pokhra and nearby areas. You may choose
-            to visit our experts to discuss your international education
-            prospects in person. AIEC provides free study abroad counselling
-            services to all students.
+            Our counselors at AIEC are skilled in providing end-to-end guidance
+            for studying and living in your dream destination. Located in
+            Hattisar, Kathmandu, we've supported students from areas like
+            Lalitpur, Syuchatar, New Baneshwor, Gothatar, Mahankal, Baglung,
+            Butwal, Pokhra, and beyond. Visit us for expert advice on your
+            international education journey. We offer free study abroad
+            counseling services for all students.
           </p>
           <p>
-          Meet your personal AIEC counsellor at Kathmandu, Nepal & be better placed. Visit us or book your FREE appointment.
+            Meet your dedicated AIEC counselor in Kathmandu, Nepal, and take the
+            first step toward your dreams. Visit us or book your free
+            appointment today.
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
             Help me Study abroad

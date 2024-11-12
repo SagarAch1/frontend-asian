@@ -4,12 +4,11 @@ import Youshouldknow from "../Homepage/YouShouldknow";
 
 const PokharaOffice = () => {
   const officeData = {
-    address:
-      "Nivagalli, Chiplodhunga-09, Pokhara, Nepal",
+    address: "Nivagalli, Chiplodhunga-09, Pokhara, Nepal",
     phone: "+9779801048957",
     openingHours: "09:00 AM - 05:30 PM",
     mapUrl:
-     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.455097395174!2d83.98375838117846!3d28.22386341372524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595667cb215ff%3A0xfe8b4d02bb7d6674!2sNiva%20Galli!5e0!3m2!1sen!2snp!4v1726979628386!5m2!1sen!2snp",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.455097395174!2d83.98375838117846!3d28.22386341372524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399595667cb215ff%3A0xfe8b4d02bb7d6674!2sNiva%20Galli!5e0!3m2!1sen!2snp!4v1726979628386!5m2!1sen!2snp",
   };
 
   const navigateToFormPage = () => {
@@ -25,13 +24,13 @@ const PokharaOffice = () => {
           style={styles.headerImage}
         />
         <div style={styles.headerContent}>
-          <h1 style={styles.headerText}>AIEC Kathmandu Office, Nepal</h1>
+          <h1 style={styles.headerText}>AIEC Pokhara Office, Nepal</h1>
         </div>
       </div>
 
       <div style={styles.content}>
         <div style={styles.officeDetails}>
-          <h2 style={styles.sectionTitle}>Office details</h2>
+          <h2 style={styles.sectionTitle}>Office Details</h2>
           <p>
             <strong>Office Location:</strong> {officeData.address}
           </p>
@@ -40,7 +39,7 @@ const PokharaOffice = () => {
             <a href={`tel:${officeData.phone}`}>{officeData.phone}</a>
           </p>
           <p>
-            <strong>Opening hours:</strong> {officeData.openingHours}
+            <strong>Opening Hours:</strong> {officeData.openingHours}
           </p>
         </div>
 
@@ -56,66 +55,60 @@ const PokharaOffice = () => {
 
           <div style={styles.buttonsContainer}>
             <div style={styles.card}>
-              <h3>Not sure about your study abroad journey?</h3>
+              <h3>Unsure about studying abroad?</h3>
               <p>
-                Answer a few questions to get personalized content optimized for
-                you or get in touch with one of our counsellors for a free
-                consultation.
+                Take a quick quiz to receive tailored advice or connect with one
+                of our counselors for a complimentary consultation.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
-                Get started
+                Get Started
               </button>
             </div>
             <div style={styles.card}>
-              <h3>Feeling stuck? Let our expert counsellor help you.</h3>
+              <h3>Need guidance? Consult our experts!</h3>
               <p>
-                Can't decide on the university and courses? Our experienced
-                counsellors are here to guide and support you through each step
-                of your study abroad journey.
+                If you're struggling to choose universities or courses, our
+                counselors are here to provide assistance and guide you at every
+                stage of your journey.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
-                Meet a counsellor
+                Meet a Counselor
               </button>
             </div>
           </div>
         </div>
 
         <div style={styles.footer}>
-          <h2>Study abroad with AIEC Nepal - Kathmandu</h2>
+          <h2>Embark on Your Study Abroad Journey with AIEC Pokhara</h2>
           <p>
-            We at AIEC Nepal: Kathmandu assist you in fulfilling your dream of
-            studying abroad in the most sought-after countries – Australia,
-            Canada, the USA, the UK, New Zealand, and Ireland.
+            At AIEC Pokhara, we support your aspirations to study in top
+            destinations like Australia, Canada, the USA, the UK, New Zealand,
+            and Ireland.
           </p>
           <p>
-            AIEC provides a wide range of services to support your international
-            education journey. We are dedicated to you and your international
-            future – from course information to career advice to efficient
-            processing of your admission application, student visa processing,
-            and helping you find a better scholarship. AIEC will be here to help
-            you.
+            Our services encompass everything from course selection to career
+            advice, assistance with admission applications, visa processing, and
+            securing scholarships, ensuring you have a seamless experience.
           </p>
           <p>
-            We have been creating a huge network of opportunities to support
-            students planning to study abroad. With offices in 32 countries, AIEC
-            Kathmandu has an extensive network of experts to help you identify
-            and secure the university or college where you can thrive.
+            With a global presence across 32 countries, AIEC Pokhara has built a
+            robust network to help you find the right university or college
+            where you can thrive.
           </p>
           <p>
-            Our counsellors at AIEC are experienced and trained to provide you
-            with end-to-end knowledge about studying and living in your dream
-            destination. Located in Hattisar, Kathmandu we’ve helped many
-            students hailing from Lalitpur, Syuchatar, New Baneshwor, Gothatar,
-            Mahankal, Baglung, Butwal, Pokhra and nearby areas. You may choose
-            to visit our experts to discuss your international education
-            prospects in person. AIEC provides free study abroad counselling
-            services to all students.
+            Our counselors provide comprehensive insights into studying and
+            living in your desired destination. Situated in Chiplodhunga,
+            Pokhara, we have supported numerous students from nearby regions.
+            You can visit us in person to discuss your international education
+            plans. Our counseling services are entirely free of charge.
           </p>
           <p>
-          Meet your personal AIEC counsellor at Kathmandu, Nepal & be better placed. Visit us or book your FREE appointment.
+            Meet your dedicated AIEC counselor in Pokhara and take the first
+            step toward your global education. Schedule your free appointment
+            today!
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
-            Help me Study abroad
+            Help Me Study Abroad
           </button>
         </div>
       </div>

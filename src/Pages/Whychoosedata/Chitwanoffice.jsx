@@ -4,12 +4,11 @@ import Youshouldknow from "../Homepage/YouShouldknow";
 
 const ChitwanOffice = () => {
   const officeData = {
-    address:
-      "Tejman Plaza AL5, Pulchok-03, Narayangurh,Chitwan Nepal",
+    address: "Tejman Plaza AL5, Pulchok-03, Narayangurh, Chitwan Nepal",
     phone: "+97756527974",
     openingHours: "09:00 AM - 05:30 PM",
     mapUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6353702698307!2d84.41815947530027!3d27.697662476188142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb224c79fd03%3A0x737835fc6d7dca86!2sPulchowk!5e0!3m2!1sen!2snp!4v1726980530330!5m2!1sen!2snp",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.6353702698307!2d84.41815947530027!3d27.697662476188142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb224c79fd03%3A0x737835fc6d7dca86!2sPulchowk!5e0!3m2!1sen!2snp!4v1726980530330!5m2!1sen!2snp",
   };
 
   const navigateToFormPage = () => {
@@ -31,7 +30,7 @@ const ChitwanOffice = () => {
 
       <div style={styles.content}>
         <div style={styles.officeDetails}>
-          <h2 style={styles.sectionTitle}>Office details</h2>
+          <h2 style={styles.sectionTitle}>Office Details</h2>
           <p>
             <strong>Office Location:</strong> {officeData.address}
           </p>
@@ -56,66 +55,60 @@ const ChitwanOffice = () => {
 
           <div style={styles.buttonsContainer}>
             <div style={styles.card}>
-              <h3>Not sure about your study abroad journey?</h3>
+              <h3>Need help with your study abroad plans?</h3>
               <p>
-                Answer a few questions to get personalized content optimized for
-                you or get in touch with one of our counsellors for a free
-                consultation.
+                Take a short quiz to get personalized recommendations or connect
+                with one of our counselors for a free consultation.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
-                Get started
+                Get Started
               </button>
             </div>
             <div style={styles.card}>
-              <h3>Feeling stuck? Let our expert counsellor help you.</h3>
+              <h3>Stuck in the process? Our experts can help.</h3>
               <p>
-                Can't decide on the university and courses? Our experienced
-                counsellors are here to guide and support you through each step
-                of your study abroad journey.
+                Unsure about universities or courses? Our experienced counselors
+                are here to guide you at every step of your study abroad
+                journey.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
-                Meet a counsellor
+                Meet a Counselor
               </button>
             </div>
           </div>
         </div>
 
         <div style={styles.footer}>
-          <h2>Study abroad with AIEC Nepal - Kathmandu</h2>
+          <h2>Explore Study Opportunities with AIEC Nepal - Kathmandu</h2>
           <p>
-            We at AIEC Nepal: Kathmandu assist you in fulfilling your dream of
-            studying abroad in the most sought-after countries – Australia,
-            Canada, the USA, the UK, New Zealand, and Ireland.
+            At AIEC Nepal: Kathmandu, we assist you in achieving your dream of
+            studying abroad in top destinations such as Australia, Canada, the
+            USA, the UK, New Zealand, and Ireland.
           </p>
           <p>
-            AIEC provides a wide range of services to support your international
-            education journey. We are dedicated to you and your international
-            future – from course information to career advice to efficient
-            processing of your admission application, student visa processing,
-            and helping you find a better scholarship. AIEC will be here to help
-            you.
+            We provide comprehensive services to support your global education
+            plans, from course guidance to career counseling, application
+            assistance, visa processing, and finding scholarships. AIEC is your
+            trusted partner throughout this journey.
           </p>
           <p>
-            We have been creating a huge network of opportunities to support
-            students planning to study abroad. With offices in 32 countries, AIEC
-            Kathmandu has an extensive network of experts to help you identify
-            and secure the university or college where you can thrive.
+            With offices in 32 countries, we’ve built a strong network of
+            opportunities to help students identify and secure the right
+            university or college to excel.
           </p>
           <p>
-            Our counsellors at AIEC are experienced and trained to provide you
-            with end-to-end knowledge about studying and living in your dream
-            destination. Located in Hattisar, Kathmandu we’ve helped many
-            students hailing from Lalitpur, Syuchatar, New Baneshwor, Gothatar,
-            Mahankal, Baglung, Butwal, Pokhra and nearby areas. You may choose
-            to visit our experts to discuss your international education
-            prospects in person. AIEC provides free study abroad counselling
-            services to all students.
+            Our trained counselors offer in-depth guidance on studying and
+            living abroad. Based in Hattisar, Kathmandu, we’ve supported many
+            students from regions like Lalitpur, Syuchatar, New Baneshwor,
+            Gothatar, and beyond. Visit us to discuss your plans or benefit from
+            our free study abroad counseling services.
           </p>
           <p>
-          Meet your personal AIEC counsellor at Kathmandu, Nepal & be better placed. Visit us or book your FREE appointment.
+            Meet your dedicated AIEC counselor in Kathmandu, Nepal, and take the
+            next step. Visit us or schedule your FREE appointment today.
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
-            Help me Study abroad
+            Help Me Study Abroad
           </button>
         </div>
       </div>

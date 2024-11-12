@@ -56,63 +56,57 @@ const KathmanduOffice = () => {
 
           <div style={styles.buttonsContainer}>
             <div style={styles.card}>
-              <h3>Not sure about your study abroad journey?</h3>
+              <h3>Unsure about starting your study abroad journey?</h3>
               <p>
-                Answer a few questions to get personalized content optimized for
-                you or get in touch with one of our counsellors for a free
-                consultation.
+                Take a quick questionnaire to receive tailored advice or connect
+                with our counselors for a free one-on-one consultation.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
                 Get started
               </button>
             </div>
             <div style={styles.card}>
-              <h3>Feeling stuck? Let our expert counsellor help you.</h3>
+              <h3>Need guidance? Our experts can assist you.</h3>
               <p>
-                Can't decide on the university and courses? Our experienced
-                counsellors are here to guide and support you through each step
-                of your study abroad journey.
+                Struggling to choose the right university and courses? Our
+                seasoned counselors are ready to provide personalized guidance
+                every step of the way.
               </p>
               <button style={styles.cardButton} onClick={navigateToFormPage}>
-                Meet a counsellor
+                Meet a counselor
               </button>
             </div>
           </div>
         </div>
 
         <div style={styles.footer}>
-          <h2>Study abroad with AIEC Nepal - Kathmandu</h2>
+          <h2>Explore overseas education with AIEC Nepal - Kathmandu</h2>
           <p>
-            We at AIEC Nepal: Kathmandu assist you in fulfilling your dream of
-            studying abroad in the most sought-after countries – Australia,
-            Canada, the USA, the UK, New Zealand, and Ireland.
+            At AIEC Nepal: Kathmandu, we help make your dream of studying
+            abroad in top destinations like Australia, Canada, the USA, the UK,
+            New Zealand, and Ireland a reality.
           </p>
           <p>
-            AIEC provides a wide range of services to support your international
-            education journey. We are dedicated to you and your international
-            future – from course information to career advice to efficient
-            processing of your admission application, student visa processing,
-            and helping you find a better scholarship. AIEC will be here to help
-            you.
+            AIEC offers a broad spectrum of services to support your education
+            abroad, including course selection, career counseling, application
+            processing, visa assistance, and scholarship guidance.
           </p>
           <p>
-            We have been creating a huge network of opportunities to support
-            students planning to study abroad. With offices in 32 countries, AIEC
-            Kathmandu has an extensive network of experts to help you identify
-            and secure the university or college where you can thrive.
+            With offices across 32 countries, AIEC Kathmandu has built a robust
+            network of experts to help you find the university or college that
+            best suits your aspirations.
           </p>
           <p>
-            Our counsellors at AIEC are experienced and trained to provide you
-            with end-to-end knowledge about studying and living in your dream
-            destination. Located in Hattisar, Kathmandu we’ve helped many
-            students hailing from Lalitpur, Syuchatar, New Baneshwor, Gothatar,
-            Mahankal, Baglung, Butwal, Pokhra and nearby areas. You may choose
-            to visit our experts to discuss your international education
-            prospects in person. AIEC provides free study abroad counselling
-            services to all students.
+            Our trained counselors provide comprehensive insights into studying
+            and living in your dream destination. Based in Hattisar, Kathmandu,
+            we’ve supported numerous students from areas such as Lalitpur,
+            Syuchatar, New Baneshwor, and beyond. Visit us for free counseling
+            services tailored to your needs.
           </p>
           <p>
-          Meet your personal AIEC counsellor at Kathmandu, Nepal & be better placed. Visit us or book your FREE appointment.
+            Schedule your appointment or visit our Kathmandu office to discuss
+            your international education plans. Let us help you achieve your
+            goals.
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
             Help me Study abroad
