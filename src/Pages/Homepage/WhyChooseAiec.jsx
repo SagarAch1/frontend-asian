@@ -76,7 +76,7 @@ const WhyChooseAiec = () => {
           <div style={iconStyle}>🎓</div>
           <h3 style={titleStyle}> A rich history</h3>
           <p style={descriptionStyle}>
-            15+ years of helping students achive their study abroad dreams.
+          Over 15 years of experience in turning students' study abroad dreams into reality.
           </p>
           <a href="/about-aiec" style={linkStyle}>
             Learn more &gt;
@@ -87,7 +87,7 @@ const WhyChooseAiec = () => {
           <div style={iconStyle}>👥</div>
           <h3 style={titleStyle}>Global network</h3>
           <p style={descriptionStyle}>
-            Partnering with 800 Leading universities across the world.
+          In collaboration with 800 top universities worldwide.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
@@ -98,7 +98,7 @@ const WhyChooseAiec = () => {
           <div style={iconStyle}>🌍</div>
           <h3 style={titleStyle}>Closer to you</h3>
           <p style={descriptionStyle}>
-            Serving you globally with 190 offices across 35 countries.
+          Providing global support through 190 offices in 35 countries.
           </p>
           <a href="/officelocator" style={linkStyle}>
             Learn more &gt;
@@ -109,8 +109,7 @@ const WhyChooseAiec = () => {
           <div style={iconStyle}>👨‍🏫</div>
           <h3 style={titleStyle}>Driven by innovation</h3>
           <p style={descriptionStyle}>
-            Combining human expertise with smart tech for a highy personalised
-            experience.
+          Blending human expertise with advanced technology to deliver a highly personalized experience.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
@@ -123,8 +122,7 @@ const WhyChooseAiec = () => {
           </div>
           <h3 style={titleStyle}>Centred around you</h3>
           <p style={descriptionStyle}>
-            Matching to the right country, right course with the right support
-            system.
+          Connecting you to the ideal country and course with the perfect support system.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;
