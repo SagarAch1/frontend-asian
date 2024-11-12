@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 
 const destinations = [
-    { name: 'Newcastle', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg` , description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'London', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Canada is renowned for its high-quality education and welcoming multicultural society. With a reputation for safety, innovation, and stunning scenery, it’s a top choice for those seeking a well-rounded study abroad experience.' },
-    { name: 'Edinburgh', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'Glasgow', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-    { name: 'Cardiff', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`,description: 'Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections' },
-  ];
-  
+  { name: 'Newcastle', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`, description: 'Newcastle is a vibrant city in the northeast of England, known for its friendly atmosphere and rich history. It offers top-tier universities and a lively cultural scene, making it an exciting place to study.' },
+  { name: 'London', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'London, the capital city, is a global hub for education, business, and culture. With prestigious universities and a diverse population, it’s an ideal location for international students seeking both academic excellence and cultural immersion.' },
+  { name: 'Edinburgh', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`, description: 'Edinburgh, the capital of Scotland, is known for its stunning architecture, rich history, and vibrant arts scene. The city offers an array of top universities and is a great choice for students who appreciate culture and nature.' },
+  { name: 'Glasgow', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Glasgow is Scotland’s largest city, offering a mix of modern culture and historical charm. Known for its arts, music, and diverse food scene, Glasgow provides a dynamic atmosphere for students to thrive academically and socially.' },
+  { name: 'Cardiff', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`, description: 'Cardiff, the capital of Wales, is known for its welcoming atmosphere and historic landmarks. It boasts a strong educational system, making it an excellent choice for students who want a balance between city life and beautiful nature.' },
+];
 
 const ExploreinUk = () => {
   const [hovered, setHovered] = useState(null);
@@ -22,7 +21,6 @@ const ExploreinUk = () => {
     marginBottom: '10px',
     color: '#333',
     fontWeight: 'bold',
-   
   };
 
   const sectionSubtitleStyle = {
@@ -86,6 +84,12 @@ const ExploreinUk = () => {
     textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
   };
 
+  const descriptionStyle = {
+    textAlign: 'center', // Centers the text
+    padding: '10px',
+    maxWidth: '80%', // Optional: set a max width to avoid text overflowing
+  };
+
   const buttonStyle = {
     padding: '10px 20px',
     backgroundColor: '#007bff',
@@ -98,7 +102,7 @@ const ExploreinUk = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={sectionTitleStyle}>Explore in Uk</h2>
+      <h2 style={sectionTitleStyle}>Explore in UK</h2>
       <p style={sectionSubtitleStyle}>
         Begin an exciting academic journey in these varied and welcoming study locations!
       </p>
@@ -119,7 +123,7 @@ const ExploreinUk = () => {
             {hovered === index && (
               <div style={{ ...overlayStyle, ...overlayVisibleStyle }}>
                 <h3>{destination.name}</h3>
-                {destination.description && <p>{destination.description}</p>}
+                {destination.description && <p style={descriptionStyle}>{destination.description}</p>}
                 {destination.description && <button style={buttonStyle}>Discover</button>}
               </div>
             )}
