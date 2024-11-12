@@ -9,12 +9,12 @@ const FirstAid = () => {
     setActiveIndex(activeIndex === index ? null : index); // Toggle open/close state
   };
 
-  const headerStyle = {
+  const sectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
-    width: "100%",
+    height: "350px",
+    width: "1900px",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -22,8 +22,8 @@ const FirstAid = () => {
     alignItems: "center",
     textAlign: "center",
     padding: "50px",
+    marginTop: "82px",
   };
-
   const statsContainer = {
     display: "flex",
     justifyContent: "space-around",
@@ -132,7 +132,7 @@ const FirstAid = () => {
 
   return (
     <div>
-      <div style={headerStyle}>
+      <div style={sectionStyle}>
         <h1>Study First Aid Abroad</h1>
         <p>
           First Aid is the immediate medical assistance provided after an injury, offering

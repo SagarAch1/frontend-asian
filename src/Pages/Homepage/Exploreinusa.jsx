@@ -5,25 +5,25 @@ const destinations = [
     name: "Washington",
     imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`,
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections",
+    "Begin your journey in Washington, a hub for innovation and culture!",
   },
   {
     name: "New York",
     imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`,
     description:
-      "Canada is renowned for its high-quality education and welcoming multicultural society. With a reputation for safety, innovation, and stunning scenery, it’s a top choice for those seeking a well-rounded study abroad experience.",
+    "New York offers a vibrant atmosphere, full of career opportunities and diverse culture.",
   },
   {
     name: "Massachusetts",
     imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections",
+      "Massachusetts is known for its prestigious universities and rich history.",
   },
   {
     name: "California",
     imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`,
     description:
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections",
+      "California is the heart of tech innovation and beautiful landscapes.",
   },
 ];
 
@@ -103,6 +103,12 @@ const Exploreinusa = () => {
     textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
   };
 
+  const descriptionStyle = {
+    textAlign: "center", // Centers the description text
+    padding: "10px",
+    maxWidth: "80%", // Optional: set a max width to avoid text overflowing
+  };
+
   const buttonStyle = {
     padding: "10px 20px",
     backgroundColor: "#007bff",
@@ -140,7 +146,9 @@ const Exploreinusa = () => {
             {hovered === index && (
               <div style={{ ...overlayStyle, ...overlayVisibleStyle }}>
                 <h3>{destination.name}</h3>
-                {destination.description && <p>{destination.description}</p>}
+                {destination.description && (
+                  <p style={descriptionStyle}>{destination.description}</p>
+                )}
                 {destination.description && (
                   <button style={buttonStyle}>Discover</button>
                 )}

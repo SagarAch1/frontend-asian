@@ -9,12 +9,12 @@ const DigitalProduction = () => {
     setActiveIndex(activeIndex === index ? null : index); // Toggle FAQ visibility
   };
 
-  const heroSectionStyle = {
+  const sectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
-    width: "100%",
+    height: "350px",
+    width: "1900px",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -22,6 +22,7 @@ const DigitalProduction = () => {
     alignItems: "center",
     textAlign: "center",
     padding: "50px",
+    marginTop: "82px",
   };
 
   const statisticsSectionStyle = {
@@ -138,7 +139,7 @@ const DigitalProduction = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div style={heroSectionStyle}>
+      <div style={sectionStyle }>
         <h1>Study Digital Production Abroad</h1>
         <p>
           Looking to craft stories that captivate audiences? Digital production is the perfect

@@ -9,12 +9,12 @@ const FoodScience = () => {
     setActiveIndex(activeIndex === index ? null : index); // Toggle open/close
   };
 
-  const heroSectionStyle = {
+  const sectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
-    width: "100%",
+    height: "350px",
+    width: "1900px",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -22,6 +22,7 @@ const FoodScience = () => {
     alignItems: "center",
     textAlign: "center",
     padding: "50px",
+    marginTop: "82px",
   };
 
   const statisticsContainer = {
@@ -133,7 +134,7 @@ const FoodScience = () => {
   return (
     <div>
       {/* Hero section with background image */}
-      <div style={heroSectionStyle}>
+      <div style={sectionStyle}>
         <h1>Study Food Science Abroad</h1>
         <p>
           With population growth, food science is key to ensuring sufficient, safe food supplies.

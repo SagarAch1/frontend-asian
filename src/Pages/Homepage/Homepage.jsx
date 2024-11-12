@@ -103,7 +103,7 @@ const Homepage = () => {
                   src={`http://localhost:5000/sliders/${slider.sliderImage}`}
                   className="d-block w-100"
                   alt={slider.name}
-                  style={{ height: "500px", objectFit: "cover" }}
+                  style={{ height: "500px", objectFit: "cover", }}
                 />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>{slider.name}</h5>

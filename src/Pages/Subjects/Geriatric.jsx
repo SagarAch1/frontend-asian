@@ -9,12 +9,12 @@ const GeriatricStudies = () => {
     setSelectedIndex(selectedIndex === index ? null : index); // Toggle section visibility
   };
 
-  const heroSectionStyle = {
+  const sectionStyle = {
     backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
-    height: "400px",
-    width: "100%",
+    height: "350px",
+    width: "1900px",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -22,6 +22,7 @@ const GeriatricStudies = () => {
     alignItems: "center",
     textAlign: "center",
     padding: "50px",
+    marginTop: "82px",
   };
 
   const statsSectionStyle = {
@@ -132,7 +133,7 @@ const GeriatricStudies = () => {
   return (
     <div>
       {/* Hero section with background image */}
-      <div style={heroSectionStyle}>
+      <div style={sectionStyle}>
         <h1>Study Geriatric Studies Abroad</h1>
         <p>
           Geriatrics is a specialized branch of medicine focused on the health of the elderly. 
