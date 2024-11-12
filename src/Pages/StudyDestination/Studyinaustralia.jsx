@@ -337,11 +337,21 @@ const styles = {
     position: "relative",
   },
   headerImage: {
-    width: "3290px",
-    height: "310px",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    marginLeft: "-225px",
+    
+      
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "350px",
+      width: "1900px",
+      color: "white",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+      textAlign: "center",
+      padding: "50px",
+      marginTop: "82px",
+  
   },
   headerContent: {
     position: "absolute",
