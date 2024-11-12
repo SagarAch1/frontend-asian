@@ -159,7 +159,9 @@ const FormPage = () => {
       !studyLevel ||
       !agreeToTerms
     ) {
-      toast.error("Please enter all fields and agree to the terms and privacy policy.");
+      toast.error(
+        "Please enter all fields and agree to the terms and privacy policy."
+      );
       return;
     }
 
@@ -185,7 +187,11 @@ const FormPage = () => {
     } catch (error) {
       console.error("Form submission error:", error);
       if (error.response) {
-        toast.error(`Failed to submit form: ${error.response.data.message || error.message}`);
+        toast.error(
+          `Failed to submit form: ${
+            error.response.data.message || error.message
+          }`
+        );
       } else if (error.request) {
         toast.error("No response received from server");
       } else {
@@ -202,9 +208,9 @@ const FormPage = () => {
             <div style={{ textAlign: "center", marginBottom: "40px" }}>
               <h3>AIEC can help you</h3>
               <p>
-                Enter your details and get a free counselling session with our
-                experts so they can connect you to the right course, country,
-                university – and even scholarships!
+                Fill in your details to book a free counseling session with our
+                experts, who will guide you to the perfect course, country,
+                university, and even scholarships!
               </p>
             </div>
 
@@ -320,7 +326,9 @@ const FormPage = () => {
             >
               <option value="">How will you fund your studies?*</option>
               <option value="Self-funded">Self-funded</option>
-              <option value="Partially funded by family">Partially funded by family</option>
+              <option value="Partially funded by family">
+                Partially funded by family
+              </option>
               <option value="Seeking Scholarships">Seeking Scholarships</option>
               <option value="Bank Loan">Bank Loan</option>
             </select>
@@ -335,10 +343,14 @@ const FormPage = () => {
               <option value="">Your preferred level of study*</option>
               <option value="Undergraduate">Undergraduate</option>
               <option value="Postgraduate">Postgraduate</option>
-              <option value="Vocational Education and Training">Vocational Education and Training</option>
+              <option value="Vocational Education and Training">
+                Vocational Education and Training
+              </option>
               <option value="Doctorate">Doctorate</option>
               <option value="School">School</option>
-              <option value="English Language Course">English Language Course</option>
+              <option value="English Language Course">
+                English Language Course
+              </option>
             </select>
 
             <div style={{ marginTop: "20px" }}>
@@ -363,9 +375,9 @@ const FormPage = () => {
                   onChange={handleInputChange}
                   style={checkboxStyle}
                 />
-                I would like to receive further communication from AIEC via Phone, Email, and SMS
+                I would like to receive further communication from AIEC via
+                Phone, Email, and SMS
               </label>
-              
             </div>
 
             <div style={{ marginTop: "20px" }}>
@@ -377,7 +389,8 @@ const FormPage = () => {
                   onChange={handleInputChange}
                   style={checkboxStyle}
                 />
-                I would like to receive relevant information and updates from AIEC via Email
+                I would like to receive relevant information and updates from
+                AIEC via Email
               </label>
             </div>
 
@@ -385,22 +398,18 @@ const FormPage = () => {
               Submit
             </button>
           </div>
-          
         </form>
-        
 
         <div style={{ flex: 1 }}>
-        <img
-              src={`${process.env.PUBLIC_URL}/assets/images/OIP.jpeg`}
-              alt="Logo"
-              style={imageStyle}
-            />
+          <img
+            src={`${process.env.PUBLIC_URL}/assets/images/OIP.jpeg`}
+            alt="Logo"
+            style={imageStyle}
+          />
         </div>
       </div>
       <ToastContainer />
-     
     </div>
-    
   );
 };
 
