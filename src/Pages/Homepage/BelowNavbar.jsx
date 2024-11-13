@@ -30,7 +30,7 @@ const BelowNavbar = () => {
 
   const logoStyle = {
     height: "80px",
-    marginLeft: "-250px",
+    // marginLeft: "-250px",
   };
 
   const navMenuStyle = {

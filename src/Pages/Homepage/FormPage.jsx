@@ -6,7 +6,7 @@ const containerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  backgroundColor: "#f5f5f5",
+  backgroundColor: "#e0f7fa",
   padding: "40px 0",
   minHeight: "100vh",
 };

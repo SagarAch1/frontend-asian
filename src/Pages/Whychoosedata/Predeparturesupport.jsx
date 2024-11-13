@@ -14,16 +14,13 @@ const Predeparturesupport = () => {
 
   const containerStyle = {
     width: "100%",
-    padding: "20px",
+    padding: "0", // Remove padding to ensure full-width alignment
     boxSizing: "border-box",
   };
 
   const bannerStyle = {
     width: "100%",
     height: "400px",
-    backgroundImage: 'url("/assets/images/aus.jpeg")',
-    backgroundSize: "cover",
-    backgroundPosition: "center",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -118,7 +115,7 @@ const Predeparturesupport = () => {
     { text: "Study abroad counseling", path: "/studyabroadcounseling" },
     { text: "Pre-departure support", path: "/predeparturesupport" },
     { text: "What we do?", path: "/whatwedo" },
-    { text: "Events", path: "/events" },
+    { text: "Events", path: "/upcommingevents" },
     { text: "How to find a course", path: "/howtofindcourse" },
     {
       text: "Visa application assistance",
@@ -129,15 +126,14 @@ const Predeparturesupport = () => {
 
   return (
     <div style={containerStyle}>
-      {/* Banner Section */}
-      <div style={bannerStyle}>
-        <img
-          src="/path/to/your/banner-image.jpg"
-          alt="Banner"
-          style={{ width: "100%", height: "400px", objectFit: "cover" }}
-        />
-      </div>
-
+    {/* Banner Section */}
+    <div style={bannerStyle}>
+      <img
+        src="/assets/images/aus.jpeg"
+        alt="Banner"
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      />
+    </div>
       {/* Content Section */}
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Pre-departure support by AIEC</h2>

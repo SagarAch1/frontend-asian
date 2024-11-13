@@ -28,7 +28,7 @@ const Homepage = () => {
   }, []);
 
   const containerStyle = {
-    background: "#f8f8f8",
+    background: "#e0f7fa",
     minHeight: "100vh",
     color: "#333",
     padding: "0",

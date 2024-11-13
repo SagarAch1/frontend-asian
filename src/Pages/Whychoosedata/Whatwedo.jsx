@@ -9,16 +9,13 @@ const Whatwedo = () => {
 
   const containerStyle = {
     width: "100%",
-    padding: "20px",
+    padding: "0", // Remove padding to ensure full-width alignment
     boxSizing: "border-box",
   };
 
   const bannerStyle = {
     width: "100%",
     height: "400px",
-    backgroundImage: 'url("/assets/images/aus.jpeg")',
-    backgroundSize: "cover",
-    backgroundPosition: "center",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -94,7 +91,7 @@ const Whatwedo = () => {
     { label: "Pre-departure support", path: "/predeparturesupport" },
     { label: "What we do?", path: "/whatwedo" },
     { label: "Events", path: "/events" },
-    { label: "How to find a course", path: "/howtofindcourse" },
+    { label: "How to find a course", path: "/browsesubject" },
     {
       label: "Visa application assistance",
       path: "/studentvisapplication",
@@ -104,15 +101,14 @@ const Whatwedo = () => {
 
   return (
     <div style={containerStyle}>
-      {/* Banner Section */}
-      <div style={bannerStyle}>
-        <img
-          src="/path/to/your/banner-image.jpg"
-          alt="Banner"
-          style={{ width: "100%", height: "400px", objectFit: "cover" }}
-        />
-      </div>
-
+    {/* Banner Section */}
+    <div style={bannerStyle}>
+      <img
+        src="/assets/images/aus.jpeg"
+        alt="Banner"
+        style={{ width: "100%", height: "100%", objectFit: "cover" }}
+      />
+    </div>
       {/* Content Section */}
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>What we do</h2>

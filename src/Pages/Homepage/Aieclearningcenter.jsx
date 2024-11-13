@@ -164,8 +164,8 @@ const aiecWorkshop = () => {
           <a href="/resources" style={styles.infoButton}>
             Resources
           </a>
-          <a href="/officelocator" style={styles.infoButton}>
-            Find Us
+          <a href="/livingabroadsupport" style={styles.infoButton}>
+            Learn More
           </a>
         </div>
       </div>

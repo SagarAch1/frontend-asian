@@ -5,7 +5,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-import About from "./Pages/About/About";
+
 import Gallerycreate from "./Pages/Gallery/Imageupload";
 
 import Bachelorofdesign from "./Blog/Bachelorofdesign";
@@ -387,7 +387,7 @@ function App() {
 
         <Route path="/forgot-password" element={<ForgotPassword />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+       
         <Route path="/support" element={<Support />} />
         <Route path="/messages" element={<Message />} />
         <Route path="/book" element={<Book />} />

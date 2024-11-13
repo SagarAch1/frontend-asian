@@ -191,8 +191,8 @@ const styles = {
     fontFamily: "'Aptos', sans-serif",
   },
   topImage: {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/uk.webp)`,
-    width: '1900px',
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/finalbanner.jpg)`,
+    width: '100%',
     height: '350px',
     backgroundSize: 'cover',
     backgroundPosition: 'center',

@@ -1,24 +1,21 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
 const Aboutaiec = () => {
   const [hoveredButton, setHoveredButton] = useState(null);
-  const navigate = useNavigate(); // Create navigate instance
+  const navigate = useNavigate();
 
   const containerStyle = {
     width: "100%",
-    padding: "20px",
+    padding: "0", // Remove padding to ensure full-width alignment
     boxSizing: "border-box",
   };
 
   const bannerStyle = {
     width: "100%",
     height: "400px",
-    backgroundImage: 'url("/assets/images/aus.jpeg")',
-    backgroundSize: "cover",
-    backgroundPosition: "center",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -85,7 +82,7 @@ const Aboutaiec = () => {
   };
 
   const handleButtonClick = (path) => {
-    navigate(path); // Navigate to the provided path
+    navigate(path);
   };
 
   const buttons = [
@@ -104,9 +101,9 @@ const Aboutaiec = () => {
       {/* Banner Section */}
       <div style={bannerStyle}>
         <img
-          src="/path/to/your/banner-image.jpg"
+          src="/assets/images/aus.jpeg"
           alt="Banner"
-          style={{ width: "100%", height: "400px", objectFit: "cover" }}
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />
       </div>
 
@@ -137,9 +134,9 @@ const Aboutaiec = () => {
         <p style={paragraphStyle}>
           Our premise is simple: International education thrives when students
           are matched with the right country, with the right course, with the
-          right support system. AIEC is the only organisation by students’
-          sides, from their first course search, until they have found their
-          feet in their new country.
+          right support system. AIEC is the only organisation by students’ sides,
+          from their first course search, until they have found their feet in their
+          new country.
         </p>
         <p style={paragraphStyle}>
           Our team of trusted education experts across the world, combined with
@@ -169,13 +166,15 @@ const Aboutaiec = () => {
               }
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={handleMouseLeave}
-              onClick={() => handleButtonClick(button.path)} // Navigate to the corresponding path
+              onClick={() => handleButtonClick(button.path)}
             >
               {button.text}
             </button>
           ))}
         </div>
       </div>
+
+      {/* Form and Footer Section */}
       <FormPage />
       <Footer />
     </div>
