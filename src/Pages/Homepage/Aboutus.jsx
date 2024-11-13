@@ -36,7 +36,7 @@ const AIECGlobal = () => {
   };
   const navigate = useNavigate();
 
-  const topImageStyle = {
+  const bannerStyle = {
     width: "100%",
     height: "auto",
     maxHeight: "500px",
@@ -163,6 +163,7 @@ const AIECGlobal = () => {
   };
 
   return (
+    <>
     <div style={containerStyle}>
       <div
         style={{
@@ -175,7 +176,7 @@ const AIECGlobal = () => {
         <img
           src={`${process.env.PUBLIC_URL}/assets/images/top.png`}
           alt="Top Image"
-          style={topImageStyle}
+          style={bannerStyle}
         />
       </div>
       <div style={textContainerStyle}>
@@ -336,8 +337,10 @@ const AIECGlobal = () => {
       </div>
 
       <FormPage />
-      <Footer style={footerStyle} />
+      
     </div>
+    <Footer style={footerStyle} />
+    </>
   );
 };
 
