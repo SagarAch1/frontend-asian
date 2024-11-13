@@ -197,15 +197,12 @@ const Navbar = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item as={Link} to="/profile">
-                  Profile
-                </Dropdown.Item>
+                
                 <Dropdown.Item as={Link} to="/contact">
                   Report 
                 </Dropdown.Item>
-                <Dropdown.Item as={Link} to="/userorder">
-                  My Order
-                </Dropdown.Item>
+                
+               
                 <Dropdown.Item onClick={handleLogout}>Logout</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

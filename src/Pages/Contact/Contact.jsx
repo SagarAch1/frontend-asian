@@ -100,12 +100,8 @@ const Contact = () => {
     }
   };
 
-  // Footer container defined outside of the return
-  const footerContainer = (
-    <div style={styles.footerContainer}>
-      <Footer />
-    </div>
-  );
+ 
+ 
 
   return (
     <div style={styles.container}>
@@ -186,7 +182,7 @@ const Contact = () => {
         </div>
       </div>
       <WhyChooseAiec />
-      {footerContainer}
+      
     </div>
   );
 };
