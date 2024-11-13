@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { getSlidersApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
-import FormPage from "./FormPage";
-import BelowSliderSection from "./BelowSliderSection";
-import WhyChooseAiec from "./WhyChooseAiec";
-import Youshouldknow from "./YouShouldknow";
-import Destination from "./Destination";
-import ServicesSection from "./Services";
 import StudyAbroadSteps from "./Abroadsteps";
+import BelowNavbar from "./BelowNavbar";
+import BelowSliderSection from "./BelowSliderSection";
+import Destination from "./Destination";
+import FormPage from "./FormPage";
 import VideoSection from "./Homevedio";
 import PopularCourses from "./Popularcourses";
-import BelowNavbar from "./BelowNavbar";
+import ServicesSection from "./Services";
+import WhyChooseAiec from "./WhyChooseAiec";
+import Youshouldknow from "./YouShouldknow";
 
 const Homepage = () => {
   const [sliders, setSliders] = useState([]);
@@ -78,7 +78,7 @@ const Homepage = () => {
           className="carousel slide"
           style={carouselStyle}
           data-bs-ride="carousel"
-          data-bs-interval="2000"
+          data-bs-interval="4000"
         >
           <div className="carousel-indicators">
             {sliders.map((_, index) => (
@@ -103,7 +103,11 @@ const Homepage = () => {
                   src={`http://localhost:5000/sliders/${slider.sliderImage}`}
                   className="d-block w-100"
                   alt={slider.name}
-                  style={{ height: "500px", objectFit: "cover", }}
+                  style={{
+                    height: "500px",
+                    objectFit: "cover", // Ensures the image covers the container
+                    objectPosition: "center", // Centers the image
+                  }}
                 />
                 <div className="carousel-caption d-none d-md-block">
                   <h5>{slider.name}</h5>
@@ -141,12 +145,7 @@ const Homepage = () => {
         {/* Navigation Menu */}
         <nav style={navStyle}>
           <ul style={navListStyle}>
-            {[
-              "courses",
-              "scholarships",
-              "universities",
-              
-            ].map((section) => (
+            {["courses", "scholarships", "universities"].map((section) => (
               <li key={section} style={navItemStyle}>
                 <a
                   href="#"
