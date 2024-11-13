@@ -143,6 +143,7 @@ const Moneytransfer = () => {
   };
 
   return (
+    <>
     <Container>
       {/* Header with Title and Subtitle */}
       <Header>
@@ -297,8 +298,10 @@ const Moneytransfer = () => {
         )}
       </SectionContainer>
 
-      <Footer />
+     
     </Container>
+    <Footer />
+    </>
   );
 };
 
