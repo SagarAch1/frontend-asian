@@ -14,7 +14,7 @@ import Youshouldknow from "./YouShouldknow";
 
 const Homepage = () => {
   const [sliders, setSliders] = useState([]);
-  const [activeSection, setActiveSection] = useState("courses"); // Set default section
+  const [activeSection, setActiveSection] = useState("courses");
 
   useEffect(() => {
     getSlidersApi()
@@ -35,7 +35,9 @@ const Homepage = () => {
   };
 
   const carouselStyle = {
-    width: "100%",
+    width: "100%", // Fixed width in pixels
+    height: "500px", // Fixed height
+    margin: "0 auto", // Centering the carousel
     position: "relative",
   };
 
@@ -104,7 +106,8 @@ const Homepage = () => {
                   className="d-block w-100"
                   alt={slider.name}
                   style={{
-                    height: "500px",
+                    height: "500px", // Fixed height
+                    width: "100%", // Makes image cover the defined carousel width
                     objectFit: "cover", // Ensures the image covers the container
                     objectPosition: "center", // Centers the image
                   }}

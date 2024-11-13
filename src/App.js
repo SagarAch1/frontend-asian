@@ -64,7 +64,7 @@ import Event from "./Pages/Events/CreateEvent";
 import AIECGlobal from "./Pages/Homepage/Aboutus";
 
 import Homepage from "./Pages/Homepage/Homepage";
-import Myorder from "./Pages/Homepage/Myorder";
+
 import UserOrder from "./Pages/Homepage/Userorder";
 
 import Book from "./Pages/BookClass/Book";
@@ -74,7 +74,7 @@ import Message from "./Pages/Message/Message";
 
 import Bookclass from "./Pages/BookClass/Bookclass";
 
-import Thankyou from "./Pages/Payment/Thankyou";
+
 
 import FormPage from "./Pages/Homepage/FormPage";
 
@@ -392,8 +392,8 @@ function App() {
         <Route path="/messages" element={<Message />} />
         <Route path="/book" element={<Book />} />
 
-        <Route path="/thankyou" element={<Thankyou />} />
-        <Route path="/myorder" element={<Myorder />} />
+
+
 
         <Route path="/userorder" element={<UserOrder />} />
         <Route path="/userprofile" element={<Profile />} />
