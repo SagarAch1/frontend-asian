@@ -10,7 +10,7 @@ const DigitalProduction = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/digi.jpg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",

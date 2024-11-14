@@ -10,7 +10,7 @@ const Generalhistory = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/creative.png)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",

@@ -11,7 +11,7 @@ const Biochemistry = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/finalbanner.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ve.webp)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",

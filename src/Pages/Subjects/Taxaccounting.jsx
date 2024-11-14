@@ -10,7 +10,7 @@ const TaxAccounting = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/20160618084847-TaxExemption.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",

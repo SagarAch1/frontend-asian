@@ -10,12 +10,12 @@ const Cosmetology = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/beauty.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
     width: "1900px",
-    color: "white",
+    color: "black",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

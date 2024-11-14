@@ -10,7 +10,7 @@ const PrimaryEducation = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/speech.jpg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",

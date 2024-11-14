@@ -9,12 +9,12 @@ const IndustrialDesign = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/idesign.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
     width: "1900px",
-    color: "white",
+    color: "black",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

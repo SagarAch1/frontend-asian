@@ -10,12 +10,12 @@ const Masscommunication = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/mass.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
     width: "1900px",
-    color: "white",
+    color: "black",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",

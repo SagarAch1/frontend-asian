@@ -10,7 +10,7 @@ const Earthscience = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/rehabi.jpeg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
