@@ -37,6 +37,9 @@ jobs:
       - name: Check Yarn Installation
         run: yarn --version
 
+      - name: Set CI to false
+        run: echo "CI=false" >> $GITHUB_ENV
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -61,12 +64,11 @@ jobs:
       - name: Build 
         run: ${{ steps.detect-package-manager.outputs.runner }} build
 
-
   deploy:
-      needs: [build]
-      runs-on: ubuntu-latest
-      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-      steps:
+    needs: [build]
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
       - name: SSH and Deploy to Asian.edu
         uses: appleboy/ssh-action@master
         with:
@@ -81,7 +83,7 @@ jobs:
             cd ~/Asian.edu/frontend-asian
             rm yarn.lock
             rm -r node_modules
-            git pull origin master
+            git pull origin main
             yarn install
             yarn build
             pm2 restart Frontend
