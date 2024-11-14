@@ -96,7 +96,7 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a href="#!" style={{ color: "#fff", textDecoration: "none" }}>
+              <a href="ourteam" style={{ color: "#fff", textDecoration: "none" }}>
                 Our Team
               </a>
             </p>

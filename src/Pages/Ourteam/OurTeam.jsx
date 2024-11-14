@@ -110,10 +110,12 @@ const OurTeam = () => {
             <h3 style={styles.memberInfoName}>Bhisma Rayamaji</h3>
             <h4 style={styles.memberInfoTitle}>Chief Executive Officer</h4>
             <p style={styles.memberInfoDescription}>
-              As the CEO of Aice Global, I am committed to ensuring that every
+              As CEO of AIEC Global, I'm dedicated to guiding students toward
+              their international education goals with expertise and support.
+              {/* As the CEO of Aice Global, I am committed to ensuring that every
               student we guide receives the highest level of expertise and
               personalized support to achieve their international education
-              goals.
+              goals. */}
             </p>
           </div>
         </div>
@@ -131,8 +133,24 @@ const OurTeam = () => {
             <h3 style={styles.memberInfoName}>Aakash Shrestha</h3>
             <h4 style={styles.memberInfoTitle}>Branch Manager</h4>
             <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              As Branch Manager, I'm committed to helping students reach their
+              study abroad goals with dedicated support and guidance.
+            </p>
+          </div>
+        </div>
+        <div style={styles.teamMember}>
+          <div style={styles.memberPhoto}>
+            <img
+              src={`${process.env.PUBLIC_URL}/assets/images/me.jpg`}
+              alt="Sagar Acharya"
+              style={styles.memberPhotoImg}
+            />
+          </div>
+          <div style={styles.memberInfo}>
+            <h3 style={styles.memberInfoName}>Sagar Acharya</h3>
+            <h4 style={styles.memberInfoTitle}>IT Head</h4>
+            <p style={styles.memberInfoDescription}>
+            As IT Head, I ensure our technology supports seamless, secure services, empowering students on their journey to global education.
             </p>
           </div>
         </div>
@@ -150,8 +168,8 @@ const OurTeam = () => {
             <h3 style={styles.memberInfoName}>Garima Bista</h3>
             <h4 style={styles.memberInfoTitle}>Head Counselor</h4>
             <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              As Head Counselor, I'm dedicated to guiding students with expert
+              advice and personalized support for their study abroad journey.
             </p>
           </div>
         </div>
@@ -167,15 +185,16 @@ const OurTeam = () => {
             <h3 style={styles.memberInfoName}>Puja Dahal</h3>
             <h4 style={styles.memberInfoTitle}>Academic Head</h4>
             <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              As Academic Head, I'm focused on ensuring students have access to
+              quality guidance and resources to excel in their international
+              studies.
             </p>
           </div>
         </div>
 
         {/* Member 4 */}
         <div style={styles.teamMember}>
-          <div style={styles.memberPhoto}> 
+          <div style={styles.memberPhoto}>
             <img
               src={`${process.env.PUBLIC_URL}/assets/images/dorna.jpg`}
               alt="Dorna Lal Gaire"
@@ -188,79 +207,6 @@ const OurTeam = () => {
             <p style={styles.memberInfoDescription}>
               We believe in opening doors to global education, providing
               personalized support every step of the way at Aice Global.
-            </p>
-          </div>
-        </div>
-
-        {/* Member 5 (Scroll to see) */}
-        <div style={styles.teamMember}>
-          <div style={styles.memberPhoto}>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/dimpal.jpg`}
-              alt="Dimpal Shrestha "
-              style={styles.memberPhotoImg}
-            />
-          </div>
-          <div style={styles.memberInfo}>
-            <h3 style={styles.memberInfoName}>Dimpal Shrestha </h3>
-            <h4 style={styles.memberInfoTitle}>Application officer</h4>
-            <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        {/* Member 6 (Scroll to see) */}
-        <div style={styles.teamMember}>
-          <div style={styles.memberPhoto}>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/mona.jpg`}
-              alt="Monalisa Rai "
-              style={styles.memberPhotoImg}
-            />
-          </div>
-          <div style={styles.memberInfo}>
-            <h3 style={styles.memberInfoName}>Monalisa Rai </h3>
-            <h4 style={styles.memberInfoTitle}>Application officer</h4>
-            <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        {/* Member 7 (Scroll to see) */}
-        <div style={styles.teamMember}>
-          <div style={styles.memberPhoto}>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/khushi.jpg`}
-              alt="Khusi Khadka Magar "
-              style={styles.memberPhotoImg}
-            />
-          </div>
-          <div style={styles.memberInfo}>
-            <h3 style={styles.memberInfoName}>Khusi Khadka Magar </h3>
-            <h4 style={styles.memberInfoTitle}>Front Desk Officer</h4>
-            <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-        {/* Member 8 (Scroll to see) */}
-        <div style={styles.teamMember}>
-          <div style={styles.memberPhoto}>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/priti.jpg`}
-              alt="Pritee Bhujel"
-              style={styles.memberPhotoImg}
-            />
-          </div>
-          <div style={styles.memberInfo}>
-            <h3 style={styles.memberInfoName}>Pritee Bhujel </h3>
-            <h4 style={styles.memberInfoTitle}>GTE Officer</h4>
-            <p style={styles.memberInfoDescription}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
