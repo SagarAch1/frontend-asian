@@ -9,6 +9,7 @@ const BlogList = () => {
   };
 
   return (
+    <>
     <div className="blog-list-container">
       {/* Header Section */}
       <div className="header-section">
@@ -447,8 +448,10 @@ const BlogList = () => {
 
       <FormPage />
 
-      <Footer />
+     
     </div>
+    <Footer />
+    </>
   );
 };
 

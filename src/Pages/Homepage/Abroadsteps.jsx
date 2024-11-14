@@ -21,11 +21,12 @@ const StudyAbroadSteps = () => {
     justifyContent: "center",
     width: "100%",
     maxWidth: "1200px",
+    marginTop: "-7px",
   };
 
   const imageStyle = {
     width: "400px",
-    height: "450px",
+    height: "400px",
   };
 
   const stepsContainerStyle = {

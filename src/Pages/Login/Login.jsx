@@ -125,11 +125,11 @@ const Login = () => {
               </div>
               {passwordError && <p style={styles.errorText}>{passwordError}</p>}
             </div>
-            <div style={styles.additionalLinks}>
+            {/* <div style={styles.additionalLinks}>
               <Link to="/forgot-password" style={styles.link}>
                 Forgot password?
               </Link>
-            </div>
+            </div> */}
             <button type="submit" style={styles.submitButton}>
               Sign in
             </button>

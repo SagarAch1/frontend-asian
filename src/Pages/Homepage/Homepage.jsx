@@ -39,6 +39,7 @@ const Homepage = () => {
     height: "500px", // Fixed height
     margin: "0 auto", // Centering the carousel
     position: "relative",
+    marginTop: "-37px",
   };
 
   const navStyle = {
