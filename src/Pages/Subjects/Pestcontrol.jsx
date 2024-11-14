@@ -10,7 +10,7 @@ const PestControl = () => {
   };
 
   const sectionStyle = {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/new.jpeg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/Agriculture.jpg)`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
@@ -21,6 +21,7 @@ const PestControl = () => {
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+
     padding: "50px",
     marginTop: "82px",
   };
