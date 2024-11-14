@@ -80,9 +80,9 @@ jobs:
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             nvm use system
-            cd ~/Asian.edu/frontend-asian
-            rm yarn.lock
-            rm -r node_modules
+            cd ~/asian.edu/frontend-asian
+            # rm yarn.lock
+            # rm -r node_modules
             git pull origin main
             yarn install
             yarn build
