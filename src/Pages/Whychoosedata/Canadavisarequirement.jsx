@@ -26,7 +26,7 @@ const Canadavisarequirementt = () => {
       position: "absolute",
       bottom: "20px",
       left: "50px",
-      color: "white",
+      color: "black",
       fontSize: "32px",
       fontWeight: "bold",
     },
@@ -111,7 +111,7 @@ const Canadavisarequirementt = () => {
       {/* Header with full-width image */}
       <header style={styles.header}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`} // Replace with the correct image path
+          src={`${process.env.PUBLIC_URL}/assets/images/flagcanada.jpeg`} // Replace with the correct image path
           alt="Header"
           style={styles.headerImage}
         />

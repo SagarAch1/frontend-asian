@@ -131,7 +131,7 @@ const Studentvisaapplication = () => {
       {/* Banner Section */}
       <div style={bannerStyle}>
         <img
-          src="/assets/images/aus.jpeg"
+          src="/assets/images/allf.jpeg"
           alt="Banner"
           style={{ width: "100%", height: "100%", objectFit: "cover" }}
         />

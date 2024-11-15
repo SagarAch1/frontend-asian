@@ -156,7 +156,7 @@ const OfficeLocator = () => {
     <div style={styles.container} onClick={handleClickOutside}>
       <div style={styles.topImageContainer}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/is.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/allf.jpeg`}
           alt="Top Image"
           style={styles.topImage}
         />
