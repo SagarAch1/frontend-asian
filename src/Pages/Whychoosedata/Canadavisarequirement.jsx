@@ -150,17 +150,18 @@ const Canadavisarequirementt = () => {
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
             <p>
-              In Canada, a student visa is often referred to as a study permit.
+              In Canada, the document allowing you to study as an international
+              student is commonly called a study permit.
             </p>
             <p>
-              It is important that you make sure you have the correct study
-              permit for your international studies before you leave for Canada.
+              It’s crucial to obtain the right permit for studying in Canada
+              before your departure.
             </p>
           </Element>
           <div style={styles.videoContainer}>
             <iframe
               style={styles.iframe}
-              src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
+              src="https://www.youtube.com/embed/KeNwIImEsPU?rel=0" // Replace with the correct YouTube video ID
               title="YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -172,45 +173,51 @@ const Canadavisarequirementt = () => {
               Where to find the right information
             </h2>
             <p>
-              As study permit conditions can change quickly, you will need to
-              make sure you follow the most up-to-date advice.
+              Since requirements for study permits may change, it’s essential to
+              follow the latest guidance.
             </p>
             <p>
-            The best place to find the latest information is on the{" "}
+              The most reliable place to get up-to-date information is the{" "}
               <a
                 href="https://www.canada.ca/en/immigration-refugees-citizenship.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: "#007bff", textDecoration: "none" }}
               >
-                 Canadian immigration authority website,
-              </a>.
-              which is called the Immigration, Refugees and Citizenship Canada (IRCC).
+                Canadian immigration authority website,
+              </a>
+              officially known as Immigration, Refugees and Citizenship Canada
+              (IRCC).
             </p>
             <p>
-              If you need help in finding the relevant IRCC information, your
-              IDP counsellor can direct you to it. Your counsellor can also help
-              you find authorised immigration representatives, if required.
+              If you need assistance locating relevant IRCC information, your
+              AIEC counsellor can help you. They can also connect you with
+              authorized immigration representatives if needed.
             </p>
           </Element>
-           
 
           <Element name="Documents-required">
             <h2 style={styles.sectionTitle}>We can help you</h2>
             <p>
-            Often, you will have to translate and courier your documents.  
+              Sometimes, translation and courier services are required for your
+              documents.
             </p>
             <p>
-            IDP can help you through this as well so that you have less paperwork to keep track of.  
+              AIEC can assist you with these tasks, reducing the amount of
+              paperwork you need to manage.
             </p>
             <p>
-            We offer free visa support to students who wish to study in Canada. 
+              We offer free support with the visa application process for
+              students planning to study in Canada.
             </p>
             <p>
-            We will also direct you to the IRCC and other relevant websites to ensure that you have the latest information on visa requirements.  
+              Additionally, we can guide you to the IRCC website and other
+              resources to ensure you have the most current visa requirement
+              details.
             </p>
             <p>
-            Our commitment is to help you in your study abroad journey. 
+              Our goal is to support you throughout your journey to study
+              abroad.
             </p>
           </Element>
 
@@ -218,7 +225,7 @@ const Canadavisarequirementt = () => {
           <div style={styles.signupSection}>
             <h2>One account for all your study abroad needs</h2>
             <p>
-              Sign up to get personalized information, study plans, and more.
+              Register to receive tailored information, study plans, and more.
             </p>
             <button
               className="signup-button"

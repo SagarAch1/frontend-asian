@@ -174,13 +174,13 @@ const Afterreceivingoffer = () => {
           <p>
             Congratulations! An accepted university application means you’re one
             step closer to achieving your dream of studying abroad. It’s an
-            exciting moment, but it’s also common to feel a bit anxious. Our team
-            is here to assist you at every stage. Speak with one of our skilled
-            counselors for guidance after receiving your offer. We can also
-            support you with visa applications, money transfers, health insurance,
-            and accommodation before you move. Relax, take a deep breath, and make
-            your decision confidently knowing we are here to support you at every
-            step.
+            exciting moment, but it’s also common to feel a bit anxious. Our
+            team is here to assist you at every stage. Speak with one of our
+            skilled counselors for guidance after receiving your offer. We can
+            also support you with visa applications, money transfers, health
+            insurance, and accommodation before you move. Relax, take a deep
+            breath, and make your decision confidently knowing we are here to
+            support you at every step.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -205,8 +205,8 @@ const Afterreceivingoffer = () => {
         </div>
       </div>
 
-     {/* Additional Section */}
-     <div style={styles.additionalSection}>
+      {/* Additional Section */}
+      <div style={styles.additionalSection}>
         <h2 style={styles.additionalTitle}>
           Next steps after receiving an offer
         </h2>
@@ -227,10 +227,12 @@ const Afterreceivingoffer = () => {
           </p>
         </div>
         <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>3. Pay admission and tuition fees</h3>
+          <h3 style={styles.listItemTitle}>
+            3. Pay admission and tuition fees
+          </h3>
           <p>
-            Congratulations! Need assistance with fund transfers? We are here
-            to support you through the process.
+            Congratulations! Need assistance with fund transfers? We are here to
+            support you through the process.
           </p>
         </div>
         <div style={styles.listItem}>
@@ -248,59 +250,65 @@ const Afterreceivingoffer = () => {
         </div>
       </div>
       <div style={styles.additionalSection}>
-  <h2 style={styles.additionalTitle}>Commonly asked questions</h2>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>
-      Does having an acceptance offer guarantee a student visa?
-    </h3>
-    <p>
-      While having an acceptance offer increases your chances of securing a student
-      visa, it does not guarantee approval. Visa approval depends on various factors
-      such as your application, eligibility criteria, and compliance with immigration laws.
-      IDP is here to assist you with your visa process. Contact our expert counsellors
-      to maximize your chances of a successful visa application.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>
-      Can I reapply if I decline an offer?
-    </h3>
-    <p>
-      Yes, you can usually reapply to the same university or program at a later time.
-      However, make sure to review the university’s reapplication guidelines, deadlines,
-      and any changes in admission criteria when considering your next application.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>
-      Do I need health insurance before applying for a student visa?
-    </h3>
-    <p>
-      Health insurance requirements differ by country. In some countries, like Australia,
-      you’ll need health coverage before applying for a student visa. Contact an IDP counsellor
-      for detailed information about health insurance for studying abroad.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>
-      How can I connect with students from different universities to learn about their experiences?
-    </h3>
-    <p>
-      Gain insights from IDP students studying at international universities by checking out
-      our #AskIDP videos and articles on our website and the IDP Live app.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>What if I'm not accepted?</h3>
-    <p>
-      Don’t be disheartened if you’re not accepted. There are many other courses that may
-      still be a good fit for you. Reach out to an IDP counsellor to discuss your study
-      objectives, and they’ll connect you with the right program, country, university,
-      and even scholarships. They can also guide you toward pathway programs that can
-      lead you to your desired course.
-    </p>
-  </div>
-</div>
+        <h2 style={styles.additionalTitle}>Commonly asked questions</h2>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            Does having an acceptance offer guarantee a student visa?
+          </h3>
+          <p>
+            While having an acceptance offer increases your chances of securing
+            a student visa, it does not guarantee approval. Visa approval
+            depends on various factors such as your application, eligibility
+            criteria, and compliance with immigration laws. AIEC is here to
+            assist you with your visa process. Contact our expert counsellors to
+            maximize your chances of a successful visa application.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            Can I reapply if I decline an offer?
+          </h3>
+          <p>
+            Yes, you can usually reapply to the same university or program at a
+            later time. However, make sure to review the university’s
+            reapplication guidelines, deadlines, and any changes in admission
+            criteria when considering your next application.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            Do I need health insurance before applying for a student visa?
+          </h3>
+          <p>
+            Health insurance requirements differ by country. In some countries,
+            like Australia, you’ll need health coverage before applying for a
+            student visa. Contact an AIEC counsellor for detailed information
+            about health insurance for studying abroad.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            How can I connect with students from different universities to learn
+            about their experiences?
+          </h3>
+          <p>
+            Gain insights from AIEC students studying at international
+            universities by checking out our #AskAIEC videos and articles on our
+            website and the AIEC Live app.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>What if I'm not accepted?</h3>
+          <p>
+            Don’t be disheartened if you’re not accepted. There are many other
+            courses that may still be a good fit for you. Reach out to an AIEC
+            counsellor to discuss your study objectives, and they’ll connect you
+            with the right program, country, university, and even scholarships.
+            They can also guide you toward pathway programs that can lead you to
+            your desired course.
+          </p>
+        </div>
+      </div>
 
       <FormPage />
       <Footer />

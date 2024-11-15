@@ -115,7 +115,9 @@ const Australiavisarequirement = () => {
           alt="Header"
           style={styles.headerImage}
         />
-        <div style={styles.headerTitle}>Australia Student Visa Requirements</div>
+        <div style={styles.headerTitle}>
+          Australia Student Visa Requirements
+        </div>
       </header>
 
       <div style={styles.content}>
@@ -140,8 +142,8 @@ const Australiavisarequirement = () => {
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
             <p>
-              We can explain the visa process for you to make it a little
-              easier.
+              We are here to simplify the visa process for you and make it more
+              understandable.
             </p>
 
             {/* YouTube Video Section */}
@@ -159,26 +161,26 @@ const Australiavisarequirement = () => {
 
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>
-              Documents for your visa application
+              Documents required for your visa application
             </h2>
             <ul>
               <li>
-                Visa application form (which your counsellor will help you
-                complete)
+                Visa application form (assistance from your counselor will be
+                provided)
               </li>
               <li>Visa application fee.</li>
               <li>Four passport-sized photographs</li>
               <li>Valid passport</li>
               <li>Electronic Confirmation of Enrolment</li>
               <li>
-                IELTS result (your counsellor can book your place in an English
-                test)
+                IELTS result (your counselor can schedule an English test for
+                you)
               </li>
               <li>Academic and work experience documents</li>
               <li>Statement of Purpose</li>
               <li>
-                Evidence of financial ability (tuition fees, living expenses,
-                expenses for dependents, return airfare)
+                Proof of financial ability (tuition fees, living costs, expenses
+                for dependents, return airfare)
               </li>
             </ul>
           </Element>
@@ -187,7 +189,8 @@ const Australiavisarequirement = () => {
           <div style={styles.signupSection}>
             <h2>One account for all your study abroad needs</h2>
             <p>
-              Sign up to get personalized information, study plans, and more.
+              Register now to receive customized information, study plans, and
+              more.
             </p>
             <button
               className="signup-button"

@@ -170,7 +170,18 @@ const Howdoiapply = () => {
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Kickstart your application with confidence</h2>
           <p>
-            Congratulations on narrowing down your ideal university and course! The next step is to submit your application. You can apply to as many universities as you want, but we suggest focusing on your top three choices. The AIEC Live app will assist you in completing the application forms and gathering necessary documents. Simply fill out the application form once to apply to all your selected courses, with access to expert guidance throughout the process. Be sure to take note of the intake dates, deadlines, and required documents such as application forms, academic transcripts, letters of recommendation, and IELTS test results. Whether you use the app or work with a counselor, we’ll be here to guide you every step of the way.
+            Congratulations on narrowing down your ideal university and course!
+            The next step is to submit your application. You can apply to as
+            many universities as you want, but we suggest focusing on your top
+            three choices. The AIEC Live app will assist you in completing the
+            application forms and gathering necessary documents. Simply fill out
+            the application form once to apply to all your selected courses,
+            with access to expert guidance throughout the process. Be sure to
+            take note of the intake dates, deadlines, and required documents
+            such as application forms, academic transcripts, letters of
+            recommendation, and IELTS test results. Whether you use the app or
+            work with a counselor, we’ll be here to guide you every step of the
+            way.
           </p>
         </div>
         <div style={styles.videoContainer}>
@@ -185,7 +196,8 @@ const Howdoiapply = () => {
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
           <p>
-            Create your profile to unlock personalized recommendations, expedited applications, and much more.
+            Create your profile to unlock personalized recommendations,
+            expedited applications, and much more.
           </p>
           <button style={styles.signupButton} onClick={handleSignUpClick}>
             Sign up
@@ -228,7 +240,8 @@ const Howdoiapply = () => {
           </h3>
           <p>
             Most courses require proof of your English language proficiency.
-            IELTS is a popular choice among test takers. Learn more about preparing for IELTS.
+            IELTS is a popular choice among test takers. Learn more about
+            preparing for IELTS.
           </p>
           <a href="#" style={styles.listItemLink}>
             Why IELTS with AIEC | Prepare for IELTS | Book IELTS
@@ -246,32 +259,65 @@ const Howdoiapply = () => {
         </div>
       </div>
       <div style={styles.additionalSection}>
-  <h2 style={styles.additionalTitle}>Frequently Asked Questions</h2>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>What is the process to apply to foreign universities?</h3>
-    <p>
-      After selecting the courses you want to apply for, you can begin your application via the AIEC Live app. Start by clicking the ‘Apply with IDP’ button for your first choice of course. You can fill out the application form at your convenience, with your progress automatically saved. If you run into difficulties, you can submit an incomplete form or contact your AIECcounsellor. Once the form is completed, you can reuse it for additional applications. You'll also be guided to upload any required documents. Once your counsellor confirms all your details and documents, they will proceed with submitting your application to the university.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>How do I check if I can get in before I apply?</h3>
-    <p>
-      If the course you’re considering has the AIEC FastLane tag, you can check your likelihood of acceptance even before submitting your application. Start by creating an AIEC account and completing your academic profile. If you meet the course’s entry requirements, you’ll receive an Offer in Principle from the university. With this offer, your application will be processed 2 to 3 times faster!
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>How can I improve my acceptance chances?</h3>
-    <p>
-      To increase your chances of acceptance, we recommend narrowing down your top three course choices. Ensure you’ve reviewed all entry criteria, deadlines, and intake dates for your chosen courses. Complete your application form with precision. Our experienced counsellors will evaluate your application and documents, ensuring they are polished and optimized to improve your acceptance chances.
-    </p>
-  </div>
-  <div style={styles.listItem}>
-    <h3 style={styles.listItemTitle}>Who can help me navigate through the process?</h3>
-    <p>
-      The AIEC Live app is your go-to resource for starting the application process. It offers easy-to-follow tools that guide you through each step, allowing you to complete your application at your own pace. If you need assistance, our expert counsellors are available to support you. They will review your application and documents before submitting them directly to the university on your behalf.
-    </p>
-  </div>
-</div>
+        <h2 style={styles.additionalTitle}>Frequently Asked Questions</h2>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            What is the process to apply to foreign universities?
+          </h3>
+          <p>
+            After selecting the courses you want to apply for, you can begin
+            your application via the AIEC Live app. Start by clicking the ‘Apply
+            with AIEC’ button for your first choice of course. You can fill out
+            the application form at your convenience, with your progress
+            automatically saved. If you run into difficulties, you can submit an
+            incomplete form or contact your AIECcounsellor. Once the form is
+            completed, you can reuse it for additional applications. You'll also
+            be guided to upload any required documents. Once your counsellor
+            confirms all your details and documents, they will proceed with
+            submitting your application to the university.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            How do I check if I can get in before I apply?
+          </h3>
+          <p>
+            If the course you’re considering has the AIEC FastLane tag, you can
+            check your likelihood of acceptance even before submitting your
+            application. Start by creating an AIEC account and completing your
+            academic profile. If you meet the course’s entry requirements,
+            you’ll receive an Offer in Principle from the university. With this
+            offer, your application will be processed 2 to 3 times faster!
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            How can I improve my acceptance chances?
+          </h3>
+          <p>
+            To increase your chances of acceptance, we recommend narrowing down
+            your top three course choices. Ensure you’ve reviewed all entry
+            criteria, deadlines, and intake dates for your chosen courses.
+            Complete your application form with precision. Our experienced
+            counsellors will evaluate your application and documents, ensuring
+            they are polished and optimized to improve your acceptance chances.
+          </p>
+        </div>
+        <div style={styles.listItem}>
+          <h3 style={styles.listItemTitle}>
+            Who can help me navigate through the process?
+          </h3>
+          <p>
+            The AIEC Live app is your go-to resource for starting the
+            application process. It offers easy-to-follow tools that guide you
+            through each step, allowing you to complete your application at your
+            own pace. If you need assistance, our expert counsellors are
+            available to support you. They will review your application and
+            documents before submitting them directly to the university on your
+            behalf.
+          </p>
+        </div>
+      </div>
 
       <FormPage />
       <Footer />

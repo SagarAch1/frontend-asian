@@ -152,99 +152,86 @@ const Newzelandvisarequirement = () => {
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
             <p>
-              The visa you need will depend on the type of study you want to do,
-              and how long you want to stay in New Zealand.
+              The type of visa you need will depend on the kind of study you
+              wish to pursue and the duration of your stay in New Zealand.
             </p>
             <p>
-              Having a valid passport and the right visa is key to a
-              trouble-free entry.
+              It is essential to have a valid passport and the appropriate visa
+              for a smooth entry into the country.
             </p>
             <p>
-              While studying in New Zealand, it's important to maintain your
-              Fee-Paying student status. This status relates to the purpose, or
-              reason why you came to New Zealand.
+              While studying in New Zealand, it's crucial to maintain your
+              status as a fee-paying student, which is linked to the reason you
+              came to New Zealand.
             </p>
           </Element>
           <div style={styles.videoContainer}>
-              <iframe
-                style={styles.iframe}
-                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" 
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <iframe
+              style={styles.iframe}
+              src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>Documentation</h2>
-            <p>
-              To apply for a visa, you must have the following documentation
-              ready:
-            </p>
+            <p>To apply for a visa, you will need the following documents:</p>
             <ul>
               <li>
-                A valid passport with a validity of at least three months after
-                your period of stay in New Zealand.
+                A valid passport, valid for at least three months beyond your
+                planned stay in New Zealand.
               </li>
               <li>
-                A letter of acceptance from a New Zealand education provider
-                that states the minimum course duration, total tuition fee and
-                whether the tuition fee is in domestic and foreign currency. The
-                course must be approved by the New Zealand Qualifications
-                Authority.
+                A letter of acceptance from a New Zealand educational provider,
+                including course details and tuition fees in both domestic and
+                foreign currency. The course should be accredited by the New
+                Zealand Qualifications Authority.
               </li>
             </ul>
-            <p>You may also need additional documentation such as:</p>
+            <p>Additional documentation may be required, such as:</p>
             <ul>
               <li>
-                Academic preparation documents such as transcripts, diplomas,
-                degrees or certificates.
+                Academic records like transcripts, diplomas, degrees, or
+                certificates.
               </li>
-              <li>Current application form Student Visa Application form.</li>
-              <li>Correct visa application fee.</li>
-              <li>Tuition fee receipt showing payment to date.</li>
+              <li>Completed Student Visa Application form.</li>
+              <li>Payment for the correct visa application fee.</li>
+              <li>Receipt of tuition fee payment.</li>
               <li>
-                Evidence that you have sufficient funds to cover your living
-                expenses throughout the periods of your stay. You will need to
-                show you have NZ 15,000 for a full year of study or NZ 1,250 per
-                month.
+                Proof of sufficient funds to cover living expenses for your
+                stay, such as NZD 15,000 for a full year or NZD 1,250 per month.
               </li>
             </ul>
-            <p>This may include:</p>
+            <p>Other potential documents include:</p>
             <ul>
               <li>Bank statements.</li>
               <li>
-                Financial undertaking by a sponsor to cover accommodation and
+                A financial guarantee from a sponsor covering accommodation and
                 living costs.
               </li>
-              <li>A scholarship program.</li>
+              <li>A scholarship offer.</li>
               <li>
-                Evidence that you are leaving New Zealand after the completion
-                of your course. This can be in the form of flight tickets,
-                however it is optional.
+                Evidence of plans to leave New Zealand after your studies, such
+                as flight bookings (optional).
               </li>
               <li>
-                A police certificate if you are aged 17 years or over and plan
-                to study for more than 24 months. A police certificate is a
-                document that is used as evidence of good character.
+                A police certificate if you are 17 years or older and planning
+                to study for more than two years.
               </li>
               <li>
-                An X-ray certificate - you will need to have a chest x-ray if
-                you are staying in New Zealand for more than six months, or if
-                you're a citizen of a country with a relatively high incidence
-                of tuberculosis, or if you've spent more than three months in
-                the last five years in a country with a relatively high
-                incidence of tuberculosis.
+                An X-ray certificate may be required if you stay for more than
+                six months or come from a high tuberculosis area.
               </li>
-              <li>Full medical examination.</li>
+              <li>A full medical exam.</li>
             </ul>
           </Element>
 
           <Element name="Documents-required">
             <h2 style={styles.sectionTitle}>Find out more</h2>
             <p>
-              You can find out more about each of the different types of visas
-              and how to apply on the{" "}
+              Learn more about the different visa types and how to apply on the{" "}
               <a
                 href="https://www.immigration.govt.nz/new-zealand-visas/options/study"
                 target="_blank"
@@ -252,7 +239,8 @@ const Newzelandvisarequirement = () => {
                 style={{ color: "#007bff", textDecoration: "none" }}
               >
                 New Zealand Government's Immigration website
-              </a>.
+              </a>
+              .
             </p>
           </Element>
 
@@ -260,7 +248,7 @@ const Newzelandvisarequirement = () => {
           <div style={styles.signupSection}>
             <h2>One account for all your study abroad needs</h2>
             <p>
-              Sign up to get personalized information, study plans, and more.
+              Sign up to receive tailored information, study plans, and more.
             </p>
             <button
               className="signup-button"
