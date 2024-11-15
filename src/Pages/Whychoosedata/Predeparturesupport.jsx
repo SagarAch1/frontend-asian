@@ -99,10 +99,10 @@ const Predeparturesupport = () => {
   };
 
   const visaButtons = [
-    { text: "Student health cover", path: "/usa-visa" },
+    { text: "Student health cover", path: "/formpage" },
     {
       text: "Accommodation services",
-      path: "/uk-visa",
+      path: "/formpage",
     },
     {
       text: "Guardianship referral",
@@ -126,76 +126,77 @@ const Predeparturesupport = () => {
 
   return (
     <div style={containerStyle}>
-    {/* Banner Section */}
-    <div style={bannerStyle}>
-      <img
-        src="/assets/images/allf.jpeg"
-        alt="Banner"
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
-    </div>
+      {/* Banner Section */}
+      <div style={bannerStyle}>
+        <img
+          src="/assets/images/allf.jpeg"
+          alt="Banner"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </div>
       {/* Content Section */}
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Pre-departure support by AIEC</h2>
         <p style={subtitleStyle}>
-          We're dedicated to providing unwavering support throughout your entire
-          study abroad journey. Effective preparation for your overseas studies
-          is essential for your success. We aim to equip you with the necessary
-          tools to ensure an enriching study experience.
+          We are committed to providing continuous assistance throughout your
+          entire journey of studying abroad. Preparing properly for your
+          international education is critical to achieving success. Our mission
+          is to supply you with the essential resources that will contribute to
+          a rewarding study experience.
         </p>
         <p style={subtitleStyle}>
-          Our counselors are readily available to address your queries and calm
-          your nerves. We conduct pre-departure briefings year-round to aid you
-          in gearing up for life in your chosen destination.
+          Our advisors are always available to answer your questions and ease
+          any concerns. We conduct pre-departure orientations throughout the
+          year to help you prepare for life in your chosen destination.
         </p>
-        <h3 style={titleStyle}>Transitioning from visiting to belonging:</h3>
+        <h3 style={titleStyle}>Moving from visitor to resident:</h3>
         <p style={paragraphStyle}>
-          These pre-departure orientation sessions are designed to help you
-          navigate personal and cultural growth opportunities during your time
-          abroad.
+          These orientation sessions aim to guide you in making the most of
+          personal and cultural development opportunities while abroad.
         </p>
-        <p style={paragraphStyle}>You'll gain insights into:</p>
+        <p style={paragraphStyle}>You will learn about:</p>
         <p style={paragraphStyle}>
-          1. Local culture: Acquiring knowledge about local customs and culture
-          before arriving in your study country eases your transition and
-          fosters effective interactions with classmates from various
-          backgrounds.
+          1. Local culture: Gaining an understanding of local customs and
+          traditions before arriving helps ease your adjustment and promotes
+          positive interactions with classmates from diverse backgrounds.
         </p>
         <p style={paragraphStyle}>
-          2. Student life in your new country: Adapting to diverse learning
-          styles, classroom environments, and cultural norms is crucial for a
-          successful study experience.
+          2. Student life in your new country: Adapting to different educational
+          styles, classroom settings, and cultural practices is essential for a
+          successful academic experience.
         </p>
         <p style={paragraphStyle}>
-          3. Culture shock: Adjusting to a new culture may bring about culture
-          shock. We'll help you recognize it and provide techniques to cope and
-          thrive.
+          3. Coping with culture shock: Moving to a new culture may result in
+          culture shock. We will help you recognize this and offer strategies to
+          manage and thrive.
         </p>
         <p style={paragraphStyle}>
-          4. Support and well-being: Access to academic assistance, English
-          language support, visa guidance, and more is vital for international
-          students. Practical insights on:
+          4. Support systems: Having access to academic resources, English
+          language assistance, visa support, and other essential services is
+          crucial for international students. We provide practical guidance on
+          topics like:
         </p>
         <p style={paragraphStyle}>
-          5. Banking and foreign exchange: Setting up a local bank account upon
-          arrival ensures easy access to funds for tuition, accommodation, and
-          living expenses.
+          5. Banking and currency exchange: Setting up a local bank account as
+          soon as you arrive ensures that you can easily manage funds for
+          tuition, housing, and everyday expenses.
         </p>
         <p style={paragraphStyle}>
-          6.Working while studying and internship advice: Supplement your study
-          experience with work opportunities. We'll guide you on adhering to
-          student visa regulations and offer job-search tips.
+          6. Working while studying and internship opportunities: Enhance your
+          study experience with part-time jobs. We’ll assist you in
+          understanding student visa regulations and share tips for finding
+          employment.
         </p>
         <p style={paragraphStyle}>
           7. A network of advice: Connect with AIEC alumni and fellow students
-          to gather valuable insights and advice.
+          to gain valuable insights and advice.
         </p>
         <p style={paragraphStyle}>
-          We're committed to ensuring your seamless transition into a fulfilling
-          study abroad experience.
+          Our aim is to ensure a smooth transition for you as you embark on your
+          academic journey abroad.
         </p>
 
-        <h3 style={titleStyle}>Learn more about pre-departure support</h3>
+        <h3 style={titleStyle}>Find out more about pre-departure support</h3>
 
         {/* Visa Requirements Button Section */}
         <div style={buttonGroupStyle}>
@@ -209,14 +210,14 @@ const Predeparturesupport = () => {
               }
               onMouseEnter={() => handleMouseEnterVisa(index)}
               onMouseLeave={handleMouseLeaveVisa}
-              onClick={() => handleButtonClick(button.path)} 
+              onClick={() => handleButtonClick(button.path)}
             >
               {button.text}
             </button>
           ))}
         </div>
 
-        <h3 style={titleStyle}>Learn More</h3>
+        <h3 style={titleStyle}>Explore More</h3>
 
         {/* Learn More Button Section */}
         <div style={buttonGroupStyle}>

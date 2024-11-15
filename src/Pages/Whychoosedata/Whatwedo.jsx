@@ -90,7 +90,7 @@ const Whatwedo = () => {
     { label: "Study abroad counseling", path: "/studyabroadcounseling" },
     { label: "Pre-departure support", path: "/predeparturesupport" },
     { label: "What we do?", path: "/whatwedo" },
-    { label: "Events", path: "/events" },
+    { label: "Events", path: "/upcommingevents" },
     { label: "How to find a course", path: "/browsesubject" },
     {
       label: "Visa application assistance",
@@ -101,14 +101,14 @@ const Whatwedo = () => {
 
   return (
     <div style={containerStyle}>
-    {/* Banner Section */}
-    <div style={bannerStyle}>
-      <img
-        src="/assets/images/allf.jpeg"
-        alt="Banner"
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
-    </div>
+      {/* Banner Section */}
+      <div style={bannerStyle}>
+        <img
+          src="/assets/images/allf.jpeg"
+          alt="Banner"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </div>
       {/* Content Section */}
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>What we do</h2>
@@ -116,19 +116,19 @@ const Whatwedo = () => {
           Study abroad with someone who knows the way.
         </p>
         <p style={paragraphStyle}>
-          AIEC is a global leader in international educational services. We’ve
-          been in the industry for close to 50 years and know the best practices
-          to help you realise your dream of studying abroad.
+          AIEC is a recognized leader in international education services, with
+          nearly 50 years of experience. We have the expertise and insight to
+          assist you in fulfilling your aspirations of studying overseas.
         </p>
         <p style={paragraphStyle}>
-          Our popular services have helped thousands of students to execute
-          their plans to study abroad smoothly.
+          Thousands of students have benefited from our popular services, making
+          their study abroad plans run smoothly.
         </p>
         <p style={paragraphStyle}>
-          We provide a wide range of services to support your international
-          education journey. We are dedicated to you and your international
-          future from course information to career advice. Know how we support
-          and aid students to study and thrive abroad.
+          Our extensive range of services is designed to support every step of
+          your educational journey. From providing course information to
+          offering career guidance, we are committed to helping students thrive
+          in their international studies and beyond.
         </p>
 
         <h3 style={titleStyle}>Learn More</h3>

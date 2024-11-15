@@ -111,72 +111,72 @@ const Whychooseaiec = () => {
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Why choose AIEC</h2>
         <p style={subtitleStyle}>
-          AIEC is a global leader in international education services. We help
-          international students such as yourself to study in English speaking
+          AIEC is a leading organization in the field of international
+          education. We assist students like you in pursuing higher education in
+          English-speaking nations.
+        </p>
+        <p style={paragraphStyle}>
+          Our large network of friendly and knowledgeable professionals helps
+          you find and secure the perfect university or college where you can
+          excel.
+        </p>
+        <p style={paragraphStyle}>
+          We guide you to the right courses at the best universities in the
+          ideal countries for your education. For over 50 years, we’ve been
+          helping students, creating a broad network with offices in 32
           countries.
-        </p>
-        <p style={paragraphStyle}>
-          Our extensive network of approachable experts helps you identify and
-          secure the university or college where you can thrive.
-        </p>
-        <p style={paragraphStyle}>
-          We can connect you to the courses you desire to pursue in the most
-          suitable university or institution located in the right country. We
-          have been helping students for over half a century and have created a
-          huge network of opportunity with offices in 32 countries.
         </p>
 
         <h3 style={titleStyle}>
-          Ready to start your global career? We're here to help
+          Ready to begin your global journey? We're here to support you
         </h3>
         <p style={paragraphStyle}>
-          AIEC works with you to turn your plan to study abroad into a launch
-          pad for your professional success and personal growth.
+          AIEC partners with you to transform your study abroad aspirations into
+          a successful international career and personal growth.
         </p>
         <p style={paragraphStyle}>
-          We combine our vast experience in the education industry and the
-          latest technology available to help you make the most informed
-          decision possible.
+          We blend our years of expertise in the education field with
+          cutting-edge technology to ensure you make well-informed decisions.
         </p>
         <p style={paragraphStyle}>
-          We partner with more than 650 leading universities, schools and
-          colleges across Australia, Canada, New Zealand, the United Kingdom and
-          the United States. With access to a database of over 180,000 courses
-          and programmes, we are sure we can help you find what fits you best.
+          With collaborations with over 650 renowned universities across
+          Australia, Canada, New Zealand, the UK, and the USA, we have access to
+          more than 180,000 courses and programs to find the right match for
+          you.
         </p>
-        <h3 style={titleStyle}>We put you first</h3>
+        <h3 style={titleStyle}>Your success is our priority</h3>
         <p style={paragraphStyle}>
-          Need help finding the best course, submitting your university
-          application or navigating the visa requirements?
-        </p>
-        <p style={paragraphStyle}>
-          Your dedicated AIEC counsellor will work with you closely to prepare
-          you for your study abroad journey and help you every step of the way.
+          Need assistance in selecting the ideal course, completing your
+          university application, or understanding visa processes?
         </p>
         <p style={paragraphStyle}>
-          We know the transition can be an exciting time for not just you, but
-          also your family. This is why your AIEC counsellor will go the extra
-          mile and support both you and your family, as you begin your journey.
-        </p>
-        <h3 style={titleStyle}>Approachable international education experts</h3>
-        <p style={paragraphStyle}>
-          Many of the AIEC counsellors were international students themselves.
+          Your personal AIEC counsellor will guide you through every stage of
+          your study abroad journey, offering support at every turn.
         </p>
         <p style={paragraphStyle}>
-          They are international education experts, who have been there in the
-          same place that you are right now.
+          We understand how exciting this transition can be not only for you but
+          also for your family. Therefore, your AIEC counsellor will go above
+          and beyond to assist both you and your loved ones throughout this
+          journey.
+        </p>
+        <h3 style={titleStyle}>Accessible international education experts</h3>
+        <p style={paragraphStyle}>
+          Many of our AIEC counsellors were international students themselves.
         </p>
         <p style={paragraphStyle}>
-          They know what it is like to have the right information before heading
-          to a foreign country and they are willing to share what they have
-          learned in their study abroad journey.
+          They are experts in international education, having gone through the
+          same experiences you're facing right now.
+        </p>
+        <p style={paragraphStyle}>
+          With firsthand knowledge of what it’s like to prepare for studying
+          abroad, they are eager to share their insights and guide you.
         </p>
         <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
         <p style={paragraphStyle}>
-          As a proud co-owner of IELTS, we can help you book and prepare for
-          your IELTS test. Recognised by more than 12,000 organisations around
-          the world, IELTS is the world’s leading English language test for
-          study, work and migration purposes.
+          As a co-owner of IELTS, we can assist you with booking and preparing
+          for your IELTS test. IELTS is the world’s most recognized English
+          language test for study, work, and migration, accepted by over 12,000
+          organizations globally.
         </p>
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>

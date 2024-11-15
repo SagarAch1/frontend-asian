@@ -101,45 +101,41 @@ const Livingabroadsupport = () => {
 
   return (
     <div style={containerStyle}>
-    {/* Banner Section */}
-    <div style={bannerStyle}>
-      <img
-        src="/assets/images/aus.jpeg"
-        alt="Banner"
-        style={{ width: "100%", height: "100%", objectFit: "cover" }}
-      />
-    </div>
+      {/* Banner Section */}
+      <div style={bannerStyle}>
+        <img
+          src="/assets/images/allf.jpeg"
+          alt="Banner"
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+        />
+      </div>
 
       {/* Content Section */}
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Living abroad support</h2>
         <p style={subtitleStyle}>
-          Having chosen your course, the time has come to prepare for your
-          transformative international education journey. Relocating to a new
-          country involves various considerations, including visa procedures,
-          insurance, financial arrangements, accommodation arrangements, and
-          potential work opportunities. While this might seem overwhelming, rest
-          assured that AIEC’s counselors are committed to guiding you every step
-          of the way.
+          After choosing your course, it’s time to get ready for an exciting
+          international education experience. Moving to a new country comes with
+          a lot to consider, such as visa applications, insurance, finances,
+          housing, and possible work opportunities. Although this might feel
+          overwhelming, AIEC’s experts are here to guide you through the entire
+          process, ensuring a smooth transition.
         </p>
 
         <h3 style={titleStyle}>Support Services for International Students:</h3>
         <p style={paragraphStyle}>
-          1. On-arrival support: We aid you in acclimating to your new
-          environment, offering continuous advice and assistance during your
-          time abroad. Our dedicated counselors are here to support you
-          throughout your settling-in process.
+          1. Arrival assistance: We help you adjust to your new environment and
+          continue offering support throughout your stay. Our experienced
+          counselors are available to assist you as you settle into your new home.
         </p>
         <p style={paragraphStyle}>
-          2. Accommodation support: Whether it's university residences, shared
-          apartments, or homestays, AIEC's team helps you explore various
-          housing options, ensuring a secure and comfortable home throughout
-          your study abroad experience.
+          2. Housing assistance: Whether you prefer university accommodation,
+          shared apartments, or a homestay, AIEC will help you find safe and
+          comfortable housing for your time abroad.
         </p>
         <p style={paragraphStyle}>
-          3. Cultural support: We facilitate your understanding of the local
-          culture, equipping you with guidance on adapting to your new
-          surroundings.
+          3. Cultural integration: We help you understand and adapt to the local
+          culture, offering advice on how to adjust to your new surroundings.
         </p>
 
         {/* YouTube Video Embed */}

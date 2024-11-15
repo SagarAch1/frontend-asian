@@ -114,106 +114,98 @@ const Studyabroadcounseling = () => {
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>Free study abroad counselling</h2>
         <p style={subtitleStyle}>
-          Our expert counselors are here to guide you every step of the way and
-          to assist you in finding the best school and program that aligns with
-          your needs and budget.
+          Our expert advisors are available to assist you throughout the entire
+          process, helping you find the ideal school and program that matches
+          your preferences and financial capacity.
         </p>
         <p style={paragraphStyle}>
-          With numerous options to consider, making decisions about where and
-          what to study, and discovering the optimal application approach for
-          increased acceptance odds, can be challenging. Here's how we can
-          assist you in discovering the perfect course and destination.
-        </p>
-
-        <h3 style={titleStyle}>Course selection and application </h3>
-        <p style={paragraphStyle}>
-          AIEC’s counselors are adept at comprehending your educational
-          aspirations and locating the ideal course that aligns with your
-          ambitions. Our team can make the optimal choice for you, thanks to our
-          advanced knowledge matching system that houses the latest information
-          about our 600 partner universities and institutions
+          With so many choices to consider, deciding where and what to study, as
+          well as identifying the best application strategy for a better chance
+          of acceptance, can feel overwhelming. Let us guide you in finding the
+          perfect program and destination.
         </p>
 
-        <h3 style={titleStyle}>Relatable and approachable </h3>
+        <h3 style={titleStyle}>Course selection and application</h3>
         <p style={paragraphStyle}>
-          Our experienced counselors comprehend your study objectives. In fact,
-          a number of our counselors were international students themselves,
-          enabling them to address all your queries.
+          Our consultants are skilled in understanding your academic goals and
+          identifying the most suitable course to match your career aspirations.
+          With our state-of-the-art matching system, we can connect you with the
+          best options from over 600 partner universities and institutions
+          worldwide.
         </p>
 
-        <h3 style={titleStyle}>Speak your preferred language </h3>
+        <h3 style={titleStyle}>Approachable and understanding</h3>
         <p style={paragraphStyle}>
-          If you prefer conversing in your native language during your visit,
-          rest assured that we have team members who can make you feel at ease
-          and understand you.
-        </p>
-        <h3 style={titleStyle}>What should you expect?  </h3>
-        <p style={paragraphStyle}>
-          During your initial meeting with us, your counselor will discuss the
-          following topics:
-        </p>
-        <p style={paragraphStyle}>
-          1. Your education, experiences, interests, timeline, budget, and
-          career or migration objectives.
-        </p>
-        <p style={paragraphStyle}>
-          2. Courses that align with your requirements.
-        </p>
-        <p style={paragraphStyle}>3. The application process.</p>
-        <p style={paragraphStyle}>
-          4. Visa considerations and their alignment with your intentions.
-        </p>
-        <p style={paragraphStyle}>
-          5. Upcoming information on events that might be of interest.
+          Our seasoned advisors truly understand your study goals. Many of them
+          were international students themselves, so they can address any
+          questions you may have based on real-life experiences.
         </p>
 
-        <h3 style={titleStyle}>Submitting your study applications </h3>
+        <h3 style={titleStyle}>Communicate in your preferred language</h3>
         <p style={paragraphStyle}>
-          We provide the necessary institution course application documents and
-          institution program guides, and also compile your applications while
-          ensuring the certification of supporting documents.
-        </p>
-        <p style={paragraphStyle}>
-          Subsequently, we handle the task of submitting your application to the
-          university or institution you've selected.
-        </p>
-        <p style={paragraphStyle}>
-          You might receive an invitation to meet with education institution
-          representatives who will evaluate your application and determine your
-          eligibility for the course.
-        </p>
-        <p style={paragraphStyle}>
-          Additionally, you could seize the chance to engage in discussions
-          about course structures and graduate outcomes during our education
-          seminars.
+          If you feel more comfortable conversing in your native language, we
+          have staff members who can communicate with you in a way that ensures
+          you feel comfortable and understood.
         </p>
 
-        <h3 style={titleStyle}>Response from the study provider </h3>
+        <h3 style={titleStyle}>What can you expect?</h3>
         <p style={paragraphStyle}>
-          Within two to six weeks of submitting your application, you can expect
-          a response from the school or university. When you are granted a place
-          in a course, an offer letter will be issued to you.
+          During your first consultation, your advisor will cover these key
+          points:
         </p>
         <p style={paragraphStyle}>
-          In certain instances, a school or university representative can
-          evaluate your eligibility for the course and provide an offer letter
-          during your interview. These interviews might occur at our office or
-          at one of AIEC's numerous international student events held throughout
-          the year.
+          1. Your academic history, interests, budget, timeline, and career or
+          migration goals.
+        </p>
+        <p style={paragraphStyle}>2. Suitable courses that meet your needs.</p>
+        <p style={paragraphStyle}>3. The application procedure.</p>
+        <p style={paragraphStyle}>
+          4. Visa considerations relevant to your plans.
+        </p>
+        <p style={paragraphStyle}>5. Upcoming events that may interest you.</p>
+
+        <h3 style={titleStyle}>Submitting your applications</h3>
+        <p style={paragraphStyle}>
+          We provide you with the necessary application documents and guides for
+          the courses you're applying to, while also ensuring that your
+          supporting documents are certified.
+        </p>
+        <p style={paragraphStyle}>
+          After preparing your application, we will submit it to the university
+          or institution of your choice.
+        </p>
+        <p style={paragraphStyle}>
+          You may then be invited to meet with a representative from the
+          institution who will assess your application and discuss your
+          eligibility.
+        </p>
+        <p style={paragraphStyle}>
+          You could also attend our education seminars to ask about course
+          structures and potential outcomes after graduation.
         </p>
 
-        <h3 style={titleStyle}>Acceptance and payment </h3>
+        <h3 style={titleStyle}>Response from the institution</h3>
         <p style={paragraphStyle}>
-          If your offer letter has no conditions, you can accept it right away.
-          Some examples of conditions that might be listed in the offer letter
-          include providing a fresh IELTS test result, an academic transcript
-          from your most recent study, or certified documents.
+          After submitting your application, expect a response within two to six
+          weeks. If accepted, you will receive an offer letter from the
+          institution.
         </p>
         <p style={paragraphStyle}>
-          You can accept these offers at an AIEC office, and the deposit will be
-          directly paid to the school or university extending the offer. Your
-          counselor will accompany you throughout the process, ensuring guidance
-          and ease.
+          In some cases, an institution may provide an offer letter directly
+          during your interview, which may be conducted either at our office or
+          at one of AIEC's global student events held throughout the year.
+        </p>
+
+        <h3 style={titleStyle}>Acceptance and payment</h3>
+        <p style={paragraphStyle}>
+          Once you receive an unconditional offer, you can accept it right away.
+          Conditions for acceptance might include additional documentation, such
+          as a recent IELTS result or proof of your latest academic transcript.
+        </p>
+        <p style={paragraphStyle}>
+          You can confirm your acceptance at any AIEC office, and the deposit
+          will be directly transferred to the institution. Your advisor will
+          assist you every step of the way.
         </p>
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>

@@ -339,8 +339,9 @@ const Usavisarequirement = () => {
       </div>
 
       {/* Footer and Form */}
-      <Footer />
       <FormPage />
+      <Footer />
+     
     </div>
   );
 };
