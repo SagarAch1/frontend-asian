@@ -9,7 +9,7 @@ const StudyInUsa = () => {
         <div
           style={{
             ...styles.headerImage,
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/topp.png)`,
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/flagus.jpeg)`,
             marginTop: "83px",
           }}
         ></div>

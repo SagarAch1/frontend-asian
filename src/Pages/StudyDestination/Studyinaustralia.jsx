@@ -9,7 +9,7 @@ const StudyInAustralia = () => {
         <div
           style={{
             ...styles.headerImage,
-            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/topp.png)`,
+            backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/mapaus.jpg)`,
             marginTop: "83px",
           }}
         ></div>

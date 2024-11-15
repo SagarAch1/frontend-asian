@@ -273,7 +273,7 @@ const Bookclass = () => {
               </button>
               <img
                 style={styles.paymentImage}
-                src={`${process.env.PUBLIC_URL}/assets/images/pay.jpg`}
+                src={`${process.env.PUBLIC_URL}/assets/images/qrfinal.jpg`}
                 alt="Payment Option"
               />
               <h3>Complete Your Payment</h3>
