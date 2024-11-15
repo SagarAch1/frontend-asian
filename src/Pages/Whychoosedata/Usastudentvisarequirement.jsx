@@ -1,6 +1,6 @@
 import React from "react";
-import { Element, Link } from "react-scroll";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { Element, Link } from "react-scroll";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
@@ -34,10 +34,11 @@ const Usavisarequirement = () => {
     headerTitle: {
       position: "absolute",
       bottom: "20px",
-      left: "50px",
-      color: "white",
+      left: "500px",
+      color: "black",
       fontSize: "32px",
       fontWeight: "bold",
+      textAlign: "center",
     },
     content: {
       display: "flex",
@@ -120,7 +121,7 @@ const Usavisarequirement = () => {
       {/* Header with full-width image */}
       <header style={styles.header}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`} // Replace with the correct image path
+          src={`${process.env.PUBLIC_URL}/assets/images/usareqq.png`} // Replace with the correct image path
           alt="Header"
           style={styles.headerImage}
         />
@@ -190,7 +191,7 @@ const Usavisarequirement = () => {
         {/* Main Content */}
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
-          <div style={styles.videoContainer}>
+            <div style={styles.videoContainer}>
               <iframe
                 style={styles.iframe}
                 src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
@@ -201,42 +202,41 @@ const Usavisarequirement = () => {
               ></iframe>
             </div>
             <p>
-              The visa you need will depend on the type of study you want to do
+              Your visa type depends on the kind of study you plan to undertake
               in the United States.
             </p>
-            <p>The US Government offers three different student visa types:</p>
+            <p>There are three types of student visas offered by the US:</p>
             <ul>
               <li>
-                F Student Visa: used to study at an accredited US college or
-                university, or to study English at an English language
+                F Student Visa: for studying at a certified US college or
+                university, or for learning English at an English language
                 institute.
               </li>
               <li>
-                J Exchange Visa: for participation in an exchange program,
-                including high school and university study.
+                J Exchange Visa: for participating in exchange programs, like
+                high school or university studies.
               </li>
               <li>
-                M Student Visa: for non-academic or vocational study or training
-                in the USA.
+                M Student Visa: for non-academic or vocational education or
+                training in the USA.
               </li>
             </ul>
             <p>
-              You can find out more about each type of visa on the US
-              Government's Department of State website.
+              Visit the US Government's Department of State website to learn
+              more about each visa type.
             </p>
           </Element>
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>How to apply for a visa</h2>
             <p>
-              To apply for a student visa, you must first apply and be accepted
-              by an institution in the USA that is certified by the Student and
-              Exchange Visitor Program (SEVP).
+              To apply for a student visa, you need to be accepted by a US
+              institution that is certified by the Student and Exchange Visitor
+              Program (SEVP).
             </p>
             <p>
-              Once accepted, you will receive a Form I-20 from the institution's
-              international student office, which is a paper record of your
-              information in the database called the Student and Exchange
-              Visitor Information System (SEVIS).
+              Once accepted, you will receive Form I-20 from the institution's
+              international student office, which acts as your record in the
+              Student and Exchange Visitor Information System (SEVIS).
             </p>
           </Element>
 
@@ -244,20 +244,20 @@ const Usavisarequirement = () => {
             <h2 style={styles.sectionTitle}>Documents required</h2>
             <ul>
               <li>
-                A current passport that is valid for at least six months beyond
-                your period of stay in the USA (unless exempt by
-                country-specific agreements)
+                A valid passport that is active for at least six months beyond
+                your intended stay in the USA (subject to country-specific
+                agreements).
               </li>
-              <li>Acceptance at a SEVP approved school and your Form I-20</li>
+              <li>Acceptance at a SEVP-certified school and your Form I-20.</li>
               <li>
-                Application fee payment for the Student and Exchange Visitor
-                Information SystemApplication fee payment for SEVIS
+                Payment receipt for the Student and Exchange Visitor Information
+                System (SEVIS) fee.
               </li>
               <li>
                 Non-immigrant visa application and the Form DS-160 confirmation
-                pageForm I-20
+                page.
               </li>
-              <li>One or two photographs in the requested format.</li>
+              <li>One or two photographs as specified.</li>
             </ul>
           </Element>
 
@@ -267,26 +267,22 @@ const Usavisarequirement = () => {
             </h2>
             <ul>
               <li>
-                Do not enter the USA more than 30 days before your study program
-                begins
+                Enter the USA no more than 30 days before your study program's
+                start date.
               </li>
               <li>
-                Contact your designated school official when you first enter the
-                USA.
+                Check in with your designated school official upon arrival.
               </li>
               <li>
-                Contact your designated school official again and no later than
-                the program start date listed on your Form I-20.
+                Ensure to contact your designated school official by the program
+                start date listed on your Form I-20.
               </li>
-              <li>Make sure your visa remains valid.</li>
+              <li>Keep your visa valid at all times.</li>
             </ul>
-            <p>To ensure your visa remains valid, you will need to:</p>
+            <p>To maintain visa validity, you should:</p>
             <ul>
-              <li>
-                Fulfill the purpose for why the Department of State issued the
-                visa.
-              </li>
-              <li>Follow any regulations associated with that purpose.</li>
+              <li>Fulfill the purpose for which the visa was granted.</li>
+              <li>Comply with any associated regulations.</li>
             </ul>
           </Element>
 
@@ -296,22 +292,20 @@ const Usavisarequirement = () => {
             </h2>
             <ul>
               <li>
-                You must attend and pass all of your classes. If you are finding
-                your studies too difficult, you should speak with your
-                Designated School Official (DSO) immediately.
+                Attend and pass all classes. If you're struggling, consult your
+                Designated School Official (DSO) promptly.
               </li>
               <li>
-                If you think you will be unable to complete your program by the
-                end date listed on your Form I-20, you must talk to your DSO
-                about requesting a possible program extension.
+                If you anticipate that you can't complete the program by the end
+                date on your Form I-20, discuss an extension with your DSO.
               </li>
               <li>
-                You must take a full course of study each term. If you cannot
-                study full time, contact your DSO immediately.
+                Enroll in a full course of study each term. If not possible,
+                inform your DSO.
               </li>
               <li>
-                You cannot drop below a full course of study without consulting
-                with your DSO.
+                Avoid dropping below full-time study without consulting your
+                DSO.
               </li>
             </ul>
           </Element>
@@ -319,30 +313,34 @@ const Usavisarequirement = () => {
           <Element name="help">
             <h2 style={styles.sectionTitle}>How can AIEC help you?</h2>
             <p>
-              AIEC offers an array of services designed to take the stress and
-              confusion out of the process of applying for a student visa. Speak
-              to an AIEC counsellor today.
+              AIEC provides the latest information in the field of overseas
+              studies with the utmost comprehension. We assist students with not
+              only educational matters but also settlement in various countries
+              around the world.
             </p>
           </Element>
-
-          {/* Sign Up Section */}
-          <div style={styles.signupSection}>
-            <h2>One account for all your study abroad needs</h2>
-            <p>
-              Sign up to get personalized information, study plans, and more.
-            </p>
-            <button
-              className="signup-button"
-              style={styles.signupButton}
-              onClick={handleSignUpClick} // Navigate to /register on button click
-            >
-              Sign Up
-            </button>
-          </div>
         </div>
       </div>
-      <FormPage />
+
+      {/* Signup Section */}
+      <div style={styles.signupSection}>
+        <h2>Contact Us to Get Started</h2>
+        <p>
+          Embark on your overseas education journey with us. Register now to get
+          personalized assistance every step of the way.
+        </p>
+        <button
+          className="signup-button"
+          style={styles.signupButton}
+          onClick={handleSignUpClick}
+        >
+          Sign Up
+        </button>
+      </div>
+
+      {/* Footer and Form */}
       <Footer />
+      <FormPage />
     </div>
   );
 };

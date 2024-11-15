@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { Element, Link } from "react-scroll";
 import Footer from "../Homepage/Footer";
-import FormPage from "../Homepage/FormPage";
 
 const Ukvisarequirement = () => {
   const navigate = useNavigate(); // Create navigate function
@@ -26,7 +25,7 @@ const Ukvisarequirement = () => {
       position: "absolute",
       bottom: "20px",
       left: "50px",
-      color: "white",
+      color: "black",
       fontSize: "32px",
       fontWeight: "bold",
     },
@@ -111,7 +110,7 @@ const Ukvisarequirement = () => {
       {/* Header with full-width image */}
       <header style={styles.header}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/aus.jpeg`} // Replace with the correct image path
+          src={`${process.env.PUBLIC_URL}/assets/images/ukkk.webp`} // Replace with the correct image path
           alt="Header"
           style={styles.headerImage}
         />
@@ -160,7 +159,7 @@ const Ukvisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-               Additional documents may also be needed if you are:
+                Additional documents may also be needed if you are:
               </Link>
             </li>
             <li>
@@ -180,21 +179,21 @@ const Ukvisarequirement = () => {
         <div style={styles.mainContent}>
           <Element name="how-to-apply">
             <p>
-              The visa you need will depend on your age and the type of study
-              you want to do. An overview of study visa types and application
-              requirements is included below.
+              The type of visa required depends on your age and chosen course of
+              study. Below is a summary of study visa categories and application
+              guidelines.
             </p>
           </Element>
           <div style={styles.videoContainer}>
-              <iframe
-                style={styles.iframe}
-                src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
+            <iframe
+              style={styles.iframe}
+              src="https://www.youtube.com/embed/3n4rzyhmRbU?rel=0" // Replace with the correct YouTube video ID
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
           <Element name="how-to-apply">
             <h2 style={styles.sectionTitle}>
               To be eligible for a Tier 4 student visa, you must:
@@ -215,20 +214,14 @@ const Ukvisarequirement = () => {
             <h2 style={styles.sectionTitle}>Applying for your visa online</h2>
             <ul>
               <p>
-                You must apply for your student visa application online using
-                the British Government's official Gov.UK website (unless you are
-                applying from North Korea, in which case you can use a hardcopy
-                form).
+                Submit your student visa application through the UK Government's
+                Gov.UK website (unless you’re applying from North Korea, where a
+                paper form is allowed).
               </p>
               <p>
-                You can apply up to three months before your intended date of
-                travel to the UK. Your application date is the date when your
-                application fee is paid.
-              </p>
-              <p>
-                You can apply up to three months before your intended date of
-                travel to the UK. Your application date is the date when your
-                application fee is paid.
+                You can submit your application up to three months before your
+                planned travel date to the UK. The application date is
+                considered to be the date you pay the application fee.
               </p>
             </ul>
           </Element>
@@ -238,24 +231,24 @@ const Ukvisarequirement = () => {
               When applying for your Tier 4 visa, you will generally need:
             </h2>
             <ul>
-              <li>A current passport or other valid travel documentation.</li>
+              <li>A valid passport or other travel document.</li>
               <li>
-                Evidence of funds to provide your living expenses for the
-                duration of your course.
+                Proof of funds to cover living costs for the duration of your
+                studies.
               </li>
               <li>
-                Confirmation of Acceptance for Studies (CAS) reference number
-                and documents used to obtain CAS.
+                A Confirmation of Acceptance for Studies (CAS) reference number
+                and any documents used to get the CAS.
               </li>
-              <li>Passport-sized colour photograph.</li>
+              <li>A passport-sized color photo.</li>
             </ul>
 
             <ul>
-              <li>Tuberculosis screening (if required).</li>
+              <li>A tuberculosis test (if required).</li>
               <li>Assessment documentation.</li>
               <li>
-                Academic Technology Approval Scheme (ATAS) clearance certificate
-                (if required).
+                An Academic Technology Approval Scheme (ATAS) certificate (if
+                needed).
               </li>
             </ul>
           </Element>
@@ -267,68 +260,57 @@ const Ukvisarequirement = () => {
             <ul>
               <li>Not a citizen of the country you are applying from.</li>
               <li>Under 18 years of age.</li>
-
-              <li>Have family (dependents).</li>
+              <li>Applying with family members (dependents).</li>
             </ul>
+            <p>Any documents that are not in English must be translated.</p>
             <p>
-              If any of your supporting documents is not in English, you will
-              need to have it translated.
-            </p>
-            <p>
-              Each translated document must be dated and include the
-              translator's name and signature, and you will need confirmation
-              that it is an accurate translation of the original document.
+              Each translated document must be dated, include the translator's
+              name and signature, and confirm that it’s a true and accurate
+              translation of the original.
             </p>
           </Element>
 
           <Element name="help">
             <h2 style={styles.sectionTitle}>English language requirements</h2>
             <p>
-              You must provide evidence of your knowledge of the English
-              language when you apply for your visa. This usually means passing
-              a secure English language test such as IELTS.
+              Evidence of English proficiency is required, typically via a
+              secure English language test like IELTS.
             </p>
             <p>
-              UK Visas and Immigration (UKVI) have minimum English language
-              requirements for reading, writing, listening and speaking
-              according to your level of study. Your education institution
-              (sponsor) may have different English language requirements.
-            </p>
-            <p>
-              UK Visas and Immigration (UKVI) have minimum English language
-              requirements for reading, writing, listening and speaking
-              according to your level of study. Your education institution
-              (sponsor) may have different English language requirements.
+              The UKVI has set minimum English requirements for reading,
+              writing, listening, and speaking based on your study level. Your
+              institution may have additional requirements.
             </p>
           </Element>
           <Element name="help">
             <h2 style={styles.sectionTitle}>Biometric residence permit</h2>
             <p>
-            As part of your application, you must also obtain a biometric residence permit (BRP) from UKVI.
+              As part of your application, you must also obtain a biometric
+              residence permit (BRP) from UKVI.
             </p>
-          
+
             <p>
-            You will need to make an appointment with UKVI to have your fingers and thumbs scanned and a digital photo taken of your face.
+              You will need to make an appointment with UKVI to have your
+              fingerprints scanned and a digital photo taken.
             </p>
           </Element>
 
           {/* Sign Up Section */}
           <div style={styles.signupSection}>
             <h2>One account for all your study abroad needs</h2>
-            <p>
-              Sign up to get personalized information, study plans, and more.
-            </p>
+            <p>Register to receive tailored guidance, study plans, and more.</p>
             <button
               className="signup-button"
               style={styles.signupButton}
-              onClick={handleSignUpClick} // Navigate to /register on button click
+              onClick={handleSignUpClick}
             >
-              Sign Up
+              Sign Up Now
             </button>
           </div>
         </div>
       </div>
-      <FormPage />
+
+      {/* Footer */}
       <Footer />
     </div>
   );
