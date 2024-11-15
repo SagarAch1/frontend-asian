@@ -215,8 +215,8 @@ const Bookclass = () => {
               <option value="" disabled>
                 Select Language Class
               </option>
-              <option value="IELTS (Rs 3000)">IELTS (Rs 3000)</option>
-              <option value="PTE (Rs 4000)">PTE (Rs 4000)</option>
+              <option value="IELTS (Rs 3000)">IELTS (Rs 7500)</option>
+              <option value="PTE (Rs 4000)">PTE (Rs 7500)</option>
             </select>
             <select
               style={styles.select}
@@ -243,6 +243,10 @@ const Bookclass = () => {
               </option>
               <option value="8:00 AM - 9:00 AM">8:00 AM - 9:00 AM</option>
               <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
+              <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
+              <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
+              <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+             
             </select>
             <textarea
               style={styles.textarea}

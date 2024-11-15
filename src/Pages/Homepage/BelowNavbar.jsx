@@ -23,7 +23,7 @@ const BelowNavbar = () => {
 
   const headerStyle = {
     backgroundColor: "white",
-    padding: "20px 0",
+    padding: "10px 0",
     borderBottom: "1px solid #ccc",
     marginTop: "70px",
   };

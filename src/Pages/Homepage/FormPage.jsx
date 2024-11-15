@@ -93,9 +93,6 @@ const FormPage = () => {
   });
 
   const studyDates = [
-    "September 2024",
-    "October 2024",
-    "November 2024",
     "December 2024",
     "January 2025",
     "February 2025",
