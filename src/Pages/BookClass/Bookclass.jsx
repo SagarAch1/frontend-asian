@@ -241,11 +241,13 @@ const Bookclass = () => {
               <option value="" disabled>
                 Select Class Time
               </option>
+              <option value="7:00 AM - 8:00 AM">7:00 AM - 8:00 AM</option>
               <option value="8:00 AM - 9:00 AM">8:00 AM - 9:00 AM</option>
               <option value="9:00 AM - 10:00 AM">9:00 AM - 10:00 AM</option>
               <option value="10:00 AM - 11:00 AM">10:00 AM - 11:00 AM</option>
               <option value="12:00 PM - 1:00 PM">12:00 PM - 1:00 PM</option>
               <option value="1:00 PM - 2:00 PM">1:00 PM - 2:00 PM</option>
+              <option value="2:00 PM - 3:00 PM">2:00 PM - 3:00 PM</option>
              
             </select>
             <textarea
