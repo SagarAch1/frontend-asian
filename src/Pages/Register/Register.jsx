@@ -3,7 +3,15 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { registerUserApi } from "../../apis/Api";
 import Footer from "../Homepage/Footer";
-import Popup from "./Popup";
+const Popup = ({ message, onClose }) => {
+  return (
+    <div style={popupStyles.popupContainer}>
+      <div style={popupStyles.popupBox}>
+        <p>{message}</p>
+      </div>
+    </div>
+  );
+};
 
 const Register = () => {
   const [fullName, setFullName] = useState("");
@@ -20,8 +28,8 @@ const Register = () => {
   const [passwordError, setPasswordError] = useState("");
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
 
-  const [popupOpen, setPopupOpen] = useState(false); 
-  const [popupMessage, setPopupMessage] = useState(""); 
+  const [popupOpen, setPopupOpen] = useState(false);
+  const [popupMessage, setPopupMessage] = useState("");
 
   const navigate = useNavigate();
 
@@ -70,22 +78,21 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (!validate()) {
       return;
     }
-  
+
     const data = {
       fullName: fullName,
       phone: phone,
       email: email,
       password: password,
     };
-  
+
     try {
       const res = await registerUserApi(data);
-  
-      // Assuming the API responds with { success: false, message: "Email already taken" }
+
       if (res.data.success === false) {
         if (res.data.message === "Email already taken") {
           setEmailError("Email is already taken");
@@ -93,20 +100,17 @@ const Register = () => {
           toast.error(res.data.message);
         }
       } else {
-        setPopupMessage("User Created Successfully"); // Set popup message
-        setPopupOpen(true); // Show popup
-        // Optionally navigate to the login page after some delay
+        setPopupMessage("User Created Successfully");
+        setPopupOpen(true);
         setTimeout(() => {
-          setPopupOpen(false); // Hide popup after delay
+          setPopupOpen(false);
           navigate("/login");
-        }, 3000); // Redirect after 3 seconds
+        }, 2000);
       }
-
     } catch (error) {
       toast.error("Registration failed. Please try again.");
     }
   };
-  
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -128,9 +132,6 @@ const Register = () => {
             <div style={styles.formGroup}>
               <input
                 type="text"
-                className="form-control"
-                id="fullName"
-                name="fullName"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 style={styles.formControl}
@@ -142,9 +143,6 @@ const Register = () => {
             <div style={styles.formGroup}>
               <input
                 type="text"
-                className="form-control"
-                id="phone"
-                name="phone"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
                 style={styles.formControl}
@@ -156,9 +154,6 @@ const Register = () => {
             <div style={styles.formGroup}>
               <input
                 type="email"
-                className="form-control"
-                id="email"
-                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 style={styles.formControl}
@@ -171,9 +166,6 @@ const Register = () => {
               <div style={styles.passwordContainer}>
                 <input
                   type={showPassword ? "text" : "password"}
-                  className="form-control"
-                  id="password"
-                  name="password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   style={styles.formControl}
@@ -194,9 +186,6 @@ const Register = () => {
               <div style={styles.passwordContainer}>
                 <input
                   type={showConfirmPassword ? "text" : "password"}
-                  className="form-control"
-                  id="confirmPassword"
-                  name="confirmPassword"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   style={styles.formControl}
@@ -227,17 +216,39 @@ const Register = () => {
           </div>
         </div>
       </div>
-      <Footer />
-      
-      Popup for success message
       {popupOpen && (
-        <Popup
-          message={popupMessage}
-          onClose={() => setPopupOpen(false)} // Close popup on button click
-        />
+        <Popup message={popupMessage} onClose={() => setPopupOpen(false)} />
       )}
+      <Footer />
     </div>
   );
+};
+
+const popupStyles = {
+  popupContainer: {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent background
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 1000, // Ensure it appears above other elements
+  },
+  popupBox: {
+    backgroundColor: "#ffffff",
+    borderRadius: "10px",
+    padding: "20px 30px",
+    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+    textAlign: "center",
+    fontSize: "18px",
+    fontWeight: "500",
+    color: "#333",
+    maxWidth: "90%",
+    animation: "fadeIn 0.3s ease-in-out",
+  },
 };
 
 const styles = {
