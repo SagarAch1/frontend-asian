@@ -4,7 +4,6 @@ import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
 
 const WhereAndWhatToStudy = () => {
-  const videoRef = useRef(null);
   const navigate = useNavigate(); // Initialize useNavigate
 
   const styles = {
@@ -21,18 +20,18 @@ const WhereAndWhatToStudy = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/ar.jpg)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundAttachment: "fixed", // Keep background fixed during scroll
       padding: "100px 25px",
       textAlign: "center",
       color: "white",
       width: "100%",
-      minHeight: "400px", // Ensure a minimum height for the section
-      marginTop: "20px", // Adjust as needed to push the section down
+      minHeight: "400px",
     },
-
+    headerWrapper: {
+      width: "100%",
+    },
     headerTitle: { fontSize: "36px", fontWeight: "bold" },
     subheader: { fontSize: "18px", marginTop: "10px" },
     contentSection: {
@@ -67,15 +66,12 @@ const WhereAndWhatToStudy = () => {
       height: "300px", // Set fixed height for the box
       backgroundColor: "#f7f7f7",
       borderRadius: "8px",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      overflow: "hidden", // Ensures the video does not overflow the container
+      overflow: "hidden",
     },
-    video: {
+    iframe: {
       width: "100%",
       height: "100%",
-      objectFit: "cover", // Maintain aspect ratio and cover the entire box
+      border: "none",
     },
     signupSection: {
       display: "flex",
@@ -97,39 +93,6 @@ const WhereAndWhatToStudy = () => {
       fontSize: "16px",
       marginTop: "10px",
     },
-    additionalSection: {
-      marginTop: "40px",
-      padding: "20px",
-      backgroundColor: "#f7f7f7",
-      borderRadius: "8px",
-      textAlign: "center",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-      justifyContent: "center",
-    },
-    additionalTitle: {
-      fontSize: "24px",
-      fontWeight: "bold",
-      marginBottom: "20px",
-    },
-    listItem: {
-      marginBottom: "20px",
-      borderBottom: "1px solid #ccc",
-      paddingBottom: "10px",
-      textAlign: "left",
-      maxWidth: "800px",
-      width: "100%",
-    },
-    listItemTitle: {
-      fontWeight: "bold",
-      fontSize: "18px",
-      marginBottom: "5px",
-    },
-    listItemLink: {
-      color: "#0056b3",
-      textDecoration: "none",
-    },
   };
 
   const handleSignUpClick = () => {
@@ -137,37 +100,29 @@ const WhereAndWhatToStudy = () => {
   };
 
   return (
-    <div style={styles.page}>
-      {/* Header Section */}
-      <div style={styles.headerSection}>
-        <h1 style={styles.headerTitle}>Where and What to Study</h1>
-        <p style={styles.subheader}>
-          We are here to assist you in exploring your study abroad options, from
-          selecting a destination to receiving advice on courses and programs.
-        </p>
+    <>
+      <div style={styles.headerWrapper}>
+        <div style={styles.headerSection}>
+          <h1 style={styles.headerTitle}>Where and What to Study</h1>
+          <p style={styles.subheader}>
+            We are here to assist you in exploring your study abroad options, from
+            selecting a destination to receiving advice on courses and programs.
+          </p>
+        </div>
       </div>
-
-      {/* Navbar */}
-      <nav style={styles.navbar}>
-        <span onClick={() => navigate("/whystudyabroad")}>
-          Why study abroad?
-        </span>
-        <span onClick={() => navigate("/whereandwhattostudy")}>
-          Where and what to study?
-        </span>
-        <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
-        <span onClick={() => navigate("/afterreceivingoffer")}>
-          After receiving an offer
-        </span>
-        <span onClick={() => navigate("/preparetodepart")}>
-          Prepare to depart
-        </span>
-        <span onClick={() => navigate("/arriveandthrive")}>
-          Arrive and thrive
-        </span>
-      </nav>
+      
+        {/* Navbar */}
+        <nav style={styles.navbar}>
+          <span onClick={() => navigate("/whystudyabroad")}>Why study abroad?</span>
+          <span onClick={() => navigate("/whereandwhattostudy")}>Where and what to study?</span>
+          <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
+          <span onClick={() => navigate("/afterreceivingoffer")}>After receiving an offer</span>
+          <span onClick={() => navigate("/preparetodepart")}>Prepare to depart</span>
+          <span onClick={() => navigate("/arriveandthrive")}>Arrive and thrive</span>
+        </nav>
 
       {/* Main Content Section */}
+      <div style={styles.page}>
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Pick your dream destination and course</h2>
@@ -187,13 +142,16 @@ const WhereAndWhatToStudy = () => {
           </p>
         </div>
         <div style={styles.videoContainer}>
-          <video ref={videoRef} controls style={styles.video}>
-            <source
-              src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/7VVkxTD0jJo?rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={styles.video}
+            ></iframe>
         </div>
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
@@ -322,8 +280,10 @@ const WhereAndWhatToStudy = () => {
         </div>
       </div>
       <FormPage />
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   );
 };
 
