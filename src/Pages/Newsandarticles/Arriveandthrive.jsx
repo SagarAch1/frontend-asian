@@ -21,16 +21,14 @@ const Arriveandthrive = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/arrive.jpeg)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundAttachment: "fixed", // Keep background fixed during scroll
       padding: "100px 25px",
       textAlign: "center",
       color: "white",
       width: "100%",
-      minHeight: "400px", // Ensure a minimum height for the section
-      marginTop: "20px", // Adjust as needed to push the section down
+      minHeight: "400px",
     },
 
     headerTitle: { fontSize: "36px", fontWeight: "bold" },
@@ -44,6 +42,9 @@ const Arriveandthrive = () => {
       gap: "20px",
       alignItems: "center",
       marginTop: "70px", // Adjust this value to create space below the navbar
+    },
+    headerWrapper: {
+      width: "100%",
     },
     leftColumn: {
       gridColumn: "1 / 2",
@@ -137,13 +138,16 @@ const Arriveandthrive = () => {
   };
 
   return (
-    <div style={styles.page}>
+    <>
+    
       {/* Header Section */}
-      <div style={styles.headerSection}>
+      <div style={styles.headerWrapper}>
+        <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>Arrive and Thrive</h1>
         <p style={styles.subheader}>
           Learn how to maximize your study abroad experience.
         </p>
+      </div>
       </div>
 
       {/* Navbar */}
@@ -167,6 +171,7 @@ const Arriveandthrive = () => {
       </nav>
 
       {/* Main Content Section */}
+      <div style={styles.page}>
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Supporting you all the way through</h2>
@@ -185,13 +190,16 @@ const Arriveandthrive = () => {
           </p>
         </div>
         <div style={styles.videoContainer}>
-          <video ref={videoRef} controls style={styles.video}>
-            <source
-              src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/2uBSM_y1rxE?rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={styles.video}
+            ></iframe>
         </div>
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
@@ -315,8 +323,10 @@ const Arriveandthrive = () => {
       </div>
       <FormPage />
 
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   );
 };
 

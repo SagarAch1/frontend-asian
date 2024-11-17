@@ -21,16 +21,17 @@ const Afterreceivingoffer = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/app.jpeg)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundAttachment: "fixed", // Keep background fixed during scroll
       padding: "100px 25px",
       textAlign: "center",
       color: "white",
       width: "100%",
-      minHeight: "400px", // Ensure a minimum height for the section
-      marginTop: "20px", // Adjust as needed to push the section down
+      minHeight: "400px",
+    },
+    headerWrapper: {
+      width: "100%",
     },
 
     headerTitle: { fontSize: "36px", fontWeight: "bold" },
@@ -137,14 +138,17 @@ const Afterreceivingoffer = () => {
   };
 
   return (
-    <div style={styles.page}>
+    <>
+    
       {/* Header Section */}
-      <div style={styles.headerSection}>
+      <div style={styles.headerWrapper}>
+        <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>After receiving an offer</h1>
         <p style={styles.subheader}>
           Here are the steps to take from accepting an offer through to planning
           for your trip to make your study abroad dream a reality.
         </p>
+      </div>
       </div>
 
       {/* Navbar */}
@@ -168,6 +172,7 @@ const Afterreceivingoffer = () => {
       </nav>
 
       {/* Main Content Section */}
+      <div style={styles.page}>
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>It's decision time</h2>
@@ -184,13 +189,16 @@ const Afterreceivingoffer = () => {
           </p>
         </div>
         <div style={styles.videoContainer}>
-          <video ref={videoRef} controls style={styles.video}>
-            <source
-              src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/7hCujCUB7kM?rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={styles.video}
+            ></iframe>
         </div>
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
@@ -311,8 +319,10 @@ const Afterreceivingoffer = () => {
       </div>
 
       <FormPage />
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   );
 };
 

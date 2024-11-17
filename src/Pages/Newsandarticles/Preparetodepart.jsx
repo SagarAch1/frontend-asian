@@ -21,16 +21,14 @@ const Preparetodepart = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/pre.jpeg)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundAttachment: "fixed", // Keep background fixed during scroll
       padding: "100px 25px",
       textAlign: "center",
       color: "white",
       width: "100%",
-      minHeight: "400px", // Ensure a minimum height for the section
-      marginTop: "20px", // Adjust as needed to push the section down
+      minHeight: "400px",
     },
 
     headerTitle: { fontSize: "36px", fontWeight: "bold" },
@@ -71,6 +69,9 @@ const Preparetodepart = () => {
       alignItems: "center",
       justifyContent: "center",
       overflow: "hidden", // Ensures the video does not overflow the container
+    },
+    headerWrapper: {
+      width: "100%",
     },
     video: {
       width: "100%",
@@ -137,13 +138,16 @@ const Preparetodepart = () => {
   };
 
   return (
-    <div style={styles.page}>
+    <>
+    
       {/* Header Section */}
+      <div style={styles.headerWrapper}>
       <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>Preparing to depart</h1>
         <p style={styles.subheader}>
           We're here to help set you up for your study abroad adventure.
         </p>
+      </div>
       </div>
 
       {/* Navbar */}
@@ -167,6 +171,7 @@ const Preparetodepart = () => {
       </nav>
 
       {/* Main Content Section */}
+      <div style={styles.page}>
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Let's set you up for the big move</h2>
@@ -182,13 +187,16 @@ const Preparetodepart = () => {
           </p>
         </div>
         <div style={styles.videoContainer}>
-          <video ref={videoRef} controls style={styles.video}>
-            <source
-              src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={styles.video}
+            ></iframe>
         </div>
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
@@ -317,8 +325,10 @@ const Preparetodepart = () => {
       </div>
 
       <FormPage />
-      <Footer />
+     
     </div>
+    <Footer />
+    </>
   );
 };
 

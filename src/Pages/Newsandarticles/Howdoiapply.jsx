@@ -21,16 +21,14 @@ const Howdoiapply = () => {
       zIndex: 1000,
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/is.png)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
-      backgroundAttachment: "fixed", // Keep background fixed during scroll
       padding: "100px 25px",
       textAlign: "center",
       color: "white",
       width: "100%",
-      minHeight: "400px", // Ensure a minimum height for the section
-      marginTop: "20px", // Adjust as needed to push the section down
+      minHeight: "400px",
     },
     headerTitle: { fontSize: "36px", fontWeight: "bold" },
     subheader: { fontSize: "18px", marginTop: "10px" },
@@ -129,6 +127,9 @@ const Howdoiapply = () => {
       color: "#0056b3",
       textDecoration: "none",
     },
+    headerWrapper: {
+      width: "100%",
+    },
   };
 
   const handleSignUpClick = () => {
@@ -136,13 +137,16 @@ const Howdoiapply = () => {
   };
 
   return (
-    <div style={styles.page}>
+    <>
+    
       {/* Header Section */}
+      <div style={styles.headerWrapper}>
       <div style={styles.headerSection}>
         <h1 style={styles.headerTitle}>How do I apply?</h1>
         <p style={styles.subheader}>
           AIEC is here to guide you through the application process.
         </p>
+      </div>
       </div>
 
       {/* Navbar */}
@@ -166,6 +170,7 @@ const Howdoiapply = () => {
       </nav>
 
       {/* Main Content Section */}
+      <div style={styles.page}>
       <div style={styles.contentSection}>
         <div style={styles.leftColumn}>
           <h2 style={styles.h2}>Kickstart your application with confidence</h2>
@@ -185,13 +190,18 @@ const Howdoiapply = () => {
           </p>
         </div>
         <div style={styles.videoContainer}>
-          <video ref={videoRef} controls style={styles.video}>
-            <source
-              src={`${process.env.PUBLIC_URL}/assets/images/vid.mp4`}
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <div style={styles.videoContainer}>
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/O9r1cD3bItY?rel=0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              style={styles.video}
+            ></iframe>
+          </div>
         </div>
         <div style={styles.signupSection}>
           <p>One account for all your study abroad needs</p>
@@ -320,8 +330,10 @@ const Howdoiapply = () => {
       </div>
 
       <FormPage />
-      <Footer />
+      
     </div>
+    <Footer />
+    </>
   );
 };
 
