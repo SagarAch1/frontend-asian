@@ -183,9 +183,9 @@ const BelowNavbar = () => {
                         : contentItem === "Course Advice"
                         ? handleNavigation("/courseadvice")
                         : contentItem === "Fastlane Courses"
-                        ? handleNavigation("/fastlane")
+                        ? handleNavigation("/formpage")
                         : contentItem === "Scholarships"
-                        ? handleNavigation("/scholarships")
+                        ? handleNavigation("/scholarshipsinaustralia")
                         : contentItem === "University Ranking-THE"
                         ? handleNavigation("/universityrankingthe")
                         : contentItem === "Airport Pickup"

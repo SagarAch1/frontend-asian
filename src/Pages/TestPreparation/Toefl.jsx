@@ -16,7 +16,7 @@ const ToeflPreparationPage = () => {
     <div style={styles.pageContainer}>
       <header style={styles.header}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/ib.png`} // Replace with your image path
+          src={`${process.env.PUBLIC_URL}/assets/images/tofu.jpeg`} // Replace with your image path
           alt="Toefl Preparation"
           style={styles.headerImage}
         />

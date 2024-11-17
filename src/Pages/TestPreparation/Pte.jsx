@@ -16,7 +16,7 @@ const PtePreparationPage = () => {
     <div style={styles.pageContainer}>
       <header style={styles.header}>
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/ib.png`} // Replace with your image path
+          src={`${process.env.PUBLIC_URL}/assets/images/pteee.jpeg`} // Replace with your image path
           alt="Pte Preparation"
           style={styles.headerImage}
         />
