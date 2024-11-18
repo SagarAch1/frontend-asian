@@ -23,7 +23,7 @@ const aiecWorkshop = () => {
     },
     bannerImage: {
       width: "1900px",
-      height: "350px",
+      height: "450px",
       marginTop: "-18px",
     },
     bannerContent: {
@@ -37,15 +37,23 @@ const aiecWorkshop = () => {
       fontSize: "60px",
       fontWeight: "700",
       marginBottom: "10px",
+      color: "black",
+      textAlign:"left",
+     
+      
     },
     bannerSubtitle: {
       fontSize: "36px",
       fontWeight: "600",
       marginBottom: "10px",
+      color: "black",
+      textAlign:"left",
     },
     bannerText: {
       fontSize: "20px",
       margin: "5px 0",
+      color: "black",
+      textAlign:"left",
     },
     buttonContainer: {
       display: "grid",
@@ -110,7 +118,7 @@ const aiecWorkshop = () => {
       <div style={styles.container}>
         <div style={styles.banner}>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/new.jpeg`}
+            src={`${process.env.PUBLIC_URL}/assets/images/abo.jpg`}
             alt="AIEC Workshop"
             style={styles.bannerImage}
           />

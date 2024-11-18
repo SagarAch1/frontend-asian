@@ -399,7 +399,7 @@ const FormPage = () => {
 
         <div style={{ flex: 1 }}>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/OIP.jpeg`}
+            src={`${process.env.PUBLIC_URL}/assets/images/formfinal.png`}
             alt="Logo"
             style={imageStyle}
           />

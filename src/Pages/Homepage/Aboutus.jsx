@@ -41,6 +41,7 @@ const AIECGlobal = () => {
     height: "auto",
     maxHeight: "500px",
     objectFit: "cover",
+    marginTop:"60px",
   };
 
   const textContainerStyle = {
@@ -164,21 +165,22 @@ const AIECGlobal = () => {
 
   return (
     <>
-    <div style={containerStyle}>
-      <div
+     <div
         style={{
           position: "relative",
           textAlign: "center",
           color: "white",
-          marginBottom: "50px",
+          marginBottom: "40px",
         }}
       >
         <img
-          src={`${process.env.PUBLIC_URL}/assets/images/top.png`}
+          src={`${process.env.PUBLIC_URL}/assets/images/abo.jpg`}
           alt="Top Image"
           style={bannerStyle}
         />
       </div>
+    <div style={containerStyle}>
+     
       <div style={textContainerStyle}>
         <h1 style={{ color: "#007BFF", fontWeight: "bold" }}>
           Committed to Your Visa Success

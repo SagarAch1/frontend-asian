@@ -11,75 +11,103 @@ import {
 const Footer = () => {
   return (
     <footer
-      style={{ backgroundColor: "#01649A", color: "#fff", paddingTop: "40px" }}
+      style={{
+        backgroundColor: "#01649A",
+        color: "#fff",
+        paddingTop: "40px",
+        paddingBottom: "20px",
+      }}
     >
       <div className="container">
-        <div className="row text-center">
-          <div className="col-md-3">
-            <div style={{ padding: "20px" }}>
-              <h6>Contact Us</h6>
+        {/* Main Footer Content */}
+        <div
+          className="row text-center"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
+        >
+          {/* Contact Us */}
+          <div className="col-md-3" style={{ marginBottom: "20px", flex: "1" }}>
+            <div style={{ padding: "10px" }}>
+              <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
+                Contact Us
+              </h6>
               <p>+977-01-5908881 / 5908882</p>
               <p>WhatsApp: +977 9801048957</p>
             </div>
           </div>
-          <div className="col-md-6">
-            <img
-              src="https://asian.edu.np/wp-content/uploads/elementor/thumbs/new-logo-footer-qnlq1cjtwddgp0mduco1alft6pg7aqz42y3lcne8bk.png"
-              alt="Logo"
-              style={{ width: "200px", marginBottom: "20px" }}
-            />
-            <p>
+          {/* About and Social Media */}
+          <div className="col-md-6" style={{ marginBottom: "20px", flex: "2" }}>
+            <p style={{ marginBottom: "20px" }}>
               AIEC-GLOBAL offers updated information on overseas studies and
               provides comprehensive support for students' education and
               settlement abroad.
             </p>
-            <div>
+            <div
+              style={{ display: "flex", justifyContent: "center", gap: "15px" }}
+            >
               <a
                 href="https://www.facebook.com/asian.edu.np"
-                style={{ color: "#fff", marginRight: "10px" }}
+                style={{ color: "#fff" }}
               >
                 <FaFacebook />
               </a>
               <a
                 href="https://www.instagram.com/asian.edu.np/"
-                style={{ color: "#fff", marginRight: "10px" }}
+                style={{ color: "#fff" }}
               >
                 <FaInstagram />
               </a>
-              <a
-                href="https://x.com/asianedunp"
-                style={{ color: "#fff", marginRight: "10px" }}
-              >
+              <a href="https://x.com/asianedunp" style={{ color: "#fff" }}>
                 <FaTwitter />
               </a>
               <a
                 href="https://www.linkedin.com/company/asianedunp1"
-                style={{ color: "#fff", marginRight: "10px" }}
+                style={{ color: "#fff" }}
               >
                 <FaLinkedin />
               </a>
               <a
                 href="https://www.youtube.com/@asian.edu.np1"
-                style={{ color: "#fff", marginRight: "10px" }}
+                style={{ color: "#fff" }}
               >
                 <FaYoutube />
               </a>
-              <a href="https://www.tiktok.com/@asian.edu.np" style={{ color: "#fff" }}>
+              <a
+                href="https://www.tiktok.com/@asian.edu.np"
+                style={{ color: "#fff" }}
+              >
                 <FaTiktok />
               </a>
             </div>
           </div>
-          <div className="col-md-3">
-            <div style={{ padding: "20px" }}>
-              <h6>Our Location</h6>
-              <p>Putalisadak, Kathmandu</p>
+          {/* Location */}
+          <div className="col-md-3" style={{ marginBottom: "20px", flex: "1" }}>
+            <div style={{ padding: "10px" }}>
+              <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
+                Our Location
+              </h6>
+
               <p>ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal</p>
             </div>
           </div>
         </div>
-        <div className="row text-center mt-4">
-          <div className="col-md-3">
-            <h6>Quick Links</h6>
+        {/* Additional Information */}
+        <div
+          className="row text-center mt-4"
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* Quick Links */}
+          <div className="col-md-3" style={{ marginBottom: "20px" }}>
+            <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
+              Quick Links
+            </h6>
             <p>
               <a href="#!" style={{ color: "#fff", textDecoration: "none" }}>
                 About Us
@@ -96,28 +124,42 @@ const Footer = () => {
               </a>
             </p>
             <p>
-              <a href="ourteam" style={{ color: "#fff", textDecoration: "none" }}>
+              <a
+                href="ourteam"
+                style={{ color: "#fff", textDecoration: "none" }}
+              >
                 Our Team
               </a>
             </p>
           </div>
-          <div className="col-md-3">
-            <h6>Branches</h6>
+          {/* Branches */}
+          <div className="col-md-3" style={{ marginBottom: "20px" }}>
+            <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
+              Branches
+            </h6>
             <p>Chitwan, Nepal</p>
             <p>Pokhara, Nepal</p>
             <p>Sydney, Australia</p>
           </div>
-          <div className="col-md-3">
-            <h6>Head Office</h6>
+          {/* Head Office */}
+          <div className="col-md-3" style={{ marginBottom: "20px" }}>
+            <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
+              Head Office
+            </h6>
             <p>Putalisadak, Kathmandu</p>
             <p>Phone 1: +977-01-5908881</p>
             <p>Phone 2: +977-01-5908882</p>
             <p>Email: info@asian.edu.np</p>
           </div>
         </div>
+        {/* Footer Bottom */}
         <div
           className="text-center mt-3"
-          style={{ borderTop: "1px solid #fff", paddingTop: "10px" }}
+          style={{
+            borderTop: "1px solid #fff",
+            paddingTop: "10px",
+            marginTop: "20px",
+          }}
         >
           <p>Copyright © 2024 AIEC Global. All Rights Reserved.</p>
         </div>
