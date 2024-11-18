@@ -150,7 +150,9 @@ const OurTeam = () => {
             <h3 style={styles.memberInfoName}>Sagar Acharya</h3>
             <h4 style={styles.memberInfoTitle}>IT Head</h4>
             <p style={styles.memberInfoDescription}>
-            As IT Head, I ensure our technology supports seamless, secure services, empowering students on their journey to global education.
+              As IT Head, I ensure our technology supports seamless, secure
+              services, empowering students on their journey to global
+              education.
             </p>
           </div>
         </div>
@@ -188,25 +190,6 @@ const OurTeam = () => {
               As Academic Head, I'm focused on ensuring students have access to
               quality guidance and resources to excel in their international
               studies.
-            </p>
-          </div>
-        </div>
-
-        {/* Member 4 */}
-        <div style={styles.teamMember}>
-          <div style={styles.memberPhoto}>
-            <img
-              src={`${process.env.PUBLIC_URL}/assets/images/dorna.jpg`}
-              alt="Dorna Lal Gaire"
-              style={styles.memberPhotoImg}
-            />
-          </div>
-          <div style={styles.memberInfo}>
-            <h3 style={styles.memberInfoName}>Dorna Lal Gaire</h3>
-            <h4 style={styles.memberInfoTitle}>Marketing Manager</h4>
-            <p style={styles.memberInfoDescription}>
-              We believe in opening doors to global education, providing
-              personalized support every step of the way at Aice Global.
             </p>
           </div>
         </div>
