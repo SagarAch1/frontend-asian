@@ -5,6 +5,7 @@ import "./gallery.css";
 const GalleryDisplay = () => {
   const [galleries, setGalleries] = useState([]);
   const [expandedGallery, setExpandedGallery] = useState(null); // To track which gallery is expanded
+  const [clickedImage, setClickedImage] = useState(null); // Store clicked image
 
   useEffect(() => {
     getGalleryApi()
@@ -16,12 +17,14 @@ const GalleryDisplay = () => {
       });
   }, []);
 
-  const handleImageClick = (galleryId) => {
+  const handleImageClick = (galleryId, image) => {
     setExpandedGallery(galleryId === expandedGallery ? null : galleryId); // Toggle full screen mode
+    setClickedImage(image); // Set the clicked image
   };
 
   const closeFullScreen = () => {
     setExpandedGallery(null); // Close the full screen mode
+    setClickedImage(null); // Reset clicked image
   };
 
   return (
@@ -37,7 +40,7 @@ const GalleryDisplay = () => {
                     src={`http://localhost:5000/gallery/${gallery.galleryImages[0]}`}
                     className="gallery-image"
                     alt="Gallery Cover"
-                    onClick={() => handleImageClick(gallery._id)} // Now clicking the image expands it
+                    onClick={() => handleImageClick(gallery._id, gallery.galleryImages[0])} // Pass the clicked image to the function
                   />
                 </div>
                 <div className="gallery-card-body">
@@ -49,14 +52,16 @@ const GalleryDisplay = () => {
               {expandedGallery === gallery._id && (
                 <div className="full-screen-overlay" onClick={closeFullScreen}>
                   <div className="full-screen-gallery">
-                    {gallery.galleryImages.map((image, index) => (
-                      <img
-                        key={index}
-                        src={`http://localhost:5000/gallery/${image}`}
-                        className="gallery-fullscreen-image"
-                        alt={`Gallery Image ${index + 1}`}
-                      />
-                    ))}
+                    {gallery.galleryImages
+                      .filter((image) => image !== clickedImage) // Filter out the clicked image
+                      .map((image, index) => (
+                        <img
+                          key={index}
+                          src={`http://localhost:5000/gallery/${image}`}
+                          className="gallery-fullscreen-image"
+                          alt={`Gallery Image ${index + 1}`}
+                        />
+                      ))}
                   </div>
                 </div>
               )}

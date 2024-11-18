@@ -13,9 +13,11 @@
   transform: scale(1.05);
 }
 
+/* Gallery image in the grid (make all images the same size) */
 .gallery-image {
   width: 100%;
-  height: auto;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure the image fills the container without distortion */
   border-radius: 8px;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -51,10 +53,16 @@
   overflow-y: auto;
 }
 
+/* Fullscreen image styling (uniform size and fit) */
 .gallery-fullscreen-image {
-  max-width: 300px;
-  max-height: 300px;
-  object-fit: contain;
+  width: 300px; /* Fixed width for uniformity */
+  height: 300px; /* Fixed height for uniformity */
+  object-fit: contain; /* Ensure the image maintains its aspect ratio */
   margin: 10px;
   border-radius: 8px;
+}
+
+/* Optional: Remove the extra styling of the first image (cover image) */
+.gallery-card-header img:first-of-type {
+  object-fit: cover; /* Make sure the first image in the gallery looks consistent */
 }
