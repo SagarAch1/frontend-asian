@@ -109,6 +109,7 @@ const Allsubjects = () => {
   };
 
   return (
+    <>
     <div style={styles.container}>
       {/* Top image */}
       <div style={styles.topImage}></div>
@@ -175,10 +176,12 @@ const Allsubjects = () => {
         </div>
       </div>
       <FormPage />
-      <div style={styles.footer}>
+     
+    </div>
+    <div style={styles.footer}>
           <Footer style={styles.footer} />
         </div>
-    </div>
+    </>
   );
 };
 

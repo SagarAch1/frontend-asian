@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import Contact from '../Contact/Contact';
 
 const guides = [
   { title: 'Document checklist for Canada', buttonText: 'Download', link: 'https://docs.google.com/spreadsheets/d/1mXB-oQkbOVAvniehnGt0bz6paFWGFFfivsFIREIgiWo/edit?gid=763236539#gid=763236539' },
@@ -39,8 +40,8 @@ const Resourcecanada = () => {
           ))}
         </div>
 
-        {/* Accreditation and Membership with Responsive Grid Design */}
-        <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', paddingBottom: '50px', flexWrap: 'wrap', marginTop: '50px' }}>
+        
+        {/* <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', paddingBottom: '50px', flexWrap: 'wrap', marginTop: '50px' }}>
           {[
             { title: 'Accreditation', images: [{ src: 'aff.png', url: 'https://www.icef.com/agency/0010J000026RLxMQAW' }] },
             { title: 'Professional Certification', images: [{ src: 'itac.png', url: 'https://www.icef.com/academy/icef-trained-agent-counsellors-itacs-list/' }, { src: 'toefl.jpg', url: 'https://www.ets.org/toefl/institutions/ibt.html' }, { src: 'isana.png', url: 'https://isana.org.au/' }, { src: 'qeac.png', url: 'https://www.icef.com/academy/qualified-education-agent-counsellors-qeacs-list/' }, { src: 'think-new.jpg', url: 'https://thinknewnz.com/' }] },
@@ -63,8 +64,9 @@ const Resourcecanada = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
+      <Contact />
       
       {/* Footer */}
       <Footer />

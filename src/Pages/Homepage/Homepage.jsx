@@ -12,6 +12,107 @@ import ServicesSection from "./Services";
 import WhyChooseAiec from "./WhyChooseAiec";
 import Youshouldknow from "./YouShouldknow";
 
+// Image Row Component with Sections in One Row
+const ImageRow = () => {
+  // Grouped Images with Section Titles
+  const sections = [
+    {
+      title: "Accreditation",
+      images: [
+        { src: "/assets/images/aff.png", link: "https://www.icef.com/agency/0010J000026RLxMQAW" },
+      ],
+    },
+    {
+      title: "Professional Membership",
+      images: [
+        { src: "/assets/images/naaer.jpg", link: "https://www.naaer.org/" },
+        { src: "/assets/images/ecan.jpg", link: "https://ecan.org.np/" },
+        { src: "/assets/images/uni.jpg", link: "https://www.uniagents.com/" },
+      ],
+    },
+    {
+      title: "Professional Certification",
+      images: [
+        { src: "/assets/images/itac.png", link: "https://www.icef.com/academy/icef-trained-agent-counsellors-itacs-list/" },
+        { src: "/assets/images/toefl.jpg", link: "https://www.ets.org/toefl/institutions/ibt.html" },
+        { src: "/assets/images/isana.png", link: "https://isana.org.au/" },
+        { src: "/assets/images/qeac.png", link: "https://www.icef.com/academy/qualified-education-agent-counsellors-qeacs-list/" },
+        { src: "/assets/images/think-new.jpg", link: "https://thinknewnz.com/" },
+      ],
+    },
+  ];
+
+  // Styles
+  const containerStyle = {
+    margin: "20px 0",
+    padding: "20px",
+    textAlign: "center",
+    backgroundColor: "#f9f9f9",
+    borderRadius: "8px",
+    boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+    display: "flex",
+    justifyContent: "space-between",
+    gap: "5px", // Further reduced gap between sections
+    flexWrap: "wrap",
+  };
+
+  const sectionStyle = {
+    flex: "1",
+    minWidth: "10px", // Further reduced min-width to bring sections closer
+    textAlign: "center",
+  };
+
+  const sectionTitleStyle = {
+    fontSize: "18px",
+    fontWeight: "bold",
+    color: "#333",
+    marginBottom: "5px", // Further reduced margin for section title
+  };
+
+  const rowStyle = {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexWrap: "wrap",
+    gap: "15px", // Further reduced gap between images
+  };
+
+  const imageStyle = {
+    width: "80px",
+    height: "80px",
+    objectFit: "contain",
+    border: "1px solid #ddd",
+    borderRadius: "8px",
+  };
+
+  return (
+    <div style={containerStyle}>
+      {sections.map((section, index) => (
+        <div key={index} style={sectionStyle}>
+          {/* Section Title */}
+          <h3 style={sectionTitleStyle}>{section.title}</h3>
+          <div style={rowStyle}>
+            {section.images.map((image, idx) => (
+              <a
+                href={image.link}
+                key={idx}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={image.src}
+                  alt={section.title}
+                  style={imageStyle}
+                />
+              </a>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+};
+
 const Homepage = () => {
   const [sliders, setSliders] = useState([]);
   const [activeSection, setActiveSection] = useState("courses");
@@ -35,9 +136,9 @@ const Homepage = () => {
   };
 
   const carouselStyle = {
-    width: "100%", // Fixed width in pixels
-    height: "500px", // Fixed height
-    margin: "0 auto", // Centering the carousel
+    width: "100%",
+    height: "500px",
+    margin: "0 auto",
     position: "relative",
     marginTop: "-37px",
   };
@@ -107,10 +208,10 @@ const Homepage = () => {
                   className="d-block w-100"
                   alt={slider.name}
                   style={{
-                    height: "500px", // Fixed height
-                    width: "100%", // Makes image cover the defined carousel width
-                    objectFit: "cover", // Ensures the image covers the container
-                    objectPosition: "center", // Centers the image
+                    height: "500px",
+                    width: "100%",
+                    objectFit: "cover",
+                    objectPosition: "center",
                   }}
                 />
                 <div className="carousel-caption d-none d-md-block">
@@ -176,6 +277,9 @@ const Homepage = () => {
         <VideoSection />
         <PopularCourses />
       </div>
+
+      {/* Image Row Section */}
+      <ImageRow />
 
       {/* Footer */}
       <Footer />

@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
+import Contact from '../Contact/Contact';
 
 const guides = [
   { title: 'Processing Cycle', buttonText: 'Download', link: 'https://asian.edu.np/wp-content/uploads/2024/06/Processing-Cycle-1.pdf' },
@@ -41,7 +42,7 @@ const StudyInAustralia = () => {
           ))}
         </div>
 
-        {/* Accreditation and Membership with Responsive Grid Design */}
+        {/* Accreditation and Membership with Responsive Grid Design
         <div style={{ display: 'flex', justifyContent: 'center', gap: '30px', paddingBottom: '50px', flexWrap: 'wrap', marginTop: '50px' }}>
           {[
             { title: 'Accreditation', images: [{ src: 'aff.png', url: 'https://www.icef.com/agency/0010J000026RLxMQAW' }] },
@@ -65,8 +66,10 @@ const StudyInAustralia = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
+      <Contact />
+      
       
       {/* Footer */}
       <Footer />

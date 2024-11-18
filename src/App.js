@@ -385,7 +385,7 @@ function App() {
         <Route path="/resources" element={<SampleDocs />} />
     
 
-        <Route path="/forgot-password" element={<ForgotPassword />} />
+       
         <Route path="/contact" element={<Contact />} />
        
         <Route path="/support" element={<Support />} />
