@@ -19,7 +19,10 @@ const ImageRow = () => {
     {
       title: "Accreditation",
       images: [
-        { src: "/assets/images/aff.png", link: "https://www.icef.com/agency/0010J000026RLxMQAW" },
+        {
+          src: "/assets/images/aff.png",
+          link: "https://www.icef.com/agency/0010J000026RLxMQAW",
+        },
       ],
     },
     {
@@ -33,11 +36,23 @@ const ImageRow = () => {
     {
       title: "Professional Certification",
       images: [
-        { src: "/assets/images/itac.png", link: "https://www.icef.com/academy/icef-trained-agent-counsellors-itacs-list/" },
-        { src: "/assets/images/toefl.jpg", link: "https://www.ets.org/toefl/institutions/ibt.html" },
+        {
+          src: "/assets/images/itac.png",
+          link: "https://www.icef.com/academy/icef-trained-agent-counsellors-itacs-list/",
+        },
+        {
+          src: "/assets/images/toefl.jpg",
+          link: "https://www.ets.org/toefl/institutions/ibt.html",
+        },
         { src: "/assets/images/isana.png", link: "https://isana.org.au/" },
-        { src: "/assets/images/qeac.png", link: "https://www.icef.com/academy/qualified-education-agent-counsellors-qeacs-list/" },
-        { src: "/assets/images/think-new.jpg", link: "https://thinknewnz.com/" },
+        {
+          src: "/assets/images/qeac.png",
+          link: "https://www.icef.com/academy/qualified-education-agent-counsellors-qeacs-list/",
+        },
+        {
+          src: "/assets/images/think-new.jpg",
+          link: "https://thinknewnz.com/",
+        },
       ],
     },
   ];
@@ -99,11 +114,7 @@ const ImageRow = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
-                  src={image.src}
-                  alt={section.title}
-                  style={imageStyle}
-                />
+                <img src={image.src} alt={section.title} style={imageStyle} />
               </a>
             ))}
           </div>
@@ -142,11 +153,39 @@ const Homepage = () => {
     position: "relative",
     marginTop: "-37px",
   };
+  const origamiImageStyle = {
+    transition: "transform 2s ease, opacity 1s ease",
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
+    objectPosition: "center",
+  };
+
+  const origamiEffect = `
+    @keyframes origamiIn {
+      0% {
+        transform: rotateY(180deg);
+        opacity: 0;
+      }
+      100% {
+        transform: rotateY(0deg);
+        opacity: 1;
+      }
+    }
+
+    .carousel-item {
+      animation: origamiIn 1s forwards;
+      transform-origin: center center;
+    }
+  `;
 
   const navStyle = {
     marginTop: "40px",
     marginBottom: "40px",
     textAlign: "center",
+  };
+  const foldEffect = {
+    animation: "foldEffect 2s forwards",
   };
 
   const navListStyle = {
@@ -175,6 +214,8 @@ const Homepage = () => {
     <>
       {/* Below Navbar */}
       <BelowNavbar />
+
+      <style>{origamiEffect}</style>
 
       <div className="container-fluid p-0" style={containerStyle}>
         <div
