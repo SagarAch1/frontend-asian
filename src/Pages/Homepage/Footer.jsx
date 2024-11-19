@@ -7,6 +7,7 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Footer = () => {
   return (
@@ -109,27 +110,24 @@ const Footer = () => {
               Quick Links
             </h6>
             <p>
-              <a href="#!" style={{ color: "#fff", textDecoration: "none" }}>
+              <Link to="/aiecglobal" style={{ color: "#fff", textDecoration: "none" }}>
                 About Us
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#!" style={{ color: "#fff", textDecoration: "none" }}>
+              <Link to="/bloglist" style={{ color: "#fff", textDecoration: "none" }}>
                 Blogs
-              </a>
+              </Link>
             </p>
             <p>
-              <a href="#!" style={{ color: "#fff", textDecoration: "none" }}>
+              <Link to="#!" style={{ color: "#fff", textDecoration: "none" }}>
                 Privacy Policy
-              </a>
+              </Link>
             </p>
             <p>
-              <a
-                href="ourteam"
-                style={{ color: "#fff", textDecoration: "none" }}
-              >
+              <Link to="/ourteam" style={{ color: "#fff", textDecoration: "none" }}>
                 Our Team
-              </a>
+              </Link>
             </p>
           </div>
           {/* Branches */}
@@ -137,16 +135,32 @@ const Footer = () => {
             <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
               Branches
             </h6>
-            <p>Chitwan, Nepal</p>
-            <p>Pokhara, Nepal</p>
-            <p>Sydney, Australia</p>
+            <p>
+              <Link to="/chitwanoffice" style={{ color: "#fff", textDecoration: "none" }}>
+                Chitwan, Nepal
+              </Link>
+            </p>
+            <p>
+              <Link to="/pokharaoffice" style={{ color: "#fff", textDecoration: "none" }}>
+                Pokhara, Nepal
+              </Link>
+            </p>
+            <p>
+              <Link to="/sydneyoffice" style={{ color: "#fff", textDecoration: "none" }}>
+                Sydney, Australia
+              </Link>
+            </p>
           </div>
           {/* Head Office */}
           <div className="col-md-3" style={{ marginBottom: "20px" }}>
             <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
               Head Office
             </h6>
-            <p>Putalisadak, Kathmandu</p>
+            <p>
+              <Link to="/kathmanduoffice" style={{ color: "#fff", textDecoration: "none" }}>
+                Putalisadak, Kathmandu
+              </Link>
+            </p>
             <p>Phone 1: +977-01-5908881</p>
             <p>Phone 2: +977-01-5908882</p>
             <p>Email: info@asian.edu.np</p>
