@@ -194,7 +194,7 @@ const styles = {
     fontFamily: "'Aptos', sans-serif",
   },
   topImage: {
-    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/finalbanner.jpg)`,
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/study.jpg)`,
     width: '100%',
     height: '350px',
     backgroundSize: 'cover',

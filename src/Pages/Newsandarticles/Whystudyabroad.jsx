@@ -25,7 +25,7 @@ const Preparetodepart = () => {
       width: "100%",
     },
     headerSection: {
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
+      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/lcc.jpg)`,
       backgroundSize: "cover",
       backgroundPosition: "center",
       padding: "100px 25px",
@@ -34,8 +34,8 @@ const Preparetodepart = () => {
       width: "100%",
       minHeight: "400px",
     },
-    headerTitle: { fontSize: "36px", fontWeight: "bold",color: "black", },
-    subheader: { fontSize: "18px", marginTop: "10px",color: "black", },
+    headerTitle: { fontSize: "36px", fontWeight: "bold", color: "black" },
+    subheader: { fontSize: "18px", marginTop: "10px", color: "black" },
     contentSection: {
       padding: "40px 20px",
       maxWidth: "1200px",
@@ -45,7 +45,6 @@ const Preparetodepart = () => {
       gap: "20px",
       alignItems: "center",
       marginTop: "70px",
-      
     },
     leftColumn: {
       gridColumn: "1 / 2",
@@ -188,7 +187,7 @@ const Preparetodepart = () => {
             </p>
           </div>
           <div style={styles.videoContainer}>
-          <iframe
+            <iframe
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/7VVkxTD0jJo?rel=0"
