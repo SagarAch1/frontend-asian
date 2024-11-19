@@ -15,9 +15,12 @@ const WhereAndWhatToStudy = () => {
       padding: "10px",
       color: "white",
       cursor: "pointer",
-      position: "relative", // Change position to relative or static
+      position: "relative",
       width: "100%",
       zIndex: 1000,
+    },
+    headerWrapper: {
+      width: "100%",
     },
     headerSection: {
       backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/whystudyabroad.jpeg)`,
@@ -29,11 +32,8 @@ const WhereAndWhatToStudy = () => {
       width: "100%",
       minHeight: "400px",
     },
-    headerWrapper: {
-      width: "100%",
-    },
-    headerTitle: { fontSize: "36px", fontWeight: "bold" },
-    subheader: { fontSize: "18px", marginTop: "10px" },
+    headerTitle: { fontSize: "36px", fontWeight: "bold",color: "black", },
+    subheader: { fontSize: "18px", marginTop: "10px",color: "black", },
     contentSection: {
       padding: "40px 20px",
       maxWidth: "1200px",
@@ -42,13 +42,14 @@ const WhereAndWhatToStudy = () => {
       gridTemplateColumns: "2fr 1fr 1fr",
       gap: "20px",
       alignItems: "center",
-      marginTop: "70px", // Adjust this value to create space below the navbar
+      marginTop: "70px",
+      
     },
     leftColumn: {
       gridColumn: "1 / 2",
     },
     h2: {
-      color: "blue", // Apply blue color to the h2 element
+      color: "blue",
     },
     rightColumn: {
       gridColumn: "2 / 4",
@@ -61,17 +62,20 @@ const WhereAndWhatToStudy = () => {
       textAlign: "center",
     },
     videoContainer: {
-      width: "100%", // Maintain box width
-      maxWidth: "600px", // Set maximum width for the box
-      height: "300px", // Set fixed height for the box
+      width: "100%",
+      maxWidth: "600px",
+      height: "300px",
       backgroundColor: "#f7f7f7",
       borderRadius: "8px",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
       overflow: "hidden",
     },
-    iframe: {
+    video: {
       width: "100%",
       height: "100%",
-      border: "none",
+      objectFit: "cover",
     },
     signupSection: {
       display: "flex",
@@ -92,6 +96,39 @@ const WhereAndWhatToStudy = () => {
       cursor: "pointer",
       fontSize: "16px",
       marginTop: "10px",
+    },
+    additionalSection: {
+      marginTop: "40px",
+      padding: "20px",
+      backgroundColor: "#f7f7f7",
+      borderRadius: "8px",
+      textAlign: "center",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    additionalTitle: {
+      fontSize: "24px",
+      fontWeight: "bold",
+      marginBottom: "20px",
+    },
+    listItem: {
+      marginBottom: "20px",
+      borderBottom: "1px solid #ccc",
+      paddingBottom: "10px",
+      textAlign: "left",
+      maxWidth: "800px",
+      width: "100%",
+    },
+    listItemTitle: {
+      fontWeight: "bold",
+      fontSize: "18px",
+      marginBottom: "5px",
+    },
+    listItemLink: {
+      color: "#0056b3",
+      textDecoration: "none",
     },
   };
 
