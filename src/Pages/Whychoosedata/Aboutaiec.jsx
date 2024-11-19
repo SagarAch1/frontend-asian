@@ -111,9 +111,7 @@ const Aboutaiec = () => {
       <div style={contentContainerStyle}>
         <h2 style={titleStyle}>About AIEC</h2>
         <p style={subtitleStyle}>
-          AIEC is a leader in global education services. As an Australian listed
-          company, we have operations in 57 countries and our websites attract
-          100 million visits a year. We specialise in combining human expertise
+          AIEC is a leader in global education services.  We specialise in combining human expertise
           with our leading digital platform to help people get accepted into
           their ideal course, take an English language test or learn English in
           our schools.
