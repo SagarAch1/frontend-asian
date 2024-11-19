@@ -63,7 +63,7 @@ const StudyAbroadSteps = () => {
       <div style={contentStyle}>
         <div>
           <img
-            src={`${process.env.PUBLIC_URL}/assets/images/girl.avif`}
+            src={`${process.env.PUBLIC_URL}/assets/images/formfinal.png`}
             alt="Study Abroad Steps"
             style={imageStyle}
           />
