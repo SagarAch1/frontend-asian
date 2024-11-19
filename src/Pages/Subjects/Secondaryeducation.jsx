@@ -14,7 +14,7 @@ const SecondaryEducation = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -137,9 +137,13 @@ const SecondaryEducation = () => {
       <div style={sectionStyle}>
         <h1>Study Secondary Education Abroad</h1>
         <p>
-          A degree in Secondary Education prepares you to teach in middle or high school, 
+          A degree in Secondary Education prepares you to teach in middle or
+          high school,
         </p>
-        <p>usually specializing in a specific subject such as Math, History, Science, or Languages.</p>
+        <p>
+          usually specializing in a specific subject such as Math, History,
+          Science, or Languages.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -153,19 +157,22 @@ const SecondaryEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $61,820: average salary for secondary school teachers
+            <strong></strong> $61,820: average salary for secondary school
+            teachers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Average annual salary for top secondary school teachers
+            <strong></strong> Average annual salary for top secondary school
+            teachers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 77,400 job openings projected annually over the next decade
+            <strong></strong> 77,400 job openings projected annually over the
+            next decade
           </p>
         </div>
       </div>

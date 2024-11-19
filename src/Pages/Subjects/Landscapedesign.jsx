@@ -14,7 +14,7 @@ const LandscapeDesign = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -117,7 +117,8 @@ const LandscapeDesign = () => {
         "In the U.S., around 16,000 new jobs are expected for landscape architects in the coming decade. The demand for professionals, along with their competitive salaries, makes this a promising field.",
     },
     {
-      title: "Career opportunities for Landscape Design and Architecture graduates",
+      title:
+        "Career opportunities for Landscape Design and Architecture graduates",
       subtitle1: "Urban Design",
       content1:
         "Urban designers focus on planning and designing outdoor urban spaces. They often work with government agencies and construction teams to create maps and oversee the development of outdoor spaces in urban areas.",
@@ -136,9 +137,14 @@ const LandscapeDesign = () => {
       <div style={sectionStyle}>
         <h1>Study Landscape Design and Architecture Abroad</h1>
         <p>
-          Have you ever wondered how outdoor spaces like parks, resorts, and monuments  are designed?
+          Have you ever wondered how outdoor spaces like parks, resorts, and
+          monuments are designed?
         </p>
-        <p> Landscape architects make it happen. If you're creative and love working outdoors, this could be your ideal career path.</p>
+        <p>
+          {" "}
+          Landscape architects make it happen. If you're creative and love
+          working outdoors, this could be your ideal career path.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -146,25 +152,29 @@ const LandscapeDesign = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>Median Salary</strong>: Average annual income of landscape architects
+            <strong>Median Salary</strong>: Average annual income of landscape
+            architects
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Current Employment</strong>: Landscape architects currently employed in the U.S.
+            <strong>Current Employment</strong>: Landscape architects currently
+            employed in the U.S.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Public Sector</strong>: Median salary of landscape architects in the public sector
+            <strong>Public Sector</strong>: Median salary of landscape
+            architects in the public sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Job Growth</strong>: 3% increase in employment for landscape architects expected
+            <strong>Job Growth</strong>: 3% increase in employment for landscape
+            architects expected
           </p>
         </div>
       </div>

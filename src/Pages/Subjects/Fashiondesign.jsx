@@ -14,7 +14,7 @@ const FashionDesign = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -137,12 +137,8 @@ const FashionDesign = () => {
       {/* Main section with background image */}
       <div style={sectionStyle}>
         <h1>Study Fashion Design Abroad</h1>
-        <p>
-        Creative with a passion for design and trends?
-        </p>
-        <p>
-        Fashion design could be the perfect career for you!
-        </p>
+        <p>Creative with a passion for design and trends?</p>
+        <p>Fashion design could be the perfect career for you!</p>
       </div>
 
       {/* Statistics section */}

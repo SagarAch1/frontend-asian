@@ -14,7 +14,7 @@ const Physicalscience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -138,28 +138,45 @@ const Physicalscience = () => {
       <div style={sectionStyle}>
         <h1>Study Physicalscience abroad</h1>
         <p>
-          Ever wondered how stars, planets, and other celestial bodies stay in harmony?
+          Ever wondered how stars, planets, and other celestial bodies stay in
+          harmony?
         </p>
-        <p> A Physicalscience degree dives into the origins and nature of these celestial bodies.</p>
+        <p>
+          {" "}
+          A Physicalscience degree dives into the origins and nature of these
+          celestial bodies.
+        </p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p><strong></strong> 21,100 estimated job openings for astrophysicists this decade</p>
+          <p>
+            <strong></strong> 21,100 estimated job openings for astrophysicists
+            this decade
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p><strong></strong> Average annual salary for physicists and astronomers in the US</p>
+          <p>
+            <strong></strong> Average annual salary for physicists and
+            astronomers in the US
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p><strong></strong> Contribution of the physics industry to the US economy in 2016</p>
+          <p>
+            <strong></strong> Contribution of the physics industry to the US
+            economy in 2016
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p><strong></strong> 8% estimated employment growth of astronomers in the US</p>
+          <p>
+            <strong></strong> 8% estimated employment growth of astronomers in
+            the US
+          </p>
         </div>
       </div>
 
@@ -174,15 +191,25 @@ const Physicalscience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

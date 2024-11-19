@@ -14,7 +14,7 @@ const SocialSkills = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -130,10 +130,14 @@ const SocialSkills = () => {
       <div style={sectionStyle}>
         <h1>Study Social Skills abroad</h1>
         <p>
-          Humans use gestures, body language, and appearance to communicate and 
+          Humans use gestures, body language, and appearance to communicate and
         </p>
-        <p> connect with others. Social Skills helps individuals refine these abilities</p>
-        <p>  for success in personal and professional environments.</p>
+        <p>
+          {" "}
+          connect with others. Social Skills helps individuals refine these
+          abilities
+        </p>
+        <p> for success in personal and professional environments.</p>
       </div>
 
       {/* Statistics section */}
@@ -147,19 +151,22 @@ const SocialSkills = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Projected 11% growth in corporate trainer jobs in the coming decade
+            <strong></strong> Projected 11% growth in corporate trainer jobs in
+            the coming decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Expected annual growth rate of the soft skills market over the next five years
+            <strong></strong> Expected annual growth rate of the soft skills
+            market over the next five years
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Social skills-intensive jobs will account for two-thirds of the workforce by 2030
+            <strong></strong> Social skills-intensive jobs will account for
+            two-thirds of the workforce by 2030
           </p>
         </div>
       </div>

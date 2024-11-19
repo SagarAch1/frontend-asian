@@ -14,7 +14,7 @@ const SocialJustice = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -135,9 +135,12 @@ const SocialJustice = () => {
       <div style={sectionStyle}>
         <h1>Study Social Justice abroad</h1>
         <p>
-          If you’re passionate about making a difference and promoting change, 
+          If you’re passionate about making a difference and promoting change,
         </p>
-        <p>studying Social Justice could be the right path for you. The field covers  </p>
+        <p>
+          studying Social Justice could be the right path for you. The field
+          covers{" "}
+        </p>
         <p>areas like social policy, politics, welfare, and mental health.</p>
       </div>
 
@@ -145,11 +148,16 @@ const SocialJustice = () => {
       <div style={statisticsSectionStyle}>
         <div style={statCardStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>Median annual salary of social and community service workers in the US</p>
+          <p>
+            Median annual salary of social and community service workers in the
+            US
+          </p>
         </div>
         <div style={statCardStyle}>
           <div style={iconStyle}>📈</div>
-          <p>15% increase in employment of social and community service workers</p>
+          <p>
+            15% increase in employment of social and community service workers
+          </p>
         </div>
         <div style={statCardStyle}>
           <div style={iconStyle}>💼</div>
@@ -172,13 +180,21 @@ const SocialJustice = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

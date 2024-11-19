@@ -14,7 +14,7 @@ const Policestudies = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -143,7 +143,7 @@ const Policestudies = () => {
       <div style={sectionStyle}>
         <h1>Study Police Studies abroad</h1>
         <p>
-          Police Studies provide a comprehensive understanding of police work, 
+          Police Studies provide a comprehensive understanding of police work,
         </p>
         <p>criminal law, criminal justice, and law enforcement procedures.</p>
       </div>
@@ -153,25 +153,29 @@ const Policestudies = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $113,860: average annual salary for top-ranking police officers and detectives
+            <strong></strong> $113,860: average annual salary for top-ranking
+            police officers and detectives
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 7% expected growth in employment opportunities for police officers
+            <strong></strong> 7% expected growth in employment opportunities for
+            police officers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 67,100 projected job openings annually for police officers and detectives
+            <strong></strong> 67,100 projected job openings annually for police
+            officers and detectives
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> $67,290: average annual salary for police officers and detectives
+            <strong></strong> $67,290: average annual salary for police officers
+            and detectives
           </p>
         </div>
       </div>
@@ -187,13 +191,21 @@ const Policestudies = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
               </div>
             )}

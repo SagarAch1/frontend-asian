@@ -14,7 +14,7 @@ const RehabilitationTherapy = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -134,9 +134,13 @@ const RehabilitationTherapy = () => {
       <div style={sectionStyle}>
         <h1>Study Rehabilitation Therapy abroad</h1>
         <p>
-          Rehabilitation Therapy focuses on interventions that help people manage
+          Rehabilitation Therapy focuses on interventions that help people
+          manage
         </p>
-        <p> disabilities and improve their functioning in everyday interactions.</p>
+        <p>
+          {" "}
+          disabilities and improve their functioning in everyday interactions.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -147,7 +151,10 @@ const RehabilitationTherapy = () => {
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>10% expected growth in rehabilitation counselor employment in this decade</p>
+          <p>
+            10% expected growth in rehabilitation counselor employment in this
+            decade
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
@@ -170,11 +177,17 @@ const RehabilitationTherapy = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

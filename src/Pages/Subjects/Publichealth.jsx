@@ -14,7 +14,7 @@ const Publichealth = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -138,10 +138,15 @@ const Publichealth = () => {
       <div style={sectionStyle}>
         <h1>Study Public Health abroad</h1>
         <p>
-          Public Health is dedicated to enhancing the health and well-being of 
+          Public Health is dedicated to enhancing the health and well-being of
         </p>
-        <p>people around the world.If you’re looking for a meaningful career  </p>
-        <p>in service to society, Public Health might be the perfect choice for you.</p>
+        <p>
+          people around the world.If you’re looking for a meaningful career{" "}
+        </p>
+        <p>
+          in service to society, Public Health might be the perfect choice for
+          you.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -149,7 +154,8 @@ const Publichealth = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $48,860: the average yearly income for public health professionals
+            <strong></strong> $48,860: the average yearly income for public
+            health professionals
           </p>
         </div>
         <div style={statItemStyle}>
@@ -167,7 +173,8 @@ const Publichealth = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 125,200 public health professionals working in the US by 2020
+            <strong></strong> 125,200 public health professionals working in the
+            US by 2020
           </p>
         </div>
       </div>

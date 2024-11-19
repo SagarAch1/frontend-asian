@@ -14,7 +14,7 @@ const BiotechnologyPage = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -147,16 +147,23 @@ const BiotechnologyPage = () => {
       <div style={headerSectionStyle}>
         <h1>Study Biotechnology Abroad</h1>
         <p>
-          Biotechnology is an interdisciplinary field studying biological matter at a cellular level, 
+          Biotechnology is an interdisciplinary field studying biological matter
+          at a cellular level,
         </p>
-        <p>including areas like genetics, immunology, microbiology, and plant biotechnology.</p>
+        <p>
+          including areas like genetics, immunology, microbiology, and plant
+          biotechnology.
+        </p>
       </div>
 
       {/* Statistics Section */}
       <div style={statisticsSectionStyle}>
         <div style={statCardStyle}>
           <div style={iconCardStyle}>🌟</div>
-          <p>The median starting salary for a biotechnologist in the USA is $46,340 annually.</p>
+          <p>
+            The median starting salary for a biotechnologist in the USA is
+            $46,340 annually.
+          </p>
         </div>
         <div style={statCardStyle}>
           <div style={iconCardStyle}>📈</div>
@@ -164,11 +171,17 @@ const BiotechnologyPage = () => {
         </div>
         <div style={statCardStyle}>
           <div style={iconCardStyle}>💼</div>
-          <p>The biotechnology field is expected to grow by 6% in the next decade.</p>
+          <p>
+            The biotechnology field is expected to grow by 6% in the next
+            decade.
+          </p>
         </div>
         <div style={statCardStyle}>
           <div style={iconCardStyle}>🔧</div>
-          <p>87,000 new jobs will be created in the biotechnology industry in the next 5 years.</p>
+          <p>
+            87,000 new jobs will be created in the biotechnology industry in the
+            next 5 years.
+          </p>
         </div>
       </div>
 

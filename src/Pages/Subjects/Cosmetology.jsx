@@ -14,7 +14,7 @@ const Cosmetology = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -137,10 +137,11 @@ const Cosmetology = () => {
       {/* Header section with background image */}
       <div style={sectionStyle}>
         <h1>Study Cosmetology Abroad</h1>
+        <p>Cosmetology encompasses the science and art of enhancing beauty</p>
         <p>
-          Cosmetology encompasses the science and art of enhancing beauty 
+          for skin, hair, and nails, offering a creative career in a thriving
+          industry.
         </p>
-        <p>for skin, hair, and nails, offering a creative career in a thriving industry.</p>
       </div>
 
       {/* Statistics section */}
@@ -154,7 +155,8 @@ const Cosmetology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average yearly salary for cosmetologists and stylists
+            <strong></strong>Average yearly salary for cosmetologists and
+            stylists
           </p>
         </div>
         <div style={statItemStyle}>

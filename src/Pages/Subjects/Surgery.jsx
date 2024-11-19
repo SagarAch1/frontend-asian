@@ -14,7 +14,7 @@ const Surgery = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -142,9 +142,13 @@ const Surgery = () => {
       <div style={sectionStyle}>
         <h1>Study Surgery Abroad</h1>
         <p>
-          Surgery is the branch of medicine that treats injuries, diseases, and deformities through 
+          Surgery is the branch of medicine that treats injuries, diseases, and
+          deformities through
         </p>
-        <p>the physical removal, repair, or adjustment of organs or tissues, often involving incisions.</p>
+        <p>
+          the physical removal, repair, or adjustment of organs or tissues,
+          often involving incisions.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -187,15 +191,25 @@ const Surgery = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Check for subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

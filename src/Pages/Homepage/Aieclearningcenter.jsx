@@ -3,28 +3,23 @@ import WhyChooseAiec from "../Homepage/WhyChooseAiec";
 import Footer from "./Footer";
 import Youshouldknow from "./YouShouldknow";
 
-const aiecWorkshop = () => {
+const AiecWorkshop = () => {
   const styles = {
-    container: {
-      width: "100vw",
-      margin: "0 auto",
-      padding: "20px",
-      fontFamily: "'Arial', sans-serif",
-      backgroundColor: "#f0f4f8",
-      marginTop: "80px",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
     banner: {
       position: "relative",
       textAlign: "center",
       color: "#ffffff",
+      width: "100vw",
+      height: "450px",
+      marginTop: "-80px", // Ensures it starts from the top edge
+      zIndex: "-1", // Ensures it is behind the navbar
+      overflow: "hidden",
     },
     bannerImage: {
-      width: "1900px",
-      height: "450px",
-      marginTop: "-18px",
+      width: "100%",
+      height: "100%",
+      objectFit: "cover",
+      marginTop: "165px",
     },
     bannerContent: {
       position: "absolute",
@@ -36,24 +31,32 @@ const aiecWorkshop = () => {
     bannerTitle: {
       fontSize: "60px",
       fontWeight: "700",
-      marginBottom: "10px",
+      marginBottom: "110px",
       color: "black",
-      textAlign:"left",
-     
-      
+      textAlign: "left",
     },
     bannerSubtitle: {
       fontSize: "36px",
       fontWeight: "600",
       marginBottom: "10px",
       color: "black",
-      textAlign:"left",
+      textAlign: "left",
     },
     bannerText: {
       fontSize: "20px",
       margin: "5px 0",
       color: "black",
-      textAlign:"left",
+      textAlign: "left",
+    },
+    container: {
+      width: "100vw",
+      margin: "0 auto",
+      padding: "20px",
+      fontFamily: "'Arial', sans-serif",
+      backgroundColor: "#f0f4f8",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
     },
     buttonContainer: {
       display: "grid",
@@ -67,7 +70,7 @@ const aiecWorkshop = () => {
       alignItems: "center",
       justifyContent: "center",
       width: "100%",
-      height: "80px", // Reduced size for a sleeker look
+      height: "80px",
       borderRadius: "15px",
       fontSize: "14px",
       fontWeight: "600",
@@ -105,37 +108,34 @@ const aiecWorkshop = () => {
       background: "linear-gradient(135deg, #4facfe, #00f2fe)",
       boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
       transition: "transform 0.3s ease, box-shadow 0.3s ease",
-      "&:hover": {
-        transform: "scale(1.05)",
-        boxShadow: "0 6px 12px rgba(0, 0, 0, 0.3)",
-      },
     },
   };
 
   return (
     <>
+      {/* Banner Section Outside Main Container */}
+      <div style={styles.banner}>
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/abo.jpg`}
+          alt="AIEC Workshop"
+          style={styles.bannerImage}
+        />
+        <div style={styles.bannerContent}>
+          <h1 style={styles.bannerTitle}>AIEC</h1>
+          <h2 style={styles.bannerSubtitle}>TEST PREPARATION</h2>
+          <h2 style={styles.bannerSubtitle}>WORKSHOP WEEK</h2>
+          <p style={styles.bannerText}>Sunday to Friday | 10 am - 5 pm</p>
+          <p style={styles.bannerText}>
+            Venue: AIEC office, ADBL Bank's Building, AL3, Putalisadak,
+            Kathmandu
+          </p>
+          <p style={styles.bannerText}>977-01-5908881, 977-01-5908882</p>
+          <p style={styles.bannerText}>info@asian.edu.np</p>
+        </div>
+      </div>
+
       {/* Main Container */}
       <div style={styles.container}>
-        <div style={styles.banner}>
-          <img
-            src={`${process.env.PUBLIC_URL}/assets/images/abo.jpg`}
-            alt="AIEC Workshop"
-            style={styles.bannerImage}
-          />
-          <div style={styles.bannerContent}>
-            <h1 style={styles.bannerTitle}>AIEC</h1>
-            <h2 style={styles.bannerSubtitle}>TEST PREPARATION</h2>
-            <h2 style={styles.bannerSubtitle}>WORKSHOP WEEK</h2>
-            <p style={styles.bannerText}>Sunday to Friday | 10 am - 5 pm</p>
-            <p style={styles.bannerText}>
-              Venue: AIEC office, ADBL Bank's Building, AL3, Putalisadak,
-              Kathmandu
-            </p>
-            <p style={styles.bannerText}>977-01-5908881, 977-01-5908882</p>
-            <p style={styles.bannerText}>info@asian.edu.np</p>
-          </div>
-        </div>
-
         <div style={styles.buttonContainer}>
           <a href="/abc" style={{ ...styles.button, ...styles.primaryButton }}>
             PTE Mock Test Free* / Paid
@@ -178,13 +178,12 @@ const aiecWorkshop = () => {
         </div>
       </div>
 
-      {/* Footer - Placed outside of the main container */}
+      {/* Footer */}
       <Youshouldknow />
       <WhyChooseAiec />
-
       <Footer />
     </>
   );
 };
 
-export default aiecWorkshop;
+export default AiecWorkshop;

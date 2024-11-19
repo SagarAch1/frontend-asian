@@ -14,7 +14,7 @@ const WoolScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -138,7 +138,8 @@ const WoolScience = () => {
       <div style={sectionStyle}>
         <h1>Study Wool Science Abroad</h1>
         <p>
-          Wool is a globally traded commodity with a dynamic market. Studying wool science offers promising career options.
+          Wool is a globally traded commodity with a dynamic market. Studying
+          wool science offers promising career options.
         </p>
       </div>
 
@@ -146,25 +147,29 @@ const WoolScience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>Global wool market growth</strong>: expected CAGR of 4.8% (2021-2026)
+            <strong>Global wool market growth</strong>: expected CAGR of 4.8%
+            (2021-2026)
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Operations Coordinator</strong> earns approximately $70,000 yearly.
+            <strong>Operations Coordinator</strong> earns approximately $70,000
+            yearly.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Assistant Wool Buyer</strong> salary: around $60,000 annually.
+            <strong>Assistant Wool Buyer</strong> salary: around $60,000
+            annually.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>200,000+</strong> employed in Australian wool production and export.
+            <strong>200,000+</strong> employed in Australian wool production and
+            export.
           </p>
         </div>
       </div>

@@ -14,7 +14,7 @@ const Radiography = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -139,10 +139,18 @@ const Radiography = () => {
       <div style={sectionStyle}>
         <h1>Study Radiography abroad</h1>
         <p>
-          Radiography is both an art and science involving the use of radiation to capture images 
+          Radiography is both an art and science involving the use of radiation
+          to capture images
         </p>
-        <p>of the body’s internal structures,including tissues, bones, organs, and vessels.</p>
-        <p>  This discipline focuses on visualizing the body's interior using techniques like X-rays.</p>
+        <p>
+          of the body’s internal structures,including tissues, bones, organs,
+          and vessels.
+        </p>
+        <p>
+          {" "}
+          This discipline focuses on visualizing the body's interior using
+          techniques like X-rays.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -150,8 +158,8 @@ const Radiography = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $12.4 billion: the estimated worth of the radiography
-            industry
+            <strong></strong> $12.4 billion: the estimated worth of the
+            radiography industry
           </p>
         </div>
         <div style={statItemStyle}>
@@ -163,8 +171,8 @@ const Radiography = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $99,281: the average annual salary of an experienced
-            radiographer
+            <strong></strong> $99,281: the average annual salary of an
+            experienced radiographer
           </p>
         </div>
         <div style={statItemStyle}>

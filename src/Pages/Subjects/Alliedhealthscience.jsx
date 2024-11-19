@@ -14,7 +14,7 @@ const AlliedHealthScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -82,9 +82,9 @@ const AlliedHealthScience = () => {
   };
 
   const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
@@ -119,19 +119,19 @@ const AlliedHealthScience = () => {
         "In the U.S. alone, there are over 5 million allied health providers, and these roles make up about 60% of all healthcare providers. Job openings for allied health professionals are projected to be 11,400 annually!",
     },
     {
-      title: 'Career Pathways for Allied Health Science graduates',
-      subtitle1: 'Speech-language pathologist',
+      title: "Career Pathways for Allied Health Science graduates",
+      subtitle1: "Speech-language pathologist",
       content1:
-        'Speech-language pathologists assess and treat patients with communication and swallowing difficulties. This field is expected to grow by 18% this decade. Average salary: $80,480.',
-      subtitle2: 'Respiratory Therapist',
+        "Speech-language pathologists assess and treat patients with communication and swallowing difficulties. This field is expected to grow by 18% this decade. Average salary: $80,480.",
+      subtitle2: "Respiratory Therapist",
       content2:
-        'Respiratory therapists provide therapy and diagnostic services for patients with respiratory conditions. Average salary: $62,810.',
-      subtitle3: 'Healthcare Office Assistant',
+        "Respiratory therapists provide therapy and diagnostic services for patients with respiratory conditions. Average salary: $62,810.",
+      subtitle3: "Healthcare Office Assistant",
       content3:
-        'Healthcare office assistants handle administrative tasks like data entry and scheduling. Average salary: $37,350.',
-      subtitle4: 'Physician Assistant',
+        "Healthcare office assistants handle administrative tasks like data entry and scheduling. Average salary: $37,350.",
+      subtitle4: "Physician Assistant",
       content4:
-        'One of the fastest-growing professions, physician assistants work closely with doctors in patient care. Projected job growth: 31%. Average salary: $115,390.',
+        "One of the fastest-growing professions, physician assistants work closely with doctors in patient care. Projected job growth: 31%. Average salary: $115,390.",
     },
   ];
 
@@ -141,10 +141,14 @@ const AlliedHealthScience = () => {
       <div style={headerStyle}>
         <h1>Study Allied Health Science Abroad</h1>
         <p>
-          If you're passionate about science and healthcare, pursuing a degree in allied  </p>
-          <p>health science could be the perfect career path. Allied health professions 
-          </p>
-          <p>focus on prevention and recovery for patients.</p>
+          If you're passionate about science and healthcare, pursuing a degree
+          in allied{" "}
+        </p>
+        <p>
+          health science could be the perfect career path. Allied health
+          professions
+        </p>
+        <p>focus on prevention and recovery for patients.</p>
       </div>
 
       {/* Statistics section */}
@@ -178,15 +182,25 @@ const AlliedHealthScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

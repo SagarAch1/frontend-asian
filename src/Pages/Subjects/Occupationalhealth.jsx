@@ -10,21 +10,20 @@ const OccupationalHealth = () => {
   };
 
   const headerStyle = {
-    
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/rehabi.jpeg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "white",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-    };
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/rehabi.jpeg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "white",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
+  };
   const statisticsWrapperStyle = {
     display: "flex",
     justifyContent: "space-around",
@@ -137,9 +136,13 @@ const OccupationalHealth = () => {
       <div style={headerStyle}>
         <h1>Study Occupational Health & Safety abroad</h1>
         <p>
-          Occupational Health & Safety ensures a healthy and safe workplace environment. Graduates gain 
+          Occupational Health & Safety ensures a healthy and safe workplace
+          environment. Graduates gain
         </p>
-        <p>technical expertise, critical thinking, and problem-solving abilities that make them highly employable.</p>
+        <p>
+          technical expertise, critical thinking, and problem-solving abilities
+          that make them highly employable.
+        </p>
       </div>
 
       {/* Statistics Section */}
@@ -147,13 +150,15 @@ const OccupationalHealth = () => {
         <div style={statBlockStyle}>
           <div style={iconWrapperStyle}>🌟</div>
           <p>
-            <strong>$14.2 billion</strong> estimated worth of the occupational health & safety industry
+            <strong>$14.2 billion</strong> estimated worth of the occupational
+            health & safety industry
           </p>
         </div>
         <div style={statBlockStyle}>
           <div style={iconWrapperStyle}>📈</div>
           <p>
-            <strong>Average annual salary</strong> of an occupational health & safety specialist
+            <strong>Average annual salary</strong> of an occupational health &
+            safety specialist
           </p>
         </div>
         <div style={statBlockStyle}>
@@ -182,13 +187,21 @@ const OccupationalHealth = () => {
             {activeIndex === index && (
               <div style={faqDetailsStyle}>
                 {/* Check for subtitles and content */}
-                {item.subtitle1 && <div style={faqSubheadingStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubheadingStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubheadingStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubheadingStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubheadingStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubheadingStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubheadingStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubheadingStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

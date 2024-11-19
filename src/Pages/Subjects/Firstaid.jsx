@@ -14,7 +14,7 @@ const FirstAid = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -81,9 +81,9 @@ const FirstAid = () => {
   };
 
   const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
@@ -116,17 +116,22 @@ const FirstAid = () => {
         "First Aid professionals will always be in demand across both public and private sectors. The field is expected to grow by 11% in the US by 2028, ensuring a promising future for certified professionals.",
     },
     {
-      title: 'Career pathways for First Aid graduates',
-      subtitle1: 'First Aid Trainer',
-      content1: 'As a trainer, you will lead First Aid courses, ensure lesson plans are followed, and assess students according to set criteria.',
-      subtitle2: 'Firefighters',
-      content2: 'Firefighters often respond first to emergencies, providing crucial care before medical teams arrive.',
-      subtitle3: 'Flight Attendants',
-      content3: 'Flight attendants must know CPR and First Aid to handle in-flight emergencies, ensuring passenger safety.',
-      subtitle4: 'Construction Workers',
-      content4: 'In construction, workers must be trained in First Aid due to the high-risk nature of the job.',
-      subtitle5: 'Lifeguards',
-      content5: 'Lifeguards must be prepared for emergencies like drowning or cardiac arrest, making CPR and First Aid essential skills.',
+      title: "Career pathways for First Aid graduates",
+      subtitle1: "First Aid Trainer",
+      content1:
+        "As a trainer, you will lead First Aid courses, ensure lesson plans are followed, and assess students according to set criteria.",
+      subtitle2: "Firefighters",
+      content2:
+        "Firefighters often respond first to emergencies, providing crucial care before medical teams arrive.",
+      subtitle3: "Flight Attendants",
+      content3:
+        "Flight attendants must know CPR and First Aid to handle in-flight emergencies, ensuring passenger safety.",
+      subtitle4: "Construction Workers",
+      content4:
+        "In construction, workers must be trained in First Aid due to the high-risk nature of the job.",
+      subtitle5: "Lifeguards",
+      content5:
+        "Lifeguards must be prepared for emergencies like drowning or cardiac arrest, making CPR and First Aid essential skills.",
     },
   ];
 
@@ -135,16 +140,22 @@ const FirstAid = () => {
       <div style={sectionStyle}>
         <h1>Study First Aid Abroad</h1>
         <p>
-          First Aid is the immediate medical assistance provided after an injury, offering
+          First Aid is the immediate medical assistance provided after an
+          injury, offering
         </p>
-        <p> critical skills to handle emergency situations until professional help arrives.</p>
+        <p>
+          {" "}
+          critical skills to handle emergency situations until professional help
+          arrives.
+        </p>
       </div>
 
       <div style={statsContainer}>
         <div style={statCard}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>11%</strong> projected growth in First Aid employment by 2028.
+            <strong>11%</strong> projected growth in First Aid employment by
+            2028.
           </p>
         </div>
         <div style={statCard}>
@@ -177,15 +188,25 @@ const FirstAid = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

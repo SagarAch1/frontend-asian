@@ -14,7 +14,7 @@ const ReligiousStudies = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -143,9 +143,13 @@ const ReligiousStudies = () => {
       <div style={sectionStyle}>
         <h1>Study Religious Studies abroad</h1>
         <p>
-          Explore various religious beliefs and understand the importance of sacred sites like 
+          Explore various religious beliefs and understand the importance of
+          sacred sites like
         </p>
-        <p>Jerusalem, Makkah, and the Golden Temple. Religious Studies can lead to a meaningful career!</p>
+        <p>
+          Jerusalem, Makkah, and the Golden Temple. Religious Studies can lead
+          to a meaningful career!
+        </p>
       </div>
 
       {/* Statistics section */}

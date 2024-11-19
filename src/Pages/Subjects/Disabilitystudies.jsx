@@ -14,7 +14,7 @@ const DisabilityStudies = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -138,9 +138,13 @@ const DisabilityStudies = () => {
       <div style={sectionStyle}>
         <h1>Study Disability Studies Abroad</h1>
         <p>
-          Disability Studies offers a comprehensive look at disability from various social and  
+          Disability Studies offers a comprehensive look at disability from
+          various social and
         </p>
-        <p>cultural perspectives. A degree in Disability Studies can enhance your understanding  </p>
+        <p>
+          cultural perspectives. A degree in Disability Studies can enhance your
+          understanding{" "}
+        </p>
         <p>of disability issues and improve your employment prospects.</p>
       </div>
 
@@ -184,15 +188,25 @@ const DisabilityStudies = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Check for subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

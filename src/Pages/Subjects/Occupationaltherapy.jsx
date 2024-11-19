@@ -14,7 +14,7 @@ const OccupationalTherapy = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -138,12 +138,16 @@ const OccupationalTherapy = () => {
         <h1>Study Occupational Therapy Abroad</h1>
         <p>
           Occupational Therapy (OT) is a healthcare discipline focused on
-          helping  
+          helping
         </p>
-        <p>individuals regain the ability to perform tasks essential to
-          daily life,such as  </p>
-        <p> dressing,eating, moving around, and engaging in
-        productive activities.</p>
+        <p>
+          individuals regain the ability to perform tasks essential to daily
+          life,such as{" "}
+        </p>
+        <p>
+          {" "}
+          dressing,eating, moving around, and engaging in productive activities.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -151,25 +155,29 @@ const OccupationalTherapy = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average yearly salary for an occupational therapist
+            <strong></strong> Average yearly salary for an occupational
+            therapist
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Estimated value of the occupational therapy market in 2022
+            <strong></strong> Estimated value of the occupational therapy market
+            in 2022
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Projected 17% growth in employment for occupational therapists
+            <strong></strong> Projected 17% growth in employment for
+            occupational therapists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 10,100 annual job openings for occupational therapists
+            <strong></strong> 10,100 annual job openings for occupational
+            therapists
           </p>
         </div>
       </div>
@@ -186,11 +194,17 @@ const OccupationalTherapy = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Display subtitles and content if available */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

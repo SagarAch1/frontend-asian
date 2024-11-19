@@ -14,7 +14,7 @@ const Politicalscience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -144,10 +144,17 @@ const Politicalscience = () => {
       <div style={sectionStyle}>
         <h1>Study Political Science Abroad</h1>
         <p>
-          Political Science involves studying political structures, policies, and practices. 
+          Political Science involves studying political structures, policies,
+          and practices.
         </p>
-        <p>It provides a solid foundation for engaging in community organizations and  </p>
-        <p>preparing for future roles in policy-making, international relations, and media.</p>
+        <p>
+          It provides a solid foundation for engaging in community organizations
+          and{" "}
+        </p>
+        <p>
+          preparing for future roles in policy-making, international relations,
+          and media.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -161,19 +168,22 @@ const Politicalscience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $125,350: the average yearly income for political scientists
+            <strong></strong> $125,350: the average yearly income for political
+            scientists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 50% of political scientists in the US work for the federal government
+            <strong></strong> 50% of political scientists in the US work for the
+            federal government
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> $170,800: the top annual salary for leading political scientists
+            <strong></strong> $170,800: the top annual salary for leading
+            political scientists
           </p>
         </div>
       </div>

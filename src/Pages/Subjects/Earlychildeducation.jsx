@@ -14,7 +14,7 @@ const EarlyChildhoodEducation = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -121,7 +121,8 @@ const EarlyChildhoodEducation = () => {
         "This corresponds to a job growth rate of 7% to 10%, which is on par with the national average for all occupations. With plenty of job openings, qualified candidates can expect a fulfilling career helping young children achieve their full potential.",
     },
     {
-      title: "What career paths can I pursue with a degree in Early Childhood Education?",
+      title:
+        "What career paths can I pursue with a degree in Early Childhood Education?",
       subtitle1: "Early Childhood Educator",
       content1:
         "Early childhood educators focus on the academic and social development of young children. They create a safe and supportive environment in which children can develop social, physical, and adaptive skills, alongside their early academic learning.",
@@ -140,9 +141,13 @@ const EarlyChildhoodEducation = () => {
       <div style={sectionStyle}>
         <h1>Study Early Childhood Education Abroad</h1>
         <p>
-          Early Childhood Education is the study of how to educate young children from birth to age eight. 
+          Early Childhood Education is the study of how to educate young
+          children from birth to age eight.
         </p>
-        <p>With many different programs available, this field offers excellent opportunities for career advancement.</p>
+        <p>
+          With many different programs available, this field offers excellent
+          opportunities for career advancement.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -150,7 +155,8 @@ const EarlyChildhoodEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $480 billion projected value of the global Early Childhood Education market by 2026
+            <strong></strong> $480 billion projected value of the global Early
+            Childhood Education market by 2026
           </p>
         </div>
         <div style={statItemStyle}>
@@ -162,13 +168,15 @@ const EarlyChildhoodEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 124,300 job openings for kindergarten and early elementary teachers over the next decade
+            <strong></strong> 124,300 job openings for kindergarten and early
+            elementary teachers over the next decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 7% projected job growth rate for kindergarten and early elementary teachers
+            <strong></strong> 7% projected job growth rate for kindergarten and
+            early elementary teachers
           </p>
         </div>
       </div>
@@ -185,13 +193,21 @@ const EarlyChildhoodEducation = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Check for subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

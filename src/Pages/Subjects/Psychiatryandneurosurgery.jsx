@@ -10,21 +10,20 @@ const PsychiatryandNeurosurgery = () => {
   };
 
   const headerSectionStyle = {
-    
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/health.jpeg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "black",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-    };
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/health.jpeg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "black",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
+  };
 
   const statsSectionStyle = {
     display: "flex",
@@ -140,9 +139,13 @@ const PsychiatryandNeurosurgery = () => {
       <div style={headerSectionStyle}>
         <h1>Study Psychiatry and Neurosurgery abroad</h1>
         <p>
-          Psychiatrists and neurosurgeons both focus on brain-related disorders, with psychiatrists treating emotional 
+          Psychiatrists and neurosurgeons both focus on brain-related disorders,
+          with psychiatrists treating emotional
         </p>
-        <p>and cognitive conditions, while neurosurgeons address physical conditions affecting the brain and nervous system.</p>
+        <p>
+          and cognitive conditions, while neurosurgeons address physical
+          conditions affecting the brain and nervous system.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -176,13 +179,21 @@ const PsychiatryandNeurosurgery = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

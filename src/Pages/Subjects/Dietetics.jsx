@@ -14,7 +14,7 @@ const Dietetics = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -137,9 +137,7 @@ const Dietetics = () => {
       {/* Hero section with background image */}
       <div style={sectionStyle}>
         <h1>Study Dietetics Abroad</h1>
-        <p>
-          Dietetics examines how diet and nutrition affect human health, 
-        </p>
+        <p>Dietetics examines how diet and nutrition affect human health,</p>
         <p>with a focus on educating the public about healthy eating.</p>
       </div>
 
@@ -148,25 +146,29 @@ const Dietetics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>Projected Market:</strong> $51,128 million in global clinical nutrition by 2028
+            <strong>Projected Market:</strong> $51,128 million in global
+            clinical nutrition by 2028
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Average Salary:</strong> $61,650 annually for dietitians and nutritionists
+            <strong>Average Salary:</strong> $61,650 annually for dietitians and
+            nutritionists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Annual Job Openings:</strong> 5,900 for dietitians and nutritionists
+            <strong>Annual Job Openings:</strong> 5,900 for dietitians and
+            nutritionists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Market Growth Rate:</strong> 6.1% annually in clinical nutrition
+            <strong>Market Growth Rate:</strong> 6.1% annually in clinical
+            nutrition
           </p>
         </div>
       </div>
@@ -182,11 +184,17 @@ const Dietetics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

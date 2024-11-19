@@ -14,7 +14,7 @@ const HigherEducation = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -136,10 +136,18 @@ const HigherEducation = () => {
       <div style={sectionStyle}>
         <h1>Study Higher Education Abroad</h1>
         <p>
-          A Higher Education degree prepares individuals to lead academic institutions or work 
+          A Higher Education degree prepares individuals to lead academic
+          institutions or work
         </p>
-        <p>in non-profit organizations and government bodies shaping national education policies.</p>
-        <p> Alternatively, you can choose to become an educator. The possibilities are endless!</p>
+        <p>
+          in non-profit organizations and government bodies shaping national
+          education policies.
+        </p>
+        <p>
+          {" "}
+          Alternatively, you can choose to become an educator. The possibilities
+          are endless!
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -147,25 +155,29 @@ const HigherEducation = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>14,500 projected openings for postsecondary education administrators annually
+            <strong></strong>14,500 projected openings for postsecondary
+            education administrators annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong>Average salary for a chief academic officer in the US
+            <strong></strong>Average salary for a chief academic officer in the
+            US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>10% projected growth in postsecondary education administrator jobs from 2016-2026
+            <strong></strong>10% projected growth in postsecondary education
+            administrator jobs from 2016-2026
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>Two-thirds of job openings in the coming decade will require postsecondary education or training
+            <strong></strong>Two-thirds of job openings in the coming decade
+            will require postsecondary education or training
           </p>
         </div>
       </div>

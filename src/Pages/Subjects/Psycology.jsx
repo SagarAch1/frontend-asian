@@ -14,7 +14,7 @@ const Psychology = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -142,9 +142,14 @@ const Psychology = () => {
       <div style={sectionStyle}>
         <h1>Study Psychology Abroad</h1>
         <p>
-        Curious about human behavior? Studying Psychology helps you understand emotions,
+          Curious about human behavior? Studying Psychology helps you understand
+          emotions,
         </p>
-        <p> actions, and thoughts, with various career opportunities both in and beyond the field.</p>
+        <p>
+          {" "}
+          actions, and thoughts, with various career opportunities both in and
+          beyond the field.
+        </p>
       </div>
 
       {/* Statistics section */}

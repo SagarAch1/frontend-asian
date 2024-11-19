@@ -14,7 +14,7 @@ const Fishery = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -111,11 +111,9 @@ const Fishery = () => {
     {
       title: "Career pathways for Fishery studies graduates",
       subtitle1: "Fisheries Biologist",
-      content1:
-        "Studies trends and stock levels in aquatic environments.",
+      content1: "Studies trends and stock levels in aquatic environments.",
       subtitle2: "Fisheries Officer",
-      content2:
-        "Manages resource activities to protect threatened species.",
+      content2: "Manages resource activities to protect threatened species.",
       subtitle3: "Fishery Manager",
       content3:
         "Oversees all fishery operations, including cultivation, growth monitoring, and equipment maintenance.",
@@ -140,8 +138,7 @@ const Fishery = () => {
           Fishery studies equip students with knowledge in fish breeding,
           rearing,
         </p>
-        <p> and harvesting, laying a foundation for a career in
-        aquaculture.</p>
+        <p> and harvesting, laying a foundation for a career in aquaculture.</p>
       </div>
 
       {/* Statistics section */}
@@ -149,7 +146,8 @@ const Fishery = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>More than 26 colleges</strong>: offer fishery science degrees in the U.S.
+            <strong>More than 26 colleges</strong>: offer fishery science
+            degrees in the U.S.
           </p>
         </div>
         <div style={statItemStyle}>

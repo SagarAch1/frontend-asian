@@ -14,7 +14,7 @@ const Visualarts = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -135,7 +135,8 @@ const Visualarts = () => {
       <div style={sectionStyle}>
         <h1>Explore Visual Arts Abroad</h1>
         <p>
-          Visual arts, from film and animation to traditional art, offer promising 
+          Visual arts, from film and animation to traditional art, offer
+          promising
         </p>
         <p>careers with sustained growth expected in the upcoming years.</p>
       </div>
@@ -145,7 +146,8 @@ const Visualarts = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Median income for visual arts professionals in the U.S.
+            <strong></strong> Median income for visual arts professionals in the
+            U.S.
           </p>
         </div>
         <div style={statItemStyle}>

@@ -14,7 +14,7 @@ const GeriatricStudies = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -90,42 +90,42 @@ const GeriatricStudies = () => {
   const faqDetails = [
     {
       title: "About Geriatric Studies",
-      content1: 
+      content1:
         "Geriatric Studies focuses on aging and its scientific aspects. This medical field is dedicated to treating and preventing ailments in the elderly. The goal is to enhance the health and quality of life for older adults through coordinated care provided by healthcare professionals including nurses, pharmacists, and social workers.",
-      content2: 
+      content2:
         "Typical course topics include Anatomy, Psychology, Physiology, Nutrition, Exercise, Pain Management, and diseases such as Dementia, Arthritis, Heart Disease, and Osteoporosis.",
     },
     {
       title: "Is Geriatric Studies right for me?",
-      content1: 
+      content1:
         "The journey to becoming a geriatrician starts with an undergraduate degree in a science field, followed by medical school and a residency. After residency, a geriatric fellowship can be pursued. Alternatively, you can specialize in geriatrics directly after medical school.",
-      content2: 
+      content2:
         "A career in Geriatric Studies opens doors to various roles, including geriatric doctor, researcher, educator, or even a pharmacist. If you're empathetic and want to improve the lives of the elderly, this could be a fulfilling career choice for you!",
     },
     {
       title: "Study options and costs",
-      content1: 
+      content1:
         "A bachelor's degree in Geriatrics typically spans 3-4 years, costing between $24,228 and $59,970 annually in the US. Clinical experience or further studies like a PhD in Geriatrics is often required for specialized roles.",
-      content2: 
+      content2:
         "In the UK, tuition for international undergraduate programs can range from $14,130 to $53,700 or more depending on the course and institution.",
     },
     {
       title: "Future outlook",
-      content1: 
+      content1:
         "The demand for geriatricians is expected to increase as the population ages. The geriatric care market is projected to grow at a rate of 10% annually between 2021 and 2027.",
-      content2: 
+      content2:
         "Advances in medical technology, such as laparoscopic surgery, have expanded treatment options for the elderly, making previously risky procedures safer and more effective.",
     },
     {
       title: "Career Pathways for Geriatric Studies graduates",
       subtitle1: "Geriatric Doctor",
-      content1: 
+      content1:
         "Geriatricians specialize in treating elderly patients with various health issues. They focus on enhancing the quality of life for older adults through personalized care, often working closely with caregivers and families.",
       subtitle2: "Geriatric Pharmacist",
-      content2: 
+      content2:
         "Geriatric pharmacists manage medications for elderly patients, ensuring appropriate dosing and avoiding drug interactions. Some also offer consultations and help adjust medications based on patient needs.",
       subtitle3: "Geriatric Researcher",
-      content3: 
+      content3:
         "Researchers in geriatrics study aging processes and related diseases, seeking new treatments and preventative strategies to improve the health of aging populations.",
     },
   ];
@@ -136,9 +136,13 @@ const GeriatricStudies = () => {
       <div style={sectionStyle}>
         <h1>Study Geriatric Studies Abroad</h1>
         <p>
-          Geriatrics is a specialized branch of medicine focused on the health of the elderly. 
+          Geriatrics is a specialized branch of medicine focused on the health
+          of the elderly.
         </p>
-        <p>Graduates in Geriatric Studies can expect diverse career opportunities in healthcare </p>
+        <p>
+          Graduates in Geriatric Studies can expect diverse career opportunities
+          in healthcare{" "}
+        </p>
         <p>administration, social work, and other related fields.</p>
       </div>
 
@@ -154,11 +158,16 @@ const GeriatricStudies = () => {
         </div>
         <div style={statBoxStyle}>
           <div style={iconStyle}>💼</div>
-          <p>55,400 projected job openings for geriatric physicians between 2018-2028</p>
+          <p>
+            55,400 projected job openings for geriatric physicians between
+            2018-2028
+          </p>
         </div>
         <div style={statBoxStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>10% annual growth rate in geriatric care services market (2021-2027)</p>
+          <p>
+            10% annual growth rate in geriatric care services market (2021-2027)
+          </p>
         </div>
       </div>
 
@@ -173,11 +182,17 @@ const GeriatricStudies = () => {
             </div>
             {selectedIndex === index && (
               <div style={faqTextStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
               </div>
             )}

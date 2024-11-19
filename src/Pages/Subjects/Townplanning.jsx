@@ -14,7 +14,7 @@ const Townplanning = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -137,9 +137,13 @@ const Townplanning = () => {
       <div style={sectionStyle}>
         <h1>Study Town Planning Abroad</h1>
         <p>
-        Town planning is key to creating livable communities by efficiently using urban
+          Town planning is key to creating livable communities by efficiently
+          using urban
         </p>
-        <p>Enroll in a town planning program to unlock  land for growing populations.</p>
+        <p>
+          Enroll in a town planning program to unlock land for growing
+          populations.
+        </p>
         <p>exciting career opportunities in this evolving field</p>
       </div>
 
@@ -154,19 +158,22 @@ const Townplanning = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>7%:</strong> Expected employment growth rate for town planners
+            <strong>7%:</strong> Expected employment growth rate for town
+            planners
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>3,700:</strong> Projected job openings for town planners annually
+            <strong>3,700:</strong> Projected job openings for town planners
+            annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>92.6%:</strong> Growth in town planners' numbers from 2018 to 2019
+            <strong>92.6%:</strong> Growth in town planners' numbers from 2018
+            to 2019
           </p>
         </div>
       </div>

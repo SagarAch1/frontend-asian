@@ -14,7 +14,7 @@ const Sociology = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -136,9 +136,13 @@ const Sociology = () => {
       <div style={sectionStyle}>
         <h1>Study Sociology Abroad</h1>
         <p>
-          Are you interested in understanding how societies form, evolve, and operate? 
+          Are you interested in understanding how societies form, evolve, and
+          operate?
         </p>
-        <p>Do you want to explore the reasons behind variations in social behavior? </p>
+        <p>
+          Do you want to explore the reasons behind variations in social
+          behavior?{" "}
+        </p>
         <p>If so, Sociology may be the perfect field for you.</p>
       </div>
 
@@ -159,13 +163,15 @@ const Sociology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $135,420: Top annual salary for experienced sociologists
+            <strong></strong> $135,420: Top annual salary for experienced
+            sociologists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 37% of sociology jobs involve research and fieldwork
+            <strong></strong> 37% of sociology jobs involve research and
+            fieldwork
           </p>
         </div>
       </div>

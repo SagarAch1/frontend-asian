@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
-import { sub } from "date-fns";
 
 const Farmandagribusiness = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -15,7 +14,7 @@ const Farmandagribusiness = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -100,7 +99,8 @@ const Farmandagribusiness = () => {
         "If you are organized, financially savvy, and enjoy working in teams, agribusiness management could be a great career path. The degree prepares you with the knowledge needed to manage agricultural businesses effectively, combining your interest in farming or food production with essential business skills.",
     },
     {
-      title: "What are the study options and costs for Agribusiness Management?",
+      title:
+        "What are the study options and costs for Agribusiness Management?",
       content:
         "Universities generally offer three-year undergraduate programs in agribusiness management, which include studies in agricultural entrepreneurship and product marketing. Master’s programs usually span two years. In Australia, a four-year undergraduate degree costs around AUD 13,200 per year, while in the US, it typically ranges from USD 12,000 to 14,000 annually.",
     },
@@ -135,9 +135,13 @@ const Farmandagribusiness = () => {
       <div style={sectionStyle}>
         <h1>Study Agribusiness Management Abroad</h1>
         <p>
-          If you're interested in combining agricultural science with business strategy, agribusiness management 
+          If you're interested in combining agricultural science with business
+          strategy, agribusiness management
         </p>
-        <p>is the perfect field. This program will prepare you for managing businesses in the agricultural sector.</p>
+        <p>
+          is the perfect field. This program will prepare you for managing
+          businesses in the agricultural sector.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -145,25 +149,29 @@ const Farmandagribusiness = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>USD 108,000</strong>: Average salary for an agriculture marketing manager
+            <strong>USD 108,000</strong>: Average salary for an agriculture
+            marketing manager
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>84,000</strong>: Number of openings for agribusiness managers annually in the US
+            <strong>84,000</strong>: Number of openings for agribusiness
+            managers annually in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>USD 145.7 billion</strong>: Total size of US agri-exports in 2020
+            <strong>USD 145.7 billion</strong>: Total size of US agri-exports in
+            2020
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>28%</strong>: Percentage of the global population engaged in agriculture
+            <strong>28%</strong>: Percentage of the global population engaged in
+            agriculture
           </p>
         </div>
       </div>
@@ -179,15 +187,25 @@ const Farmandagribusiness = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

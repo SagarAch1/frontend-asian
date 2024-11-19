@@ -14,7 +14,7 @@ const AnimalandVeterinarySciences = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -144,9 +144,14 @@ const AnimalandVeterinarySciences = () => {
       <div style={sectionStyle}>
         <h1>Study Animal and Veterinary Sciences abroad</h1>
         <p>
-          Animal and Veterinary Sciences involve diagnosing and treating animal ailments. If you're passionate
+          Animal and Veterinary Sciences involve diagnosing and treating animal
+          ailments. If you're passionate
         </p>
-        <p> about animal care and want to contribute to the community, this field is a great fit for you.</p>
+        <p>
+          {" "}
+          about animal care and want to contribute to the community, this field
+          is a great fit for you.
+        </p>
       </div>
 
       {/* Statistics section */}

@@ -10,21 +10,20 @@ const Pharmacology = () => {
   };
 
   const heroSectionStyle = {
-   
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/phar.jpeg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "black",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-    };
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/phar.jpeg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "black",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
+  };
   const statsSectionStyle = {
     display: "flex",
     justifyContent: "space-around",
@@ -139,9 +138,7 @@ const Pharmacology = () => {
       {/* Hero Section */}
       <div style={heroSectionStyle}>
         <h1>Study Pharmacology Abroad</h1>
-        <p>
-        Pharmacology combines science and pharmacy to develop treatments, 
-        </p>
+        <p>Pharmacology combines science and pharmacy to develop treatments,</p>
         <p>offering a rewarding career with a significant global impact. </p>
       </div>
 
@@ -150,25 +147,29 @@ const Pharmacology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>8%</strong> projected growth in medical scientist jobs by 2028.
+            <strong>8%</strong> projected growth in medical scientist jobs by
+            2028.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            The average salary for pharmacologists is <strong>USD$99,000</strong>.
+            The average salary for pharmacologists is{" "}
+            <strong>USD$99,000</strong>.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            Pharmacologist salaries in the US range between <strong>USD$71,000 and USD$214,000</strong>.
+            Pharmacologist salaries in the US range between{" "}
+            <strong>USD$71,000 and USD$214,000</strong>.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            The pharmaceutical industry's global revenue is <strong>USD$1.27 trillion</strong>.
+            The pharmaceutical industry's global revenue is{" "}
+            <strong>USD$1.27 trillion</strong>.
           </p>
         </div>
       </div>
@@ -184,15 +185,25 @@ const Pharmacology = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

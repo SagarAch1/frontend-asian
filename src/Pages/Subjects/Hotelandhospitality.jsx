@@ -14,7 +14,7 @@ const Hotelandhospitality = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -135,7 +135,7 @@ const Hotelandhospitality = () => {
       subtitle3: "Catering Assistant",
       content3:
         "A catering assistant handles bookings and supervises meal preparations, working within catering companies or at hotels and restaurants.",
-        
+
       subtitle4: "Sous Chef",
       content4:
         "In the food and beverage sector, a sous chef is the second-in-command in a kitchen, overseeing meal preparations and daily kitchen operations.",
@@ -148,10 +148,17 @@ const Hotelandhospitality = () => {
       <div style={sectionStyle}>
         <h1>Study Hotel and Hospitality abroad</h1>
         <p>
-          Hotel and Hospitality is the art and science of managing services within 
+          Hotel and Hospitality is the art and science of managing services
+          within
         </p>
-        <p>the hospitality industry. This field will equip you with the skills required  </p>
-        <p>to succeed in various roles, such as hotel management or entrepreneurial ventures.</p>
+        <p>
+          the hospitality industry. This field will equip you with the skills
+          required{" "}
+        </p>
+        <p>
+          to succeed in various roles, such as hotel management or
+          entrepreneurial ventures.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -196,13 +203,21 @@ const Hotelandhospitality = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

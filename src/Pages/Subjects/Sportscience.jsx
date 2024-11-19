@@ -14,7 +14,7 @@ const SportsScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -82,9 +82,9 @@ const SportsScience = () => {
   };
 
   const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
@@ -115,15 +115,19 @@ const SportsScience = () => {
         "Graduates in Sports Science often work in sports, fitness, coaching, and education. However, they also have opportunities in various other sectors. Management is another common career choice. A degree in Sports Science develops transferable skills like communication, teamwork, time management, and leadership. Employers hiring sports scientists include gyms, sports clubs, educational institutions, and hospitals.",
     },
     {
-      title: 'Career Pathways for Sports Science graduates',
-      subtitle1: 'Sports Coach',
-      content1: 'As a coach, you’ll guide athletes of all ages and skill levels across different sports. Whether at schools, nurseries, or sports teams, you could work in a variety of settings.',
-      subtitle2: 'Sport Nutritionist',
-      content2: 'Sports nutritionists work with elite athletes, teams, and the general public to optimize their health and performance. This job is highly varied, involving diet planning, body composition assessments, and nutrition education. The average salary for a sports nutritionist is $60,427.',
-      subtitle3: 'Sport Therapist',
-      content3: 'As a therapist, you will prevent, assess, treat, and rehabilitate musculoskeletal injuries, working with professional or amateur athletes, or in private practice. The average annual salary for a sports therapist is $78,054.',
-      subtitle4: 'Personal Trainer/Conditioning Coach',
-      content4: 'Personal trainers help clients achieve health and fitness goals, whether its performance enhancement for athletes or assisting with rehabilitation. Trainers monitor fitness progress, conduct fitness testing, and create recovery plans. The average salary is $63,961.',
+      title: "Career Pathways for Sports Science graduates",
+      subtitle1: "Sports Coach",
+      content1:
+        "As a coach, you’ll guide athletes of all ages and skill levels across different sports. Whether at schools, nurseries, or sports teams, you could work in a variety of settings.",
+      subtitle2: "Sport Nutritionist",
+      content2:
+        "Sports nutritionists work with elite athletes, teams, and the general public to optimize their health and performance. This job is highly varied, involving diet planning, body composition assessments, and nutrition education. The average salary for a sports nutritionist is $60,427.",
+      subtitle3: "Sport Therapist",
+      content3:
+        "As a therapist, you will prevent, assess, treat, and rehabilitate musculoskeletal injuries, working with professional or amateur athletes, or in private practice. The average annual salary for a sports therapist is $78,054.",
+      subtitle4: "Personal Trainer/Conditioning Coach",
+      content4:
+        "Personal trainers help clients achieve health and fitness goals, whether its performance enhancement for athletes or assisting with rehabilitation. Trainers monitor fitness progress, conduct fitness testing, and create recovery plans. The average salary is $63,961.",
     },
   ];
 
@@ -133,9 +137,13 @@ const SportsScience = () => {
       <div style={sectionStyle}>
         <h1>Study Sports Science Abroad</h1>
         <p>
-          Sports Science examines how the body responds during exercise and how physical activity 
+          Sports Science examines how the body responds during exercise and how
+          physical activity
         </p>
-        <p>promotes overall health. It integrates Physiology, Psychology, Biomechanics, and Nutrition.</p>
+        <p>
+          promotes overall health. It integrates Physiology, Psychology,
+          Biomechanics, and Nutrition.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -143,7 +151,8 @@ const SportsScience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Current estimated worth of the global sports industry
+            <strong></strong> Current estimated worth of the global sports
+            industry
           </p>
         </div>
         <div style={statItemStyle}>
@@ -161,7 +170,8 @@ const SportsScience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 1,500 job openings projected for sports scientists annually
+            <strong></strong> 1,500 job openings projected for sports scientists
+            annually
           </p>
         </div>
       </div>

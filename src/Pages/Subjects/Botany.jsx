@@ -14,7 +14,7 @@ const Botany = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -132,9 +132,14 @@ const Botany = () => {
       <div style={sectionStyle}>
         <h1>Study Botany abroad</h1>
         <p>
-          Botany is the scientific study of plants, covering their structure, processes, and interactions with their environment. 
+          Botany is the scientific study of plants, covering their structure,
+          processes, and interactions with their environment.
         </p>
-        <p> This field includes the study of over 300,000 plant species, from mosses to towering redwoods.</p>
+        <p>
+          {" "}
+          This field includes the study of over 300,000 plant species, from
+          mosses to towering redwoods.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -142,25 +147,29 @@ const Botany = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: $78,523: Average annual salary of a botanist in the US
+            <strong></strong>: $78,523: Average annual salary of a botanist in
+            the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 9% expected rise in average salaries of botanists in the UK
+            <strong></strong> 9% expected rise in average salaries of botanists
+            in the UK
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 14%: Growth rate of employment opportunities for botanists
+            <strong></strong> 14%: Growth rate of employment opportunities for
+            botanists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 3,200 job openings for botanists every year in the US
+            <strong></strong> 3,200 job openings for botanists every year in the
+            US
           </p>
         </div>
       </div>

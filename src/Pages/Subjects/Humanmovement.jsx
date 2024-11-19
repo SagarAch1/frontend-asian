@@ -14,7 +14,7 @@ const HumanMovement = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -143,9 +143,13 @@ const HumanMovement = () => {
       <div style={sectionStyle}>
         <h1>Study Human Movement abroad</h1>
         <p>
-          Human Movement is the academic exploration of human motion in various contexts, especially in sports. 
+          Human Movement is the academic exploration of human motion in various
+          contexts, especially in sports.
         </p>
-        <p>It integrates the social, natural, and health sciences surrounding physical activity.</p>
+        <p>
+          It integrates the social, natural, and health sciences surrounding
+          physical activity.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -153,25 +157,29 @@ const HumanMovement = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $47,940: Average annual salary of exercise physiologists
+            <strong></strong> $47,940: Average annual salary of exercise
+            physiologists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 69,100 projected job openings annually for fitness instructors and trainers
+            <strong></strong> 69,100 projected job openings annually for fitness
+            instructors and trainers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 39% projected growth in fitness instructor and trainer jobs
+            <strong></strong> 39% projected growth in fitness instructor and
+            trainer jobs
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 13% projected job growth for exercise physiologists by 2030
+            <strong></strong> 13% projected job growth for exercise
+            physiologists by 2030
           </p>
         </div>
       </div>
@@ -187,13 +195,21 @@ const HumanMovement = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

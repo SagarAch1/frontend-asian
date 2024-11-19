@@ -14,7 +14,7 @@ const Fashion = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -130,11 +130,13 @@ const Fashion = () => {
       <div style={sectionStyle}>
         <h1>Study Fashion Merchandising Abroad</h1>
         <p>
-          Interested in a career that combines fashion and business management?  Passionate about
+          Interested in a career that combines fashion and business management?
+          Passionate about
         </p>
         <p>
-         marketing fashion items? If so, a career  in Fashion Merchandising may be right for you!</p>
-        
+          marketing fashion items? If so, a career in Fashion Merchandising may
+          be right for you!
+        </p>
       </div>
 
       {/* Statistics section */}

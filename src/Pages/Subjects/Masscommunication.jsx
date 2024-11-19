@@ -14,7 +14,7 @@ const Masscommunication = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -143,9 +143,13 @@ const Masscommunication = () => {
       <div style={sectionStyle}>
         <h1>Study Mass Communication abroad</h1>
         <p>
-          Mass Communication is the study of relaying information to a large audience through both traditional and 
+          Mass Communication is the study of relaying information to a large
+          audience through both traditional and
         </p>
-        <p>modern media. Graduates may find employment in news agencies, television, film, or digital media companies.</p>
+        <p>
+          modern media. Graduates may find employment in news agencies,
+          television, film, or digital media companies.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -153,25 +157,29 @@ const Masscommunication = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $54,000: average annual salary for those with a degree in communications
+            <strong></strong> $54,000: average annual salary for those with a
+            degree in communications
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Number of employees with a communications degree in the US
+            <strong></strong> Number of employees with a communications degree
+            in the US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Job openings for media and communication professionals by 2030
+            <strong></strong> Job openings for media and communication
+            professionals by 2030
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 14% projected job growth in media and communication fields
+            <strong></strong> 14% projected job growth in media and
+            communication fields
           </p>
         </div>
       </div>
@@ -188,17 +196,29 @@ const Masscommunication = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Render subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
-                {item.subtitle6 && <div style={faqSubtitleStyle}>{item.subtitle6}</div>}
+                {item.subtitle6 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle6}</div>
+                )}
                 {item.content6 && <p>{item.content6}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

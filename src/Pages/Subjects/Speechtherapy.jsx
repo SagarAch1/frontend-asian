@@ -14,7 +14,7 @@ const SpeechTherapy = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -132,10 +132,17 @@ const SpeechTherapy = () => {
       <div style={sectionStyle}>
         <h1>Study Speech Therapy abroad</h1>
         <p>
-          Speech Therapy involves the assessment and treatment of communication issues  
+          Speech Therapy involves the assessment and treatment of communication
+          issues
         </p>
-        <p>and speech disorders.This field is vital for addressing speech problems in children   </p>
-        <p>or speech difficulties in adults caused by injuries or illnesses like strokes or brain injuries.</p>
+        <p>
+          and speech disorders.This field is vital for addressing speech
+          problems in children{" "}
+        </p>
+        <p>
+          or speech difficulties in adults caused by injuries or illnesses like
+          strokes or brain injuries.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -157,13 +164,15 @@ const SpeechTherapy = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> Projected annual job openings for speech therapists
+            <strong></strong> Projected annual job openings for speech
+            therapists
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 27% projected growth in employment over the next six years
+            <strong></strong> 27% projected growth in employment over the next
+            six years
           </p>
         </div>
       </div>

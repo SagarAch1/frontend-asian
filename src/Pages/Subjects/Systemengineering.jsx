@@ -14,7 +14,7 @@ const SystemsEngineering = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -132,9 +132,13 @@ const SystemsEngineering = () => {
       <div style={sectionStyle}>
         <h1>Study Systems Engineering Abroad</h1>
         <p>
-        Systems Engineering focuses on designing, integrating, and managing complex 
+          Systems Engineering focuses on designing, integrating, and managing
+          complex
         </p>
-        <p>systems using engineering and scientific principles to optimize solutions.</p>
+        <p>
+          systems using engineering and scientific principles to optimize
+          solutions.
+        </p>
       </div>
 
       {/* Statistics Section */}
@@ -142,25 +146,29 @@ const SystemsEngineering = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>Average salary for systems engineers</strong> is $90,107 annually.
+            <strong>Average salary for systems engineers</strong> is $90,107
+            annually.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Projected job openings</strong> for systems engineers in the coming decade.
+            <strong>Projected job openings</strong> for systems engineers in the
+            coming decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Growth in employment</strong> for systems engineers is anticipated.
+            <strong>Growth in employment</strong> for systems engineers is
+            anticipated.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Annual salary</strong> for industrial engineers is also noteworthy.
+            <strong>Annual salary</strong> for industrial engineers is also
+            noteworthy.
           </p>
         </div>
       </div>

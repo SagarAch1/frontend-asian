@@ -14,7 +14,7 @@ const Forensics = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -95,13 +95,17 @@ const Forensics = () => {
       subtitle1: "Forensic Anthropology",
       content1: "Analyzing skeletal remains for investigative purposes.",
       subtitle2: "Digital and Computer Forensics",
-      content2: "Focused on retrieving digital evidence, like traces in data systems.",
+      content2:
+        "Focused on retrieving digital evidence, like traces in data systems.",
       subtitle3: "Forensic Pathology",
-      content3: "Examining bodies to determine causes of death using biology and chemistry.",
+      content3:
+        "Examining bodies to determine causes of death using biology and chemistry.",
       subtitle4: "Toxicology",
-      content4: "Studying trace elements in the body, such as substances found after a crime.",
+      content4:
+        "Studying trace elements in the body, such as substances found after a crime.",
       subtitle5: "Forensic Engineering",
-      content5: "Investigating product or structural failures in legal contexts.",
+      content5:
+        "Investigating product or structural failures in legal contexts.",
     },
     {
       title: "Is Forensic Science right for me?",
@@ -140,9 +144,14 @@ const Forensics = () => {
       <div style={sectionStyle}>
         <h1>Study Forensic Science Abroad</h1>
         <p>
-        Forensic science is perfect for those with a curious mind and strong problem-solving skills,  
+          Forensic science is perfect for those with a curious mind and strong
+          problem-solving skills,
         </p>
-        <p> especially if you enjoy uncovering hidden truths and analyzing details.</p>
+        <p>
+          {" "}
+          especially if you enjoy uncovering hidden truths and analyzing
+          details.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -150,19 +159,22 @@ const Forensics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>16,640</strong> forensic scientists were employed in the US in 2020.
+            <strong>16,640</strong> forensic scientists were employed in the US
+            in 2020.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>$60,590</strong> is the median salary for forensic technicians.
+            <strong>$60,590</strong> is the median salary for forensic
+            technicians.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>14%</strong> growth is projected for forensic science careers in the US.
+            <strong>14%</strong> growth is projected for forensic science
+            careers in the US.
           </p>
         </div>
       </div>

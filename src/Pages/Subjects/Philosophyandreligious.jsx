@@ -14,7 +14,7 @@ const Philosophyandreligious = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -149,9 +149,13 @@ const Philosophyandreligious = () => {
       <div style={sectionStyle}>
         <h1>Study Philosophy and Religious Studies abroad</h1>
         <p>
-          Philosophy and Religious Studies explore the fundamental ways people interpret life, guiding their actions and behavior. 
+          Philosophy and Religious Studies explore the fundamental ways people
+          interpret life, guiding their actions and behavior.
         </p>
-        <p>This discipline examines how individuals and societies understand the world and the beliefs that shape their interactions.</p>
+        <p>
+          This discipline examines how individuals and societies understand the
+          world and the beliefs that shape their interactions.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -159,25 +163,29 @@ const Philosophyandreligious = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>70% of graduates find employment right after completing their degree.
+            <strong></strong>70% of graduates find employment right after
+            completing their degree.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 10.5% increase in job opportunities for graduates in Philosophy and Religious Studies.
+            <strong></strong> 10.5% increase in job opportunities for graduates
+            in Philosophy and Religious Studies.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $6600 is the average annual salary for graduates in this field.
+            <strong></strong> $6600 is the average annual salary for graduates
+            in this field.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Increase in enrollment in Philosophy and Religious Studies programs.
+            <strong></strong> Increase in enrollment in Philosophy and Religious
+            Studies programs.
           </p>
         </div>
       </div>
@@ -193,11 +201,17 @@ const Philosophyandreligious = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

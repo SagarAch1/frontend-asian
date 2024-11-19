@@ -14,7 +14,7 @@ const Beauty = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -111,8 +111,8 @@ const Beauty = () => {
       content3:
         "In contrast to a diploma, a bachelor’s in Beauty Care is more rigorous. After completing this degree graduates can execute a variety of activities and have a thorough understanding of various themes in the beauty business. Only a very few institutes offer degree programmes in Beauty Care.",
 
-      content4:"Though school costs vary, most programmes cost around $10,000. For instance, two-year community colleges cost an average of $3,243 each year ($6,486 total) for in-state students, whereas four-year colleges cost an average of $9,037 per year for in-state students (nearly $36,000 overall). According to the American Association of Cosmetology Schools, aesthetician programmes typically cost between $3,000 and $10,000. (AACS).",
-
+      content4:
+        "Though school costs vary, most programmes cost around $10,000. For instance, two-year community colleges cost an average of $3,243 each year ($6,486 total) for in-state students, whereas four-year colleges cost an average of $9,037 per year for in-state students (nearly $36,000 overall). According to the American Association of Cosmetology Schools, aesthetician programmes typically cost between $3,000 and $10,000. (AACS).",
     },
     {
       title: "Future outlook",
@@ -120,7 +120,8 @@ const Beauty = () => {
         "Cosmetic research and development, marketing, makeup artist, product management, and media professional are all career options. Starting wages for beauticians range from £20,000 to over £50,000 per year.",
       content2:
         "Furthermore, by 2028, the worldwide cosmetics market is predicted be worth $415.29 billion.",
-      content3:"The projected growth in employment opportunities in the Beauty sector is 13% which is significantly faster than the average employment growth of all other occupations. It is easy to conclude that the minimal entry-barriers and relatively high salaries make this an attractive choice for many individuals.",
+      content3:
+        "The projected growth in employment opportunities in the Beauty sector is 13% which is significantly faster than the average employment growth of all other occupations. It is easy to conclude that the minimal entry-barriers and relatively high salaries make this an attractive choice for many individuals.",
     },
     {
       title: "Career pathways for Beauty Care graduates",
@@ -143,12 +144,15 @@ const Beauty = () => {
         <h1>Study Beauty Care abroad</h1>
         <p>
           Do you find yourself constantly being drawn to subjects like skincare,
-          
         </p>
-        <p>haircare, or cosmetology? If yes, then a degree in Beauty Care will
-          </p>
-          <p> help you build a career on what you love. You will learn extensively
-          about beauty best-practices and cosmetics.</p>
+        <p>
+          haircare, or cosmetology? If yes, then a degree in Beauty Care will
+        </p>
+        <p>
+          {" "}
+          help you build a career on what you love. You will learn extensively
+          about beauty best-practices and cosmetics.
+        </p>
       </div>
 
       {/* Statistics section */}

@@ -14,7 +14,7 @@ const Acupuncture = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -139,10 +139,18 @@ const Acupuncture = () => {
       <div style={sectionStyle}>
         <h1>Study Acupuncture abroad</h1>
         <p>
-          Acupuncture is an alternative medicine practice that involves inserting 
+          Acupuncture is an alternative medicine practice that involves
+          inserting
         </p>
-        <p>fine needles into the skin at specific points to treat various conditions.</p>
-        <p> Studying acupuncture opens the door to a rewarding career in healthcare.</p>
+        <p>
+          fine needles into the skin at specific points to treat various
+          conditions.
+        </p>
+        <p>
+          {" "}
+          Studying acupuncture opens the door to a rewarding career in
+          healthcare.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -156,7 +164,8 @@ const Acupuncture = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $103,600: average salary for acupuncturists in specialty hospitals
+            <strong></strong> $103,600: average salary for acupuncturists in
+            specialty hospitals
           </p>
         </div>
         <div style={statItemStyle}>
@@ -168,7 +177,8 @@ const Acupuncture = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> $203 million: estimated global market value for acupuncture
+            <strong></strong> $203 million: estimated global market value for
+            acupuncture
           </p>
         </div>
       </div>

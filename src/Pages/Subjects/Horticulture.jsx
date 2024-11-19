@@ -14,7 +14,7 @@ const HoriCulture = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -131,9 +131,14 @@ const HoriCulture = () => {
       <div style={sectionStyle}>
         <h1>Study Horticulture and Viticulture Abroad</h1>
         <p>
-          Are you interested in gaining knowledge and skills in the art and science
+          Are you interested in gaining knowledge and skills in the art and
+          science
         </p>
-        <p> of cultivating gardens? A career in horticulture might be perfect for you.</p>
+        <p>
+          {" "}
+          of cultivating gardens? A career in horticulture might be perfect for
+          you.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -141,25 +146,29 @@ const HoriCulture = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>As of 2020,</strong> the global greenhouse horticulture market was valued at $25.2 billion.
+            <strong>As of 2020,</strong> the global greenhouse horticulture
+            market was valued at $25.2 billion.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Looking ahead,</strong> the market is projected to grow at an approximate 5% CAGR between 2021 and 2026.
+            <strong>Looking ahead,</strong> the market is projected to grow at
+            an approximate 5% CAGR between 2021 and 2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>In 2019,</strong> USDA reported horticulture sales of about $14 billion.
+            <strong>In 2019,</strong> USDA reported horticulture sales of about
+            $14 billion.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>From 2019-2020,</strong> over 60,000 people were employed in the horticulture sector.
+            <strong>From 2019-2020,</strong> over 60,000 people were employed in
+            the horticulture sector.
           </p>
         </div>
       </div>

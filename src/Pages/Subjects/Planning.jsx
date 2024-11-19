@@ -14,7 +14,7 @@ const Planning = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -128,9 +128,13 @@ const Planning = () => {
       <div style={sectionStyle}>
         <h1>Study Planning Abroad</h1>
         <p>
-          Planning is essential for organizing and managing projects effectively. By earning 
+          Planning is essential for organizing and managing projects
+          effectively. By earning
         </p>
-        <p>a degree in planning, you'll gain the skills to strategically plan and execute </p>
+        <p>
+          a degree in planning, you'll gain the skills to strategically plan and
+          execute{" "}
+        </p>
         <p>large-scale projects, ensuring their success.</p>
       </div>
 
@@ -139,7 +143,8 @@ const Planning = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: $44,579-$104,030: annual salary range for planning professionals
+            <strong></strong>: $44,579-$104,030: annual salary range for
+            planning professionals
           </p>
         </div>
         <div style={statItemStyle}>
@@ -151,13 +156,15 @@ const Planning = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong>44% of planners work in the private sector, 56% in the public sector
+            <strong></strong>44% of planners work in the private sector, 56% in
+            the public sector
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Growing number of planning professionals currently employed in the US
+            <strong></strong> Growing number of planning professionals currently
+            employed in the US
           </p>
         </div>
       </div>
@@ -173,11 +180,17 @@ const Planning = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

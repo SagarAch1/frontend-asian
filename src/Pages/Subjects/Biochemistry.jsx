@@ -15,7 +15,7 @@ const Biochemistry = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -134,10 +134,17 @@ const Biochemistry = () => {
       <div style={sectionStyle}>
         <h1>Study Biochemistry Abroad</h1>
         <p>
-        Biochemistry studies living organisms at the cellular, molecular, and 
+          Biochemistry studies living organisms at the cellular, molecular, and
         </p>
-        <p> atomic levels to understand the biological processes that sustain life, </p>
-        <p> offering research opportunities to enhance health and the environment.</p>
+        <p>
+          {" "}
+          atomic levels to understand the biological processes that sustain
+          life,{" "}
+        </p>
+        <p>
+          {" "}
+          offering research opportunities to enhance health and the environment.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -145,7 +152,8 @@ const Biochemistry = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong>: $94,270: Median annual salary for biochemists and biophysicists.
+            <strong></strong>: $94,270: Median annual salary for biochemists and
+            biophysicists.
           </p>
         </div>
         <div style={statItemStyle}>
@@ -163,7 +171,8 @@ const Biochemistry = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Biochemists enjoy higher job satisfaction than 56% of other professions.
+            <strong></strong> Biochemists enjoy higher job satisfaction than 56%
+            of other professions.
           </p>
         </div>
       </div>
@@ -179,13 +188,21 @@ const Biochemistry = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

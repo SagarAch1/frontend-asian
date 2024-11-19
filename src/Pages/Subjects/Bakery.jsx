@@ -14,7 +14,7 @@ const Bakery = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -143,9 +143,14 @@ const Bakery = () => {
       <div style={sectionStyle}>
         <h1>Study Bakery abroad</h1>
         <p>
-          Baking is a branch of the culinary arts that focuses on producing a variety of baked 
+          Baking is a branch of the culinary arts that focuses on producing a
+          variety of baked
         </p>
-        <p> goods, such as breads, cakes, pastries, and pies, along with savory baked products</p>
+        <p>
+          {" "}
+          goods, such as breads, cakes, pastries, and pies, along with savory
+          baked products
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -153,25 +158,29 @@ const Bakery = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $507.38 billion is the estimated value of the global bakery products market in 2020.
+            <strong></strong> $507.38 billion is the estimated value of the
+            global bakery products market in 2020.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 28,300 projected job openings for bakers every year.
+            <strong></strong> 28,300 projected job openings for bakers every
+            year.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $574.05 billion expected value of the global bakery goods market by 2026.
+            <strong></strong> $574.05 billion expected value of the global
+            bakery goods market by 2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 10% projected employment growth for bakers by 2030.
+            <strong></strong> 10% projected employment growth for bakers by
+            2030.
           </p>
         </div>
       </div>
@@ -187,11 +196,17 @@ const Bakery = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

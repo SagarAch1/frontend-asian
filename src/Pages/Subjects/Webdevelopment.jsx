@@ -14,7 +14,7 @@ const WebDevelopment = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -136,9 +136,13 @@ const WebDevelopment = () => {
       <div style={sectionStyle}>
         <h1>Study Web Development abroad</h1>
         <p>
-          Web development offers an exciting opportunity for creative, tech-savvy individuals to create digital 
+          Web development offers an exciting opportunity for creative,
+          tech-savvy individuals to create digital
         </p>
-        <p>solutions  that shape our daily experiences. It’s an ideal career for those passionate about technology.</p>
+        <p>
+          solutions that shape our daily experiences. It’s an ideal career for
+          those passionate about technology.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -146,7 +150,8 @@ const WebDevelopment = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>The average salary for web developers in the US</strong> is USD$69,038.
+            <strong>The average salary for web developers in the US</strong> is
+            USD$69,038.
           </p>
         </div>
         <div style={statItemStyle}>
@@ -158,13 +163,15 @@ const WebDevelopment = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>9% job growth</strong> is expected in web development by 2026.
+            <strong>9% job growth</strong> is expected in web development by
+            2026.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>72.8% of web developers</strong> report high job satisfaction.
+            <strong>72.8% of web developers</strong> report high job
+            satisfaction.
           </p>
         </div>
       </div>
@@ -181,11 +188,17 @@ const WebDevelopment = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Display subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

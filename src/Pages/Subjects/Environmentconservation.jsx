@@ -10,21 +10,20 @@ const EnvironmentConservation = () => {
   };
 
   const headerStyle = {
-    
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/plant.jpg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "white",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-    };
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/plant.jpg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "white",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
+  };
   const statsSection = {
     display: "flex",
     justifyContent: "space-around",
@@ -131,10 +130,9 @@ const EnvironmentConservation = () => {
         <h1>Study Environmental Conservation Abroad</h1>
         <p>
           Environmental Conservation involves preserving natural resources to
-          benefit future generations. 
+          benefit future generations.
         </p>
-        <p>If sustainability matters to you, this
-        field could be ideal.</p>
+        <p>If sustainability matters to you, this field could be ideal.</p>
       </div>
 
       {/* Statistics Section */}
@@ -149,7 +147,9 @@ const EnvironmentConservation = () => {
         </div>
         <div style={statBox}>
           <div style={iconStyle}>💼</div>
-          <p>Current number of employed conservation professionals in the U.S.</p>
+          <p>
+            Current number of employed conservation professionals in the U.S.
+          </p>
         </div>
         <div style={statBox}>
           <div style={iconStyle}>🔧</div>
@@ -168,11 +168,17 @@ const EnvironmentConservation = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContent}>
-                {item.subtitle1 && <div style={subtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={subtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={subtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={subtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={subtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={subtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

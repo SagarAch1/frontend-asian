@@ -14,7 +14,7 @@ const BusinessAdministration = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -92,7 +92,7 @@ const BusinessAdministration = () => {
       title: "About Business Administration",
       content1:
         "Business administration focuses on optimizing a company's operations to boost efficiency and revenue. It teaches methods to improve internal workflows and ensure external market success.",
-      content2: 
+      content2:
         "In simple terms, business administrators handle various tasks from overseeing daily operations like customer service to making strategic decisions like setting goals and policies.",
     },
     {
@@ -130,9 +130,14 @@ const BusinessAdministration = () => {
       <div style={sectionStyle}>
         <h1>Study Business Administration Abroad</h1>
         <p>
-          Business administration is key to running successful businesses, and professionals with expertise in this
+          Business administration is key to running successful businesses, and
+          professionals with expertise in this
         </p>
-        <p>  field are always in demand. This degree remains one of the most popular choices among students globally.</p>
+        <p>
+          {" "}
+          field are always in demand. This degree remains one of the most
+          popular choices among students globally.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -140,25 +145,29 @@ const BusinessAdministration = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>750,000</strong> new jobs are expected in business administration in the US this decade.
+            <strong>750,000</strong> new jobs are expected in business
+            administration in the US this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>Entry-level pay</strong> for business administration professionals
+            <strong>Entry-level pay</strong> for business administration
+            professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Annual salary</strong> for business administration professionals
+            <strong>Annual salary</strong> for business administration
+            professionals
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>8%</strong> job growth in business administration roles expected this decade.
+            <strong>8%</strong> job growth in business administration roles
+            expected this decade.
           </p>
         </div>
       </div>

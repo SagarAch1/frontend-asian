@@ -14,7 +14,7 @@ const Politicalscienceandpolicy = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -119,7 +119,8 @@ const Politicalscienceandpolicy = () => {
         "Political Science and Policy Studies graduates can earn between $60,000 and $90,000 in roles such as research analysts, program managers, and marketing professionals. The U.S. Bureau of Labor Statistics predicts around 700 job openings for political scientists annually in the next decade. The critical thinking skills gained from this degree make it highly valuable in today’s globalized economy.",
     },
     {
-      title: "Career Pathways for Political Science and Policy Studies graduates",
+      title:
+        "Career Pathways for Political Science and Policy Studies graduates",
       subtitle1: "Political Scientist",
       content1:
         "Political Scientists analyze current events, policy decisions, and other relevant issues. Their research on global topics helps inform public and private sector decisions.",
@@ -144,17 +145,27 @@ const Politicalscienceandpolicy = () => {
       <div style={sectionStyle}>
         <h1>Study Political Science and Policy Studies Abroad</h1>
         <p>
-          If you’re curious about how politics shape global dynamics and influence foreign policy, 
+          If you’re curious about how politics shape global dynamics and
+          influence foreign policy,
         </p>
-        <p>pursuing a degree in Political Science and Policy Studies could be the answer. </p>
-        <p>This field opens doors to rewarding career opportunities and intellectual growth.</p>
+        <p>
+          pursuing a degree in Political Science and Policy Studies could be the
+          answer.{" "}
+        </p>
+        <p>
+          This field opens doors to rewarding career opportunities and
+          intellectual growth.
+        </p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>9% projected growth in employment opportunities for political scientists</p>
+          <p>
+            9% projected growth in employment opportunities for political
+            scientists
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>

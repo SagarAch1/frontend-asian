@@ -14,7 +14,7 @@ const TaxAccounting = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -92,27 +92,35 @@ const TaxAccounting = () => {
       title: "About Tax Accounting",
       content1:
         "Tax accounting, as the name suggests, centers on a client’s taxes instead of their overall finances. As a tax professional, you'll follow applicable laws when handling taxes for clients and aim to maximize the deductions they can claim. Tax accountants also offer tax planning and remain updated with evolving tax laws.",
-      content2: "Tax accountants serve at all levels of the economy, from individuals to large corporations.",
+      content2:
+        "Tax accountants serve at all levels of the economy, from individuals to large corporations.",
     },
     {
       title: "Is Tax Accounting right for me?",
       content1:
         "Tax accounting is perfect for detail-oriented individuals who enjoy problem-solving. Strong numerical, time management skills, and adaptability to new technology are also valuable.",
-      content2: "You’ll likely work standard hours most of the year, but during tax season, expect long hours, including weekends, to meet deadlines.",
-      content3: "When starting in tax accounting, it’s helpful to first complete an Accounting course to grasp business administration, accounting theory, and basic finance concepts.",
+      content2:
+        "You’ll likely work standard hours most of the year, but during tax season, expect long hours, including weekends, to meet deadlines.",
+      content3:
+        "When starting in tax accounting, it’s helpful to first complete an Accounting course to grasp business administration, accounting theory, and basic finance concepts.",
     },
     {
       title: "Tax Accounting study options and costs",
       content1:
         "There are multiple paths to becoming a tax accountant based on your commitment and prior credentials. Most professional tax accountants hold a Bachelor’s in Accounting or Accounting and Finance, though a two-year Diploma is also an option.",
-      content2: "Each country has unique tax professional regulations, which may require approved coursework, board registration, or relevant experience.",
-      content3: "Analyzing the education cost-benefit is crucial. Accountants with a Bachelor’s degree typically earn a median salary of USD $69,000, while those with a Master’s earn around USD $91,000. Most international students can expect to pay at least $30,000 for an accounting degree.",
-      content4: "You’ll also need to account for certification or registration costs specific to your country. For instance, Australians register with the Tax Practitioners Board, while UK accountants register with HMRC.",
+      content2:
+        "Each country has unique tax professional regulations, which may require approved coursework, board registration, or relevant experience.",
+      content3:
+        "Analyzing the education cost-benefit is crucial. Accountants with a Bachelor’s degree typically earn a median salary of USD $69,000, while those with a Master’s earn around USD $91,000. Most international students can expect to pay at least $30,000 for an accounting degree.",
+      content4:
+        "You’ll also need to account for certification or registration costs specific to your country. For instance, Australians register with the Tax Practitioners Board, while UK accountants register with HMRC.",
     },
     {
       title: "Future outlook",
-      content1: "Tax accountants earn an above-average salary; US accountants make around $70,500, while UK accountants earn £62,042 annually. Those who establish their own firms or work with high-value clients have considerable earning potential.",
-      content2: "Accounting jobs are expected to grow by 10-11% over the next five years, adding roughly 139,900 positions. With complex tax regulations, demand for tax accountants is unlikely to wane.",
+      content1:
+        "Tax accountants earn an above-average salary; US accountants make around $70,500, while UK accountants earn £62,042 annually. Those who establish their own firms or work with high-value clients have considerable earning potential.",
+      content2:
+        "Accounting jobs are expected to grow by 10-11% over the next five years, adding roughly 139,900 positions. With complex tax regulations, demand for tax accountants is unlikely to wane.",
     },
     {
       title: "Career pathways for Tax Accounting graduates",
@@ -137,9 +145,14 @@ const TaxAccounting = () => {
       <div style={sectionStyle}>
         <h1>Study Tax Accounting abroad</h1>
         <p>
-        Tax accountants manage taxes for individuals, businesses, and governments,
+          Tax accountants manage taxes for individuals, businesses, and
+          governments,
         </p>
-        <p> offering both financial impact and stable, high-earning career opportunities.</p>
+        <p>
+          {" "}
+          offering both financial impact and stable, high-earning career
+          opportunities.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -147,25 +160,29 @@ const TaxAccounting = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>The median annual salary</strong>: for accountants is USD $73,560
+            <strong>The median annual salary</strong>: for accountants is USD
+            $73,560
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>The top 10%</strong> of accountants earn about USD $122,840 annually
+            <strong>The top 10%</strong> of accountants earn about USD $122,840
+            annually
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Tax accountants</strong> generally earn above the median for other jobs
+            <strong>Tax accountants</strong> generally earn above the median for
+            other jobs
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Jobs</strong> in this field are projected to grow by 7% over the next decade
+            <strong>Jobs</strong> in this field are projected to grow by 7% over
+            the next decade
           </p>
         </div>
       </div>

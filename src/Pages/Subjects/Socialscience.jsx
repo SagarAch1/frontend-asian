@@ -14,7 +14,7 @@ const SocialScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -92,8 +92,10 @@ const SocialScience = () => {
       title: "What is Social Science?",
       content1:
         "Social Science is a broad field that includes disciplines like psychology, economics, politics, law, linguistics, history, anthropology, and sociology. Emerging in the 18th century, it helps in understanding society as a whole. It allows you to examine societal progress and challenges. As a subject, it strengthens critical thinking, analytical, and problem-solving abilities.",
-      content2: "Social Science gives you the opportunity to study various areas such as psychology, economics, and political systems. Economics allows you to explore the relationship between production and consumption, while also covering micro and macroeconomics. It opens career paths as an analyst, helping shape economic policies. Similarly, political studies help understand and analyze a country's political trends.",
-      content3: "Various careers in law, politics, counseling, and social services require a background in Social Science. Salaries in these fields range from USD 50,000 to over USD 100,000. One of the advantages of studying Social Science is the flexibility in choosing from a range of career paths that align with your skills and interests.",
+      content2:
+        "Social Science gives you the opportunity to study various areas such as psychology, economics, and political systems. Economics allows you to explore the relationship between production and consumption, while also covering micro and macroeconomics. It opens career paths as an analyst, helping shape economic policies. Similarly, political studies help understand and analyze a country's political trends.",
+      content3:
+        "Various careers in law, politics, counseling, and social services require a background in Social Science. Salaries in these fields range from USD 50,000 to over USD 100,000. One of the advantages of studying Social Science is the flexibility in choosing from a range of career paths that align with your skills and interests.",
     },
     {
       title: "Is Social Science suitable for me?",
@@ -133,10 +135,16 @@ const SocialScience = () => {
       <div style={sectionStyle}>
         <h1>Study Social Science abroad</h1>
         <p>
-          If you are interested in understanding human behavior and the interactions 
+          If you are interested in understanding human behavior and the
+          interactions
         </p>
-        <p>between people from various backgrounds and how this influences the  </p>
-        <p>economy and culture, studying Social Science is the perfect choice for you.</p>
+        <p>
+          between people from various backgrounds and how this influences the{" "}
+        </p>
+        <p>
+          economy and culture, studying Social Science is the perfect choice for
+          you.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -144,13 +152,15 @@ const SocialScience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 13% increase in employment opportunities in the Social Science job market
+            <strong></strong> 13% increase in employment opportunities in the
+            Social Science job market
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $85,847: average annual earnings of a social scientist
+            <strong></strong> $85,847: average annual earnings of a social
+            scientist
           </p>
         </div>
         <div style={statItemStyle}>
@@ -178,13 +188,21 @@ const SocialScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

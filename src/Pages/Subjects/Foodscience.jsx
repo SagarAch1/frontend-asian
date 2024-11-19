@@ -14,7 +14,7 @@ const FoodScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -137,7 +137,8 @@ const FoodScience = () => {
       <div style={sectionStyle}>
         <h1>Study Food Science Abroad</h1>
         <p>
-          With population growth, food science is key to ensuring sufficient, safe food supplies.
+          With population growth, food science is key to ensuring sufficient,
+          safe food supplies.
         </p>
       </div>
 
@@ -172,13 +173,21 @@ const FoodScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={subtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={subtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={subtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={subtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={subtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={subtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={subtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={subtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

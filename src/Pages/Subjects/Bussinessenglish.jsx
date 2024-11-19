@@ -10,21 +10,20 @@ const BusinessEnglish = () => {
   };
 
   const headerStyle = {
-    
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/idesign.jpeg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "black",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-    };
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/idesign.jpeg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "black",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
+  };
   const statsContainer = {
     display: "flex",
     justifyContent: "space-around",
@@ -92,13 +91,15 @@ const BusinessEnglish = () => {
       title: "About Business English",
       content1:
         "Business English is focused on terminology and language used in business, as well as understanding business fundamentals and different writing styles.",
-      content2: "This course will enhance your skills for academic, communication, and independent research in today’s job market.",
+      content2:
+        "This course will enhance your skills for academic, communication, and independent research in today’s job market.",
     },
     {
       title: "Is Business English right for me?",
       content1:
         "If you want to improve communication skills and gain insights into business, Business English may be ideal. It improves vocabulary, syntax, and articulation.",
-      content2: "This program requires extensive reading and research outside class.",
+      content2:
+        "This program requires extensive reading and research outside class.",
     },
     {
       title: "Study options and costs",
@@ -123,8 +124,7 @@ const BusinessEnglish = () => {
       content2:
         "Support publication processes for printed and online content with an average salary of $39,126.",
       subtitle3: "Newspaper Journalist",
-      content3:
-        "Report on various topics, with an average salary of $60,393.",
+      content3: "Report on various topics, with an average salary of $60,393.",
       subtitle4: "Web Content Manager",
       content4:
         "Manage website content to ensure user-friendliness, with an average salary of $85,972.",
@@ -137,7 +137,8 @@ const BusinessEnglish = () => {
       <div style={headerStyle}>
         <h1>Study Business English abroad</h1>
         <p>
-          A Business English program prepares students for English-speaking business environments, enhancing global marketability.
+          A Business English program prepares students for English-speaking
+          business environments, enhancing global marketability.
         </p>
       </div>
 
@@ -145,19 +146,30 @@ const BusinessEnglish = () => {
       <div style={statsContainer}>
         <div style={statBox}>
           <div style={iconStyle}>🌟</div>
-          <p><strong></strong> $10 billion estimated worth of the ESL online industry</p>
+          <p>
+            <strong></strong> $10 billion estimated worth of the ESL online
+            industry
+          </p>
         </div>
         <div style={statBox}>
           <div style={iconStyle}>📈</div>
-          <p><strong></strong> Top salary for Business English graduates</p>
+          <p>
+            <strong></strong> Top salary for Business English graduates
+          </p>
         </div>
         <div style={statBox}>
           <div style={iconStyle}>💼</div>
-          <p><strong></strong> Average yearly salary for Business English graduates</p>
+          <p>
+            <strong></strong> Average yearly salary for Business English
+            graduates
+          </p>
         </div>
         <div style={statBox}>
           <div style={iconStyle}>🔧</div>
-          <p><strong></strong> 7,400 job openings each year for Business English graduates</p>
+          <p>
+            <strong></strong> 7,400 job openings each year for Business English
+            graduates
+          </p>
         </div>
       </div>
 
@@ -173,13 +185,21 @@ const BusinessEnglish = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Render subtitles and content */}
-                {item.subtitle1 && <div style={subtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={subtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={subtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={subtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={subtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={subtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={subtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={subtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
               </div>
             )}

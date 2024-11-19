@@ -14,7 +14,7 @@ const HumanWelfare = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -135,12 +135,10 @@ const HumanWelfare = () => {
       <div style={sectionStyle}>
         <h1>Study Human Welfare Studies and Services Abroad</h1>
         <p>
-          Considering a career dedicated to improving others' lives? Human Welfare
+          Considering a career dedicated to improving others' lives? Human
+          Welfare
         </p>
-        <p>
-         Studies and Services offer the knowledge to do that and more!
-        </p>
-       
+        <p>Studies and Services offer the knowledge to do that and more!</p>
       </div>
 
       {/* Statistics section */}
@@ -148,7 +146,8 @@ const HumanWelfare = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>12%</strong> expected growth rate for social work employment over the next decade.
+            <strong>12%</strong> expected growth rate for social work employment
+            over the next decade.
           </p>
         </div>
         <div style={statItemStyle}>
@@ -160,13 +159,15 @@ const HumanWelfare = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Substance Abuse Counselors</strong> can earn up to AUD 100,000 annually.
+            <strong>Substance Abuse Counselors</strong> can earn up to AUD
+            100,000 annually.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>78,000</strong> projected annual job openings for social workers.
+            <strong>78,000</strong> projected annual job openings for social
+            workers.
           </p>
         </div>
       </div>

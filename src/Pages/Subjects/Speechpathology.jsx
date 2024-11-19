@@ -14,7 +14,7 @@ const SpeechPathology = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -82,9 +82,9 @@ const SpeechPathology = () => {
   };
 
   const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
@@ -125,16 +125,16 @@ const SpeechPathology = () => {
         "Speech Pathology is one of the most secure and rewarding career paths due to its high demand, excellent salary prospects, and flexible work environment.",
     },
     {
-      title: 'Career paths for Speech Pathology graduates',
-      subtitle1: 'Voice Coach',
+      title: "Career paths for Speech Pathology graduates",
+      subtitle1: "Voice Coach",
       content1:
-        'Some speech pathologists choose to work as voice coaches, helping clients such as actors, singers, and executives improve their vocal techniques, reduce accents, and prevent voice strain.',
-      subtitle2: 'Temporary Speech Language Pathologist',
+        "Some speech pathologists choose to work as voice coaches, helping clients such as actors, singers, and executives improve their vocal techniques, reduce accents, and prevent voice strain.",
+      subtitle2: "Temporary Speech Language Pathologist",
       content2:
-        'Temporary speech language pathologists take on short-term assignments in various clinical and non-clinical settings, both locally and internationally. Experience in a clinical setting is required for these roles.',
-      subtitle3: 'Researcher or Professor',
+        "Temporary speech language pathologists take on short-term assignments in various clinical and non-clinical settings, both locally and internationally. Experience in a clinical setting is required for these roles.",
+      subtitle3: "Researcher or Professor",
       content3:
-        'Experienced speech pathologists can transition into academic roles, either as professors or researchers. Teaching future speech pathologists and conducting research are typical roles in academia. A doctoral degree is generally required for most faculty positions.',
+        "Experienced speech pathologists can transition into academic roles, either as professors or researchers. Teaching future speech pathologists and conducting research are typical roles in academia. A doctoral degree is generally required for most faculty positions.",
     },
   ];
 
@@ -144,10 +144,16 @@ const SpeechPathology = () => {
       <div style={sectionStyle}>
         <h1>Study Speech Pathology Abroad</h1>
         <p>
-          Speech pathologists help individuals overcome speech and language difficulties. 
+          Speech pathologists help individuals overcome speech and language
+          difficulties.
         </p>
-        <p>The field focuses on diagnosing and treating issues related to communication, </p>
-        <p>swallowing, and speech, aiming to improve the lives of those affected.</p>
+        <p>
+          The field focuses on diagnosing and treating issues related to
+          communication,{" "}
+        </p>
+        <p>
+          swallowing, and speech, aiming to improve the lives of those affected.
+        </p>
       </div>
 
       {/* Statistics Section */}
@@ -155,7 +161,8 @@ const SpeechPathology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $79,060: median annual salary of speech pathologists
+            <strong></strong> $79,060: median annual salary of speech
+            pathologists
           </p>
         </div>
         <div style={statItemStyle}>
@@ -167,7 +174,8 @@ const SpeechPathology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $125,560: average salary of top speech pathologists
+            <strong></strong> $125,560: average salary of top speech
+            pathologists
           </p>
         </div>
         <div style={statItemStyle}>

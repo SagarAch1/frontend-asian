@@ -14,7 +14,7 @@ const Technology = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -143,9 +143,13 @@ const Technology = () => {
       <div style={sectionStyle}>
         <h1>Study Technology abroad</h1>
         <p>
-          Interested in a practical, skill-based degree? Studying Technology could 
+          Interested in a practical, skill-based degree? Studying Technology
+          could
         </p>
-        <p>be your pathway to a rewarding career, with a focus on hands-on learning </p>
+        <p>
+          be your pathway to a rewarding career, with a focus on hands-on
+          learning{" "}
+        </p>
         <p>and wide-ranging opportunities.</p>
       </div>
 

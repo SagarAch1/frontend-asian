@@ -14,7 +14,7 @@ const Statistics = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -133,9 +133,14 @@ const Statistics = () => {
       <div style={sectionStyle}>
         <h1>Study Statistics abroad</h1>
         <p>
-          Statistics focuses on data collection, analysis, and interpretation. You will learn not only theoretical
+          Statistics focuses on data collection, analysis, and interpretation.
+          You will learn not only theoretical
         </p>
-        <p> concepts but also practical skills like statistical modeling, making you highly employable in various fields.</p>
+        <p>
+          {" "}
+          concepts but also practical skills like statistical modeling, making
+          you highly employable in various fields.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -149,7 +154,8 @@ const Statistics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 33% projected employment growth of mathematicians and statisticians this decade
+            <strong></strong> 33% projected employment growth of mathematicians
+            and statisticians this decade
           </p>
         </div>
         <div style={statItemStyle}>
@@ -161,7 +167,8 @@ const Statistics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 52,000 projected job openings for mathematicians and statisticians this decade
+            <strong></strong> 52,000 projected job openings for mathematicians
+            and statisticians this decade
           </p>
         </div>
       </div>
@@ -177,13 +184,21 @@ const Statistics = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

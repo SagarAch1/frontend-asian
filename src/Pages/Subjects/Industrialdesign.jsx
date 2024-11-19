@@ -13,7 +13,7 @@ const IndustrialDesign = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -89,34 +89,46 @@ const IndustrialDesign = () => {
   const faqItems = [
     {
       title: "About Industrial Design",
-      content1: "Study the fundamentals of visual art, design, and modelling. Gain hands-on skills in 3D structuring, CAD, prototyping, and design management.",
-      content2: "You’ll learn how to communicate product ideas using CAD software, and how to develop and market functional prototypes.",
+      content1:
+        "Study the fundamentals of visual art, design, and modelling. Gain hands-on skills in 3D structuring, CAD, prototyping, and design management.",
+      content2:
+        "You’ll learn how to communicate product ideas using CAD software, and how to develop and market functional prototypes.",
     },
     {
       title: "Is Industrial Design Right for Me?",
-      content1: "If you love product design and problem-solving, this field could be for you. It’s about combining creativity with practical solutions.",
-      content2: "Industrial design focuses on designing products that are both functional and appealing, requiring problem-solving and creativity.",
+      content1:
+        "If you love product design and problem-solving, this field could be for you. It’s about combining creativity with practical solutions.",
+      content2:
+        "Industrial design focuses on designing products that are both functional and appealing, requiring problem-solving and creativity.",
     },
     {
       title: "Industrial Design - Study Options and Costs",
-      content1: "In the US, tuition fees average $35,000 per year. For top schools like Carnegie Mellon, expect around $58,000 annually.",
-      content2: "Other countries like Australia and the UK offer similar costs of around $30,000–40,000 per year for undergraduate programs.",
+      content1:
+        "In the US, tuition fees average $35,000 per year. For top schools like Carnegie Mellon, expect around $58,000 annually.",
+      content2:
+        "Other countries like Australia and the UK offer similar costs of around $30,000–40,000 per year for undergraduate programs.",
     },
     {
       title: "Future Outlook",
-      content1: "With a 6% employment growth, the demand for industrial designers is rising. Companies are investing more in product design due to global competition and customer satisfaction.",
-      content2: "New job openings are expected to grow, with salaries for experienced designers reaching upwards of $118,000 annually.",
+      content1:
+        "With a 6% employment growth, the demand for industrial designers is rising. Companies are investing more in product design due to global competition and customer satisfaction.",
+      content2:
+        "New job openings are expected to grow, with salaries for experienced designers reaching upwards of $118,000 annually.",
     },
     {
       title: "Career Pathways for Graduates",
       subtitle1: "Industrial Designer",
-      content1: "Design user-friendly products through market research, 3D modelling, and consumer-focused designs. Average salary: $58,200.",
+      content1:
+        "Design user-friendly products through market research, 3D modelling, and consumer-focused designs. Average salary: $58,200.",
       subtitle2: "Package Designer",
-      content2: "Create packaging solutions for various industries. Average salary: $51,000.",
+      content2:
+        "Create packaging solutions for various industries. Average salary: $51,000.",
       subtitle3: "Furniture Designer",
-      content3: "Design custom furniture, collaborate with clients, and use CAD tools. Average salary: $51,400.",
+      content3:
+        "Design custom furniture, collaborate with clients, and use CAD tools. Average salary: $51,400.",
       subtitle4: "Automotive Designer",
-      content4: "Work with car manufacturers to design ergonomic, stylish vehicles. Average salary: $80,700.",
+      content4:
+        "Work with car manufacturers to design ergonomic, stylish vehicles. Average salary: $80,700.",
     },
   ];
 
@@ -125,7 +137,10 @@ const IndustrialDesign = () => {
       {/* Top Section */}
       <div style={sectionStyle}>
         <h1>Study Industrial Design Abroad</h1>
-        <p>Industrial designers make products both functional and visually appealing.</p>
+        <p>
+          Industrial designers make products both functional and visually
+          appealing.
+        </p>
         <p> Learn to design innovative solutions for everyday products.</p>
       </div>
 
@@ -133,19 +148,27 @@ const IndustrialDesign = () => {
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p><strong>40,000</strong> industrial designers in the US</p>
+          <p>
+            <strong>40,000</strong> industrial designers in the US
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p><strong>6%</strong> average job growth</p>
+          <p>
+            <strong>6%</strong> average job growth
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p><strong>$71,440</strong> median salary</p>
+          <p>
+            <strong>$71,440</strong> median salary
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p><strong>$118,440+</strong> for top designers</p>
+          <p>
+            <strong>$118,440+</strong> for top designers
+          </p>
         </div>
       </div>
 
@@ -160,13 +183,21 @@ const IndustrialDesign = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
               </div>
             )}

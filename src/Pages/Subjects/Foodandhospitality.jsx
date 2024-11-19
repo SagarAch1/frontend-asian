@@ -14,7 +14,7 @@ const FoodAndHospitality = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -136,9 +136,12 @@ const FoodAndHospitality = () => {
       <div style={sectionStyle}>
         <h1>Study Food and Hospitality Abroad</h1>
         <p>
-          A Food and Hospitality degree is more than just food service—it's about creating 
+          A Food and Hospitality degree is more than just food service—it's
+          about creating
         </p>
-        <p>unique dining experiences and ambiance that set establishments apart.</p>
+        <p>
+          unique dining experiences and ambiance that set establishments apart.
+        </p>
       </div>
 
       {/* Statistics section */}

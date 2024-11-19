@@ -14,7 +14,7 @@ const Counselling = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -105,7 +105,8 @@ const Counselling = () => {
     },
     {
       title: "Study options and costs",
-      content1: "Individuals with post-secondary education can enroll in Counselling programs.",
+      content1:
+        "Individuals with post-secondary education can enroll in Counselling programs.",
       content2:
         "A Counselling diploma can typically be completed in less than two years of full-time study. This qualification prepares individuals for work in Counselling and allied healthcare sectors. Some of the courses in this program include Human Development, Learning Disabilities, Professional Ethics, Interpersonal Communication, and Mental Health. The diploma equips students with essential skills such as communication, organization, and critical thinking. The average cost for a Counselling diploma is around $18,600 in the United States.",
       content3:
@@ -146,9 +147,13 @@ const Counselling = () => {
       <div style={sectionStyle}>
         <h1>Study Counselling Abroad</h1>
         <p>
-          Counselling is a field dedicated to assisting individuals in overcoming emotional and professional 
+          Counselling is a field dedicated to assisting individuals in
+          overcoming emotional and professional
         </p>
-        <p>obstacles. A Counselling program equips students with critical thinking abilities and a deep </p>
+        <p>
+          obstacles. A Counselling program equips students with critical
+          thinking abilities and a deep{" "}
+        </p>
         <p>understanding of counselling theories and practices.</p>
       </div>
 
@@ -175,7 +180,8 @@ const Counselling = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong>Top counsellors have an average annual salary of $83,503
+            <strong></strong>Top counsellors have an average annual salary of
+            $83,503
           </p>
         </div>
       </div>
@@ -191,15 +197,25 @@ const Counselling = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

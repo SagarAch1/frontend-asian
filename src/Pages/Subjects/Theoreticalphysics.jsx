@@ -14,7 +14,7 @@ const TheoreticalPhysics = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -140,10 +140,12 @@ const TheoreticalPhysics = () => {
       <div style={sectionStyle}>
         <h1>Study Theoretical Physics Abroad</h1>
         <p>
-          Theoretical physicists explore and analyze everything from subatomic particles to vast galaxies. 
+          Theoretical physicists explore and analyze everything from subatomic
+          particles to vast galaxies.
         </p>
         <p>
-        This field is both exciting and vast—just the beginning of an incredible journey in science.
+          This field is both exciting and vast—just the beginning of an
+          incredible journey in science.
         </p>
       </div>
 
@@ -152,7 +154,8 @@ const TheoreticalPhysics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 9% projected growth in physicist job opportunities this decade.
+            <strong></strong> 9% projected growth in physicist job opportunities
+            this decade.
           </p>
         </div>
         <div style={statItemStyle}>
@@ -164,13 +167,15 @@ const TheoreticalPhysics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 21,100 new physicist positions projected in the US this decade.
+            <strong></strong> 21,100 new physicist positions projected in the US
+            this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> $987,240 estimated worth of physicists in various industries.
+            <strong></strong> $987,240 estimated worth of physicists in various
+            industries.
           </p>
         </div>
       </div>

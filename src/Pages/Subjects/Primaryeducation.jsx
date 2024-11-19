@@ -14,7 +14,7 @@ const PrimaryEducation = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -130,9 +130,14 @@ const PrimaryEducation = () => {
       <div style={sectionStyle}>
         <h1>Study Primary Education abroad</h1>
         <p>
-          Primary educators play a vital role in shaping the lives of young children. If you are passionate 
+          Primary educators play a vital role in shaping the lives of young
+          children. If you are passionate
         </p>
-        <p> about helping others grow and enjoy working with children, this could be an ideal career for you.</p>
+        <p>
+          {" "}
+          about helping others grow and enjoy working with children, this could
+          be an ideal career for you.
+        </p>
       </div>
 
       {/* Statistics section */}

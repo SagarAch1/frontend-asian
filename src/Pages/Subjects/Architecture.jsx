@@ -14,7 +14,7 @@ const Architecture = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -130,9 +130,13 @@ const Architecture = () => {
       <div style={sectionStyle}>
         <h1>Study Architecture abroad</h1>
         <p>
-        Architecture blends art and science to design functional, visually appealing spaces, 
+          Architecture blends art and science to design functional, visually
+          appealing spaces,
         </p>
-        <p>turning abstract ideas into environments for living, working, and interaction.</p>
+        <p>
+          turning abstract ideas into environments for living, working, and
+          interaction.
+        </p>
       </div>
 
       {/* Statistics section */}

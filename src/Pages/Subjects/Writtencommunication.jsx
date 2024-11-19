@@ -14,7 +14,7 @@ const Writtencommunication = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -136,29 +136,42 @@ const Writtencommunication = () => {
         <h1>Study Written Communication abroad</h1>
         <p>
           Students in Written Communication study the art of rhetoric, grammar,
-          and communication, 
+          and communication,
         </p>
-        <p>preparing for roles in digital, copy, and content writing
-        across multiple sectors.</p>
+        <p>
+          preparing for roles in digital, copy, and content writing across
+          multiple sectors.
+        </p>
       </div>
 
       {/* Statistics section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p><strong></strong> $60,340: average yearly salary of a written communication specialist</p>
+          <p>
+            <strong></strong> $60,340: average yearly salary of a written
+            communication specialist
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p><strong></strong> 11,200 projected job openings for editors annually this decade</p>
+          <p>
+            <strong></strong> 11,200 projected job openings for editors annually
+            this decade
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p><strong></strong> Average salary of technical writers</p>
+          <p>
+            <strong></strong> Average salary of technical writers
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p><strong></strong> 12% projected employment growth for written communication specialists</p>
+          <p>
+            <strong></strong> 12% projected employment growth for written
+            communication specialists
+          </p>
         </div>
       </div>
 
@@ -173,13 +186,21 @@ const Writtencommunication = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

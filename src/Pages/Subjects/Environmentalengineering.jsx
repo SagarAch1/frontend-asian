@@ -14,7 +14,7 @@ const EnvironmentalEngineering = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -143,10 +143,12 @@ const EnvironmentalEngineering = () => {
         <h1>Study Environmental Engineering Abroad</h1>
         <p>
           Environmental Engineering applies engineering knowledge to solve
-          environmental problems. 
+          environmental problems.
         </p>
-        <p>Global opportunities and the chance to make a
-        positive environmental impact make this </p>
+        <p>
+          Global opportunities and the chance to make a positive environmental
+          impact make this{" "}
+        </p>
         <p>an appealing field of study.</p>
       </div>
 
@@ -155,8 +157,7 @@ const EnvironmentalEngineering = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> Average salary of environmental engineers per
-            year
+            <strong></strong> Average salary of environmental engineers per year
           </p>
         </div>
         <div style={statItemStyle}>

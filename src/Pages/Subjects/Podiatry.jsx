@@ -14,7 +14,7 @@ const Podiatry = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -136,9 +136,13 @@ const Podiatry = () => {
       <div style={sectionStyle}>
         <h1>Study Podiatry abroad</h1>
         <p>
-          Podiatry is the study of feet and their medical conditions. If you are passionate about making a difference 
+          Podiatry is the study of feet and their medical conditions. If you are
+          passionate about making a difference
         </p>
-        <p>in people's lives by helping them stand on their feet (literally), then Podiatry is an excellent career choice!</p>
+        <p>
+          in people's lives by helping them stand on their feet (literally),
+          then Podiatry is an excellent career choice!
+        </p>
       </div>
 
       {/* Statistics section */}

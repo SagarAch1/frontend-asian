@@ -15,7 +15,7 @@ const CurriculumandEducation = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -148,21 +148,33 @@ const CurriculumandEducation = () => {
       <div style={sectionStyle}>
         <h1>Study Curriculum and Education Abroad</h1>
         <p>
-          If you're passionate about fostering creativity and growth in others, pursuing Curriculum 
+          If you're passionate about fostering creativity and growth in others,
+          pursuing Curriculum
         </p>
-        <p>and Education Studies might be for you. This field focuses on developing strong </p>
-        <p>pedagogical skills and designing curricula that support effective learning.</p>
+        <p>
+          and Education Studies might be for you. This field focuses on
+          developing strong{" "}
+        </p>
+        <p>
+          pedagogical skills and designing curricula that support effective
+          learning.
+        </p>
       </div>
 
       {/* Statistics Section */}
       <div style={statisticsSection}>
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
-          <p>$78.7 billion estimated revenue of the US education industry in 2021</p>
+          <p>
+            $78.7 billion estimated revenue of the US education industry in 2021
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
-          <p>$57,220: average annual salary for education and training occupations</p>
+          <p>
+            $57,220: average annual salary for education and training
+            occupations
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
@@ -170,7 +182,9 @@ const CurriculumandEducation = () => {
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
-          <p>10% estimated employment growth in education occupations this decade</p>
+          <p>
+            10% estimated employment growth in education occupations this decade
+          </p>
         </div>
       </div>
 
@@ -186,15 +200,25 @@ const CurriculumandEducation = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Display subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

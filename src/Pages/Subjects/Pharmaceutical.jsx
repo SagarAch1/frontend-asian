@@ -10,21 +10,20 @@ const Pharmaceutical = () => {
   };
 
   const headerSectionStyle = {
-    
-      backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/phar.jpeg)`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "black",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-    };
+    backgroundImage: `url(${process.env.PUBLIC_URL}/assets/images/phar.jpeg)`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "black",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
+  };
 
   const statsContainerStyle = {
     display: "flex",
@@ -144,11 +143,9 @@ const Pharmaceutical = () => {
       {/* Header section with background image */}
       <div style={headerSectionStyle}>
         <h1>Pharmaceutical Science abroad</h1>
+        <p>Pharmaceutical Science involves creating new medications.</p>
         <p>
-          Pharmaceutical Science involves creating new medications. 
-        </p>
-        <p>
-        This field offers global career opportunities and high employability.
+          This field offers global career opportunities and high employability.
         </p>
       </div>
 
@@ -157,13 +154,15 @@ const Pharmaceutical = () => {
         <div style={statCardStyle}>
           <div style={statIconStyle}>🌟</div>
           <p>
-            <strong>4.49 million</strong>: people employed in pharmaceutical science (4.83% growth)
+            <strong>4.49 million</strong>: people employed in pharmaceutical
+            science (4.83% growth)
           </p>
         </div>
         <div style={statCardStyle}>
           <div style={statIconStyle}>📈</div>
           <p>
-            <strong>$77,002</strong> average salary for pharma science professionals
+            <strong>$77,002</strong> average salary for pharma science
+            professionals
           </p>
         </div>
         <div style={statCardStyle}>
@@ -192,15 +191,25 @@ const Pharmaceutical = () => {
             {activeIndex === index && (
               <div style={faqContentWrapperStyle}>
                 {/* Render content and subtitles */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

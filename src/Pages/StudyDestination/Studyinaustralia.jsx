@@ -310,13 +310,15 @@ const StudyInAustralia = () => {
           Ques 4: How much will it cost to study in Australia?
         </p>
         <p style={styles.paragraph}>
-          Ans: On average, tuition fees at Australian tertiary institutions range from AUD 20,000 to AUD 30,000 per year.
+          Ans: On average, tuition fees at Australian tertiary institutions
+          range from AUD 20,000 to AUD 30,000 per year.
         </p>
         <p style={styles.section}>
           Ques 5: What are the new rules for student visas in Australia 2023?
         </p>
         <p style={styles.paragraph}>
-          Ans: Starting July 1, 2023, student visa holders will be restricted to working a maximum of 48 hours per fortnight.
+          Ans: Starting July 1, 2023, student visa holders will be restricted to
+          working a maximum of 48 hours per fortnight.
         </p>
         <Exploreinaustralia />
         <FormPage />
@@ -337,21 +339,18 @@ const styles = {
     position: "relative",
   },
   headerImage: {
-    
-      
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      width: "1900px",
-      color: "white",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      textAlign: "center",
-      padding: "50px",
-      marginTop: "82px",
-  
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+    height: "350px",
+    width: "100%",
+    color: "white",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "50px",
+    marginTop: "82px",
   },
   headerContent: {
     position: "absolute",

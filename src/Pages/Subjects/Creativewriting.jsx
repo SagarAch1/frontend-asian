@@ -15,7 +15,7 @@ const Creativewriting = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -129,10 +129,11 @@ const Creativewriting = () => {
         <h1>Study Creative Writing Abroad</h1>
         <p>
           A degree in Creative Writing sharpens storytelling abilities, helping
-          students 
+          students
         </p>
-        <p>understand the publishing landscape and develop their unique
-        voices.</p>
+        <p>
+          understand the publishing landscape and develop their unique voices.
+        </p>
       </div>
 
       {/* Statistics section */}

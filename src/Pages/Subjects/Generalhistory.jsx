@@ -14,7 +14,7 @@ const Generalhistory = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -134,10 +134,13 @@ const Generalhistory = () => {
       <div style={sectionStyle}>
         <h1>Study General History abroad </h1>
         <p>
-          General History majors explore significant historical events that have 
+          General History majors explore significant historical events that have
         </p>
         <p>shaped our world. They investigate human experiences from the </p>
-        <p>past and develop critical thinking, research, and communication skills.</p>
+        <p>
+          past and develop critical thinking, research, and communication
+          skills.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -151,13 +154,15 @@ const Generalhistory = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> Average yearly earnings for museum workers and conservators
+            <strong></strong> Average yearly earnings for museum workers and
+            conservators
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> 5% projected increase in historian job opportunities this decade
+            <strong></strong> 5% projected increase in historian job
+            opportunities this decade
           </p>
         </div>
         <div style={statItemStyle}>

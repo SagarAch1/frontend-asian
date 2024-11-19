@@ -14,7 +14,7 @@ const DigitalProduction = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -139,14 +139,17 @@ const DigitalProduction = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div style={sectionStyle }>
+      <div style={sectionStyle}>
         <h1>Study Digital Production Abroad</h1>
         <p>
-          Looking to craft stories that captivate audiences? Digital production is the perfect
-         
+          Looking to craft stories that captivate audiences? Digital production
+          is the perfect
         </p>
-        <p>  field to hone your storytelling skills and bring your creative
-        visions to life in the world of media.</p>
+        <p>
+          {" "}
+          field to hone your storytelling skills and bring your creative visions
+          to life in the world of media.
+        </p>
       </div>
 
       {/* Statistics Section */}
@@ -154,25 +157,29 @@ const DigitalProduction = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>4.79%</strong> expected growth of the global animation market.
+            <strong>4.79%</strong> expected growth of the global animation
+            market.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>$93,940</strong> median annual salary for digital production managers in the US.
+            <strong>$93,940</strong> median annual salary for digital production
+            managers in the US.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>4%</strong> job growth projected for multimedia arts professionals in this decade.
+            <strong>4%</strong> job growth projected for multimedia arts
+            professionals in this decade.
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>$77,700</strong> median salary for multimedia artists annually.
+            <strong>$77,700</strong> median salary for multimedia artists
+            annually.
           </p>
         </div>
       </div>
@@ -188,15 +195,25 @@ const DigitalProduction = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

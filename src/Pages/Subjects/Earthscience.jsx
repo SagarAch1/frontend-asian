@@ -14,7 +14,7 @@ const Earthscience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -130,9 +130,13 @@ const Earthscience = () => {
       <div style={sectionStyle}>
         <h1>Study Earth Sciences Abroad</h1>
         <p>
-          Earth sciences explore the Earth's physical properties. Studying this field can deepen your understanding 
+          Earth sciences explore the Earth's physical properties. Studying this
+          field can deepen your understanding
         </p>
-        <p>of our planet, boost your career prospects, and offer new perspectives on environmental issues.</p>
+        <p>
+          of our planet, boost your career prospects, and offer new perspectives
+          on environmental issues.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -140,13 +144,15 @@ const Earthscience = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> $40,000 to $70,000 average income for Earth Science PhD holders
+            <strong></strong> $40,000 to $70,000 average income for Earth
+            Science PhD holders
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> 9,400 predicted openings for Earth Sciences careers in the US
+            <strong></strong> 9,400 predicted openings for Earth Sciences
+            careers in the US
           </p>
         </div>
         <div style={statItemStyle}>
@@ -175,11 +181,17 @@ const Earthscience = () => {
             {activeIndex === index && (
               <div style={faqContentStyle}>
                 {/* Render subtitles and content */}
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

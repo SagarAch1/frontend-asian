@@ -14,7 +14,7 @@ const InformationTechnology = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -90,21 +90,21 @@ const InformationTechnology = () => {
   const faqItems = [
     {
       title: "What is Information Technology?",
-      content: 
+      content:
         "Information Technology (IT) is integral to modern life, influencing how we work, communicate, and live. IT professionals who are skilled and passionate about technology can thrive in a fast-paced, ever-evolving field. If you're eager to make an impact in the digital world, studying IT is a key starting point.",
     },
     {
       title: "Is Information Technology the right fit for me?",
-      content1: 
+      content1:
         "IT is perfect for those who enjoy solving problems and tackling complex challenges. It requires strong attention to detail and organizational skills. Furthermore, IT professionals often work in collaborative environments, so good communication skills and a positive attitude are essential.",
       content2:
         "Many IT professionals work in office settings, but remote opportunities or self-employment are also available. While a typical 9-to-5 schedule is common, certain areas such as cybersecurity or database management might require after-hours work for urgent matters. A strong work ethic is crucial in these situations.",
     },
     {
       title: "What are the study options and costs for Information Technology?",
-      content1: 
+      content1:
         "To pursue a career in IT, most professionals have at least a diploma, though a Bachelor's degree is now the industry standard. In Australia, a Bachelor's in IT can cost around AUD$30,000 per year, while an Associate's degree in the US costs approximately USD$18,000. Given the high earning potential in IT, the investment in education often pays off.",
-      content2: 
+      content2:
         "Additionally, many IT roles require specific certifications, such as Google Professional Cloud Architect or CompTIA, depending on your career goals.",
     },
     {
@@ -124,7 +124,7 @@ const InformationTechnology = () => {
       content3:
         "IT Managers supervise IT teams, ensure networks and systems meet requirements, and oversee the security and maintenance of company data. This senior role includes responsibilities like software updates and staff training.",
       subtitle4: "Software Developer",
-      content4: 
+      content4:
         "Software developers write programs, using their expertise in coding languages to create software solutions. They are responsible for both developing new software and maintaining existing systems.",
       subtitle5: "Web Developer",
       content5:
@@ -138,9 +138,13 @@ const InformationTechnology = () => {
       <div style={sectionStyle}>
         <h1>Study Information Technology Abroad</h1>
         <p>
-          The Information Technology (IT) field includes a wide range of careers, all with exciting growth prospects. 
+          The Information Technology (IT) field includes a wide range of
+          careers, all with exciting growth prospects.
         </p>
-        <p>As digital technologies become more integral to everyday life, the demand for skilled IT professionals has skyrocketed.</p>
+        <p>
+          As digital technologies become more integral to everyday life, the
+          demand for skilled IT professionals has skyrocketed.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -166,7 +170,8 @@ const InformationTechnology = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> US tech industry contributes USD$2 trillion to the economy
+            <strong></strong> US tech industry contributes USD$2 trillion to the
+            economy
           </p>
         </div>
       </div>
@@ -182,15 +187,25 @@ const InformationTechnology = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

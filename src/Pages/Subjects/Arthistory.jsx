@@ -14,7 +14,7 @@ const ArtHistory = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -82,9 +82,9 @@ const ArtHistory = () => {
   };
 
   const faqSubtitleStyle = {
-    fontWeight: 'bold',
-    marginTop: '10px',
-    color: '#333',
+    fontWeight: "bold",
+    marginTop: "10px",
+    color: "#333",
   };
 
   const faqItems = [
@@ -111,17 +111,22 @@ const ArtHistory = () => {
         "By 2029, job opportunities in art history are expected to grow by 9%. Careers in archiving, curating, and museum roles are projected to see steady demand.",
     },
     {
-      title: 'Career pathways for Art and History graduates',
-      subtitle1: 'Curator',
-      content1: 'Curators are responsible for managing collections, organizing exhibitions, conducting research, and overseeing the preservation of artworks. They may work in museums, galleries, or cultural institutions.',
-      subtitle2: 'Art History Professor',
-      content2: 'Professors in art history teach students to analyze the evolution of art in cultural contexts. They also engage in research and mentoring, contributing to the academic field.',
-      subtitle3: 'Museum Director',
-      content3: 'Museum directors oversee the institution’s mission, collections, and operations. They ensure the strategic direction of the museum and handle administrative responsibilities.',
-      subtitle4: 'Art Restorer',
-      content4: 'Art restorers focus on preserving and repairing artworks. They specialize in materials such as paintings, textiles, or sculptures and ensure safe handling and storage.',
-      subtitle5: 'Art Authenticator',
-      content5: 'Art authenticators examine artworks to verify their provenance and authenticity. They use research and scientific methods to establish the true origin of art pieces.',
+      title: "Career pathways for Art and History graduates",
+      subtitle1: "Curator",
+      content1:
+        "Curators are responsible for managing collections, organizing exhibitions, conducting research, and overseeing the preservation of artworks. They may work in museums, galleries, or cultural institutions.",
+      subtitle2: "Art History Professor",
+      content2:
+        "Professors in art history teach students to analyze the evolution of art in cultural contexts. They also engage in research and mentoring, contributing to the academic field.",
+      subtitle3: "Museum Director",
+      content3:
+        "Museum directors oversee the institution’s mission, collections, and operations. They ensure the strategic direction of the museum and handle administrative responsibilities.",
+      subtitle4: "Art Restorer",
+      content4:
+        "Art restorers focus on preserving and repairing artworks. They specialize in materials such as paintings, textiles, or sculptures and ensure safe handling and storage.",
+      subtitle5: "Art Authenticator",
+      content5:
+        "Art authenticators examine artworks to verify their provenance and authenticity. They use research and scientific methods to establish the true origin of art pieces.",
     },
   ];
 
@@ -130,9 +135,7 @@ const ArtHistory = () => {
       {/* Top section with background image */}
       <div style={sectionStyle}>
         <h1>Study Art and History abroad</h1>
-        <p>
-          Have a passion for creativity and history? 
-        </p>
+        <p>Have a passion for creativity and history?</p>
         <p> An Art and History degree is the ideal path for you! </p>
       </div>
 
@@ -147,19 +150,22 @@ const ArtHistory = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>9%</strong> projected growth for archivists, curators, and museum workers
+            <strong>9%</strong> projected growth for archivists, curators, and
+            museum workers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>Art History</strong> courses offered at over 100 global institutions
+            <strong>Art History</strong> courses offered at over 100 global
+            institutions
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong>Global arts market</strong> expected to reach over AUD $700 billion by 2025
+            <strong>Global arts market</strong> expected to reach over AUD $700
+            billion by 2025
           </p>
         </div>
       </div>

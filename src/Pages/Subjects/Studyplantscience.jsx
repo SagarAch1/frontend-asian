@@ -14,7 +14,7 @@ const PlantScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -134,11 +134,8 @@ const PlantScience = () => {
       {/* Top section with background image */}
       <div style={sectionStyle}>
         <h1>Study Plant Sciences Abroad</h1>
-        <p>
-          Plant sciences study plant life, focusing on structure, function,
-        </p>
-        <p> and
-        growth, with applications in food, medicine, and fuel. </p>
+        <p>Plant sciences study plant life, focusing on structure, function,</p>
+        <p> and growth, with applications in food, medicine, and fuel. </p>
       </div>
 
       {/* Statistics section */}

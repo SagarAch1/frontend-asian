@@ -14,7 +14,7 @@ const Graphicanddesign = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -129,9 +129,14 @@ const Graphicanddesign = () => {
       <div style={sectionStyle}>
         <h1>Study Graphic and Design studies abroad</h1>
         <p>
-          Studies have shown that consumers are more responsive to visual content than other formats like text or audio.
+          Studies have shown that consumers are more responsive to visual
+          content than other formats like text or audio.
         </p>
-        <p> As a result, the demand for graphic and design professionals who can create such content is on the rise.</p>
+        <p>
+          {" "}
+          As a result, the demand for graphic and design professionals who can
+          create such content is on the rise.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -139,19 +144,22 @@ const Graphicanddesign = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong>$53,380</strong> average salary of graphic designers in the US
+            <strong>$53,380</strong> average salary of graphic designers in the
+            US
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong>23,900</strong> new jobs expected each year for graphic designers
+            <strong>23,900</strong> new jobs expected each year for graphic
+            designers
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong>24%</strong> increase in digital categories in graphic design
+            <strong>24%</strong> increase in digital categories in graphic
+            design
           </p>
         </div>
         <div style={statItemStyle}>
@@ -173,11 +181,17 @@ const Graphicanddesign = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

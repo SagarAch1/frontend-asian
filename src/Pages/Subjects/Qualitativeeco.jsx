@@ -14,7 +14,7 @@ const QualitativeEconomics = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "black",
     display: "flex",
     flexDirection: "column",
@@ -131,9 +131,13 @@ const QualitativeEconomics = () => {
       <div style={sectionStyle}>
         <h1>Study Qualitative Economics Abroad</h1>
         <p>
-          Qualitative Economics combines contemporary economics and qualitative methods, enabling 
+          Qualitative Economics combines contemporary economics and qualitative
+          methods, enabling
         </p>
-        <p>students to analyze data in a narrative form, preparing them with unique skills to excel in various careers.</p>
+        <p>
+          students to analyze data in a narrative form, preparing them with
+          unique skills to excel in various careers.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -141,13 +145,15 @@ const QualitativeEconomics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🌟</div>
           <p>
-            <strong></strong> 13% job growth rate for economists expected this decade
+            <strong></strong> 13% job growth rate for economists expected this
+            decade
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>📈</div>
           <p>
-            <strong></strong> $105,630: average annual earnings of a qualitative economist
+            <strong></strong> $105,630: average annual earnings of a qualitative
+            economist
           </p>
         </div>
         <div style={statItemStyle}>
@@ -159,7 +165,8 @@ const QualitativeEconomics = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> 16,000 economist job openings projected this decade
+            <strong></strong> 16,000 economist job openings projected this
+            decade
           </p>
         </div>
       </div>

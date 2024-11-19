@@ -14,7 +14,7 @@ const AgricultureScience = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -138,9 +138,13 @@ const AgricultureScience = () => {
       <div style={sectionStyle}>
         <h1>Study Agricultural Science Abroad</h1>
         <p>
-          Agriculture has been the backbone of human civilization and a major employment source. 
+          Agriculture has been the backbone of human civilization and a major
+          employment source.
         </p>
-        <p>A degree in agricultural science explores the balance between society and nature.</p>
+        <p>
+          A degree in agricultural science explores the balance between society
+          and nature.
+        </p>
       </div>
 
       {/* Statistics section */}
@@ -155,7 +159,10 @@ const AgricultureScience = () => {
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
-          <p>Projected growth for animal, plant, and soil scientists over the next decade</p>
+          <p>
+            Projected growth for animal, plant, and soil scientists over the
+            next decade
+          </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
@@ -174,15 +181,25 @@ const AgricultureScience = () => {
             </div>
             {activeIndex === index && (
               <div style={faqContentStyle}>
-                {item.subtitle1 && <div style={faqSubtitleStyle}>{item.subtitle1}</div>}
+                {item.subtitle1 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle1}</div>
+                )}
                 {item.content1 && <p>{item.content1}</p>}
-                {item.subtitle2 && <div style={faqSubtitleStyle}>{item.subtitle2}</div>}
+                {item.subtitle2 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle2}</div>
+                )}
                 {item.content2 && <p>{item.content2}</p>}
-                {item.subtitle3 && <div style={faqSubtitleStyle}>{item.subtitle3}</div>}
+                {item.subtitle3 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle3}</div>
+                )}
                 {item.content3 && <p>{item.content3}</p>}
-                {item.subtitle4 && <div style={faqSubtitleStyle}>{item.subtitle4}</div>}
+                {item.subtitle4 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle4}</div>
+                )}
                 {item.content4 && <p>{item.content4}</p>}
-                {item.subtitle5 && <div style={faqSubtitleStyle}>{item.subtitle5}</div>}
+                {item.subtitle5 && (
+                  <div style={faqSubtitleStyle}>{item.subtitle5}</div>
+                )}
                 {item.content5 && <p>{item.content5}</p>}
                 {item.content && <p>{item.content}</p>}
               </div>

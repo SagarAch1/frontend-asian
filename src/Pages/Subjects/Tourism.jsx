@@ -14,7 +14,7 @@ const Tourism = () => {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "350px",
-    width: "1900px",
+    width: "100%",
     color: "white",
     display: "flex",
     flexDirection: "column",
@@ -131,9 +131,12 @@ const Tourism = () => {
       <div style={sectionStyle}>
         <h1>Study Tourism Abroad</h1>
         <p>
-          As a multi-billion-dollar industry that sustains economies worldwide, 
+          As a multi-billion-dollar industry that sustains economies worldwide,
         </p>
-        <p>tourism offers countless career opportunities. A formal education in this .</p>
+        <p>
+          tourism offers countless career opportunities. A formal education in
+          this .
+        </p>
         <p>field can pave the way for an exciting and fulfilling career</p>
       </div>
 
@@ -154,13 +157,15 @@ const Tourism = () => {
         <div style={statItemStyle}>
           <div style={iconStyle}>💼</div>
           <p>
-            <strong></strong> $4.7 trillion: Contribution of travel and tourism to global GDP in 2020
+            <strong></strong> $4.7 trillion: Contribution of travel and tourism
+            to global GDP in 2020
           </p>
         </div>
         <div style={statItemStyle}>
           <div style={iconStyle}>🔧</div>
           <p>
-            <strong></strong> Projected job openings for travel agents throughout this decade
+            <strong></strong> Projected job openings for travel agents
+            throughout this decade
           </p>
         </div>
       </div>
