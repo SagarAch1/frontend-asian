@@ -137,7 +137,7 @@ const AiecWorkshop = () => {
       {/* Main Container */}
       <div style={styles.container}>
         <div style={styles.buttonContainer}>
-          <a href="/abc" style={{ ...styles.button, ...styles.primaryButton }}>
+          <a href="/bookclass" style={{ ...styles.button, ...styles.primaryButton }}>
             PTE Mock Test Free* / Paid
           </a>
           <a
