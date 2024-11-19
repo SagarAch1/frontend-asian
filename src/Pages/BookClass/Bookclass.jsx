@@ -278,7 +278,7 @@ const Bookclass = () => {
                 src={`${process.env.PUBLIC_URL}/assets/images/qrfinal.jpg`}
                 alt="Payment Option"
               />
-              <h3>Complete Your Payment</h3>
+              <h3> whatsapp your payment screenshot:9801048957</h3>
               <button style={styles.popupButton} onClick={handleClosePopup}>
                 Done
               </button>
