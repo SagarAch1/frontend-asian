@@ -94,14 +94,14 @@ jobs:
           TARGET: "/var/www/asian.edu"
           ARGS: "-rltgoDzvO"
 
-      # Restart services if needed
-      - name: SSH and Restart Services
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.SSH_PORT }}
-          script: |
-            sudo systemctl reload nginx
-            pm2 restart frontend
+      # # Restart services if needed
+      # - name: SSH and Restart Services
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.SSH_HOST }}
+      #     username: ${{ secrets.SSH_USERNAME }}
+      #     key: ${{ secrets.SSH_KEY }}
+      #     port: ${{ secrets.SSH_PORT }}
+      #     script: |
+      #       sudo systemctl reload nginx
+      #       pm2 restart frontend
