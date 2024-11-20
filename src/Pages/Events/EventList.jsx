@@ -11,6 +11,7 @@ const Event = () => {
 
   // State for storing fetched events
   const [events, setEvents] = useState([]);
+  const url = process.env.API_URL || "http://localhost:5000";
 
   // Call the API to fetch all events initially (Page Load)
   useEffect(() => {
@@ -82,7 +83,7 @@ const Event = () => {
               <td>{event.eventLocation}</td> {/* Display Event Location */}
               <td>
                 <img
-                  src={`http://localhost:5000/event/${event.eventImage}`}
+                  src={`${url}/${event.eventImage}`}
                   alt=""
                   style={{ width: "40px", height: "40px" }}
                 />

@@ -20,11 +20,13 @@ const Profile = () => {
   });
   const [profileImage, setProfileImage] = useState(null);
 
+  const url=process.env.API_URL || "http://localhost:5000"; // Update this to your actual API URL
+
   useEffect(() => {
     const fetchUserData = async () => {
       try {
         const token = localStorage.getItem("token");
-        const response = await axios.get("http://localhost:5000/api/user/current_profile", {
+        const response = await axios.get(`${url}/api/user/current_profile`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -64,7 +66,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.put(
-        "http://localhost:5000/api/user/update_profile",
+        `${url}/api/user/update_profile`,
         formData,
         {
           headers: {
@@ -85,7 +87,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem("token");
       await axios.put(
-        "http://localhost:5000/api/user/change-password",
+          `${url}/api/user/change-password`,
         passwordData,
         {
           headers: {
@@ -116,7 +118,7 @@ const Profile = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:5000/api/user/upload-profile-image",
+        `${url}/api/user/upload-profile-image`,
         formData,
         {
           headers: {

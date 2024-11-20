@@ -6,6 +6,7 @@ import "./news.css"; // Importing the component-specific CSS file
 
 const UpcomingNews = () => {
   const [news, setNews] = useState([]);
+  const url = process.env.API_URL || "http://localhost:5000";
 
   useEffect(() => {
     getNewsApi()
@@ -27,7 +28,7 @@ const UpcomingNews = () => {
               <div className="upcoming-news-card">
                 <div className="upcoming-news-card-header">
                   <img
-                    src={`http://localhost:5000/news/${newsItem.newsImage}`}
+                    src={`${url}/news/${newsItem.newsImage}`}
                     className="upcoming-news-image"
                     alt="News"
                   />

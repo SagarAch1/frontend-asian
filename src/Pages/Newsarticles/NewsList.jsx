@@ -11,6 +11,7 @@ const Newslist = () => {
 
   // State for storing fetched news
   const [news, setNews] = useState([]);
+  const url=process.env.API_URL || "http://localhost:5000";
 
   // Call the API to fetch all news initially (Page Load)
   useEffect(() => {
@@ -79,7 +80,7 @@ const Newslist = () => {
 
               <td>
                 <img
-                  src={`http://localhost:5000/news/${news.newsImage}`}
+                  src={`${url}/news/${news.newsImage}`}
                   alt=""
                   style={{ width: "40px", height: "40px" }}
                 />

@@ -4,6 +4,7 @@ import { getSlidersApi } from "../../apis/Api";
 
 const Slider = () => {
   const navigate = useNavigate();
+  const url = process.env.API_URL;
 
   const handleClick = () => {
     navigate("/Slider"); // Redirect to the route for adding a new slider
@@ -76,7 +77,7 @@ const Slider = () => {
               <td>{slider.sliderType}</td>
               <td>
                 <img
-                  src={`http://localhost:5000/sliders/${slider.sliderImage}`}
+                  src={`${url}/${slider.sliderImage}`}
                   alt=""
                   style={{ width: "40px", height: "40px" }}
                 />

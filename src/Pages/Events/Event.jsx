@@ -8,6 +8,7 @@ import "./Event.css"; // Importing the component-specific CSS file
 const UpcomingEvents = () => {
   const [events, setEvents] = useState([]);
   const navigate = useNavigate(); // Use useNavigate instead of useHistory
+  const url = process.env.API_URL || "http://localhost:5000";
 
   useEffect(() => {
     getEventApi()
@@ -34,7 +35,7 @@ const UpcomingEvents = () => {
               <div className="upcoming-event-card">
                 <div className="upcoming-event-card-header">
                   <img
-                    src={`http://localhost:5000/event/${event.eventImage}`}
+                    src={`${url}/${event.eventImage}`}
                     className="upcoming-event-image"
                     alt="Event"
                   />

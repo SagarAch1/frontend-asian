@@ -7,6 +7,8 @@ const GalleryDisplay = () => {
   const [expandedGallery, setExpandedGallery] = useState(null); // To track which gallery is expanded
   const [clickedImage, setClickedImage] = useState(null); // Store clicked image
 
+  const url = process.env.API_URL || "http://localhost:5000";
+
   useEffect(() => {
     getGalleryApi()
       .then((res) => {
@@ -37,7 +39,7 @@ const GalleryDisplay = () => {
               <div className="gallery-card">
                 <div className="gallery-card-header">
                   <img
-                    src={`http://localhost:5000/gallery/${gallery.galleryImages[0]}`}
+                    src={`${url}/gallery/${gallery.galleryImages[0]}`}
                     className="gallery-image"
                     alt="Gallery Cover"
                     onClick={() => handleImageClick(gallery._id, gallery.galleryImages[0])} // Pass the clicked image to the function
@@ -57,7 +59,7 @@ const GalleryDisplay = () => {
                       .map((image, index) => (
                         <img
                           key={index}
-                          src={`http://localhost:5000/gallery/${image}`}
+                          src={`${url}/gallery/${image}`}
                           className="gallery-fullscreen-image"
                           alt={`Gallery Image ${index + 1}`}
                         />

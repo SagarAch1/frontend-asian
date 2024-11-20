@@ -15,6 +15,7 @@ import Youshouldknow from "./YouShouldknow";
 // Image Row Component with Sections in One Row
 const ImageRow = () => {
   // Grouped Images with Section Titles
+  const url=process.env.API_URL || "http://localhost:5000";
   const sections = [
     {
       title: "Accreditation",
@@ -127,6 +128,7 @@ const ImageRow = () => {
 const Homepage = () => {
   const [sliders, setSliders] = useState([]);
   const [activeSection, setActiveSection] = useState("courses");
+  const url=process.env.API_URL || "http://localhost:5000";
 
   useEffect(() => {
     getSlidersApi()
@@ -245,7 +247,7 @@ const Homepage = () => {
                 className={`carousel-item ${index === 0 ? "active" : ""}`}
               >
                 <img
-                  src={`http://localhost:5000/sliders/${slider.sliderImage}`}
+                  src={`${url}/sliders/${slider.sliderImage}`}
                   className="d-block w-100"
                   alt={slider.name}
                   style={{

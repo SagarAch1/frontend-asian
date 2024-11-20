@@ -13,6 +13,8 @@ const Userorder = () => {
 
   const user = JSON.parse(localStorage.getItem("user"));
 
+  const url = process.env.API_URL || "http://localhost:5000";
+
   useEffect(() => {
     fetchOrders();
   }, []);
@@ -157,7 +159,7 @@ const Userorder = () => {
                 <tr key={item.productId}>
                   <td style={styles.td}>
                     <img
-                      src={`http://localhost:5000/products/${item.productImage}`}
+                      src={`${url}/products/${item.productImage}`}
                       alt={item.productName}
                       style={styles.image}
                     />

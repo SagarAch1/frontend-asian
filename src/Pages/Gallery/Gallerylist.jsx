@@ -4,6 +4,7 @@ import { getGalleryApi } from "../../apis/Api"; // Update this to your actual AP
 
 const GalleryList = () => {
   const navigate = useNavigate();
+  const url=process.env.API_URL || "http://localhost:5000"; // Update this to your actual API URL
 
   const handleClick = () => {
     navigate("/gallerycreate"); // Redirect to the route for adding a new gallery
@@ -79,7 +80,7 @@ const GalleryList = () => {
                 {gallery.galleryImages.map((image, index) => (
                   <img
                     key={index}
-                    src={`http://localhost:5000/gallery/${image}`} // Adjust the URL according to your setup
+                    src={`${url}/gallery/${image}`} // Adjust the URL according to your setup
                     alt={`Gallery image ${index + 1}`}
                     style={{
                       width: "60px",
