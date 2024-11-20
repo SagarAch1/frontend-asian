@@ -65,7 +65,6 @@ import AIECGlobal from "./Pages/Homepage/Aboutus";
 
 import Homepage from "./Pages/Homepage/Homepage";
 
-import UserOrder from "./Pages/Homepage/Userorder";
 
 import Book from "./Pages/BookClass/Book";
 import Login from "./Pages/Login/Login";
@@ -395,7 +394,7 @@ function App() {
 
 
 
-        <Route path="/userorder" element={<UserOrder />} />
+        
         <Route path="/userprofile" element={<Profile />} />
 
         <Route path="/slider" element={<Slider />} />
