@@ -7,7 +7,7 @@ const GalleryDisplay = () => {
   const [expandedGallery, setExpandedGallery] = useState(null); // To track which gallery is expanded
   const [clickedImage, setClickedImage] = useState(null); // Store clicked image
 
-  const url = process.env.API_URL || "http://localhost:5000";
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   useEffect(() => {
     getGalleryApi()

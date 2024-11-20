@@ -11,7 +11,7 @@ const Newslist = () => {
 
   // State for storing fetched news
   const [news, setNews] = useState([]);
-  const url=process.env.API_URL || "http://localhost:5000";
+  const url=process.env.API_URL || "https://api.asian.edu.np";
 
   // Call the API to fetch all news initially (Page Load)
   useEffect(() => {

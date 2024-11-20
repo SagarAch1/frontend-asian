@@ -4,7 +4,7 @@ import { getSlidersApi } from "../../apis/Api";
 
 const Slider = () => {
   const navigate = useNavigate();
-  const url = process.env.API_URL;
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   const handleClick = () => {
     navigate("/Slider"); // Redirect to the route for adding a new slider

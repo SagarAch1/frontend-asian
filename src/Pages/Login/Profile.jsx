@@ -20,7 +20,7 @@ const Profile = () => {
   });
   const [profileImage, setProfileImage] = useState(null);
 
-  const url=process.env.API_URL || "http://localhost:5000"; // Update this to your actual API URL
+  const url=process.env.API_URL || "https://api.asian.edu.np"; // Update this to your actual API URL
 
   useEffect(() => {
     const fetchUserData = async () => {

@@ -15,7 +15,7 @@ import Youshouldknow from "./YouShouldknow";
 // Image Row Component with Sections in One Row
 const ImageRow = () => {
   // Grouped Images with Section Titles
-  const url=process.env.API_URL || "http://localhost:5000";
+  const url=process.env.API_URL || "https://api.asian.edu.np";
   const sections = [
     {
       title: "Accreditation",
@@ -128,7 +128,7 @@ const ImageRow = () => {
 const Homepage = () => {
   const [sliders, setSliders] = useState([]);
   const [activeSection, setActiveSection] = useState("courses");
-  const url=process.env.API_URL || "http://localhost:5000";
+  const url=process.env.API_URL || "https://api.asian.edu.np";
 
   useEffect(() => {
     getSlidersApi()

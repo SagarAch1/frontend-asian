@@ -8,7 +8,7 @@ import "./Event.css"; // Importing the component-specific CSS file
 const UpcomingEvents = () => {
   const [events, setEvents] = useState([]);
   const navigate = useNavigate(); // Use useNavigate instead of useHistory
-  const url = process.env.API_URL || "http://localhost:5000";
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   useEffect(() => {
     getEventApi()

@@ -13,7 +13,7 @@ const Userorder = () => {
 
   const user = JSON.parse(localStorage.getItem("user"));
 
-  const url = process.env.API_URL || "http://localhost:5000";
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   useEffect(() => {
     fetchOrders();

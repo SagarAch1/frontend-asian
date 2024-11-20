@@ -11,7 +11,7 @@ const Event = () => {
 
   // State for storing fetched events
   const [events, setEvents] = useState([]);
-  const url = process.env.API_URL || "http://localhost:5000";
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   // Call the API to fetch all events initially (Page Load)
   useEffect(() => {
