@@ -35,7 +35,7 @@ const UpcomingEvents = () => {
               <div className="upcoming-event-card">
                 <div className="upcoming-event-card-header">
                   <img
-                    src={`${url}/${event.eventImage}`}
+                    src={`${url}/event/${event.eventImage}`}
                     className="upcoming-event-image"
                     alt="Event"
                   />
