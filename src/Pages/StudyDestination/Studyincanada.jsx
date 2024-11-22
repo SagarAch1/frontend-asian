@@ -173,8 +173,8 @@ const StudyinCanada = () => {
           </tbody>
         </table>
         <p style={styles.paragraph}>
-          *This is an indicative list, speak with your AIEC expert for details
-          and the best available options suited to your profile
+          *This is an indicative list, speak with your AIEC-Global expert for
+          details and the best available options suited to your profile
         </p>
 
         <h2 style={styles.sectionTitle}>Intakes in Canada</h2>
@@ -188,8 +188,8 @@ const StudyinCanada = () => {
           <li>Fall</li>
         </ul>
         <p style={styles.paragraph}>
-          *This is an indicative list, speak with your AIEC expert for details
-          and the best available options suited to your profile
+          *This is an indicative list, speak with your AIEC-Global expert for
+          details and the best available options suited to your profile
         </p>
         <ul style={styles.courseList}>
           <li>Winter</li>
@@ -384,7 +384,7 @@ const StudyinCanada = () => {
         <p style={styles.paragraph}>
           Ans: GPA requirements can vary depending on the institution you're
           applying to. It's recommended to check with your chosen institution or
-          consult an AIEC expert for specific details.
+          consult an AIEC-Global expert for specific details.
         </p>
 
         <p style={styles.section}>

@@ -24,7 +24,7 @@ const ChitwanOffice = () => {
           style={styles.headerImage}
         />
         <div style={styles.headerContent}>
-          <h1 style={styles.headerText}>AIEC Kathmandu Office, Nepal</h1>
+          <h1 style={styles.headerText}>AIEC-Global Kathmandu Office, Nepal</h1>
         </div>
       </div>
 
@@ -79,17 +79,19 @@ const ChitwanOffice = () => {
         </div>
 
         <div style={styles.footer}>
-          <h2>Explore Study Opportunities with AIEC Nepal - Kathmandu</h2>
+          <h2>
+            Explore Study Opportunities with AIEC-Global Nepal - Kathmandu
+          </h2>
           <p>
-            At AIEC Nepal: Kathmandu, we assist you in achieving your dream of
-            studying abroad in top destinations such as Australia, Canada, the
-            USA, the UK, New Zealand, and Ireland.
+            At AIEC-Global Nepal: Kathmandu, we assist you in achieving your
+            dream of studying abroad in top destinations such as Australia,
+            Canada, the USA, the UK, New Zealand, and Ireland.
           </p>
           <p>
             We provide comprehensive services to support your global education
             plans, from course guidance to career counseling, application
-            assistance, visa processing, and finding scholarships. AIEC is your
-            trusted partner throughout this journey.
+            assistance, visa processing, and finding scholarships. AIEC-Global
+            is your trusted partner throughout this journey.
           </p>
           <p>
             With offices in 32 countries, we’ve built a strong network of
@@ -104,8 +106,9 @@ const ChitwanOffice = () => {
             our free study abroad counseling services.
           </p>
           <p>
-            Meet your dedicated AIEC counselor in Kathmandu, Nepal, and take the
-            next step. Visit us or schedule your FREE appointment today.
+            Meet your dedicated AIEC-Global counselor in Kathmandu, Nepal, and
+            take the next step. Visit us or schedule your FREE appointment
+            today.
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
             Help Me Study Abroad

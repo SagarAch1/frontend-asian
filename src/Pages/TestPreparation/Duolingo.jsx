@@ -60,7 +60,12 @@ const DuolingoPreparationPage = () => {
             Comprehensive Guide to the Duolingo English Test (DET)
           </h1>
           <p style={styles.introduction}>
-            The Duolingo English Test offers a modern and convenient way to assess English proficiency for international students and professionals. Unlike traditional exams like TOEFL and IELTS, Duolingo can be taken from anywhere, making it accessible and easy to schedule. Increasingly recognized by universities worldwide, it provides rapid results, making it a preferred choice for many.
+            The Duolingo English Test offers a modern and convenient way to
+            assess English proficiency for international students and
+            professionals. Unlike traditional exams like TOEFL and IELTS,
+            Duolingo can be taken from anywhere, making it accessible and easy
+            to schedule. Increasingly recognized by universities worldwide, it
+            provides rapid results, making it a preferred choice for many.
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/duolingo.webp`}
@@ -144,7 +149,7 @@ const DuolingoPreparationPage = () => {
           <p style={styles.text}>
             Choosing the right consultancy can make a world of difference in
             your journey toward international exploration, growth, and success.
-            At AIEC GLOBAL, we take pride in the distinctive benefits of
+            At AIEC-Global GLOBAL, we take pride in the distinctive benefits of
             partnering with us:
           </p>
           <img
@@ -210,7 +215,6 @@ const DuolingoPreparationPage = () => {
   );
 };
 
-
 const styles = {
   pageContainer: {
     display: "flex",
@@ -229,8 +233,8 @@ const styles = {
   },
   contentContainer: {
     flex: 1, // Makes sure the content takes up the remaining space
-    display: 'flex',
-    flexWrap: 'wrap', // Ensures responsiveness
+    display: "flex",
+    flexWrap: "wrap", // Ensures responsiveness
     marginTop: navbarHeight, // Adjust this based on your navbar height
   },
 

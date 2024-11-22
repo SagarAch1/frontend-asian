@@ -206,8 +206,8 @@ const IELTSPreparationPage = () => {
           <p style={styles.text}>
             Selecting the right consultancy can significantly influence your
             journey toward studying abroad, career advancement, and personal
-            growth. At AIEC GLOBAL, we take pride in the unique advantages of
-            collaborating with us:
+            growth. At AIEC-Global GLOBAL, we take pride in the unique
+            advantages of collaborating with us:
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/beni.png`}

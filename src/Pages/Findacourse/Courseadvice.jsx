@@ -25,9 +25,9 @@ const Courseadvice = () => {
           Every course is a unique mix of academic subjects, campus environment,
           and career potential. Whether you're exploring your study options,
           deciding on a field, or still uncertain about your career direction,
-          your AIEC counselor is ready to help. We'll guide you in selecting the
-          perfect course and navigating the university application process
-          seamlessly.
+          your AIEC-Global counselor is ready to help. We'll guide you in
+          selecting the perfect course and navigating the university application
+          process seamlessly.
         </p>
         <h2 style={styles.sectionTitle}>Finding the best fit</h2>
         <p style={styles.paragraph}>
@@ -44,23 +44,24 @@ const Courseadvice = () => {
         <p style={styles.paragraph}>
           While it may seem obvious, your interests, academic background, and
           previous experiences are the foundation of finding the right course.
-          Your AIEC counselor will help you explore course handbooks and subject
-          options to create a tailored shortlist.
+          Your AIEC-Global counselor will help you explore course handbooks and
+          subject options to create a tailored shortlist.
         </p>
         <ul style={styles.courseList}>
           <li>Career Goals</li>
         </ul>
         <p style={styles.paragraph}>
           It's important to choose a course that aligns with your future career
-          aspirations. Your AIEC counselor will assist in identifying courses
-          that match your desired career path, setting you on the right track.
+          aspirations. Your AIEC-Global counselor will assist in identifying
+          courses that match your desired career path, setting you on the right
+          track.
         </p>
         <ul style={styles.courseList}>
           <li>Timelines and Budgets</li>
         </ul>
         <p style={styles.paragraph}>
           Understanding the cost of your chosen course and the budget for your
-          education is crucial when selecting where to study. Your AIEC
+          education is crucial when selecting where to study. Your AIEC-Global
           counselor will help you keep track of application deadlines and course
           start dates, ensuring you stay on top of the process.
         </p>

@@ -257,13 +257,13 @@ const Studyinnewzeland = () => {
         <h2 style={styles.sectionTitle}>Cost of studying in New Zealand</h2>
         <p style={styles.paragraph}>
           If you want to learn about the total cost of studying in New Zealand
-          for Nepalese students, you can consult an AIEC expert. Generally,
-          courses in humanities, arts, and education are more affordable, while
-          fields like medicine and engineering tend to be more expensive.
-          Postgraduate tuition fees are typically higher, and the costs vary
-          depending on the program. Like many other countries, MBA programs are
-          often the priciest, with average costs ranging between NZD 31,000 and
-          NZD 50,000 (indicative).
+          for Nepalese students, you can consult an AIEC-Global expert.
+          Generally, courses in humanities, arts, and education are more
+          affordable, while fields like medicine and engineering tend to be more
+          expensive. Postgraduate tuition fees are typically higher, and the
+          costs vary depending on the program. Like many other countries, MBA
+          programs are often the priciest, with average costs ranging between
+          NZD 31,000 and NZD 50,000 (indicative).
         </p>
         <table style={styles.table}>
           <thead>
@@ -379,7 +379,7 @@ const Studyinnewzeland = () => {
                 application costs up to NZD 1,000 - Airfare to New Zealand for
                 return trips up to NZD 6,000 - A research allowance up to NZD
                 1,500 For more information on the application process, feel free
-                to contact your AIEC international education expert. (
+                to contact your AIEC-Global international education expert. (
                 Source:https://www.studyinnewzealand.govt.nz/how-to-apply/scholarship/)
               </td>
             </tr>

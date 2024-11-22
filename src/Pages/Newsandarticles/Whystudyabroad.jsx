@@ -314,7 +314,7 @@ const Preparetodepart = () => {
               independence, boost self-confidence, and gain a deeper
               appreciation for different cultures. To understand what it’s truly
               like, hear from students who have chosen to study abroad with
-              AIEC.
+              AIEC-Global.
             </p>
           </div>
           <div style={styles.listItem}>

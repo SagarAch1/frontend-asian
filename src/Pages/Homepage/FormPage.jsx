@@ -203,7 +203,7 @@ const FormPage = () => {
         <form style={formStyle} onSubmit={handleSubmit}>
           <div style={formContentStyle}>
             <div style={{ textAlign: "center", marginBottom: "40px" }}>
-              <h3>AIEC can help you</h3>
+              <h3>AIEC-Global can help you</h3>
               <p>
                 Fill in your details to book a free counseling session with our
                 experts, who will guide you to the perfect course, country,
@@ -293,7 +293,7 @@ const FormPage = () => {
               onChange={handleInputChange}
               style={selectStyle}
             >
-              <option value="">Nearest AIEC Office*</option>
+              <option value="">Nearest AIEC-Global Office*</option>
               <option value="Kathmandu">Kathmandu</option>
               <option value="Chitwan">Chitwan</option>
               <option value="Pokhara">Pokhara</option>
@@ -372,8 +372,8 @@ const FormPage = () => {
                   onChange={handleInputChange}
                   style={checkboxStyle}
                 />
-                I would like to receive further communication from AIEC via
-                Phone, Email, and SMS
+                I would like to receive further communication from AIEC-Global
+                via Phone, Email, and SMS
               </label>
             </div>
 
@@ -387,7 +387,7 @@ const FormPage = () => {
                   style={checkboxStyle}
                 />
                 I would like to receive relevant information and updates from
-                AIEC via Email
+                AIEC-Global via Email
               </label>
             </div>
 

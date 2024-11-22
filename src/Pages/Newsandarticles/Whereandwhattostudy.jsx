@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../Homepage/Footer";
 import FormPage from "../Homepage/FormPage";
@@ -32,8 +32,8 @@ const WhereAndWhatToStudy = () => {
       width: "100%",
       minHeight: "400px",
     },
-    headerTitle: { fontSize: "36px", fontWeight: "bold",color: "black", },
-    subheader: { fontSize: "18px", marginTop: "10px",color: "black", },
+    headerTitle: { fontSize: "36px", fontWeight: "bold", color: "black" },
+    subheader: { fontSize: "18px", marginTop: "10px", color: "black" },
     contentSection: {
       padding: "40px 20px",
       maxWidth: "1200px",
@@ -43,7 +43,6 @@ const WhereAndWhatToStudy = () => {
       gap: "20px",
       alignItems: "center",
       marginTop: "70px",
-      
     },
     leftColumn: {
       gridColumn: "1 / 2",
@@ -142,44 +141,56 @@ const WhereAndWhatToStudy = () => {
         <div style={styles.headerSection}>
           <h1 style={styles.headerTitle}>Where and What to Study</h1>
           <p style={styles.subheader}>
-            We are here to assist you in exploring your study abroad options, from
-            selecting a destination to receiving advice on courses and programs.
+            We are here to assist you in exploring your study abroad options,
+            from selecting a destination to receiving advice on courses and
+            programs.
           </p>
         </div>
       </div>
-      
-        {/* Navbar */}
-        <nav style={styles.navbar}>
-          <span onClick={() => navigate("/whystudyabroad")}>Why study abroad?</span>
-          <span onClick={() => navigate("/whereandwhattostudy")}>Where and what to study?</span>
-          <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
-          <span onClick={() => navigate("/afterreceivingoffer")}>After receiving an offer</span>
-          <span onClick={() => navigate("/preparetodepart")}>Prepare to depart</span>
-          <span onClick={() => navigate("/arriveandthrive")}>Arrive and thrive</span>
-        </nav>
+
+      {/* Navbar */}
+      <nav style={styles.navbar}>
+        <span onClick={() => navigate("/whystudyabroad")}>
+          Why study abroad?
+        </span>
+        <span onClick={() => navigate("/whereandwhattostudy")}>
+          Where and what to study?
+        </span>
+        <span onClick={() => navigate("/howdoiapply")}>How do I apply?</span>
+        <span onClick={() => navigate("/afterreceivingoffer")}>
+          After receiving an offer
+        </span>
+        <span onClick={() => navigate("/preparetodepart")}>
+          Prepare to depart
+        </span>
+        <span onClick={() => navigate("/arriveandthrive")}>
+          Arrive and thrive
+        </span>
+      </nav>
 
       {/* Main Content Section */}
       <div style={styles.page}>
-      <div style={styles.contentSection}>
-        <div style={styles.leftColumn}>
-          <h2 style={styles.h2}>Pick your dream destination and course</h2>
-          <p>
-            You’ve made a major decision to study abroad. Now, it’s time to
-            choose the perfect destination and program for you. With so many
-            universities and courses to explore, it can feel daunting, but don’t
-            worry—AIEC is here to guide you every step of the way. Simply set up
-            your profile and we’ll provide you with customized course options
-            that match your goals. If you see a course with an AIEC FastLane
-            label, you can get a head start by checking your chances of
-            acceptance even before submitting your application. We also offer a
-            range of helpful tools like city guides, university comparisons,
-            cost calculators, scholarship resources, and expert articles to
-            simplify your decision-making process and make studying abroad as
-            seamless as possible.
-          </p>
-        </div>
-        <div style={styles.videoContainer}>
-        <iframe
+        <div style={styles.contentSection}>
+          <div style={styles.leftColumn}>
+            <h2 style={styles.h2}>Pick your dream destination and course</h2>
+            <p>
+              You’ve made a major decision to study abroad. Now, it’s time to
+              choose the perfect destination and program for you. With so many
+              universities and courses to explore, it can feel daunting, but
+              don’t worry—AIEC-Global is here to guide you every step of the
+              way. Simply set up your profile and we’ll provide you with
+              customized course options that match your goals. If you see a
+              course with an AIEC-Global FastLane label, you can get a head
+              start by checking your chances of acceptance even before
+              submitting your application. We also offer a range of helpful
+              tools like city guides, university comparisons, cost calculators,
+              scholarship resources, and expert articles to simplify your
+              decision-making process and make studying abroad as seamless as
+              possible.
+            </p>
+          </div>
+          <div style={styles.videoContainer}>
+            <iframe
               width="100%"
               height="100%"
               src="https://www.youtube.com/embed/U40cKGuggJk?rel=0"
@@ -189,137 +200,136 @@ const WhereAndWhatToStudy = () => {
               allowFullScreen
               style={styles.video}
             ></iframe>
+          </div>
+          <div style={styles.signupSection}>
+            <p>One account for all your study abroad needs</p>
+            <p>
+              Set up your profile to unlock exclusive features like personalized
+              recommendations, expedited applications, and much more.
+            </p>
+            <button style={styles.signupButton} onClick={handleSignUpClick}>
+              Sign up
+            </button>
+          </div>
         </div>
-        <div style={styles.signupSection}>
-          <p>One account for all your study abroad needs</p>
-          <p>
-            Set up your profile to unlock exclusive features like personalized
-            recommendations, expedited applications, and much more.
-          </p>
-          <button style={styles.signupButton} onClick={handleSignUpClick}>
-            Sign up
-          </button>
-        </div>
-      </div>
 
-      {/* Additional Section */}
-      <div style={styles.additionalSection}>
-        <h2 style={styles.additionalTitle}>
-          Discover how studying abroad can help you
-        </h2>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>1. Choose a destination</h3>
-          <p>
-            Choose from six fantastic countries to study in. Click below to
-            explore more about each destination, including living conditions,
-            career prospects after graduation, and residency opportunities.
-          </p>
-          <a href="#" style={styles.listItemLink}>
-            UK | Australia | USA | Canada | New Zealand | Ireland | Korea |
-            Germany
-          </a>
+        {/* Additional Section */}
+        <div style={styles.additionalSection}>
+          <h2 style={styles.additionalTitle}>
+            Discover how studying abroad can help you
+          </h2>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>1. Choose a destination</h3>
+            <p>
+              Choose from six fantastic countries to study in. Click below to
+              explore more about each destination, including living conditions,
+              career prospects after graduation, and residency opportunities.
+            </p>
+            <a href="#" style={styles.listItemLink}>
+              UK | Australia | USA | Canada | New Zealand | Ireland | Korea |
+              Germany
+            </a>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>2. Explore Cost</h3>
+            <p>
+              Learn about the costs associated with studying in your chosen
+              destination and discover financial options using our Cost
+              Calculator.
+            </p>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>3. Pick a Study Level</h3>
+            <p>
+              Explore undergraduate, graduate, PhD, or pathway courses and find
+              the right level for you, along with the requirements for each
+              program.
+            </p>
+            <a href="#" style={styles.listItemLink}>
+              Study bachelor's | Study master's | Study PhD | Check your
+              eligibility
+            </a>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>4. Find a Course</h3>
+            <p>
+              You can either explore course recommendations or dive right into
+              browsing the available courses online. If you're unsure about
+              which course to choose, let us help you by guiding you through a
+              quick 4-question quiz.
+            </p>
+            <a href="#" style={styles.listItemLink}>
+              Course advice | Subject guides |Find a Course
+            </a>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>5. Choose a University</h3>
+            <p>
+              Explore universities in six different countries to find the ones
+              that match your academic objectives and ambitions.
+            </p>
+            <a href="#" style={styles.listItemLink}>
+              Check uni ranking | Find a uni
+            </a>
+          </div>
         </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>2. Explore Cost</h3>
-          <p>
-            Learn about the costs associated with studying in your chosen
-            destination and discover financial options using our Cost
-            Calculator.
-          </p>
+        {/* Second Additional Section */}
+        <div style={styles.additionalSection}>
+          <h2 style={styles.additionalTitle}>Frequently asked questions</h2>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
+            <p>
+              Studying abroad involves living in another country to pursue an
+              education. It can range from a short course lasting a few weeks to
+              a full-time, four-year degree program.
+            </p>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>
+              How is it different from studying locally?
+            </h3>
+            <p>
+              Although studying locally may seem like the simpler choice,
+              studying abroad provides unique opportunities and experiences that
+              are unavailable at home. To learn more, read this article on
+              whether to study abroad or stay local.
+            </p>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>
+              What are the main benefits of studying overseas?
+            </h3>
+            <p>
+              Studying abroad provides numerous advantages, including fostering
+              a global perspective, developing new skills, and boosting your
+              career opportunities. For more details, read our article on the
+              benefits of studying abroad.
+            </p>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>What's the experience like?</h3>
+            <p>
+              Studying abroad is a life-changing journey that fosters personal
+              growth, expands your worldview, and helps you build independence,
+              self-confidence, and a deeper understanding of diverse cultures.
+              To learn more about the experience, meet students who have chosen
+              to study abroad with AIEC-Global.
+            </p>
+          </div>
+          <div style={styles.listItem}>
+            <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
+            <p>
+              Studying abroad may be more affordable than you imagine! Use our
+              cost of living calculator to get an estimate of your expenses as
+              an international student. Additionally, we provide access to over
+              5,100 scholarships through our partner universities. Contact us to
+              explore the opportunities available to you.
+            </p>
+          </div>
         </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>3. Pick a Study Level</h3>
-          <p>
-            Explore undergraduate, graduate, PhD, or pathway courses and find
-            the right level for you, along with the requirements for each
-            program.
-          </p>
-          <a href="#" style={styles.listItemLink}>
-            Study bachelor's | Study master's | Study PhD | Check your
-            eligibility
-          </a>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>4. Find a Course</h3>
-          <p>
-            You can either explore course recommendations or dive right into
-            browsing the available courses online. If you're unsure about which
-            course to choose, let us help you by guiding you through a quick
-            4-question quiz.
-          </p>
-          <a href="#" style={styles.listItemLink}>
-            Course advice | Subject guides |Find a Course
-          </a>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>5. Choose a University</h3>
-          <p>
-            Explore universities in six different countries to find the ones
-            that match your academic objectives and ambitions.
-          </p>
-          <a href="#" style={styles.listItemLink}>
-            Check uni ranking | Find a uni
-          </a>
-        </div>
+        <FormPage />
       </div>
-      {/* Second Additional Section */}
-      <div style={styles.additionalSection}>
-        <h2 style={styles.additionalTitle}>Frequently asked questions</h2>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>What is studying abroad?</h3>
-          <p>
-            Studying abroad involves living in another country to pursue an
-            education. It can range from a short course lasting a few weeks to a
-            full-time, four-year degree program.
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            How is it different from studying locally?
-          </h3>
-          <p>
-            Although studying locally may seem like the simpler choice, studying
-            abroad provides unique opportunities and experiences that are
-            unavailable at home. To learn more, read this article on whether to
-            study abroad or stay local.
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>
-            What are the main benefits of studying overseas?
-          </h3>
-          <p>
-            Studying abroad provides numerous advantages, including fostering a
-            global perspective, developing new skills, and boosting your career
-            opportunities. For more details, read our article on the benefits of
-            studying abroad.
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>What's the experience like?</h3>
-          <p>
-            Studying abroad is a life-changing journey that fosters personal
-            growth, expands your worldview, and helps you build independence,
-            self-confidence, and a deeper understanding of diverse cultures. To
-            learn more about the experience, meet students who have chosen to
-            study abroad with AIEC.
-          </p>
-        </div>
-        <div style={styles.listItem}>
-          <h3 style={styles.listItemTitle}>Will I be able to afford it?</h3>
-          <p>
-            Studying abroad may be more affordable than you imagine! Use our
-            cost of living calculator to get an estimate of your expenses as an
-            international student. Additionally, we provide access to over 5,100
-            scholarships through our partner universities. Contact us to explore
-            the opportunities available to you.
-          </p>
-        </div>
-      </div>
-      <FormPage />
-      
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 };

@@ -210,7 +210,7 @@ const BelowNavbar = () => {
         {/* Contact Button */}
         <div style={{ marginLeft: "5px" }}>
           <button style={contactButtonStyle} onClick={handleContactClick}>
-            Contact AIEC
+            Contact AIEC-Global
           </button>
         </div>
       </div>

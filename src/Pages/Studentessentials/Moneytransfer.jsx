@@ -144,163 +144,164 @@ const Moneytransfer = () => {
 
   return (
     <>
-    <Container>
-      {/* Header with Title and Subtitle */}
-      <Header>
-        <Title>Easy Money Transfer for International Students</Title>
-        <SubTitle>Seamless money transfer solutions</SubTitle>
-      </Header>
+      <Container>
+        {/* Header with Title and Subtitle */}
+        <Header>
+          <Title>Easy Money Transfer for International Students</Title>
+          <SubTitle>Seamless money transfer solutions</SubTitle>
+        </Header>
 
-      <Head>Seamless money transfer solutions</Head>
-      {/* New Description Text */}
-      <Description>
-        We can handle all of your remittance requirements, including paying your
-        institution's admission fees, getting health insurance, and paying for
-        your lodging. We've teamed up with top money transfer providers to
-        provide you easy choices at affordable prices so you can concentrate on
-        your academics with confidence.
-      </Description>
+        <Head>Seamless money transfer solutions</Head>
+        {/* New Description Text */}
+        <Description>
+          We can handle all of your remittance requirements, including paying
+          your institution's admission fees, getting health insurance, and
+          paying for your lodging. We've teamed up with top money transfer
+          providers to provide you easy choices at affordable prices so you can
+          concentrate on your academics with confidence.
+        </Description>
 
-      {/* Country Selection */}
-      <CountrySelection>
-        <CountryFlag
-          onClick={() => handleCountrySelect("australia")}
-          selected={selectedCountry === "australia"}
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg"
-            alt="Australia"
-            width="30"
-          />
-          Australia
-        </CountryFlag>
-        <CountryFlag
-          onClick={() => handleCountrySelect("canada")}
-          selected={selectedCountry === "canada"}
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
-            alt="Canada"
-            width="30"
-          />
-          Canada
-        </CountryFlag>
-        <CountryFlag
-          onClick={() => handleCountrySelect("ireland")}
-          selected={selectedCountry === "ireland"}
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
-            alt="Ireland"
-            width="30"
-          />
-          Ireland
-        </CountryFlag>
-        <CountryFlag
-          onClick={() => handleCountrySelect("new_zealand")}
-          selected={selectedCountry === "new_zealand"}
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
-            alt="New Zealand"
-            width="30"
-          />
-          New Zealand
-        </CountryFlag>
-        <CountryFlag
-          onClick={() => handleCountrySelect("uk")}
-          selected={selectedCountry === "uk"}
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
-            alt="United Kingdom"
-            width="30"
-          />
-          United Kingdom
-        </CountryFlag>
-        <CountryFlag
-          onClick={() => handleCountrySelect("usa")}
-          selected={selectedCountry === "usa"}
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
-            alt="USA"
-            width="30"
-          />
-          United States
-        </CountryFlag>
-      </CountrySelection>
+        {/* Country Selection */}
+        <CountrySelection>
+          <CountryFlag
+            onClick={() => handleCountrySelect("australia")}
+            selected={selectedCountry === "australia"}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/b/b9/Flag_of_Australia.svg"
+              alt="Australia"
+              width="30"
+            />
+            Australia
+          </CountryFlag>
+          <CountryFlag
+            onClick={() => handleCountrySelect("canada")}
+            selected={selectedCountry === "canada"}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"
+              alt="Canada"
+              width="30"
+            />
+            Canada
+          </CountryFlag>
+          <CountryFlag
+            onClick={() => handleCountrySelect("ireland")}
+            selected={selectedCountry === "ireland"}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
+              alt="Ireland"
+              width="30"
+            />
+            Ireland
+          </CountryFlag>
+          <CountryFlag
+            onClick={() => handleCountrySelect("new_zealand")}
+            selected={selectedCountry === "new_zealand"}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
+              alt="New Zealand"
+              width="30"
+            />
+            New Zealand
+          </CountryFlag>
+          <CountryFlag
+            onClick={() => handleCountrySelect("uk")}
+            selected={selectedCountry === "uk"}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg"
+              alt="United Kingdom"
+              width="30"
+            />
+            United Kingdom
+          </CountryFlag>
+          <CountryFlag
+            onClick={() => handleCountrySelect("usa")}
+            selected={selectedCountry === "usa"}
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg"
+              alt="USA"
+              width="30"
+            />
+            United States
+          </CountryFlag>
+        </CountrySelection>
 
-      {/* Flywire and Convera Details */}
-      <SectionContainer>
-        {/* Flywire Box */}
-        <BoxContainer>
-          <CardTitle>Flywire</CardTitle>
-          <CardSubTitle>Education payments made easy.</CardSubTitle>
-          <p>
-            Flywire is the safest and most practical way to pay for tuition and
-            other educational expenses to over 5,000 institutions, and it is
-            trusted by millions of students worldwide.
-          </p>
-          <Point>
-            <FaCheck /> Secure, flexible payment options
-          </Point>
-          <Point>
-            <FaCheck /> Local payment methods in 140+ currencies
-          </Point>
-          <Point>
-            <FaCheck /> Competitive exchange rates with no unexpected fees
-          </Point>
-          <Point>
-            <FaCheck /> Real-time payment tracking
-          </Point>
-          <Point>
-            <FaCheck /> 24/7 multilingual payer support
-          </Point>
-          <ButtonLeft onClick={() => navigate("/flywire")}>
-            About Flywire
-          </ButtonLeft>
-          <ButtonRight onClick={() => navigate("/formpage")}>
-            Enquire Now
-          </ButtonRight>
-        </BoxContainer>
-
-        {/* Convera Box */}
-        {selectedCountry !== "ireland" && (
+        {/* Flywire and Convera Details */}
+        <SectionContainer>
+          {/* Flywire Box */}
           <BoxContainer>
-            <CardTitle>Convera</CardTitle>
-            <CardSubTitle>Use Convera to transfer money with AIEC</CardSubTitle>
+            <CardTitle>Flywire</CardTitle>
+            <CardSubTitle>Education payments made easy.</CardSubTitle>
             <p>
-              Convera and AIEC are pleased to provide a straightforward, safe,
-              and intelligent online fee payment option. More than 800
-              educational institutions around the world rely on Convera's
-              platform to facilitate payments in more than 140 currencies.
+              Flywire is the safest and most practical way to pay for tuition
+              and other educational expenses to over 5,000 institutions, and it
+              is trusted by millions of students worldwide.
             </p>
             <Point>
-              <FaCheck /> Avoid costly transaction charges
+              <FaCheck /> Secure, flexible payment options
             </Point>
             <Point>
-              <FaCheck /> Pay online via bank transfer, credit, or debit card
+              <FaCheck /> Local payment methods in 140+ currencies
             </Point>
             <Point>
-              <FaCheck /> Compare payment options instantly
+              <FaCheck /> Competitive exchange rates with no unexpected fees
             </Point>
             <Point>
-              <FaCheck /> Track your payment status by SMS and email
+              <FaCheck /> Real-time payment tracking
             </Point>
-            <ButtonLeft onClick={() => navigate("/convera")}>
-              About Convera
+            <Point>
+              <FaCheck /> 24/7 multilingual payer support
+            </Point>
+            <ButtonLeft onClick={() => navigate("/flywire")}>
+              About Flywire
             </ButtonLeft>
             <ButtonRight onClick={() => navigate("/formpage")}>
               Enquire Now
             </ButtonRight>
           </BoxContainer>
-        )}
-      </SectionContainer>
 
-     
-    </Container>
-    <Footer />
+          {/* Convera Box */}
+          {selectedCountry !== "ireland" && (
+            <BoxContainer>
+              <CardTitle>Convera</CardTitle>
+              <CardSubTitle>
+                Use Convera to transfer money with AIEC-Global
+              </CardSubTitle>
+              <p>
+                Convera and AIEC-Global are pleased to provide a
+                straightforward, safe, and intelligent online fee payment
+                option. More than 800 educational institutions around the world
+                rely on Convera's platform to facilitate payments in more than
+                140 currencies.
+              </p>
+              <Point>
+                <FaCheck /> Avoid costly transaction charges
+              </Point>
+              <Point>
+                <FaCheck /> Pay online via bank transfer, credit, or debit card
+              </Point>
+              <Point>
+                <FaCheck /> Compare payment options instantly
+              </Point>
+              <Point>
+                <FaCheck /> Track your payment status by SMS and email
+              </Point>
+              <ButtonLeft onClick={() => navigate("/convera")}>
+                About Convera
+              </ButtonLeft>
+              <ButtonRight onClick={() => navigate("/formpage")}>
+                Enquire Now
+              </ButtonRight>
+            </BoxContainer>
+          )}
+        </SectionContainer>
+      </Container>
+      <Footer />
     </>
   );
 };
