@@ -451,7 +451,7 @@ const Studyinireland = () => {
           <li>Hospitality and Tourism Management</li>
         </ul>
         <p style={styles.paragraph}>
-          Contact AIEC, our international education specialist, for more
+          Contact AIEC-Global, our international education specialist, for more
           information about studying in Ireland. They will assist you throughout
           the entire admissions process.
         </p>

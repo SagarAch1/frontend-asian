@@ -191,8 +191,8 @@ const Canadavisarequirementt = () => {
             </p>
             <p>
               If you need assistance locating relevant IRCC information, your
-              AIEC counsellor can help you. They can also connect you with
-              authorized immigration representatives if needed.
+              AIEC-Global counsellor can help you. They can also connect you
+              with authorized immigration representatives if needed.
             </p>
           </Element>
 
@@ -203,8 +203,8 @@ const Canadavisarequirementt = () => {
               documents.
             </p>
             <p>
-              AIEC can assist you with these tasks, reducing the amount of
-              paperwork you need to manage.
+              AIEC-Global can assist you with these tasks, reducing the amount
+              of paperwork you need to manage.
             </p>
             <p>
               We offer free support with the visa application process for

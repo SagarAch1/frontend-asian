@@ -25,7 +25,7 @@ const KathmanduOffice = () => {
           style={styles.headerImage}
         />
         <div style={styles.headerContent}>
-          <h1 style={styles.headerText}>AIEC Kathmandu Office, Nepal</h1>
+          <h1 style={styles.headerText}>AIEC-Global Kathmandu Office, Nepal</h1>
         </div>
       </div>
 
@@ -80,21 +80,21 @@ const KathmanduOffice = () => {
         </div>
 
         <div style={styles.footer}>
-          <h2>Explore overseas education with AIEC Nepal - Kathmandu</h2>
+          <h2>Explore overseas education with AIEC-Global Nepal - Kathmandu</h2>
           <p>
-            At AIEC Nepal: Kathmandu, we help make your dream of studying
+            At AIEC-Global Nepal: Kathmandu, we help make your dream of studying
             abroad in top destinations like Australia, Canada, the USA, the UK,
             New Zealand, and Ireland a reality.
           </p>
           <p>
-            AIEC offers a broad spectrum of services to support your education
-            abroad, including course selection, career counseling, application
-            processing, visa assistance, and scholarship guidance.
+            AIEC-Global offers a broad spectrum of services to support your
+            education abroad, including course selection, career counseling,
+            application processing, visa assistance, and scholarship guidance.
           </p>
           <p>
-            With offices across 32 countries, AIEC Kathmandu has built a robust
-            network of experts to help you find the university or college that
-            best suits your aspirations.
+            With offices across 32 countries, AIEC-Global Kathmandu has built a
+            robust network of experts to help you find the university or college
+            that best suits your aspirations.
           </p>
           <p>
             Our trained counselors provide comprehensive insights into studying

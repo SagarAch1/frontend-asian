@@ -167,7 +167,7 @@ const StudyInUsa = () => {
         <h2 style={styles.sectionTitle}>Scholarships to study in the USA</h2>
         <p style={styles.paragraph}>
           If you're looking for ways to secure a scholarship to study in the US,
-          an AIEC expert can assist you with the application process for
+          an AIEC-Global expert can assist you with the application process for
           eligible scholarships. The amount of financial aid and the type of
           award differ across institutions. Some research programs may offer up
           to a full tuition fee waiver, along with coverage for part of your
@@ -246,7 +246,7 @@ const StudyInUsa = () => {
           </tbody>
         </table>
         <p style={styles.paragraph}>
-          *This is a general list. Consult your AIEC expert for detailed
+          *This is a general list. Consult your AIEC-Global expert for detailed
           guidance and the best scholarship options based on your profile.
           Please note: MBA programs and professional degrees like law, medicine,
           dentistry, and certain design programs tend to have significantly
@@ -408,7 +408,7 @@ const StudyInUsa = () => {
           Ans:You may be required to take an English language proficiency
           examination and a standardized test (such as the SAT/ACT/GRE/GMAT) in
           accordance with the university's requirements and your profile. To
-          ascertain your requirements, consult with an AIEC exert.
+          ascertain your requirements, consult with an AIEC-Global exert.
         </p>
         <p style={styles.section}>
           Ques 2: What are the popular fields in the US after NEB/PCL diploma?

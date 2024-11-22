@@ -21,7 +21,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -32,7 +32,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -43,7 +43,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -54,31 +54,29 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
   {
-    university:
-      " Global Regional International Scholarship ",
+    university: " Global Regional International Scholarship ",
     location: " Australia ",
 
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
   {
-    university:
-      " Anniversary Academic Excellence Scholarship",
+    university: " Anniversary Academic Excellence Scholarship",
     location: " Australia ",
 
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -89,7 +87,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 

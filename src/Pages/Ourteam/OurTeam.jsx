@@ -110,8 +110,9 @@ const OurTeam = () => {
             <h3 style={styles.memberInfoName}>Bhisma Rayamaji</h3>
             <h4 style={styles.memberInfoTitle}>Chief Executive Officer</h4>
             <p style={styles.memberInfoDescription}>
-              As CEO of AIEC Global, I'm dedicated to guiding students toward
-              their international education goals with expertise and support.
+              As CEO of AIEC-Global Global, I'm dedicated to guiding students
+              toward their international education goals with expertise and
+              support.
               {/* As the CEO of Aice Global, I am committed to ensuring that every
               student we guide receives the highest level of expertise and
               personalized support to achieve their international education

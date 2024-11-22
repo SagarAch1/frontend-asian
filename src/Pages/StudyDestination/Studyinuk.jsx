@@ -252,7 +252,7 @@ const Studyinuk = () => {
         </table>
         <p style={styles.paragraph}>
           *This is only a suggested list; for more information and the best
-          solutions for your situation, consult your AIEC counsellor.
+          solutions for your situation, consult your AIEC-Global counsellor.
         </p>
 
         <h2 style={styles.sectionTitle}>Intakes in the UK</h2>

@@ -161,9 +161,9 @@ const ToeflPreparationPage = () => {
 
           <p style={styles.text}>
             Selecting the right consultancy can have a significant impact on
-            your journey toward academic and personal growth. At AIEC GLOBAL, we
-            pride ourselves on offering unique benefits when you choose to work
-            with us:
+            your journey toward academic and personal growth. At AIEC-Global
+            GLOBAL, we pride ourselves on offering unique benefits when you
+            choose to work with us:
           </p>
           <img
             src={`${process.env.PUBLIC_URL}/assets/images/beni.png`}

@@ -124,7 +124,7 @@ const Visaapplicationassistance = () => {
   ];
 
   const learnMoreButtons = [
-    { text: "Why choose AIEC?", path: "/whychooseus" },
+    { text: "Why choose AIEC-Global?", path: "/whychooseus" },
     { text: "Study abroad counseling", path: "/studyabroadcounseling" },
     { text: "Pre-departure support", path: "/predeparturesupport" },
     { text: "What we do?", path: "/whatwedo" },
@@ -143,7 +143,7 @@ const Visaapplicationassistance = () => {
       <div style={containerStyle}>
         <div style={contentContainerStyle}>
           <h2 style={titleStyle}>
-            Student visa application assistance by AIEC
+            Student visa application assistance by AIEC-Global
           </h2>
           <p style={subtitleStyle}>
             Navigating the visa application process can be challenging, but our
@@ -190,11 +190,11 @@ const Visaapplicationassistance = () => {
             possibly undergo medical exams and/or a police background check.
           </p>
           <h3 style={titleStyle}>
-            How can AIEC assist with your visa application?
+            How can AIEC-Global assist with your visa application?
           </h3>
           <p style={paragraphStyle}>
-            Your AIEC advisor will help you understand which documents are
-            required for your application submission.
+            Your AIEC-Global advisor will help you understand which documents
+            are required for your application submission.
           </p>
           <p style={paragraphStyle}>
             Given that visa regulations are subject to frequent updates, we will
