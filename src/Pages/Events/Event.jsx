@@ -22,7 +22,7 @@ const UpcomingEvents = () => {
 
   // Handle navigation to /viewandregister
   const handleViewAndRegisterClick = () => {
-    navigate("/viewandregister"); // Use navigate instead of history.push
+    navigate("/formpage"); // Use navigate instead of history.push
   };
 
   return (
