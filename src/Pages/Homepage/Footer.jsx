@@ -34,7 +34,7 @@ const Footer = () => {
   const linkStyle = {
     color: "#fff",
     textDecoration: "none",
-    fontSize: "21px",
+    fontSize: "18px",
     lineHeight: "1.8",
     display: "block",
     fontWeight: "bold",
@@ -43,11 +43,11 @@ const Footer = () => {
   const titleStyle = {
     marginBottom: "15px",
     fontWeight: "bold",
-    fontSize: "22px",
+    fontSize: "20px",
   };
 
   const contactStyle = {
-    fontSize: "21px",
+    fontSize: "18px",
   };
 
   return (
