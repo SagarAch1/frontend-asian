@@ -7,175 +7,186 @@ import {
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-  return (
-    <footer
-      style={{
-        backgroundColor: "#01649A",
-        color: "#fff",
-        paddingTop: "40px",
-        paddingBottom: "20px",
-      }}
-    >
-      <div className="container">
-        {/* Main Footer Content */}
-        <div
-          className="row text-center"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        >
-          {/* Contact Us */}
-          <div className="col-md-3" style={{ marginBottom: "20px", flex: "1" }}>
-            <div style={{ padding: "10px" }}>
-              <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
-                Contact Us
-              </h6>
-              <p>+977-01-5908881 / 5908882</p>
-              <p>WhatsApp: +977 9801048957</p>
-            </div>
-          </div>
-          {/* About and Social Media */}
-          <div className="col-md-6" style={{ marginBottom: "20px", flex: "2" }}>
-            <p style={{ marginBottom: "20px" }}>
-              AIEC-GLOBAL offers updated information on overseas studies and
-              provides comprehensive support for students' education and
-              settlement abroad.
-            </p>
-            <div
-              style={{ display: "flex", justifyContent: "center", gap: "15px" }}
-            >
-              <a
-                href="https://www.facebook.com/asian.edu.np"
-                style={{ color: "#fff" }}
-              >
-                <FaFacebook />
-              </a>
-              <a
-                href="https://www.instagram.com/asian.edu.np/"
-                style={{ color: "#fff" }}
-              >
-                <FaInstagram />
-              </a>
-              <a href="https://x.com/asianedunp" style={{ color: "#fff" }}>
-                <FaTwitter />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/asianedunp1"
-                style={{ color: "#fff" }}
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://www.youtube.com/@asian.edu.np1"
-                style={{ color: "#fff" }}
-              >
-                <FaYoutube />
-              </a>
-              <a
-                href="https://www.tiktok.com/@asian.edu.np"
-                style={{ color: "#fff" }}
-              >
-                <FaTiktok />
-              </a>
-            </div>
-          </div>
-          {/* Location */}
-          <div className="col-md-3" style={{ marginBottom: "20px", flex: "1" }}>
-            <div style={{ padding: "10px" }}>
-              <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
-                Our Location
-              </h6>
+  const footerStyle = {
+    backgroundColor: "#01649A",
+    color: "#fff",
+    paddingTop: "40px",
+    paddingBottom: "20px",
+    fontFamily: "'Roboto', sans-serif",
+  };
 
-              <p>ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal</p>
-            </div>
-          </div>
-        </div>
-        {/* Additional Information */}
+  const sectionStyle = {
+    flex: "1",
+    marginBottom: "20px",
+    padding: "10px",
+  };
+
+  const linkListStyle = {
+    listStyle: "none",
+    padding: 0,
+    margin: 0,
+    textAlign: "left",
+  };
+
+  const linkStyle = {
+    color: "#fff",
+    textDecoration: "none",
+    fontSize: "14px",
+    lineHeight: "1.8",
+    display: "block",
+  };
+
+  const titleStyle = {
+    marginBottom: "15px",
+    fontWeight: "bold",
+  };
+
+  return (
+    <footer style={footerStyle}>
+      <div className="container">
+        {/* Footer Links Section */}
         <div
-          className="row text-center mt-4"
+          className="footer-links"
           style={{
             display: "flex",
-            justifyContent: "space-around",
+            justifyContent: "space-evenly",
             flexWrap: "wrap",
-          }}
-        >
-          {/* Quick Links */}
-          <div className="col-md-3" style={{ marginBottom: "20px" }}>
-            <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
-              Quick Links
-            </h6>
-            <p>
-              <Link to="/aiecglobal" style={{ color: "#fff", textDecoration: "none" }}>
-                About Us
-              </Link>
-            </p>
-            <p>
-              <Link to="/bloglist" style={{ color: "#fff", textDecoration: "none" }}>
-                Blogs
-              </Link>
-            </p>
-            <p>
-              <Link to="#!" style={{ color: "#fff", textDecoration: "none" }}>
-                Privacy Policy
-              </Link>
-            </p>
-            <p>
-              <Link to="/ourteam" style={{ color: "#fff", textDecoration: "none" }}>
-                Our Team
-              </Link>
-            </p>
-          </div>
-          {/* Branches */}
-          <div className="col-md-3" style={{ marginBottom: "20px" }}>
-            <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
-              Branches
-            </h6>
-            <p>
-              <Link to="/chitwanoffice" style={{ color: "#fff", textDecoration: "none" }}>
-                Chitwan, Nepal
-              </Link>
-            </p>
-            <p>
-              <Link to="/pokharaoffice" style={{ color: "#fff", textDecoration: "none" }}>
-                Pokhara, Nepal
-              </Link>
-            </p>
-            <p>
-              <Link to="/sydneyoffice" style={{ color: "#fff", textDecoration: "none" }}>
-                Sydney, Australia
-              </Link>
-            </p>
-          </div>
-          {/* Head Office */}
-          <div className="col-md-3" style={{ marginBottom: "20px" }}>
-            <h6 style={{ marginBottom: "15px", fontWeight: "bold" }}>
-              Head Office
-            </h6>
-            <p>
-              <Link to="/kathmanduoffice" style={{ color: "#fff", textDecoration: "none" }}>
-                Putalisadak, Kathmandu
-              </Link>
-            </p>
-            <p>Phone 1: +977-01-5908881</p>
-            <p>Phone 2: +977-01-5908882</p>
-            <p>Email: info@asian.edu.np</p>
-          </div>
-        </div>
-        {/* Footer Bottom */}
-        <div
-          className="text-center mt-3"
-          style={{
-            borderTop: "1px solid #fff",
-            paddingTop: "10px",
             marginTop: "20px",
           }}
         >
-          <p>Copyright © 2024 AIEC Global. All Rights Reserved.</p>
+          {/* Quick Links */}
+          <div style={{ ...sectionStyle, flex: "1", textAlign: "left" }}>
+            <h6 style={titleStyle}>Quick Links</h6>
+            <ul style={linkListStyle}>
+              <li>
+                <Link to="/aiecglobal" style={linkStyle}>
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/bloglist" style={linkStyle}>
+                  Blogs
+                </Link>
+              </li>
+              <li>
+                <Link to="#!" style={linkStyle}>
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/ourteam" style={linkStyle}>
+                  Our Team
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Branches */}
+          <div style={{ ...sectionStyle, flex: "1", textAlign: "left" }}>
+            <h6 style={titleStyle}>Branches</h6>
+            <ul style={linkListStyle}>
+              <li>
+                <Link to="/chitwanoffice" style={linkStyle}>
+                  Chitwan, Nepal
+                </Link>
+              </li>
+              <li>
+                <Link to="/pokharaoffice" style={linkStyle}>
+                  Pokhara, Nepal
+                </Link>
+              </li>
+              <li>
+                <Link to="/sydneyoffice" style={linkStyle}>
+                  Sydney, Australia
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Us */}
+          <div style={{ ...sectionStyle, flex: "1", textAlign: "left" }}>
+            <h6 style={titleStyle}>Contact Us</h6>
+            <p>+977-01-5908881 / 5908882</p>
+            <p>WhatsApp: +977 9801048957</p>
+          </div>
+
+          {/* Our Location */}
+          <div style={{ ...sectionStyle, flex: "1", textAlign: "left" }}>
+            <h6 style={titleStyle}>Our Location</h6>
+            <p>ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal</p>
+          </div>
+        </div>
+
+        {/* Social Media Section */}
+        <div
+          className="footer-social"
+          style={{
+            textAlign: "center",
+            marginTop: "30px",
+          }}
+        >
+          <p style={{ marginBottom: "20px", fontSize: "14px" }}>
+            AIEC-GLOBAL offers updated information on overseas studies and
+            comprehensive support for students' education and settlement abroad.
+          </p>
+          <div
+            style={{ display: "flex", justifyContent: "center", gap: "15px" }}
+          >
+            <a
+              href="https://www.facebook.com/asian.edu.np"
+              style={{ color: "#fff", fontSize: "20px" }}
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/asian.edu.np/"
+              style={{ color: "#fff", fontSize: "20px" }}
+            >
+              <FaInstagram />
+            </a>
+            <a
+              href="https://x.com/asianedunp"
+              style={{ color: "#fff", fontSize: "20px" }}
+            >
+              <FaTwitter />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/asianedunp1"
+              style={{ color: "#fff", fontSize: "20px" }}
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://www.youtube.com/@asian.edu.np1"
+              style={{ color: "#fff", fontSize: "20px" }}
+            >
+              <FaYoutube />
+            </a>
+            <a
+              href="https://www.tiktok.com/@asian.edu.np"
+              style={{ color: "#fff", fontSize: "20px" }}
+            >
+              <FaTiktok />
+            </a>
+          </div>
+        </div>
+
+        {/* Footer Bottom */}
+        <div
+          className="footer-bottom"
+          style={{
+            borderTop: "1px solid #fff",
+            marginTop: "20px",
+            paddingTop: "10px",
+            textAlign: "center",
+          }}
+        >
+          <p style={{ margin: 0 }}>
+            Copyright © 2024 AIEC Global. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
