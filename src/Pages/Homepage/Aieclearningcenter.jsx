@@ -164,7 +164,7 @@ const AiecWorkshop = () => {
             AIEC Learning Center Class Schedule 📖
           </a>
           <a href="/usauniversities" style={styles.infoButton}>
-            Universities Represented by AIEC 🎓
+            Choose Subject
           </a>
           <a href="/whystudyabroad" style={styles.infoButton}>
             Abroad Study Destination & Facts 🌍
