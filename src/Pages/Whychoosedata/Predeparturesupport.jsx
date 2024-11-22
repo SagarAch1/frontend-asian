@@ -111,7 +111,7 @@ const Predeparturesupport = () => {
   ];
 
   const learnMoreButtons = [
-    { text: "Why choose AIEC?", path: "/whychooseus" },
+    { text: "Why choose AIEC-Global?", path: "/whychooseus" },
     { text: "Study abroad counseling", path: "/studyabroadcounseling" },
     { text: "Pre-departure support", path: "/predeparturesupport" },
     { text: "What we do?", path: "/whatwedo" },
@@ -136,7 +136,7 @@ const Predeparturesupport = () => {
       </div>
       {/* Content Section */}
       <div style={contentContainerStyle}>
-        <h2 style={titleStyle}>Pre-departure support by AIEC</h2>
+        <h2 style={titleStyle}>Pre-departure support by AIEC-Global</h2>
         <p style={subtitleStyle}>
           We are committed to providing continuous assistance throughout your
           entire journey of studying abroad. Preparing properly for your
@@ -188,8 +188,8 @@ const Predeparturesupport = () => {
           employment.
         </p>
         <p style={paragraphStyle}>
-          7. A network of advice: Connect with AIEC alumni and fellow students
-          to gain valuable insights and advice.
+          7. A network of advice: Connect with AIEC-Global alumni and fellow
+          students to gain valuable insights and advice.
         </p>
         <p style={paragraphStyle}>
           Our aim is to ensure a smooth transition for you as you embark on your

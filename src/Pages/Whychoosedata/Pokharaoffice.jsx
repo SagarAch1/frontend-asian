@@ -24,7 +24,7 @@ const PokharaOffice = () => {
           style={styles.headerImage}
         />
         <div style={styles.headerContent}>
-          <h1 style={styles.headerText}>AIEC Pokhara Office, Nepal</h1>
+          <h1 style={styles.headerText}>AIEC-Global Pokhara Office, Nepal</h1>
         </div>
       </div>
 
@@ -79,9 +79,9 @@ const PokharaOffice = () => {
         </div>
 
         <div style={styles.footer}>
-          <h2>Embark on Your Study Abroad Journey with AIEC Pokhara</h2>
+          <h2>Embark on Your Study Abroad Journey with AIEC-Global Pokhara</h2>
           <p>
-            At AIEC Pokhara, we support your aspirations to study in top
+            At AIEC-Global Pokhara, we support your aspirations to study in top
             destinations like Australia, Canada, the USA, the UK, New Zealand,
             and Ireland.
           </p>
@@ -91,9 +91,9 @@ const PokharaOffice = () => {
             securing scholarships, ensuring you have a seamless experience.
           </p>
           <p>
-            With a global presence across 32 countries, AIEC Pokhara has built a
-            robust network to help you find the right university or college
-            where you can thrive.
+            With a global presence across 32 countries, AIEC-Global Pokhara has
+            built a robust network to help you find the right university or
+            college where you can thrive.
           </p>
           <p>
             Our counselors provide comprehensive insights into studying and
@@ -103,9 +103,9 @@ const PokharaOffice = () => {
             plans. Our counseling services are entirely free of charge.
           </p>
           <p>
-            Meet your dedicated AIEC counselor in Pokhara and take the first
-            step toward your global education. Schedule your free appointment
-            today!
+            Meet your dedicated AIEC-Global counselor in Pokhara and take the
+            first step toward your global education. Schedule your free
+            appointment today!
           </p>
           <button style={styles.footerButton} onClick={navigateToFormPage}>
             Help Me Study Abroad

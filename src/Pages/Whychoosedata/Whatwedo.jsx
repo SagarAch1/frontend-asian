@@ -86,7 +86,7 @@ const Whatwedo = () => {
   };
 
   const buttons = [
-    { label: "Why choose AIEC?", path: "/whychooseus" },
+    { label: "Why choose AIEC-Global?", path: "/whychooseus" },
     { label: "Study abroad counseling", path: "/studyabroadcounseling" },
     { label: "Pre-departure support", path: "/predeparturesupport" },
     { label: "What we do?", path: "/whatwedo" },
@@ -116,9 +116,10 @@ const Whatwedo = () => {
           Study abroad with someone who knows the way.
         </p>
         <p style={paragraphStyle}>
-          AIEC is a recognized leader in international education services, with
-          nearly 50 years of experience. We have the expertise and insight to
-          assist you in fulfilling your aspirations of studying overseas.
+          AIEC-Global is a recognized leader in international education
+          services, with nearly 50 years of experience. We have the expertise
+          and insight to assist you in fulfilling your aspirations of studying
+          overseas.
         </p>
         <p style={paragraphStyle}>
           Thousands of students have benefited from our popular services, making

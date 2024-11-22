@@ -86,7 +86,7 @@ const Livingabroadsupport = () => {
   };
 
   const buttons = [
-    { label: "Why choose AIEC?", path: "/whychooseus" },
+    { label: "Why choose AIEC-Global?", path: "/whychooseus" },
     { label: "Study abroad counseling", path: "/studyabroadcounseling" },
     { label: "Pre-departure support", path: "/predeparturesupport" },
     { label: "What we do?", path: "/whatwedo" },
@@ -118,20 +118,21 @@ const Livingabroadsupport = () => {
           international education experience. Moving to a new country comes with
           a lot to consider, such as visa applications, insurance, finances,
           housing, and possible work opportunities. Although this might feel
-          overwhelming, AIEC’s experts are here to guide you through the entire
-          process, ensuring a smooth transition.
+          overwhelming, AIEC-Global’s experts are here to guide you through the
+          entire process, ensuring a smooth transition.
         </p>
 
         <h3 style={titleStyle}>Support Services for International Students:</h3>
         <p style={paragraphStyle}>
           1. Arrival assistance: We help you adjust to your new environment and
           continue offering support throughout your stay. Our experienced
-          counselors are available to assist you as you settle into your new home.
+          counselors are available to assist you as you settle into your new
+          home.
         </p>
         <p style={paragraphStyle}>
           2. Housing assistance: Whether you prefer university accommodation,
-          shared apartments, or a homestay, AIEC will help you find safe and
-          comfortable housing for your time abroad.
+          shared apartments, or a homestay, AIEC-Global will help you find safe
+          and comfortable housing for your time abroad.
         </p>
         <p style={paragraphStyle}>
           3. Cultural integration: We help you understand and adapt to the local

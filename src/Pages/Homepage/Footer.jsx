@@ -34,14 +34,20 @@ const Footer = () => {
   const linkStyle = {
     color: "#fff",
     textDecoration: "none",
-    fontSize: "14px",
+    fontSize: "21px",
     lineHeight: "1.8",
     display: "block",
+    fontWeight: "bold",
   };
 
   const titleStyle = {
     marginBottom: "15px",
     fontWeight: "bold",
+    fontSize: "22px",
+  };
+
+  const contactStyle = {
+    fontSize: "21px",
   };
 
   return (
@@ -76,11 +82,6 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
-              <li>
-                <Link to="/ourteam" style={linkStyle}>
-                  Our Team
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -109,14 +110,16 @@ const Footer = () => {
           {/* Contact Us */}
           <div style={{ ...sectionStyle, flex: "1", textAlign: "left" }}>
             <h6 style={titleStyle}>Contact Us</h6>
-            <p>+977-01-5908881 / 5908882</p>
-            <p>WhatsApp: +977 9801048957</p>
+            <p style={contactStyle}>+977-01-5908881 / 5908882</p>
+            <p style={contactStyle}>WhatsApp: +977 9801048957</p>
           </div>
 
           {/* Our Location */}
           <div style={{ ...sectionStyle, flex: "1", textAlign: "left" }}>
-            <h6 style={titleStyle}>Our Location</h6>
-            <p>ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal</p>
+            <h6 style={titleStyle}>Head Office</h6>
+            <p style={contactStyle}>
+              ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal
+            </p>
           </div>
         </div>
 

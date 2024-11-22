@@ -15,8 +15,6 @@ import Footer from "../Pages/Homepage/Footer";
 import FormPage from "../Pages/Homepage/FormPage";
 
 const programs = [
-
-
   {
     title: "Life Sciences",
     university: " Towson University",
@@ -25,7 +23,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -37,7 +35,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -49,7 +47,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -61,7 +59,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -73,7 +71,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -85,7 +83,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -97,7 +95,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -109,7 +107,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -121,7 +119,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -133,7 +131,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -145,11 +143,9 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
-
- 
 
   {
     title: " Arts ",
@@ -159,7 +155,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -171,7 +167,7 @@ const programs = [
     degree: "Certification",
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
-    fees: "Contact AIEC",
+    fees: "Contact AIEC-Global",
     link: "/bachelorofdesign",
   },
 
@@ -210,8 +206,8 @@ const Australiauni = () => {
         {filteredPrograms ? (
           <>
             <DataCount size="1.5em" bold>
-              Found {filteredPrograms.length} Universities and Colleges 
-               in Australia.
+              Found {filteredPrograms.length} Universities and Colleges in
+              Australia.
             </DataCount>
             <GridContainer>
               {filteredPrograms.map((program, index) => (

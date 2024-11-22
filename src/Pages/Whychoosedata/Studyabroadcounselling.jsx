@@ -86,7 +86,7 @@ const Studyabroadcounseling = () => {
   };
 
   const buttons = [
-    { label: "Why choose AIEC?", path: "/whychooseus" },
+    { label: "Why choose AIEC-Global?", path: "/whychooseus" },
     { label: "Study abroad counseling", path: "/studyabroadcounseling" },
     { label: "Pre-departure support", path: "/predeparturesupport" },
     { label: "What we do?", path: "/whatwedo" },
@@ -193,7 +193,8 @@ const Studyabroadcounseling = () => {
         <p style={paragraphStyle}>
           In some cases, an institution may provide an offer letter directly
           during your interview, which may be conducted either at our office or
-          at one of AIEC's global student events held throughout the year.
+          at one of AIEC-Global's global student events held throughout the
+          year.
         </p>
 
         <h3 style={titleStyle}>Acceptance and payment</h3>
@@ -203,9 +204,9 @@ const Studyabroadcounseling = () => {
           as a recent IELTS result or proof of your latest academic transcript.
         </p>
         <p style={paragraphStyle}>
-          You can confirm your acceptance at any AIEC office, and the deposit
-          will be directly transferred to the institution. Your advisor will
-          assist you every step of the way.
+          You can confirm your acceptance at any AIEC-Global office, and the
+          deposit will be directly transferred to the institution. Your advisor
+          will assist you every step of the way.
         </p>
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>

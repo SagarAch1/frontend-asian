@@ -99,7 +99,10 @@ const Studentvisaapplication = () => {
   };
 
   const visaButtons = [
-    { text: "Student visa requirements for the USA", path: "/usavisarequirement" },
+    {
+      text: "Student visa requirements for the USA",
+      path: "/usavisarequirement",
+    },
     {
       text: "Student visa requirements for the UK",
       path: "/ukvisarequirement",
@@ -108,12 +111,18 @@ const Studentvisaapplication = () => {
       text: "Student visa requirements for Australia",
       path: "/australiavisarequirement",
     },
-    { text: "Student visa requirements for Canada", path: "/canadavisarequirement" },
-    { text: "Student visa requirements for New Zealand", path: "/newzelandvisarequirement" },
+    {
+      text: "Student visa requirements for Canada",
+      path: "/canadavisarequirement",
+    },
+    {
+      text: "Student visa requirements for New Zealand",
+      path: "/newzelandvisarequirement",
+    },
   ];
 
   const learnMoreButtons = [
-    { text: "Why choose AIEC?", path: "/whychooseus" },
+    { text: "Why choose AIEC-Global?", path: "/whychooseus" },
     { text: "Study abroad counseling", path: "/studyabroadcounseling" },
     { text: "Pre-departure support", path: "/predeparturesupport" },
     { text: "What we do?", path: "/whatwedo" },
@@ -139,7 +148,9 @@ const Studentvisaapplication = () => {
 
       {/* Content Section */}
       <div style={contentContainerStyle}>
-        <h2 style={titleStyle}>Student visa application assistance by AIEC</h2>
+        <h2 style={titleStyle}>
+          Student visa application assistance by AIEC-Global
+        </h2>
         <p style={subtitleStyle}>
           Applying for visas can sometimes feel challenging, but our team is
           dedicated to providing you with accurate information and guidance
@@ -180,11 +191,11 @@ const Studentvisaapplication = () => {
           proficiency and undertake health examinations and/or police checks.
         </p>
         <h3 style={titleStyle}>
-          How can AIEC help with your visa applications?
+          How can AIEC-Global help with your visa applications?
         </h3>
         <p style={paragraphStyle}>
-          Your AIEC counsellor can provide you with information about what
-          documents you will need to provide.
+          Your AIEC-Global counsellor can provide you with information about
+          what documents you will need to provide.
         </p>
         <p style={paragraphStyle}>
           All documents need to be scanned and certified, and certified

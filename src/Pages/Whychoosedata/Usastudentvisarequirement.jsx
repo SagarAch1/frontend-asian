@@ -182,7 +182,7 @@ const Usavisarequirement = () => {
                 duration={500}
                 style={styles.sidebarLink}
               >
-                How can AIEC help you?
+                How can AIEC-Global help you?
               </Link>
             </li>
           </ul>
@@ -194,7 +194,7 @@ const Usavisarequirement = () => {
             <div style={styles.videoContainer}>
               <iframe
                 style={styles.iframe}
-                src="https://www.youtube.com/embed/9_q60X7HKww?rel=0" 
+                src="https://www.youtube.com/embed/9_q60X7HKww?rel=0"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -311,12 +311,12 @@ const Usavisarequirement = () => {
           </Element>
 
           <Element name="help">
-            <h2 style={styles.sectionTitle}>How can AIEC help you?</h2>
+            <h2 style={styles.sectionTitle}>How can AIEC-Global help you?</h2>
             <p>
-              AIEC provides the latest information in the field of overseas
-              studies with the utmost comprehension. We assist students with not
-              only educational matters but also settlement in various countries
-              around the world.
+              AIEC-Global provides the latest information in the field of
+              overseas studies with the utmost comprehension. We assist students
+              with not only educational matters but also settlement in various
+              countries around the world.
             </p>
           </Element>
         </div>
@@ -341,7 +341,6 @@ const Usavisarequirement = () => {
       {/* Footer and Form */}
       <FormPage />
       <Footer />
-     
     </div>
   );
 };
