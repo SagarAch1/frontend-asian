@@ -48,6 +48,7 @@ const Footer = () => {
 
   const contactStyle = {
     fontSize: "18px",
+    fontWeight: "bold",
   };
 
   return (
@@ -140,36 +141,48 @@ const Footer = () => {
           >
             <a
               href="https://www.facebook.com/asian.edu.np"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <FaFacebook />
             </a>
             <a
               href="https://www.instagram.com/asian.edu.np/"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <FaInstagram />
             </a>
             <a
               href="https://x.com/asianedunp"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <FaTwitter />
             </a>
             <a
               href="https://www.linkedin.com/company/asianedunp1"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <FaLinkedin />
             </a>
             <a
               href="https://www.youtube.com/@asian.edu.np1"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <FaYoutube />
             </a>
             <a
               href="https://www.tiktok.com/@asian.edu.np"
+              target="_blank"
+              rel="noopener noreferrer"
               style={{ color: "#fff", fontSize: "20px" }}
             >
               <FaTiktok />
