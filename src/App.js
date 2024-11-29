@@ -241,6 +241,7 @@ import UpcomingNews from "./Pages/Newsarticles/News";
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
 import Ieltsmocktest from "./Blog/Ieltsmocktests";
+import GalleryUpdate from "./Pages/Gallery/UpdateGallery";
 
 
 function App() {
@@ -532,6 +533,7 @@ function App() {
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
+          <Route path="/admin/update-gallery/:id" element={<GalleryUpdate/>} />
         </Route>
 
         {/* User Routes */}
