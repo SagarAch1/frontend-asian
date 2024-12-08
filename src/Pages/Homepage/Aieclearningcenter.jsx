@@ -124,7 +124,7 @@ const AiecWorkshop = () => {
           <h1 style={styles.bannerTitle}>AIEC</h1>
           <h2 style={styles.bannerSubtitle}>TEST PREPARATION</h2>
           <h2 style={styles.bannerSubtitle}>WORKSHOP WEEK</h2>
-          <p style={styles.bannerText}>Every Friday | 8 am - 11 pm</p>
+          <p style={styles.bannerText}>Every Friday | 8 am - 11 Am</p>
           <p style={styles.bannerText}>
             Venue: AIEC office, ADBL Bank's Building, AL3, Putalisadak,
             Kathmandu
@@ -163,7 +163,7 @@ const AiecWorkshop = () => {
           <a href="/bookclass" style={styles.infoButton}>
             AIEC Learning Center Class Schedule 📖
           </a>
-          <a href="/usauniversities" style={styles.infoButton}>
+          <a href="/browsesubject" style={styles.infoButton}>
             Choose Subject
           </a>
           <a href="/whystudyabroad" style={styles.infoButton}>
