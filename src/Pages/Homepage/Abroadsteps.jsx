@@ -6,13 +6,13 @@ const StudyAbroadSteps = () => {
 
   const containerStyle = {
     display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
     justifyContent: "center",
-    height: "70vh", // Decreased height to bring the content up
+    alignItems: "center",
+    backgroundColor: "#e0f7fa",
     padding: "20px",
-    textAlign: "center",
-    marginTop: "-50px", // Adjust this value to move content higher
+    flexDirection: "column",
+    width: "auto",
+    height: "auto",
   };
 
   const contentStyle = {
