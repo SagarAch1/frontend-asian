@@ -153,7 +153,7 @@ const Homepage = () => {
     height: "500px",
     margin: "0 auto",
     position: "relative",
-    marginTop: "-37px",
+    marginTop: "-10px",
   };
   const origamiImageStyle = {
     transition: "transform 2s ease, opacity 1s ease",
@@ -217,7 +217,7 @@ const Homepage = () => {
       {/* Below Navbar */}
       <BelowNavbar />
 
-      <style>{origamiEffect}</style>
+      {/* <style>{origamiEffect}</style> */}
 
       <div className="container-fluid p-0" style={containerStyle}>
         <div

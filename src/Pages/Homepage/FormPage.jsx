@@ -7,8 +7,10 @@ const containerStyle = {
   justifyContent: "center",
   alignItems: "center",
   backgroundColor: "#e0f7fa",
-  padding: "40px 0",
-  minHeight: "100vh",
+  padding: "20px",
+  flexDirection: "column",
+  width: "auto",
+  height: "auto",
 };
 
 const formWrapperStyle = {
@@ -37,7 +39,7 @@ const formContentStyle = {
 };
 
 const imageStyle = {
-  width: "500px",
+  width: "400px",
   height: "1170px",
   objectFit: "cover",
 };
