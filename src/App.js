@@ -65,15 +65,12 @@ import AIECGlobal from "./Pages/Homepage/Aboutus";
 
 import Homepage from "./Pages/Homepage/Homepage";
 
-
 import Book from "./Pages/BookClass/Book";
 import Login from "./Pages/Login/Login";
 import Profile from "./Pages/Login/Profile";
 import Message from "./Pages/Message/Message";
 
 import Bookclass from "./Pages/BookClass/Bookclass";
-
-
 
 import FormPage from "./Pages/Homepage/FormPage";
 
@@ -82,7 +79,35 @@ import Register from "./Pages/Register/Register";
 
 import UpcomingEvents from "./Pages/Events/Event";
 
+import Balancingjobsandstudy from "./Blog/Balancingjobsandstudy";
+import Bestprogramfornepalistudent from "./Blog/Bestprogramfornepalistudent";
 import BlogList from "./Blog/Blogasian";
+import Chooseusforyourstudy from "./Blog/Chooseusforyourstudy";
+import Choosethebestcounsaltancy from "./Blog/Choosingthebestcounsaltancy";
+import Createbalanceinfestival from "./Blog/Createbalanceinfestivaal";
+import Creatingbestschedule from "./Blog/Creatingbestschedule";
+import Essentialstudymaterial from "./Blog/Essentialstudymaterial";
+import Feeincreaseforaustralia from "./Blog/Feeincreaseforasu";
+import Howgoodarepractice from "./Blog/Howgoodarepractice";
+import Howtochoosetheright from "./Blog/Howtochoosetheright";
+import Howtodealwithtest from "./Blog/Howtodealwithtest";
+import Howtogetbetterieltsscore from "./Blog/Howtogetbetterscore";
+import Howtostaymotivated from "./Blog/Howtostaymotivated";
+import Ieltsortofel from "./Blog/Ieltsortofel";
+import Ieltstipsfornepalistudent from "./Blog/Ieltstipsfornepalistudent";
+import Improveyourvocabulary from "./Blog/Improveyourvocabulary";
+import Managingfinance from "./Blog/Managingfinance";
+import Navigatingenglishproficiencytest from "./Blog/Navigatingenglishproficiency";
+import Satvsact from "./Blog/Satoract";
+import Studyingabroadindepthlook from "./Blog/Studingabroadanindepthlook";
+import TestPrepForNepaliStudents from "./Blog/Testpre";
+import Thebestcounsaltancyinnepal from "./Blog/Thebestcoun";
+import Visarequirementfornepalistudents from "./Blog/Visareq";
+import Whatisgoodscoreforsat from "./Blog/Whatisgood";
+import Whystudyabroadin2024 from "./Blog/Whystudyabroadin2024";
+import Whywearethebest from "./Blog/Whywearethebest";
+import Whyyoushouldstudyinaustralia from "./Blog/Whyyoushouldstudyinaus";
+import Tenbestcourse from "./Blog/tenbestcourse";
 import Visaapplicationassistance from "./Pages/Homepage/Visaapplicationassistance";
 import Doctoratescholarship from "./Pages/Scholarships/Doctorate";
 import FoundationScholar from "./Pages/Scholarships/Foundationscholaraship";
@@ -181,41 +206,20 @@ import Visualarts from "./Pages/Subjects/Visualarts";
 import WebDevelopment from "./Pages/Subjects/Webdevelopment";
 import WoolScience from "./Pages/Subjects/Woolscience";
 import Writtencommunication from "./Pages/Subjects/Writtencommunication";
-import Chooseusforyourstudy from "./Blog/Chooseusforyourstudy";
-import Choosethebestcounsaltancy from "./Blog/Choosingthebestcounsaltancy";
-import Createbalanceinfestival from "./Blog/Createbalanceinfestivaal";
-import Howtochoosetheright from "./Blog/Howtochoosetheright";
-import TestPrepForNepaliStudents from "./Blog/Testpre";
-import Thebestcounsaltancyinnepal from "./Blog/Thebestcoun";
-import Whywearethebest from "./Blog/Whywearethebest";
-import Whyyoushouldstudyinaustralia from "./Blog/Whyyoushouldstudyinaus";
-import Howtogetbetterieltsscore from "./Blog/Howtogetbetterscore";
-import Ieltstipsfornepalistudent from "./Blog/Ieltstipsfornepalistudent";
-import Improveyourvocabulary from "./Blog/Improveyourvocabulary";
-import Essentialstudymaterial from "./Blog/Essentialstudymaterial";
-import Howtostaymotivated from "./Blog/Howtostaymotivated";
-import Creatingbestschedule from "./Blog/Creatingbestschedule";
-import Howgoodarepractice from "./Blog/Howgoodarepractice";
-import Howtodealwithtest from "./Blog/Howtodealwithtest";
-import Ieltsortofel from "./Blog/Ieltsortofel";
-import Visarequirementfornepalistudents from "./Blog/Visareq";
-import Bestprogramfornepalistudent from "./Blog/Bestprogramfornepalistudent";
-import Satvsact from "./Blog/Satoract";
-import Balancingjobsandstudy from "./Blog/Balancingjobsandstudy";
-import Managingfinance from "./Blog/Managingfinance";
-import Whystudyabroadin2024 from "./Blog/Whystudyabroadin2024";
-import Tenbestcourse from "./Blog/tenbestcourse";
-import Studyingabroadindepthlook from "./Blog/Studingabroadanindepthlook";
-import Feeincreaseforaustralia from "./Blog/Feeincreaseforasu";
-import Navigatingenglishproficiencytest from "./Blog/Navigatingenglishproficiency";
-import Whatisgoodscoreforsat from "./Blog/Whatisgood";
 
-import SampleDocs from "./Pages/Homepage/Resources";
+import Ieltsmocktest from "./Blog/Ieltsmocktests";
+import GalleryDisplay from "./Pages/Gallery/Gallerydisplay";
+import GalleryUpdate from "./Pages/Gallery/UpdateGallery";
+import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
 import StudyInAustralia from "./Pages/Homepage/Australiaresource";
 import Resourcecanada from "./Pages/Homepage/Canadaresource";
-import Ukresource from "./Pages/Homepage/Unitedresource";
 import Newzelandresource from "./Pages/Homepage/Newzelandresource";
+import SampleDocs from "./Pages/Homepage/Resources";
+import Ukresource from "./Pages/Homepage/Unitedresource";
 import Usaresource from "./Pages/Homepage/Usaresource";
+import UpcomingNews from "./Pages/Newsarticles/News";
+import OurTeam from "./Pages/Ourteam/OurTeam";
+import Support from "./Pages/Support/Support";
 import Aboutaiec from "./Pages/Whychoosedata/Aboutaiec";
 import OfficeLocator from "./Pages/Whychoosedata/Aieclocationfind";
 import Australiavisarequirement from "./Pages/Whychoosedata/Australiavisarequirement";
@@ -230,19 +234,10 @@ import Ukvisarequirement from "./Pages/Whychoosedata/Ukstudentvisapplication";
 import Usavisarequirement from "./Pages/Whychoosedata/Usastudentvisarequirement";
 import Whatwedo from "./Pages/Whychoosedata/Whatwedo";
 import Whychooseaiec from "./Pages/Whychoosedata/Whychooseaiec";
-import OurTeam from "./Pages/Ourteam/OurTeam";
-import Support from "./Pages/Support/Support";
 import AdminDashboard from "./Pages/admin/admin_dashboard/AdminDashboard";
-import ForgotPassword from "./Pages/forgotPassword/ForgotPassword";
 import Navbar from "./components/Navbar";
-import GalleryDisplay from "./Pages/Gallery/Gallerydisplay";
-import Aiecworkshop from "./Pages/Homepage/Aieclearningcenter";
-import UpcomingNews from "./Pages/Newsarticles/News";
 import AdminRoutes from "./protected_routes/AdminRoutes";
 import UserRoutes from "./protected_routes/UserRoutes";
-import Ieltsmocktest from "./Blog/Ieltsmocktests";
-import GalleryUpdate from "./Pages/Gallery/UpdateGallery";
-
 
 function App() {
   return (
@@ -259,7 +254,7 @@ function App() {
         <Route path="/ourteam" element={<OurTeam />} />
         <Route path="/newlist" element={<Newslist />} />
         <Route path="/news" element={<Createnews />} />
-        <Route path="/gallerycreate" element={<Gallerycreate />} />
+      
         <Route path="/aiecworkshop" element={<Aiecworkshop />} />
         <Route path="/pestandweedcontrol" element={<PestControl />} />
         <Route path="/plantsciences" element={<PlantScience />} />
@@ -272,7 +267,10 @@ function App() {
         <Route path="/taxation" element={<TaxAccounting />} />
         <Route path="/pharmaceuticalscience" element={<Pharmaceutical />} />
         <Route path="/architecture" element={<Architecture />} />
-        <Route path="/humanwelfarestudiesandservices" element={<HumanWelfare />} />
+        <Route
+          path="/humanwelfarestudiesandservices"
+          element={<HumanWelfare />}
+        />
         <Route path="/visualarts" element={<Visualarts />} />
         <Route path="/productdesign" element={<Productdesign />} />
         <Route path="/industrialdesign" element={<Industrialdesign />} />
@@ -288,21 +286,39 @@ function App() {
         <Route path="/biochemistry" element={<Biochemistry />} />
         <Route path="/technology" element={<Technology />} />
         <Route path="/planning" element={<Planning />} />
-        <Route path="/landscapedesignandarchitecture" element={<Landscapedesign />} />
+        <Route
+          path="/landscapedesignandarchitecture"
+          element={<Landscapedesign />}
+        />
         <Route path="/townplanning" element={<Townplanning />} />
         <Route path="/psychology" element={<Psycology />} />
-        <Route path="/businessadministration" element={<BusinessAdministration />} />
+        <Route
+          path="/businessadministration"
+          element={<BusinessAdministration />}
+        />
         <Route path="/farmandagribusiness" element={<Farmandagribusiness />} />
         <Route path="/tourism" element={<Tourism />} />
-        <Route path="/webdevelopment"element={<WebDevelopment />} />
+        <Route path="/webdevelopment" element={<WebDevelopment />} />
         <Route path="/systemsengineering" element={<SystemsEngineering />} />
-        <Route path="/rehabilitationtherapy" element={<RehabilitationTherapy />} />
+        <Route
+          path="/rehabilitationtherapy"
+          element={<RehabilitationTherapy />}
+        />
         <Route path="/humanmovement" element={<HumanMovement />} />
         <Route path="/statistics" element={<Statistics />} />
-        <Route path="/informationtechnology" element={<InformationTechnology />} />
-        <Route path="/qualitativeeconomics" element={<QualitativeEconomics />} />
+        <Route
+          path="/informationtechnology"
+          element={<InformationTechnology />}
+        />
+        <Route
+          path="/qualitativeeconomics"
+          element={<QualitativeEconomics />}
+        />
         <Route path="/geriatricstudies" element={<GeriatricStudies />} />
-        <Route path="/agricultureeducationservices" element={<AgricultureScience />} />
+        <Route
+          path="/agricultureeducationservices"
+          element={<AgricultureScience />}
+        />
         <Route path="/foodscience" element={<FoodScience />} />
         <Route path="/sportsscience" element={<SportsScience />} />
         <Route path="/creativewriting" element={<Creativewriting />} />
@@ -311,15 +327,24 @@ function App() {
         <Route path="/conservation" element={<Environmentconservation />} />
         <Route path="/dietetics" element={<Dietetics />} />
         <Route path="/foodandhospitality" element={<Foodandhspitality />} />
-        <Route path="/animalandveterinarystudies" element={<AnimalandVeterinarySciences />} />
+        <Route
+          path="/animalandveterinarystudies"
+          element={<AnimalandVeterinarySciences />}
+        />
         <Route path="/socialskillsprogrammes" element={<SocialSkills />} />
         <Route path="/speechtherapy" element={<SpeechTherapy />} />
         <Route path="/occupationaltherapy" element={<OccupationalTherapy />} />
         <Route path="/disabilitystudies" element={<DisabilityStudies />} />
-        <Route path="/psychiatryandneurosurgery" element={<Psychiatryandneurosurgery />} />
+        <Route
+          path="/psychiatryandneurosurgery"
+          element={<Psychiatryandneurosurgery />}
+        />
         <Route path="/firstaid" element={<FirstAid />} />
         <Route path="/podiatry" element={<Podiatry />} />
-        <Route path="/occupationalhealth&safety" element={<OccupationalHealth />} />
+        <Route
+          path="/occupationalhealth&safety"
+          element={<OccupationalHealth />}
+        />
         <Route path="/speechpathology" element={<SpeechPathology />} />
         <Route path="/acupuncture" element={<Acupuncture />} />
         <Route path="/alliedhealthscience" element={<AlliedHealthScience />} />
@@ -329,12 +354,21 @@ function App() {
         <Route path="/hotelandhospitality" element={<Hotelandhospitality />} />
         <Route path="/beauty" element={<Beauty />} />
         <Route path="/bakery" element={<Bakery />} />
-        <Route path="/philosophyandreligiousstudies" element={<Philosophyandreligious />} />
+        <Route
+          path="/philosophyandreligiousstudies"
+          element={<Philosophyandreligious />}
+        />
         <Route path="/policestudies" element={<Policestudies />} />
-        <Route path="/writtencommunication" element={<Writtencommunication />} />
+        <Route
+          path="/writtencommunication"
+          element={<Writtencommunication />}
+        />
         <Route path="/masscommunication" element={<Masscommunication />} />
         <Route path="/earthsciences" element={<Earthscience />} />
-        <Route path="/environmentalengineering" element={<EnvironmentalEngineering />} />
+        <Route
+          path="/environmentalengineering"
+          element={<EnvironmentalEngineering />}
+        />
         <Route path="/cosmetology" element={<Cosmetology />} />
         <Route path="/religiousstudies" element={<ReligiousStudies />} />
         <Route path="/astrophysics" element={<Astrophysics />} />
@@ -342,60 +376,117 @@ function App() {
         <Route path="/theoreticalphysics" element={<TheoreticalPhysics />} />
         <Route path="/socialjustice" element={<SocialJustice />} />
         <Route path="/socialscience" element={<SocialScience />} />
-        <Route path="/politicalscienceandpolicystudies" element={<Politicalscienceandpolicy />} />
+        <Route
+          path="/politicalscienceandpolicystudies"
+          element={<Politicalscienceandpolicy />}
+        />
         <Route path="/politicalscience" element={<Politicalscience />} />
         <Route path="/sociology" element={<Sociology />} />
         <Route path="/secondaryeducation" element={<SecondaryEducation />} />
         <Route path="/primaryeducation" element={<PrimaryEducation />} />
         <Route path="/highereducation" element={<HigherEducation />} />
-        <Route path="/earlychildhoodeducation" element={<EarlyChildhoodEducation />} />
-        <Route path="/curriculumandeducationstudies" element={<CurriculumandEducation />} />
+        <Route
+          path="/earlychildhoodeducation"
+          element={<EarlyChildhoodEducation />}
+        />
+        <Route
+          path="/curriculumandeducationstudies"
+          element={<CurriculumandEducation />}
+        />
         <Route path="/counselling" element={<Counselling />} />
-       
+
         <Route path="/bloglist" element={<BlogList />} />
         <Route path="/whywearethebest" element={<Whywearethebest />} />
         <Route path="/howtochoosetheright" element={<Howtochoosetheright />} />
-        <Route path="/testprepfornepalistudents" element={<TestPrepForNepaliStudents />} />
-        <Route path="/choosingthebest" element={<Choosethebestcounsaltancy />} />
-        <Route path="/createbalanceinfestival" element={<Createbalanceinfestival />} />
-        <Route path="/chooseusforyourstudy" element={<Chooseusforyourstudy />} />
-        <Route path="/thebestcounsaltancyinnepal" element={<Thebestcounsaltancyinnepal />} />
-        <Route path="/whyyoushoulsstudyinaustralia" element={<Whyyoushouldstudyinaustralia  />} />
-        <Route path="/howtogetbetterscore" element={<Howtogetbetterieltsscore />} />
-        <Route path="/ieltstipsfornepalistudents" element={<Ieltstipsfornepalistudent />} />
-        <Route path="/improveyourvocabulary" element={<Improveyourvocabulary />} />
-        <Route path="/essentialstudymaterial" element={<Essentialstudymaterial />} />
+        <Route
+          path="/testprepfornepalistudents"
+          element={<TestPrepForNepaliStudents />}
+        />
+        <Route
+          path="/choosingthebest"
+          element={<Choosethebestcounsaltancy />}
+        />
+        <Route
+          path="/createbalanceinfestival"
+          element={<Createbalanceinfestival />}
+        />
+        <Route
+          path="/chooseusforyourstudy"
+          element={<Chooseusforyourstudy />}
+        />
+        <Route
+          path="/thebestcounsaltancyinnepal"
+          element={<Thebestcounsaltancyinnepal />}
+        />
+        <Route
+          path="/whyyoushoulsstudyinaustralia"
+          element={<Whyyoushouldstudyinaustralia />}
+        />
+        <Route
+          path="/howtogetbetterscore"
+          element={<Howtogetbetterieltsscore />}
+        />
+        <Route
+          path="/ieltstipsfornepalistudents"
+          element={<Ieltstipsfornepalistudent />}
+        />
+        <Route
+          path="/improveyourvocabulary"
+          element={<Improveyourvocabulary />}
+        />
+        <Route
+          path="/essentialstudymaterial"
+          element={<Essentialstudymaterial />}
+        />
         <Route path="/howtostaymotivated" element={<Howtostaymotivated />} />
-        <Route path="/creatingbestschedule" element={<Creatingbestschedule />} />
+        <Route
+          path="/creatingbestschedule"
+          element={<Creatingbestschedule />}
+        />
         <Route path="/howgoodarepractice" element={<Howgoodarepractice />} />
         <Route path="/howtodealwithtest" element={<Howtodealwithtest />} />
         <Route path="/ieltsortofel" element={<Ieltsortofel />} />
-        <Route path="/visarequirementfornepalistudents" element={<Visarequirementfornepalistudents />} />
+        <Route
+          path="/visarequirementfornepalistudents"
+          element={<Visarequirementfornepalistudents />}
+        />
         <Route path="/satvsact" element={<Satvsact />} />
-        <Route path="/bestprogramfornepalistudent" element={<Bestprogramfornepalistudent />} />
-        <Route path="/balancingjobsandstudy" element={<Balancingjobsandstudy />} />
+        <Route
+          path="/bestprogramfornepalistudent"
+          element={<Bestprogramfornepalistudent />}
+        />
+        <Route
+          path="/balancingjobsandstudy"
+          element={<Balancingjobsandstudy />}
+        />
         <Route path="/managingfinance" element={<Managingfinance />} />
-        <Route path="/whystudyabroadin2024" element={<Whystudyabroadin2024 />} />
+        <Route
+          path="/whystudyabroadin2024"
+          element={<Whystudyabroadin2024 />}
+        />
         <Route path="/tenbestcourse" element={<Tenbestcourse />} />
-        <Route path="/studingabroadindepthlook" element={<Studyingabroadindepthlook />} />
-        <Route path="/feeincreaseforaustralia" element={<Feeincreaseforaustralia />} />
-        <Route path="/navigatingenglishproficiency" element={<Navigatingenglishproficiencytest />} />
+        <Route
+          path="/studingabroadindepthlook"
+          element={<Studyingabroadindepthlook />}
+        />
+        <Route
+          path="/feeincreaseforaustralia"
+          element={<Feeincreaseforaustralia />}
+        />
+        <Route
+          path="/navigatingenglishproficiency"
+          element={<Navigatingenglishproficiencytest />}
+        />
         <Route path="/whatisgoodforsat" element={<Whatisgoodscoreforsat />} />
-        <Route path="/ieltsmocktest" element={<Ieltsmocktest   />} />
+        <Route path="/ieltsmocktest" element={<Ieltsmocktest />} />
         <Route path="/resources" element={<SampleDocs />} />
-    
 
-       
         <Route path="/contact" element={<Contact />} />
-       
+
         <Route path="/support" element={<Support />} />
         <Route path="/messages" element={<Message />} />
         <Route path="/book" element={<Book />} />
 
-
-
-
-        
         <Route path="/userprofile" element={<Profile />} />
 
         <Route path="/slider" element={<Slider />} />
@@ -464,6 +555,9 @@ function App() {
         <Route path="/pokharaoffice" element={<PokharaOffice />} />
         <Route path="/sydneyoffice" element={<SydneyOffice />} />
         <Route path="/doctoratescholrship" element={<Doctoratescholarship />} />
+        <Route path="/courseusa" element={<CourseUsa />} />
+        <Route path="/courseuk" element={<CourseUk />} />
+        <Route path="/coursecanada" element={<CourseCanada />} />
         <Route
           path="/undergraduatescholar"
           element={<Undergraduatescholar />}
@@ -533,22 +627,19 @@ function App() {
         {/* Admin routes */}
         <Route element={<AdminRoutes />}>
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route path="/admin/update-gallery/:id" element={<GalleryUpdate/>} />
+          <Route path="/admin/update-gallery/:id" element={<GalleryUpdate />} />
+          <Route path="/gallerycreate" element={<Gallerycreate />} />
         </Route>
 
         {/* User Routes */}
         <Route element={<UserRoutes />}>
           <Route path="/courseaustralia" element={<CourseAustralia />} />
 
-          <Route path="/courseusa" element={<CourseUsa />} />
-          <Route path="/courseuk" element={<CourseUk />} />
-          <Route path="/coursecanada" element={<CourseCanada />} />
-          
-        <Route path="/resourceaustralia" element={<StudyInAustralia />} />
-        <Route path="/resourcecanada" element={<Resourcecanada />} />
-        <Route path="/resourceuk" element={<Ukresource />} />
-        <Route path="/newzelandresource" element={<Newzelandresource />} />
-        <Route path="/resourceusa" element={<Usaresource />} />
+          <Route path="/resourceaustralia" element={<StudyInAustralia />} />
+          <Route path="/resourcecanada" element={<Resourcecanada />} />
+          <Route path="/resourceuk" element={<Ukresource />} />
+          <Route path="/newzelandresource" element={<Newzelandresource />} />
+          <Route path="/resourceusa" element={<Usaresource />} />
         </Route>
       </Routes>
     </Router>
