@@ -92,16 +92,14 @@ const KathmanduOffice = () => {
             application processing, visa assistance, and scholarship guidance.
           </p>
           <p>
-            With offices across 32 countries, AIEC-Global Kathmandu has built a
-            robust network of experts to help you find the university or college
-            that best suits your aspirations.
+            AIEC-Global Kathmandu has built a robust network of experts to help
+            you find the university or college that best suits your aspirations.
           </p>
           <p>
             Our trained counselors provide comprehensive insights into studying
-            and living in your dream destination. Based in Hattisar, Kathmandu,
-            we’ve supported numerous students from areas such as Lalitpur,
-            Syuchatar, New Baneshwor, and beyond. Visit us for free counseling
-            services tailored to your needs.
+            and living in your dream destination. Based in Putalisadak,
+            Kathmandu. Visit us for free counseling services tailored to your
+            needs.
           </p>
           <p>
             Schedule your appointment or visit our Kathmandu office to discuss

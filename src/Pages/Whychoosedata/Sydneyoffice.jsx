@@ -4,11 +4,12 @@ import Youshouldknow from "../Homepage/YouShouldknow";
 
 const SydneyOffice = () => {
   const officeData = {
-    address: "Sydney Office 70 Raymond Avenue, Campbelltown, Sydney-Australia",
+    address:
+      "Sydney Office Suite 612, 368 Sussex Street, Sydney NSW 2000, Australia",
     phone: "0425883105 /+61 425883105",
-    openingHours: "09:00 AM - 05:30 PM",
-    mapUrl:
-      "https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3305.1133377415745!2d150.82584917556113!3d-34.066608773151515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d-34.0665821!2d150.82847769999998!5e0!3m2!1sen!2snp!4v1726980802528!5m2!1sen!2s",
+    openingHours: "10:00 AM - 05:00 PM",
+    mapUrl: (src =
+      "https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3183.113097964711!2d151.20217697555267!3d-33.876569973223766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x6b12ae3c9f56bffd%3A0x981e610eabfeedf7!2sUnit%20612%2F368%20Sussex%20St%2C%20Sydney%20NSW%202000%2C%20Australia!3m2!1d-33.87657!2d151.2047519!5e1!3m2!1sen!2snp!4v1733478951538!5m2!1sen!2snp"),
   };
 
   const navigateToFormPage = () => {
@@ -99,9 +100,7 @@ const SydneyOffice = () => {
           <p>
             Our counselors at AIEC-Global are skilled in providing end-to-end
             guidance for studying and living in your dream destination. Located
-            in Hattisar, Kathmandu, we've supported students from areas like
-            Lalitpur, Syuchatar, New Baneshwor, Gothatar, Mahankal, Baglung,
-            Butwal, Pokhra, and beyond. Visit us for expert advice on your
+            in Putalisadak, Kathmandu. Visit us for expert advice on your
             international education journey. We offer free study abroad
             counseling services for all students.
           </p>

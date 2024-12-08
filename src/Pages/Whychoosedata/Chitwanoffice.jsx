@@ -94,15 +94,13 @@ const ChitwanOffice = () => {
             is your trusted partner throughout this journey.
           </p>
           <p>
-            With offices in 32 countries, we’ve built a strong network of
+            We’ve built a strong network of
             opportunities to help students identify and secure the right
             university or college to excel.
           </p>
           <p>
             Our trained counselors offer in-depth guidance on studying and
-            living abroad. Based in Hattisar, Kathmandu, we’ve supported many
-            students from regions like Lalitpur, Syuchatar, New Baneshwor,
-            Gothatar, and beyond. Visit us to discuss your plans or benefit from
+            living abroad. Based Putalisadak, Kathmandu. Visit us to discuss your plans or benefit from
             our free study abroad counseling services.
           </p>
           <p>

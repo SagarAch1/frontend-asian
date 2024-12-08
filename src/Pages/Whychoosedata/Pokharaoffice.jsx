@@ -91,7 +91,7 @@ const PokharaOffice = () => {
             securing scholarships, ensuring you have a seamless experience.
           </p>
           <p>
-            With a global presence across 32 countries, AIEC-Global Pokhara has
+             AIEC-Global Pokhara has
             built a robust network to help you find the right university or
             college where you can thrive.
           </p>
