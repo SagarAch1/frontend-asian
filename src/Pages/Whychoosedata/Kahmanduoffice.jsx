@@ -7,7 +7,7 @@ const KathmanduOffice = () => {
     address:
       "Putalisadak, Kathmandu, ADBL Bank's Building, AL3, Putalisadak-30, Kathmandu, Nepal",
     phone: "977-01-5908881/5908882",
-    openingHours: "09:00 AM - 05:30 PM",
+    openingHours: "07:00 AM - 05:30 PM",
     mapUrl:
       "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3709997553105!2d85.32043637556089!3d27.705829276183444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195c580e7a5d%3A0xf35b7e6ce96c9d55!2sAsian%20International%20Education%20and%20Migration%20Pvt%20Ltd!5e0!3m2!1sen!2snp!4v1726823511164!5m2!1sen!2snp",
   };
