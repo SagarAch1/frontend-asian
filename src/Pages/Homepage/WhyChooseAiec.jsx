@@ -87,7 +87,7 @@ const WhyChooseAiec = () => {
           <div style={iconStyle}>👥</div>
           <h3 style={titleStyle}>Global network</h3>
           <p style={descriptionStyle}>
-          In collaboration with 800 top universities worldwide.
+          In collaboration with top universities worldwide.
           </p>
           <a href="#" style={linkStyle}>
             Learn more &gt;

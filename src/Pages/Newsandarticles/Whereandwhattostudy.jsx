@@ -322,7 +322,7 @@ const WhereAndWhatToStudy = () => {
               Studying abroad may be more affordable than you imagine! Use our
               cost of living calculator to get an estimate of your expenses as
               an international student. Additionally, we provide access to over
-              5,100 scholarships through our partner universities. Contact us to
+              scholarships through our partner universities. Contact us to
               explore the opportunities available to you.
             </p>
           </div>
