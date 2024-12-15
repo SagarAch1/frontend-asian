@@ -122,8 +122,8 @@ const Whychooseaiec = () => {
         </p>
         <p style={paragraphStyle}>
           We guide you to the right courses at the best universities in the
-          ideal countries for your education. For over 50 years, we’ve been
-          helping students, creating a broad network with offices in 32
+          ideal countries for your education. For over 12 years, we’ve been
+          helping students, creating a broad network with offices in diffrent
           countries.
         </p>
 
@@ -139,9 +139,9 @@ const Whychooseaiec = () => {
           cutting-edge technology to ensure you make well-informed decisions.
         </p>
         <p style={paragraphStyle}>
-          With collaborations with over 650 renowned universities across
+          With collaborations with various top universities across
           Australia, Canada, New Zealand, the UK, and the USA, we have access to
-          more than 180,000 courses and programs to find the right match for
+          more than thousands of courses and programs to find the right match for
           you.
         </p>
         <h3 style={titleStyle}>Your success is our priority</h3>

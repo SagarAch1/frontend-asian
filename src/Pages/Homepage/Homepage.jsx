@@ -153,7 +153,7 @@ const Homepage = () => {
     height: "500px",
     margin: "0 auto",
     position: "relative",
-    marginTop: "-15px",
+    marginTop: "-1px",
   };
   const origamiImageStyle = {
     transition: "transform 2s ease, opacity 1s ease",
