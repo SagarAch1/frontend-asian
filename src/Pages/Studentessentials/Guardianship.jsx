@@ -123,7 +123,7 @@ const Guardianship = () => {
             <FontAwesomeIcon icon={faShieldAlt} style={styles.icon} />
             <h4 style={styles.featureTitle}>Your safety is our priority</h4>
             <p style={styles.featureText}>
-              Under Australian law, all of our guardians go through a thorough
+              Under Australian law, all of our guardians go through a through
               police check.
             </p>
           </div>

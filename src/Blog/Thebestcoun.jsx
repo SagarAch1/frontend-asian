@@ -79,7 +79,7 @@ const Thebestcounsaltancyinnepal = () => {
             One of the most critical steps in the study abroad journey is the
             university application process. From selecting the right program to
             submitting strong applications, Asian Education ensures that you
-            are thoroughly prepared at every stage. We help students with:
+            are throughly prepared at every stage. We help students with:
           </p>
           <ul>
             <li>

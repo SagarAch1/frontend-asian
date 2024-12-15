@@ -6,13 +6,13 @@ const TestPrepForNepaliStudents = () => {
     <div className="blog-container">
       {/* Blog Header */}
       <header className="blog-header">
-      <img
-           src={`${process.env.PUBLIC_URL}/assets/images/b3.jpg`}
+        <img
+          src={`${process.env.PUBLIC_URL}/assets/images/b3.jpg`}
           alt="Consultancy"
           className="blog-header-image"
         />
         <h2>Test Preparation For Nepali Students</h2>
-       
+
         <p>Comments (0)</p>
         <p>October 16, 2024</p>
       </header>
@@ -22,12 +22,12 @@ const TestPrepForNepaliStudents = () => {
         <p>
           For Nepali students aspiring to study abroad, test preparation is a
           critical step in the application process. Whether you’re gearing up
-          for the IELTS, TOEFL, SAT, or GRE, thorough preparation is essential
-          for success. These standardized tests assess your language proficiency,
-          critical thinking, and academic skills, which play a significant role
-          in university admissions worldwide. In this blog, we will explore the
-          best strategies for test preparation and how to optimize your study
-          time to achieve the best possible scores.
+          for the IELTS, TOEFL, SAT, or GRE, through preparation is essential
+          for success. These standardized tests assess your language
+          proficiency, critical thinking, and academic skills, which play a
+          significant role in university admissions worldwide. In this blog, we
+          will explore the best strategies for test preparation and how to
+          optimize your study time to achieve the best possible scores.
         </p>
 
         <h2>1. Understand the Test Format</h2>
@@ -118,11 +118,11 @@ const TestPrepForNepaliStudents = () => {
         <h2>6. Join a Test Prep Course</h2>
         <p>
           If self-study feels overwhelming, consider enrolling in a test
-          preparation course. Asian Education offers expert-led test prep courses
-          for various standardized exams, including IELTS, TOEFL, SAT, and GRE.
-          These courses provide structured learning with experienced instructors
-          who can guide you through test strategies and help you avoid common
-          pitfalls.
+          preparation course. Asian Education offers expert-led test prep
+          courses for various standardized exams, including IELTS, TOEFL, SAT,
+          and GRE. These courses provide structured learning with experienced
+          instructors who can guide you through test strategies and help you
+          avoid common pitfalls.
         </p>
         <p>
           Our courses include in-depth lessons, personalized feedback on writing
@@ -148,9 +148,9 @@ const TestPrepForNepaliStudents = () => {
         <p>
           Physical and mental well-being are crucial during the test preparation
           period. A balanced diet, regular exercise, and adequate sleep help
-          improve focus and retention. Avoid the temptation to pull all-nighters,
-          especially in the days leading up to the test. Instead, prioritize rest
-          to ensure your mind is sharp and alert on exam day.
+          improve focus and retention. Avoid the temptation to pull
+          all-nighters, especially in the days leading up to the test. Instead,
+          prioritize rest to ensure your mind is sharp and alert on exam day.
         </p>
 
         <h2>9. Simulate Test Day Conditions</h2>

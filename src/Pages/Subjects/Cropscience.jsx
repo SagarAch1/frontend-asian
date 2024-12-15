@@ -96,7 +96,7 @@ const CropScience = () => {
     {
       title: "Is Crop Sciences right for me?",
       content:
-        "Crop sciences focus on the development and application of innovative technologies to ensure a sustainable food supply and a healthy agro-ecosystem. The field aims to improve agricultural systems and evaluate cropping methods in different farming systems. With a degree in crop sciences, you will gain a thorough understanding of diverse farming systems, enabling you to identify and implement the best agricultural practices to boost sustainable food production. This course prepares you to assess the advantages and limitations of various agricultural approaches, including organic farming, and analyze cropping techniques used in diverse farming systems.",
+        "Crop sciences focus on the development and application of innovative technologies to ensure a sustainable food supply and a healthy agro-ecosystem. The field aims to improve agricultural systems and evaluate cropping methods in different farming systems. With a degree in crop sciences, you will gain a through understanding of diverse farming systems, enabling you to identify and implement the best agricultural practices to boost sustainable food production. This course prepares you to assess the advantages and limitations of various agricultural approaches, including organic farming, and analyze cropping techniques used in diverse farming systems.",
     },
     {
       title: "Crop Sciences study options and costs",
