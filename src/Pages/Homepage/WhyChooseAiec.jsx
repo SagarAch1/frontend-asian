@@ -98,7 +98,7 @@ const WhyChooseAiec = () => {
           <div style={iconStyle}>🌍</div>
           <h3 style={titleStyle}>Closer to you</h3>
           <p style={descriptionStyle}>
-          Providing global support through 190 offices in 35 countries.
+          Providing global support through 4 offices in different countries.
           </p>
           <a href="/officelocator" style={linkStyle}>
             Learn more &gt;
