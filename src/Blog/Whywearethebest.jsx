@@ -6,11 +6,11 @@ const Blog = () => {
     <div className="blog-container">
       {/* Top Section */}
       <div className="header-section">
-        <img
+        {/* <img
           src={`${process.env.PUBLIC_URL}/assets/images/1b.webp`}
           alt="Consultancy"
           className="blog-header-image"
-        />
+        /> */}
         <div className="blog-header-text">
           <h1>Why We Are The Best Consultancy</h1>
           <p>
