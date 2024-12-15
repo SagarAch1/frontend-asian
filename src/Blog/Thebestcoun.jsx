@@ -7,11 +7,7 @@ const Thebestcounsaltancyinnepal = () => {
     <div className="blog-container">
       {/* Top Section */}
       <div className="header-section">
-        <img
-          src={`${process.env.PUBLIC_URL}/assets/images/b9.jpg`}
-          alt="Consultancy"
-          className="blog-header-image"
-        />
+       
         <div className="blog-header-text">
           <h1>Why We Are The Best Consultancy</h1>
           <p>
@@ -88,10 +84,10 @@ const Thebestcounsaltancyinnepal = () => {
             </li>
             <li>
               Assistance with writing compelling personal statements and
-              statements of purpose.
+              statement of purpose.
             </li>
             <li>
-              Guidance on gathering necessary documents, including transcripts
+              Guidance on arranging necessary documents, including transcripts
               and recommendation letters.
             </li>
             <li>
