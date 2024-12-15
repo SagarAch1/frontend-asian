@@ -210,7 +210,7 @@ const OfficeLocator = () => {
             <h4>Connect globally</h4>
             <p>
               Gain personalized support from over 2,200 expert education
-              counselors available at 190 AIEC offices across 35 countries.
+              counselors available at  AIEC offices across the countries.
             </p>
           </div>
           <div style={styles.col}>
