@@ -106,7 +106,7 @@ const OccupationalTherapy = () => {
     {
       title: "Educational Options and Costs",
       content1:
-        "A Bachelor’s degree in Occupational Therapy typically takes 3 to 4 years to complete, providing a thorough understanding of both theoretical principles and practical applications in this field.",
+        "A Bachelor’s degree in Occupational Therapy typically takes 3 to 4 years to complete, providing a through understanding of both theoretical principles and practical applications in this field.",
       content2:
         "Graduates may continue their studies with a Master’s degree in Occupational Therapy. There are no strict undergraduate degree prerequisites, although degrees in education or healthcare are favored. Advanced programs like a Master of Occupational Therapy (MOT) or a Doctor of Occupational Therapy (OTD) are available and can cost between $65,000 and $200,000.",
     },

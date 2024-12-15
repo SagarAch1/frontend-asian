@@ -24,7 +24,7 @@ const Studyinireland = () => {
       <div style={styles.contentSection}>
         <h2 style={styles.sectionTitle}>
           For all Nepalese students who wish to study in Ireland, here is a
-          thorough handbook.
+          through handbook.
         </h2>
         <p style={styles.paragraph}>
           Ireland is becoming a more and more popular destination for Nepalese

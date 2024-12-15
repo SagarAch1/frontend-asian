@@ -209,7 +209,7 @@ const SatPreparationPage = () => {
             <p style={styles.text}>
               You can register for the SAT through the College Board website or
               through us. Early registration is recommended to secure your
-              preferred test date and location. By thoroughly understanding the
+              preferred test date and location. By throughly understanding the
               SAT test format and following these tips, you can greatly improve
               your chances of achieving a top score, enhancing your university
               admission prospects.

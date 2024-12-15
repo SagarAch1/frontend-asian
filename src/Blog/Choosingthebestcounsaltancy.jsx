@@ -67,7 +67,7 @@ const Choosethebestcounsaltancy = () => {
               <strong>Transparency in Fees and Services:</strong> It’s important to choose a consultancy that is transparent about its fees and services. A good consultancy will provide a clear breakdown of the costs involved, including consultation fees, application costs, and visa processing fees. Avoid consultancies that seem unclear or overly eager to make promises without explaining the associated costs.
             </li>
             <li>
-              <strong>Visa Success Rate:</strong> Visa rejection is one of the biggest hurdles for Nepali students aspiring to study abroad. The consultancy you choose should have a high visa success rate and a thorough understanding of the visa process for different countries. They should be able to guide you through the visa interview process and help you prepare the required documents.
+              <strong>Visa Success Rate:</strong> Visa rejection is one of the biggest hurdles for Nepali students aspiring to study abroad. The consultancy you choose should have a high visa success rate and a through understanding of the visa process for different countries. They should be able to guide you through the visa interview process and help you prepare the required documents.
             </li>
             <li>
               <strong>Scholarship and Financial Aid Assistance:</strong> Education abroad can be expensive. The best consultancies in Nepal also assist in finding scholarships, grants, or financial aid programs that can ease the financial burden. They will help you understand the eligibility criteria and guide you through the application process for financial assistance.
