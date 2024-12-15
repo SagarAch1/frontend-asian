@@ -55,7 +55,7 @@ const BlogList = () => {
             alt="test preparation for nepali students"
           />
           <div className="blog-item-content">
-            <h3>Test Preparation For Nepali Studentst</h3>
+            <h3>Test Preparation For Nepali Students</h3>
             <p> For Nepali students aspiring to | August 24, 2024</p>
           </div>
         </div>
