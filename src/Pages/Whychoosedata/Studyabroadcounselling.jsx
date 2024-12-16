@@ -130,7 +130,7 @@ const Studyabroadcounseling = () => {
           Our consultants are skilled in understanding your academic goals and
           identifying the most suitable course to match your career aspirations.
           With our state-of-the-art matching system, we can connect you with the
-          best options from over 600 partner universities and institutions
+          best options from over 300 partner universities and institutions
           worldwide.
         </p>
 
