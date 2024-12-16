@@ -117,7 +117,7 @@ const Whatwedo = () => {
         </p>
         <p style={paragraphStyle}>
           AIEC-Global is a recognized leader in international education
-          services, with nearly 50 years of experience. We have the expertise
+          services, with nearly 15 years of experience. We have the expertise
           and insight to assist you in fulfilling your aspirations of studying
           overseas.
         </p>

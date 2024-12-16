@@ -209,7 +209,7 @@ const OfficeLocator = () => {
           <div style={styles.col}>
             <h4>Connect globally</h4>
             <p>
-              Gain personalized support from over 2,200 expert education
+              Gain personalized support from many expert education
               counselors available at  AIEC offices across the countries.
             </p>
           </div>
