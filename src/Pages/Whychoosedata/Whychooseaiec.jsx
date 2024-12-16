@@ -141,7 +141,7 @@ const Whychooseaiec = () => {
         <p style={paragraphStyle}>
           With collaborations with various top universities across
           Australia, Canada, New Zealand, the UK, and the USA, we have access to
-          more than thousands of courses and programs to find the right match for
+          more than hundred of courses and programs to find the right match for
           you.
         </p>
         <h3 style={titleStyle}>Your success is our priority</h3>

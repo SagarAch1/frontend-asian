@@ -144,7 +144,7 @@ const Navigatingenglishproficiencytest = () => {
 
           <h3>Graduate Exam Benefits</h3>
           <p>
-            The PTE is accepted by thousands of universities worldwide. As a
+            The PTE is accepted by hundreds of universities worldwide. As a
             globally recognized exam, it will open your doors to a wide range of
             program options. Expect fast results; within 5 business days,
             allowing you to focus on your application deadlines. You can
