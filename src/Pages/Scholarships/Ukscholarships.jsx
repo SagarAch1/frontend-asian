@@ -22,7 +22,7 @@ const programs = [
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
     fees: "Contact AIEC-Global",
-    link: "/bachelorofdesign",
+    link: "/formpage",
   },
 
   {
@@ -33,7 +33,7 @@ const programs = [
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
     fees: "Contact AIEC-Global",
-    link: "/bachelorofdesign",
+    link: "/formpage",
   },
 
   {
@@ -44,7 +44,7 @@ const programs = [
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
     fees: "Contact AIEC-Global",
-    link: "/bachelorofdesign",
+    link: "/formpage",
   },
 
   {
@@ -55,7 +55,7 @@ const programs = [
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
     fees: "Contact AIEC-Global",
-    link: "/bachelorofdesign",
+    link: "/formpage",
   },
 
   {
@@ -66,7 +66,7 @@ const programs = [
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
     fees: "Contact AIEC-Global",
-    link: "/bachelorofdesign",
+    link: "/formpage",
   },
 
   {
@@ -77,7 +77,7 @@ const programs = [
     intakeDate: "Jan (Spring), May (Summer), August (Fall)",
     entryScore: "IELTS 6.0",
     fees: "Contact AIEC-Global",
-    link: "/bachelorofdesign",
+    link: "/formpage",
   },
 
   // Other programs
