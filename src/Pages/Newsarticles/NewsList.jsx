@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getNewsApi } from "../../apis/Api";
 
 const Newslist = () => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate("/news"); 
+    navigate("/news");
   };
 
   // State for storing fetched news
   const [news, setNews] = useState([]);
-  const url=process.env.API_URL || "https://api.asian.edu.np";
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   // Call the API to fetch all news initially (Page Load)
   useEffect(() => {
     getNewsApi()
       .then((res) => {
-
         setNews(res.data.news);
       })
       .catch((error) => {
@@ -66,7 +65,7 @@ const Newslist = () => {
           <tr>
             <th style={tableHeaderStyle}>News Name</th>
             <th style={tableHeaderStyle}>News Link</th>
-            <th style={tableHeaderStyle}>News Date</th> 
+            <th style={tableHeaderStyle}>News Date</th>
             <th style={tableHeaderStyle}>News Image</th>
             <th style={tableHeaderStyle}>News Actions</th>
           </tr>
@@ -76,7 +75,7 @@ const Newslist = () => {
             <tr key={news._id}>
               <td>{news.newsName}</td>
               <td>{news.newsType}</td>
-              <td>{news.newsDate}</td> 
+              <td>{news.newsDate}</td>
 
               <td>
                 <img
@@ -86,12 +85,6 @@ const Newslist = () => {
                 />
               </td>
               <td>
-                <Link
-                  to={`/admin/update-news/${news._id}`}
-                  className="btn btn-primary"
-                >
-                  Edit
-                </Link>
                 <button className="btn btn-danger ms-2">Delete</button>
               </td>
             </tr>

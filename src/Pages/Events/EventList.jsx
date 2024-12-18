@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getEventApi } from "../../apis/Api";
 
 const Event = () => {
@@ -66,9 +66,12 @@ const Event = () => {
           <tr>
             <th style={tableHeaderStyle}>Event Name</th>
             <th style={tableHeaderStyle}>Event Type</th>
-            <th style={tableHeaderStyle}>Event Date</th> {/* Added Event Date */}
-            <th style={tableHeaderStyle}>Event Time</th> {/* Added Event Time */}
-            <th style={tableHeaderStyle}>Event Location</th> {/* Added Event Location */}
+            <th style={tableHeaderStyle}>Event Date</th>{" "}
+            {/* Added Event Date */}
+            <th style={tableHeaderStyle}>Event Time</th>{" "}
+            {/* Added Event Time */}
+            <th style={tableHeaderStyle}>Event Location</th>{" "}
+            {/* Added Event Location */}
             <th style={tableHeaderStyle}>Event Image</th>
             <th style={tableHeaderStyle}>Event Actions</th>
           </tr>
@@ -89,12 +92,6 @@ const Event = () => {
                 />
               </td>
               <td>
-                <Link
-                  to={`/admin/update-event/${event._id}`}
-                  className="btn btn-primary"
-                >
-                  Edit
-                </Link>
                 <button className="btn btn-danger ms-2">Delete</button>
               </td>
             </tr>

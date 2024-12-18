@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getSlidersApi } from "../../apis/Api";
 
 const Slider = () => {
@@ -83,12 +83,6 @@ const Slider = () => {
                 />
               </td>
               <td>
-                <Link
-                  to={`/admin/update-slider/${slider._id}`}
-                  className="btn btn-primary"
-                >
-                  Edit
-                </Link>
                 <button className="btn btn-danger ms-2">Delete</button>
               </td>
             </tr>
