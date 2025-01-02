@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getEventApi } from "../../apis/Api";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Event = () => {
   const navigate = useNavigate();
+  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   const handleClick = () => {
     navigate("/event"); // Redirect to the route for adding a new event
@@ -11,7 +14,6 @@ const Event = () => {
 
   // State for storing fetched events
   const [events, setEvents] = useState([]);
-  const url = process.env.API_URL || "https://api.asian.edu.np";
 
   // Call the API to fetch all events initially (Page Load)
   useEffect(() => {
@@ -24,6 +26,19 @@ const Event = () => {
         console.log(error);
       });
   }, []);
+
+  // Function to delete an event
+  const deleteEvent = async (eventId) => {
+    try {
+      await axios.delete(`${url}/api/event/delete-event/${eventId}`);
+      toast.success("Event deleted successfully");
+      // Refresh the event list after deletion
+      setEvents(events.filter((event) => event._id !== eventId));
+    } catch (error) {
+      console.error("Error deleting event:", error);
+      toast.error("Failed to delete event");
+    }
+  };
 
   return (
     <div style={{ padding: "20px" }}>
@@ -66,12 +81,9 @@ const Event = () => {
           <tr>
             <th style={tableHeaderStyle}>Event Name</th>
             <th style={tableHeaderStyle}>Event Type</th>
-            <th style={tableHeaderStyle}>Event Date</th>{" "}
-            {/* Added Event Date */}
-            <th style={tableHeaderStyle}>Event Time</th>{" "}
-            {/* Added Event Time */}
-            <th style={tableHeaderStyle}>Event Location</th>{" "}
-            {/* Added Event Location */}
+            <th style={tableHeaderStyle}>Event Date</th>
+            <th style={tableHeaderStyle}>Event Time</th>
+            <th style={tableHeaderStyle}>Event Location</th>
             <th style={tableHeaderStyle}>Event Image</th>
             <th style={tableHeaderStyle}>Event Actions</th>
           </tr>
@@ -81,9 +93,9 @@ const Event = () => {
             <tr key={event._id}>
               <td>{event.eventName}</td>
               <td>{event.eventType}</td>
-              <td>{event.eventDate}</td> {/* Display Event Date */}
-              <td>{event.eventTime}</td> {/* Display Event Time */}
-              <td>{event.eventLocation}</td> {/* Display Event Location */}
+              <td>{event.eventDate}</td>
+              <td>{event.eventTime}</td>
+              <td>{event.eventLocation}</td>
               <td>
                 <img
                   src={`${url}/event/${event.eventImage}`}
@@ -92,7 +104,12 @@ const Event = () => {
                 />
               </td>
               <td>
-                <button className="btn btn-danger ms-2">Delete</button>
+                <button
+                  onClick={() => deleteEvent(event._id)}
+                  className="btn btn-danger ms-2"
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}
