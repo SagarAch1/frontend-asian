@@ -86,7 +86,7 @@ const Event = () => {
               <td>{event.eventLocation}</td> {/* Display Event Location */}
               <td>
                 <img
-                  src={`${url}/${event.eventImage}`}
+                  src={`${url}/event/${event.eventImage}`}
                   alt=""
                   style={{ width: "40px", height: "40px" }}
                 />
