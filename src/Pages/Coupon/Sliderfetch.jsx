@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getSlidersApi } from "../../apis/Api";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const Slider = () => {
   const navigate = useNavigate();
-  const url = process.env.API_URL || "https://api.asian.edu.np";
+  const baseUrl = process.env.API_URL || "https://api.asian.edu.np";
+  const imageUrl = `${baseUrl}/`; // Base URL for slider images
 
   const handleClick = () => {
     navigate("/Slider"); // Redirect to the route for adding a new slider
@@ -24,6 +27,19 @@ const Slider = () => {
         console.log(error);
       });
   }, []);
+
+  // Function to delete a slider
+  const deleteSlider = async (sliderId) => {
+    try {
+      await axios.delete(`${baseUrl}/api/slider/delete-slider/${sliderId}`);
+      toast.success("Slider deleted successfully");
+      // Refresh the slider list after deletion
+      setSliders(sliders.filter((slider) => slider._id !== sliderId));
+    } catch (error) {
+      console.error("Error deleting slider:", error);
+      toast.error("Failed to delete slider");
+    }
+  };
 
   return (
     <div style={{ padding: "20px" }}>
@@ -77,13 +93,18 @@ const Slider = () => {
               <td>{slider.sliderType}</td>
               <td>
                 <img
-                  src={`${url}/${slider.sliderImage}`}
+                  src={`${imageUrl}${slider.sliderImage}`}
                   alt=""
                   style={{ width: "40px", height: "40px" }}
                 />
               </td>
               <td>
-                <button className="btn btn-danger ms-2">Delete</button>
+                <button
+                  onClick={() => deleteSlider(slider._id)}
+                  className="btn btn-danger ms-2"
+                >
+                  Delete
+                </button>
               </td>
             </tr>
           ))}
