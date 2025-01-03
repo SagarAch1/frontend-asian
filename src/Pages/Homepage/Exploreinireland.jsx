@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const destinations = [
-    { name: 'Dublin', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg` , description: 'Dublin offers a perfect blend of rich history, cultural experiences, and vibrant student life!'  },
- 
-  ];
-  
+  { 
+    name: 'Dublin', 
+    imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`, 
+    description: 'Dublin offers a perfect blend of rich history, cultural experiences, and vibrant student life!'  
+  },
+];
 
 const Exploreinireland = () => {
   const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const containerStyle = {
     padding: "20px",
@@ -47,7 +51,7 @@ const Exploreinireland = () => {
 
   const imageStyle = {
     width: "100%",
-    height: "300px", // Increased height of images
+    height: "300px", 
     objectFit: "cover",
     transition: "opacity 0.3s ease-in-out",
   };
@@ -83,9 +87,9 @@ const Exploreinireland = () => {
   };
 
   const descriptionStyle = {
-    textAlign: "center", // Centers the description text
+    textAlign: "center",
     padding: "10px",
-    maxWidth: "80%", // Optional: set a max width to avoid text overflowing
+    maxWidth: "80%",
   };
 
   const buttonStyle = {
@@ -129,7 +133,12 @@ const Exploreinireland = () => {
                   <p style={descriptionStyle}>{destination.description}</p>
                 )}
                 {destination.description && (
-                  <button style={buttonStyle}>Discover</button>
+                  <button 
+                    style={buttonStyle} 
+                    onClick={() => navigate('/formpage')} // Navigate to /form
+                  >
+                    Discover
+                  </button>
                 )}
               </div>
             )}

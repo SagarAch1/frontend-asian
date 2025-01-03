@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const destinations = [
   {
@@ -41,6 +42,11 @@ const destinations = [
 
 const Exploreinaustralia = () => {
   const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const navigateToFormPage = () => {
+    navigate("/formpage"); // Specify the route to navigate to
+  };
 
   const containerStyle = {
     padding: "20px",
@@ -80,7 +86,7 @@ const Exploreinaustralia = () => {
 
   const imageStyle = {
     width: "100%",
-    height: "300px", // Increased height of images
+    height: "300px",
     objectFit: "cover",
     transition: "opacity 0.3s ease-in-out",
   };
@@ -100,7 +106,7 @@ const Exploreinaustralia = () => {
     opacity: 0,
     transition: "opacity 0.3s ease-in-out",
     padding: "20px",
-    textAlign: "center", // Ensure text is centered horizontally
+    textAlign: "center",
   };
 
   const overlayVisibleStyle = {
@@ -156,7 +162,9 @@ const Exploreinaustralia = () => {
                 <h3>{destination.name}</h3>
                 {destination.description && <p>{destination.description}</p>}
                 {destination.description && (
-                  <button style={buttonStyle}>Discover</button>
+                  <button style={buttonStyle} onClick={navigateToFormPage}>
+                    Discover
+                  </button>
                 )}
               </div>
             )}
