@@ -1,17 +1,18 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const destinations = [
   {
     name: "Washington",
     imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`,
     description:
-    "Begin your journey in Washington, a hub for innovation and culture!",
+      "Begin your journey in Washington, a hub for innovation and culture!",
   },
   {
     name: "New York",
     imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`,
     description:
-    "New York offers a vibrant atmosphere, full of career opportunities and diverse culture.",
+      "New York offers a vibrant atmosphere, full of career opportunities and diverse culture.",
   },
   {
     name: "Massachusetts",
@@ -29,6 +30,7 @@ const destinations = [
 
 const Exploreinusa = () => {
   const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const containerStyle = {
     padding: "20px",
@@ -104,9 +106,9 @@ const Exploreinusa = () => {
   };
 
   const descriptionStyle = {
-    textAlign: "center", // Centers the description text
+    textAlign: "center",
     padding: "10px",
-    maxWidth: "80%", // Optional: set a max width to avoid text overflowing
+    maxWidth: "80%",
   };
 
   const buttonStyle = {
@@ -150,7 +152,12 @@ const Exploreinusa = () => {
                   <p style={descriptionStyle}>{destination.description}</p>
                 )}
                 {destination.description && (
-                  <button style={buttonStyle}>Discover</button>
+                  <button
+                    style={buttonStyle}
+                    onClick={() => navigate("/formpage")}
+                  >
+                    Discover
+                  </button>
                 )}
               </div>
             )}

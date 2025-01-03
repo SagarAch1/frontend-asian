@@ -1,16 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const destinations = [
-    { name: 'Ottawa', imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg` , description: 'Dublin offers a perfect blend of rich history, cultural experiences, and vibrant student life!'   },
-    { name: 'Toronto', imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`, description: 'Toronto is a vibrant city offering diverse cultural experiences and world-class education.'  },
-    { name: 'Montreal', imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,description: 'Montreal is famous for its bilingualism, historical charm, and strong academic reputation.'  },
-    { name: 'Vancouver', imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`,description: 'Vancouver is known for its beautiful natural landscapes and thriving tech industry.'  },
-    
-  ];
-  
+  {
+    name: "Ottawa",
+    imgSrc: `${process.env.PUBLIC_URL}/assets/images/aus.jpeg`,
+    description:
+      "Dublin offers a perfect blend of rich history, cultural experiences, and vibrant student life!",
+  },
+  {
+    name: "Toronto",
+    imgSrc: `${process.env.PUBLIC_URL}/assets/images/canada.webp`,
+    description:
+      "Toronto is a vibrant city offering diverse cultural experiences and world-class education.",
+  },
+  {
+    name: "Montreal",
+    imgSrc: `${process.env.PUBLIC_URL}/assets/images/ire.jpeg`,
+    description:
+      "Montreal is famous for its bilingualism, historical charm, and strong academic reputation.",
+  },
+  {
+    name: "Vancouver",
+    imgSrc: `${process.env.PUBLIC_URL}/assets/images/new.jpeg`,
+    description:
+      "Vancouver is known for its beautiful natural landscapes and thriving tech industry.",
+  },
+];
 
 const Exploreincanada = () => {
   const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate(); // Hook for navigation
 
   const containerStyle = {
     padding: "20px",
@@ -50,7 +70,7 @@ const Exploreincanada = () => {
 
   const imageStyle = {
     width: "100%",
-    height: "300px", // Increased height of images
+    height: "300px",
     objectFit: "cover",
     transition: "opacity 0.3s ease-in-out",
   };
@@ -86,9 +106,9 @@ const Exploreincanada = () => {
   };
 
   const descriptionStyle = {
-    textAlign: "center", // Centers the description text
+    textAlign: "center",
     padding: "10px",
-    maxWidth: "80%", // Optional: set a max width to avoid text overflowing
+    maxWidth: "80%",
   };
 
   const buttonStyle = {
@@ -99,6 +119,10 @@ const Exploreincanada = () => {
     color: "#fff",
     cursor: "pointer",
     marginTop: "10px",
+  };
+
+  const handleDiscoverClick = () => {
+    navigate("/formpage"); // Navigate to the form page
   };
 
   return (
@@ -132,7 +156,9 @@ const Exploreincanada = () => {
                   <p style={descriptionStyle}>{destination.description}</p>
                 )}
                 {destination.description && (
-                  <button style={buttonStyle}>Discover</button>
+                  <button style={buttonStyle} onClick={handleDiscoverClick}>
+                    Discover
+                  </button>
                 )}
               </div>
             )}
@@ -142,4 +168,5 @@ const Exploreincanada = () => {
     </div>
   );
 };
+
 export default Exploreincanada;
