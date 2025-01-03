@@ -139,10 +139,9 @@ const Whychooseaiec = () => {
           cutting-edge technology to ensure you make well-informed decisions.
         </p>
         <p style={paragraphStyle}>
-          With collaborations with various top universities across
-          Australia, Canada, New Zealand, the UK, and the USA, we have access to
-          more than hundred of courses and programs to find the right match for
-          you.
+          With collaborations with various top universities across Australia,
+          Canada, New Zealand, the UK, and the USA, we have access to more than
+          hundred of courses and programs to find the right match for you.
         </p>
         <h3 style={titleStyle}>Your success is our priority</h3>
         <p style={paragraphStyle}>
@@ -171,13 +170,7 @@ const Whychooseaiec = () => {
           With firsthand knowledge of what it’s like to prepare for studying
           abroad, they are eager to share their insights and guide you.
         </p>
-        <h3 style={titleStyle}>Proud co-owner of IELTS</h3>
-        <p style={paragraphStyle}>
-          As a co-owner of IELTS, we can assist you with booking and preparing
-          for your IELTS test. IELTS is the world’s most recognized English
-          language test for study, work, and migration, accepted by over 12,000
-          organizations globally.
-        </p>
+
         {/* YouTube Video Embed */}
         <div style={{ marginBottom: "30px" }}>
           <iframe
