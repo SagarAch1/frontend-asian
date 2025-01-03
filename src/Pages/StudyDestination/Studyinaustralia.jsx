@@ -44,7 +44,7 @@ const StudyInAustralia = () => {
           study program, plus some additional time to allow for completion of
           your studies. Since July 2016, the Subclass 500 student visa is the
           only visa available for studying in Australia. It is valid for up to
-          five years and costs AUD 620. Before applying, make sure you have
+          five years and costs AUD 1600. Before applying, make sure you have
           sufficient funds to cover your tuition and living expenses, and ensure
           you have Overseas Student Health Cover (OSHC).
         </p>

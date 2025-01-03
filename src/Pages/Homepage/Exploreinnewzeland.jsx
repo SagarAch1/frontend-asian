@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const destinations = [
   { 
@@ -30,6 +31,7 @@ const destinations = [
 
 const Exploreinnewzeland = () => {
   const [hovered, setHovered] = useState(null);
+  const navigate = useNavigate(); // React Router navigation hook
 
   const containerStyle = {
     padding: "20px",
@@ -69,7 +71,7 @@ const Exploreinnewzeland = () => {
 
   const imageStyle = {
     width: "100%",
-    height: "300px", // Increased height of images
+    height: "300px",
     objectFit: "cover",
     transition: "opacity 0.3s ease-in-out",
   };
@@ -105,9 +107,9 @@ const Exploreinnewzeland = () => {
   };
 
   const descriptionStyle = {
-    textAlign: "center", // Centers the description text
+    textAlign: "center",
     padding: "10px",
-    maxWidth: "80%", // Optional: set a max width to avoid text overflowing
+    maxWidth: "80%",
   };
 
   const buttonStyle = {
@@ -122,7 +124,7 @@ const Exploreinnewzeland = () => {
 
   return (
     <div style={containerStyle}>
-      <h2 style={sectionTitleStyle}>Explore in Newzeland</h2>
+      <h2 style={sectionTitleStyle}>Explore in New Zealand</h2>
       <p style={sectionSubtitleStyle}>
         Begin an exciting academic journey in these varied and welcoming study
         locations!
@@ -151,7 +153,9 @@ const Exploreinnewzeland = () => {
                   <p style={descriptionStyle}>{destination.description}</p>
                 )}
                 {destination.description && (
-                  <button style={buttonStyle}>Discover</button>
+                  <button style={buttonStyle} onClick={() => navigate('/formpage')}>
+                    Discover
+                  </button>
                 )}
               </div>
             )}
