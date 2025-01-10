@@ -1,43 +1,42 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { getEventApi } from "../../apis/Api";
+import axios from "axios";
 import { toast } from "react-toastify";
-import { getSlidersApi } from "../../apis/Api";
 
-const Slider = () => {
+const Event = () => {
   const navigate = useNavigate();
   const url = process.env.API_URL || "https://api.asian.edu.np";
 
   const handleClick = () => {
-    navigate("/slider"); // Redirect to the route for adding a new slider
+    navigate("/event"); // Redirect to the route for adding a new event
   };
 
-  // State for storing fetched sliders
-  const [sliders, setSliders] = useState([]);
+  // State for storing fetched events
+  const [events, setEvents] = useState([]);
 
-  // Fetch all sliders initially (Page Load)
+  // Call the API to fetch all events initially (Page Load)
   useEffect(() => {
-    getSlidersApi()
+    getEventApi()
       .then((res) => {
-        // Set the fetched sliders to state
-        setSliders(res.data.sliders);
+        // Set the fetched events to state
+        setEvents(res.data.event);
       })
       .catch((error) => {
-        console.error("Error fetching sliders:", error);
-        toast.error("Failed to load sliders");
+        console.log(error);
       });
   }, []);
 
-  // Function to delete a slider
-  const deleteSlider = async (sliderId) => {
+  // Function to delete an event
+  const deleteEvent = async (eventId) => {
     try {
-      await axios.delete(`${url}/api/slider/delete-slider/${sliderId}`);
-      toast.success("Slider deleted successfully");
-      // Refresh the slider list after deletion
-      setSliders(sliders.filter((slider) => slider._id !== sliderId));
+      await axios.delete(`${url}/api/event/delete-event/${eventId}`);
+      toast.success("Event deleted successfully");
+      // Refresh the event list after deletion
+      setEvents(events.filter((event) => event._id !== eventId));
     } catch (error) {
-      console.error("Error deleting slider:", error);
-      toast.error("Failed to delete slider");
+      console.error("Error deleting event:", error);
+      toast.error("Failed to delete event");
     }
   };
 
@@ -58,7 +57,7 @@ const Slider = () => {
             cursor: "pointer",
           }}
         >
-          New Slider
+          New Event
         </button>
       </div>
 
@@ -80,27 +79,33 @@ const Slider = () => {
           style={{ backgroundColor: "#343a40", color: "black" }}
         >
           <tr>
-            <th style={tableHeaderStyle}>Slider Name</th>
-            <th style={tableHeaderStyle}>Slider Type</th>
-            <th style={tableHeaderStyle}>Slider Image</th>
-            <th style={tableHeaderStyle}>Slider Actions</th>
+            <th style={tableHeaderStyle}>Event Name</th>
+            <th style={tableHeaderStyle}>Event Type</th>
+            <th style={tableHeaderStyle}>Event Date</th>
+            <th style={tableHeaderStyle}>Event Time</th>
+            <th style={tableHeaderStyle}>Event Location</th>
+            <th style={tableHeaderStyle}>Event Image</th>
+            <th style={tableHeaderStyle}>Event Actions</th>
           </tr>
         </thead>
         <tbody>
-          {sliders.map((slider) => (
-            <tr key={slider._id}>
-              <td>{slider.sliderName}</td>
-              <td>{slider.sliderType}</td>
+          {events.map((event) => (
+            <tr key={event._id}>
+              <td>{event.eventName}</td>
+              <td>{event.eventType}</td>
+              <td>{event.eventDate}</td>
+              <td>{event.eventTime}</td>
+              <td>{event.eventLocation}</td>
               <td>
                 <img
-                  src={`${url}/slider/${slider.sliderImage}`}
-                  alt="Slider"
-                  style={{ width: "50px", height: "50px" }}
+                  src={`${url}/event/${event.eventImage}`}
+                  alt=""
+                  style={{ width: "40px", height: "40px" }}
                 />
               </td>
               <td>
                 <button
-                  onClick={() => deleteSlider(slider._id)}
+                  onClick={() => deleteEvent(event._id)}
                   className="btn btn-danger ms-2"
                 >
                   Delete
@@ -121,4 +126,4 @@ const tableHeaderStyle = {
   textAlign: "left",
 };
 
-export default Slider;
+export default Event;
