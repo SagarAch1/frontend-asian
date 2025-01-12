@@ -57,7 +57,7 @@ const Event = () => {
             cursor: "pointer",
           }}
         >
-          New Event
+          Create Event
         </button>
       </div>
 
